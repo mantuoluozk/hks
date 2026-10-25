@@ -1,0 +1,541 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+{"stage": "waiting-for-matrix", "updated_at": "2026-10-25T14:35:47.473828+00:00", "execution_platform": "SCNet Notebook", "official_acceptance_passed": null}
+{"stage": "same-service-diagnostics", "updated_at": "2026-10-25T16:00:55.284997+00:00", "execution_platform": "SCNet Notebook", "official_acceptance_passed": null}
+{"stage": "generating-report", "updated_at": "2026-10-25T16:01:34.929806+00:00", "execution_platform": "SCNet Notebook", "official_acceptance_passed": null, "same_service_concurrency_exit": 0}
+{
+  "complete": true,
+  "workloads": [
+    {
+      "round": 1,
+      "input": 4096,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 50932,
+      "retokenized_tokens": 5315
+    },
+    {
+      "round": 1,
+      "input": 4096,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 101932,
+      "retokenized_tokens": 12262
+    },
+    {
+      "round": 1,
+      "input": 4096,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 814784,
+      "retokenized_tokens": 107654
+    },
+    {
+      "round": 1,
+      "input": 16384,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 154656,
+      "retokenized_tokens": 7470
+    },
+    {
+      "round": 1,
+      "input": 16384,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 309038,
+      "retokenized_tokens": 12928
+    },
+    {
+      "round": 1,
+      "input": 16384,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 2469946,
+      "retokenized_tokens": 113010
+    },
+    {
+      "round": 2,
+      "input": 4096,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 50932,
+      "retokenized_tokens": 5315
+    },
+    {
+      "round": 2,
+      "input": 4096,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 101932,
+      "retokenized_tokens": 12262
+    },
+    {
+      "round": 2,
+      "input": 4096,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 814784,
+      "retokenized_tokens": 107654
+    },
+    {
+      "round": 2,
+      "input": 16384,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 154656,
+      "retokenized_tokens": 7470
+    },
+    {
+      "round": 2,
+      "input": 16384,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 309038,
+      "retokenized_tokens": 12928
+    },
+    {
+      "round": 2,
+      "input": 16384,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 2469946,
+      "retokenized_tokens": 113010
+    }
+  ],
+  "official_scnet_validation": false,
+  "execution_platform": "SCNet Notebook",
+  "token_note": "Input settings describe text plus a separate 1080p image; actual input totals include vision/template tokens. Fixed decode length uses server generated tokens; re-tokenized visible output is recorded separately."
+}
+{
+  "created_at": "2026-10-25T16:01:35.029154+00:00",
+  "model_id": "BAAI/RoboBrain2.5-8B-NV",
+  "execution_platform": "SCNet Notebook",
+  "runtime": {
+    "MODEL_ID": "BAAI/RoboBrain2.5-8B-NV",
+    "MODEL_PATH": "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+    "SERVED_NAME": "robobrain25-8b",
+    "IMAGE": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter@sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+    "FRAMEWORK": "sglang",
+    "CARD": "BW",
+    "PRECISION": "bf16",
+    "HIP_VISIBLE_DEVICES": "0",
+    "HOST": "127.0.0.1",
+    "PORT": "30125",
+    "TP": "1",
+    "MAX_LEN": "32768",
+    "MEM_FRAC": "0.75",
+    "MAX_RUNNING_REQUESTS": "64",
+    "DECODE_GRAPH_BACKEND": "full",
+    "DECODE_GRAPH_MAX_BS": "32",
+    "ENABLE_DETERMINISTIC_INFERENCE": "1",
+    "SERVER_RUN_ID": "20261025T134456Z",
+    "EXECUTION_PLATFORM": "SCNet Notebook"
+  },
+  "weights_verified": 13,
+  "smoke": {
+    "path": "results/scnet/smoke-20261025T134807Z",
+    "passed": 8,
+    "total": 8
+  },
+  "performance": {
+    "path": "bench/scnet-matrix-20261025T134821Z",
+    "rounds": 12,
+    "requests": 608,
+    "reported_round": 2
+  },
+  "same_service_diagnostics": {
+    "stability": {
+      "path": "results/scnet/stability-20261025T160055Z",
+      "summary": {
+        "purpose": "cache diagnostic, not official evaluation",
+        "cases": [
+          {
+            "case": "grounding",
+            "unique_answers": 1,
+            "trials": [
+              {
+                "case": "grounding",
+                "trial": 0,
+                "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+                "usage": {
+                  "prompt_tokens": 290,
+                  "total_tokens": 395,
+                  "completion_tokens": 105,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "image_tokens": 260
+                  },
+                  "reasoning_tokens": 0
+                }
+              },
+              {
+                "case": "grounding",
+                "trial": 1,
+                "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+                "usage": {
+                  "prompt_tokens": 290,
+                  "total_tokens": 395,
+                  "completion_tokens": 105,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "image_tokens": 260
+                  },
+                  "reasoning_tokens": 0
+                }
+              },
+              {
+                "case": "grounding",
+                "trial": 2,
+                "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+                "usage": {
+                  "prompt_tokens": 290,
+                  "total_tokens": 395,
+                  "completion_tokens": 105,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "image_tokens": 260
+                  },
+                  "reasoning_tokens": 0
+                }
+              }
+            ]
+          },
+          {
+            "case": "pointing",
+            "unique_answers": 1,
+            "trials": [
+              {
+                "case": "pointing",
+                "trial": 0,
+                "answer": "[(901, 598)]",
+                "usage": {
+                  "prompt_tokens": 321,
+                  "total_tokens": 332,
+                  "completion_tokens": 11,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "image_tokens": 260
+                  },
+                  "reasoning_tokens": 0
+                }
+              },
+              {
+                "case": "pointing",
+                "trial": 1,
+                "answer": "[(901, 598)]",
+                "usage": {
+                  "prompt_tokens": 321,
+                  "total_tokens": 332,
+                  "completion_tokens": 11,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "image_tokens": 260
+                  },
+                  "reasoning_tokens": 0
+                }
+              },
+              {
+                "case": "pointing",
+                "trial": 2,
+                "answer": "[(901, 598)]",
+                "usage": {
+                  "prompt_tokens": 321,
+                  "total_tokens": 332,
+                  "completion_tokens": 11,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "image_tokens": 260
+                  },
+                  "reasoning_tokens": 0
+                }
+              }
+            ]
+          },
+          {
+            "case": "trajectory",
+            "unique_answers": 1,
+            "trials": [
+              {
+                "case": "trajectory",
+                "trial": 0,
+                "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+                "usage": {
+                  "prompt_tokens": 194,
+                  "total_tokens": 246,
+                  "completion_tokens": 52,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "image_tokens": 104
+                  },
+                  "reasoning_tokens": 0
+                }
+              },
+              {
+                "case": "trajectory",
+                "trial": 1,
+                "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+                "usage": {
+                  "prompt_tokens": 194,
+                  "total_tokens": 246,
+                  "completion_tokens": 52,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "image_tokens": 104
+                  },
+                  "reasoning_tokens": 0
+                }
+              },
+              {
+                "case": "trajectory",
+                "trial": 2,
+                "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+                "usage": {
+                  "prompt_tokens": 194,
+                  "total_tokens": 246,
+                  "completion_tokens": 52,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "image_tokens": 104
+                  },
+                  "reasoning_tokens": 0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "concurrency": {
+      "path": "results/scnet/concurrency-20261025T160055Z",
+      "summary": {
+        "purpose": "local concurrent versus serial response consistency, not official GPU accuracy",
+        "workers": 4,
+        "requests": 24,
+        "exact_matches": 24,
+        "errors": 0,
+        "cases": [
+          {
+            "case": "grounding",
+            "trial": 0,
+            "input_sha256": "2cedeab2ef26c9dc73f07d1cd664069f8b04a8b0412d3b14b4eae4c9fdad84b7",
+            "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "pointing",
+            "trial": 0,
+            "input_sha256": "fad116b50d4171514ca8c10f6bf725d24e163665513e9a839e65eb802168236f",
+            "answer": "[(901, 598)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "trajectory",
+            "trial": 0,
+            "input_sha256": "066ec763395bfdc4586c3752bc843c5f80a40827ad5a084f4e86632548de8cb9",
+            "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "grounding",
+            "trial": 1,
+            "input_sha256": "2cedeab2ef26c9dc73f07d1cd664069f8b04a8b0412d3b14b4eae4c9fdad84b7",
+            "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "pointing",
+            "trial": 1,
+            "input_sha256": "fad116b50d4171514ca8c10f6bf725d24e163665513e9a839e65eb802168236f",
+            "answer": "[(901, 598)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "trajectory",
+            "trial": 1,
+            "input_sha256": "066ec763395bfdc4586c3752bc843c5f80a40827ad5a084f4e86632548de8cb9",
+            "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "grounding",
+            "trial": 2,
+            "input_sha256": "2cedeab2ef26c9dc73f07d1cd664069f8b04a8b0412d3b14b4eae4c9fdad84b7",
+            "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "pointing",
+            "trial": 2,
+            "input_sha256": "fad116b50d4171514ca8c10f6bf725d24e163665513e9a839e65eb802168236f",
+            "answer": "[(901, 598)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "trajectory",
+            "trial": 2,
+            "input_sha256": "066ec763395bfdc4586c3752bc843c5f80a40827ad5a084f4e86632548de8cb9",
+            "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "grounding",
+            "trial": 3,
+            "input_sha256": "2cedeab2ef26c9dc73f07d1cd664069f8b04a8b0412d3b14b4eae4c9fdad84b7",
+            "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "pointing",
+            "trial": 3,
+            "input_sha256": "fad116b50d4171514ca8c10f6bf725d24e163665513e9a839e65eb802168236f",
+            "answer": "[(901, 598)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "trajectory",
+            "trial": 3,
+            "input_sha256": "066ec763395bfdc4586c3752bc843c5f80a40827ad5a084f4e86632548de8cb9",
+            "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "grounding",
+            "trial": 4,
+            "input_sha256": "2cedeab2ef26c9dc73f07d1cd664069f8b04a8b0412d3b14b4eae4c9fdad84b7",
+            "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "pointing",
+            "trial": 4,
+            "input_sha256": "fad116b50d4171514ca8c10f6bf725d24e163665513e9a839e65eb802168236f",
+            "answer": "[(901, 598)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "trajectory",
+            "trial": 4,
+            "input_sha256": "066ec763395bfdc4586c3752bc843c5f80a40827ad5a084f4e86632548de8cb9",
+            "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "grounding",
+            "trial": 5,
+            "input_sha256": "2cedeab2ef26c9dc73f07d1cd664069f8b04a8b0412d3b14b4eae4c9fdad84b7",
+            "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "pointing",
+            "trial": 5,
+            "input_sha256": "fad116b50d4171514ca8c10f6bf725d24e163665513e9a839e65eb802168236f",
+            "answer": "[(901, 598)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "trajectory",
+            "trial": 5,
+            "input_sha256": "066ec763395bfdc4586c3752bc843c5f80a40827ad5a084f4e86632548de8cb9",
+            "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "grounding",
+            "trial": 6,
+            "input_sha256": "2cedeab2ef26c9dc73f07d1cd664069f8b04a8b0412d3b14b4eae4c9fdad84b7",
+            "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "pointing",
+            "trial": 6,
+            "input_sha256": "fad116b50d4171514ca8c10f6bf725d24e163665513e9a839e65eb802168236f",
+            "answer": "[(901, 598)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "trajectory",
+            "trial": 6,
+            "input_sha256": "066ec763395bfdc4586c3752bc843c5f80a40827ad5a084f4e86632548de8cb9",
+            "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "grounding",
+            "trial": 7,
+            "input_sha256": "2cedeab2ef26c9dc73f07d1cd664069f8b04a8b0412d3b14b4eae4c9fdad84b7",
+            "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "pointing",
+            "trial": 7,
+            "input_sha256": "fad116b50d4171514ca8c10f6bf725d24e163665513e9a839e65eb802168236f",
+            "answer": "[(901, 598)]",
+            "exact_match": true,
+            "error": null
+          },
+          {
+            "case": "trajectory",
+            "trial": 7,
+            "input_sha256": "066ec763395bfdc4586c3752bc843c5f80a40827ad5a084f4e86632548de8cb9",
+            "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+            "exact_match": true,
+            "error": null
+          }
+        ],
+        "official_accuracy_pass": null,
+        "official_scnet_validation": false
+      }
+    }
+  },
+  "official_accuracy_pass": null,
+  "official_acceptance_passed": null,
+  "clean_image_full_matrix_deviation_pass": null
+}
+{"stage": "report-ready-for-review", "updated_at": "2026-10-25T16:01:35.327883+00:00", "execution_platform": "SCNet Notebook", "official_acceptance_passed": null, "same_service_concurrency_exit": 0, "github_published": false, "sourcefind_published": false}
+{
+  "archive": "/root/private_data/hks/models/RoboBrain2.5-8B-NV/artifacts/scnet-evidence-20261025T160135Z.tar.gz",
+  "bytes": 456306,
+  "sha256": "1fdcc4d8d12f3237f716552af2235c82107c529c5f173efaf09855f3265ad9e7",
+  "files": 100
+}
+{"snapshot": "/root/private_data/hks/backups/20261025T160136289230Z", "files": 1327, "bytes": 7679610, "archive_sha256": "fcb61979d0aa0f39c3e489f76838893b8e81b3324073d9e74def80b9a32f0943", "verified": true}

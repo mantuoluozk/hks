@@ -1,0 +1,135 @@
+{
+  "created_at": "2026-10-25T13:48:21.472045+00:00",
+  "model": "robobrain25-8b",
+  "purpose": "synthetic and publisher demo smoke; coordinate checks validate format/range only, not task accuracy",
+  "official_scnet_validation": false,
+  "execution_platform": "SCNet Notebook",
+  "cases": [
+    {
+      "case": "text",
+      "seconds": 0.156,
+      "answer": "5",
+      "functional_pass": true,
+      "diagnostic_semantic_pass": true,
+      "usage": {
+        "prompt_tokens": 21,
+        "total_tokens": 23,
+        "completion_tokens": 2,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "case": "single_image",
+      "seconds": 2.341,
+      "answer": "Red",
+      "functional_pass": true,
+      "diagnostic_semantic_pass": true,
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 169,
+        "completion_tokens": 2,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 140
+        },
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "case": "multi_image",
+      "seconds": 3.082,
+      "answer": "red, blue",
+      "functional_pass": true,
+      "diagnostic_semantic_pass": true,
+      "usage": {
+        "prompt_tokens": 318,
+        "total_tokens": 322,
+        "completion_tokens": 4,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 280
+        },
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "case": "multi_turn",
+      "seconds": 0.253,
+      "answer": "Blue",
+      "functional_pass": true,
+      "diagnostic_semantic_pass": true,
+      "usage": {
+        "prompt_tokens": 196,
+        "total_tokens": 198,
+        "completion_tokens": 2,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 140
+        },
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "case": "stream_image",
+      "seconds": 0.182,
+      "answer": "Red",
+      "functional_pass": true,
+      "diagnostic_semantic_pass": true,
+      "usage": null
+    },
+    {
+      "case": "grounding",
+      "seconds": 3.921,
+      "answer": "The person wearing a red hat is the child on the left. The bounding box coordinates for this region can be estimated as follows:\n\n- **Top-left corner (x1, y1):** Approximately (20, 290)\n- **Bottom-right corner (x2, y2):** Approximately (480, 998)\n\nSo, the bounding box coordinates are roughly:\n\n```\n[20, 290, 480, 998]\n```",
+      "functional_pass": true,
+      "diagnostic_semantic_pass": true,
+      "usage": {
+        "prompt_tokens": 290,
+        "total_tokens": 395,
+        "completion_tokens": 105,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 260
+        },
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "case": "pointing",
+      "seconds": 0.586,
+      "answer": "[(901, 598)]",
+      "functional_pass": true,
+      "diagnostic_semantic_pass": true,
+      "usage": {
+        "prompt_tokens": 321,
+        "total_tokens": 332,
+        "completion_tokens": 11,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 260
+        },
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "case": "trajectory",
+      "seconds": 2.023,
+      "answer": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+      "functional_pass": true,
+      "diagnostic_semantic_pass": true,
+      "usage": {
+        "prompt_tokens": 194,
+        "total_tokens": 246,
+        "completion_tokens": 52,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 104
+        },
+        "reasoning_tokens": 0
+      }
+    }
+  ],
+  "functional_pass": true,
+  "diagnostic_semantic_pass": true
+}

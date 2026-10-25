@@ -1,0 +1,33 @@
+{
+  "id": "bf67ca3d4ed24bd5ba3c2f5729a4e650",
+  "object": "chat.completion",
+  "created": 1792944070,
+  "model": "robobrain25-8b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "[(301, 525, 0.577), (405, 350, 0.620), (525, 325, 0.722)]",
+        "reasoning_content": null,
+        "tool_calls": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "matched_stop": 151645
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 194,
+    "total_tokens": 246,
+    "completion_tokens": 52,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 104
+    },
+    "reasoning_tokens": 0
+  },
+  "metadata": {
+    "weight_version": "default"
+  }
+}

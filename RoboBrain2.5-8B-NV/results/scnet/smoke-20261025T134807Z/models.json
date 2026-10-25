@@ -1,0 +1,14 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "robobrain25-8b",
+      "object": "model",
+      "created": 1792936088,
+      "owned_by": "sglang",
+      "root": "robobrain25-8b",
+      "parent": null,
+      "max_model_len": 32768
+    }
+  ]
+}

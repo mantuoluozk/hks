@@ -1,0 +1,17 @@
+{
+  "region": "华中一区（A区）",
+  "resource_group": "113组",
+  "resource_group_name": "hx1hgbwnormal",
+  "specification": "BW × 1，显存 64GB；CPU 15 核，内存 59GB（平台显示值）；系统盘配额未显示，代码、权重和日志位于共享文件存储 /root/private_data",
+  "accelerator": "BW",
+  "accelerator_count": 1,
+  "vram_gb_ui": 64,
+  "cpu_cores_ui": 15,
+  "memory_gb_ui": 59,
+  "cpu_model_ui": "2*64C",
+  "image_ui": "sglang-jupyter:0.5.18",
+  "system_disk_quota": null,
+  "source": "SCNet Notebook resource configuration screenshot provided on 2026-10-25",
+  "runtime_cgroup_cpu_quota_cores": 15,
+  "runtime_cgroup_memory_limit_bytes": 63350767616
+}

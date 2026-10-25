@@ -1,0 +1,3 @@
+profile=matrix
+image_resolution=1080p
+source=SCNet Notebook self-test; not official acceptance

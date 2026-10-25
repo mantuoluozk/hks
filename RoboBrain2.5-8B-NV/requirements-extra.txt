@@ -1,0 +1,2 @@
+# No additional packages: use the pinned SGLang/DTK base image.
+# The deterministic MM/BMM source patch is replayed by run.sh.

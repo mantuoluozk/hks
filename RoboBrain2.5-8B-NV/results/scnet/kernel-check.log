@@ -1,0 +1,33 @@
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+{
+  "batch_rows": [
+    1,
+    17,
+    129
+  ],
+  "K": 4096,
+  "N": 6144,
+  "dtype": "bfloat16",
+  "first_row_byte_exact_across_batch_sizes": true,
+  "relative_l2_error_vs_fp32": 0.0016632796032354236,
+  "shared_memory_per_block": 65536,
+  "bmm_checks": [
+    {
+      "dtype": "torch.bfloat16",
+      "relative_l2_error_vs_fp32": 0.0016773572424426675,
+      "first_batch_exact_match": true
+    },
+    {
+      "dtype": "torch.float32",
+      "relative_l2_error_vs_fp32": 0.0,
+      "first_batch_exact_match": true
+    }
+  ]
+}

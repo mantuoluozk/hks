@@ -1,0 +1,132 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Local benchmark processor alias: /root/private_data/hks/models/RoboBrain2.5-8B-NV/robobrain25-8b -> /root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV
+# SCNet BW benchmark (self-test; not official acceptance)
+
+See config.txt, env.sh and both raw JSONL/log files for the exact workload.
+
+| random_input_len | random_output_len | max_concurrency | completed | duration | output_throughput | total_throughput | mean_ttft_ms | p99_ttft_ms | mean_tpot_ms | mean_e2e_latency_ms |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4096 | 1024 | 1 | 8 | 324.36 | 25.26 | 182.28 | 3285.35 | 3315.43 | 36.42 | 40538.37 |
+| 4096 | 1024 | 8 | 16 | 129.03 | 126.98 | 916.97 | 15763.24 | 24508.58 | 47.62 | 64475.85 |
+| 4096 | 1024 | 64 | 128 | 714.57 | 183.43 | 1323.68 | 181088.22 | 333445.14 | 111.36 | 295005.24 |
+| 16384 | 1024 | 1 | 8 | 380.92 | 21.51 | 427.51 | 6989.56 | 7036.10 | 39.71 | 47608.71 |
+| 16384 | 1024 | 8 | 16 | 208.09 | 78.73 | 1563.83 | 30050.46 | 50258.33 | 72.29 | 104006.37 |
+| 16384 | 1024 | 64 | 128 | 1542.93 | 84.95 | 1685.76 | 516300.77 | 715605.26 | 88.87 | 607212.44 |
+{
+  "complete": true,
+  "workloads": [
+    {
+      "round": 1,
+      "input": 4096,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 50932,
+      "retokenized_tokens": 5315
+    },
+    {
+      "round": 1,
+      "input": 4096,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 101932,
+      "retokenized_tokens": 12262
+    },
+    {
+      "round": 1,
+      "input": 4096,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 814784,
+      "retokenized_tokens": 107654
+    },
+    {
+      "round": 1,
+      "input": 16384,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 154656,
+      "retokenized_tokens": 7470
+    },
+    {
+      "round": 1,
+      "input": 16384,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 309038,
+      "retokenized_tokens": 12928
+    },
+    {
+      "round": 1,
+      "input": 16384,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 2469946,
+      "retokenized_tokens": 113010
+    },
+    {
+      "round": 2,
+      "input": 4096,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 50932,
+      "retokenized_tokens": 5315
+    },
+    {
+      "round": 2,
+      "input": 4096,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 101932,
+      "retokenized_tokens": 12262
+    },
+    {
+      "round": 2,
+      "input": 4096,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 814784,
+      "retokenized_tokens": 107654
+    },
+    {
+      "round": 2,
+      "input": 16384,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 154656,
+      "retokenized_tokens": 7470
+    },
+    {
+      "round": 2,
+      "input": 16384,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 309038,
+      "retokenized_tokens": 12928
+    },
+    {
+      "round": 2,
+      "input": 16384,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 2469946,
+      "retokenized_tokens": 113010
+    }
+  ],
+  "official_scnet_validation": false,
+  "execution_platform": "SCNet Notebook",
+  "token_note": "Input settings describe text plus a separate 1080p image; actual input totals include vision/template tokens. Fixed decode length uses server generated tokens; re-tokenized visible output is recorded separately."
+}
+Artifacts: bench/scnet-matrix-20261025T134821Z

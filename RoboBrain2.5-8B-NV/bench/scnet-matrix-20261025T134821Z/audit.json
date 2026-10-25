@@ -1,0 +1,116 @@
+{
+  "complete": true,
+  "workloads": [
+    {
+      "round": 1,
+      "input": 4096,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 50932,
+      "retokenized_tokens": 5315
+    },
+    {
+      "round": 1,
+      "input": 4096,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 101932,
+      "retokenized_tokens": 12262
+    },
+    {
+      "round": 1,
+      "input": 4096,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 814784,
+      "retokenized_tokens": 107654
+    },
+    {
+      "round": 1,
+      "input": 16384,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 154656,
+      "retokenized_tokens": 7470
+    },
+    {
+      "round": 1,
+      "input": 16384,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 309038,
+      "retokenized_tokens": 12928
+    },
+    {
+      "round": 1,
+      "input": 16384,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 2469946,
+      "retokenized_tokens": 113010
+    },
+    {
+      "round": 2,
+      "input": 4096,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 50932,
+      "retokenized_tokens": 5315
+    },
+    {
+      "round": 2,
+      "input": 4096,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 101932,
+      "retokenized_tokens": 12262
+    },
+    {
+      "round": 2,
+      "input": 4096,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 814784,
+      "retokenized_tokens": 107654
+    },
+    {
+      "round": 2,
+      "input": 16384,
+      "concurrency": 1,
+      "completed": 8,
+      "generated_tokens": 8192,
+      "actual_input_tokens": 154656,
+      "retokenized_tokens": 7470
+    },
+    {
+      "round": 2,
+      "input": 16384,
+      "concurrency": 8,
+      "completed": 16,
+      "generated_tokens": 16384,
+      "actual_input_tokens": 309038,
+      "retokenized_tokens": 12928
+    },
+    {
+      "round": 2,
+      "input": 16384,
+      "concurrency": 64,
+      "completed": 128,
+      "generated_tokens": 131072,
+      "actual_input_tokens": 2469946,
+      "retokenized_tokens": 113010
+    }
+  ],
+  "official_scnet_validation": false,
+  "execution_platform": "SCNet Notebook",
+  "token_note": "Input settings describe text plus a separate 1080p image; actual input totals include vision/template tokens. Fixed decode length uses server generated tokens; re-tokenized visible output is recorded separately."
+}

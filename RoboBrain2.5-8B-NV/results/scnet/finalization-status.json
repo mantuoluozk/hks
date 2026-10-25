@@ -1,0 +1,9 @@
+{
+  "stage": "report-ready-for-review",
+  "updated_at": "2026-10-25T16:01:35.327883+00:00",
+  "execution_platform": "SCNet Notebook",
+  "official_acceptance_passed": null,
+  "same_service_concurrency_exit": 0,
+  "github_published": false,
+  "sourcefind_published": false
+}

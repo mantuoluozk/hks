@@ -1,0 +1,11 @@
+{
+  "model_id": "BAAI/RoboBrain2.5-8B-NV",
+  "execution_platform": "SCNet Notebook",
+  "status": "official_reference_missing",
+  "official_accuracy_pass": null,
+  "required_consistency_percent": 98,
+  "required": "Official image/depth inputs, per-case GPU outputs and parser/comparison protocol.",
+  "functional_passed": 8,
+  "functional_total": 8,
+  "functional_checks_are_not_accuracy": true
+}

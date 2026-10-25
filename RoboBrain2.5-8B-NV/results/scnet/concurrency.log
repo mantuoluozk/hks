@@ -1,0 +1,9 @@
+{
+  "purpose": "local concurrent versus serial response consistency, not official GPU accuracy",
+  "workers": 4,
+  "requests": 24,
+  "exact_matches": 24,
+  "errors": 0,
+  "official_accuracy_pass": null,
+  "official_scnet_validation": false
+}

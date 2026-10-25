@@ -1,0 +1,7 @@
+{
+  "relative_framework_path": "sglang/srt/batch_invariant_ops/batch_invariant_ops.py",
+  "before_sha256": "9a9fdb89d84f8c392ae9a46f46c0a846b332e78f4ae77c24f240f8db55e6a6e4",
+  "after_sha256": "9668a00e1f8d068d3528c5f6fea55b7ec6994259ebf42fc2edf031525aa87a1b",
+  "reason": "Fit MM/BMM staging to 64 KiB LDS; IEEE FP32 input precision avoids the observed ~7.7e-4 relative FP32 BMM error",
+  "scope": "model-specific deterministic inference; replayed only when enabled"
+}

@@ -1,0 +1,26 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+SHA256 OK chat_template.json
+SHA256 OK config.json
+SHA256 OK configuration.json
+SHA256 OK generation_config.json
+SHA256 OK merges.txt
+SHA256 OK model-00001-of-00002.safetensors
+SHA256 OK model-00002-of-00002.safetensors
+SHA256 OK model.safetensors.index.json
+SHA256 OK preprocessor_config.json
+SHA256 OK tokenizer.json
+SHA256 OK tokenizer_config.json
+SHA256 OK video_preprocessor_config.json
+SHA256 OK vocab.json
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Pinned deterministic HIP MM/BMM patch verified
+python -m sglang.launch_server --model-path /root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV --served-model-name robobrain25-8b --host 127.0.0.1 --port 30125 --tp-size 1 --dtype bfloat16 --context-length 32768 --mem-fraction-static 0.75 --max-running-requests 64 --chunked-prefill-size 4096 --attention-backend triton --mm-attention-backend sdpa --cuda-graph-backend-decode full --cuda-graph-backend-prefill disabled --cuda-graph-max-bs-decode 32 --enable-multimodal --enable-deterministic-inference 
+Ready after 190s; PID=12078; log=/root/private_data/hks/models/RoboBrain2.5-8B-NV/results/scnet/runtime/server-20261025T134456Z.log
