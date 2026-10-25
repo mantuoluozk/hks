@@ -1,0 +1,19 @@
+{
+  "MODEL_ID": "BAAI/Recon2Reason-Reasoning-4B",
+  "MODEL_PATH": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+  "SERVED_NAME": "recon2reason-4b",
+  "IMAGE": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter@sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+  "FRAMEWORK": "sglang",
+  "CARD": "BW",
+  "PRECISION": "bf16",
+  "HIP_VISIBLE_DEVICES": "0",
+  "HOST": "127.0.0.1",
+  "PORT": "30123",
+  "TP": "1",
+  "MAX_LEN": "32768",
+  "MEM_FRAC": "0.70",
+  "MAX_RUNNING_REQUESTS": "64",
+  "DECODE_GRAPH_BACKEND": "full",
+  "DECODE_GRAPH_MAX_BS": "32",
+  "SERVER_RUN_ID": "20261025T104336Z"
+}

@@ -1,0 +1,4 @@
+profile=matrix
+image_resolution=1080p
+execution_platform=SCNet Notebook
+official_acceptance=not_determined

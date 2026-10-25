@@ -1,0 +1,14 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "recon2reason-4b",
+      "object": "model",
+      "created": 1792925169,
+      "owned_by": "sglang",
+      "root": "recon2reason-4b",
+      "parent": null,
+      "max_model_len": 32768
+    }
+  ]
+}

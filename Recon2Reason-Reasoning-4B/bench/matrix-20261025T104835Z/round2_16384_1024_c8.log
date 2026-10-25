@@ -1,0 +1,79 @@
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+INFO 10-25 19:16:35 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-25 19:16:35 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-25 19:16:35 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-25 19:16:35 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+benchmark_args=Namespace(backend='sglang', base_url=None, host='127.0.0.1', port=30123, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B', served_model_name='recon2reason-4b', tokenizer='/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B', num_prompts=16, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=16384, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=8, output_file='bench/matrix-20261025T104835Z/round2.jsonl', output_details=False, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body=None, apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+Waiting up to 60s for http://127.0.0.1:30123/v1/models to become ready...
+Server ready in 0.0s.
+Namespace(backend='sglang', base_url=None, host='127.0.0.1', port=30123, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B', served_model_name='recon2reason-4b', tokenizer='/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B', num_prompts=16, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=16384, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=8, output_file='bench/matrix-20261025T104835Z/round2.jsonl', output_details=False, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body=None, apply_chat_template=True, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+
+#Input tokens: 276912
+#Output tokens: 16384
+#Total images: 16
+#Images per request: 1 (fixed)
+
+=== Token Breakdown (per request avg / total) ===
+  Raw text prompt tokens (without overhead): avg=16384.0, total=262144
+  Text prompt tokens (with chat template): avg=17260.0, total=276160
+  Text prompt overhead: avg=876.0, total=14016
+  Vision tokens: avg=47.0, total=752
+
+Created 16 random jpeg images with average 2089731 bytes per request
+Starting warmup with 1 sequences...
+Warmup completed with 1 sequences. Starting main benchmark run...
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:00<00:03,  4.57it/s] 12%|█▎        | 2/16 [00:01<00:08,  1.63it/s] 19%|█▉        | 3/16 [00:35<03:27, 15.94s/it] 25%|██▌       | 4/16 [00:36<02:02, 10.23s/it] 31%|███▏      | 5/16 [00:36<01:12,  6.58s/it] 38%|███▊      | 6/16 [00:38<00:48,  4.87s/it] 44%|████▍     | 7/16 [00:38<00:29,  3.31s/it] 50%|█████     | 8/16 [00:39<00:19,  2.50s/it] 62%|██████▎   | 10/16 [00:40<00:09,  1.53s/it] 69%|██████▉   | 11/16 [01:06<00:39,  7.81s/it] 75%|███████▌  | 12/16 [01:07<00:24,  6.12s/it] 88%|████████▊ | 14/16 [01:08<00:07,  3.63s/it]100%|██████████| 16/16 [01:08<00:00,  2.29s/it]100%|██████████| 16/16 [01:08<00:00,  4.31s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 sglang    
+Traffic request rate:                    inf       
+Max request concurrency:                 8         
+Successful requests:                     16        
+Benchmark duration (s):                  68.94     
+Total input tokens:                      276912    
+Total input text tokens:                 276160    
+Total input vision tokens:               752       
+Total generated tokens:                  16384     
+Total generated tokens (retokenized):    1289      
+Request throughput (req/s):              0.23      
+Input token throughput (tok/s):          4016.63   
+Output token throughput (tok/s):         237.65    
+Peak output token throughput (tok/s):    264.00    
+Peak concurrent requests:                10        
+Total token throughput (tok/s):          4254.29   
+Concurrency:                             7.08      
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   30493.16  
+Median E2E Latency (ms):                 33238.25  
+P90 E2E Latency (ms):                    39076.04  
+P95 E2E Latency (ms):                    39133.22  
+P99 E2E Latency (ms):                    39195.13  
+---------------Time to First Token----------------
+Mean TTFT (ms):                          2551.70   
+Median TTFT (ms):                        1895.40   
+P90 TTFT (ms):                           5247.80   
+P95 TTFT (ms):                           5456.59   
+P99 TTFT (ms):                           5564.03   
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          27.31     
+Median TPOT (ms):                        31.23     
+P90 TPOT (ms):                           33.44     
+P95 TPOT (ms):                           33.54     
+P99 TPOT (ms):                           33.55     
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           31.13     
+Median ITL (ms):                         31.03     
+P90 ITL (ms):                            32.18     
+P95 ITL (ms):                            32.68     
+P99 ITL (ms):                            51.17     
+Max ITL (ms):                            779.27    
+==================================================
+Validated completed requests and fixed output token count: bench/matrix-20261025T104835Z/round2.jsonl

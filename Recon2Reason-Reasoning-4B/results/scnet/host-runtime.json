@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-10-25T11:16:26.655457+00:00",
+  "os_release": {
+    "PRETTY_NAME": "\"Ubuntu 22.04.5 LTS\"",
+    "NAME": "\"Ubuntu\"",
+    "VERSION_ID": "\"22.04\"",
+    "VERSION": "\"22.04.5 LTS (Jammy Jellyfish)\"",
+    "VERSION_CODENAME": "jammy",
+    "ID": "ubuntu",
+    "ID_LIKE": "debian",
+    "HOME_URL": "\"https://www.ubuntu.com/\"",
+    "SUPPORT_URL": "\"https://help.ubuntu.com/\"",
+    "BUG_REPORT_URL": "\"https://bugs.launchpad.net/ubuntu/\"",
+    "PRIVACY_POLICY_URL": "\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"",
+    "UBUNTU_CODENAME": "jammy"
+  },
+  "driver_version": "6.3.31-V1.5.3.beta"
+}

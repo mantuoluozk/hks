@@ -1,0 +1,9 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+health: 
+{"case": "text", "seconds": 0.071, "answer": "5", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 21, "total_tokens": 23, "completion_tokens": 2, "prompt_tokens_details": null, "reasoning_tokens": 0}}
+{"case": "single_image", "seconds": 0.326, "answer": "red", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 75, "total_tokens": 77, "completion_tokens": 2, "prompt_tokens_details": {"cached_tokens": 0, "image_tokens": 48}, "reasoning_tokens": 0}}
+{"case": "multi_image", "seconds": 0.3, "answer": "red, blue", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 134, "total_tokens": 138, "completion_tokens": 4, "prompt_tokens_details": {"cached_tokens": 0, "image_tokens": 96}, "reasoning_tokens": 0}}
+{"case": "multi_turn", "seconds": 0.118, "answer": "blue", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 104, "total_tokens": 106, "completion_tokens": 2, "prompt_tokens_details": {"cached_tokens": 0, "image_tokens": 48}, "reasoning_tokens": 0}}
+{"case": "stream_image", "seconds": 0.096, "answer": "red", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": null}
+Artifacts: /root/private_data/hks/models/Recon2Reason-Reasoning-4B/results/smoke-20261025T104608Z

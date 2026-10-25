@@ -1,0 +1,12 @@
+{
+  "execution_platform": "SCNet Notebook",
+  "functional_pass": true,
+  "functional_cases": 5,
+  "performance_rounds_complete": 12,
+  "performance_requests_complete": 608,
+  "ocrbench": 463,
+  "mmmu_correct": 437,
+  "mmmu_count": 900,
+  "baseline_tolerance_pass": null,
+  "official_acceptance_passed": null
+}

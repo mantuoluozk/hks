@@ -1,0 +1,386 @@
+[
+  {
+    "repo": "echo840/OCRBench",
+    "revision": "92a54bd1384387c178d5a07140a2d85e0a3d12e1",
+    "files": [
+      {
+        "type": "file",
+        "oid": "7da03b7d73c5978bd84596d8d9db7147f175772f",
+        "size": 67576988,
+        "lfs": {
+          "oid": "d9cc9f488e5310143d8d89956c19d0bdfd71e7089025da5202643f73720df7f5",
+          "size": 67576988,
+          "pointerSize": 133
+        },
+        "xetHash": "0d440c32732605248d49554a2fa555c69a042103b86a3ddcd8f5f11a3e060242",
+        "path": "data/test-00000-of-00001.parquet"
+      }
+    ]
+  },
+  {
+    "repo": "MMMU/MMMU",
+    "revision": "876ce5cb130f7f7e290ce4d9984357737d4db5cf",
+    "files": [
+      {
+        "type": "file",
+        "oid": "ddb9798b665c7132603ab466dd1593ebc75ff884",
+        "size": 1535386,
+        "lfs": {
+          "oid": "f1bedfc8ad70d24f8c1daa50a309d9b3b88ea14caea60299b648c69049fa870f",
+          "size": 1535386,
+          "pointerSize": 132
+        },
+        "xetHash": "071b2fb8e90a3efe19114de3089b7b9c2748a710fb53ee5877cd1af12389d7ee",
+        "path": "Accounting/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "96d08c8514b1f86ce1383318cc479a0684a9f6c4",
+        "size": 119223107,
+        "lfs": {
+          "oid": "f95765c549ebaeedd89c14bfe39d1deefcb9ec6b8b082f5945ffc547f2c4e20c",
+          "size": 119223107,
+          "pointerSize": 134
+        },
+        "xetHash": "926ad760a25a0454777aa8d7cb9b840a2b05a0de07480fa166e05af2537a20e6",
+        "path": "Agriculture/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "777e35c6c672d894bf12fc2dfb6c7eef528252c1",
+        "size": 726950,
+        "lfs": {
+          "oid": "09792c72c949565ba9378366562818d9687eba5b4f6fc3e84482a8862cf4dd9c",
+          "size": 726950,
+          "pointerSize": 131
+        },
+        "xetHash": "70ee40db805d206272609cbe94c98c3b30f05a283d0a0929b39cfbebe05e3711",
+        "path": "Architecture_and_Engineering/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "18ab12719e73c005bfa978e3d4c4e84741fec7cd",
+        "size": 29939738,
+        "lfs": {
+          "oid": "d86be1080d7a33a76e9b98f0df0d7ebacbd37b1c29927bbf592489cc4b996c57",
+          "size": 29939738,
+          "pointerSize": 133
+        },
+        "xetHash": "10b5a813e90592e31096b4ebb4b8af49a044485f08dca6817824ecff15d250bd",
+        "path": "Art/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "a38cdf6dae1475718438160b9b35a3502575771e",
+        "size": 29783856,
+        "lfs": {
+          "oid": "ba4e709ace78695df3b2ed8859e7cfb36e3cd9c60abd5a0fade9800653b695d6",
+          "size": 29783856,
+          "pointerSize": 133
+        },
+        "xetHash": "028e904a130ae5b98190f8fc7acd8a63f0e9267f987f482fc15d3588fe70de8b",
+        "path": "Art_Theory/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "ddbc21b4f8715a6643b3461d04e2982c7bf75102",
+        "size": 4131430,
+        "lfs": {
+          "oid": "577102f6f742471a947a82579df0ffa8b7bfd1b10dc2eadbf90f9ea5ff0cddd4",
+          "size": 4131430,
+          "pointerSize": 132
+        },
+        "xetHash": "b0244d2644ffb86fcfc94be755e0f1ca890dbf68ab342562c9db9e78db80806e",
+        "path": "Basic_Medical_Science/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "28c54b84c50e88e2c65b8e63e671b0cfc0e5bb04",
+        "size": 8494798,
+        "lfs": {
+          "oid": "644e5b10eb90689a0e41a7c738526113551f59ab5e66c44a870e6bca52d39e08",
+          "size": 8494798,
+          "pointerSize": 132
+        },
+        "xetHash": "0dbe4f62a504b0cc0425ac9e61916c4e21cc16c1aced5a0db57bec3a72bee214",
+        "path": "Biology/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "0dad849856bf82f73b42c2f053d5d479129e41cb",
+        "size": 1522870,
+        "lfs": {
+          "oid": "ff62af1b99c6f60d2b2228bf438152d9e44c06e42455d5eb5e229954aa95b00b",
+          "size": 1522870,
+          "pointerSize": 132
+        },
+        "xetHash": "4623e180d82dd71bf0acb2f5f404ad4752db6e7f3d8426e1435137217213e5f2",
+        "path": "Chemistry/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "f7dc4b4653434c1ab801b37de9f45410f76f14c3",
+        "size": 10888251,
+        "lfs": {
+          "oid": "2c3d29a6c838e279974731ea92fa459e15107f9213970a9a4f9312c1f102bd58",
+          "size": 10888251,
+          "pointerSize": 133
+        },
+        "xetHash": "35bc86a0bdea96134c7caf89f75bb0b500b68df0e5a095f3b566ab7c085209a8",
+        "path": "Clinical_Medicine/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "303e8f14df456affa4866147fc519465ae830b1a",
+        "size": 2078701,
+        "lfs": {
+          "oid": "73c8ef8ba23a050b85c524363614801cdc73db36ad7a7348643006766da037f5",
+          "size": 2078701,
+          "pointerSize": 132
+        },
+        "xetHash": "0af2871a7e3fb1ba4c3316081d680e88da738062ee17e957adfe336719a65830",
+        "path": "Computer_Science/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "ecf0f3e4ed332e96689b258d0f887b2c99994bd7",
+        "size": 16227878,
+        "lfs": {
+          "oid": "c69b48ecde9ad80bb8b530dec4da99ae051b17f90abefd2b98230313580c5b7f",
+          "size": 16227878,
+          "pointerSize": 133
+        },
+        "xetHash": "a7fe218a67cfccb21babf7c2e3181a87fcae31d874005cbcb0b281c5f0ed650a",
+        "path": "Design/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "4908c8c7712cacebb0a2106dc116786e64fed01f",
+        "size": 37089865,
+        "lfs": {
+          "oid": "cefb7363510a05284dd8a0b12cb7cc7f20843c65d6b7101eefe3929d4061a592",
+          "size": 37089865,
+          "pointerSize": 133
+        },
+        "xetHash": "dca402258cc3eafc1f368680eb28ff808710269425dcfbde66e9dd816e290253",
+        "path": "Diagnostics_and_Laboratory_Medicine/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "f292e65c4f7ceb733fd5502b3e357595bc2c0293",
+        "size": 1424097,
+        "lfs": {
+          "oid": "1a6b0ef6edf3eb76f2fae37cbff28d6723eec4bd94d4b3d6e676aa4ea924d95b",
+          "size": 1424097,
+          "pointerSize": 132
+        },
+        "xetHash": "45e7c22b13d606dc0cd54222283aab4523c73e4f9eeece85d5742fd89b62f13b",
+        "path": "Economics/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "b77a5f50dbcea30810e657c04db3e01abc4ec94a",
+        "size": 644538,
+        "lfs": {
+          "oid": "558d6970c95c9961c63da8b1ebd7a885524059a83838fa67e6be8c6522a536ba",
+          "size": 644538,
+          "pointerSize": 131
+        },
+        "xetHash": "4a02d619f89bc6fc217d9df838854586e7e4870bc2e996552d9be7819ad86214",
+        "path": "Electronics/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "5fcfc95c6028df87bf2967df3eff7774e25148d6",
+        "size": 1646107,
+        "lfs": {
+          "oid": "46f8d320be746b990145c4e2bf6b88fc493f0e8e322759ee2a9e2fcc8ee404b5",
+          "size": 1646107,
+          "pointerSize": 132
+        },
+        "xetHash": "7e02a80222336be15d15dccf2674e2faf5bd55de7c70af63575354593805079e",
+        "path": "Energy_and_Power/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "a96239b984c7345e43791ca1bf448826cb535ce0",
+        "size": 1073434,
+        "lfs": {
+          "oid": "75c773f16c39b60ff7ff2ad8dd9fc82986418cc4bee9864c10ec4098adefc555",
+          "size": 1073434,
+          "pointerSize": 132
+        },
+        "xetHash": "bbc3fc89835290362ac952c41216c9b8cb04980cebc73614295de02f77b7f7c2",
+        "path": "Finance/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "8282972fa2a249efb023c7f9c675ad5d05f1cc82",
+        "size": 6677774,
+        "lfs": {
+          "oid": "536505f8dc6199713effcd7cf9b8ae2da2325e51ec17d0fcfabc75956965701c",
+          "size": 6677774,
+          "pointerSize": 132
+        },
+        "xetHash": "f031b18df61a10755c9d50dedc22b8388f43205fddb7ee8c4849bd28e24f9834",
+        "path": "Geography/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "4d24d61881c5432a50e7853a1e78f8320f3cbeda",
+        "size": 8430352,
+        "lfs": {
+          "oid": "fe6ba5fa13133d43afbd63abfe75b49ac45c5de566ac896fbc370cb1492c8f82",
+          "size": 8430352,
+          "pointerSize": 132
+        },
+        "xetHash": "80993dfd53670d291556d1cd8f66b9b4a2cbf7b0d9b1222d0c59654ad6ad689e",
+        "path": "History/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "2c1823b62bba3a12c3d48653cac2e5b4184ffdc5",
+        "size": 14246788,
+        "lfs": {
+          "oid": "3ad02815b3af320c574b254c7a2134f31288a360c0168035ee051c8946cb8b1b",
+          "size": 14246788,
+          "pointerSize": 133
+        },
+        "xetHash": "1c9ea3329a0c6304955111ef1401c8a7837ae3f5680320d403afde1e38bed62c",
+        "path": "Literature/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "81a93e73e959884d9af1bd49767880f32ede0281",
+        "size": 3139783,
+        "lfs": {
+          "oid": "838ecee5c3c9708b3fb70e414b83bfee35725814290908a853b24d06bbd832fe",
+          "size": 3139783,
+          "pointerSize": 132
+        },
+        "xetHash": "3805930ee7cb61d9cec0f77efeb600139fb76f2f9cdf7e2ea64278d3dfb264c4",
+        "path": "Manage/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "c067f6ff6ab75f9d3a72c2b070c77746f6400a47",
+        "size": 1361340,
+        "lfs": {
+          "oid": "0b4854d8a509e8e0f401255d5788fd83e489e4d5d5207826856dcffa1157feb2",
+          "size": 1361340,
+          "pointerSize": 132
+        },
+        "xetHash": "7dab924ee3ce07fa95494b650c36ec3d486f58aacd4f30b374f08ed0ec24714b",
+        "path": "Marketing/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "6d71f7e6ea2e515eecd17564091f1bb45bb3c4b8",
+        "size": 2309857,
+        "lfs": {
+          "oid": "6881364f70c6911f0610005ad5aaf10f4394a7f578ead566e528b574da534e54",
+          "size": 2309857,
+          "pointerSize": 132
+        },
+        "xetHash": "d634530b43e7addae3f45187b0859ea99c27623035739b839a679fce45c70fe3",
+        "path": "Materials/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "c787080f308992c20bdbe46243ec4f3983523a90",
+        "size": 1447995,
+        "lfs": {
+          "oid": "ebe73665a3b1db2bfd33ae67a00efcf86b6d817463a12d995e30716d69aae8e7",
+          "size": 1447995,
+          "pointerSize": 132
+        },
+        "xetHash": "6232528f57f574b3d315d1e35bf14dccac0d3190233167c6ec79e52c4768d406",
+        "path": "Math/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "6883c2d9a067b572845fb59c6b93c43c8b7dec5e",
+        "size": 876772,
+        "lfs": {
+          "oid": "8381e04c04dc8e0b3a21404e251a1fc2deb52d3f5b2485e5e8bc99e4907d21d7",
+          "size": 876772,
+          "pointerSize": 131
+        },
+        "xetHash": "43f15c2e7c16f7f8040255ad269cecae56f4f0d7b4a62019fae82b15f3a6a46d",
+        "path": "Mechanical_Engineering/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "0ce83230935cc90eccc1b2ba0f0c30414ef36362",
+        "size": 9363650,
+        "lfs": {
+          "oid": "132f8e3965276788f1b5388c39565d5475b8eb61af3142522be446e9a131af8f",
+          "size": 9363650,
+          "pointerSize": 132
+        },
+        "xetHash": "b647c89949790fbdccc9b2f3f786eab48473cba65695a32e474b3da84d03f93a",
+        "path": "Music/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "2ff67ad605bad65050c811bbb58dd9c205817393",
+        "size": 1551086,
+        "lfs": {
+          "oid": "93bc3de041d8f69b9e7cd29886ad68f26ac5b11bdf221cabb5f84b8b8d8ca6a9",
+          "size": 1551086,
+          "pointerSize": 132
+        },
+        "xetHash": "d1f907f5ed2e1a305ab466388360cda92a61ec675b6711dfbe9d2aebd1ac3671",
+        "path": "Pharmacy/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "e4202e18b568281de35633ed5b1a60967c48a814",
+        "size": 1117086,
+        "lfs": {
+          "oid": "649a7c85ae9f1aa0762059eca0c082e3862f669f07a1283c36ada31def2c391d",
+          "size": 1117086,
+          "pointerSize": 132
+        },
+        "xetHash": "7a356c9a1b1adb178c0e3eb0cf35d9b749b14df72124b826a76107e3724eae65",
+        "path": "Physics/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "71067247c65d3cd068883678784703ebdf5f1902",
+        "size": 4311520,
+        "lfs": {
+          "oid": "16101fe448e07ce654d95b5ef5793988fb6e7f5fe42b94575c33c9ffbd4ad919",
+          "size": 4311520,
+          "pointerSize": 132
+        },
+        "xetHash": "0ed7fc93ad57d6f954535dbebdc1890d77f3e5a58e1f358a834f931fd44275ea",
+        "path": "Psychology/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "0c6e8482a56ed1fc7ab0a7dd8b96fd400f785b06",
+        "size": 1510182,
+        "lfs": {
+          "oid": "c8525f7af4a47ffd3c2959816147911203782c8e1116267f4e6e54026ef0f923",
+          "size": 1510182,
+          "pointerSize": 132
+        },
+        "xetHash": "88db69ef59d84d77813281f83036f644b31cbd51dae79a0e57ed25a9bf012d36",
+        "path": "Public_Health/validation-00000-of-00001.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "53ceff353128f607867eb67b599bb8173769d8c4",
+        "size": 18459557,
+        "lfs": {
+          "oid": "a38e31036b6cfb6df82c069f2715b8df0158969405e86a08c1732c334638ac32",
+          "size": 18459557,
+          "pointerSize": 133
+        },
+        "xetHash": "07848d27c10d59fb2a59fd66cd5997144e60c1c9ea39e448843bb0bb1c21279e",
+        "path": "Sociology/validation-00000-of-00001.parquet"
+      }
+    ]
+  }
+]

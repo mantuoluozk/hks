@@ -1,0 +1,273 @@
+{
+  "model": "BAAI/Recon2Reason-Reasoning-4B",
+  "hardware": "SCNet BW 64GB / 80 CU",
+  "execution_platform": "SCNet Notebook",
+  "purpose": "public zero-shot self-evaluation with original released processor",
+  "official_scnet_validation": false,
+  "official_gpu_baseline_received": false,
+  "baseline_tolerance_pass": null,
+  "datasets": {
+    "ocrbench": {
+      "dataset": "ocrbench",
+      "created_at": "2026-10-25T11:54:04.818821+00:00",
+      "count": 1000,
+      "full_dataset": true,
+      "correct": 463,
+      "strict_correct": 463,
+      "errors": 0,
+      "truncated": 9,
+      "random_fallbacks": 0,
+      "categories": {
+        "Regular Text Recognition": {
+          "count": 50,
+          "correct": 49,
+          "strict_correct": 49
+        },
+        "Irregular Text Recognition": {
+          "count": 50,
+          "correct": 36,
+          "strict_correct": 36
+        },
+        "Artistic Text Recognition": {
+          "count": 50,
+          "correct": 45,
+          "strict_correct": 45
+        },
+        "Handwriting Recognition": {
+          "count": 50,
+          "correct": 32,
+          "strict_correct": 32
+        },
+        "Digit String Recognition": {
+          "count": 50,
+          "correct": 36,
+          "strict_correct": 36
+        },
+        "Non-Semantic Text Recognition": {
+          "count": 50,
+          "correct": 37,
+          "strict_correct": 37
+        },
+        "Scene Text-centric VQA": {
+          "count": 200,
+          "correct": 115,
+          "strict_correct": 115
+        },
+        "Doc-oriented VQA": {
+          "count": 200,
+          "correct": 33,
+          "strict_correct": 33
+        },
+        "Key Information Extraction": {
+          "count": 200,
+          "correct": 41,
+          "strict_correct": 41
+        },
+        "Handwritten Mathematical Expression Recognition": {
+          "count": 100,
+          "correct": 39,
+          "strict_correct": 39
+        }
+      },
+      "official_scnet_validation": false,
+      "baseline_tolerance_pass": null,
+      "accuracy": 0.463,
+      "strict_accuracy": 0.463,
+      "complete": true,
+      "artifact_directory": "results/scnet/public-accuracy-20261025T115032Z/ocrbench",
+      "dataset_revision": "92a54bd1384387c178d5a07140a2d85e0a3d12e1",
+      "generation": {
+        "temperature": 0,
+        "top_p": 1,
+        "max_tokens": 2048
+      }
+    },
+    "mmmu": {
+      "dataset": "mmmu",
+      "created_at": "2026-10-25T11:56:45.787362+00:00",
+      "count": 900,
+      "full_dataset": true,
+      "correct": 437,
+      "strict_correct": 437,
+      "errors": 0,
+      "truncated": 0,
+      "random_fallbacks": 0,
+      "categories": {
+        "Accounting": {
+          "count": 30,
+          "correct": 11,
+          "strict_correct": 11
+        },
+        "Agriculture": {
+          "count": 30,
+          "correct": 13,
+          "strict_correct": 13
+        },
+        "Architecture_and_Engineering": {
+          "count": 30,
+          "correct": 10,
+          "strict_correct": 10
+        },
+        "Art": {
+          "count": 30,
+          "correct": 17,
+          "strict_correct": 17
+        },
+        "Art_Theory": {
+          "count": 30,
+          "correct": 21,
+          "strict_correct": 21
+        },
+        "Basic_Medical_Science": {
+          "count": 30,
+          "correct": 19,
+          "strict_correct": 19
+        },
+        "Biology": {
+          "count": 30,
+          "correct": 12,
+          "strict_correct": 12
+        },
+        "Chemistry": {
+          "count": 30,
+          "correct": 10,
+          "strict_correct": 10
+        },
+        "Clinical_Medicine": {
+          "count": 30,
+          "correct": 18,
+          "strict_correct": 18
+        },
+        "Computer_Science": {
+          "count": 30,
+          "correct": 14,
+          "strict_correct": 14
+        },
+        "Design": {
+          "count": 30,
+          "correct": 24,
+          "strict_correct": 24
+        },
+        "Diagnostics_and_Laboratory_Medicine": {
+          "count": 30,
+          "correct": 10,
+          "strict_correct": 10
+        },
+        "Economics": {
+          "count": 30,
+          "correct": 14,
+          "strict_correct": 14
+        },
+        "Electronics": {
+          "count": 30,
+          "correct": 10,
+          "strict_correct": 10
+        },
+        "Energy_and_Power": {
+          "count": 30,
+          "correct": 11,
+          "strict_correct": 11
+        },
+        "Finance": {
+          "count": 30,
+          "correct": 10,
+          "strict_correct": 10
+        },
+        "Geography": {
+          "count": 30,
+          "correct": 17,
+          "strict_correct": 17
+        },
+        "History": {
+          "count": 30,
+          "correct": 18,
+          "strict_correct": 18
+        },
+        "Literature": {
+          "count": 30,
+          "correct": 23,
+          "strict_correct": 23
+        },
+        "Manage": {
+          "count": 30,
+          "correct": 14,
+          "strict_correct": 14
+        },
+        "Marketing": {
+          "count": 30,
+          "correct": 15,
+          "strict_correct": 15
+        },
+        "Materials": {
+          "count": 30,
+          "correct": 10,
+          "strict_correct": 10
+        },
+        "Math": {
+          "count": 30,
+          "correct": 11,
+          "strict_correct": 11
+        },
+        "Mechanical_Engineering": {
+          "count": 30,
+          "correct": 11,
+          "strict_correct": 11
+        },
+        "Music": {
+          "count": 30,
+          "correct": 8,
+          "strict_correct": 8
+        },
+        "Pharmacy": {
+          "count": 30,
+          "correct": 18,
+          "strict_correct": 18
+        },
+        "Physics": {
+          "count": 30,
+          "correct": 12,
+          "strict_correct": 12
+        },
+        "Psychology": {
+          "count": 30,
+          "correct": 20,
+          "strict_correct": 20
+        },
+        "Public_Health": {
+          "count": 30,
+          "correct": 15,
+          "strict_correct": 15
+        },
+        "Sociology": {
+          "count": 30,
+          "correct": 21,
+          "strict_correct": 21
+        }
+      },
+      "official_scnet_validation": false,
+      "baseline_tolerance_pass": null,
+      "accuracy": 0.4855555555555556,
+      "strict_accuracy": 0.4855555555555556,
+      "complete": true,
+      "artifact_directory": "results/scnet/public-accuracy-20261025T115032Z/mmmu",
+      "dataset_revision": "876ce5cb130f7f7e290ce4d9984357737d4db5cf",
+      "generation": {
+        "temperature": 0,
+        "top_p": 1,
+        "max_tokens": 2048
+      }
+    }
+  },
+  "limits": [
+    "ocrbench: 9 outputs reached max_tokens=2048; included in score",
+    "No official GPU baseline: tolerance cannot be decided.",
+    "Official acceptance and final model image publication pending.",
+    "Original max_pixels=50176; no client-side image resizing or model changes."
+  ],
+  "publisher_baseline_lookup": {
+    "status": "no_numeric_results_found_in_checked_official_sources",
+    "report": "官方精度基线查证.md",
+    "retrieval_record": "sources/baseline-search-20261023/retrieval.json"
+  },
+  "local_evaluation_complete": true
+}

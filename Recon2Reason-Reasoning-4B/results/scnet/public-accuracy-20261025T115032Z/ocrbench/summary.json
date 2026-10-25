@@ -1,0 +1,68 @@
+{
+  "dataset": "ocrbench",
+  "created_at": "2026-10-25T11:54:04.818821+00:00",
+  "count": 1000,
+  "full_dataset": true,
+  "correct": 463,
+  "strict_correct": 463,
+  "errors": 0,
+  "truncated": 9,
+  "random_fallbacks": 0,
+  "categories": {
+    "Regular Text Recognition": {
+      "count": 50,
+      "correct": 49,
+      "strict_correct": 49
+    },
+    "Irregular Text Recognition": {
+      "count": 50,
+      "correct": 36,
+      "strict_correct": 36
+    },
+    "Artistic Text Recognition": {
+      "count": 50,
+      "correct": 45,
+      "strict_correct": 45
+    },
+    "Handwriting Recognition": {
+      "count": 50,
+      "correct": 32,
+      "strict_correct": 32
+    },
+    "Digit String Recognition": {
+      "count": 50,
+      "correct": 36,
+      "strict_correct": 36
+    },
+    "Non-Semantic Text Recognition": {
+      "count": 50,
+      "correct": 37,
+      "strict_correct": 37
+    },
+    "Scene Text-centric VQA": {
+      "count": 200,
+      "correct": 115,
+      "strict_correct": 115
+    },
+    "Doc-oriented VQA": {
+      "count": 200,
+      "correct": 33,
+      "strict_correct": 33
+    },
+    "Key Information Extraction": {
+      "count": 200,
+      "correct": 41,
+      "strict_correct": 41
+    },
+    "Handwritten Mathematical Expression Recognition": {
+      "count": 100,
+      "correct": 39,
+      "strict_correct": 39
+    }
+  },
+  "official_scnet_validation": false,
+  "baseline_tolerance_pass": null,
+  "accuracy": 0.463,
+  "strict_accuracy": 0.463,
+  "complete": true
+}
