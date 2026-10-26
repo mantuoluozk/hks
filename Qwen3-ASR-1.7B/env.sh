@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+export MODEL_ID="Qwen/Qwen3-ASR-1.7B"
+export MODEL_PATH="${MODEL_PATH:-/data1/model/Qwen3-ASR-1.7B}"
+export SERVED_NAME="qwen3-asr-1.7b"
+export IMAGE="${IMAGE:-42.228.13.241:666/jenkins/model_test_env/vllm:0.25.1-ubuntu22.04-dtk26041-py3.10-20261019-0127}"
+export EXPECTED_IMAGE_ID="${EXPECTED_IMAGE_ID-sha256:de141933eaf60e50cdfa90edfc09abf492d7730a2f9ab4b44a199ebf7fd50c6f}"
+export CONTAINER_NAME="zk-Qwen3-ASR-1.7B"
+export FRAMEWORK="vllm"
+export CARD="${CARD:-BW100}"
+export PRECISION="bf16"
+export HIP_VISIBLE_DEVICES="${HIP_VISIBLE_DEVICES:-1}"
+export HOST="127.0.0.1"
+export PORT="${PORT:-30128}"
+export PROJECT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+export HF_HOME="${HF_HOME:-$PROJECT_ROOT/cache/huggingface}"
+export MODELSCOPE_CACHE="${MODELSCOPE_CACHE:-$PROJECT_ROOT/cache/modelscope}"
+export TRITON_CACHE_DIR="${TRITON_CACHE_DIR:-$PROJECT_ROOT/cache/triton}"
+export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$PROJECT_ROOT/cache/xdg}"
+export TORCHINDUCTOR_CACHE_DIR="${TORCHINDUCTOR_CACHE_DIR:-$PROJECT_ROOT/cache/torchinductor}"
+export RUN_RESULTS_DIR="${RUN_RESULTS_DIR:-$PROJECT_ROOT/results}"
+export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
+export PYTHONUNBUFFERED=1
+export TOKENIZERS_PARALLELISM=false

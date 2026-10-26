@@ -1,0 +1,37 @@
+{
+  "python": "3.10.12",
+  "torch": "2.11.0",
+  "execution_platform": "SCNet Notebook",
+  "image": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter@sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+  "extra_package_dir": "/root/private_data/hks/models/Qwen3-ASR-1.7B/cache/python-deps",
+  "hip": "6.3.26113",
+  "packages": {
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "transformers": "5.12.1",
+    "openai": "2.30.0",
+    "soundfile": "0.13.1",
+    "librosa": "0.11.0",
+    "torchaudio": "2.11.0+das.opt1.torch2110.202608231016.gb7ad0c",
+    "qwen-asr": null,
+    "soxr": "1.0.0",
+    "av": "16.1.0",
+    "editdistance": "0.8.1",
+    "pyarrow": "25.0.1"
+  },
+  "devices": [
+    {
+      "logical_device": 0,
+      "name": "BW",
+      "gcn_arch": "gfx936:sramecc+:xnack-",
+      "memory": 68702699520
+    }
+  ],
+  "asr_model_sources": [
+    "model_executor/models/qwen3_asr.py",
+    "model_executor/models/qwen3_asr_forced_aligner.py",
+    "model_executor/models/qwen3_asr_realtime.py",
+    "transformers_utils/configs/qwen3_asr.py",
+    "transformers_utils/processors/qwen3_asr.py"
+  ],
+  "registry_has_qwen3_asr": true
+}

@@ -1,0 +1,55 @@
+{
+  "dependency_directory": "/opt/qwen3-asr-deps",
+  "all_files_match_pinned_wheels": true,
+  "packages": [
+    {
+      "package": "librosa",
+      "version": "0.11.0",
+      "wheel_sha256": "0b6415c4fd68bff4c29288abe67c6d80b587e0e1e2cfb0aad23e4559504a7fa1",
+      "matched_files": 48
+    },
+    {
+      "package": "soxr",
+      "version": "1.0.0",
+      "wheel_sha256": "d255741b2f0084fd02d4a2ddd77cd495be9e7e7b6f9dba1c9494f86afefac65b",
+      "matched_files": 10
+    },
+    {
+      "package": "audioread",
+      "version": "3.1.0",
+      "wheel_sha256": "b30d1df6c5d3de5dcef0fb0e256f6ea17bdcf5f979408df0297d8a408e2971b4",
+      "matched_files": 11
+    },
+    {
+      "package": "lazy-loader",
+      "version": "0.6",
+      "wheel_sha256": "77253be3391b06124a0e16105bd663b6c54470af1a9ca8e1cf026f38d58ed056",
+      "matched_files": 5
+    },
+    {
+      "package": "pooch",
+      "version": "1.9.0",
+      "wheel_sha256": "f265597baa9f760d25ceb29d0beb8186c243d6607b0f60b83ecf14078dbc703b",
+      "matched_files": 38
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.7.2",
+      "wheel_sha256": "7a58814265dfc52b3295b1900cfb5701589d30a8bb026c7540f1e9d3499d5ec8",
+      "matched_files": 955
+    },
+    {
+      "package": "editdistance",
+      "version": "0.8.1",
+      "wheel_sha256": "67d143429a49ab552411505f550a0fb4285a1d4336e096804d233ec495ac20fc",
+      "matched_files": 13
+    },
+    {
+      "package": "openai",
+      "version": "2.30.0",
+      "wheel_sha256": "9a5ae616888eb2748ec5e0c5b955a51592e0b201a11f4262db920f2a78c5231d",
+      "matched_files": 1083
+    }
+  ],
+  "verification": "Wheel payload files, excluding installer-generated RECORD and bytecode."
+}

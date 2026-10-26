@@ -8,6 +8,10 @@
 | RoboBrain2.5-8B-NV | BW × 1 / SGLang 0.5.18 / BF16 | [README](RoboBrain2.5-8B-NV/README.md) | 8/8 Smoke；12 轮、608 请求完成 | 公开 CV-Bench 全量 88.10（参考 94.58，差 -6.48 pt）；官方 GPU 动作/坐标一致率单列未判定 |
 | MiMo-V2.6-Distill-Qwen-9B | BW × 1 / SGLang 0.5.18 / BF16 | [README](MiMo-V2.6-Distill-Qwen-9B/README.md) | 11/11 Smoke；12轮608请求 | 固定公开样本GSM8K 179/200、MMLU 160/200；正式精度待官方代码复验 |
 
+| Qwen3-ASR-1.7B | BW × 1 / vLLM 0.25.1 / BF16 | [README](Qwen3-ASR-1.7B/README.md) | 在线6/6、PCM4/4；性能8项128请求；镜像复验最大偏差7.28% | 完整 test-clean 2620条 WER 1.6501%，零错误零截断；正式精度待官方代码 |
+
 每个模型的配置、启动脚本、精度与性能结果位于对应目录，报告按比赛八章模板组织。
 
 首版作为性能基准；后续优化采用模型专属 tag，保持卡型、框架和负载一致。
+
+Qwen3-ASR 镜像保持私有，仓库地址、版本和摘要待正式提交前补齐。

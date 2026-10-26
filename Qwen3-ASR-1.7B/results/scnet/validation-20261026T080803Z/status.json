@@ -1,0 +1,17 @@
+{
+  "created_at": "20261026T080803Z",
+  "execution_platform": "SCNet Notebook",
+  "artifacts": {
+    "smoke": "results/scnet/validation-20261026T080803Z/smoke",
+    "bench": "results/scnet/validation-20261026T080803Z/bench",
+    "accuracy": "results/scnet/validation-20261026T080803Z/accuracy",
+    "input_streaming": "results/scnet/validation-20261026T080803Z/input-streaming"
+  },
+  "official_accuracy_pass": null,
+  "official_acceptance_passed": null,
+  "stage": "platform_tests_complete",
+  "updated_at": "2026-10-26T08:21:07.026098+00:00",
+  "server_pid": 449,
+  "public_wer_percent": 1.650102777830162,
+  "note": "Image reconstruction and report/publication are tracked separately"
+}

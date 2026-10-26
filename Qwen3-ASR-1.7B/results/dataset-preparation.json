@@ -1,0 +1,12 @@
+{
+  "dataset": "LibriSpeech test-clean",
+  "utterances": 2620,
+  "complete": true,
+  "source_format": "Parquet mirror, extracted without audio resampling",
+  "source_sha256": "7113aa4c3cf963fb54697145719a7725f984c8836d1c494a554cbb9f1a017df0",
+  "source_bytes": 350452636,
+  "revision": "2a4a7918cd87e2f0e315e576b405ae7b7a65d83f",
+  "source_url": "https://modelscope.cn/api/v1/datasets/openslr/librispeech_asr/repo?Revision=2a4a7918cd87e2f0e315e576b405ae7b7a65d83f&FilePath=clean%2Ftest%2F0000.parquet&Source=SDK",
+  "upstream": "https://huggingface.co/datasets/openslr/librispeech_asr/blob/main/clean/test/0000.parquet",
+  "official_competition_subset": false
+}

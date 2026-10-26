@@ -1,0 +1,7 @@
+{
+  "stage": "platform_tests_complete",
+  "input_streaming_completed": 4,
+  "previous_worker_error": "Online server shutdown wait timed out; process subsequently exited. Original status/logs retained.",
+  "official_accuracy_pass": null,
+  "new_image_reproduction_complete": false
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-26",
+  "invalid_recorded_digest": "sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+  "reason": "65 hexadecimal characters; invalid SHA256 digest. A metadata transcription error, not a verified registry digest.",
+  "base_image_tag": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18",
+  "verified_registry_digest": null,
+  "historical_runtime_records": "Preserved as originally generated; the digest field in those records must not be treated as verified.",
+  "correction": "Dockerfile uses the existing tag pending authoritative digest confirmation.",
+  "scnet_expected_image_id_metadata_note": "The fresh SCNet Notebook reproduction started with an explicitly empty unknown digest, but the legacy env.sh default replaced empty strings with the former development image ID. That EXPECTED_IMAGE_ID field does not identify the SCNet image. The IMAGE field records the owner-selected SCNet image page. The shell default now preserves explicit empty values. Confirmed platform image metadata is recorded separately in scnet-image.json."
+}

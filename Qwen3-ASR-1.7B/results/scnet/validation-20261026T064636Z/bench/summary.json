@@ -1,0 +1,116 @@
+{
+  "runtime": {
+    "MODEL_ID": "Qwen/Qwen3-ASR-1.7B",
+    "MODEL_PATH": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+    "SERVED_NAME": "qwen3-asr-1.7b",
+    "IMAGE": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter@sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+    "EXPECTED_IMAGE_ID": "sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+    "HIP_VISIBLE_DEVICES": "0",
+    "PORT": "30128",
+    "ENFORCE_EAGER": "0",
+    "MEM_FRAC": "0.4",
+    "MAX_LEN": "8192",
+    "MAX_NUM_SEQS": "16",
+    "EXECUTION_PLATFORM": "SCNet Notebook",
+    "CARD": "BW",
+    "ASR_EXTRA_DIR": "/root/private_data/hks/models/Qwen3-ASR-1.7B/cache/python-deps"
+  },
+  "fixture_source": "Two official demonstration WAV files, 48kHz English and 16kHz Chinese",
+  "workloads": [
+    {
+      "round": 1,
+      "concurrency": 1,
+      "requests": 8,
+      "wall_seconds": 2.398440141696483,
+      "audio_seconds": 77.02066666666667,
+      "audio_seconds_per_wall_second": 32.112815878818566,
+      "mean_request_rtf": 0.03694785762345061,
+      "mean_latency_seconds": 0.2992176642292179,
+      "max_latency_seconds": 0.4033205830492079
+    },
+    {
+      "round": 2,
+      "concurrency": 1,
+      "requests": 8,
+      "wall_seconds": 2.401388708036393,
+      "audio_seconds": 77.02066666666667,
+      "audio_seconds_per_wall_second": 32.07338587414538,
+      "mean_request_rtf": 0.03709286929059632,
+      "mean_latency_seconds": 0.2996769335004501,
+      "max_latency_seconds": 0.40147715993225574
+    },
+    {
+      "round": 1,
+      "concurrency": 4,
+      "requests": 8,
+      "wall_seconds": 1.4319982486777008,
+      "audio_seconds": 77.02066666666667,
+      "audio_seconds_per_wall_second": 53.78544752955329,
+      "mean_request_rtf": 0.07813051316309791,
+      "mean_latency_seconds": 0.6336235126364045,
+      "max_latency_seconds": 1.081623389851302
+    },
+    {
+      "round": 2,
+      "concurrency": 4,
+      "requests": 8,
+      "wall_seconds": 1.3584280251525342,
+      "audio_seconds": 77.02066666666667,
+      "audio_seconds_per_wall_second": 56.6983787440768,
+      "mean_request_rtf": 0.07418973403538964,
+      "mean_latency_seconds": 0.6014113957062364,
+      "max_latency_seconds": 1.0699025518260896
+    },
+    {
+      "round": 1,
+      "concurrency": 8,
+      "requests": 16,
+      "wall_seconds": 2.405069794971496,
+      "audio_seconds": 154.04133333333334,
+      "audio_seconds_per_wall_second": 64.0485917104784,
+      "mean_request_rtf": 0.13001601856602737,
+      "mean_latency_seconds": 1.0486527056491468,
+      "max_latency_seconds": 1.9101738021709025
+    },
+    {
+      "round": 2,
+      "concurrency": 8,
+      "requests": 16,
+      "wall_seconds": 2.320182519964874,
+      "audio_seconds": 154.04133333333334,
+      "audio_seconds_per_wall_second": 66.39190322650369,
+      "mean_request_rtf": 0.1232824062109791,
+      "mean_latency_seconds": 1.0032955814676825,
+      "max_latency_seconds": 1.7822981872595847
+    },
+    {
+      "round": 1,
+      "concurrency": 16,
+      "requests": 32,
+      "wall_seconds": 4.411128261126578,
+      "audio_seconds": 308.0826666666666,
+      "audio_seconds_per_wall_second": 69.84214659584258,
+      "mean_request_rtf": 0.26053927402919413,
+      "mean_latency_seconds": 1.9670372197579127,
+      "max_latency_seconds": 3.130880957003683
+    },
+    {
+      "round": 2,
+      "concurrency": 16,
+      "requests": 32,
+      "wall_seconds": 4.5031901160255075,
+      "audio_seconds": 308.0826666666666,
+      "audio_seconds_per_wall_second": 68.41431490318219,
+      "mean_request_rtf": 0.25202690686551615,
+      "mean_latency_seconds": 2.008971963208751,
+      "max_latency_seconds": 3.656414425931871
+    }
+  ],
+  "counted_requests": 128,
+  "round_reported": 2,
+  "prefix_caching": false,
+  "mm_processor_cache_gb": 0,
+  "decode": "BF16, greedy, max_tokens=1024, natural EOS, language not specified",
+  "official_performance_protocol": false,
+  "official_accuracy_pass": null
+}

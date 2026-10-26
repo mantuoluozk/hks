@@ -1,0 +1,116 @@
+{
+  "runtime": {
+    "MODEL_ID": "Qwen/Qwen3-ASR-1.7B",
+    "MODEL_PATH": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+    "SERVED_NAME": "qwen3-asr-1.7b",
+    "IMAGE": "https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions",
+    "EXPECTED_IMAGE_ID": "sha256:de141933eaf60e50cdfa90edfc09abf492d7730a2f9ab4b44a199ebf7fd50c6f",
+    "HIP_VISIBLE_DEVICES": "0",
+    "PORT": "30128",
+    "ENFORCE_EAGER": "0",
+    "MEM_FRAC": "0.4",
+    "MAX_LEN": "8192",
+    "MAX_NUM_SEQS": "16",
+    "EXECUTION_PLATFORM": "SCNet Notebook",
+    "CARD": "BW",
+    "ASR_EXTRA_DIR": "/opt/qwen3-asr-deps"
+  },
+  "fixture_source": "Two official demonstration WAV files, 48kHz English and 16kHz Chinese",
+  "workloads": [
+    {
+      "round": 1,
+      "concurrency": 1,
+      "requests": 8,
+      "wall_seconds": 2.403209005948156,
+      "audio_seconds": 77.02066666666667,
+      "audio_seconds_per_wall_second": 32.04909205817458,
+      "mean_request_rtf": 0.036813299393296826,
+      "mean_latency_seconds": 0.299756302672904,
+      "max_latency_seconds": 0.40686890576034784
+    },
+    {
+      "round": 2,
+      "concurrency": 1,
+      "requests": 8,
+      "wall_seconds": 2.392230330966413,
+      "audio_seconds": 77.02066666666667,
+      "audio_seconds_per_wall_second": 32.1961751214616,
+      "mean_request_rtf": 0.03665299181059401,
+      "mean_latency_seconds": 0.29848334251437336,
+      "max_latency_seconds": 0.40452621411532164
+    },
+    {
+      "round": 1,
+      "concurrency": 4,
+      "requests": 8,
+      "wall_seconds": 1.33993098186329,
+      "audio_seconds": 77.02066666666667,
+      "audio_seconds_per_wall_second": 57.4810700768802,
+      "mean_request_rtf": 0.071435228971181,
+      "mean_latency_seconds": 0.5873294054181315,
+      "max_latency_seconds": 0.9827669132500887
+    },
+    {
+      "round": 2,
+      "concurrency": 4,
+      "requests": 8,
+      "wall_seconds": 1.4360258695669472,
+      "audio_seconds": 77.02066666666667,
+      "audio_seconds_per_wall_second": 53.63459551734488,
+      "mean_request_rtf": 0.07757865724634935,
+      "mean_latency_seconds": 0.6380867043044418,
+      "max_latency_seconds": 1.0890724118798971
+    },
+    {
+      "round": 1,
+      "concurrency": 8,
+      "requests": 16,
+      "wall_seconds": 2.506622090935707,
+      "audio_seconds": 154.04133333333334,
+      "audio_seconds_per_wall_second": 61.45375239864364,
+      "mean_request_rtf": 0.1390601702848995,
+      "mean_latency_seconds": 1.1047527350310702,
+      "max_latency_seconds": 1.9844828601926565
+    },
+    {
+      "round": 2,
+      "concurrency": 8,
+      "requests": 16,
+      "wall_seconds": 2.502458939794451,
+      "audio_seconds": 154.04133333333334,
+      "audio_seconds_per_wall_second": 61.555988345601435,
+      "mean_request_rtf": 0.13581059669295426,
+      "mean_latency_seconds": 1.0870100714673754,
+      "max_latency_seconds": 1.9523283313028514
+    },
+    {
+      "round": 1,
+      "concurrency": 16,
+      "requests": 32,
+      "wall_seconds": 4.366666601970792,
+      "audio_seconds": 308.0826666666666,
+      "audio_seconds_per_wall_second": 70.55328348805489,
+      "mean_request_rtf": 0.2430785116655876,
+      "mean_latency_seconds": 1.9506166292121634,
+      "max_latency_seconds": 3.5667812386527658
+    },
+    {
+      "round": 2,
+      "concurrency": 16,
+      "requests": 32,
+      "wall_seconds": 4.474079336039722,
+      "audio_seconds": 308.0826666666666,
+      "audio_seconds_per_wall_second": 68.85945543812578,
+      "mean_request_rtf": 0.2634308700756216,
+      "mean_latency_seconds": 1.9908750656759366,
+      "max_latency_seconds": 3.121401790995151
+    }
+  ],
+  "counted_requests": 128,
+  "round_reported": 2,
+  "prefix_caching": false,
+  "mm_processor_cache_gb": 0,
+  "decode": "BF16, greedy, max_tokens=1024, natural EOS, language not specified",
+  "official_performance_protocol": false,
+  "official_accuracy_pass": null
+}

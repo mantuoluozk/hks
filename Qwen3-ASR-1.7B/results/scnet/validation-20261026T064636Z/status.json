@@ -1,0 +1,15 @@
+{
+  "created_at": "20261026T064636Z",
+  "execution_platform": "SCNet Notebook",
+  "artifacts": {
+    "smoke": "results/scnet/validation-20261026T064636Z/smoke",
+    "bench": "results/scnet/validation-20261026T064636Z/bench",
+    "accuracy": "results/scnet/validation-20261026T064636Z/accuracy"
+  },
+  "official_accuracy_pass": null,
+  "official_acceptance_passed": null,
+  "stage": "failed",
+  "updated_at": "2026-10-26T07:05:05.740167+00:00",
+  "server_pid": 32646,
+  "error": "CalledProcessError: Command '['bash', 'run-scnet.sh', 'bash', 'stop.sh']' returned non-zero exit status 1."
+}

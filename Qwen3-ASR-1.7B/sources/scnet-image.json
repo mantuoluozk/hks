@@ -1,0 +1,19 @@
+{
+  "model": "Qwen3-ASR-1.7B",
+  "platform": "SCNet",
+  "url": "https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions",
+  "image_id": "2114624281480511490",
+  "visibility": "private",
+  "build_status": "completed",
+  "registry_reference": null,
+  "digest": null,
+  "version": null,
+  "region": "华中一区（A区）",
+  "reproduced_in_new_notebook": true,
+  "publication": "Owner will make public when submitting; do not change visibility.",
+  "baked_dependency_files_match_pinned_wheels": true,
+  "reproduction_evidence": "results/scnet/validation-20261026T080803Z",
+  "reproduction_status": "platform_tests_complete",
+  "registry_digest_verification": "Awaiting authoritative platform version details",
+  "metadata_deferred_by_owner": true
+}

@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/QwenLM/Qwen3-ASR",
+  "commit": "7c6daf77a2421100f5fb066495372c00129d39ff",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "838dc0f296d1c2cad58ea1cedbbdf7a6ab61846a9779f9681065328df071775d"
+    },
+    {
+      "path": "README.md",
+      "sha256": "27b5d6e31c3dc10c9b4b86e226f215baacca57bede504994779ad334a67275a0"
+    },
+    {
+      "path": "examples/example_qwen3_asr_vllm_streaming.py",
+      "sha256": "836c6960e350727fe19238e2f2e3e90a0b985fd5d671eb8b567f66735a41ac3d"
+    },
+    {
+      "path": "qwen_asr/inference/qwen3_asr.py",
+      "sha256": "b6744f083e402a2374347b68967119d5bd2ad71502397e079c17d27337c3697e"
+    },
+    {
+      "path": "qwen_asr/inference/utils.py",
+      "sha256": "b37fb4140e6d9be85f2ecb1552ed16136eb98a57f44b402f8b0b213cb6df2a82"
+    }
+  ],
+  "storage_note": "Text snapshots retrieved with the GitHub connector; file hashes recorded separately.",
+  "text_snapshot_normalization": "UTF-8 text snapshots with a single final newline."
+}

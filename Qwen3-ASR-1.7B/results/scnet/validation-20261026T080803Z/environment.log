@@ -1,0 +1,39 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+{
+  "python": "3.10.12",
+  "torch": "2.11.0",
+  "execution_platform": "SCNet Notebook",
+  "image": "https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions",
+  "extra_package_dir": "/opt/qwen3-asr-deps",
+  "hip": "6.3.26113",
+  "packages": {
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "transformers": "5.12.1",
+    "openai": "2.30.0",
+    "soundfile": "0.13.1",
+    "librosa": "0.11.0",
+    "torchaudio": "2.11.0+das.opt1.torch2110.202608231016.gb7ad0c",
+    "qwen-asr": null,
+    "soxr": "1.0.0",
+    "av": "16.1.0",
+    "editdistance": "0.8.1",
+    "pyarrow": "25.0.1"
+  },
+  "devices": [
+    {
+      "logical_device": 0,
+      "name": "BW",
+      "gcn_arch": "gfx936:sramecc+:xnack-",
+      "memory": 68702699520
+    }
+  ],
+  "asr_model_sources": [
+    "model_executor/models/qwen3_asr.py",
+    "model_executor/models/qwen3_asr_forced_aligner.py",
+    "model_executor/models/qwen3_asr_realtime.py",
+    "transformers_utils/configs/qwen3_asr.py",
+    "transformers_utils/processors/qwen3_asr.py"
+  ],
+  "registry_has_qwen3_asr": true
+}

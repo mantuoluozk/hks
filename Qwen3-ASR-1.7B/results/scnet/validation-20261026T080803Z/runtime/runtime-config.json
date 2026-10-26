@@ -1,0 +1,16 @@
+{
+  "MODEL_ID": "Qwen/Qwen3-ASR-1.7B",
+  "MODEL_PATH": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+  "SERVED_NAME": "qwen3-asr-1.7b",
+  "IMAGE": "https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions",
+  "EXPECTED_IMAGE_ID": "sha256:de141933eaf60e50cdfa90edfc09abf492d7730a2f9ab4b44a199ebf7fd50c6f",
+  "HIP_VISIBLE_DEVICES": "0",
+  "PORT": "30128",
+  "ENFORCE_EAGER": "0",
+  "MEM_FRAC": "0.4",
+  "MAX_LEN": "8192",
+  "MAX_NUM_SEQS": "16",
+  "EXECUTION_PLATFORM": "SCNet Notebook",
+  "CARD": "BW",
+  "ASR_EXTRA_DIR": "/opt/qwen3-asr-deps"
+}

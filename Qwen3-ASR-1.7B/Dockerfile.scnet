@@ -1,0 +1,12 @@
+FROM image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18
+
+# SCNet Dockerfile context: /public/home/zack233/dockerFileTemp.
+# Place these pinned files under qwen3-asr-1.7b/ in that context.
+COPY qwen3-asr-1.7b/wheels/ /tmp/asr-wheels/
+COPY qwen3-asr-1.7b/requirements-scnet.txt /tmp/requirements-scnet.txt
+RUN python -m pip install --no-deps --no-index --find-links /tmp/asr-wheels \
+      --target /opt/qwen3-asr-deps -r /tmp/requirements-scnet.txt \
+    && rm -rf /tmp/asr-wheels
+ENV ASR_EXTRA_DIR=/opt/qwen3-asr-deps
+ENV PYTHONPATH=/opt/qwen3-asr-deps
+# Inherit the base image's Jupyter and SSH launch configuration.

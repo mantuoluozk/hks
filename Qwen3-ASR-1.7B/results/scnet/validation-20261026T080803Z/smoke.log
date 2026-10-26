@@ -1,0 +1,68 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+{
+  "functional_cases": 6,
+  "cases": [
+    {
+      "language_input": "en",
+      "mode": "chat",
+      "audio_seconds": 15.051229166666667,
+      "elapsed_seconds": 2.5541458069346845,
+      "rtf": 0.16969682533246155,
+      "text": "language English<asr_text>Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people.",
+      "transcript": "Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people."
+    },
+    {
+      "language_input": "en",
+      "mode": "transcription",
+      "audio_seconds": 15.051229166666667,
+      "elapsed_seconds": 0.4494164069183171,
+      "rtf": 0.029859116617107988,
+      "text": "Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people.",
+      "transcript": "Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people."
+    },
+    {
+      "language_input": "en",
+      "mode": "output_stream",
+      "audio_seconds": 15.051229166666667,
+      "elapsed_seconds": 0.3855654103681445,
+      "rtf": 0.025616871957676403,
+      "text": "language English<asr_text>Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people.",
+      "transcript": "Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people."
+    },
+    {
+      "language_input": "zh",
+      "mode": "chat",
+      "audio_seconds": 4.2039375,
+      "elapsed_seconds": 0.19473594008013606,
+      "rtf": 0.04632227288824728,
+      "text": "language Chinese<asr_text>甚至出现交易几乎停滞的情况。",
+      "transcript": "甚至出现交易几乎停滞的情况。"
+    },
+    {
+      "language_input": "zh",
+      "mode": "transcription",
+      "audio_seconds": 4.2039375,
+      "elapsed_seconds": 0.18367708381265402,
+      "rtf": 0.043691678054836446,
+      "text": "甚至出现交易几乎停滞的情况。",
+      "transcript": "甚至出现交易几乎停滞的情况。"
+    },
+    {
+      "language_input": "zh",
+      "mode": "output_stream",
+      "audio_seconds": 4.2039375,
+      "elapsed_seconds": 0.1954288026317954,
+      "rtf": 0.046487085650487286,
+      "text": "language Chinese<asr_text>甚至出现交易几乎停滞的情况。",
+      "transcript": "甚至出现交易几乎停滞的情况。"
+    }
+  ],
+  "cross_interface_exact": {
+    "en": true,
+    "zh": true
+  },
+  "accuracy_evaluated": false,
+  "official_accuracy_pass": null,
+  "stream_note": "SSE output tokens only; audio input chunk streaming is evaluated separately."
+}

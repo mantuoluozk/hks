@@ -1,0 +1,10 @@
+{
+  "response": {
+    "text": "甚至出现交易几乎停滞的情况。",
+    "usage": {
+      "type": "duration",
+      "seconds": 5
+    }
+  },
+  "text": "甚至出现交易几乎停滞的情况。"
+}
