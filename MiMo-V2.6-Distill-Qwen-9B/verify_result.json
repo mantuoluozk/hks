@@ -1,0 +1,31 @@
+{
+  "model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "execution_platform": "SCNet Notebook",
+  "functional_passed": 11,
+  "functional_total": 11,
+  "performance_rounds": 12,
+  "performance_requests": 608,
+  "public_self_eval": {
+    "gsm8k": {
+      "correct": 179,
+      "total": 200,
+      "accuracy_percent": 89.5,
+      "errors": 0,
+      "truncated": 0,
+      "unparsed": 2,
+      "scope": "fixed 200 public samples per dataset; not official or full test split"
+    },
+    "mmlu": {
+      "correct": 160,
+      "total": 200,
+      "accuracy_percent": 80.0,
+      "errors": 0,
+      "truncated": 5,
+      "unparsed": 5,
+      "scope": "fixed 200 public samples per dataset; not official or full test split"
+    }
+  },
+  "official_accuracy_pass": null,
+  "official_acceptance_passed": null,
+  "status": "awaiting_official_evaluation_code"
+}

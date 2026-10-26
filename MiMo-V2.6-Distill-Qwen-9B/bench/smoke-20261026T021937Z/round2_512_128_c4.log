@@ -1,0 +1,67 @@
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+INFO 10-26 10:23:04 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-26 10:23:04 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-26 10:23:04 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-26 10:23:04 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+benchmark_args=Namespace(backend='sglang', base_url=None, host='127.0.0.1', port=30124, ready_check_timeout_sec=60, dataset_name='random-ids', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B', served_model_name='mimo-v2.6-9b', tokenizer='/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B', num_prompts=8, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=512, random_output_len=128, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=4, output_file='bench/smoke-20261026T021937Z/round2.jsonl', output_details=False, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body=None, apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=True, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=True, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+Waiting up to 60s for http://127.0.0.1:30124/v1/models to become ready...
+Server ready in 0.0s.
+Namespace(backend='sglang', base_url=None, host='127.0.0.1', port=30124, ready_check_timeout_sec=60, dataset_name='random-ids', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B', served_model_name='mimo-v2.6-9b', tokenizer='/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B', num_prompts=8, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=512, random_output_len=128, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=4, output_file='bench/smoke-20261026T021937Z/round2.jsonl', output_details=False, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body=None, apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=True, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=True, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+
+#Input tokens: 4096
+#Output tokens: 1024
+Starting warmup with 1 sequences...
+Warmup completed with 1 sequences. Starting main benchmark run...
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:02<00:15,  2.26s/it] 62%|██████▎   | 5/8 [00:04<00:02,  1.22it/s]100%|██████████| 8/8 [00:04<00:00,  1.77it/s]
+
+============ Serving Benchmark Result ============
+Backend:                                 sglang    
+Traffic request rate:                    inf       
+Max request concurrency:                 4         
+Successful requests:                     8         
+Benchmark duration (s):                  4.55      
+Total input tokens:                      4096      
+Total input text tokens:                 4096      
+Total generated tokens:                  1024      
+Total generated tokens (retokenized):    1019      
+Request throughput (req/s):              1.76      
+Input token throughput (tok/s):          900.93    
+Output token throughput (tok/s):         225.23    
+Peak output token throughput (tok/s):    244.00    
+Peak concurrent requests:                8         
+Total token throughput (tok/s):          1126.17   
+Concurrency:                             3.98      
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   2263.23   
+Median E2E Latency (ms):                 2263.40   
+P90 E2E Latency (ms):                    2264.31   
+P95 E2E Latency (ms):                    2264.32   
+P99 E2E Latency (ms):                    2264.32   
+---------------Time to First Token----------------
+Mean TTFT (ms):                          164.69    
+Median TTFT (ms):                        190.61    
+P90 TTFT (ms):                           196.08    
+P95 TTFT (ms):                           201.26    
+P99 TTFT (ms):                           205.40    
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          16.52     
+Median TPOT (ms):                        16.32     
+P90 TPOT (ms):                           17.20     
+P95 TPOT (ms):                           17.21     
+P99 TPOT (ms):                           17.21     
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           16.54     
+Median ITL (ms):                         16.26     
+P90 ITL (ms):                            16.46     
+P95 ITL (ms):                            16.74     
+P99 ITL (ms):                            17.99     
+Max ITL (ms):                            130.10    
+==================================================

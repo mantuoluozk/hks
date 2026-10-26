@@ -1,0 +1,28 @@
+{
+  "scope": "fixed public self-evaluation; not official subset or publisher GPU baseline",
+  "sample_rebuild_byte_identical": true,
+  "seed": 20261023,
+  "sources": [
+    {
+      "path": "cache/datasets/gsm8k/main/test-00000-of-00001.parquet",
+      "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+      "bytes": 419088
+    },
+    {
+      "path": "cache/datasets/mmlu/data.tar",
+      "sha256": "bec563ba4bac1d6aaf04141cd7d1605d7a5ca833e38f994051e818489592989b",
+      "bytes": 166184960
+    }
+  ],
+  "samples": {
+    "gsm8k": {
+      "count": 200,
+      "sha256": "03bd22060d201b82f3545a56dc89a01d300a5406d79e1d51529fdedceb698546"
+    },
+    "mmlu": {
+      "count": 200,
+      "sha256": "84f929be5a22b7f7895961ef19f3842dc3d9a276a42b82c42a6fe95e1395682d"
+    }
+  },
+  "prepare_script_sha256": "cd695cd2baf7aefc65ad43d89b7ba254c20049551c3facecfe7e43591ce86f82"
+}

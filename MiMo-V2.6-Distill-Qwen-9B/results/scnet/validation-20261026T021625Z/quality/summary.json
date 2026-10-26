@@ -1,0 +1,22 @@
+{
+  "scope": "fixed 200+200 public samples; not official subset or publisher GPU accuracy baseline",
+  "official_accuracy_pass": null,
+  "datasets": {
+    "gsm8k": {
+      "correct": 179,
+      "total": 200,
+      "accuracy_percent": 89.5,
+      "errors": 0,
+      "truncated": 0,
+      "unparsed": 2
+    },
+    "mmlu": {
+      "correct": 160,
+      "total": 200,
+      "accuracy_percent": 80.0,
+      "errors": 0,
+      "truncated": 5,
+      "unparsed": 5
+    }
+  }
+}

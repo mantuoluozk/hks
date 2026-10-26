@@ -1,0 +1,11 @@
+{
+  "profile": "smoke",
+  "dataset": "random-ids",
+  "tokenize_prompt": true,
+  "seed": 1,
+  "flush_prefix_cache_each_case": true,
+  "rounds": 2,
+  "requests": "max(8, concurrency*2)",
+  "official_scnet_validation": false,
+  "execution_platform": "SCNet Notebook"
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "SCNet Notebook self-test; not official acceptance",
+  "profile": "smoke",
+  "complete": true,
+  "errors": [],
+  "cases": 4,
+  "round2": [
+    {
+      "random_input_len": 512,
+      "random_output_len": 128,
+      "max_concurrency": 1,
+      "completed": 8,
+      "duration": 22.15907025244087,
+      "output_throughput": 46.21132512936567,
+      "mean_ttft_ms": 78.89669068390504,
+      "mean_tpot_ms": 21.1645818492361,
+      "total_output_tokens": 1024,
+      "total_output_tokens_retokenized": 1019
+    },
+    {
+      "random_input_len": 512,
+      "random_output_len": 128,
+      "max_concurrency": 4,
+      "completed": 8,
+      "duration": 4.54639683989808,
+      "output_throughput": 225.23330805916976,
+      "mean_ttft_ms": 164.6879109321162,
+      "mean_tpot_ms": 16.523987778524805,
+      "total_output_tokens": 1024,
+      "total_output_tokens_retokenized": 1019
+    }
+  ]
+}

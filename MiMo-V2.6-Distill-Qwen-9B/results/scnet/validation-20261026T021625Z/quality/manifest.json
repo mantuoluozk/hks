@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-10-26T03:04:28.493662+00:00",
+  "protocol": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096,
+    "enable_thinking": true,
+    "few_shot": 0,
+    "workers": 8,
+    "sample_seed": 20261023,
+    "scoring": "GSM8K final #### decimal; MMLU final ANSWER: A/B/C/D; strip bold markup; no random fallback",
+    "scope": "fixed 200+200 public samples; not official subset or publisher GPU accuracy baseline",
+    "execution_platform": "SCNet Notebook"
+  },
+  "sources": {
+    "gsm8k": {
+      "prepared_file": "data/gsm8k.jsonl",
+      "sha256": "03bd22060d201b82f3545a56dc89a01d300a5406d79e1d51529fdedceb698546",
+      "count": 200
+    },
+    "mmlu": {
+      "prepared_file": "data/mmlu.jsonl",
+      "sha256": "84f929be5a22b7f7895961ef19f3842dc3d9a276a42b82c42a6fe95e1395682d",
+      "count": 200
+    }
+  },
+  "runtime": {
+    "MODEL_ID": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "MODEL_PATH": "/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B",
+    "SERVED_NAME": "mimo-v2.6-9b",
+    "IMAGE": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter@sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+    "CARD": "BW",
+    "PRECISION": "bf16",
+    "HIP_VISIBLE_DEVICES": "0",
+    "HOST": "127.0.0.1",
+    "PORT": "30124",
+    "TP": "1",
+    "MAX_LEN": "32768",
+    "MEM_FRAC": "0.85",
+    "MAX_RUNNING_REQUESTS": "64",
+    "ATTENTION_BACKEND": "triton",
+    "SGLANG_DISABLE_FUSED_MAMBA_SLOT_OPS": "1",
+    "SGLANG_KV_LAYOUT_HCU_FA": "false",
+    "DECODE_GRAPH_BACKEND": "full",
+    "DECODE_GRAPH_MAX_BS": "64",
+    "DISABLE_OVERLAP_SCHEDULE": "1",
+    "SERVER_RUN_ID": "20261026T021736Z",
+    "EXECUTION_PLATFORM": "SCNet Notebook"
+  },
+  "official_accuracy_pass": null
+}

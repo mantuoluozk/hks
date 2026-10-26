@@ -1,0 +1,68 @@
+{
+  "name": "multiturn",
+  "request": {
+    "model": "mimo-v2.6-9b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "记住暗号是青竹。"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，暗号是青竹。"
+      },
+      {
+        "role": "user",
+        "content": "刚才的暗号是什么？只输出暗号。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 2048,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "stream": false
+  },
+  "response": {
+    "id": "ab66b8a586a247839df08da052a13d2b",
+    "object": "chat.completion",
+    "created": 1792981172,
+    "model": "mimo-v2.6-9b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "青竹",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 248046
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 45,
+      "total_tokens": 48,
+      "completion_tokens": 3,
+      "prompt_tokens_details": null,
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "answer": "青竹",
+  "reasoning": "",
+  "elapsed_s": 0.1693915780633688,
+  "first_token_s": null,
+  "checks": {
+    "nonempty_content": true,
+    "finished": true,
+    "expected_answer": true,
+    "stream_complete": true,
+    "thinking_channel": true
+  },
+  "pass": true
+}

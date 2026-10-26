@@ -1,0 +1,7 @@
+{
+  "name": "models",
+  "pass": true,
+  "response": "{\"object\":\"list\",\"data\":[{\"id\":\"mimo-v2.6-9b\",\"object\":\"model\",\"created\":1792981170,\"owned_by\":\"sglang\",\"root\":\"mimo-v2.6-9b\",\"parent\":null,\"max_model_len\":32768}]}",
+  "status": 200,
+  "elapsed_s": 0.0016201101243495941
+}

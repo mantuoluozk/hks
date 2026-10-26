@@ -1,0 +1,7 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+All 15 pinned runtime files verified
+python -m sglang.launch_server --model-path /root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B --served-model-name mimo-v2.6-9b --host 127.0.0.1 --port 30124 --tp-size 1 --dtype bfloat16 --context-length 32768 --mem-fraction-static 0.85 --max-running-requests 64 --chunked-prefill-size 4096 --page-size 1 --attention-backend triton --mm-attention-backend sdpa --reasoning-parser mimo --cuda-graph-backend-decode full --cuda-graph-backend-prefill disabled --cuda-graph-max-bs-decode 64 --disable-overlap-schedule 
+Ready after 110s; PID=26362; log=/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/runtime/server-20261026T021736Z.log

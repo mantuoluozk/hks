@@ -1,0 +1,138 @@
+{
+  "scope": "functional only; not official accuracy evaluation",
+  "total": 11,
+  "passed": 11,
+  "cases": [
+    {
+      "name": "health",
+      "pass": true,
+      "elapsed_s": 1.0035858089104295,
+      "checks": null,
+      "error": null
+    },
+    {
+      "name": "models",
+      "pass": true,
+      "elapsed_s": 0.0016201101243495941,
+      "checks": null,
+      "error": null
+    },
+    {
+      "name": "simple",
+      "pass": true,
+      "elapsed_s": 1.3325820020399988,
+      "checks": {
+        "nonempty_content": true,
+        "finished": true,
+        "expected_answer": true,
+        "stream_complete": true,
+        "thinking_channel": true
+      },
+      "error": null
+    },
+    {
+      "name": "multiturn",
+      "pass": true,
+      "elapsed_s": 0.1693915780633688,
+      "checks": {
+        "nonempty_content": true,
+        "finished": true,
+        "expected_answer": true,
+        "stream_complete": true,
+        "thinking_channel": true
+      },
+      "error": null
+    },
+    {
+      "name": "thinking",
+      "pass": true,
+      "elapsed_s": 3.1708022872917354,
+      "checks": {
+        "nonempty_content": true,
+        "finished": true,
+        "expected_answer": true,
+        "stream_complete": true,
+        "thinking_channel": true
+      },
+      "error": null
+    },
+    {
+      "name": "stream",
+      "pass": true,
+      "elapsed_s": 0.12097065290436149,
+      "checks": {
+        "nonempty_content": true,
+        "finished": true,
+        "expected_answer": true,
+        "stream_complete": true,
+        "thinking_channel": true
+      },
+      "error": null
+    },
+    {
+      "name": "thinking-stream",
+      "pass": true,
+      "elapsed_s": 0.97244538879022,
+      "checks": {
+        "nonempty_content": true,
+        "finished": true,
+        "expected_answer": true,
+        "stream_complete": true,
+        "thinking_channel": true
+      },
+      "error": null
+    },
+    {
+      "name": "parallel-0",
+      "pass": true,
+      "elapsed_s": 0.21894485782831907,
+      "checks": {
+        "nonempty_content": true,
+        "finished": true,
+        "expected_answer": true,
+        "stream_complete": true,
+        "thinking_channel": true
+      },
+      "error": null
+    },
+    {
+      "name": "parallel-1",
+      "pass": true,
+      "elapsed_s": 0.21794928470626473,
+      "checks": {
+        "nonempty_content": true,
+        "finished": true,
+        "expected_answer": true,
+        "stream_complete": true,
+        "thinking_channel": true
+      },
+      "error": null
+    },
+    {
+      "name": "parallel-2",
+      "pass": true,
+      "elapsed_s": 0.21784255327656865,
+      "checks": {
+        "nonempty_content": true,
+        "finished": true,
+        "expected_answer": true,
+        "stream_complete": true,
+        "thinking_channel": true
+      },
+      "error": null
+    },
+    {
+      "name": "parallel-3",
+      "pass": true,
+      "elapsed_s": 0.2166721890680492,
+      "checks": {
+        "nonempty_content": true,
+        "finished": true,
+        "expected_answer": true,
+        "stream_complete": true,
+        "thinking_channel": true
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "created_at": "20261026T021625Z",
+  "execution_platform": "SCNet Notebook",
+  "official_accuracy_pass": null,
+  "official_acceptance_passed": null,
+  "artifacts": {
+    "runtime": "results/scnet/validation-20261026T021625Z/runtime",
+    "smoke": "results/scnet/validation-20261026T021625Z/smoke",
+    "benchmark_smoke": "bench/smoke-20261026T021937Z",
+    "benchmark_matrix": "bench/matrix-20261026T022326Z",
+    "quality": "results/scnet/validation-20261026T021625Z/quality",
+    "validation_summary": "results/scnet/validation-20261026T021625Z/validation-summary.json"
+  },
+  "stage": "platform_tests_complete",
+  "updated_at": "2026-10-26T03:08:05.731572+00:00",
+  "prerequisite": "models/RoboBrain2.5-8B-NV/results/scnet/publisher-cvbench-full-20261026/summary.json",
+  "launcher_pid": 26319,
+  "functional": {
+    "scope": "functional only; not official accuracy evaluation",
+    "total": 11,
+    "passed": 11,
+    "cases": [
+      {
+        "name": "health",
+        "pass": true,
+        "elapsed_s": 1.0035858089104295,
+        "checks": null,
+        "error": null
+      },
+      {
+        "name": "models",
+        "pass": true,
+        "elapsed_s": 0.0016201101243495941,
+        "checks": null,
+        "error": null
+      },
+      {
+        "name": "simple",
+        "pass": true,
+        "elapsed_s": 1.3325820020399988,
+        "checks": {
+          "nonempty_content": true,
+          "finished": true,
+          "expected_answer": true,
+          "stream_complete": true,
+          "thinking_channel": true
+        },
+        "error": null
+      },
+      {
+        "name": "multiturn",
+        "pass": true,
+        "elapsed_s": 0.1693915780633688,
+        "checks": {
+          "nonempty_content": true,
+          "finished": true,
+          "expected_answer": true,
+          "stream_complete": true,
+          "thinking_channel": true
+        },
+        "error": null
+      },
+      {
+        "name": "thinking",
+        "pass": true,
+        "elapsed_s": 3.1708022872917354,
+        "checks": {
+          "nonempty_content": true,
+          "finished": true,
+          "expected_answer": true,
+          "stream_complete": true,
+          "thinking_channel": true
+        },
+        "error": null
+      },
+      {
+        "name": "stream",
+        "pass": true,
+        "elapsed_s": 0.12097065290436149,
+        "checks": {
+          "nonempty_content": true,
+          "finished": true,
+          "expected_answer": true,
+          "stream_complete": true,
+          "thinking_channel": true
+        },
+        "error": null
+      },
+      {
+        "name": "thinking-stream",
+        "pass": true,
+        "elapsed_s": 0.97244538879022,
+        "checks": {
+          "nonempty_content": true,
+          "finished": true,
+          "expected_answer": true,
+          "stream_complete": true,
+          "thinking_channel": true
+        },
+        "error": null
+      },
+      {
+        "name": "parallel-0",
+        "pass": true,
+        "elapsed_s": 0.21894485782831907,
+        "checks": {
+          "nonempty_content": true,
+          "finished": true,
+          "expected_answer": true,
+          "stream_complete": true,
+          "thinking_channel": true
+        },
+        "error": null
+      },
+      {
+        "name": "parallel-1",
+        "pass": true,
+        "elapsed_s": 0.21794928470626473,
+        "checks": {
+          "nonempty_content": true,
+          "finished": true,
+          "expected_answer": true,
+          "stream_complete": true,
+          "thinking_channel": true
+        },
+        "error": null
+      },
+      {
+        "name": "parallel-2",
+        "pass": true,
+        "elapsed_s": 0.21784255327656865,
+        "checks": {
+          "nonempty_content": true,
+          "finished": true,
+          "expected_answer": true,
+          "stream_complete": true,
+          "thinking_channel": true
+        },
+        "error": null
+      },
+      {
+        "name": "parallel-3",
+        "pass": true,
+        "elapsed_s": 0.2166721890680492,
+        "checks": {
+          "nonempty_content": true,
+          "finished": true,
+          "expected_answer": true,
+          "stream_complete": true,
+          "thinking_channel": true
+        },
+        "error": null
+      }
+    ]
+  },
+  "public_quality": {
+    "scope": "fixed 200+200 public samples; not official subset or publisher GPU accuracy baseline",
+    "official_accuracy_pass": null,
+    "datasets": {
+      "gsm8k": {
+        "correct": 179,
+        "total": 200,
+        "accuracy_percent": 89.5,
+        "errors": 0,
+        "truncated": 0,
+        "unparsed": 2
+      },
+      "mmlu": {
+        "correct": 160,
+        "total": 200,
+        "accuracy_percent": 80.0,
+        "errors": 0,
+        "truncated": 5,
+        "unparsed": 5
+      }
+    }
+  },
+  "note": "Report, image reproduction and repository publication are tracked separately"
+}

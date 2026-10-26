@@ -1,0 +1,23 @@
+{
+  "MODEL_ID": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "MODEL_PATH": "/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B",
+  "SERVED_NAME": "mimo-v2.6-9b",
+  "IMAGE": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter@sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+  "CARD": "BW",
+  "PRECISION": "bf16",
+  "HIP_VISIBLE_DEVICES": "0",
+  "HOST": "127.0.0.1",
+  "PORT": "30124",
+  "TP": "1",
+  "MAX_LEN": "32768",
+  "MEM_FRAC": "0.85",
+  "MAX_RUNNING_REQUESTS": "64",
+  "ATTENTION_BACKEND": "triton",
+  "SGLANG_DISABLE_FUSED_MAMBA_SLOT_OPS": "1",
+  "SGLANG_KV_LAYOUT_HCU_FA": "false",
+  "DECODE_GRAPH_BACKEND": "full",
+  "DECODE_GRAPH_MAX_BS": "64",
+  "DISABLE_OVERLAP_SCHEDULE": "1",
+  "SERVER_RUN_ID": "20261026T021736Z",
+  "EXECUTION_PLATFORM": "SCNet Notebook"
+}

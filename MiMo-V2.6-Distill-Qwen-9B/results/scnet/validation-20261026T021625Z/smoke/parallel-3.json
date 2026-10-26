@@ -1,0 +1,60 @@
+{
+  "name": "parallel-3",
+  "request": {
+    "model": "mimo-v2.6-9b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "只输出数字：3+10是多少？"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 2048,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "stream": false
+  },
+  "response": {
+    "id": "1da7edfdd5ed423c99f96d7be353530f",
+    "object": "chat.completion",
+    "created": 1792981176,
+    "model": "mimo-v2.6-9b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "13",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 248046
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 22,
+      "completion_tokens": 3,
+      "prompt_tokens_details": null,
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "answer": "13",
+  "reasoning": "",
+  "elapsed_s": 0.2166721890680492,
+  "first_token_s": null,
+  "checks": {
+    "nonempty_content": true,
+    "finished": true,
+    "expected_answer": true,
+    "stream_complete": true,
+    "thinking_channel": true
+  },
+  "pass": true
+}

@@ -1,0 +1,87 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Artifacts: bench/matrix-20261026T022326Z
+{
+  "scope": "SCNet Notebook self-test; not official acceptance",
+  "profile": "matrix",
+  "complete": true,
+  "errors": [],
+  "cases": 12,
+  "round2": [
+    {
+      "random_input_len": 4096,
+      "random_output_len": 1024,
+      "max_concurrency": 1,
+      "completed": 8,
+      "duration": 177.58315315516666,
+      "output_throughput": 46.13050198991615,
+      "mean_ttft_ms": 270.3395815915428,
+      "mean_tpot_ms": 21.431237387717612,
+      "total_output_tokens": 8192,
+      "total_output_tokens_retokenized": 8166
+    },
+    {
+      "random_input_len": 4096,
+      "random_output_len": 1024,
+      "max_concurrency": 8,
+      "completed": 16,
+      "duration": 42.98642255971208,
+      "output_throughput": 381.14360359346307,
+      "mean_ttft_ms": 1197.0785086450633,
+      "mean_tpot_ms": 19.827030405319338,
+      "total_output_tokens": 16384,
+      "total_output_tokens_retokenized": 15801
+    },
+    {
+      "random_input_len": 4096,
+      "random_output_len": 1024,
+      "max_concurrency": 64,
+      "completed": 128,
+      "duration": 121.73101689107716,
+      "output_throughput": 1076.7346182385133,
+      "mean_ttft_ms": 9382.854796334868,
+      "mean_tpot_ms": 50.284592342459526,
+      "total_output_tokens": 131072,
+      "total_output_tokens_retokenized": 124859
+    },
+    {
+      "random_input_len": 16384,
+      "random_output_len": 1024,
+      "max_concurrency": 1,
+      "completed": 8,
+      "duration": 191.61950069805607,
+      "output_throughput": 42.75138996896001,
+      "mean_ttft_ms": 1230.958106694743,
+      "mean_tpot_ms": 22.207379821751207,
+      "total_output_tokens": 8192,
+      "total_output_tokens_retokenized": 8178
+    },
+    {
+      "random_input_len": 16384,
+      "random_output_len": 1024,
+      "max_concurrency": 8,
+      "completed": 16,
+      "duration": 66.36771832406521,
+      "output_throughput": 246.86700723986007,
+      "mean_ttft_ms": 5643.6663518543355,
+      "mean_tpot_ms": 26.902833204766058,
+      "total_output_tokens": 16384,
+      "total_output_tokens_retokenized": 16070
+    },
+    {
+      "random_input_len": 16384,
+      "random_output_len": 1024,
+      "max_concurrency": 64,
+      "completed": 128,
+      "duration": 372.16395427286625,
+      "output_throughput": 352.1888632554123,
+      "mean_ttft_ms": 82191.24085939256,
+      "mean_tpot_ms": 73.78401685692123,
+      "total_output_tokens": 131072,
+      "total_output_tokens_retokenized": 128170
+    }
+  ]
+}
+bench/matrix-20261026T022326Z

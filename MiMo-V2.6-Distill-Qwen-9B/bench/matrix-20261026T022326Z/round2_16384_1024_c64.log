@@ -1,0 +1,67 @@
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+INFO 10-26 10:57:54 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-26 10:57:54 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-26 10:57:54 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-26 10:57:54 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+benchmark_args=Namespace(backend='sglang', base_url=None, host='127.0.0.1', port=30124, ready_check_timeout_sec=60, dataset_name='random-ids', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B', served_model_name='mimo-v2.6-9b', tokenizer='/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=16384, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='bench/matrix-20261026T022326Z/round2.jsonl', output_details=False, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body=None, apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=True, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=True, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+Waiting up to 60s for http://127.0.0.1:30124/v1/models to become ready...
+Server ready in 0.0s.
+Namespace(backend='sglang', base_url=None, host='127.0.0.1', port=30124, ready_check_timeout_sec=60, dataset_name='random-ids', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B', served_model_name='mimo-v2.6-9b', tokenizer='/root/private_data/hks/weights/MiMo-V2.6-Distill-Qwen-9B', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=16384, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='bench/matrix-20261026T022326Z/round2.jsonl', output_details=False, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body=None, apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=True, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=True, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+
+#Input tokens: 2097152
+#Output tokens: 131072
+Starting warmup with 1 sequences...
+Warmup completed with 1 sequences. Starting main benchmark run...
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [01:41<3:35:23, 101.76s/it] 28%|██▊       | 36/128 [02:26<04:58,  3.25s/it]   29%|██▉       | 37/128 [03:23<08:03,  5.31s/it] 55%|█████▌    | 71/128 [04:06<02:32,  2.68s/it] 56%|█████▋    | 72/128 [04:09<02:30,  2.70s/it] 57%|█████▋    | 73/128 [05:04<04:12,  4.59s/it] 83%|████████▎ | 106/128 [05:31<00:48,  2.20s/it] 84%|████████▍ | 108/128 [05:32<00:42,  2.12s/it] 85%|████████▌ | 109/128 [06:12<01:05,  3.46s/it]100%|██████████| 128/128 [06:12<00:00,  2.91s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 sglang    
+Traffic request rate:                    inf       
+Max request concurrency:                 64        
+Successful requests:                     128       
+Benchmark duration (s):                  372.16    
+Total input tokens:                      2097152   
+Total input text tokens:                 2097152   
+Total generated tokens:                  131072    
+Total generated tokens (retokenized):    128170    
+Request throughput (req/s):              0.34      
+Input token throughput (tok/s):          5635.02   
+Output token throughput (tok/s):         352.19    
+Peak output token throughput (tok/s):    684.00    
+Peak concurrent requests:                99        
+Total token throughput (tok/s):          5987.21   
+Concurrency:                             54.23     
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   157672.29 
+Median E2E Latency (ms):                 168844.00 
+P90 E2E Latency (ms):                    203165.41 
+P95 E2E Latency (ms):                    203174.16 
+P99 E2E Latency (ms):                    203182.89 
+---------------Time to First Token----------------
+Mean TTFT (ms):                          82191.24  
+Median TTFT (ms):                        106481.67 
+P90 TTFT (ms):                           129571.63 
+P95 TTFT (ms):                           133455.53 
+P99 TTFT (ms):                           142095.97 
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          73.78     
+Median TPOT (ms):                        73.92     
+P90 TPOT (ms):                           94.46     
+P95 TPOT (ms):                           96.77     
+P99 TPOT (ms):                           98.51     
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           73.79     
+Median ITL (ms):                         53.76     
+P90 ITL (ms):                            55.46     
+P95 ITL (ms):                            55.86     
+P99 ITL (ms):                            56.92     
+Max ITL (ms):                            43570.44  
+==================================================

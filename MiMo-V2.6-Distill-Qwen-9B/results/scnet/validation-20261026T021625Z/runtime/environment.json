@@ -1,0 +1,31 @@
+{
+  "captured_at": "2026-10-26T02:16:34.487589+00:00",
+  "python": "3.10.12",
+  "hip": "6.3.26113",
+  "visible_device_count": 1,
+  "devices": [
+    {
+      "name": "BW",
+      "properties": "_CudaDeviceProperties(name='BW', major=9, minor=3, gcnArchName='gfx936:sramecc+:xnack-', total_memory=65520MB, multi_processor_count=80, uuid=30303134-6261-3537-6131-646132393231, pci_bus_id=181, pci_device_id=0, pci_domain_id=0, L2_cache_size=8MB)"
+    }
+  ],
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "torchvision": "0.26.0+dtk2604.torch2110.2609101802.gee55be",
+    "torchaudio": "2.11.0+das.opt1.torch2110.202608231016.gb7ad0c",
+    "triton": "3.6.0+dtk2604.torch2110.2609231415.g8cce4a",
+    "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+    "sglang-kernel": "0.4.6.post1+dtk2604.torch2110.2609231956.gea1c29",
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2",
+    "flash_attn": "2.8.4+dtk2604.torch2110.2609241509.g624d7b",
+    "aiter": "0.1.6+dtk2604.torch2110.2609242152.g36dc29",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "vllm-hcu": "0.25.1+dtk2604.torch2110.2609272150.gee325d",
+    "modelscope": "1.40.1",
+    "modelscope-hub": "0.4.3",
+    "pillow": "11.3.0"
+  },
+  "official_scnet_validation": false,
+  "execution_platform": "SCNet Notebook"
+}

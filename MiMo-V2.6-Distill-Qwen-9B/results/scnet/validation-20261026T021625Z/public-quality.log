@@ -1,0 +1,40 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Completed 25 of 400
+Completed 50 of 400
+Completed 75 of 400
+Completed 100 of 400
+Completed 125 of 400
+Completed 150 of 400
+Completed 175 of 400
+Completed 200 of 400
+Completed 225 of 400
+Completed 250 of 400
+Completed 275 of 400
+Completed 300 of 400
+Completed 325 of 400
+Completed 350 of 400
+Completed 375 of 400
+Completed 400 of 400
+{
+  "scope": "fixed 200+200 public samples; not official subset or publisher GPU accuracy baseline",
+  "official_accuracy_pass": null,
+  "datasets": {
+    "gsm8k": {
+      "correct": 179,
+      "total": 200,
+      "accuracy_percent": 89.5,
+      "errors": 0,
+      "truncated": 0,
+      "unparsed": 2
+    },
+    "mmlu": {
+      "correct": 160,
+      "total": 200,
+      "accuracy_percent": 80.0,
+      "errors": 0,
+      "truncated": 5,
+      "unparsed": 5
+    }
+  }
+}

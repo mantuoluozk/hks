@@ -1,0 +1,60 @@
+{
+  "name": "thinking",
+  "request": {
+    "model": "mimo-v2.6-9b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What is 15% of 240?"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 2048,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "stream": false
+  },
+  "response": {
+    "id": "b230054743824b86a8ac278184b14099",
+    "object": "chat.completion",
+    "created": 1792981175,
+    "model": "mimo-v2.6-9b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "15% of 240 is **36**.\n\nCalculation: 240 × 0.15 = 36 (or 10% = 24, plus 5% = 12, so 24 + 12 = 36).",
+          "reasoning_content": "Let me compute 15% of 240.\n\n15% = 0.15. 240 × 0.15 = 36.\n\nAlternatively, 10% of 240 = 24, 5% = 12, so 15% = 36.\n\nAnswer: 36.",
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 248046
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 167,
+      "completion_tokens": 148,
+      "prompt_tokens_details": null,
+      "reasoning_tokens": 83
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "answer": "15% of 240 is **36**.\n\nCalculation: 240 × 0.15 = 36 (or 10% = 24, plus 5% = 12, so 24 + 12 = 36).",
+  "reasoning": "Let me compute 15% of 240.\n\n15% = 0.15. 240 × 0.15 = 36.\n\nAlternatively, 10% of 240 = 24, 5% = 12, so 15% = 36.\n\nAnswer: 36.",
+  "elapsed_s": 3.1708022872917354,
+  "first_token_s": null,
+  "checks": {
+    "nonempty_content": true,
+    "finished": true,
+    "expected_answer": true,
+    "stream_complete": true,
+    "thinking_channel": true
+  },
+  "pass": true
+}
