@@ -1,0 +1,21 @@
+{
+  "backend": "publisher",
+  "jobs": [
+    {
+      "name": "queries",
+      "records": 1250,
+      "failed": 0,
+      "elapsed_seconds": 20.812710965052247
+    },
+    {
+      "name": "origin_corpus",
+      "records": 1509,
+      "failed": 0,
+      "elapsed_seconds": 165.83012858498842
+    }
+  ],
+  "embedding_save_dtype": "float16",
+  "scope": "Full ChartQA Origin subset only; not the six-dataset merged Mix benchmark.",
+  "dataset_revision": "15c41335843f8880e24778843b462234b6427e4f",
+  "official_accuracy_pass": null
+}

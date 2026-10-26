@@ -1,0 +1,6 @@
+* text=auto eol=lf
+sources/upstream/** -text
+sources/vendor/** -text
+results/** -text
+*.json -text
+*.jsonl -text

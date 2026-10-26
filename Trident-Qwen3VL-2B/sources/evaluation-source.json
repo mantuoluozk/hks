@@ -1,0 +1,49 @@
+{
+  "repository": "OpenBMB/Trident-Eval",
+  "revision": "15c41335843f8880e24778843b462234b6427e4f",
+  "subset": "ChartQA",
+  "files": [
+    {
+      "type": "file",
+      "oid": "a1c4d956224eaf4b54d400fca3bfb89372a6a89f",
+      "size": 1074216,
+      "path": "ChartQA/corpus.jsonl"
+    },
+    {
+      "type": "file",
+      "oid": "2fc080402bf585f4ebc1924110ef1aad746d29d1",
+      "size": 59775086,
+      "lfs": {
+        "oid": "c6d84c886cd24398ba83ebcb4d05a1f9286e3f958053d6254d3c477facc169ee",
+        "size": 59775086,
+        "pointerSize": 133
+      },
+      "xetHash": "b631e2d37c1682f9c575592b5f1029e758be9055a17d2debb085317b9c97369e",
+      "path": "ChartQA/images.tar.gz"
+    },
+    {
+      "type": "file",
+      "oid": "f087397b6850cab46a8d53499191c234d6616248",
+      "size": 345887,
+      "path": "ChartQA/mix_corpus.jsonl"
+    },
+    {
+      "type": "file",
+      "oid": "7f249ef4dd120497558b1eddbd5161e4996338d0",
+      "size": 81066,
+      "path": "ChartQA/origin_corpus.jsonl"
+    },
+    {
+      "type": "file",
+      "oid": "19d6a3d8e87c38d69a201b14121a2f5b83710e34",
+      "size": 63233,
+      "path": "ChartQA/qrels.jsonl"
+    },
+    {
+      "type": "file",
+      "oid": "8014a1013c141b94f0f95f4b4f71ba57cbad9e7e",
+      "size": 145526,
+      "path": "ChartQA/queries.jsonl"
+    }
+  ]
+}

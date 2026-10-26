@@ -1,0 +1,12 @@
+/cache/
+/data/
+/weights/
+/artifacts/
+!sources/upstream/src/mmemb/data/
+!sources/upstream/src/mmemb/data/**
+!sources/upstream/data/
+!sources/upstream/data/**
+__pycache__/
+*.pyc
+*.pid
+*.partial

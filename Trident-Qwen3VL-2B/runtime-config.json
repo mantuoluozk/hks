@@ -1,0 +1,21 @@
+{
+  "model": "OpenBMB/Trident-Qwen3VL-2B",
+  "checkpoint_architecture": "Qwen3VLForEmbedding",
+  "native_architecture_override": "Qwen3VLForConditionalGeneration",
+  "runner": "pooling",
+  "convert": "embed",
+  "pooler_config": {"seq_pooling_type": "LAST", "use_activation": true},
+  "dtype": "bfloat16",
+  "dimension": 2048,
+  "enforce_eager": true,
+  "gpu_memory_utilization": 0.45,
+  "max_model_len": 8192,
+  "max_num_seqs": 8,
+  "enable_prefix_caching": false,
+  "mm_processor_cache_gb": 0,
+  "image_min_pixels": 262144,
+  "image_max_pixels": 1310720,
+  "cpu_math_threads": 4,
+  "benchmark_encoder_cache_policy": "unique_image_uuid_per_request",
+  "official_accuracy_pass": null
+}

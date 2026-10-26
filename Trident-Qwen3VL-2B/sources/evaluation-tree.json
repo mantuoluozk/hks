@@ -1,0 +1,506 @@
+[
+  {
+    "type": "directory",
+    "oid": "7c71f6788f82a0dce2929f7a75dbf409f12c3a5b",
+    "size": 0,
+    "path": "ChartQA"
+  },
+  {
+    "type": "directory",
+    "oid": "9ead3029b762c28f1a957ac2d4254abd018260fc",
+    "size": 0,
+    "path": "DocVQA"
+  },
+  {
+    "type": "directory",
+    "oid": "d50ff203a617b766f1832cabb116782f5abfa25f",
+    "size": 0,
+    "path": "Dude"
+  },
+  {
+    "type": "directory",
+    "oid": "c56e71889d8a23ce6c92900d1104cbdd40fd9e3b",
+    "size": 0,
+    "path": "Google_WIT"
+  },
+  {
+    "type": "directory",
+    "oid": "53462580be27591f65816fc70446bd4b2687b458",
+    "size": 0,
+    "path": "InfoVQA"
+  },
+  {
+    "type": "directory",
+    "oid": "0226fefc080d493ee1f91720ef6cdff42e533980",
+    "size": 0,
+    "path": "MSCOCO"
+  },
+  {
+    "type": "directory",
+    "oid": "4dd4237c37274f2f46096cdff4657dd2e8232012",
+    "size": 0,
+    "path": "OVEN"
+  },
+  {
+    "type": "directory",
+    "oid": "8b13e941353c33b1945072d0a109a3a4fdd74637",
+    "size": 0,
+    "path": "SlideVQA"
+  },
+  {
+    "type": "directory",
+    "oid": "a88dc4d3b3b34a6a0b324976ba7b02ea827fe770",
+    "size": 0,
+    "path": "ViDoSeek"
+  },
+  {
+    "type": "directory",
+    "oid": "98aca0f8c8b1ecad39713ba7b71d5bbcca11134c",
+    "size": 0,
+    "path": "VisualNews"
+  },
+  {
+    "type": "file",
+    "oid": "a547e0d3b90aa6fb944304c494a660275b401d63",
+    "size": 2616,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "a1c4d956224eaf4b54d400fca3bfb89372a6a89f",
+    "size": 1074216,
+    "path": "ChartQA/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "2fc080402bf585f4ebc1924110ef1aad746d29d1",
+    "size": 59775086,
+    "lfs": {
+      "oid": "c6d84c886cd24398ba83ebcb4d05a1f9286e3f958053d6254d3c477facc169ee",
+      "size": 59775086,
+      "pointerSize": 133
+    },
+    "xetHash": "b631e2d37c1682f9c575592b5f1029e758be9055a17d2debb085317b9c97369e",
+    "path": "ChartQA/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "f087397b6850cab46a8d53499191c234d6616248",
+    "size": 345887,
+    "path": "ChartQA/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "7f249ef4dd120497558b1eddbd5161e4996338d0",
+    "size": 81066,
+    "path": "ChartQA/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "19d6a3d8e87c38d69a201b14121a2f5b83710e34",
+    "size": 63233,
+    "path": "ChartQA/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "8014a1013c141b94f0f95f4b4f71ba57cbad9e7e",
+    "size": 145526,
+    "path": "ChartQA/queries.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "80104e4b5fbc4d4b5b360fd178a541783df809c6",
+    "size": 1470333,
+    "path": "DocVQA/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "2348db62edcebbbdd4eb6cc0edc4dad28a13606a",
+    "size": 1100624783,
+    "lfs": {
+      "oid": "f7786cc63c605174670a4f4f9d7ac61c53c321b2ce81d1dbeaaf2796b9757bb2",
+      "size": 1100624783,
+      "pointerSize": 135
+    },
+    "xetHash": "0f59d2aebe06f97e1019556fa9dec1f3895725513e7079ad8fb5101324c67123",
+    "path": "DocVQA/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "d38e9f354279fe9813150039b6e8e0ada255aa54",
+    "size": 848841,
+    "path": "DocVQA/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "0e3533d2f884950e6c0c2fa0962e3d3afa77dddc",
+    "size": 31645,
+    "path": "DocVQA/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "6e6f76159baa4feb30717b4699f193d02e46d8d2",
+    "size": 29335,
+    "path": "DocVQA/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "412bbb0123caff78e70e59cda08f5c1a278a57b2",
+    "size": 73201,
+    "path": "DocVQA/queries.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "bec44af56f5378a9e721fbf504059feb5fd700a5",
+    "size": 72251802,
+    "lfs": {
+      "oid": "b3fb8b24ebf54d958e47dd9077ebace4e70fb2e287e87a4f549c7060ef2ad3dc",
+      "size": 72251802,
+      "pointerSize": 133
+    },
+    "xetHash": "5940d0bd58c3c0c7926c51b6a998b8b230f1c420c34fa09017a08eb7d9b00082",
+    "path": "Dude/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "c76ee8bdf4ab099577a0061873a2b2e2451a0c49",
+    "size": 9381083653,
+    "lfs": {
+      "oid": "8f585a66ed57ddece28c4115494c6442b621c89276d26d18f5d958a764a80b24",
+      "size": 9381083653,
+      "pointerSize": 135
+    },
+    "xetHash": "97ee1a78f4854668f516d8698db2c3f188cc6f77b0f7b6940b9c451a2be4bef3",
+    "path": "Dude/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "07ac168d7f9a7c6ccbc32784510666c359f61bfc",
+    "size": 24393597,
+    "lfs": {
+      "oid": "f6bf91fe69ec3e7d1c6b46253fd82fbed3cc1a070ce1a4512e2ea373f7bad87a",
+      "size": 24393597,
+      "pointerSize": 133
+    },
+    "xetHash": "836fd5b775a18285ae6a63f2b9b6bf19c8fa98f77bd2d0bb525d39ffbefbe3cc",
+    "path": "Dude/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "f4ac2439d1e39d7c8b354cde45410d6d6e600d39",
+    "size": 2119402,
+    "path": "Dude/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "57d04fedaa60ae9b1ee8c4ba2224da439f7a6fe3",
+    "size": 25686,
+    "path": "Dude/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "461bb4f3c729c3aab9e61a587d13a87c0d49069c",
+    "size": 68346,
+    "path": "Dude/queries.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "b027533c237cb760a8420e271c3971abadf7f7ae",
+    "size": 2772745,
+    "path": "Google_WIT/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "b8a682b5d64fd7e4994b2f26f9de08d59ef54e3e",
+    "size": 2387734516,
+    "lfs": {
+      "oid": "0d393dcff2828ce34913e88b1b6aeb33e855c8f0a0d3a0251b69ee59888ecff7",
+      "size": 2387734516,
+      "pointerSize": 135
+    },
+    "xetHash": "838c0672ef0a13c908db635d2b0b0e1085a017522eed14fe630ddec7b89e5da5",
+    "path": "Google_WIT/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "facc142eb494a054847c29f95121f36f8dbbb355",
+    "size": 1850441,
+    "path": "Google_WIT/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "c7babf154f4a4a7b878650f21b6965f8c4bc64af",
+    "size": 196951,
+    "path": "Google_WIT/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "7ee82bc29e5a38e5a27c68cf45e149a61cfb4082",
+    "size": 51546,
+    "path": "Google_WIT/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "68f04df66dbe092466326b853cd81e113f234c5d",
+    "size": 86841,
+    "path": "Google_WIT/queries.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "f510b28017167bdc233f5044b879984b8e9fe556",
+    "size": 1393930,
+    "path": "InfoVQA/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "e2542eeb1f5aa387b7272c4a30f3bd93769653bb",
+    "size": 1100009417,
+    "lfs": {
+      "oid": "1b385ba1caa0f11736cfc8af2a379e479735bb89f1cadaeef1595e1921c662ad",
+      "size": 1100009417,
+      "pointerSize": 135
+    },
+    "xetHash": "c284c3e42c5bbaa891ccebb9bfcae61193778e3a2b12ae2a69bc189878988b51",
+    "path": "InfoVQA/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "d323f9ee91317c8f98cefdcb09012e9dac3639d4",
+    "size": 662629,
+    "path": "InfoVQA/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "25f5d1580387f6b56501acb199da35fd96fdfc99",
+    "size": 19519,
+    "path": "InfoVQA/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "cf6cdd937436f76457c639682176809ed2aa440a",
+    "size": 35596,
+    "path": "InfoVQA/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "4a54b7dd86af64ad952a6b248b663cf933751d5d",
+    "size": 89740,
+    "path": "InfoVQA/queries.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "a9a27c1a0d84886235c5ee01a9963f6ac9c27bd6",
+    "size": 389452,
+    "path": "MSCOCO/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "c3a6feac90405697d83fa10ef21e9e5780fbf431",
+    "size": 50429263,
+    "lfs": {
+      "oid": "c529c46ad6aecc0dda580e7d21c56a451828121d275e93d833d9d5bfae3227dd",
+      "size": 50429263,
+      "pointerSize": 133
+    },
+    "xetHash": "cef264bdd17d598b2960c5df67c60f5b9ce1f60da73ac0ca4f7424a7e1159acc",
+    "path": "MSCOCO/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "4aeeae3d65a04ff05a56bced04c1ab2eed306c84",
+    "size": 270672,
+    "path": "MSCOCO/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "debeb490d44932c5f3e50cd5c14b1b24c8464092",
+    "size": 42092,
+    "path": "MSCOCO/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "6ff4b24ee679d289b1319b8178be465a9bb744f0",
+    "size": 48980,
+    "path": "MSCOCO/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "67b8b62b08542bd993aabe49f2c092036824bab9",
+    "size": 78427,
+    "path": "MSCOCO/queries.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "4ad78cd3b886cacab97c81a57a9efa18511dd23a",
+    "size": 684100,
+    "path": "OVEN/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "bdf6d46069f828cfb61eb0bd2ebbd7050428f5f7",
+    "size": 32000791,
+    "lfs": {
+      "oid": "45ef39e5fb777c64257f6b06a7dbc8f20c30a21f237167c8a42132093242118d",
+      "size": 32000791,
+      "pointerSize": 133
+    },
+    "xetHash": "7f822df83cd08fa2499cba4d5df6e6b06a190923d1539f1c81a81ae13ce3343b",
+    "path": "OVEN/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "0e12821928c3def404cf106d0166a49eef49c4aa",
+    "size": 460029,
+    "path": "OVEN/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "f84fd609a0ec7957e0fc0fa44376526f233517cb",
+    "size": 49780,
+    "path": "OVEN/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "167cf5b2bd31bf558bb6b56317164b2aa9a83642",
+    "size": 49780,
+    "path": "OVEN/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "9986d556e8bf57f64a627ae89d3197284bdca907",
+    "size": 91967,
+    "path": "OVEN/queries.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "f15d05e8196b8361f652e1c7acd14975ff5b3878",
+    "size": 8409,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "d917cac26bf7cf5c8d82f7f94e5f35509dc5612c",
+    "size": 1729666,
+    "path": "SlideVQA/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "92ef15d554980d3da7daee37e4511fd5662fe714",
+    "size": 497689870,
+    "lfs": {
+      "oid": "eea8989ece8b5a6fbf7d7d7f1c0eb9058b643a801062a1b9ca839545dfb17ab4",
+      "size": 497689870,
+      "pointerSize": 134
+    },
+    "xetHash": "d4e3c8184e8ebd1c5076c692a2e07e5c98de0d93a92c0e2ecda0a37a3b893582",
+    "path": "SlideVQA/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "03aec6587a3fd9c858872739fc41fe647f827d59",
+    "size": 1331542,
+    "path": "SlideVQA/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "8ae38286ada0350e3642b088dd92deab5c8beb58",
+    "size": 55563,
+    "path": "SlideVQA/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "dbae84e29277a9d35c127b8a6801f8c0bf16910f",
+    "size": 29016,
+    "path": "SlideVQA/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "94449207dd3adb9907ca290f885f5578ba9952dd",
+    "size": 78437,
+    "path": "SlideVQA/queries.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "26f0bd40e41144009c91178410a4c2da278491d2",
+    "size": 7510848,
+    "path": "ViDoSeek/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "7548dcb43bfdabe73d5f6fcb284447da8e1821e1",
+    "size": 1181925308,
+    "lfs": {
+      "oid": "cec9368dacb4d203467d25b26ffcbbfa86cc7422673ff20683a14477437c46e4",
+      "size": 1181925308,
+      "pointerSize": 135
+    },
+    "xetHash": "842a9a0b78bcc697f27701dab5ce368de0f94bce3bd2985b79d9b515a0d8229f",
+    "path": "ViDoSeek/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "dad0668de8de907c2fecf98913e401334bfc70e6",
+    "size": 5948341,
+    "path": "ViDoSeek/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "1e57d67808eff9d376eacd2101d8603d155e8d7d",
+    "size": 448620,
+    "path": "ViDoSeek/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "11c67240355fb2e97e3b2c6486ab11f585cb2452",
+    "size": 58049,
+    "path": "ViDoSeek/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "0847e81c7679377c20643077d952fe9c9f40e888",
+    "size": 260622,
+    "path": "ViDoSeek/queries.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "0738d0ba9763fba99eba75574ff935839c1aa02b",
+    "size": 582464,
+    "path": "VisualNews/corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "481b9931bf404cd283cb4e634e318250b7d5298c",
+    "size": 36443747,
+    "lfs": {
+      "oid": "116b8cbfab6bcd791966a47ddb5343363695f4e7bfd1ae150fc9bea48d4e9c76",
+      "size": 36443747,
+      "pointerSize": 133
+    },
+    "xetHash": "a236fb58ef766bac98e33c71d06fc5a7408bbfbf82cbb4c02e312d76b83ae305",
+    "path": "VisualNews/images.tar.gz"
+  },
+  {
+    "type": "file",
+    "oid": "a9315131e716659c41713bc39c44fa2c9ef1bd04",
+    "size": 393949,
+    "path": "VisualNews/mix_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "040b1b39e40df812abf53506b10c76c5fa619ecf",
+    "size": 48627,
+    "path": "VisualNews/origin_corpus.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "446123293e918b769e562bbd75a663f6477aaa6b",
+    "size": 55494,
+    "path": "VisualNews/qrels.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "43f899482843854bb7af1ebfc52dee678b994623",
+    "size": 136531,
+    "path": "VisualNews/queries.jsonl"
+  }
+]

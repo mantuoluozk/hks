@@ -1,0 +1,246 @@
+{
+  "cells": [
+    {
+      "round": 1,
+      "fixture": "text",
+      "batch_size": 1,
+      "requests": 64,
+      "elapsed_seconds": 2.675170491915196,
+      "requests_per_second": 23.923708860208535,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 837.3298101072987
+    },
+    {
+      "round": 1,
+      "fixture": "text",
+      "batch_size": 2,
+      "requests": 64,
+      "elapsed_seconds": 2.466329006012529,
+      "requests_per_second": 25.949498158590313,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 908.232435550661
+    },
+    {
+      "round": 1,
+      "fixture": "text",
+      "batch_size": 4,
+      "requests": 64,
+      "elapsed_seconds": 1.2640726519748569,
+      "requests_per_second": 50.630001289888675,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 1772.0500451461037
+    },
+    {
+      "round": 1,
+      "fixture": "text",
+      "batch_size": 8,
+      "requests": 64,
+      "elapsed_seconds": 0.6748612052761018,
+      "requests_per_second": 94.83431481857973,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 3319.2010186502907
+    },
+    {
+      "round": 1,
+      "fixture": "image",
+      "batch_size": 1,
+      "requests": 64,
+      "elapsed_seconds": 5.492159761954099,
+      "requests_per_second": 11.65297492679436,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 5208.879792277079
+    },
+    {
+      "round": 1,
+      "fixture": "image",
+      "batch_size": 2,
+      "requests": 64,
+      "elapsed_seconds": 5.516125691123307,
+      "requests_per_second": 11.602346208860046,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 5186.248755360441
+    },
+    {
+      "round": 1,
+      "fixture": "image",
+      "batch_size": 4,
+      "requests": 64,
+      "elapsed_seconds": 3.667353253811598,
+      "requests_per_second": 17.451277684657935,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 7800.721125042096
+    },
+    {
+      "round": 1,
+      "fixture": "image",
+      "batch_size": 8,
+      "requests": 64,
+      "elapsed_seconds": 2.858867479953915,
+      "requests_per_second": 22.386487113782444,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 10006.759739860752
+    },
+    {
+      "round": 1,
+      "fixture": "fused",
+      "batch_size": 1,
+      "requests": 64,
+      "elapsed_seconds": 5.5204794043675065,
+      "requests_per_second": 11.593196045504063,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 5251.717808613341
+    },
+    {
+      "round": 1,
+      "fixture": "fused",
+      "batch_size": 2,
+      "requests": 64,
+      "elapsed_seconds": 5.508020080626011,
+      "requests_per_second": 11.619420238701474,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 5263.597368131768
+    },
+    {
+      "round": 1,
+      "fixture": "fused",
+      "batch_size": 4,
+      "requests": 64,
+      "elapsed_seconds": 3.536300458945334,
+      "requests_per_second": 18.09800969770746,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 8198.39839306148
+    },
+    {
+      "round": 1,
+      "fixture": "fused",
+      "batch_size": 8,
+      "requests": 64,
+      "elapsed_seconds": 2.886530328076333,
+      "requests_per_second": 22.171947884106054,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 10043.892391500041
+    },
+    {
+      "round": 2,
+      "fixture": "text",
+      "batch_size": 1,
+      "requests": 64,
+      "elapsed_seconds": 2.669218721333891,
+      "requests_per_second": 23.97705346829623,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 839.196871390368
+    },
+    {
+      "round": 2,
+      "fixture": "text",
+      "batch_size": 2,
+      "requests": 64,
+      "elapsed_seconds": 2.5116870240308344,
+      "requests_per_second": 25.480881729161773,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 891.8308605206621
+    },
+    {
+      "round": 2,
+      "fixture": "text",
+      "batch_size": 4,
+      "requests": 64,
+      "elapsed_seconds": 1.3274326701648533,
+      "requests_per_second": 48.213368134183305,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 1687.4678846964157
+    },
+    {
+      "round": 2,
+      "fixture": "text",
+      "batch_size": 8,
+      "requests": 64,
+      "elapsed_seconds": 0.6924763638526201,
+      "requests_per_second": 92.42192707334215,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 3234.767447566975
+    },
+    {
+      "round": 2,
+      "fixture": "image",
+      "batch_size": 1,
+      "requests": 64,
+      "elapsed_seconds": 5.506950865965337,
+      "requests_per_second": 11.621676233855624,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 5194.889276533464
+    },
+    {
+      "round": 2,
+      "fixture": "image",
+      "batch_size": 2,
+      "requests": 64,
+      "elapsed_seconds": 5.4194797719828784,
+      "requests_per_second": 11.809251568916492,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 5278.735451305672
+    },
+    {
+      "round": 2,
+      "fixture": "image",
+      "batch_size": 4,
+      "requests": 64,
+      "elapsed_seconds": 3.546797233633697,
+      "requests_per_second": 18.044448493727945,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 8065.868476696391
+    },
+    {
+      "round": 2,
+      "fixture": "image",
+      "batch_size": 8,
+      "requests": 64,
+      "elapsed_seconds": 2.7891765679232776,
+      "requests_per_second": 22.945840265556274,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 10256.790598703656
+    },
+    {
+      "round": 2,
+      "fixture": "fused",
+      "batch_size": 1,
+      "requests": 64,
+      "elapsed_seconds": 5.509284150786698,
+      "requests_per_second": 11.616754236729852,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 5262.389669238623
+    },
+    {
+      "round": 2,
+      "fixture": "fused",
+      "batch_size": 2,
+      "requests": 64,
+      "elapsed_seconds": 5.359347481280565,
+      "requests_per_second": 11.941752279273336,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 5409.613782510821
+    },
+    {
+      "round": 2,
+      "fixture": "fused",
+      "batch_size": 4,
+      "requests": 64,
+      "elapsed_seconds": 3.4569033849984407,
+      "requests_per_second": 18.51367911458968,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 8386.696638909125
+    },
+    {
+      "round": 2,
+      "fixture": "fused",
+      "batch_size": 8,
+      "requests": 64,
+      "elapsed_seconds": 2.7496383911930025,
+      "requests_per_second": 23.27578790178003,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 10543.931919506354
+    }
+  ],
+  "protocol": "Three fixed demonstration inputs repeated; end-to-end LLM.embed including preprocessing, synchronous batches, two warmups per cell; no prefix or multimodal processor cache.",
+  "official_accuracy_pass": null
+}

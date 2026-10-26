@@ -1,0 +1,45 @@
+{
+  "mode": "single",
+  "dataset": "ChartQA",
+  "queries_dir": "/root/private_data/hks/models/Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/chartqa/queries",
+  "corpus_dir": "/root/private_data/hks/models/Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/chartqa/origin_corpus",
+  "qrels": "/root/private_data/hks/models/Trident-Qwen3VL-2B/data/Trident-Eval/ChartQA/qrels.jsonl",
+  "k_values": [
+    1,
+    5,
+    10
+  ],
+  "num_evaluated_queries": 1250,
+  "metrics": {
+    "recall@1": 0.5264,
+    "precision@1": 0.5264,
+    "ndcg@1": 0.5264,
+    "mrr@1": 0.5264,
+    "map@1": 0.5264,
+    "success@1": 0.5264,
+    "recall@5": 0.7808,
+    "precision@5": 0.15615999999999797,
+    "ndcg@5": 0.6635587328086088,
+    "mrr@5": 0.624400000000001,
+    "map@5": 0.624400000000001,
+    "success@5": 0.7808,
+    "recall@10": 0.8752,
+    "precision@10": 0.08751999999999845,
+    "ndcg@10": 0.6944828219047635,
+    "mrr@10": 0.6373926984126989,
+    "map@10": 0.6373926984126989,
+    "success@10": 0.8752
+  },
+  "stats": {
+    "queries_total_rows": 1250,
+    "queries_without_qrels": 0,
+    "queries_embedding_failed": 0,
+    "queries_dropped_no_gold_in_corpus": 0,
+    "gold_pairs_total": 1250,
+    "gold_docs_missing_in_corpus": 0,
+    "drop_missing_gold": false,
+    "corpus_rows": 1509,
+    "corpus_unique_docs": 1509,
+    "retrieve_k_rows": 10
+  }
+}

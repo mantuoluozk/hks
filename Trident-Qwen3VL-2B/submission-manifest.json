@@ -1,0 +1,686 @@
+{
+  "source_commit": "2f3f597e2201cf05f079dae4adad5f98edc60c58",
+  "model": "Trident-Qwen3VL-2B",
+  "files": [
+    {
+      "path": "Trident-Qwen3VL-2B/.gitattributes",
+      "bytes": 113,
+      "sha256": "6402019dca70f4e490662b42553bbff7c025796d90f9bad0af20fb38164d9fdc"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/.gitignore",
+      "bytes": 192,
+      "sha256": "1406cdb651a2dcf579860c14e20a680f901c4ea570ec309cb89e2f9ee0d891fd"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/README.md",
+      "bytes": 8487,
+      "sha256": "c36019d68c1ce90f8c7409bd12ac4700f7745462faeb20b5c318326e152f0dab"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/bench.sh",
+      "bytes": 389,
+      "sha256": "c84a79f28a5df3180636b976913f64e2e693b8f32595914e2323005b4676e40e"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/dataset/chartqa-check.json",
+      "bytes": 1282,
+      "sha256": "8ce60cb5db1df19ec3fb339e22100a3408f05fa82e8c5e4e0ee95f2d0f8ae561"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary.log",
+      "bytes": 35062,
+      "sha256": "dc07de7c2ea19a6a98b52a4202c942b43b5f4d57f7d179f9ef8641ff26de5a1b"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/chartqa/origin-result.json",
+      "bytes": 1390,
+      "sha256": "30f5c292102d17faac672fb48fc75aed16023f5b185a4784d113d016b2a67381"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/chartqa/origin_corpus/ids.txt",
+      "bytes": 9453,
+      "sha256": "4dcff9a47f481bf508158744510992f3e9b91ca2cb561e1e8c73c8c7e1964e11"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/chartqa/origin_corpus/token_counts.jsonl",
+      "bytes": 81906,
+      "sha256": "62be34691772e916edd9db50c7ecc66c3908c8010c4e96c0ae44e96288e87b2e"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/chartqa/queries/ids.txt",
+      "bytes": 7640,
+      "sha256": "d562a62d385bfbae533f30fc11f1710d3cc379d6aa68b5143ca633be0a601c07"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/chartqa/queries/token_counts.jsonl",
+      "bytes": 66390,
+      "sha256": "6c2f1f948101c6671444c4c6bb86888672b84b85696297f42c1124d2f5039510"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/chartqa/rankings.jsonl",
+      "bytes": 743653,
+      "sha256": "c9c3d6305872284cf1602246af792afe0e2f58812ac9657d567842c97c3ecdea"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/chartqa/summary.json",
+      "bytes": 520,
+      "sha256": "55ffee17c52620e7971ed7338947fa2c7712f14e9d7794dd063a3b9c694c006c"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_primary/performance/summary.json",
+      "bytes": 6834,
+      "sha256": "cd808ba230ec4ed9b96c65f9b68a8ca02f6f2537e04ab3a66d8d3220e5cf57ff"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_reproduction.log",
+      "bytes": 18204,
+      "sha256": "ca4e96b9b14c29a5ddcf069a27305296a0e4e7a2264c5555f60aea6f8734a9a5"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/native_reproduction/performance/summary.json",
+      "bytes": 7028,
+      "sha256": "769e51e66057497e07e8743d1378972900d221930060c7ecee5a2e1856a949ae"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/publisher_chartqa.log",
+      "bytes": 18870,
+      "sha256": "ee251f31cb7a05d50059274bd1e7f3e183a16685a94212bc7f2ccea745923204"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/publisher_chartqa/origin-result.json",
+      "bytes": 1381,
+      "sha256": "57591fc8d4734345ff0ecac47ac7502c997954a58456bca618bb60f2a42cdb6f"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/publisher_chartqa/origin_corpus/ids.txt",
+      "bytes": 9453,
+      "sha256": "4dcff9a47f481bf508158744510992f3e9b91ca2cb561e1e8c73c8c7e1964e11"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/publisher_chartqa/origin_corpus/token_counts.jsonl",
+      "bytes": 81906,
+      "sha256": "62be34691772e916edd9db50c7ecc66c3908c8010c4e96c0ae44e96288e87b2e"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/publisher_chartqa/queries/ids.txt",
+      "bytes": 7640,
+      "sha256": "d562a62d385bfbae533f30fc11f1710d3cc379d6aa68b5143ca633be0a601c07"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/publisher_chartqa/queries/token_counts.jsonl",
+      "bytes": 66390,
+      "sha256": "6c2f1f948101c6671444c4c6bb86888672b84b85696297f42c1124d2f5039510"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/publisher_chartqa/rankings.jsonl",
+      "bytes": 743655,
+      "sha256": "59701a492d874070553d6b8af706b7cb31b157349451f1c22c412ed29be8df21"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/publisher_chartqa/summary.json",
+      "bytes": 524,
+      "sha256": "072a585b97a8ed2742f8f83038f5848aaf09d7d61c055b66ac6f1e7a5fc5d223"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/release-20261026T113612Z/status.json",
+      "bytes": 54,
+      "sha256": "17c40fa4db4a3f2cda155acdbe9d8e041638b4c4ad7488512ab6147125b5c5c5"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/native_embedding.log",
+      "bytes": 19904,
+      "sha256": "b2681be5bbd6403189e6951607f64067213156211f4c82a574f547936c29faa0"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/native_embedding/api-summary.json",
+      "bytes": 600,
+      "sha256": "c27d8e364fc09354a028d01b4019a8fa19f8b414e0c5865cadbfc93469c8d303"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/native_embedding/performance/summary.json",
+      "bytes": 7028,
+      "sha256": "4c94a046ee723c50de82b7349d51cc9a596ffec490a3f07f8470fc2004931b53"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/native_embedding/summary.json",
+      "bytes": 380367,
+      "sha256": "fe14b2e03b927f35960688e874593c75cb5a10e74f0a94b96bc838232bd90663"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/preflight.log",
+      "bytes": 2943,
+      "sha256": "8a491c5e43a850a23a8dd4703a24ce4b7e599b4903e4161296129481d493d20f"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/preflight/summary.json",
+      "bytes": 2429,
+      "sha256": "51e09d3f3e5c12a18043a6a999ce2d3a6850475fbcb05b647c302148b3dd6ffc"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/publisher_reference.log",
+      "bytes": 34264,
+      "sha256": "cee3d823261c8be79c071e4cf389331f1ac2f8b8a28d11cfaea9df95dc3b8581"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/publisher_reference/summary.json",
+      "bytes": 382561,
+      "sha256": "6dc4e59dc4e77a27d19e64a40074fb4c62cf06a685eb54ce6fb692e0982a57d2"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/status.json",
+      "bytes": 89,
+      "sha256": "094d903bf25e1b8e21c031adaae278a470e0538f0c3f6be107c7f2df28d52b83"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/weights.log",
+      "bytes": 520,
+      "sha256": "37e163703dd0aaf61cae42aed3b7a0561f15398a3ad4cc8c2fdde80cfb967fa8"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/weights/weights-check.json",
+      "bytes": 2481,
+      "sha256": "a9bfbd637aa1d87ddc4919c541a25d5fa230c83de40cdbe85a6fd6ebe2e91932"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/results/scnet/validation-summary.json",
+      "bytes": 11308,
+      "sha256": "f61ee15962195d91ba65074303edf5f97b718a6f1757476d24db5d984dff792c"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/run-scnet.sh",
+      "bytes": 999,
+      "sha256": "c2d4c178bdf86f39f5e4bc54379dc97b670c986a2e19c26c470857959ee5ae11"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/run.sh",
+      "bytes": 154,
+      "sha256": "799133793da747861576809f4542a7e7ba65f759ba4d43b908964c3b27cdd0ba"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/runtime-config.json",
+      "bytes": 685,
+      "sha256": "3903741cb715a41d49ba9b7df8745f8aa91cd73fccfb674c2597b7ecb5de0af1"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/benchmark_native.py",
+      "bytes": 2738,
+      "sha256": "ade87bb927d740296f2a42cfbb2c7c1edab1b8cbff649c5371f6547bfb08c6b0"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/check_weights.py",
+      "bytes": 1358,
+      "sha256": "b7d7e9772308a5c03ade1f309a6e1b97c296879be010a4d09fc2a4a7ab8aaa6c"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/evaluate_chartqa.py",
+      "bytes": 5672,
+      "sha256": "c069768d7a2a1be479e86d1c24a7a93251aefcee40c35d90bb94820ec18a55ad"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/finalize_report.py",
+      "bytes": 8898,
+      "sha256": "8cd7a59937b42894301592400ba4895d96220825b981c64a2ae6daff82dd5762"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/native_runtime.py",
+      "bytes": 864,
+      "sha256": "971035ff3ade0925958147a868e9720d7cde0453f9c6565239e778ae633da7ae"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/native_smoke.py",
+      "bytes": 4673,
+      "sha256": "475919eeff05ce0cbf8f6ad38eb54c2afb6a744fce9a1a8ae273006e25c432ad"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/preflight.py",
+      "bytes": 1885,
+      "sha256": "84f1ee407f6ad0b385c73e313f2261b2aa2582987b73c9706b0ca8e2a9dcdf9d"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/prepare_chartqa.py",
+      "bytes": 2262,
+      "sha256": "fc303bf100594763458f3dcafb14d1ef40f441d2e1f4ad9b3500f27ff959d13e"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/reference_smoke.py",
+      "bytes": 3746,
+      "sha256": "fa3fc064afcbdac478f761bf43de153e55e78e7f1953738ae860d66ef52cdb88"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/run_native_suite.py",
+      "bytes": 648,
+      "sha256": "bf2a5d734b0290a2f73d6436ac59473373444ddb24e19fcdf8bbbe10a7b658d4"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/run_release_validation.py",
+      "bytes": 1512,
+      "sha256": "31223442aac4ff6ad1b174b99c4ec2c2e2f1bf2a92da7906e25a7db476f02418"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/run_validation.py",
+      "bytes": 1607,
+      "sha256": "419b7beff922af783c12a7086dae3ca0e1184d05c90d2287fc882ec7de43078c"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/serve_embeddings.py",
+      "bytes": 4409,
+      "sha256": "67a27d7388c6c9ee577537c62f6d3ba65afc110b5fea5a654ece524b64fffc97"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/scripts/summarize_results.py",
+      "bytes": 5223,
+      "sha256": "09e886cbe227fecef11ca95db0442fe0dab69142590bd8ee44fbbab84e30a7a8"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/smoke.sh",
+      "bytes": 331,
+      "sha256": "1df67698449569f3eb5e61164f7279bb406635fa3005d7c01d58ce6e4cce0ab2"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/evaluation-source.json",
+      "bytes": 1354,
+      "sha256": "a8062b132291aa4ca0992b4f29380605911de273078d62191f3c41131c317611"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/evaluation-tree.json",
+      "bytes": 13314,
+      "sha256": "e8a073e498a245e9152040f7113dcf223239c94a8ae16939deea84a968c0f935"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/modelscope-files.json",
+      "bytes": 8570,
+      "sha256": "60ee57ad8d94168cfbd7d3401815b23d438715de4a579e8d366ce4a7ba541804"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/public-baseline.json",
+      "bytes": 396,
+      "sha256": "1cf86ecc3ea676e978d7454dfbb63da64651d32938ceadf190ce7d91f8a04b46"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/qwen-vl-utils-source.json",
+      "bytes": 922,
+      "sha256": "24ad0c78388f0b2b427eea387382845ecf8173db9d14642be3b571121a2e739e"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream-source.json",
+      "bytes": 21090,
+      "sha256": "4d9df8ac3bd2394978ac28a3ce0761bcc150582855fc5da21bd8c44c775c7ffe"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/LICENSE",
+      "bytes": 1076,
+      "sha256": "ce577a6544d1b99fc830cc8eb39af59caa78372ca0568bd53e43124246a100a6"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/README.md",
+      "bytes": 21637,
+      "sha256": "49a32640bcb076dd3252bc1cfee7720018b3965d3fab82ef0d21d26222a72cf6"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/configs/trident_qwen3vl.yaml",
+      "bytes": 4691,
+      "sha256": "17e049e335e77a27442a54c4ef45be9042556c00e963434113279f48c9156332"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/data/download_data.sh",
+      "bytes": 12617,
+      "sha256": "71e6e22690af94390cdf387f2dd348bf96a17ca935bec8f3e9c509000dddf1a1"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/figs/example_chart.png",
+      "bytes": 53485,
+      "sha256": "c5f40c29a6c5bae15168ab92e8702ab42e536b284caa2227da93cf8cfe25c955"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/requirements.txt",
+      "bytes": 1305,
+      "sha256": "96821508a31b6dfb54c471b50759c555e7e3fce8b5830fae91b97388ed16ca1d"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/scripts/run_all_datasets.sh",
+      "bytes": 21336,
+      "sha256": "20294a2edd2a041d9e01eba72baa59e1d575a45ea0764ddf0329b1df55f02c0a"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/__init__.py",
+      "bytes": 1506,
+      "sha256": "64338e49267ef9d922e6bbc51b523ae8d460f63174109ad94b305954acd1521f"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/altclip.py",
+      "bytes": 6463,
+      "sha256": "54a68f9100230a81e4f279446f5d88299234754cba865c19310c25717e521a3a"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/base.py",
+      "bytes": 17936,
+      "sha256": "74d51bd5f7fa8d3e3d4779eec21c74f734543a1dae4fa1d5d8926afed2fa5416"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/clip_openai.py",
+      "bytes": 6144,
+      "sha256": "f1ded4a1f0f2bfe87fa4879dbe044636b236dadbd1b17cf0b518c6c30333986b"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/common.py",
+      "bytes": 12818,
+      "sha256": "279915c091665d3c05016cd9d47bef55f51fd9b17a7b6ea269df30228a75795c"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/gr_clip.py",
+      "bytes": 17518,
+      "sha256": "7136d1cd6cabe169496fc90b38f8b4d2a8a06c1a17cf6d15c7f135e0584269eb"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/jina_clip_v2.py",
+      "bytes": 7538,
+      "sha256": "b65b902c9d7727de846d14042f04975bada7f027fc4765ce9c9d93e9f3b1bb65"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/jina_v5_omni.py",
+      "bytes": 6153,
+      "sha256": "67e7f6dcb9335e247d2d45928c7050c6d5c52dca6646549647410e4f5df104d6"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/qwen3vl_official.py",
+      "bytes": 6488,
+      "sha256": "9ad62e74f716d79d4978d881f3a8805a4ec5f55bc6ced80bc1ac999a02f30f89"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/siglip2.py",
+      "bytes": 7366,
+      "sha256": "380f5a22a0e299e0f2ee14fee260eeef6c46a0c6836deed2e6b257c32d117115"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/trident_jinaclip.py",
+      "bytes": 10139,
+      "sha256": "5d1d4e833dff66e75f1d612bea1dae7c6785ea9df8aecc34421bff3a9e56b3d2"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/trident_qwen3vl.py",
+      "bytes": 9554,
+      "sha256": "8d6ea5e9866da1e0e9f6400d8aba03df8820e7a46f83d6267a2ea72878e6754a"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/unime_phi35v.py",
+      "bytes": 9883,
+      "sha256": "4be03728acbd7904d0cac34211167cf981ea0b4c54aa9ea94d58771c21c063dc"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/embedding_backends/visrag_ret.py",
+      "bytes": 6016,
+      "sha256": "4937eb0c58474a2f6ec5656458cbea6359f74057d0bd4d65e8f137ea88d7a51f"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/eval/build_manifests.py",
+      "bytes": 6003,
+      "sha256": "5354d1bde1b2afeb2f6520f0b033339a87b9cd48e754ca05dce99d811a02f939"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/eval/embed_jsonl_unified_multigpu.py",
+      "bytes": 58288,
+      "sha256": "4f5602bd064a14f8ca8a70a6b53af4396af061b058fd89afcc5cdd1fdcdd4131"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/eval/eval_common.py",
+      "bytes": 26240,
+      "sha256": "1195b489d0c34fffea4c7a05e4bcc6f870346521e6ff462588426933e70a747a"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/eval/eval_mix_retrieval.py",
+      "bytes": 11682,
+      "sha256": "ca0e93ba3604b814a0fd556e9a015bbcf2c591250d0f2040efcd574c410522c9"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/eval/eval_retrieval.py",
+      "bytes": 5156,
+      "sha256": "3e14234515b74ca4376deadd47dcf570309c49348b8901a43e91ad1fe9954484"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/eval/export_results_table.py",
+      "bytes": 19860,
+      "sha256": "b5a934f4af6935c0da8b36b4300381729ab6823a26f210fa15582347609206ed"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/eval/summarize_matryoshka.py",
+      "bytes": 5100,
+      "sha256": "190bf1e694373c6e1166cf05878737f6db0cbb592287194ffb950ea9089d173a"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/__init__.py",
+      "bytes": 543,
+      "sha256": "9c5df400dcbaa19c1c3b83f3667165102430e8f873b36d260c2c0b7bc8117b24"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/config.py",
+      "bytes": 3697,
+      "sha256": "c18908dac1a50164454ef16c650d59ccf6b1636f7c4e8cf86434dd02154dbd14"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/data/__init__.py",
+      "bytes": 5643,
+      "sha256": "dfe2ff9a38e3fc857607d3b127e50cd520403d99fa21c60616bf715049e92102"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/data/collator.py",
+      "bytes": 9533,
+      "sha256": "bb2a44049c82e3494fa63a40920c9f15325c813c4ee5be04ce7a352e7ccc1b43"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/data/dataset.py",
+      "bytes": 39661,
+      "sha256": "45aa30f57fa0673289f97b0eea79c46420640af65c98f4b5bd3c2c70dc6d44b7"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/data/identity.py",
+      "bytes": 10888,
+      "sha256": "53d6df5a86daa9175bf2032a4976d4f1aa256fda493de612a6b57ee71af73839"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/data/instructions.py",
+      "bytes": 5003,
+      "sha256": "238b3c0d9abc1776d255dd64d5041ab193ae0a0cfbd054feefe50768954160f4"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/data/lexical_negatives.py",
+      "bytes": 29171,
+      "sha256": "658afd30cd1e30df6b2fd288ebec53a3b12b60bfed15656e30e5a018d1396a5c"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/data/progress.py",
+      "bytes": 2510,
+      "sha256": "09ce088b9a296a2539cd9450459ee90acc92fca2debd15107e2318557836fb96"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/data/schema.py",
+      "bytes": 12671,
+      "sha256": "ae5c667a1250e9ab4ff80da2e556c03ab0d2cc0dede858d7a45ff6139bad1f46"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/engine/__init__.py",
+      "bytes": 264,
+      "sha256": "279ffbaddf0b18cdfddebe31bfb195c9c7b712c3a9684035321384c7c7680c2b"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/engine/curriculum.py",
+      "bytes": 2000,
+      "sha256": "735b415a188dbd8695931aed2699ee2aa16fb57955dd5ce85983615a0ddf4d1e"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/engine/monitor.py",
+      "bytes": 11049,
+      "sha256": "c8d810f511e91310813fec5154fd0fcd4a64b2bf8e6ccc08d96a1455c3de812d"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/engine/trainer.py",
+      "bytes": 9853,
+      "sha256": "830d3193bf9a0a044b1bc1709f4b08cc0cf14da7b580e11ebf1ca99374411089"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/engine/wrapper.py",
+      "bytes": 9453,
+      "sha256": "100ff04f9742e886237646953ca14b77855e41c498ea3c310a16dd988d9479ff"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/eval/__init__.py",
+      "bytes": 144,
+      "sha256": "512d40a20c6ea704fba92ee40c9c0aa8d6e4a8fcfd708b2282a9e8aa883a4c4c"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/eval/retrieval.py",
+      "bytes": 9136,
+      "sha256": "ee60483939a184ff7d5490cd9f9e9549852c4d764253f9e4e3b4ce51ffca0bb6"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/losses/__init__.py",
+      "bytes": 944,
+      "sha256": "47d41a7fe34d1b10819eff6cf47025d2f7d995b0759e258292e20f21a4376aac"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/losses/base.py",
+      "bytes": 3506,
+      "sha256": "78662db18df624d53da96934835611f60a923b1c4690b39b53829eb22070d929"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/losses/false_negative.py",
+      "bytes": 10747,
+      "sha256": "3fda260fd33e13c3a4dcfe076b4437e96d7297c4fb7a8996b6d1ccad55b19fe7"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/losses/infonce.py",
+      "bytes": 25293,
+      "sha256": "d382cca5265fe562c44723bc419b016581e09cb56ed4cc3e7f58f346641d8ccc"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/losses/modality_balance.py",
+      "bytes": 14956,
+      "sha256": "bf4718a4a03b92719577256d0916586226c7d2c011b1918af79334cd53ca8b6e"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/losses/spec.py",
+      "bytes": 12482,
+      "sha256": "f7ca5d03ec6618b2fc306c07167b9841d92d8ede75a4bd55f38bd14d28137f50"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/models/__init__.py",
+      "bytes": 3990,
+      "sha256": "0349609c272964902b7e9475329ef56fee3db7fab31d8cf55f396ba5412f703a"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/models/base.py",
+      "bytes": 6076,
+      "sha256": "fc30b813125618b6d3a9ad65721d83860a8eec0555477582f36999c43956fadf"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/models/image_io.py",
+      "bytes": 2073,
+      "sha256": "76c85c0024fc4eb8b1d9d1f3ec2c40b8165246a5d2c95dae5249e473fd353b11"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/models/jina_clip.py",
+      "bytes": 30989,
+      "sha256": "22132d9170a6579ce64e5fbfe77822fbdc649d3e9f352e2201a91f234b547a7e"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/models/modeling_qwen3_vl_embedding.py",
+      "bytes": 7077,
+      "sha256": "c0b351fb75ee2ef0ca17d8e476c6ef43b20eca0604d34cbcf2640916074cefe9"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/models/pooling.py",
+      "bytes": 2916,
+      "sha256": "ce88f447d2f26a88816a4510c6eeca9223bcf4732d448cc13e09e41769f027e6"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/models/qwen3_vl_embedding.py",
+      "bytes": 26000,
+      "sha256": "e67918523480a6f5d3c62c7ece8911748a89d51922a50ec634ff44f463ea1de7"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/registry.py",
+      "bytes": 1429,
+      "sha256": "22fcd90e2b5eb31fdcd6fcb191b714d27cb8bcfcdaf92994c5badd0a278497a3"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/utils/__init__.py",
+      "bytes": 109,
+      "sha256": "7f479acbb3e26208ea35a93c17181ae3b1cf209dc88c4016bd3b9596301e52b7"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/utils/dist.py",
+      "bytes": 3122,
+      "sha256": "e017e27a4f8cbe4802259790c930b3dfc0647c0af46b51969df27f6b1186aa71"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/utils/env.py",
+      "bytes": 10492,
+      "sha256": "b4c0366caf156229203189443b6e356646b566475664d39a192558fa66c5012b"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/mmemb/utils/misc.py",
+      "bytes": 3415,
+      "sha256": "08861bc6314c1b6154266f1e545a056e368a8758ee245251f695f87cb370038e"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/tools/compute_gr_clip_calibration_means.py",
+      "bytes": 45042,
+      "sha256": "3c1dc78532d624b139a55a91c7c0d9e968b747e7393cca5515e2895a8bff6d00"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/tools/merge_lora.py",
+      "bytes": 15967,
+      "sha256": "ac3b31f83647ae46d30b071cf454f36040539a228e392a14359991a017c00cd1"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/upstream/src/train.py",
+      "bytes": 10072,
+      "sha256": "4fccb8d3bebe7b1ea4e9a45fe9f468491bb9149b3d4274142b9df61bcce4f53f"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/vendor/qwen_vl_utils/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/vendor/qwen_vl_utils/__init__.py",
+      "bytes": 134,
+      "sha256": "a0c454a56f2ba478731013afe1ba5d5d9caff652fe0ce51be1c315476e5c7905"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/sources/vendor/qwen_vl_utils/vision_process.py",
+      "bytes": 21069,
+      "sha256": "f3710ced8ffe735da57d08cf5236cf9d326ff646ed1bdad2e62593a7801adc33"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/verify.py",
+      "bytes": 1065,
+      "sha256": "63d22c66d944287ecfe383245b7d756df77a8b4b57d74e1ec37c8139ac86cea3"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/优化说明.md",
+      "bytes": 1216,
+      "sha256": "c9ee3735afdccb3cef5e0948c1a5a0bf243b0d5e33c1b64cffb6976cab25f486"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/官方精度基线查证.md",
+      "bytes": 1296,
+      "sha256": "62b63ecf19383f5b890d0c78c63006c1b33b6fe4732763559afd373965425ec1"
+    },
+    {
+      "path": "Trident-Qwen3VL-2B/提交填写信息.md",
+      "bytes": 1148,
+      "sha256": "c97fc5b056bfa18f2c582c89c553953214300077077f16d947135abac6d291b4"
+    },
+    {
+      "path": "platform/scnet-notebook/backup_shared.py",
+      "bytes": 2739,
+      "sha256": "16712145c24af2df1de0213346f1b18488ac173d25da3ed2e1cfcd07f29cb4cd"
+    },
+    {
+      "path": "platform/scnet-notebook/env-scnet.sh",
+      "bytes": 848,
+      "sha256": "1b1768582ba3d0223dc248f87bde485af4d0ef5a0c214c922cbd989d5b79dbc8"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "repository": "OpenBMB/Trident-Eval",
+  "revision": "15c41335843f8880e24778843b462234b6427e4f",
+  "files": [
+    {
+      "path": "ChartQA/corpus.jsonl",
+      "bytes": 1074216,
+      "sha256": "748d7bd077bc5c1916faf1fd13f64763a33ae1e254c9c4309fbc85e49f4d7495",
+      "publisher_match": true
+    },
+    {
+      "path": "ChartQA/images.tar.gz",
+      "bytes": 59775086,
+      "sha256": "c6d84c886cd24398ba83ebcb4d05a1f9286e3f958053d6254d3c477facc169ee",
+      "publisher_match": true
+    },
+    {
+      "path": "ChartQA/mix_corpus.jsonl",
+      "bytes": 345887,
+      "sha256": "96435d4ad38e04fb9606a92532ae748abb9c59228cb8e5f9f776e941110e9b49",
+      "publisher_match": true
+    },
+    {
+      "path": "ChartQA/origin_corpus.jsonl",
+      "bytes": 81066,
+      "sha256": "6e15861c609aff20dbad225935afe8703216f9cf5f565ecd15ea274ef932cfce",
+      "publisher_match": true
+    },
+    {
+      "path": "ChartQA/qrels.jsonl",
+      "bytes": 63233,
+      "sha256": "8cd88468002bccb63b21a59c5b276287a39b3cb75e7a0b58afb110d881614886",
+      "publisher_match": true
+    },
+    {
+      "path": "ChartQA/queries.jsonl",
+      "bytes": 145526,
+      "sha256": "8a0ee68babebf60fa97568851001d82c25835622b9f6db154cd0cad766277a5d",
+      "publisher_match": true
+    }
+  ],
+  "all_verified": true
+}

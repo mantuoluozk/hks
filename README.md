@@ -9,6 +9,7 @@
 | MiMo-V2.6-Distill-Qwen-9B | BW × 1 / SGLang 0.5.18 / BF16 | [README](MiMo-V2.6-Distill-Qwen-9B/README.md) | 11/11 Smoke；12轮608请求 | 固定公开样本GSM8K 179/200、MMLU 160/200；正式精度待官方代码复验 |
 | Qwen3-ASR-1.7B | BW × 1 / vLLM 0.25.1 / BF16 | [README](Qwen3-ASR-1.7B/README.md) | 在线6/6、PCM4/4；性能8项128请求；镜像复验最大偏差7.28% | 完整 test-clean 2620条 WER 1.6501%，零错误零截断；正式精度待官方代码 |
 | Qwen3-ForcedAligner-0.6B | BW × 1 / vLLM 0.25.1 / BF16 | [README](Qwen3-ForcedAligner-0.6B/README.md) | 中英文2/2；每进程8项512请求；独立进程复现最大偏差7.18% | 正式AAS待官方代码；批次8存在80ms边界差异 |
+| Trident-Qwen3VL-2B | BW × 1 / vLLM 0.25.1 / BF16 | [README](Trident-Qwen3VL-2B/README.md) | 多模态6条及HTTP embedding通过；每进程24格1536请求；复跑偏差3.88% | 完整ChartQA Origin 1250查询/1509图表，NDCG@10 69.4483（论文70.19）；正式精度待官方验收 |
 
 每个模型的配置、启动脚本、精度与性能结果位于对应目录，报告按比赛八章模板组织。
 
