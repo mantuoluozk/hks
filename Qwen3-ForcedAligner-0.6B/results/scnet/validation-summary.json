@@ -1,0 +1,1377 @@
+{
+  "model": "Qwen/Qwen3-ForcedAligner-0.6B",
+  "evidence_audit_passed": true,
+  "primary_path": "results/scnet/validation-20261026T094057Z",
+  "reproduction_path": "results/scnet/validation-20261026T094355Z",
+  "primary": {
+    "preflight": {
+      "model": "Qwen/Qwen3-ForcedAligner-0.6B",
+      "model_path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B",
+      "native_token_classification_import": true,
+      "runner": "pooling",
+      "pooling_task": "token_classify",
+      "packages": {
+        "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+        "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+        "transformers": "5.12.1",
+        "openai": "2.30.0",
+        "librosa": "0.11.0"
+      },
+      "logical_device": "0",
+      "hip": "6.3.26113",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 56603
+        },
+        {
+          "path": ".msc",
+          "bytes": 730
+        },
+        {
+          "path": "README_en.md",
+          "bytes": 57279
+        },
+        {
+          "path": "config.json",
+          "bytes": 5982
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 1671853
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 1835544544
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 330
+        },
+        {
+          "path": "readme.ipynb",
+          "bytes": 68133
+        },
+        {
+          "path": ".gitattributes",
+          "bytes": 1561
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 115
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 12666
+        },
+        {
+          "path": ".mv",
+          "bytes": 36
+        },
+        {
+          "path": "chat_template.json",
+          "bytes": 1161
+        },
+        {
+          "path": "configuration.json",
+          "bytes": 56
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 2776833
+        }
+      ],
+      "missing_configuration": [],
+      "weight_files": [
+        {
+          "path": "model.safetensors",
+          "bytes": 1835544544
+        }
+      ],
+      "weights_available": true,
+      "inference_verified": false,
+      "official_accuracy_pass": null,
+      "stage": "ready_for_weight_provenance_check",
+      "devices": [
+        {
+          "logical_device": 0,
+          "name": "BW",
+          "gcn_arch": "gfx936:sramecc+:xnack-",
+          "memory": 68702699520,
+          "compute_units": 80
+        }
+      ],
+      "native_aligner_source_sha256": "b8b3e32b69b518c6c35ab73ee96945f15c9387a8e4fc7ff9c55c955ab88c76f6",
+      "cpu_thread_environment": {
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4",
+        "NUMEXPR_NUM_THREADS": "4"
+      }
+    },
+    "smoke": {
+      "model": "Qwen/Qwen3-ForcedAligner-0.6B",
+      "framework": "vllm",
+      "dtype": "bfloat16",
+      "runner": "pooling",
+      "pooling_task": "token_classify",
+      "enforce_eager": true,
+      "initialization_seconds": 58.74697984708473,
+      "functional_cases": 2,
+      "cases": [
+        {
+          "id": "en-demo",
+          "language": "English",
+          "audio_seconds": 15.05125,
+          "elapsed_seconds": 0.3548876070417464,
+          "classification_shape": [
+            315,
+            5000
+          ],
+          "raw_timestamp_bins": [
+            5,
+            11,
+            13,
+            16,
+            13,
+            16,
+            16,
+            19,
+            19,
+            24,
+            29,
+            30,
+            30,
+            35,
+            36,
+            39,
+            39,
+            41,
+            41,
+            48,
+            48,
+            50,
+            51,
+            53,
+            53,
+            58,
+            58,
+            63,
+            64,
+            66,
+            66,
+            69,
+            75,
+            82,
+            83,
+            85,
+            85,
+            87,
+            87,
+            93,
+            93,
+            100,
+            100,
+            110,
+            109,
+            116,
+            119,
+            126,
+            126,
+            132,
+            139,
+            140,
+            140,
+            143,
+            143,
+            146,
+            146,
+            153,
+            153,
+            158,
+            158,
+            160,
+            160,
+            161,
+            161,
+            166,
+            166,
+            171,
+            171,
+            173,
+            173,
+            176,
+            176,
+            182
+          ],
+          "items": [
+            {
+              "text": "Uh",
+              "start_time": 0.4,
+              "end_time": 0.88
+            },
+            {
+              "text": "huh",
+              "start_time": 1.04,
+              "end_time": 1.28
+            },
+            {
+              "text": "Oh",
+              "start_time": 1.28,
+              "end_time": 1.28
+            },
+            {
+              "text": "yeah",
+              "start_time": 1.28,
+              "end_time": 1.52
+            },
+            {
+              "text": "yeah",
+              "start_time": 1.52,
+              "end_time": 1.92
+            },
+            {
+              "text": "He",
+              "start_time": 2.32,
+              "end_time": 2.4
+            },
+            {
+              "text": "wasn't",
+              "start_time": 2.4,
+              "end_time": 2.8
+            },
+            {
+              "text": "even",
+              "start_time": 2.88,
+              "end_time": 3.12
+            },
+            {
+              "text": "that",
+              "start_time": 3.12,
+              "end_time": 3.28
+            },
+            {
+              "text": "big",
+              "start_time": 3.28,
+              "end_time": 3.84
+            },
+            {
+              "text": "when",
+              "start_time": 3.84,
+              "end_time": 4.0
+            },
+            {
+              "text": "I",
+              "start_time": 4.08,
+              "end_time": 4.24
+            },
+            {
+              "text": "started",
+              "start_time": 4.24,
+              "end_time": 4.64
+            },
+            {
+              "text": "listening",
+              "start_time": 4.64,
+              "end_time": 5.04
+            },
+            {
+              "text": "to",
+              "start_time": 5.12,
+              "end_time": 5.28
+            },
+            {
+              "text": "him",
+              "start_time": 5.28,
+              "end_time": 5.52
+            },
+            {
+              "text": "but",
+              "start_time": 6.0,
+              "end_time": 6.56
+            },
+            {
+              "text": "and",
+              "start_time": 6.64,
+              "end_time": 6.8
+            },
+            {
+              "text": "his",
+              "start_time": 6.8,
+              "end_time": 6.96
+            },
+            {
+              "text": "solo",
+              "start_time": 6.96,
+              "end_time": 7.44
+            },
+            {
+              "text": "music",
+              "start_time": 7.44,
+              "end_time": 8.0
+            },
+            {
+              "text": "didn't",
+              "start_time": 8.0,
+              "end_time": 8.8
+            },
+            {
+              "text": "do",
+              "start_time": 8.8,
+              "end_time": 9.28
+            },
+            {
+              "text": "overly",
+              "start_time": 9.52,
+              "end_time": 10.08
+            },
+            {
+              "text": "well",
+              "start_time": 10.08,
+              "end_time": 10.56
+            },
+            {
+              "text": "but",
+              "start_time": 11.12,
+              "end_time": 11.2
+            },
+            {
+              "text": "he",
+              "start_time": 11.2,
+              "end_time": 11.44
+            },
+            {
+              "text": "did",
+              "start_time": 11.44,
+              "end_time": 11.68
+            },
+            {
+              "text": "very",
+              "start_time": 11.68,
+              "end_time": 12.24
+            },
+            {
+              "text": "well",
+              "start_time": 12.24,
+              "end_time": 12.64
+            },
+            {
+              "text": "when",
+              "start_time": 12.64,
+              "end_time": 12.8
+            },
+            {
+              "text": "he",
+              "start_time": 12.8,
+              "end_time": 12.88
+            },
+            {
+              "text": "started",
+              "start_time": 12.88,
+              "end_time": 13.28
+            },
+            {
+              "text": "writing",
+              "start_time": 13.28,
+              "end_time": 13.68
+            },
+            {
+              "text": "for",
+              "start_time": 13.68,
+              "end_time": 13.84
+            },
+            {
+              "text": "other",
+              "start_time": 13.84,
+              "end_time": 14.08
+            },
+            {
+              "text": "people",
+              "start_time": 14.08,
+              "end_time": 14.56
+            }
+          ],
+          "format_monotonicity_bounds_passed": true
+        },
+        {
+          "id": "zh-demo",
+          "language": "Chinese",
+          "audio_seconds": 4.2039375,
+          "elapsed_seconds": 0.07646677270531654,
+          "classification_shape": [
+            96,
+            5000
+          ],
+          "raw_timestamp_bins": [
+            5,
+            9,
+            9,
+            12,
+            12,
+            14,
+            14,
+            19,
+            19,
+            22,
+            22,
+            25,
+            25,
+            28,
+            28,
+            31,
+            31,
+            34,
+            34,
+            36,
+            36,
+            38,
+            38,
+            42,
+            42,
+            46
+          ],
+          "items": [
+            {
+              "text": "甚",
+              "start_time": 0.4,
+              "end_time": 0.72
+            },
+            {
+              "text": "至",
+              "start_time": 0.72,
+              "end_time": 0.96
+            },
+            {
+              "text": "出",
+              "start_time": 0.96,
+              "end_time": 1.12
+            },
+            {
+              "text": "现",
+              "start_time": 1.12,
+              "end_time": 1.52
+            },
+            {
+              "text": "交",
+              "start_time": 1.52,
+              "end_time": 1.76
+            },
+            {
+              "text": "易",
+              "start_time": 1.76,
+              "end_time": 2.0
+            },
+            {
+              "text": "几",
+              "start_time": 2.0,
+              "end_time": 2.24
+            },
+            {
+              "text": "乎",
+              "start_time": 2.24,
+              "end_time": 2.48
+            },
+            {
+              "text": "停",
+              "start_time": 2.48,
+              "end_time": 2.72
+            },
+            {
+              "text": "滞",
+              "start_time": 2.72,
+              "end_time": 2.88
+            },
+            {
+              "text": "的",
+              "start_time": 2.88,
+              "end_time": 3.04
+            },
+            {
+              "text": "情",
+              "start_time": 3.04,
+              "end_time": 3.36
+            },
+            {
+              "text": "况",
+              "start_time": 3.36,
+              "end_time": 3.68
+            }
+          ],
+          "format_monotonicity_bounds_passed": true
+        }
+      ],
+      "validated_languages": [
+        "English",
+        "Chinese"
+      ],
+      "official_accuracy_pass": null,
+      "max_num_seqs": 8,
+      "precision_evaluation": "Timestamp format and bounds only; no AAS ground truth available."
+    },
+    "performance": {
+      "workloads": [
+        {
+          "batch_size": 1,
+          "round": 1,
+          "requests": 64,
+          "wall_seconds": 4.600232273340225,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 133.94236712151977,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 1,
+          "round": 2,
+          "requests": 64,
+          "wall_seconds": 4.594131221529096,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 134.12024391304112,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 2,
+          "round": 1,
+          "requests": 64,
+          "wall_seconds": 4.4630568055436015,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 138.05918832013404,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 2,
+          "round": 2,
+          "requests": 64,
+          "wall_seconds": 4.469069638289511,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 137.87343896387145,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 4,
+          "round": 1,
+          "requests": 64,
+          "wall_seconds": 2.514159256592393,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 245.07834910789649,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 4,
+          "round": 2,
+          "requests": 64,
+          "wall_seconds": 2.473853756673634,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 249.07131164798614,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 8,
+          "round": 1,
+          "requests": 64,
+          "wall_seconds": 1.5507449223659933,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 397.3354941313668,
+          "same_as_serial": 40,
+          "maximum_timestamp_delta_seconds": 0.08000000000000007
+        },
+        {
+          "batch_size": 8,
+          "round": 2,
+          "requests": 64,
+          "wall_seconds": 1.5478369407355785,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 398.0819838213574,
+          "same_as_serial": 40,
+          "maximum_timestamp_delta_seconds": 0.08000000000000007
+        }
+      ],
+      "counted_requests": 512,
+      "round_reported": 2,
+      "timing_scope": "llm.encode only; audio I/O/resampling/text preparation excluded",
+      "workload": "Two official demo WAVs with supplied English/Chinese text",
+      "official_performance_protocol": false,
+      "official_accuracy_pass": null
+    }
+  },
+  "reproduction": {
+    "preflight": {
+      "model": "Qwen/Qwen3-ForcedAligner-0.6B",
+      "model_path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B",
+      "native_token_classification_import": true,
+      "runner": "pooling",
+      "pooling_task": "token_classify",
+      "packages": {
+        "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+        "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+        "transformers": "5.12.1",
+        "openai": "2.30.0",
+        "librosa": "0.11.0"
+      },
+      "logical_device": "0",
+      "hip": "6.3.26113",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 56603
+        },
+        {
+          "path": ".msc",
+          "bytes": 730
+        },
+        {
+          "path": "README_en.md",
+          "bytes": 57279
+        },
+        {
+          "path": "config.json",
+          "bytes": 5982
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 1671853
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 1835544544
+        },
+        {
+          "path": "preprocessor_config.json",
+          "bytes": 330
+        },
+        {
+          "path": "readme.ipynb",
+          "bytes": 68133
+        },
+        {
+          "path": ".gitattributes",
+          "bytes": 1561
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 115
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 12666
+        },
+        {
+          "path": ".mv",
+          "bytes": 36
+        },
+        {
+          "path": "chat_template.json",
+          "bytes": 1161
+        },
+        {
+          "path": "configuration.json",
+          "bytes": 56
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 2776833
+        }
+      ],
+      "missing_configuration": [],
+      "weight_files": [
+        {
+          "path": "model.safetensors",
+          "bytes": 1835544544
+        }
+      ],
+      "weights_available": true,
+      "inference_verified": false,
+      "official_accuracy_pass": null,
+      "stage": "ready_for_weight_provenance_check",
+      "devices": [
+        {
+          "logical_device": 0,
+          "name": "BW",
+          "gcn_arch": "gfx936:sramecc+:xnack-",
+          "memory": 68702699520,
+          "compute_units": 80
+        }
+      ],
+      "native_aligner_source_sha256": "b8b3e32b69b518c6c35ab73ee96945f15c9387a8e4fc7ff9c55c955ab88c76f6",
+      "cpu_thread_environment": {
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4",
+        "NUMEXPR_NUM_THREADS": "4"
+      }
+    },
+    "smoke": {
+      "model": "Qwen/Qwen3-ForcedAligner-0.6B",
+      "framework": "vllm",
+      "dtype": "bfloat16",
+      "runner": "pooling",
+      "pooling_task": "token_classify",
+      "enforce_eager": true,
+      "initialization_seconds": 57.68814202910289,
+      "functional_cases": 2,
+      "cases": [
+        {
+          "id": "en-demo",
+          "language": "English",
+          "audio_seconds": 15.05125,
+          "elapsed_seconds": 0.16127116698771715,
+          "classification_shape": [
+            315,
+            5000
+          ],
+          "raw_timestamp_bins": [
+            5,
+            11,
+            13,
+            16,
+            13,
+            16,
+            16,
+            19,
+            19,
+            24,
+            29,
+            30,
+            30,
+            35,
+            36,
+            39,
+            39,
+            41,
+            41,
+            48,
+            48,
+            50,
+            51,
+            53,
+            53,
+            58,
+            58,
+            63,
+            64,
+            66,
+            66,
+            69,
+            75,
+            82,
+            83,
+            85,
+            85,
+            87,
+            87,
+            93,
+            93,
+            100,
+            100,
+            110,
+            109,
+            116,
+            119,
+            126,
+            126,
+            132,
+            139,
+            140,
+            140,
+            143,
+            143,
+            146,
+            146,
+            153,
+            153,
+            158,
+            158,
+            160,
+            160,
+            161,
+            161,
+            166,
+            166,
+            171,
+            171,
+            173,
+            173,
+            176,
+            176,
+            182
+          ],
+          "items": [
+            {
+              "text": "Uh",
+              "start_time": 0.4,
+              "end_time": 0.88
+            },
+            {
+              "text": "huh",
+              "start_time": 1.04,
+              "end_time": 1.28
+            },
+            {
+              "text": "Oh",
+              "start_time": 1.28,
+              "end_time": 1.28
+            },
+            {
+              "text": "yeah",
+              "start_time": 1.28,
+              "end_time": 1.52
+            },
+            {
+              "text": "yeah",
+              "start_time": 1.52,
+              "end_time": 1.92
+            },
+            {
+              "text": "He",
+              "start_time": 2.32,
+              "end_time": 2.4
+            },
+            {
+              "text": "wasn't",
+              "start_time": 2.4,
+              "end_time": 2.8
+            },
+            {
+              "text": "even",
+              "start_time": 2.88,
+              "end_time": 3.12
+            },
+            {
+              "text": "that",
+              "start_time": 3.12,
+              "end_time": 3.28
+            },
+            {
+              "text": "big",
+              "start_time": 3.28,
+              "end_time": 3.84
+            },
+            {
+              "text": "when",
+              "start_time": 3.84,
+              "end_time": 4.0
+            },
+            {
+              "text": "I",
+              "start_time": 4.08,
+              "end_time": 4.24
+            },
+            {
+              "text": "started",
+              "start_time": 4.24,
+              "end_time": 4.64
+            },
+            {
+              "text": "listening",
+              "start_time": 4.64,
+              "end_time": 5.04
+            },
+            {
+              "text": "to",
+              "start_time": 5.12,
+              "end_time": 5.28
+            },
+            {
+              "text": "him",
+              "start_time": 5.28,
+              "end_time": 5.52
+            },
+            {
+              "text": "but",
+              "start_time": 6.0,
+              "end_time": 6.56
+            },
+            {
+              "text": "and",
+              "start_time": 6.64,
+              "end_time": 6.8
+            },
+            {
+              "text": "his",
+              "start_time": 6.8,
+              "end_time": 6.96
+            },
+            {
+              "text": "solo",
+              "start_time": 6.96,
+              "end_time": 7.44
+            },
+            {
+              "text": "music",
+              "start_time": 7.44,
+              "end_time": 8.0
+            },
+            {
+              "text": "didn't",
+              "start_time": 8.0,
+              "end_time": 8.8
+            },
+            {
+              "text": "do",
+              "start_time": 8.8,
+              "end_time": 9.28
+            },
+            {
+              "text": "overly",
+              "start_time": 9.52,
+              "end_time": 10.08
+            },
+            {
+              "text": "well",
+              "start_time": 10.08,
+              "end_time": 10.56
+            },
+            {
+              "text": "but",
+              "start_time": 11.12,
+              "end_time": 11.2
+            },
+            {
+              "text": "he",
+              "start_time": 11.2,
+              "end_time": 11.44
+            },
+            {
+              "text": "did",
+              "start_time": 11.44,
+              "end_time": 11.68
+            },
+            {
+              "text": "very",
+              "start_time": 11.68,
+              "end_time": 12.24
+            },
+            {
+              "text": "well",
+              "start_time": 12.24,
+              "end_time": 12.64
+            },
+            {
+              "text": "when",
+              "start_time": 12.64,
+              "end_time": 12.8
+            },
+            {
+              "text": "he",
+              "start_time": 12.8,
+              "end_time": 12.88
+            },
+            {
+              "text": "started",
+              "start_time": 12.88,
+              "end_time": 13.28
+            },
+            {
+              "text": "writing",
+              "start_time": 13.28,
+              "end_time": 13.68
+            },
+            {
+              "text": "for",
+              "start_time": 13.68,
+              "end_time": 13.84
+            },
+            {
+              "text": "other",
+              "start_time": 13.84,
+              "end_time": 14.08
+            },
+            {
+              "text": "people",
+              "start_time": 14.08,
+              "end_time": 14.56
+            }
+          ],
+          "format_monotonicity_bounds_passed": true
+        },
+        {
+          "id": "zh-demo",
+          "language": "Chinese",
+          "audio_seconds": 4.2039375,
+          "elapsed_seconds": 0.07695457525551319,
+          "classification_shape": [
+            96,
+            5000
+          ],
+          "raw_timestamp_bins": [
+            5,
+            9,
+            9,
+            12,
+            12,
+            14,
+            14,
+            19,
+            19,
+            22,
+            22,
+            25,
+            25,
+            28,
+            28,
+            31,
+            31,
+            34,
+            34,
+            36,
+            36,
+            38,
+            38,
+            42,
+            42,
+            46
+          ],
+          "items": [
+            {
+              "text": "甚",
+              "start_time": 0.4,
+              "end_time": 0.72
+            },
+            {
+              "text": "至",
+              "start_time": 0.72,
+              "end_time": 0.96
+            },
+            {
+              "text": "出",
+              "start_time": 0.96,
+              "end_time": 1.12
+            },
+            {
+              "text": "现",
+              "start_time": 1.12,
+              "end_time": 1.52
+            },
+            {
+              "text": "交",
+              "start_time": 1.52,
+              "end_time": 1.76
+            },
+            {
+              "text": "易",
+              "start_time": 1.76,
+              "end_time": 2.0
+            },
+            {
+              "text": "几",
+              "start_time": 2.0,
+              "end_time": 2.24
+            },
+            {
+              "text": "乎",
+              "start_time": 2.24,
+              "end_time": 2.48
+            },
+            {
+              "text": "停",
+              "start_time": 2.48,
+              "end_time": 2.72
+            },
+            {
+              "text": "滞",
+              "start_time": 2.72,
+              "end_time": 2.88
+            },
+            {
+              "text": "的",
+              "start_time": 2.88,
+              "end_time": 3.04
+            },
+            {
+              "text": "情",
+              "start_time": 3.04,
+              "end_time": 3.36
+            },
+            {
+              "text": "况",
+              "start_time": 3.36,
+              "end_time": 3.68
+            }
+          ],
+          "format_monotonicity_bounds_passed": true
+        }
+      ],
+      "validated_languages": [
+        "English",
+        "Chinese"
+      ],
+      "official_accuracy_pass": null,
+      "max_num_seqs": 8,
+      "precision_evaluation": "Timestamp format and bounds only; no AAS ground truth available."
+    },
+    "performance": {
+      "workloads": [
+        {
+          "batch_size": 1,
+          "round": 1,
+          "requests": 64,
+          "wall_seconds": 4.733941615559161,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 130.15918869274438,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 1,
+          "round": 2,
+          "requests": 64,
+          "wall_seconds": 4.713912365958095,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 130.7122305560225,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 2,
+          "round": 1,
+          "requests": 64,
+          "wall_seconds": 4.57422823831439,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 134.70381622825582,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 2,
+          "round": 2,
+          "requests": 64,
+          "wall_seconds": 4.579687317833304,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 134.54324656634293,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 4,
+          "round": 1,
+          "requests": 64,
+          "wall_seconds": 2.589789238292724,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 237.92129138902334,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 4,
+          "round": 2,
+          "requests": 64,
+          "wall_seconds": 2.665285616181791,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 231.18197774342138,
+          "same_as_serial": 64,
+          "maximum_timestamp_delta_seconds": 0.0
+        },
+        {
+          "batch_size": 8,
+          "round": 1,
+          "requests": 64,
+          "wall_seconds": 1.592030720319599,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 387.03147629984494,
+          "same_as_serial": 40,
+          "maximum_timestamp_delta_seconds": 0.08000000000000007
+        },
+        {
+          "batch_size": 8,
+          "round": 2,
+          "requests": 64,
+          "wall_seconds": 1.561366047244519,
+          "audio_seconds": 616.1659999999999,
+          "audio_seconds_per_wall_second": 394.6326366500685,
+          "same_as_serial": 40,
+          "maximum_timestamp_delta_seconds": 0.08000000000000007
+        }
+      ],
+      "counted_requests": 512,
+      "round_reported": 2,
+      "timing_scope": "llm.encode only; audio I/O/resampling/text preparation excluded",
+      "workload": "Two official demo WAVs with supplied English/Chinese text",
+      "official_performance_protocol": false,
+      "official_accuracy_pass": null
+    }
+  },
+  "performance_reproduction": [
+    {
+      "batch_size": 1,
+      "primary_audio_seconds_per_wall_second": 134.12024391304112,
+      "reproduction_audio_seconds_per_wall_second": 130.7122305560225,
+      "deviation_percent": -2.5410133903635557
+    },
+    {
+      "batch_size": 2,
+      "primary_audio_seconds_per_wall_second": 137.87343896387145,
+      "reproduction_audio_seconds_per_wall_second": 134.54324656634293,
+      "deviation_percent": -2.415398079974762
+    },
+    {
+      "batch_size": 4,
+      "primary_audio_seconds_per_wall_second": 249.07131164798614,
+      "reproduction_audio_seconds_per_wall_second": 231.18197774342138,
+      "deviation_percent": -7.182414460420816
+    },
+    {
+      "batch_size": 8,
+      "primary_audio_seconds_per_wall_second": 398.0819838213574,
+      "reproduction_audio_seconds_per_wall_second": 394.6326366500685,
+      "deviation_percent": -0.8664916553563162
+    }
+  ],
+  "maximum_absolute_deviation_percent": 7.182414460420816,
+  "performance_reproduction_within_twenty_percent": true,
+  "image": {
+    "model": "Qwen3-ForcedAligner-0.6B",
+    "platform": "SCNet",
+    "url": "https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions",
+    "image_id": "2114624281480511490",
+    "visibility": "private",
+    "build_status": "completed",
+    "registry_reference": "appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1",
+    "digest": null,
+    "version": "v1",
+    "region": "华中一区（A区）",
+    "reproduced_in_new_notebook": false,
+    "publication": "Owner will make public when submitting; do not change visibility.",
+    "baked_dependency_files_match_pinned_wheels": true,
+    "reproduction_evidence": [
+      "results/scnet/validation-20261026T094057Z",
+      "results/scnet/validation-20261026T094355Z"
+    ],
+    "reproduction_status": "two_fresh_process_runs_complete",
+    "registry_digest_verification": "Digest deferred until submission",
+    "metadata_deferred_by_owner": true,
+    "registry_reference_source": "Provided by image owner",
+    "note": "Same private ASR image; no new system packages. Aligner code and fixed upstream processor assets are deployed from the model directory."
+  },
+  "references": [
+    {
+      "path": "results/scnet/validation-20261026T094057Z/offline_alignment.log",
+      "bytes": 29536,
+      "sha256": "10a92ee85bad2dbac96e61bb06aebf318f25edc0217ad5a6d4dbaf0c8666b4de"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/preflight/summary.json",
+      "bytes": 2229,
+      "sha256": "27cb920c31e00c3e1a4a401921ef021e8576a33d0169d8434172973150acee6e"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/preflight.log",
+      "bytes": 2743,
+      "sha256": "9b0180de41040bedc00cac89730e765c4e16804b3ff73a0b40d6577ed2147915"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/runtime/weights-check.json",
+      "bytes": 1778,
+      "sha256": "2d2dcd8f7e36b9471e6f05ab6344f8ce41d3a1b7d9c2b15f8233bba6bac9ff87"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/smoke/bench/requests.jsonl",
+      "bytes": 1006444,
+      "sha256": "7dc26f0380da6a87dd9b9754ef406edbf40f316c2d5c00990ac480127865a400"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/smoke/bench/summary.json",
+      "bytes": 2670,
+      "sha256": "d3a8630a2e9c29d53cd83ef0ed8d4f268907cedca80828226545255e35fdd7e2"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/smoke/en-demo.json",
+      "bytes": 4000,
+      "sha256": "0ad06eb7aef84e0373eb0a599b2656702e6fbff7001530c4fc5c5f5dc7c4bb84"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/smoke/summary.json",
+      "bytes": 7540,
+      "sha256": "4fed03672b4bf6389b127d97105cc04381be65f93b72dcfb65209655ff1e45c4"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/smoke/zh-demo.json",
+      "bytes": 1541,
+      "sha256": "09180205671b291cc2963fedfbfef6211e1335201c125dc4f7ca3a1f57e91320"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/status.json",
+      "bytes": 80,
+      "sha256": "cc17edb52ddc959b1ada5379b871a8419d719e15c44e34628edaa04a5cffaedb"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094057Z/weights.log",
+      "bytes": 397,
+      "sha256": "040b260f76c2ce6bc0387c356d2a0aeea5ed20c9d3d01eeae754a5cc1b50ddb8"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/offline_alignment.log",
+      "bytes": 29533,
+      "sha256": "f8b7e1eba0149d318f5eb4b11a92f11a26e2da19a19894331263f5385722fa54"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/preflight/summary.json",
+      "bytes": 2229,
+      "sha256": "27cb920c31e00c3e1a4a401921ef021e8576a33d0169d8434172973150acee6e"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/preflight.log",
+      "bytes": 2743,
+      "sha256": "32b84c6700e172607990ce42046f8afd9cfda9c0131f99338ce9cd44a571f3f8"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/runtime/weights-check.json",
+      "bytes": 1778,
+      "sha256": "2d2dcd8f7e36b9471e6f05ab6344f8ce41d3a1b7d9c2b15f8233bba6bac9ff87"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/smoke/bench/requests.jsonl",
+      "bytes": 1006368,
+      "sha256": "4bf0742344cf7da4f6ad6c85a47ce7eae1110d52a19ec92d648e7a7a836e7326"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/smoke/bench/summary.json",
+      "bytes": 2666,
+      "sha256": "14b712959bccbae47b0a7fc543aa0a4b6659156fd4b3996c370a2bb067a0a542"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/smoke/en-demo.json",
+      "bytes": 4001,
+      "sha256": "af71a7d6160ff961a1d74cb9f1d54fc86f027d6a607fa48c35eb57581c7c3a9c"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/smoke/summary.json",
+      "bytes": 7541,
+      "sha256": "a85f672bb7a281b50159bf76337c6f157a431351cd0f895b0d224283cd04d343"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/smoke/zh-demo.json",
+      "bytes": 1541,
+      "sha256": "6c00cf0c63af569f5c75b81346e62a8cc8b706891a8c3a25f724cd817621408b"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/status.json",
+      "bytes": 80,
+      "sha256": "cc17edb52ddc959b1ada5379b871a8419d719e15c44e34628edaa04a5cffaedb"
+    },
+    {
+      "path": "results/scnet/validation-20261026T094355Z/weights.log",
+      "bytes": 397,
+      "sha256": "040b260f76c2ce6bc0387c356d2a0aeea5ed20c9d3d01eeae754a5cc1b50ddb8"
+    }
+  ],
+  "cross_process_functional_comparison": [
+    {
+      "id": "en-demo",
+      "exact_match": true,
+      "maximum_delta_seconds": 0.0
+    },
+    {
+      "id": "zh-demo",
+      "exact_match": true,
+      "maximum_delta_seconds": 0.0
+    }
+  ],
+  "official_accuracy_pass": null,
+  "official_acceptance_passed": null,
+  "reproduction_scope": "Two independent processes in the same SCNet Notebook and image; not a new Notebook instance."
+}

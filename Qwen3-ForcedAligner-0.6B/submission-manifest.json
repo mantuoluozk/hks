@@ -1,0 +1,276 @@
+{
+  "source_commit": "4b40e6f8c3852e1f40e9ae3f5e9c5e2c77bf4462",
+  "model": "Qwen3-ForcedAligner-0.6B",
+  "files": [
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/.gitattributes",
+      "bytes": 64,
+      "sha256": "0ca9c0a98dda4fa4cfd7fff5b789be5ef5322221c8ebceeaa6159ed28ac886da"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/.gitignore",
+      "bytes": 64,
+      "sha256": "3f5ed81f487928cdec680381d21e084e5d305f8d8e5e45bc20611a9ab7171572"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/README.md",
+      "bytes": 7543,
+      "sha256": "eba8999a3042737b9d2e7bb09d42de10179f18575cbdcad5c61d83e0cb1c841f"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/bench.sh",
+      "bytes": 112,
+      "sha256": "9c3a69d4f6fee8bae989ea6b87bf44289ef9b4baa9122ab2879cb64c74f42e85"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/offline_alignment.log",
+      "bytes": 29536,
+      "sha256": "10a92ee85bad2dbac96e61bb06aebf318f25edc0217ad5a6d4dbaf0c8666b4de"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/preflight.log",
+      "bytes": 2743,
+      "sha256": "9b0180de41040bedc00cac89730e765c4e16804b3ff73a0b40d6577ed2147915"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/preflight/summary.json",
+      "bytes": 2229,
+      "sha256": "27cb920c31e00c3e1a4a401921ef021e8576a33d0169d8434172973150acee6e"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/runtime/weights-check.json",
+      "bytes": 1778,
+      "sha256": "2d2dcd8f7e36b9471e6f05ab6344f8ce41d3a1b7d9c2b15f8233bba6bac9ff87"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/smoke/bench/requests.jsonl",
+      "bytes": 1006444,
+      "sha256": "7dc26f0380da6a87dd9b9754ef406edbf40f316c2d5c00990ac480127865a400"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/smoke/bench/summary.json",
+      "bytes": 2670,
+      "sha256": "d3a8630a2e9c29d53cd83ef0ed8d4f268907cedca80828226545255e35fdd7e2"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/smoke/en-demo.json",
+      "bytes": 4000,
+      "sha256": "0ad06eb7aef84e0373eb0a599b2656702e6fbff7001530c4fc5c5f5dc7c4bb84"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/smoke/summary.json",
+      "bytes": 7540,
+      "sha256": "4fed03672b4bf6389b127d97105cc04381be65f93b72dcfb65209655ff1e45c4"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/smoke/zh-demo.json",
+      "bytes": 1541,
+      "sha256": "09180205671b291cc2963fedfbfef6211e1335201c125dc4f7ca3a1f57e91320"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/status.json",
+      "bytes": 80,
+      "sha256": "cc17edb52ddc959b1ada5379b871a8419d719e15c44e34628edaa04a5cffaedb"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094057Z/weights.log",
+      "bytes": 397,
+      "sha256": "040b260f76c2ce6bc0387c356d2a0aeea5ed20c9d3d01eeae754a5cc1b50ddb8"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/offline_alignment.log",
+      "bytes": 29533,
+      "sha256": "f8b7e1eba0149d318f5eb4b11a92f11a26e2da19a19894331263f5385722fa54"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/preflight.log",
+      "bytes": 2743,
+      "sha256": "32b84c6700e172607990ce42046f8afd9cfda9c0131f99338ce9cd44a571f3f8"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/preflight/summary.json",
+      "bytes": 2229,
+      "sha256": "27cb920c31e00c3e1a4a401921ef021e8576a33d0169d8434172973150acee6e"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/runtime/weights-check.json",
+      "bytes": 1778,
+      "sha256": "2d2dcd8f7e36b9471e6f05ab6344f8ce41d3a1b7d9c2b15f8233bba6bac9ff87"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/smoke/bench/requests.jsonl",
+      "bytes": 1006368,
+      "sha256": "4bf0742344cf7da4f6ad6c85a47ce7eae1110d52a19ec92d648e7a7a836e7326"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/smoke/bench/summary.json",
+      "bytes": 2666,
+      "sha256": "14b712959bccbae47b0a7fc543aa0a4b6659156fd4b3996c370a2bb067a0a542"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/smoke/en-demo.json",
+      "bytes": 4001,
+      "sha256": "af71a7d6160ff961a1d74cb9f1d54fc86f027d6a607fa48c35eb57581c7c3a9c"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/smoke/summary.json",
+      "bytes": 7541,
+      "sha256": "a85f672bb7a281b50159bf76337c6f157a431351cd0f895b0d224283cd04d343"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/smoke/zh-demo.json",
+      "bytes": 1541,
+      "sha256": "6c00cf0c63af569f5c75b81346e62a8cc8b706891a8c3a25f724cd817621408b"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/status.json",
+      "bytes": 80,
+      "sha256": "cc17edb52ddc959b1ada5379b871a8419d719e15c44e34628edaa04a5cffaedb"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-20261026T094355Z/weights.log",
+      "bytes": 397,
+      "sha256": "040b260f76c2ce6bc0387c356d2a0aeea5ed20c9d3d01eeae754a5cc1b50ddb8"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/scnet/validation-summary.json",
+      "bytes": 36921,
+      "sha256": "675621c4d7e6ff3a7d2a202c7908b2ebd01e05b99cb59b11df249330be1525f9"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/run-scnet.sh",
+      "bytes": 986,
+      "sha256": "e4a8d03a3119d42f784a7bf5dfd9cf6d82adabb20225dc749f4b3a271626d0c7"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/run.sh",
+      "bytes": 471,
+      "sha256": "2b06b53f1607c1c1e4baa113b9a43b388ef2380101bdc2ebfea3530a02e2285a"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/check_weights.py",
+      "bytes": 1358,
+      "sha256": "b7d7e9772308a5c03ade1f309a6e1b97c296879be010a4d09fc2a4a7ab8aaa6c"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/finalize_scnet_report.py",
+      "bytes": 8437,
+      "sha256": "44e87912996b237bbdab9ff61babd0a3625b3e51746ab9d6052c0057d512eada"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/preflight.py",
+      "bytes": 2219,
+      "sha256": "2513e16c7ab145ac7952085760fe1a0d2ab1fcd5f3d52b5a0dbf1c76d1fe2798"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/prepare_examples.py",
+      "bytes": 871,
+      "sha256": "727caafa557aa7e2ad57eb21b1d590eecec05e911a5d872979f4c9b36249853f"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/run_validation.py",
+      "bytes": 1558,
+      "sha256": "ded9d4ea620c249b5cefc9a2321a90478e9f70c12a5e7b26682463f24cb915ef"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/smoke_offline.py",
+      "bytes": 7292,
+      "sha256": "d5e22286d570700f11a149978bc69dfb33a1f8d04428d0709e6f798d788881bb"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/summarize_scnet.py",
+      "bytes": 4723,
+      "sha256": "3da03cac52c4d7fe548e4bfd971253115073bcbbff7fdee20b3e049330bbc07b"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/upstream_processor.py",
+      "bytes": 1177,
+      "sha256": "eafa5732bef8086b4ed4cc0b12feaaf22d715124cb1440bf588aee8933ade9eb"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/smoke.sh",
+      "bytes": 112,
+      "sha256": "104ba2dadbcfa6664198d030cf1e64add9633e36cbe6a2fff719f45bb84afca0"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/audio-sources.json",
+      "bytes": 468,
+      "sha256": "f06f2e7a59c0b208f8119371f3aa899123324771f09ea2a1904a6658594b759b"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/functional-cases.json",
+      "bytes": 455,
+      "sha256": "886a7d3482eed99a465d19bc270aaca7f8a7dc014a2fc2c43e4f13d233119740"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/modelscope-files.json",
+      "bytes": 6607,
+      "sha256": "00b0cb3520fa4d49c0be45b5866bdb8d842de5e2bdd3ea46272c60a532a33dff"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/scnet-image.json",
+      "bytes": 1116,
+      "sha256": "5e8c47724b299965f7609197d34de094512435aa8c204dcba2ebf507321b2674"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/upstream-source.json",
+      "bytes": 1746,
+      "sha256": "1e93e40d2204273d90a2a6c1589309b57f48c468fe18d33c3f4bb693883a2635"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/upstream/LICENSE",
+      "bytes": 11343,
+      "sha256": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/upstream/README.md",
+      "bytes": 60537,
+      "sha256": "27b5d6e31c3dc10c9b4b86e226f215baacca57bede504994779ad334a67275a0"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/upstream/qwen_asr/inference/assets/korean_dict_jieba.dict",
+      "bytes": 275834,
+      "sha256": "cc157a9ab78f92bf11ed98a69b285768d6627cf5cd57a581e6c06693effce37d"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/upstream/qwen_asr/inference/qwen3_forced_aligner.py",
+      "bytes": 16411,
+      "sha256": "fb586127507c5980d11c6d848b530e652afad3ae0707cba6eb0c90377b2a2111"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/upstream/qwen_asr/inference/utils.py",
+      "bytes": 13915,
+      "sha256": "b37fb4140e6d9be85f2ecb1552ed16136eb98a57f44b402f8b0b213cb6df2a82"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/verify.py",
+      "bytes": 1067,
+      "sha256": "2d0bbf07ba24ee21071c3455518fd0697a65ae462166946800da4cd298487563"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/优化说明.md",
+      "bytes": 1297,
+      "sha256": "97277ca1d2ba78981779c8cbad670788e218540f2064c334fe5a60ec8024cb38"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/官方精度基线查证.md",
+      "bytes": 1012,
+      "sha256": "a48a13054f52f6185d227d5a37f706484215aaf8932c2dca604e2eaf8a6f895f"
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/提交填写信息.md",
+      "bytes": 1171,
+      "sha256": "80826d6bf69ad6c52a8ddca00676cea4280087f46f9344fa7f98358db5c311f7"
+    },
+    {
+      "path": "platform/scnet-notebook/backup_shared.py",
+      "bytes": 2739,
+      "sha256": "16712145c24af2df1de0213346f1b18488ac173d25da3ed2e1cfcd07f29cb4cd"
+    },
+    {
+      "path": "platform/scnet-notebook/env-scnet.sh",
+      "bytes": 848,
+      "sha256": "1b1768582ba3d0223dc248f87bde485af4d0ef5a0c214c922cbd989d5b79dbc8"
+    }
+  ]
+}
