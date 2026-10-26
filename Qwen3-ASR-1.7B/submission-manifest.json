@@ -1,5 +1,5 @@
 {
-  "source_commit": "9bc8f3d5c8a7dedd9defe947e5226d9ed63ac055",
+  "source_commit": "76c2e87ba49c196d1fd9ab825e4ff120e787cadb",
   "model": "Qwen3-ASR-1.7B",
   "files": [
     {
@@ -19,8 +19,8 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/README.md",
-      "bytes": 7185,
-      "sha256": "a09f987385c154252c86cf1a199523fa17665836ae008ab0bb452211f5feebe6"
+      "bytes": 7339,
+      "sha256": "6fca35630d2c9d8d5e7b6e33e61310c4675f3086ac69aea21ee774d5fd1cedd0"
     },
     {
       "path": "Qwen3-ASR-1.7B/env.sh",
@@ -354,8 +354,8 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/results/scnet/validation-summary.json",
-      "bytes": 25332,
-      "sha256": "e81955fcae31395be8477e2a956c31d148e9f2032508571f70238e893883f539"
+      "bytes": 25435,
+      "sha256": "f0f15d489aba9ba33c0836e9106c70e886cc876197d670ddd02c7fc2cc89e4b5"
     },
     {
       "path": "Qwen3-ASR-1.7B/run-scnet.sh",
@@ -389,8 +389,8 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/scripts/finalize_scnet_report.py",
-      "bytes": 9220,
-      "sha256": "a0b93a6da17beb3cb29717e819141f775685b669d4eb4e3860fdecadc1bb7d71"
+      "bytes": 9279,
+      "sha256": "1076495d42397c73b581d3bd80e0391f0640a40dedef70ccf6c10cdf233a8dfb"
     },
     {
       "path": "Qwen3-ASR-1.7B/scripts/inspect_environment.py",
@@ -444,8 +444,8 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/sources/scnet-image.json",
-      "bytes": 784,
-      "sha256": "f89f41c3460b796711994c9c6ddbda8c2ad6ebbb5b0c3a299272c480b30658c5"
+      "bytes": 885,
+      "sha256": "b6ed236fec53db140b931692692e521d4f3835a085723f3e549dba417caedb63"
     },
     {
       "path": "Qwen3-ASR-1.7B/sources/scnet-wheel-files.json",
@@ -534,8 +534,8 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/提交填写信息.md",
-      "bytes": 958,
-      "sha256": "a395175064df2fd8eca3763508edb952004a5ed73ded4c49c01a197e8430f4c9"
+      "bytes": 1061,
+      "sha256": "71bda124896a9d0f8f3691e74154409eb5aa217889b4f4c946d312a80730315d"
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

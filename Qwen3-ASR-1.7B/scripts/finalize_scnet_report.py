@@ -10,8 +10,8 @@ image=s['image']
 if not image.get('metadata_deferred_by_owner'):
     assert re.fullmatch(r'sha256:[0-9a-f]{64}',image['digest'] or '')
     assert image['registry_reference'] and image['version']
-image_description = ('仓库地址、版本号及固定摘要待提交前补充' if image.get('metadata_deferred_by_owner') else f"`{image['registry_reference']}`，版本 `{image['version']}`，摘要 `{image['digest']}`")
-image_exports = '' if image.get('metadata_deferred_by_owner') else f"export IMAGE='{image['registry_reference']}'\nexport EXPECTED_IMAGE_ID='{image['digest']}'\n"
+image_description = f"`{image['registry_reference']}`，版本 `{image['version']}`，固定摘要{(' `' + image['digest'] + '`') if image.get('digest') else '待提交前补充'}" if image.get('registry_reference') else '仓库地址、版本号及固定摘要待提交前补充'
+image_exports = f"export IMAGE='{image['registry_reference']}'\nexport EXPECTED_IMAGE_ID='{image.get('digest') or ''}'\n" if image.get('registry_reference') else ''
 r=s['reproduction'];env=r['environment'];runtime=r['runtime']
 primary=s['primary_path'];repro=s['reproduction_path']
 perf='\n'.join(f"| {x['concurrency']} | {x['requests']} | {x['audio_seconds_per_wall_second']:.2f} | {x['mean_request_rtf']:.4f} | {x['mean_latency_seconds']:.3f} |" for x in r['workloads'] if x['round']==2)

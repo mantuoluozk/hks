@@ -15,7 +15,7 @@ SCNet Notebook，华中一区（A区），BW × 1，逻辑设备 0。Python 3.10
 | Transformers | 5.12.1 |
 | OpenAI Python | 2.30.0 |
 
-[ASR 专用镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)：仓库地址、版本号及固定摘要待提交前补充。当前镜像为私有，提交时开放访问。八个补充依赖固定版本见 `requirements-scnet.txt`，wheel 来源及 SHA256 见 `sources/scnet-wheel-files.json`；镜像内安装文件逐项核对通过，见 `results/scnet/validation-20261026T080803Z/runtime/image-dependencies.json`。PyTorch、Transformers、vLLM 保持基础镜像版本。
+[ASR 专用镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)：`appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1`，版本 `v1`，固定摘要待提交前补充。当前镜像为私有，提交时开放访问。八个补充依赖固定版本见 `requirements-scnet.txt`，wheel 来源及 SHA256 见 `sources/scnet-wheel-files.json`；镜像内安装文件逐项核对通过，见 `results/scnet/validation-20261026T080803Z/runtime/image-dependencies.json`。PyTorch、Transformers、vLLM 保持基础镜像版本。
 
 ## 3. 适配与优化
 
@@ -29,6 +29,8 @@ BF16、上下文 8192、最大运行请求 16、显存比例 0.4，关闭 eager�
 
 ```bash
 cd /root/private_data/hks/models/Qwen3-ASR-1.7B
+export IMAGE='appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1'
+export EXPECTED_IMAGE_ID=''
 export RUN_RESULTS_DIR="$PWD/results/scnet/reproduce/runtime"
 bash run-scnet.sh
 # 另一个终端设置相同 RUN_RESULTS_DIR 后执行：
