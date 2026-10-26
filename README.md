@@ -5,7 +5,7 @@
 | 模型 | 环境 | 技术报告 | 功能与性能 | 精度实测 |
 |---|---|---|---|---|
 | Recon2Reason-Reasoning-4B | BW × 1 / SGLang 0.5.18 / BF16 | [README](Recon2Reason-Reasoning-4B/README.md) | 5/5 Smoke；12 轮、608 请求完成 | OCRBench 463/1000；MMMU 437/900 |
-| RoboBrain2.5-8B-NV | BW × 1 / SGLang 0.5.18 / BF16 | [README](RoboBrain2.5-8B-NV/README.md) | 8/8 Smoke；12 轮、608 请求完成 | 公开 CV-Bench 2,638 题全量复测中；官方 GPU 动作/坐标一致率单列未判定 |
+| RoboBrain2.5-8B-NV | BW × 1 / SGLang 0.5.18 / BF16 | [README](RoboBrain2.5-8B-NV/README.md) | 8/8 Smoke；12 轮、608 请求完成 | 公开 CV-Bench 全量 88.10（参考 94.58，差 -6.48 pt）；官方 GPU 动作/坐标一致率单列未判定 |
 
 每个模型的配置、启动脚本、精度与性能结果位于对应目录，报告按比赛八章模板组织。
 
