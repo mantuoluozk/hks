@@ -34,9 +34,9 @@ SCNet Notebook，BW × 1，65520 MiB、80 CU、gfx936，逻辑设备 0，TP=1、
 
 使用 Triton 文本注意力、SDPA 视觉注意力、确定性推理；上下文长度 32768，静态显存比例 0.75，最大运行请求数 64，chunked prefill 4096；完整解码图最大批次 32，关闭预填充图。
 
-补丁作用于 `sglang/srt/batch_invariant_ops/batch_invariant_ops.py`。原确定性 MM/BMM 的流水配置申请 98304 字节共享内存，超过设备 65536 字节上限。修复根据 HIP 设备共享内存容量限制流水级数，并为 FP32 点积显式指定 IEEE 输入精度。
+补丁作用于 `sglang/srt/batch_invariant_ops/batch_invariant_ops.py`。原确定性 MM/BMM 的流水配置申请 98304 字节共享内存，超过设备 65536 字节上限。修复根据 HIP 设备共享内存容量限制流水级数，并为 FP32 点积显式指定 IEEE 输入精度。高分辨率输入修复进一步使 BMM 在输出超过 2³¹ 个元素时使用 64 位批次偏移；边界回归覆盖 2,164,260,864 个输出元素并逐批检查全部值通过。
 
-重放脚本为 `scripts/apply_deterministic_lds_patch.py`，实际差异及许可证位于 `patches/`。脚本校验补丁前 SHA256 `9a9fdb89d84f8c392ae9a46f46c0a846b332e78f4ae77c24f240f8db55e6a6e4`，补丁后 SHA256 `9668a00e1f8d068d3528c5f6fea55b7ec6994259ebf42fc2edf031525aa87a1b`，拒绝修改其他版本的源码。
+重放脚本为 `scripts/apply_deterministic_lds_patch.py`，实际差异及许可证位于 `patches/`。脚本校验补丁前 SHA256 `9a9fdb89d84f8c392ae9a46f46c0a846b332e78f4ae77c24f240f8db55e6a6e4`，补丁后 SHA256 `371f9816ae1614d944dce1616ee2e88a6d1b6dfed2ca660275ae28cb9785bb39`，拒绝修改其他版本的源码。
 
 矩阵核检查中，BF16 GEMM 对 FP32 参考相对 L2 误差为 0.00166328，首行跨 batch 大小逐字节一致；BF16/FP32 BMM 数值及首批次一致性检查通过，记录见 `results/scnet/runtime/deterministic-gemm-check.json`。这些检查不能替代模型级 GPU 精度验收。
 
@@ -81,7 +81,13 @@ T02 具身 serving 验收要求在公示图像（含深度图）输入集上，�
 
 发布者论文中的空间理解与轨迹基准成绩不能替代逐例 GPU 一致率；同服务重复稳定性和功能格式检查也不作为该一致率分数。正式状态与缺失项见 `verify_result.json`；来源索引见 `官方精度基线查证.md`。
 
+公开基准复测按照发布者采用的 FlagEvalMM 及公开数据开展。已固定 CV-Bench 完整 test 的 2,638 题、数据版本、提示和计分函数，正在全量运行，待完成后与论文 NV 8B 的 94.58 对照。高分辨率 BMM 修复后 8/8 预跑请求正常；这 8 题仅为运行诊断，不是全量精度。协议、其余基准状态与复现命令见 [公开基准复测](公开基准复测.md)。
+
+本轮精度运行保留 BF16、确定性推理及 checkpoint 图像处理器，静态显存比例调整为 0.5，为高分辨率视觉临时矩阵留出空间，实际配置单独记录。
+
 ## 7. 性能参考
+
+本节保留首版 `robobrain-bw-sglang-v1.0.0` 在静态显存比例 0.75、框架补丁 SHA256 `9668a00e1f8d068d3528c5f6fea55b7ec6994259ebf42fc2edf031525aa87a1b` 下的实测。本轮修复和精度配置尚未重跑此矩阵。
 
 每请求一张 1080p 随机图，文本长度设置 4096/16384、固定输出 1024，并发 1/8/64，N=max(8,2C)。每档连续两轮，报告第二轮；每档开始前清空 prefix cache。12/12 轮、608/608 个请求完成，生成 token 数和配置校验通过。
 

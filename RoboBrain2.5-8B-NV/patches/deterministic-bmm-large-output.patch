@@ -1,0 +1,12 @@
+--- a/sglang/srt/batch_invariant_ops/batch_invariant_ops.py
++++ b/sglang/srt/batch_invariant_ops/batch_invariant_ops.py
+@@ -672,7 +672,8 @@
+         offs_bn = tl.max_contiguous(tl.multiple_of(offs_bn, BLOCK_SIZE_N), BLOCK_SIZE_N)
+ 
+         # Add batch offset
+-        if A_LARGE or B_LARGE:
++        # HKS: output batch offsets also need int64 when C exceeds 2**31 elements.
++        if A_LARGE or B_LARGE or C_LARGE:
+             batch_idx_typed = batch_idx.to(tl.int64)
+         else:
+             batch_idx_typed = batch_idx

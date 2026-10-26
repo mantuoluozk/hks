@@ -1,0 +1,21 @@
+{
+  "benchmark": "CV-Bench",
+  "completed": 8,
+  "expected": 8,
+  "full_test": false,
+  "errors": 0,
+  "metrics": {
+    "accuracy_2d_ade": 75.0,
+    "accuracy_2d_coco": 0.0,
+    "accuracy_3d_omni": 0.0,
+    "accuracy_2d": 37.5,
+    "accuracy_3d": 0.0,
+    "accuracy": 18.75
+  },
+  "publisher_nv8b_score": 94.58,
+  "difference_percentage_points": null,
+  "comparison_status": "public_benchmark_retest; paper run config not published",
+  "official_contest_accuracy_pass": null,
+  "predictions_sha256": "6fddc883fcd70837a5ef3feb70e83cc1e73a7af91af41a1bb6361a5320f7ecf0",
+  "finished_at": "2026-10-26T01:34:51.219081+00:00"
+}

@@ -1,0 +1,52 @@
+{
+  "benchmark": "CV-Bench",
+  "dataset_repository": "nyu-visionx/CV-Bench",
+  "dataset_revision": "bc284db50d036958861cb60cdd7b77612052ce0d",
+  "split": "test",
+  "upstream_repository": "https://github.com/flageval-baai/FlagEvalMM",
+  "upstream_revision": "fef27ec696c532d12f0db389bcbbf79eab0e4c41",
+  "upstream_files": [
+    {
+      "path": "flagevalmm/prompt/prompt_template.py",
+      "sha256": "cec58c82b736c26e668aff0315fc7d6893dab73eb2f6388043b83f672b7ea1f1"
+    },
+    {
+      "path": "flagevalmm/dataset/vqa_base_dataset.py",
+      "sha256": "5070f9f01723859439e03577c3d23f95695c50c2aa8e2c965376c42852b25e76"
+    },
+    {
+      "path": "flagevalmm/evaluator/pre_process.py",
+      "sha256": "9ec2b34c51ba2da13e2938435d908203b429399fbad44c1a9c6e55b80b68c35c"
+    },
+    {
+      "path": "flagevalmm/evaluator/common_types.py",
+      "sha256": "7c177e73a90e9ce50db69f264816be7d362b4be465c90ea5449d2f554bbb892a"
+    },
+    {
+      "path": "tasks/cv_bench/evaluate.py",
+      "sha256": "abb12098dd1c8133d34876c4304b09517369cea882b7eff4ca5ebd827756a6b3"
+    }
+  ],
+  "dataset_files": [
+    {
+      "file": "test_2d.parquet",
+      "sha256": "33196034ef4bf3265cae4a7ff5c4071b2ff1cc21123e8e285c6a91393897ecbc"
+    },
+    {
+      "file": "test_3d.parquet",
+      "sha256": "ef91fe8b5392eb2a16e318ca68fa02449d45ba1e152afece12a0a526e9fbbc25"
+    }
+  ],
+  "generation": {
+    "temperature": 0,
+    "max_tokens": 4096,
+    "stream": false
+  },
+  "publisher_score": 94.58,
+  "paper": "https://arxiv.org/html/2601.14352v1",
+  "protocol_limitations": [
+    "Paper does not publish an exact evaluation commit, RoboBrain2.5 adapter or full generation/image-processing settings.",
+    "The pinned public RoboBrain adapter appends <think></think><answer>; this retest follows that behavior over SGLang.",
+    "Use checkpoint processor defaults without external pixel resizing; benchmark score is separate from per-case NVIDIA output consistency."
+  ]
+}

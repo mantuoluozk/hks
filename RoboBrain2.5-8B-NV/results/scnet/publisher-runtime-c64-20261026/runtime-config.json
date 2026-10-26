@@ -1,0 +1,21 @@
+{
+  "MODEL_ID": "BAAI/RoboBrain2.5-8B-NV",
+  "MODEL_PATH": "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+  "SERVED_NAME": "robobrain25-8b",
+  "IMAGE": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter@sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+  "FRAMEWORK": "sglang",
+  "CARD": "BW",
+  "PRECISION": "bf16",
+  "HIP_VISIBLE_DEVICES": "0",
+  "HOST": "127.0.0.1",
+  "PORT": "30125",
+  "TP": "1",
+  "MAX_LEN": "32768",
+  "MEM_FRAC": "0.5",
+  "MAX_RUNNING_REQUESTS": "64",
+  "DECODE_GRAPH_BACKEND": "full",
+  "DECODE_GRAPH_MAX_BS": "32",
+  "ENABLE_DETERMINISTIC_INFERENCE": "1",
+  "SERVER_RUN_ID": "20261026T013208Z",
+  "EXECUTION_PLATFORM": "SCNet Notebook"
+}

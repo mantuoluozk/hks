@@ -180,8 +180,12 @@ BENCH_PROFILE=matrix bash bench.sh
 '''
     assert len(re.findall(r'^## [1-8]\. ', report, re.M)) == 8
     assert not any(word in report for word in ['用户', '自有', '历史', '备份', '协作'])
-    (ROOT / 'README.md').write_text(report, encoding='utf-8', newline='\n')
-    (ROOT / '优化说明.md').write_text('''# 部署配置与兼容性修复
+    # These inputs describe v1.0.0. Do not overwrite a newer public-benchmark report.
+    preserve_current = (ROOT / '公开基准复测.md').exists()
+    report_name = 'README.first-release.md' if preserve_current else 'README.md'
+    optimization_name = '优化说明.first-release.md' if preserve_current else '优化说明.md'
+    (ROOT / report_name).write_text(report, encoding='utf-8', newline='\n')
+    (ROOT / optimization_name).write_text('''# 部署配置与兼容性修复
 
 基于固定 SCNet SGLang 0.5.18 / DTK 26.04 镜像，BF16、单卡 TP1。运行脚本自动校验并重放确定性 HIP MM/BMM 补丁，限制共享内存流水级数并使用 IEEE FP32 输入精度；不修改模型权重、结构、tokenizer 或图像处理配置。
 

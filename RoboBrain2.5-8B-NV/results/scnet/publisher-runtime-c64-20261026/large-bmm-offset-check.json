@@ -1,0 +1,15 @@
+{
+  "shape": [
+    129,
+    4096,
+    1,
+    4096
+  ],
+  "output_elements": 2164260864,
+  "last_batch_offset_elements": 2147483648,
+  "dtype": "bfloat16",
+  "all_elements_checked_by_per_batch_min_max": true,
+  "pass": true,
+  "kernel_seconds": 4.473779144696891,
+  "peak_gpu_allocated_bytes": 4330653696
+}
