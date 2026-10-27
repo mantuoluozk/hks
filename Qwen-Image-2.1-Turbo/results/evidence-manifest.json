@@ -164,7 +164,7 @@
     "sources/LICENSE": "8dc973f024ff95966bea25866efa443fd16776dcb1001e681e3d467ea572b28d",
     "sources/model_index.json": "97e2febeb19d93cb41fa44807cde8bd42757950b5dffeacdb0331fb2d390cf20",
     "sources/modelscope-files.json": "2e2bd8819b94c6c902a4be21290834445d2636907d9be7361d4ce07cccdeea61",
-    "sources/report-image-status.json": "d24ff61680acd1b3b34b4cfae4472619e0c1f05964aebe3078bc675c8ce43f13",
+    "sources/report-image-status.json": "70b249469e81921e1e1e028d87867282c17bf56963f56a659da4ba78a2075d2d",
     "sources/runtime-dependencies.json": "e6a412d37b1356b4911a42817a35b019ac491a85749b691b8a80f451d8f78979",
     "sources/scnet-image.json": "8557a97512bf26a1f4875a594648014fa8af3b86018b7a544866f628d9183a61",
     "verify.py": "151012ff6f0a8d37372d58c77fc77f63f0b8e0fba260c34ea6ee36dd5d779adc",

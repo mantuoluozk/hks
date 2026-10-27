@@ -1,6 +1,6 @@
 {
   "model": "Qwen3-ASR-1.7B",
-  "sourcefind_code_base": "35d46416c7385bae0fd63742a185e6a32113abf2",
+  "sourcefind_code_base": "b98807b44234ad5981f9d417102f790ad5b62241",
   "files": [
     {
       "path": "Qwen3-ASR-1.7B/.gitattributes",
@@ -539,7 +539,7 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/提交填写信息.md",
-      "sha256": "bf8b490935b5c9ce71911a00788754b342ccf221e029daa0baeb2863102616b0",
+      "sha256": "374fe102c229a91b3bdfe820980856f5a2912f7654beac091399a0d36cdf5f67",
       "bytes": 1206
     },
     {

@@ -1,6 +1,6 @@
 {
   "model": "Qwen-Image-2.1-Turbo",
-  "sourcefind_code_base": "35d46416c7385bae0fd63742a185e6a32113abf2",
+  "sourcefind_code_base": "b98807b44234ad5981f9d417102f790ad5b62241",
   "files": [
     {
       "path": "Qwen-Image-2.1-Turbo/.gitattributes",
@@ -64,7 +64,7 @@
     },
     {
       "path": "Qwen-Image-2.1-Turbo/results/evidence-manifest.json",
-      "sha256": "c552e9d9b71db673e19bc647d3f5ed2fdadf4804b65f6a8a7202a3ce86b07574",
+      "sha256": "386f82b32c1e0f6085f235319090ca9eb40d76216f820ad402b3554849804a48",
       "bytes": 22631
     },
     {
@@ -829,7 +829,7 @@
     },
     {
       "path": "Qwen-Image-2.1-Turbo/提交填写信息.md",
-      "sha256": "40e2e03e619793364bf1b1ae598907936dcc69ebcddb1d1d3ea78c35cf3e3870",
+      "sha256": "e268c9b4889645ad5d1eb4754d6bf48b788772a68e4c68fd571c907e32a8dabb",
       "bytes": 1269
     },
     {

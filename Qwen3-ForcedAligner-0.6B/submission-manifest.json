@@ -1,6 +1,6 @@
 {
   "model": "Qwen3-ForcedAligner-0.6B",
-  "sourcefind_code_base": "35d46416c7385bae0fd63742a185e6a32113abf2",
+  "sourcefind_code_base": "b98807b44234ad5981f9d417102f790ad5b62241",
   "files": [
     {
       "path": "Qwen3-ForcedAligner-0.6B/.gitattributes",
@@ -264,7 +264,7 @@
     },
     {
       "path": "Qwen3-ForcedAligner-0.6B/提交填写信息.md",
-      "sha256": "64ce8a11895c4951da1128c9196ca52df768a69b38ae9bd7c170077b7e954a1c",
+      "sha256": "2d7fda85125fdd87c6757e3fc1857e260f6c1a5e40ba39aad24d231eb9df2691",
       "bytes": 1248
     },
     {
