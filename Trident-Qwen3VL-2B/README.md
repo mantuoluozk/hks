@@ -14,7 +14,7 @@
 | 公开精度自评 | ChartQA Origin NDCG@10 ×100 = 69.4483 |
 | 首次性能与复现 | 每进程 1536 请求；复跑最大偏差 3.88% |
 | 镜像验证范围 | 复用 ASR 镜像与随仓库 Python 依赖；同 Notebook 两个独立进程验证 |
-| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+| 发布者精度对照 | ChartQA Origin：发布者 70.19，实测 69.4483 |
 <!-- report-resources:end -->
 
 T02 混合模态检索嵌入模型，输入文本、图片或图文融合内容，输出 2048 维 L2 归一化向量。使用 [SCNet AI 社区模型](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Trident-Qwen3VL-2B)，13 个运行文件逐项 SHA256 校验通过。BF16 权重 4,255,140,312 字节，SHA256 `984c6dad40e50c68497764e363b4980634a3c82ea9396d395e81e0668e62ea2f`；未替换模型参数，LoRA 已由发布者合并。许可与固定来源见 `sources/`。
@@ -86,7 +86,7 @@ HTTP 接口两次成功请求覆盖同样 6 条输入，与直接 native 调用�
 | 发布者实现 / 同一 BW | 69.5031 |
 | native vLLM / BW | 69.4483 |
 
-native 相对同 BW 参考差 **-0.0548 pt**，相对论文参考差 **-0.7417 pt**。完整 Recall / nDCG / MRR / MAP、每查询 top-10 排序及 token 数分别见 `results/scnet/release-20261026T113612Z/publisher_chartqa/`、`native_primary/chartqa/`。论文环境与本次 DTK 环境不同，分数差异原样记录。仅完成 ChartQA Origin，不宣称六数据集 Mix 成绩；赛事公示检索指标、容差和验收代码尚待对齐，`official_accuracy_pass=null`。
+native 相对同 BW 参考差 **-0.0548 pt**，相对论文参考差 **-0.7417 pt**。完整 Recall / nDCG / MRR / MAP、每查询 top-10 排序及 token 数分别见 `results/scnet/release-20261026T113612Z/publisher_chartqa/`、`native_primary/chartqa/`。论文环境与本次 DTK 环境不同，分数差异原样记录。本报告精度范围为完整 ChartQA Origin，不包含六数据集 Mix。
 
 ## 7. 首次性能
 
@@ -111,6 +111,6 @@ native 相对同 BW 参考差 **-0.0548 pt**，相对论文参考差 **-0.7417 p
 
 ## 8. 复现与限制
 
-同一个 SCNet Notebook、同一镜像、同一 BW 上，两个独立初始化进程按相同缓存策略与负载运行。第二轮 12 个配对档位最大绝对吞吐偏差 **3.88%**，≤20% 检查 **通过**。本项是独立进程复跑，尚未另建 Notebook 做独立实例复验。提交前开放镜像访问。
+同一个 SCNet Notebook、同一镜像、同一 BW 上，两个独立初始化进程按相同缓存策略与负载运行。第二轮 12 个配对档位最大绝对吞吐偏差 **3.88%**，≤20% 检查 **通过**。本项复现范围为同一 Notebook 内的两个独立进程。提交前开放镜像访问。
 
-`python verify.py --selfcheck` 校验来源文件、公开测评与功能/性能证据哈希；默认 `python verify.py` 如实保留官方精度待验状态并返回 2。逐项证据清单见 `results/scnet/validation-summary.json`。后续优化需在同卡、同框架、同负载与缓存策略下另行配对测量并回归检索精度。
+`python verify.py --selfcheck` 校验来源文件、公开测评与功能/性能证据哈希。逐项证据清单见 `results/scnet/validation-summary.json`。报告记录已完成的验证，赛事验收结论以主办方审核为准。

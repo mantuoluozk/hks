@@ -14,7 +14,7 @@
 | 公开精度自评 | test-clean 2620 条，WER 1.6501% |
 | 首次性能与复现 | 128 请求；复跑最大偏差 7.28% |
 | 镜像验证范围 | 专用镜像已完成新 Notebook 复验 |
-| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+| 发布者精度对照 | LibriSpeech test-clean：发布者 WER 1.63%，实测 1.6501% |
 <!-- report-resources:end -->
 
 T04 语音识别适配，模型为 `Qwen/Qwen3-ASR-1.7B`，BF16、单张 BW。权重来自 [SCNet AI 社区](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen3-ASR-1.7B)，11 个运行文件逐项 SHA256 校验通过，含两片权重共 4,698,521,512 字节。模型卡和 `.gitattributes` 不属于运行文件，社区说明文件与发布者快照不同，未将这两项计入运行文件一致性检查。模型文件清单见 `sources/modelscope-files.json`，实际校验见 `results/scnet/validation-20261026T080803Z/runtime/weights-check.json`。
@@ -83,7 +83,7 @@ BENCH_OUTPUT_DIR="$PWD/results/scnet/reproduce/bench" bash run-scnet.sh python s
 | 首轮平台自测 | 2620 | 1.6520% | 0.5306% | 0 / 0 |
 | 专用镜像新 Notebook 复验 | 2620 | 1.6501% | 0.5285% | 0 / 0 |
 
-逐条预测、参考归一化摘要及编辑距离见两轮 `accuracy/`。这是完整公开集自评，尚未核实归一化与发布者/赛事脚本完全等价；不把该分数与公开 1.63% 的简单数值比较作为正式 GPU 对照验收。正式精度**待官方测评代码复验**，`official_accuracy_pass=null`。中文演示音频仅用于功能检查，未据此声称中文 CER 达标。
+完整 test-clean 实测 WER **1.6501%**，相比发布者 **1.63%** 增加 **0.0201 个百分点**，相对增加约 **1.23%**。逐条预测、参考归一化摘要及编辑距离见两轮 `accuracy/`。本次采用上述 Whisper 归一化与评分实现；该对照反映所列评测协议下的数值差异，不表示两侧评分实现完全相同。中文演示音频仅用于功能检查，未据此声称中文 CER 达标。
 
 ```bash
 bash run-scnet.sh python scripts/prepare_librispeech_parquet.py
@@ -116,4 +116,4 @@ EVAL_OUTPUT_DIR="$PWD/results/scnet/reproduce/accuracy" bash run-scnet.sh python
 
 最大绝对偏差 **7.28%**；≤20% 检查为 **通过**。证据位于 `results/scnet/validation-20261026T064636Z/` 与 `results/scnet/validation-20261026T080803Z/`，汇总文件为 `results/scnet/validation-summary.json`。权重、音频、数据集和编译缓存不随代码分发。首次启动须等待真实健康检查通过；每次复跑使用新的输出目录。在线服务必须停止后再运行离线 PCM 检查，避免同卡进程争用。
 
-`python verify.py --selfcheck` 校验已保存证据；默认 `python verify.py` 保留正式精度待复验状态并返回 2。功能、自评、性能和正式验收分别记录。
+`python verify.py --selfcheck` 校验已保存证据。报告记录已完成的功能、公开集精度及性能结果；赛事验收结论以主办方审核为准。

@@ -1,6 +1,6 @@
 {
   "model": "Qwen3-ASR-1.7B",
-  "sourcefind_code_base": "b98807b44234ad5981f9d417102f790ad5b62241",
+  "sourcefind_code_base": "4affa2d53dee14273b23534ff640590b2165fd58",
   "files": [
     {
       "path": "Qwen3-ASR-1.7B/.gitattributes",
@@ -19,8 +19,8 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/README.md",
-      "sha256": "b87af908f31a459660803b47bdd6e7c7bfa3af40c1809ff4a0499d55165235c9",
-      "bytes": 8652
+      "sha256": "86997ee8991435c16e969fc03f98de48c1ff3f74741f20506eb60c1df36d89bb",
+      "bytes": 8661
     },
     {
       "path": "Qwen3-ASR-1.7B/env.sh",
@@ -529,18 +529,18 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/优化说明.md",
-      "sha256": "5ee450ca5d51b80fec0ec547678edb8e13ad6d504091a667dd01b11df0fe2b5d",
-      "bytes": 671
+      "sha256": "24b1bb11fb82bfeff97b5334ca1a7e2878d670956ca824fe7202419e4754ecb4",
+      "bytes": 542
     },
     {
       "path": "Qwen3-ASR-1.7B/官方精度基线查证.md",
-      "sha256": "f59a8add892993e2182aab7754d45ccb0b9e9ae9ad0df8b8460da4c94303c018",
-      "bytes": 1213
+      "sha256": "83b514b43397d8c29a7dcace81dffe6ec60318e9275b9b5e7476ebc7117a2e0e",
+      "bytes": 1314
     },
     {
       "path": "Qwen3-ASR-1.7B/提交填写信息.md",
-      "sha256": "374fe102c229a91b3bdfe820980856f5a2912f7654beac091399a0d36cdf5f67",
-      "bytes": 1206
+      "sha256": "a9d4fbc5180cd2fc485d29d062b08a40c9b3aadc458a2f6c99dc7193a8af3f5a",
+      "bytes": 1309
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

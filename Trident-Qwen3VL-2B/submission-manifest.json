@@ -1,6 +1,6 @@
 {
   "model": "Trident-Qwen3VL-2B",
-  "sourcefind_code_base": "b98807b44234ad5981f9d417102f790ad5b62241",
+  "sourcefind_code_base": "4affa2d53dee14273b23534ff640590b2165fd58",
   "files": [
     {
       "path": "Trident-Qwen3VL-2B/.gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "path": "Trident-Qwen3VL-2B/README.md",
-      "sha256": "555b191cda6cfb69445a109b97f6220bf3db6618814dc528011efd74100d227a",
-      "bytes": 9917
+      "sha256": "b2e5acfd59751499877cd82a56e848578f183981f0c0cc55c149c4351987d847",
+      "bytes": 9704
     },
     {
       "path": "Trident-Qwen3VL-2B/bench.sh",
@@ -664,18 +664,18 @@
     },
     {
       "path": "Trident-Qwen3VL-2B/优化说明.md",
-      "sha256": "c9ee3735afdccb3cef5e0948c1a5a0bf243b0d5e33c1b64cffb6976cab25f486",
-      "bytes": 1216
+      "sha256": "ba07749915a03267f59d67866600f07c3d1333176b9a079278f82ea36c7b2941",
+      "bytes": 1071
     },
     {
       "path": "Trident-Qwen3VL-2B/官方精度基线查证.md",
-      "sha256": "62b63ecf19383f5b890d0c78c63006c1b33b6fe4732763559afd373965425ec1",
-      "bytes": 1296
+      "sha256": "9d93006c87ee245b1f70847017c6a088bdada3edaae9ef1cb58b8d92521718cc",
+      "bytes": 1418
     },
     {
       "path": "Trident-Qwen3VL-2B/提交填写信息.md",
-      "sha256": "8625116f7c8a836cee893b16c44fcff066041ba73da0c8b82e40af507f5fb1e1",
-      "bytes": 1303
+      "sha256": "f19e402bcff9cf42a3c3549645ddeb3d771838082774e22ad765936b2e29a4ce",
+      "bytes": 1411
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

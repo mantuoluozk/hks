@@ -12,7 +12,7 @@
 | [Trident-Qwen3VL-2B](Trident-Qwen3VL-2B/README.md) | vLLM | 6 条多模态输入及 HTTP embedding | ChartQA Origin NDCG@10 ×100 = 69.4483 | 每进程 1536 请求；复跑最大偏差 3.88% |
 | [Qwen-Image-2.1-Turbo](Qwen-Image-2.1-Turbo/README.md) | SGLang | 两个独立进程各 8/8 | CLIP score / FID 待官方评测 | 每进程 9 实测 + 3 预热；复跑最大偏差 17.09% |
 
-以上七个模型均未宣称官方验收通过。正式精度与 GPU 参考仍待官方评测代码对齐；RoboBrain 与 Recon2Reason 保留现有结果，等待官方代码复验。
+Qwen3-ASR 与 Trident 已整理发布者公开基线对照及完整基准实测，提供首版提交材料。其他模型的精度范围见各自报告。比赛验收结论由主办方审核；本仓库不将公开自评或材料提交记为已通过官方验收。
 
 [镜像与复验范围总表](镜像与复验总表.md)列明三套镜像的复用关系、额外依赖及未完成项。私有镜像提交时开放。
 
