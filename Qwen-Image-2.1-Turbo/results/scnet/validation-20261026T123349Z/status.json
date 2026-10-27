@@ -1,0 +1,1 @@
+{"stage": "failed", "error": "CalledProcessError(1, ['bash', 'run-scnet.sh', 'python', '-u', 'scripts/preflight.py'])", "official_accuracy_pass": null}

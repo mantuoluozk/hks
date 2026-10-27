@@ -1,0 +1,121 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Preserving Transformers built-in qwen3_asr registration
+INFO 10-26 20:49:28 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-26 20:49:28 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-26 20:49:28 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-26 20:49:28 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+WARNING:sglang.multimodal_gen.runtime.layers.quantization.mxfp4:aiter MXFP4 kernels not available: No module named 'aiter.ops.gemm_op_a4w4'
+INFO:sglang.cli.serve:Dispatch override enabled: --model-type=diffusion (skip auto detection)
+INFO:sglang.multimodal_gen.registry:Using diffusers backend for model '/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo' (explicitly requested)
+[10-26 20:49:40] Disabling component offload for DiffusersGenericPipelineConfig because minimum available memory on selected GPUs is 63.67 GiB: dit_cpu_offload=False
+[10-26 20:49:40] server_args: {"model_path": "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo", "model_subfolder": null, "model_variant": null, "model_id": null, "served_model_name": "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo", "backend": "diffusers", "attention_backend": null, "attention_backend_config": {}, "component_attention_backends": {}, "cache_dit_config": null, "nccl_port": null, "enable_nccl_nvls": false, "trust_remote_code": false, "revision": null, "num_gpus": 1, "performance_mode": "auto", "base_gpu_id": 0, "gpu_ids": null, "nnodes": 1, "node_rank": 0, "dist_init_addr": null, "tp_size": 1, "sp_degree": 1, "ulysses_degree": 1, "ring_degree": 1, "kv_gather_degree": 1, "sp_split_auto": false, "dp_size": 1, "enable_cfg_parallel": false, "cfg_parallel_degree": 1, "encoder_parallel": "auto", "hsdp_replicate_dim": 1, "hsdp_shard_dim": 1, "dist_timeout": 3600, "scheduler_rpc_timeout": null, "pipeline_class_name": null, "lora_path": null, "lora_nickname": "default", "lora_scale": 1.0, "lora_alpha": null, "lora_merge_mode": "auto", "lora_weight_name": null, "component_paths": {}, "component_weights_paths": {}, "load_diffusion_decoder": false, "transformer_weights_path": null, "minimax_h3_adaln_cache_path": null, "minimax_h3_adaln_online": false, "minimax_h3_adaln_plan_width": 4, "quantization": null, "quantization_ignored_layers": null, "lora_target_modules": null, "component_residency": null, "cpu_offload_components": null, "dit_cpu_offload": false, "direct_gpu_weight_loading": false, "dit_layerwise_offload": false, "layerwise_offload_components": null, "dit_offload_prefetch_size": 0.0, "dit_layerwise_resident_layers": 0.0, "dit_layerwise_residency_policy": "leading", "layerwise_prefetch_size": {}, "layerwise_resident_layers": {}, "layerwise_residency_policy": {}, "offload_during_compile": true, "text_encoder_cpu_offload": true, "image_encoder_cpu_offload": false, "vae_cpu_offload": false, "use_fsdp_inference": false, "pin_cpu_memory": true, "ltx2_two_stage_device_mode": null, "comfyui_mode": false, "enable_torch_compile": false, "regional_compile": false, "enable_breakable_cuda_graph": false, "bcg_text_buckets": null, "enable_layerwise_nvtx_marker": false, "warmup_mode": "server", "warmup_resolutions": null, "warmup_steps": 1, "disable_autocast": false, "master_port": 30005, "host": "127.0.0.1", "port": 30003, "webui": false, "webui_port": 12312, "scheduler_port": 5608, "scheduler_ports": [5608], "batching_mode": "dynamic", "batching_max_size": 1, "batching_delay_ms": 0.0, "batching_config": null, "enable_batching_metrics": false, "strict_ports": false, "output_path": "outputs/", "input_save_path": "inputs/uploads", "prompt_file_path": null, "model_paths": {}, "model_loaded": {"transformer": true, "vae": true, "video_vae": true, "audio_vae": true, "video_dit": true, "audio_dit": true, "dual_tower_bridge": true}, "boundary_ratio": null, "disagg_role": "monolithic", "disagg_timeout": 3600, "disagg_downstream_wait_timeout": 1800, "disagg_dispatch_policy": "round_robin", "disagg_mode": false, "disagg_instance_id": 0, "disagg_max_slots_per_instance": 8, "disagg_transfer_redundancy": 1.25, "disagg_role_device": "auto", "disagg_transfer_backend": "auto", "disagg_transfer_pool_size": 268435456, "disagg_transfer_pin_memory": "auto", "disagg_p2p_hostname": "127.0.0.1", "disagg_ib_device": null, "disagg_server_addr": null, "encoder_urls": null, "denoiser_urls": null, "decoder_urls": null, "encoder_tp": null, "denoiser_tp": null, "denoiser_sp": null, "denoiser_ulysses": null, "denoiser_ring": null, "decoder_sp": null, "pool_work_endpoint": null, "pool_result_endpoint": null, "pool_control_endpoint": null, "pool_control_advertised_endpoint": null, "log_level": "info", "log_requests": false, "log_requests_level": 2, "log_requests_format": "text", "log_requests_target": null, "uvicorn_access_log_exclude_prefixes": [], "enable_cache_report": false, "enable_trace": false, "otlp_traces_endpoint": "localhost:4317", "srt_encoder_url": null, "srt_encoder_connect_timeout": 3.05, "srt_encoder_timeout": 100, "pe_server_url": null}
+[10-26 20:49:40] Starting server...
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Preserving Transformers built-in qwen3_asr registration
+INFO 10-26 20:50:09 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-26 20:50:09 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-26 20:50:09 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-26 20:50:09 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+WARNING:sglang.multimodal_gen.runtime.layers.quantization.mxfp4:aiter MXFP4 kernels not available: No module named 'aiter.ops.gemm_op_a4w4'
+[10-26 20:50:18] Scheduler (dp replica 0) bind at endpoint: tcp://127.0.0.1:5608
+[10-26 20:50:18] torch.compile cache: TORCHINDUCTOR_CACHE_DIR=/root/private_data/hks/models/Qwen-Image-2.1-Turbo/cache/torchinductor TRITON_CACHE_DIR=/root/private_data/hks/models/Qwen-Image-2.1-Turbo/cache/triton
+[10-26 20:50:18] Initializing distributed environment with world_size=1, device=cuda:0, timeout=3600
+[10-26 20:50:18] Setting distributed timeout to 3600 seconds
+[10-26 20:50:19] No pipeline_class_name specified, using model_index.json
+[10-26 20:50:19] Using diffusers backend for model '/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo' (explicitly requested)
+[10-26 20:50:20] Using pipeline from model_index.json: DiffusersPipeline
+[10-26 20:50:20] Loading diffusers pipeline from /root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo
+[10-26 20:50:20] Model already exists locally and is complete
+[10-26 20:50:20] Loading diffusers pipeline with dtype=torch.bfloat16
+/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-py310/src/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+[10-26 20:50:21] Worker 0: Shutdown complete.
+Process sglang-diffusionWorker-0:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 1205, in run_scheduler_process
+    scheduler = Scheduler(
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/managers/scheduler.py", line 129, in __init__
+    worker = Exec_worker(
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 154, in __init__
+    self.init_device_and_model()
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 315, in init_device_and_model
+    self.pipeline = build_pipeline(self.server_args)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/pipelines_core/__init__.py", line 79, in build_pipeline
+    pipeline = pipeline_cls(model_path, server_args)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/pipelines/diffusers_pipeline.py", line 387, in __init__
+    self.diffusers_pipe = self._load_diffusers_pipeline(model_path, server_args)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/scripts/serve_sglang.py", line 35, in load_pipeline
+    pipe=original_load(self,model_path,server_args)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/pipelines/diffusers_pipeline.py", line 423, in _load_diffusers_pipeline
+    pipe = DiffusionPipeline.from_pretrained(model_path, **load_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 91, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-py310/src/diffusers/pipelines/pipeline_utils.py", line 1044, in from_pretrained
+    loaded_sub_model = load_sub_model(
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-py310/src/diffusers/pipelines/pipeline_loading_utils.py", line 884, in load_sub_model
+    loaded_sub_model = load_method(os.path.join(cached_folder, name), **loading_kwargs)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/modeling_utils.py", line 4267, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1274, in __init__
+    self.model = Qwen3VLModel(config)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 880, in __init__
+    self.visual = AutoModel.from_config(config.vision_config)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/models/auto/auto_factory.py", line 248, in from_config
+    return model_class._from_config(config, **kwargs)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/modeling_utils.py", line 1457, in _from_config
+    model = cls(config, **kwargs)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 666, in __init__
+    self.rotary_pos_emb = Qwen3VLVisionRotaryEmbedding(config)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/utils/deprecation.py", line 171, in wrapped_func
+    return func(*args, **kwargs)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 123, in __init__
+    raise ValueError(f"{self.__class__.__name__} supports only axial rope, but requested {self.rope_type}")
+ValueError: Qwen3VLVisionRotaryEmbedding supports only axial rope, but requested default
+[91m[10-26 20:50:28] Rank 0 scheduler is dead. Please check if there are relevant logs.[0;0m
+[91m[10-26 20:50:28] Exit code: 1[0;0m
+[10-26 20:50:28] kill_process_tree called: parent_pid=20805, include_parent=False, pid=20805
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/scripts/serve_sglang.py", line 74, in <module>
+    if __name__=='__main__':main()
+  File "/usr/local/lib/python3.10/dist-packages/sglang/cli/main.py", line 40, in main
+    serve(args, extra_argv)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/cli/serve.py", line 205, in serve
+    registered.backend.run(request)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/cli/serve.py", line 126, in _run_diffusion
+    execute_serve_cmd(parsed_args, remaining_argv)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/entrypoints/cli/serve.py", line 39, in execute_serve_cmd
+    dispatch_launch(server_args)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/launch_server.py", line 803, in dispatch_launch
+    launch_server(server_args)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/launch_server.py", line 272, in launch_server
+    data = reader.recv()
+  File "/usr/lib/python3.10/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/usr/lib/python3.10/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/lib/python3.10/multiprocessing/connection.py", line 383, in _recv
+    raise EOFError
+EOFError

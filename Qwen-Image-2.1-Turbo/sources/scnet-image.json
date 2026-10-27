@@ -1,0 +1,14 @@
+{
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2114893402085822465/versions",
+  "image": "appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-image21-turbo:1.0.0",
+  "version": "1.0.0",
+  "digest": null,
+  "visibility": "private",
+  "region": "华中一区（A区）",
+  "instance": "crdnotebook-2114895744346902529-zack233-97967",
+  "preflight": "results/scnet/image-1.0.0-preflight/summary.json",
+  "preflight_pass": true,
+  "full_revalidation_pass": true,
+  "service_validation": "results/scnet/service-validation-20261027T015635Z",
+  "metadata_source": "SCNet image page and registry reference; fresh Notebook preflight confirms baked runtime and launcher hash."
+}

@@ -1,0 +1,105 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Preserving Transformers built-in qwen3_asr registration
+INFO 10-26 21:01:24 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-26 21:01:24 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-26 21:01:24 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-26 21:01:24 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+WARNING:sglang.multimodal_gen.runtime.layers.quantization.mxfp4:aiter MXFP4 kernels not available: No module named 'aiter.ops.gemm_op_a4w4'
+INFO:sglang.cli.serve:Dispatch override enabled: --model-type=diffusion (skip auto detection)
+INFO:sglang.multimodal_gen.registry:Using diffusers backend for model '/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo' (explicitly requested)
+[10-26 21:01:31] Disabling component offload for DiffusersTI2IPipelineConfig because minimum available memory on selected GPUs is 63.67 GiB: dit_cpu_offload=False
+[10-26 21:01:31] server_args: {"model_path": "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo", "model_subfolder": null, "model_variant": null, "model_id": null, "served_model_name": "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo", "backend": "diffusers", "attention_backend": null, "attention_backend_config": {}, "component_attention_backends": {}, "cache_dit_config": null, "nccl_port": null, "enable_nccl_nvls": false, "trust_remote_code": false, "revision": null, "num_gpus": 1, "performance_mode": "auto", "base_gpu_id": 0, "gpu_ids": null, "nnodes": 1, "node_rank": 0, "dist_init_addr": null, "tp_size": 1, "sp_degree": 1, "ulysses_degree": 1, "ring_degree": 1, "kv_gather_degree": 1, "sp_split_auto": false, "dp_size": 1, "enable_cfg_parallel": false, "cfg_parallel_degree": 1, "encoder_parallel": "auto", "hsdp_replicate_dim": 1, "hsdp_shard_dim": 1, "dist_timeout": 3600, "scheduler_rpc_timeout": null, "pipeline_class_name": null, "lora_path": null, "lora_nickname": "default", "lora_scale": 1.0, "lora_alpha": null, "lora_merge_mode": "auto", "lora_weight_name": null, "component_paths": {}, "component_weights_paths": {}, "load_diffusion_decoder": false, "transformer_weights_path": null, "minimax_h3_adaln_cache_path": null, "minimax_h3_adaln_online": false, "minimax_h3_adaln_plan_width": 4, "quantization": null, "quantization_ignored_layers": null, "lora_target_modules": null, "component_residency": null, "cpu_offload_components": null, "dit_cpu_offload": false, "direct_gpu_weight_loading": false, "dit_layerwise_offload": false, "layerwise_offload_components": null, "dit_offload_prefetch_size": 0.0, "dit_layerwise_resident_layers": 0.0, "dit_layerwise_residency_policy": "leading", "layerwise_prefetch_size": {}, "layerwise_resident_layers": {}, "layerwise_residency_policy": {}, "offload_during_compile": true, "text_encoder_cpu_offload": true, "image_encoder_cpu_offload": false, "vae_cpu_offload": false, "use_fsdp_inference": false, "pin_cpu_memory": true, "ltx2_two_stage_device_mode": null, "comfyui_mode": false, "enable_torch_compile": false, "regional_compile": false, "enable_breakable_cuda_graph": false, "bcg_text_buckets": null, "enable_layerwise_nvtx_marker": false, "warmup_mode": "server", "warmup_resolutions": null, "warmup_steps": 1, "disable_autocast": false, "master_port": 30005, "host": "127.0.0.1", "port": 30003, "webui": false, "webui_port": 12312, "scheduler_port": 5557, "scheduler_ports": [5557], "batching_mode": "dynamic", "batching_max_size": 1, "batching_delay_ms": 0.0, "batching_config": null, "enable_batching_metrics": false, "strict_ports": false, "output_path": "outputs/", "input_save_path": "inputs/uploads", "prompt_file_path": null, "model_paths": {}, "model_loaded": {"transformer": true, "vae": true, "video_vae": true, "audio_vae": true, "video_dit": true, "audio_dit": true, "dual_tower_bridge": true}, "boundary_ratio": null, "disagg_role": "monolithic", "disagg_timeout": 3600, "disagg_downstream_wait_timeout": 1800, "disagg_dispatch_policy": "round_robin", "disagg_mode": false, "disagg_instance_id": 0, "disagg_max_slots_per_instance": 8, "disagg_transfer_redundancy": 1.25, "disagg_role_device": "auto", "disagg_transfer_backend": "auto", "disagg_transfer_pool_size": 268435456, "disagg_transfer_pin_memory": "auto", "disagg_p2p_hostname": "127.0.0.1", "disagg_ib_device": null, "disagg_server_addr": null, "encoder_urls": null, "denoiser_urls": null, "decoder_urls": null, "encoder_tp": null, "denoiser_tp": null, "denoiser_sp": null, "denoiser_ulysses": null, "denoiser_ring": null, "decoder_sp": null, "pool_work_endpoint": null, "pool_result_endpoint": null, "pool_control_endpoint": null, "pool_control_advertised_endpoint": null, "log_level": "info", "log_requests": false, "log_requests_level": 2, "log_requests_format": "text", "log_requests_target": null, "uvicorn_access_log_exclude_prefixes": [], "enable_cache_report": false, "enable_trace": false, "otlp_traces_endpoint": "localhost:4317", "srt_encoder_url": null, "srt_encoder_connect_timeout": 3.05, "srt_encoder_timeout": 100, "pe_server_url": null}
+[10-26 21:01:31] Starting server...
+Preserving Transformers built-in qwen3_asr registration
+INFO 10-26 21:01:58 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-26 21:01:58 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-26 21:01:58 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-26 21:01:58 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+WARNING:sglang.multimodal_gen.runtime.layers.quantization.mxfp4:aiter MXFP4 kernels not available: No module named 'aiter.ops.gemm_op_a4w4'
+[10-26 21:02:05] Scheduler (dp replica 0) bind at endpoint: tcp://127.0.0.1:5557
+[10-26 21:02:05] torch.compile cache: TORCHINDUCTOR_CACHE_DIR=/root/private_data/hks/models/Qwen-Image-2.1-Turbo/cache/torchinductor TRITON_CACHE_DIR=/root/private_data/hks/models/Qwen-Image-2.1-Turbo/cache/triton
+[10-26 21:02:05] Initializing distributed environment with world_size=1, device=cuda:0, timeout=3600
+[10-26 21:02:05] Setting distributed timeout to 3600 seconds
+[10-26 21:02:05] No pipeline_class_name specified, using model_index.json
+[10-26 21:02:05] Using diffusers backend for model '/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo' (explicitly requested)
+[10-26 21:02:06] Using pipeline from model_index.json: DiffusersPipeline
+[10-26 21:02:06] Loading diffusers pipeline from /root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo
+[10-26 21:02:06] Model already exists locally and is complete
+[10-26 21:02:06] Loading diffusers pipeline with dtype=torch.bfloat16
+/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-py310/src/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00, 17.54it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.01it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 14.86it/s]
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s][A
+Loading weights:  25%|██▍       | 185/750 [00:00<00:00, 1836.88it/s][A
+Loading weights:  58%|█████▊    | 432/750 [00:00<00:00, 2196.56it/s][A
+Loading weights:  87%|████████▋ | 652/750 [00:00<00:00, 1916.33it/s][ALoading weights: 100%|██████████| 750/750 [00:00<00:00, 1941.44it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:01<00:00,  3.18it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:02<00:00,  1.94it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s]
+[10-26 21:02:08] Enabled model CPU offload for diffusers pipeline (gpu_id=0)
+[10-26 21:02:08] Loaded diffusers pipeline: QwenImage21Pipeline
+[10-26 21:02:08] Pipeline instantiated
+[10-26 21:02:08] Worker 0: Initialized device, model, and distributed environment.
+[10-26 21:02:08] Worker 0: Scheduler loop started.
+[10-26 21:02:08] Starting FastAPI server.
+[2026-10-26 21:02:08] [32mINFO[0m:     Started server process [[36m21238[0m]
+[2026-10-26 21:02:08] [32mINFO[0m:     Waiting for application startup.
+[10-26 21:02:08] ZMQ Broker is listening for offline jobs on tcp://127.0.0.1:30004
+[2026-10-26 21:02:08] [32mINFO[0m:     Application startup complete.
+[2026-10-26 21:02:08] [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:30003[0m (Press CTRL+C to quit)
+[2026-10-26 21:02:09] [32mINFO[0m:     127.0.0.1:33478 - "[1mGET /liveness HTTP/1.1[0m" [32m200 OK[0m
+Warmup requests:   0%|          | 0/1 [00:00<?, ?req/s][93m[10-26 21:02:09] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+[2026-10-26 21:02:12] [32mINFO[0m:     127.0.0.1:33480 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:02:17] [32mINFO[0m:     127.0.0.1:33482 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:02:22] [32mINFO[0m:     127.0.0.1:33484 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:02:27] [32mINFO[0m:     127.0.0.1:33488 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+
+  0%|          | 0/8 [00:00<?, ?it/s][A[2026-10-26 21:02:32] [32mINFO[0m:     127.0.0.1:33490 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:02:37] [32mINFO[0m:     127.0.0.1:33492 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:02:42] [32mINFO[0m:     127.0.0.1:33494 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:02:47] [32mINFO[0m:     127.0.0.1:33496 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:02:52] [32mINFO[0m:     127.0.0.1:33498 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:02:57] [32mINFO[0m:     127.0.0.1:33500 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:03:02] [32mINFO[0m:     127.0.0.1:33502 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+
+ 12%|█▎        | 1/8 [00:37<04:24, 37.77s/it][A
+ 25%|██▌       | 2/8 [00:38<01:34, 15.79s/it][A
+ 38%|███▊      | 3/8 [00:38<00:43,  8.76s/it][A
+ 50%|█████     | 4/8 [00:38<00:21,  5.47s/it][A[2026-10-26 21:03:07] [32mINFO[0m:     127.0.0.1:33504 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+
+ 62%|██████▎   | 5/8 [00:39<00:10,  3.64s/it][A
+ 75%|███████▌  | 6/8 [00:39<00:05,  2.55s/it][A
+ 88%|████████▊ | 7/8 [00:40<00:01,  1.84s/it][A
+100%|██████████| 8/8 [00:40<00:00,  1.38s/it][A100%|██████████| 8/8 [00:40<00:00,  5.07s/it]
+[2026-10-26 21:03:12] [32mINFO[0m:     127.0.0.1:33506 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-26 21:03:17] [32mINFO[0m:     127.0.0.1:33510 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+Warmup requests: 100%|██████████| 1/1 [01:11<00:00, 71.71s/req, server warmup req (1024x1024, 2/30 steps), last=71.71s]Warmup requests: 100%|██████████| 1/1 [01:11<00:00, 71.72s/req, server warmup req (1024x1024, 2/30 steps), last=71.71s]
+[10-26 21:03:21] The server is fired up and ready to roll!
+[2026-10-26 21:03:22] [32mINFO[0m:     127.0.0.1:33512 - "[1mGET /health HTTP/1.1[0m" [32m200 OK[0m
+[2026-10-26 21:03:22] [32mINFO[0m:     127.0.0.1:33512 - "[1mGET /v1/models HTTP/1.1[0m" [32m200 OK[0m
+[10-26 21:03:22] Sampling params:
+                       width: 512
+                      height: 512
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=97>
+                  neg_prompt: <redacted, len=0>
+                        seed: 42
+                 infer_steps: 8
+      num_outputs_per_prompt: 1
+              guidance_scale: 7.5
+     embedded_guidance_scale: 1.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: None
+                 save_output: True
+            output_file_path: outputs/15deeea0-3470-427f-a8e1-cd72bb932d45.png
+        
+[10-26 21:03:22] [DiffusersExecutionStage] started...
+[93m[10-26 21:03:22] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+[2026-10-26 21:03:25] [32mINFO[0m:     Shutting down
+[2026-10-26 21:03:25] [32mINFO[0m:     Waiting for background tasks to complete. (CTRL+C to force quit)

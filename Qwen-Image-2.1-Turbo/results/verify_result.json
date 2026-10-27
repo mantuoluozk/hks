@@ -1,0 +1,9 @@
+{
+  "evidence_hashes_pass": true,
+  "functional_pass": true,
+  "performance_reproduction_within_20_percent": true,
+  "selfcheck_pass": true,
+  "official_accuracy_pass": null,
+  "dedicated_image_revalidation": true,
+  "official_acceptance_pass": null
+}

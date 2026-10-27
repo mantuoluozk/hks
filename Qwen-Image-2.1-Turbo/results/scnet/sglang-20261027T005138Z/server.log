@@ -1,0 +1,282 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Preserving Transformers built-in qwen3_asr registration
+INFO 10-27 08:52:14 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-27 08:52:14 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-27 08:52:14 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-27 08:52:14 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+WARNING:sglang.multimodal_gen.runtime.layers.quantization.mxfp4:aiter MXFP4 kernels not available: No module named 'aiter.ops.gemm_op_a4w4'
+INFO:sglang.cli.serve:Dispatch override enabled: --model-type=diffusion (skip auto detection)
+INFO:sglang.multimodal_gen.registry:Using diffusers backend for model '/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo' (explicitly requested)
+[10-27 08:52:29] Disabling component offload for DiffusersTI2IPipelineConfig because minimum available memory on selected GPUs is 63.67 GiB: dit_cpu_offload=False
+[10-27 08:52:29] server_args: {"model_path": "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo", "model_subfolder": null, "model_variant": null, "model_id": null, "served_model_name": "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo", "backend": "diffusers", "attention_backend": null, "attention_backend_config": {}, "component_attention_backends": {}, "cache_dit_config": null, "nccl_port": null, "enable_nccl_nvls": false, "trust_remote_code": false, "revision": null, "num_gpus": 1, "performance_mode": "auto", "base_gpu_id": 0, "gpu_ids": null, "nnodes": 1, "node_rank": 0, "dist_init_addr": null, "tp_size": 1, "sp_degree": 1, "ulysses_degree": 1, "ring_degree": 1, "kv_gather_degree": 1, "sp_split_auto": false, "dp_size": 1, "enable_cfg_parallel": false, "cfg_parallel_degree": 1, "encoder_parallel": "auto", "hsdp_replicate_dim": 1, "hsdp_shard_dim": 1, "dist_timeout": 3600, "scheduler_rpc_timeout": null, "pipeline_class_name": null, "lora_path": null, "lora_nickname": "default", "lora_scale": 1.0, "lora_alpha": null, "lora_merge_mode": "auto", "lora_weight_name": null, "component_paths": {}, "component_weights_paths": {}, "load_diffusion_decoder": false, "transformer_weights_path": null, "minimax_h3_adaln_cache_path": null, "minimax_h3_adaln_online": false, "minimax_h3_adaln_plan_width": 4, "quantization": null, "quantization_ignored_layers": null, "lora_target_modules": null, "component_residency": null, "cpu_offload_components": null, "dit_cpu_offload": false, "direct_gpu_weight_loading": false, "dit_layerwise_offload": false, "layerwise_offload_components": null, "dit_offload_prefetch_size": 0.0, "dit_layerwise_resident_layers": 0.0, "dit_layerwise_residency_policy": "leading", "layerwise_prefetch_size": {}, "layerwise_resident_layers": {}, "layerwise_residency_policy": {}, "offload_during_compile": true, "text_encoder_cpu_offload": true, "image_encoder_cpu_offload": false, "vae_cpu_offload": false, "use_fsdp_inference": false, "pin_cpu_memory": true, "ltx2_two_stage_device_mode": null, "comfyui_mode": false, "enable_torch_compile": false, "regional_compile": false, "enable_breakable_cuda_graph": false, "bcg_text_buckets": null, "enable_layerwise_nvtx_marker": false, "warmup_mode": "server", "warmup_resolutions": null, "warmup_steps": 1, "disable_autocast": false, "master_port": 30005, "host": "127.0.0.1", "port": 30003, "webui": false, "webui_port": 12312, "scheduler_port": 5606, "scheduler_ports": [5606], "batching_mode": "dynamic", "batching_max_size": 1, "batching_delay_ms": 0.0, "batching_config": null, "enable_batching_metrics": false, "strict_ports": false, "output_path": "outputs/", "input_save_path": "inputs/uploads", "prompt_file_path": null, "model_paths": {}, "model_loaded": {"transformer": true, "vae": true, "video_vae": true, "audio_vae": true, "video_dit": true, "audio_dit": true, "dual_tower_bridge": true}, "boundary_ratio": null, "disagg_role": "monolithic", "disagg_timeout": 3600, "disagg_downstream_wait_timeout": 1800, "disagg_dispatch_policy": "round_robin", "disagg_mode": false, "disagg_instance_id": 0, "disagg_max_slots_per_instance": 8, "disagg_transfer_redundancy": 1.25, "disagg_role_device": "auto", "disagg_transfer_backend": "auto", "disagg_transfer_pool_size": 268435456, "disagg_transfer_pin_memory": "auto", "disagg_p2p_hostname": "127.0.0.1", "disagg_ib_device": null, "disagg_server_addr": null, "encoder_urls": null, "denoiser_urls": null, "decoder_urls": null, "encoder_tp": null, "denoiser_tp": null, "denoiser_sp": null, "denoiser_ulysses": null, "denoiser_ring": null, "decoder_sp": null, "pool_work_endpoint": null, "pool_result_endpoint": null, "pool_control_endpoint": null, "pool_control_advertised_endpoint": null, "log_level": "info", "log_requests": false, "log_requests_level": 2, "log_requests_format": "text", "log_requests_target": null, "uvicorn_access_log_exclude_prefixes": [], "enable_cache_report": false, "enable_trace": false, "otlp_traces_endpoint": "localhost:4317", "srt_encoder_url": null, "srt_encoder_connect_timeout": 3.05, "srt_encoder_timeout": 100, "pe_server_url": null}
+[10-27 08:52:29] Starting server...
+Preserving Transformers built-in qwen3_asr registration
+INFO 10-27 08:53:16 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-27 08:53:16 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-27 08:53:16 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-27 08:53:16 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+WARNING:sglang.multimodal_gen.runtime.layers.quantization.mxfp4:aiter MXFP4 kernels not available: No module named 'aiter.ops.gemm_op_a4w4'
+[10-27 08:53:24] Scheduler (dp replica 0) bind at endpoint: tcp://127.0.0.1:5606
+[10-27 08:53:24] torch.compile cache: TORCHINDUCTOR_CACHE_DIR=/root/private_data/hks/models/Qwen-Image-2.1-Turbo/cache/torchinductor TRITON_CACHE_DIR=/root/private_data/hks/models/Qwen-Image-2.1-Turbo/cache/triton
+[10-27 08:53:24] Initializing distributed environment with world_size=1, device=cuda:0, timeout=3600
+[10-27 08:53:24] Setting distributed timeout to 3600 seconds
+[10-27 08:53:25] No pipeline_class_name specified, using model_index.json
+[10-27 08:53:25] Using diffusers backend for model '/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo' (explicitly requested)
+[10-27 08:53:26] Using pipeline from model_index.json: DiffusersPipeline
+[10-27 08:53:26] Loading diffusers pipeline from /root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo
+[10-27 08:53:26] Model already exists locally and is complete
+[10-27 08:53:26] Loading diffusers pipeline with dtype=torch.bfloat16
+/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-py310/src/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s][A
+Loading weights:  11%|█         | 82/750 [00:00<00:00, 759.41it/s][A
+Loading weights:  21%|██        | 158/750 [00:00<00:00, 674.99it/s][A
+Loading weights:  31%|███▏      | 235/750 [00:00<00:00, 696.23it/s][A
+Loading weights:  41%|████      | 305/750 [00:00<00:00, 682.23it/s][A
+Loading weights:  50%|████▉     | 374/750 [00:00<00:00, 520.18it/s][A
+Loading weights:  65%|██████▌   | 491/750 [00:00<00:00, 695.07it/s][A
+Loading weights:  79%|███████▊  | 589/750 [00:00<00:00, 774.19it/s][A
+Loading weights:  95%|█████████▌| 714/750 [00:00<00:00, 909.09it/s][ALoading weights: 100%|██████████| 750/750 [00:00<00:00, 777.12it/s]
+Loading pipeline components...:  20%|██        | 1/5 [00:01<00:05,  1.37s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.65it/s][A
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  5.17it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  4.86it/s]
+Loading pipeline components...:  40%|████      | 2/5 [00:01<00:02,  1.16it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:02<00:00,  2.63it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:03<00:00,  1.68it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:03<00:00,  1.59it/s]
+[10-27 08:53:29] Enabled model CPU offload for diffusers pipeline (gpu_id=0)
+[10-27 08:53:29] Loaded diffusers pipeline: QwenImage21Pipeline
+[10-27 08:53:29] Pipeline instantiated
+[10-27 08:53:29] Worker 0: Initialized device, model, and distributed environment.
+[10-27 08:53:29] Worker 0: Scheduler loop started.
+[10-27 08:53:29] Starting FastAPI server.
+[2026-10-27 08:53:30] [32mINFO[0m:     Started server process [[36m22798[0m]
+[2026-10-27 08:53:30] [32mINFO[0m:     Waiting for application startup.
+[10-27 08:53:30] ZMQ Broker is listening for offline jobs on tcp://127.0.0.1:30004
+[2026-10-27 08:53:30] [32mINFO[0m:     Application startup complete.
+[2026-10-27 08:53:30] [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:30003[0m (Press CTRL+C to quit)
+[2026-10-27 08:53:31] [32mINFO[0m:     127.0.0.1:33576 - "[1mGET /liveness HTTP/1.1[0m" [32m200 OK[0m
+Warmup requests:   0%|          | 0/1 [00:00<?, ?req/s][93m[10-27 08:53:31] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+[2026-10-27 08:53:34] [32mINFO[0m:     127.0.0.1:33578 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:53:39] [32mINFO[0m:     127.0.0.1:33580 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:53:44] [32mINFO[0m:     127.0.0.1:33582 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:53:49] [32mINFO[0m:     127.0.0.1:33584 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:53:54] [32mINFO[0m:     127.0.0.1:33586 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:53:59] [32mINFO[0m:     127.0.0.1:33588 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:04] [32mINFO[0m:     127.0.0.1:33590 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+
+  0%|          | 0/8 [00:00<?, ?it/s][A[2026-10-27 08:54:09] [32mINFO[0m:     127.0.0.1:33592 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:14] [32mINFO[0m:     127.0.0.1:33594 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:19] [32mINFO[0m:     127.0.0.1:33596 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:24] [32mINFO[0m:     127.0.0.1:33598 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:29] [32mINFO[0m:     127.0.0.1:33600 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:34] [32mINFO[0m:     127.0.0.1:33602 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:39] [32mINFO[0m:     127.0.0.1:33604 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:44] [32mINFO[0m:     127.0.0.1:33606 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+
+ 12%|█▎        | 1/8 [00:39<04:35, 39.29s/it][A
+ 25%|██▌       | 2/8 [00:39<01:38, 16.41s/it][A
+ 38%|███▊      | 3/8 [00:40<00:45,  9.11s/it][A
+ 50%|█████     | 4/8 [00:40<00:22,  5.67s/it][A
+ 62%|██████▎   | 5/8 [00:40<00:11,  3.77s/it][A
+ 75%|███████▌  | 6/8 [00:41<00:05,  2.63s/it][A
+ 88%|████████▊ | 7/8 [00:41<00:01,  1.90s/it][A
+100%|██████████| 8/8 [00:42<00:00,  1.42s/it][A100%|██████████| 8/8 [00:42<00:00,  5.26s/it]
+[2026-10-27 08:54:49] [32mINFO[0m:     127.0.0.1:33608 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:54] [32mINFO[0m:     127.0.0.1:33610 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+[2026-10-27 08:54:59] [32mINFO[0m:     127.0.0.1:33612 - "[1mGET /health HTTP/1.1[0m" [91m503 Service Unavailable[0m
+Warmup requests: 100%|██████████| 1/1 [01:29<00:00, 89.04s/req, server warmup req (1024x1024, 2/30 steps), last=89.04s]Warmup requests: 100%|██████████| 1/1 [01:29<00:00, 89.04s/req, server warmup req (1024x1024, 2/30 steps), last=89.04s]
+[10-27 08:55:00] The server is fired up and ready to roll!
+[2026-10-27 08:55:04] [32mINFO[0m:     127.0.0.1:33614 - "[1mGET /health HTTP/1.1[0m" [32m200 OK[0m
+[2026-10-27 08:55:04] [32mINFO[0m:     127.0.0.1:33614 - "[1mGET /v1/models HTTP/1.1[0m" [32m200 OK[0m
+[10-27 08:55:04] Sampling params:
+                       width: 512
+                      height: 512
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=97>
+                  neg_prompt: <redacted, len=0>
+                        seed: 42
+                 infer_steps: 8
+      num_outputs_per_prompt: 1
+              guidance_scale: 7.5
+     embedded_guidance_scale: 1.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: None
+                 save_output: True
+            output_file_path: outputs/70dfd0c2-c330-4284-a787-718e81d811d3.png
+        
+[10-27 08:55:04] [DiffusersExecutionStage] started...
+[93m[10-27 08:55:04] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:09<01:05,  9.42s/it] 38%|███▊      | 3/8 [00:09<00:12,  2.50s/it] 62%|██████▎   | 5/8 [00:09<00:03,  1.26s/it] 88%|████████▊ | 7/8 [00:09<00:00,  1.30it/s]100%|██████████| 8/8 [00:10<00:00,  1.63it/s]100%|██████████| 8/8 [00:10<00:00,  1.26s/it]
+[10-27 08:55:23] [DiffusersExecutionStage] finished in 18.5682 seconds
+[10-27 08:55:23] Output saved to [1;36moutputs/70dfd0c2-c330-4284-a787-718e81d811d3.png[0;0m
+[10-27 08:55:23] Pixel data generated successfully in [92m18.62[0;0m seconds
+[10-27 08:55:23] Peak memory usage: 17036.00 MB
+[2026-10-27 08:55:23] [32mINFO[0m:     127.0.0.1:33614 - "[1mPOST /v1/images/generations HTTP/1.1[0m" [32m200 OK[0m
+[10-27 08:55:23] Sampling params:
+                       width: 512
+                      height: 512
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=97>
+                  neg_prompt: <redacted, len=0>
+                        seed: 42
+                 infer_steps: 8
+      num_outputs_per_prompt: 1
+              guidance_scale: 7.5
+     embedded_guidance_scale: 1.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: None
+                 save_output: True
+            output_file_path: outputs/e0fd3bf3-71dc-42ec-a28c-b2c968709c5a.png
+        
+[10-27 08:55:23] [DiffusersExecutionStage] started...
+[93m[10-27 08:55:23] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:14<01:40, 14.38s/it] 38%|███▊      | 3/8 [00:14<00:18,  3.79s/it] 62%|██████▎   | 5/8 [00:14<00:05,  1.90s/it] 88%|████████▊ | 7/8 [00:14<00:01,  1.14s/it]100%|██████████| 8/8 [00:15<00:00,  1.88s/it]
+[10-27 08:55:48] [DiffusersExecutionStage] finished in 24.7838 seconds
+[10-27 08:55:48] Output saved to [1;36moutputs/e0fd3bf3-71dc-42ec-a28c-b2c968709c5a.png[0;0m
+[10-27 08:55:48] Pixel data generated successfully in [92m24.84[0;0m seconds
+[10-27 08:55:48] Peak memory usage: 17062.00 MB
+[2026-10-27 08:55:48] [32mINFO[0m:     127.0.0.1:33614 - "[1mPOST /v1/images/generations HTTP/1.1[0m" [32m200 OK[0m
+[10-27 08:55:48] Sampling params:
+                       width: 512
+                      height: 512
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=100>
+                  neg_prompt: <redacted, len=0>
+                        seed: 42
+                 infer_steps: 8
+      num_outputs_per_prompt: 1
+              guidance_scale: 7.5
+     embedded_guidance_scale: 1.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: None
+                 save_output: True
+            output_file_path: outputs/6ac50834-e13f-4154-bfb9-d2da7f268019.png
+        
+[10-27 08:55:48] [DiffusersExecutionStage] started...
+[93m[10-27 08:55:48] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:11<01:19, 11.32s/it] 38%|███▊      | 3/8 [00:11<00:14,  2.99s/it] 62%|██████▎   | 5/8 [00:11<00:04,  1.50s/it] 88%|████████▊ | 7/8 [00:11<00:00,  1.10it/s]100%|██████████| 8/8 [00:11<00:00,  1.49s/it]
+[10-27 08:56:11] [DiffusersExecutionStage] finished in 22.6192 seconds
+[10-27 08:56:11] Output saved to [1;36moutputs/6ac50834-e13f-4154-bfb9-d2da7f268019.png[0;0m
+[10-27 08:56:11] Pixel data generated successfully in [92m22.76[0;0m seconds
+[10-27 08:56:11] Peak memory usage: 17050.00 MB
+[2026-10-27 08:56:11] [32mINFO[0m:     127.0.0.1:33614 - "[1mPOST /v1/images/generations HTTP/1.1[0m" [32m200 OK[0m
+[10-27 08:56:11] Sampling params:
+                       width: 1024
+                      height: 1024
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=115>
+                  neg_prompt: <redacted, len=0>
+                        seed: 42
+                 infer_steps: 8
+      num_outputs_per_prompt: 1
+              guidance_scale: 7.5
+     embedded_guidance_scale: 1.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: None
+                 save_output: True
+            output_file_path: outputs/4de8aa5c-3f3e-4a56-95f3-4a5e23b1e406.png
+        
+[10-27 08:56:11] [DiffusersExecutionStage] started...
+[93m[10-27 08:56:11] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:08<00:59,  8.53s/it] 38%|███▊      | 3/8 [00:08<00:11,  2.36s/it] 50%|█████     | 4/8 [00:09<00:06,  1.66s/it] 62%|██████▎   | 5/8 [00:09<00:03,  1.22s/it] 75%|███████▌  | 6/8 [00:09<00:01,  1.06it/s] 88%|████████▊ | 7/8 [00:10<00:00,  1.33it/s]100%|██████████| 8/8 [00:10<00:00,  1.60it/s]100%|██████████| 8/8 [00:10<00:00,  1.33s/it]
+[10-27 08:56:30] [DiffusersExecutionStage] finished in 19.2363 seconds
+[10-27 08:56:30] Output saved to [1;36moutputs/4de8aa5c-3f3e-4a56-95f3-4a5e23b1e406.png[0;0m
+[10-27 08:56:30] Pixel data generated successfully in [92m19.46[0;0m seconds
+[10-27 08:56:30] Peak memory usage: 23894.00 MB
+[2026-10-27 08:56:30] [32mINFO[0m:     127.0.0.1:33614 - "[1mPOST /v1/images/generations HTTP/1.1[0m" [32m200 OK[0m
+[10-27 08:56:31] Sampling params:
+                       width: 2048
+                      height: 2048
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=97>
+                  neg_prompt: <redacted, len=0>
+                        seed: 42
+                 infer_steps: 8
+      num_outputs_per_prompt: 1
+              guidance_scale: 7.5
+     embedded_guidance_scale: 1.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: None
+                 save_output: True
+            output_file_path: outputs/10010e9b-2bee-4166-a3ad-f1c9819f01e8.png
+        
+[10-27 08:56:31] [DiffusersExecutionStage] started...
+[93m[10-27 08:56:31] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:12<01:28, 12.61s/it] 25%|██▌       | 2/8 [00:12<00:31,  5.31s/it] 38%|███▊      | 3/8 [00:14<00:18,  3.67s/it] 50%|█████     | 4/8 [00:16<00:11,  2.90s/it] 62%|██████▎   | 5/8 [00:17<00:07,  2.48s/it] 75%|███████▌  | 6/8 [00:19<00:04,  2.22s/it] 88%|████████▊ | 7/8 [00:21<00:02,  2.06s/it]100%|██████████| 8/8 [00:23<00:00,  1.95s/it]100%|██████████| 8/8 [00:23<00:00,  2.89s/it]
+[10-27 08:57:05] [DiffusersExecutionStage] finished in 34.2289 seconds
+[10-27 08:57:06] Output saved to [1;36moutputs/10010e9b-2bee-4166-a3ad-f1c9819f01e8.png[0;0m
+[10-27 08:57:06] Pixel data generated successfully in [92m34.93[0;0m seconds
+[10-27 08:57:06] Peak memory usage: 39052.00 MB
+[2026-10-27 08:57:06] [32mINFO[0m:     127.0.0.1:33614 - "[1mPOST /v1/images/generations HTTP/1.1[0m" [32m200 OK[0m
+[10-27 08:57:07] Sampling params:
+                       width: 512
+                      height: 512
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=79>
+                  neg_prompt: <redacted, len=0>
+                        seed: 42
+                 infer_steps: 8
+      num_outputs_per_prompt: 1
+              guidance_scale: 7.5
+     embedded_guidance_scale: 1.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: ['inputs/uploads/40fb4dfb-5aad-4e1b-a6a8-87aad186c756_0_text512.png']
+                 save_output: True
+            output_file_path: outputs/40fb4dfb-5aad-4e1b-a6a8-87aad186c756.png
+        
+[10-27 08:57:07] [DiffusersExecutionStage] started...
+[93m[10-27 08:57:07] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:07<00:54,  7.75s/it] 38%|███▊      | 3/8 [00:07<00:10,  2.07s/it] 50%|█████     | 4/8 [00:08<00:05,  1.40s/it] 62%|██████▎   | 5/8 [00:08<00:02,  1.02it/s] 75%|███████▌  | 6/8 [00:08<00:01,  1.43it/s] 88%|████████▊ | 7/8 [00:08<00:00,  1.94it/s]100%|██████████| 8/8 [00:08<00:00,  2.56it/s]100%|██████████| 8/8 [00:08<00:00,  1.06s/it]
+[10-27 08:57:23] [DiffusersExecutionStage] finished in 16.1453 seconds
+[10-27 08:57:23] Output saved to [1;36moutputs/40fb4dfb-5aad-4e1b-a6a8-87aad186c756.png[0;0m
+[10-27 08:57:23] Pixel data generated successfully in [92m16.20[0;0m seconds
+[10-27 08:57:23] Peak memory usage: 21536.00 MB
+[2026-10-27 08:57:23] [32mINFO[0m:     127.0.0.1:33614 - "[1mPOST /v1/images/edits HTTP/1.1[0m" [32m200 OK[0m
+[10-27 08:57:23] Sampling params:
+                       width: 512
+                      height: 512
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=115>
+                  neg_prompt: <redacted, len=0>
+                        seed: 42
+                 infer_steps: 8
+      num_outputs_per_prompt: 1
+              guidance_scale: 7.5
+     embedded_guidance_scale: 1.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: ['inputs/uploads/d41cdaa5-840d-43ee-a775-e0e0b2e10725_0_text512.png', 'inputs/uploads/d41cdaa5-840d-43ee-a775-e0e0b2e10725_1_bird512.png']
+                 save_output: True
+            output_file_path: outputs/d41cdaa5-840d-43ee-a775-e0e0b2e10725.png
+        
+[10-27 08:57:23] [DiffusersExecutionStage] started...
+[93m[10-27 08:57:23] Pipeline 'QwenImage21Pipeline' does not support: guidance_scale. These arguments will be ignored.[0;0m
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:08<01:00,  8.67s/it] 38%|███▊      | 3/8 [00:08<00:11,  2.33s/it] 50%|█████     | 4/8 [00:09<00:06,  1.57s/it] 62%|██████▎   | 5/8 [00:09<00:03,  1.10s/it] 75%|███████▌  | 6/8 [00:09<00:01,  1.27it/s] 88%|████████▊ | 7/8 [00:09<00:00,  1.72it/s]100%|██████████| 8/8 [00:09<00:00,  2.25it/s]100%|██████████| 8/8 [00:09<00:00,  1.20s/it]
+[10-27 08:57:41] [DiffusersExecutionStage] finished in 17.9093 seconds
+[10-27 08:57:41] Output saved to [1;36moutputs/d41cdaa5-840d-43ee-a775-e0e0b2e10725.png[0;0m
+[10-27 08:57:41] Pixel data generated successfully in [92m17.96[0;0m seconds
+[10-27 08:57:41] Peak memory usage: 22438.00 MB
+[2026-10-27 08:57:41] [32mINFO[0m:     127.0.0.1:33614 - "[1mPOST /v1/images/edits HTTP/1.1[0m" [32m200 OK[0m
+[2026-10-27 08:58:25] [32mINFO[0m:     Shutting down
+[2026-10-27 08:58:25] [32mINFO[0m:     Waiting for application shutdown.
+[10-27 08:58:25] FastAPI app is shutting down...
+[2026-10-27 08:58:25] [32mINFO[0m:     Application shutdown complete.
+[2026-10-27 08:58:25] [32mINFO[0m:     Finished server process [[36m22798[0m]
+/usr/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

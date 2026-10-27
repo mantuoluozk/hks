@@ -1,0 +1,59 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Preserving Transformers built-in qwen3_asr registration
+INFO 10-26 20:54:31 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-26 20:54:31 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-26 20:54:31 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-26 20:54:32 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+WARNING:sglang.multimodal_gen.runtime.layers.quantization.mxfp4:aiter MXFP4 kernels not available: No module named 'aiter.ops.gemm_op_a4w4'
+{
+  "before": [
+    {
+      "loader": "AutoConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "axial"
+        }
+      }
+    },
+    {
+      "loader": "Qwen3VLConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "axial"
+        }
+      }
+    }
+  ],
+  "after": [
+    {
+      "loader": "AutoConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "default"
+        }
+      }
+    },
+    {
+      "loader": "Qwen3VLConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "default"
+        }
+      }
+    }
+  ]
+}

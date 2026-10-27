@@ -1,0 +1,19 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+SHA256 OK LICENSE
+SHA256 OK configuration.json
+SHA256 OK model_index.json
+SHA256 OK processor/chat_template.jinja
+SHA256 OK processor/processor_config.json
+SHA256 OK processor/tokenizer.json
+SHA256 OK processor/tokenizer_config.json
+SHA256 OK scheduler/scheduler_config.json
+SHA256 OK text_encoder/config.json
+SHA256 OK text_encoder/generation_config.json
+SHA256 OK text_encoder/model.safetensors
+SHA256 OK transformer/config.json
+SHA256 OK transformer/diffusion_pytorch_model-00001-of-00002.safetensors
+SHA256 OK transformer/diffusion_pytorch_model-00002-of-00002.safetensors
+SHA256 OK transformer/diffusion_pytorch_model.safetensors.index.json
+SHA256 OK vae/config.json
+SHA256 OK vae/diffusion_pytorch_model.safetensors

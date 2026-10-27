@@ -1,0 +1,43 @@
+{
+  "protocol": "serial HTTP, PNG base64 response, one excluded warmup per size",
+  "prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+  "seed": 42,
+  "generator_device": "cpu",
+  "native_steps": 8,
+  "n": 1,
+  "concurrency": 1,
+  "cells": [
+    {
+      "size": 512,
+      "measured_requests": 3,
+      "warmup_requests": 1,
+      "mean_seconds": 17.497260518216837,
+      "median_seconds": 17.349324056413025,
+      "min_seconds": 16.93398801004514,
+      "max_seconds": 18.20846948819235,
+      "images_per_second": 0.05715180379002044
+    },
+    {
+      "size": 1024,
+      "measured_requests": 3,
+      "warmup_requests": 1,
+      "mean_seconds": 24.726993882097304,
+      "median_seconds": 25.979038034100085,
+      "min_seconds": 19.08253230014816,
+      "max_seconds": 29.119411312043667,
+      "images_per_second": 0.040441632523879674
+    },
+    {
+      "size": 2048,
+      "measured_requests": 3,
+      "warmup_requests": 1,
+      "mean_seconds": 36.78725770814344,
+      "median_seconds": 38.98697631293908,
+      "min_seconds": 32.28012147266418,
+      "max_seconds": 39.094675338827074,
+      "images_per_second": 0.02718332548551544
+    }
+  ],
+  "official_accuracy_pass": null,
+  "official_performance_protocol": false
+}

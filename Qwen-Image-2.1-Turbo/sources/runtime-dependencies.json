@@ -1,0 +1,24 @@
+{
+  "packages": [
+    {
+      "url": "https://files.pythonhosted.org/packages/e8/d0/c502b60d684adbd98a8dc7d5bb866842772b816ac4354e4608be240041ae/transformers-5.17.0-py3-none-any.whl",
+      "filename": "transformers-5.17.0-py3-none-any.whl",
+      "bytes": 12295140,
+      "sha256": "78ec1ce21579b38dfb83950a0658cd119f87212a2fcfdff478096ce9d6c03801"
+    },
+    {
+      "url": "https://files.pythonhosted.org/packages/0d/d5/1353e5f677ec27c2494fb6a6725e82d56c985f53e90ec511369e7e4f02c6/tokenizers-0.23.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "filename": "tokenizers-0.23.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 3346235,
+      "sha256": "5075b405006415ea148a992d093699c66eb01952bf59f4d5727089a98bda45a4"
+    },
+    {
+      "url": "https://codeload.github.com/huggingface/diffusers/zip/ea981b8b7d80f10deaff369bcda8cbf2c90428dd",
+      "filename": "diffusers-ea981b8b7d80f10deaff369bcda8cbf2c90428dd.zip",
+      "bytes": 14903378,
+      "sha256": "ec9bd617edae058d0eb4096b9ef0bdb17a310572c4e5480749eb5e072ceff070",
+      "revision": "ea981b8b7d80f10deaff369bcda8cbf2c90428dd"
+    }
+  ],
+  "core_framework_policy": "Keep existing vendor torch, torchvision and torchaudio. Install wheels --no-deps only into the model runtime directory."
+}

@@ -1,0 +1,76 @@
+{
+  "status": "completed",
+  "rounds": [
+    {
+      "round": 1,
+      "pid": 147,
+      "args": [
+        "bash",
+        "run-scnet.sh",
+        "python",
+        "scripts/serve_sglang.py",
+        "--model-path",
+        "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo",
+        "--backend",
+        "diffusers",
+        "--num-gpus",
+        "1",
+        "--dit-precision",
+        "bf16",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "30003"
+      ],
+      "status": "completed",
+      "functional_cases": 8
+    },
+    {
+      "round": 2,
+      "pid": 1243,
+      "args": [
+        "bash",
+        "run-scnet.sh",
+        "python",
+        "scripts/serve_sglang.py",
+        "--model-path",
+        "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo",
+        "--backend",
+        "diffusers",
+        "--num-gpus",
+        "1",
+        "--dit-precision",
+        "bf16",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "30003"
+      ],
+      "status": "completed",
+      "functional_cases": 8
+    }
+  ],
+  "official_accuracy_pass": null,
+  "protocol": "identical eight-case functional prefix and per-size warmup in both service processes",
+  "performance_comparison": [
+    {
+      "size": 512,
+      "first_mean_seconds": 23.46259617836525,
+      "second_mean_seconds": 21.00369968622302,
+      "relative_difference_percent": 10.480069952401804
+    },
+    {
+      "size": 1024,
+      "first_mean_seconds": 31.564808472059667,
+      "second_mean_seconds": 26.169461090272915,
+      "relative_difference_percent": 17.09291975131917
+    },
+    {
+      "size": 2048,
+      "first_mean_seconds": 41.104986290447414,
+      "second_mean_seconds": 34.9788949432162,
+      "relative_difference_percent": 14.903523635658987
+    }
+  ],
+  "backup_exit_code": 0
+}

@@ -1,0 +1,21 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/scripts/preflight.py", line 6, in <module>
+    import diffusers
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-source/src/diffusers/__init__.py", line 5, in <module>
+    from .utils import (
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-source/src/diffusers/utils/__init__.py", line 21, in <module>
+    from .constants import (
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-source/src/diffusers/utils/constants.py", line 20, in <module>
+    from ..dependency_versions_check import dep_version_check
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-source/src/diffusers/dependency_versions_check.py", line 28, in <module>
+    require_version_core(deps[pkg])
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-source/src/diffusers/utils/versions.py", line 116, in require_version_core
+    return require_version(requirement, hint)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-source/src/diffusers/utils/versions.py", line 96, in require_version
+    _compare_versions(op, got_ver, want_ver, requirement, pkg, hint)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-source/src/diffusers/utils/versions.py", line 43, in _compare_versions
+    raise ImportError(
+ImportError: python>=3.11.0 is required for a normal functioning of this module, but found python==3.10.12.
+Try: pip install transformers -U or pip install -e '.[dev]' if you're working with git main

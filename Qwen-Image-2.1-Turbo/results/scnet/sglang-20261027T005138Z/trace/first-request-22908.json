@@ -1,0 +1,7 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "seed": 42,
+  "generator_device": "cuda",
+  "true_cfg_scale": null
+}

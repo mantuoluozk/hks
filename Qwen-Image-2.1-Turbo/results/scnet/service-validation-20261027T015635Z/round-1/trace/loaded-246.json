@@ -1,0 +1,31 @@
+{
+  "pipeline": "QwenImage21Pipeline",
+  "parameter_dtypes": {
+    "vae": [
+      "torch.bfloat16"
+    ],
+    "text_encoder": [
+      "torch.bfloat16"
+    ],
+    "transformer": [
+      "torch.bfloat16"
+    ]
+  },
+  "sample_sigmas": [
+    1.0,
+    0.978453,
+    0.95418,
+    0.926626,
+    0.89508,
+    0.845148,
+    0.704534,
+    0.414568
+  ],
+  "component_devices": {
+    "vae": "cpu",
+    "text_encoder": "cpu",
+    "transformer": "cpu"
+  },
+  "sglang_backend": "diffusers",
+  "model_path": "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo"
+}

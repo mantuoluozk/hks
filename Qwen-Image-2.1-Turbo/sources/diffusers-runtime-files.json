@@ -1,0 +1,21 @@
+{
+  "revision": "ea981b8b7d80f10deaff369bcda8cbf2c90428dd",
+  "files": [
+    {
+      "path": "__init__.py",
+      "sha256": "406df3ca9397d5d555f42aa0dea0b9194455995fd75bb52513381bc088964df1"
+    },
+    {
+      "path": "pipelines/qwenimage21/pipeline_qwenimage21.py",
+      "sha256": "e75e4ce38d38e194edaac818bba99b2115b4bb2bfdbd15ce03a2813b0fe8856c"
+    },
+    {
+      "path": "models/transformers/transformer_qwenimage21.py",
+      "sha256": "0eb0555e21ca93195e1fe9389113cafbf0e8822f6454c3001cebb3d21521ebd7"
+    },
+    {
+      "path": "models/autoencoders/autoencoder_kl_qwenimage21.py",
+      "sha256": "1e29f252dbddd044b84c8b794589001ce94bb125a8f13eb5b226ef30c1e2ea11"
+    }
+  ]
+}

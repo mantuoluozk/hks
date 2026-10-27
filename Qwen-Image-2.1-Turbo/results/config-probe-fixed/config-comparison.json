@@ -1,0 +1,99 @@
+{
+  "before": [
+    {
+      "loader": "AutoConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "axial"
+        }
+      },
+      "text_rope": {
+        "rope_parameters": {
+          "mrope_interleaved": true,
+          "mrope_section": [
+            24,
+            20,
+            20
+          ],
+          "rope_type": "default",
+          "rope_theta": 5000000
+        }
+      }
+    },
+    {
+      "loader": "Qwen3VLConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "axial"
+        }
+      },
+      "text_rope": {
+        "rope_parameters": {
+          "mrope_interleaved": true,
+          "mrope_section": [
+            24,
+            20,
+            20
+          ],
+          "rope_type": "default",
+          "rope_theta": 5000000
+        }
+      }
+    }
+  ],
+  "after": [
+    {
+      "loader": "AutoConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "axial"
+        }
+      },
+      "text_rope": {
+        "rope_parameters": {
+          "mrope_interleaved": true,
+          "mrope_section": [
+            24,
+            20,
+            20
+          ],
+          "rope_type": "default",
+          "rope_theta": 5000000
+        }
+      }
+    },
+    {
+      "loader": "Qwen3VLConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "axial"
+        }
+      },
+      "text_rope": {
+        "rope_parameters": {
+          "mrope_interleaved": true,
+          "mrope_section": [
+            24,
+            20,
+            20
+          ],
+          "rope_type": "default",
+          "rope_theta": 5000000
+        }
+      }
+    }
+  ],
+  "configuration_equivalent": true
+}

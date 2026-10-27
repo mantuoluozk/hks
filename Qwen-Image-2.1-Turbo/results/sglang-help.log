@@ -1,0 +1,68 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Traceback (most recent call last):
+  File "/usr/local/bin/sglang", line 6, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.10/dist-packages/sglang/cli/main.py", line 40, in main
+    serve(args, extra_argv)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/cli/serve.py", line 184, in serve
+    registry.get(backend_name).backend.run(request)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/cli/serve.py", line 112, in _run_diffusion
+    _print_diffusion_help(request)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/cli/serve.py", line 73, in _print_diffusion_help
+    from sglang.multimodal_gen.runtime.entrypoints.cli.serve import (
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/__init__.py", line 2, in <module>
+    from sglang.multimodal_gen.configs.pipeline_configs import PipelineConfig
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/configs/pipeline_configs/__init__.py", line 3, in <module>
+    from sglang.multimodal_gen.configs.pipeline_configs.base import (
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/configs/pipeline_configs/base.py", line 17, in <module>
+    from sglang.multimodal_gen.configs.models import (
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/configs/models/__init__.py", line 4, in <module>
+    from sglang.multimodal_gen.configs.models.dits.base import DiTConfig
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/configs/models/dits/__init__.py", line 3, in <module>
+    from sglang.multimodal_gen.configs.models.dits.cosmos3video import Cosmos3VideoConfig
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/configs/models/dits/cosmos3video.py", line 6, in <module>
+    from sglang.multimodal_gen.configs.models.dits.base import DiTArchConfig, DiTConfig
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/configs/models/dits/base.py", line 8, in <module>
+    from sglang.multimodal_gen.runtime.layers.quantization import QuantizationConfig
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/layers/quantization/__init__.py", line 5, in <module>
+    from sglang.multimodal_gen.runtime.layers.quantization.auto_round import (
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/layers/quantization/auto_round.py", line 5, in <module>
+    from sglang.multimodal_gen.runtime.layers.linear import (
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/layers/linear.py", line 21, in <module>
+    from sglang.multimodal_gen.runtime.layers.quantization.configs.base_config import (
+  File "/usr/local/lib/python3.10/dist-packages/sglang/multimodal_gen/runtime/layers/quantization/configs/base_config.py", line 10, in <module>
+    from sglang.srt.layers.quantization.base_config import (
+  File "/usr/local/lib/python3.10/dist-packages/sglang/srt/layers/quantization/__init__.py", line 12, in <module>
+    from sglang.srt.layers.quantization.auto_round import AutoRoundConfig
+  File "/usr/local/lib/python3.10/dist-packages/sglang/srt/layers/quantization/auto_round.py", line 12, in <module>
+    from sglang.srt.layers.quantization.utils import get_scalar_types
+  File "/usr/local/lib/python3.10/dist-packages/sglang/srt/layers/quantization/utils.py", line 15, in <module>
+    from sglang.kernels.ops.quantization.fp8_kernel import scaled_fp8_quant
+  File "/usr/local/lib/python3.10/dist-packages/sglang/kernels/ops/quantization/fp8_kernel.py", line 31, in <module>
+    from sglang.srt.layers import deep_gemm_wrapper
+  File "/usr/local/lib/python3.10/dist-packages/sglang/srt/layers/deep_gemm_wrapper/__init__.py", line 1, in <module>
+    from .entrypoint import *
+  File "/usr/local/lib/python3.10/dist-packages/sglang/srt/layers/deep_gemm_wrapper/entrypoint.py", line 22, in <module>
+    from sglang.srt.layers.deep_gemm_wrapper import compile_utils
+  File "/usr/local/lib/python3.10/dist-packages/sglang/srt/layers/deep_gemm_wrapper/compile_utils.py", line 32, in <module>
+    from sglang.srt.model_executor.forward_batch_info import ForwardMode
+  File "/usr/local/lib/python3.10/dist-packages/sglang/srt/model_executor/forward_batch_info.py", line 43, in <module>
+    from sglang.srt.configs.hybrid_arch import mambaish_config
+  File "/usr/local/lib/python3.10/dist-packages/sglang/srt/configs/__init__.py", line 58, in <module>
+    from sglang.srt.configs.qwen3_asr import Qwen3ASRConfig
+  File "/usr/local/lib/python3.10/dist-packages/sglang/srt/configs/qwen3_asr.py", line 167, in <module>
+    AutoConfig.register("qwen3_asr", Qwen3ASRConfig)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/models/auto/configuration_auto.py", line 453, in register
+    CONFIG_MAPPING.register(model_type, config, exist_ok=exist_ok)
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/models/auto/configuration_auto.py", line 140, in register
+    raise ValueError(f"'{key}' is already used by a Transformers config, pick another name.")
+ValueError: 'qwen3_asr' is already used by a Transformers config, pick another name.

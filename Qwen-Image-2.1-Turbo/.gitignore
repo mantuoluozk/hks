@@ -1,0 +1,9 @@
+/cache/
+/data/
+/runtime/
+/artifacts/
+__pycache__/
+*.pyc
+*.pid
+/outputs/
+/inputs/

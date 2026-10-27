@@ -1,0 +1,29 @@
+{
+  "model_id": "Qwen/Qwen-Image-2.1-Turbo",
+  "task": "T03",
+  "hardware": "BW gfx936, one device",
+  "framework": "SGLang 0.5.18",
+  "backend": "diffusers",
+  "precision": "bfloat16",
+  "diffusers_revision": "ea981b8b7d80f10deaff369bcda8cbf2c90428dd",
+  "transformers_version": "5.17.0",
+  "tokenizers_version": "0.23.1",
+  "cpu_threads": 4,
+  "seed": 42,
+  "generator_device": "cpu",
+  "true_cfg_scale": 1.0,
+  "use_kv_cache": true,
+  "sampling_schedule": "checkpoint sample_sigmas, eight steps, no override",
+  "tested_text_sizes": [512, 1024, 2048],
+  "tested_edit_size": 512,
+  "maximum_tested_condition_images": 2,
+  "formal_benchmark": "serial HTTP, n=1, three measurements after one excluded warmup per size",
+  "official_accuracy_pass": null,
+  "dedicated_image": {
+    "status": "fresh Notebook environment, two functional suites and performance reproduction passed",
+    "image": "appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-image21-turbo:1.0.0",
+    "version": "1.0.0",
+    "digest": null,
+    "region": "华中一区（A区）"
+  }
+}

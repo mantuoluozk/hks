@@ -1,0 +1,244 @@
+{
+  "cases": [
+    {
+      "case": "text512",
+      "prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+      "size": "512x512",
+      "seed": 42,
+      "generator_device": "cpu",
+      "http_status": 200,
+      "condition_image_count": 0,
+      "request_seconds": 24.126352976076305,
+      "image_mode": "RGBA",
+      "image_sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848",
+      "pixel_sha256": "74f50ce5cbee380444512810cc07fd1c98ec4c2cd6b16518a30c7eecd899e850",
+      "pixel_standard_deviation": 79.03271752818358,
+      "response_metadata": {
+        "id": "5cffe425-f12c-4da1-ab8d-79dfe722a079",
+        "created": 1793062990,
+        "data": [
+          {
+            "url": null,
+            "revised_prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+            "file_path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/outputs/5cffe425-f12c-4da1-ab8d-79dfe722a079.png",
+            "resize": null
+          }
+        ],
+        "peak_memory_mb": 17036.0,
+        "inference_time_s": 24.057286642026156,
+        "usage": null
+      },
+      "same_BW_diffusers_reference": {
+        "pixels_identical": false,
+        "mean_absolute_pixel_difference": 0.09939384460449219,
+        "max_pixel_difference": 1.0
+      }
+    },
+    {
+      "case": "text512-repeat",
+      "prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+      "size": "512x512",
+      "seed": 42,
+      "generator_device": "cpu",
+      "http_status": 200,
+      "condition_image_count": 0,
+      "request_seconds": 23.712282424326986,
+      "image_mode": "RGBA",
+      "image_sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848",
+      "pixel_sha256": "74f50ce5cbee380444512810cc07fd1c98ec4c2cd6b16518a30c7eecd899e850",
+      "pixel_standard_deviation": 79.03271752818358,
+      "response_metadata": {
+        "id": "56554e3f-2d5d-4903-bc04-0ec5c58293cf",
+        "created": 1793063014,
+        "data": [
+          {
+            "url": null,
+            "revised_prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+            "file_path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/outputs/56554e3f-2d5d-4903-bc04-0ec5c58293cf.png",
+            "resize": null
+          }
+        ],
+        "peak_memory_mb": 17062.0,
+        "inference_time_s": 23.652703038882464,
+        "usage": null
+      },
+      "same_seed_pixels_identical": true
+    },
+    {
+      "case": "text512-otherseed",
+      "prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+      "size": "512x512",
+      "seed": 43,
+      "generator_device": "cpu",
+      "http_status": 200,
+      "condition_image_count": 0,
+      "request_seconds": 23.550530378706753,
+      "image_mode": "RGBA",
+      "image_sha256": "bfb6efdf02c681ede694470251b0eaeb66aa4d1873077ff716041e8056fef11f",
+      "pixel_sha256": "c19cf52c75d8b3ec9d5261af8bc03ad2ce9bbe09fd40dc9b0efcc255f169a0fa",
+      "pixel_standard_deviation": 73.34093085949324,
+      "response_metadata": {
+        "id": "78900b8d-56e0-450e-bf7c-13a7791f83ef",
+        "created": 1793063037,
+        "data": [
+          {
+            "url": null,
+            "revised_prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+            "file_path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/outputs/78900b8d-56e0-450e-bf7c-13a7791f83ef.png",
+            "resize": null
+          }
+        ],
+        "peak_memory_mb": 17062.0,
+        "inference_time_s": 23.4861310380511,
+        "usage": null
+      },
+      "different_seed_pixels_differ": true
+    },
+    {
+      "case": "bird512",
+      "prompt": "A small yellow bird perched on a branch against a pale green background, detailed studio photograph.",
+      "size": "512x512",
+      "seed": 42,
+      "generator_device": "cpu",
+      "http_status": 200,
+      "condition_image_count": 0,
+      "request_seconds": 16.663091129157692,
+      "image_mode": "RGBA",
+      "image_sha256": "a61ffb64d4764551572a8b31aebd4f7f64626779cf163cb922e524f66d4c63b9",
+      "pixel_sha256": "c89885c53267492b2c8df6d37c5d0cb45de4d4ed4cc558ed56a4ca977e81cfe7",
+      "pixel_standard_deviation": 50.31022373930027,
+      "response_metadata": {
+        "id": "8315aa0d-963b-4910-9413-5cedcc7191e0",
+        "created": 1793063054,
+        "data": [
+          {
+            "url": null,
+            "revised_prompt": "A small yellow bird perched on a branch against a pale green background, detailed studio photograph.",
+            "file_path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/outputs/8315aa0d-963b-4910-9413-5cedcc7191e0.png",
+            "resize": null
+          }
+        ],
+        "peak_memory_mb": 17050.0,
+        "inference_time_s": 16.594843898899853,
+        "usage": null
+      }
+    },
+    {
+      "case": "text1024",
+      "prompt": "A clean white poster with bold dark blue Chinese text \"\u56fd\u82af\u56fd\u6a21\" and a simple red geometric circle, careful typography.",
+      "size": "1024x1024",
+      "seed": 42,
+      "generator_device": "cpu",
+      "http_status": 200,
+      "condition_image_count": 0,
+      "request_seconds": 25.707904879935086,
+      "image_mode": "RGBA",
+      "image_sha256": "c43dc233555aef56caeeaf4cb48d07ec62ba2feeaf1f3bc877e36b30cceda461",
+      "pixel_sha256": "167fe33f481c9049adc10bea8de3e146256e058fe3b884c55c9aea9c29b197c9",
+      "pixel_standard_deviation": 67.85305940527545,
+      "response_metadata": {
+        "id": "e011b38c-0f88-4aa3-944b-3daebd4b9154",
+        "created": 1793063080,
+        "data": [
+          {
+            "url": null,
+            "revised_prompt": "A clean white poster with bold dark blue Chinese text \"\u56fd\u82af\u56fd\u6a21\" and a simple red geometric circle, careful typography.",
+            "file_path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/outputs/e011b38c-0f88-4aa3-944b-3daebd4b9154.png",
+            "resize": null
+          }
+        ],
+        "peak_memory_mb": 23894.0,
+        "inference_time_s": 25.485890365205705,
+        "usage": null
+      }
+    },
+    {
+      "case": "text2048",
+      "prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+      "size": "2048x2048",
+      "seed": 42,
+      "generator_device": "cpu",
+      "http_status": 200,
+      "condition_image_count": 0,
+      "request_seconds": 42.720772731117904,
+      "image_mode": "RGBA",
+      "image_sha256": "c9a1a10260f1e3d0f75eae4bc212580127e8ada3a1114772cbce042960afb637",
+      "pixel_sha256": "548805bd843e47a0cfc732219b3f4123ea12a01f9495283d31384d7fabf79d0c",
+      "pixel_standard_deviation": 74.55801263067094,
+      "response_metadata": {
+        "id": "4af0beae-f473-47f8-99b8-d963c8426d47",
+        "created": 1793063123,
+        "data": [
+          {
+            "url": null,
+            "revised_prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+            "file_path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/outputs/4af0beae-f473-47f8-99b8-d963c8426d47.png",
+            "resize": null
+          }
+        ],
+        "peak_memory_mb": 39052.0,
+        "inference_time_s": 41.69889326300472,
+        "usage": null
+      }
+    },
+    {
+      "case": "edit-one",
+      "prompt": "Change only the red teapot to green, keeping the blue cup and the wooden table.",
+      "size": "512x512",
+      "seed": 42,
+      "generator_device": "cpu",
+      "http_status": 200,
+      "condition_image_count": 1,
+      "request_seconds": 30.5320353070274,
+      "image_mode": "RGBA",
+      "image_sha256": "0ff998abd87da8ae1da74bd142e5201147e40338e22b90391a0d17ddbecd53a0",
+      "pixel_sha256": "e0e9b02c16aa79b73c5ff72133b2b94dbcd06358051b6f173ecd275dabf22bdb",
+      "pixel_standard_deviation": 75.46357756606542,
+      "response_metadata": {
+        "id": "939c7b1f-4b8c-4d7e-8eb0-55a9f56cb1e7",
+        "created": 1793063155,
+        "data": [
+          {
+            "url": null,
+            "revised_prompt": "Change only the red teapot to green, keeping the blue cup and the wooden table.",
+            "file_path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/outputs/939c7b1f-4b8c-4d7e-8eb0-55a9f56cb1e7.png",
+            "resize": null
+          }
+        ],
+        "peak_memory_mb": 21536.0,
+        "inference_time_s": 30.416638893075287,
+        "usage": null
+      }
+    },
+    {
+      "case": "edit-two",
+      "prompt": "Place the teapot from the first reference and the yellow bird from the second reference together on a wooden table.",
+      "size": "512x512",
+      "seed": 42,
+      "generator_device": "cpu",
+      "http_status": 200,
+      "condition_image_count": 2,
+      "request_seconds": 26.853964105714113,
+      "image_mode": "RGBA",
+      "image_sha256": "ee998292c4cc436d5bfb9a947947622e2a162d6655900a7faba161d9c20ce3a8",
+      "pixel_sha256": "e66259996be0e023f7619925b06a0bf1138ceffdf6a54f1bf872e4152accdcff",
+      "pixel_standard_deviation": 79.5588606385659,
+      "response_metadata": {
+        "id": "46adf575-97eb-4c03-a386-bbdb84e9b105",
+        "created": 1793063182,
+        "data": [
+          {
+            "url": null,
+            "revised_prompt": "Place the teapot from the first reference and the yellow bird from the second reference together on a wooden table.",
+            "file_path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/outputs/46adf575-97eb-4c03-a386-bbdb84e9b105.png",
+            "resize": null
+          }
+        ],
+        "peak_memory_mb": 22438.0,
+        "inference_time_s": 26.727248454932123,
+        "usage": null
+      }
+    }
+  ],
+  "official_accuracy_pass": null
+}

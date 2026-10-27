@@ -1,0 +1,113 @@
+{
+  "prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+  "seed": 42,
+  "generator_device": "cpu",
+  "width": 512,
+  "height": 512,
+  "dtype": "bfloat16",
+  "use_kv_cache": true,
+  "configured_sample_sigmas": [
+    1.0,
+    0.978453,
+    0.95418,
+    0.926626,
+    0.89508,
+    0.845148,
+    0.704534,
+    0.414568
+  ],
+  "actual_scheduler_sigmas": [
+    1.0,
+    0.9784529805183411,
+    0.9541800022125244,
+    0.9266260266304016,
+    0.8950799703598022,
+    0.8451480269432068,
+    0.7045339941978455,
+    0.4145680069923401,
+    0.0
+  ],
+  "denoising_steps": [
+    {
+      "step": 0,
+      "timestep": 1000.0,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 1,
+      "timestep": 978.4530029296875,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 2,
+      "timestep": 954.1799926757812,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 3,
+      "timestep": 926.6260375976562,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 4,
+      "timestep": 895.0799560546875,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 5,
+      "timestep": 845.1480102539062,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 6,
+      "timestep": 704.5339965820312,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 7,
+      "timestep": 414.5679931640625,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    }
+  ],
+  "initialization_seconds": 35.01505378400907,
+  "pipeline_seconds": 7.604323334991932,
+  "peak_allocated_bytes": 37361179136,
+  "peak_reserved_bytes": 38388367360,
+  "image_sha256": "8e4cd54d31aafe27fdb4cda7362f7567798533041ca9420935ad4fedcc95a92c",
+  "pixel_standard_deviation": 78.62405665323523,
+  "functional_pass": true,
+  "official_accuracy_pass": null,
+  "scope": "512x512 full-pipeline compatibility probe only; not official image quality or final resolution performance."
+}

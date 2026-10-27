@@ -1,0 +1,21 @@
+Installing isolated wheels
+Processing ./runtime/wheels/transformers-5.17.0-py3-none-any.whl
+Processing ./runtime/wheels/tokenizers-0.23.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Installing collected packages: transformers, tokenizers
+
+Successfully installed tokenizers-0.23.1 transformers-5.17.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Running checkpoint and pipeline validation
+/root/private_data/hks/models/Qwen-Image-2.1-Turbo/results/scnet/validation-20261026T123349Z
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/scripts/run_validation.py", line 15, in <module>
+    subprocess.run(['bash','run-scnet.sh','python','-u','scripts/'+script],cwd=ROOT,
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['bash', 'run-scnet.sh', 'python', '-u', 'scripts/preflight.py']' returned non-zero exit status 1.
+CalledProcessError Command '['python', '-u', 'scripts/run_validation.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "<string>", line 13, in <module>
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '-u', 'scripts/run_validation.py']' returned non-zero exit status 1.

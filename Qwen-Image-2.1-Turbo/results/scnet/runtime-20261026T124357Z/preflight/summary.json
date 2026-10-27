@@ -1,0 +1,63 @@
+{
+  "packages": {
+    "torch": {
+      "version": "2.11.0",
+      "path": "/usr/local/lib/python3.10/dist-packages/torch/__init__.py"
+    },
+    "diffusers": {
+      "version": "0.41.0.dev0",
+      "path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-py310/src/diffusers/__init__.py"
+    },
+    "transformers": {
+      "version": "5.17.0",
+      "path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/__init__.py"
+    },
+    "tokenizers": {
+      "version": "0.23.1",
+      "path": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/tokenizers/__init__.py"
+    }
+  },
+  "torch_distribution_version": "2.11.0+dtk2604.2609201441.gf74cd7",
+  "device": {
+    "name": "BW",
+    "gcn_arch": "gfx936:sramecc+:xnack-",
+    "total_memory": 68702699520,
+    "compute_units": 80
+  },
+  "pipeline_class": "QwenImage21Pipeline",
+  "checkpoint_config": {
+    "_class_name": "QwenImage21Pipeline",
+    "_diffusers_version": "0.41.0.dev0",
+    "processor": [
+      "transformers",
+      "Qwen3VLProcessor"
+    ],
+    "scheduler": [
+      "diffusers",
+      "FlowMatchEulerDiscreteScheduler"
+    ],
+    "text_encoder": [
+      "transformers",
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "transformer": [
+      "diffusers",
+      "QwenImage21Transformer2DModel"
+    ],
+    "vae": [
+      "diffusers",
+      "AutoencoderKLQwenImage21"
+    ],
+    "sample_sigmas": [
+      1.0,
+      0.978453,
+      0.95418,
+      0.926626,
+      0.89508,
+      0.845148,
+      0.704534,
+      0.414568
+    ]
+  },
+  "official_accuracy_pass": null
+}

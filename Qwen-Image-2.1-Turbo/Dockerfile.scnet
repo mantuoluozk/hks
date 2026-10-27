@@ -1,0 +1,4 @@
+FROM image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18
+COPY qwen-image21-turbo/ /opt/qwen-image21/
+RUN python /opt/qwen-image21/verify_build.py && mv /opt/qwen-image21/runtime/diffusers-py310 /opt/qwen-image21/diffusers-py310
+ENV HKS_IMAGE_RUNTIME=/opt/qwen-image21

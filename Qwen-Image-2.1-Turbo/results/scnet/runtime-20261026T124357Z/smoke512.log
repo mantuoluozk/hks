@@ -1,0 +1,136 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.41it/s]
+Loading pipeline components...:  20%|██        | 1/5 [00:00<00:02,  1.39it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:01<00:01,  1.87it/s]
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s][A
+Loading weights:  17%|█▋        | 130/750 [00:00<00:00, 1288.04it/s][A
+Loading weights:  55%|█████▌    | 416/750 [00:00<00:00, 2186.53it/s][A
+Loading weights:  85%|████████▍ | 635/750 [00:00<00:00, 1607.59it/s][ALoading weights: 100%|██████████| 750/750 [00:00<00:00, 1637.28it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:02<00:00,  1.47it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:02<00:00,  1.87it/s]
+/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/site-packages/transformers/integrations/sdpa_attention.py:158: UserWarning: sdpa adopt the new interface of flash-attn (Triggered internally at /builds/dcutoolkit/deeplearing/pytorch/aten/src/ATen/native/transformers/hip/cutlassfa_adapter.h:148.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+  0%|          | 0/8 [00:00<?, ?it/s]/root/private_data/hks/models/Qwen-Image-2.1-Turbo/runtime/diffusers-py310/src/diffusers/models/attention_dispatch.py:3759: UserWarning: 1Torch was not compiled with memory efficient attention. (Triggered internally at /builds/dcutoolkit/deeplearing/pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:867.)
+  out = torch.nn.functional.scaled_dot_product_attention(
+completed denoising step 0
+ 12%|█▎        | 1/8 [00:00<00:06,  1.14it/s]completed denoising step 1
+completed denoising step 2
+ 38%|███▊      | 3/8 [00:01<00:01,  3.39it/s]completed denoising step 3
+completed denoising step 4
+ 62%|██████▎   | 5/8 [00:01<00:00,  5.26it/s]completed denoising step 5
+ 75%|███████▌  | 6/8 [00:01<00:00,  5.73it/s]completed denoising step 6
+completed denoising step 7
+100%|██████████| 8/8 [00:01<00:00,  7.23it/s]100%|██████████| 8/8 [00:01<00:00,  5.14it/s]
+{
+  "prompt": "A red ceramic teapot on a wooden table beside a blue cup, soft daylight, clean studio photograph.",
+  "seed": 42,
+  "generator_device": "cpu",
+  "width": 512,
+  "height": 512,
+  "dtype": "bfloat16",
+  "use_kv_cache": true,
+  "configured_sample_sigmas": [
+    1.0,
+    0.978453,
+    0.95418,
+    0.926626,
+    0.89508,
+    0.845148,
+    0.704534,
+    0.414568
+  ],
+  "actual_scheduler_sigmas": [
+    1.0,
+    0.9784529805183411,
+    0.9541800022125244,
+    0.9266260266304016,
+    0.8950799703598022,
+    0.8451480269432068,
+    0.7045339941978455,
+    0.4145680069923401,
+    0.0
+  ],
+  "denoising_steps": [
+    {
+      "step": 0,
+      "timestep": 1000.0,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 1,
+      "timestep": 978.4530029296875,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 2,
+      "timestep": 954.1799926757812,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 3,
+      "timestep": 926.6260375976562,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 4,
+      "timestep": 895.0799560546875,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 5,
+      "timestep": 845.1480102539062,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 6,
+      "timestep": 704.5339965820312,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    },
+    {
+      "step": 7,
+      "timestep": 414.5679931640625,
+      "latent_shape": [
+        1,
+        1024,
+        64
+      ]
+    }
+  ],
+  "initialization_seconds": 35.01505378400907,
+  "pipeline_seconds": 7.604323334991932,
+  "peak_allocated_bytes": 37361179136,
+  "peak_reserved_bytes": 38388367360,
+  "image_sha256": "8e4cd54d31aafe27fdb4cda7362f7567798533041ca9420935ad4fedcc95a92c",
+  "pixel_standard_deviation": 78.62405665323523,
+  "functional_pass": true,
+  "official_accuracy_pass": null,
+  "scope": "512x512 full-pipeline compatibility probe only; not official image quality or final resolution performance."
+}

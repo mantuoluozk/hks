@@ -1,0 +1,846 @@
+{
+  "source_commit": "4cabcd7af21283ae2daea6c93927a85dd9165f93",
+  "model": "Qwen-Image-2.1-Turbo",
+  "files": [
+    {
+      "path": "Qwen-Image-2.1-Turbo/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/.gitignore",
+      "bytes": 81,
+      "sha256": "d557ba798a036558c726c753429220dbda13e5c0f371c3ddb4b98446334b2ea1"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/Dockerfile.scnet",
+      "bytes": 273,
+      "sha256": "7bf3a8d16e2a351fcf7605da24c74521f66714c76b484055748ed954eb6da4b2"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/README.md",
+      "bytes": 8888,
+      "sha256": "6ce0c65504687d69e8aeeb7c6d08c536c25f1e8a24d7356f02decca982c7cda6"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/SCNet镜像重建.md",
+      "bytes": 2673,
+      "sha256": "575e74e39d28810e8b0df39c9b4a7161dfeb1ad54288f47677cc9631188030f4"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/bench.sh",
+      "bytes": 221,
+      "sha256": "a12561512a34a1c9476fd270b8cb8cd00fffc6c47c91e515d15017e22809fe4a"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/env_check.sh",
+      "bytes": 289,
+      "sha256": "f87f4268fab0f65a8fc28bcb3f7092a8a6bc983cc0dd3640b51adfdaac700a4c"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/bootstrap-worker.log",
+      "bytes": 1710,
+      "sha256": "9dc124d332bc8728cd86b4071a4e22dab3de0fbcd3c35123504f19ac627e8dce"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/config-probe-fixed.log",
+      "bytes": 3413,
+      "sha256": "e667c492df4abc7e0ce1a47e7c0521b335fe91794adc22a78a8dfce931521bcd"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/config-probe-fixed/config-comparison.json",
+      "bytes": 2555,
+      "sha256": "c3a69a6e786340666486e2d117edfc55cfb5c5bfb7f22671776c3914fc9f421a"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/config-probe.log",
+      "bytes": 2373,
+      "sha256": "7b8ecc8be4cc6f457666824abda7cdbc4ee2989dfe180b855365e31dc79fca39"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/config-probe/config-comparison.json",
+      "bytes": 1479,
+      "sha256": "478a4b617e919ef52778492706d11378c9692dc9f6a4c7aae877ba8b19195c4c"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/evidence-manifest.json",
+      "bytes": 22711,
+      "sha256": "8a6c0927bbb13f6af71613bcc909ff8bc220a4c4ca0aec72d25b524cf330d36d"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/image-1.0.0-validation-launch.log",
+      "bytes": 292,
+      "sha256": "b6a28c71b78866fc14c38e1d9d660facf4a95a1334432507399534bf92433ac9"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/pre-release-backup.log",
+      "bytes": 208,
+      "sha256": "c9067bd8d860a071d21a49dca7019123fc36ec0b23c51e0d21c4761d6bf637a8"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/py310-worker.log",
+      "bytes": 930,
+      "sha256": "9f50a7b424417a00b2a8b2a6d002674aa219e666fa270f5996115dd3fecbf3d9"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/runtime-retry-worker.log",
+      "bytes": 90,
+      "sha256": "9172c2ac46241d655f985e8e3390ad36aaac827d554da5f37f1e629edf039905"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/image-1.0.0-preflight/installed-files.json",
+      "bytes": 166,
+      "sha256": "8594cb93b05df6f6d207d2a254a950ffd2d650a1b447af6ac98b120b48f883e6"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/image-1.0.0-preflight/platform.json",
+      "bytes": 216,
+      "sha256": "9bfed4f036696370a32e53be338991f4095d035087120c677c8bc03930a0f49c"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/image-1.0.0-preflight/summary.json",
+      "bytes": 1763,
+      "sha256": "352718a2d8c29069dc80dd4df6b7bc1c2ce667d9c82868cc2827313391c13bf5"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124038Z/backup.log",
+      "bytes": 208,
+      "sha256": "88a72a746dd697b1e367e3e4a5be708c5f92bc8dff7621279d1f7aae09efe1ab"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124038Z/preflight.log",
+      "bytes": 424,
+      "sha256": "07227cff43dc03f99680bb520ea78f6a5b88956afebdce6857b65a22a4437664"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124038Z/status.json",
+      "bytes": 251,
+      "sha256": "fcc8c0a795b0cfae54c8ea92f88826d5395bc9ae39af95e2b9bf49514b45f4fb"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124357Z/backup.log",
+      "bytes": 208,
+      "sha256": "dedda90bbfe42ef1c8d598628f5c77d17390f57f60c56df2b4f576250cb0ea4b"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124357Z/preflight.log",
+      "bytes": 1754,
+      "sha256": "7c5bd24aebc0f08379e7ac90658324ef36e174e3104a5873506dc143a9c0a6af"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124357Z/preflight/summary.json",
+      "bytes": 1606,
+      "sha256": "1a4d71575e444290639b3b18a2872290a0fa973f63cc536e7e60c8793110559c"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124357Z/smoke512.log",
+      "bytes": 4688,
+      "sha256": "472e9e0894fcaf43299a57a99eee798b5229cdd4dfe5e4df8d16d09509f3ba8a"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124357Z/smoke512/summary.json",
+      "bytes": 2179,
+      "sha256": "6716ca1e4a3d97ebf6780cbc8a544d44de17d7b147d1f1ebf5457999ebae1f28"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124357Z/smoke512/text-to-image-512.png",
+      "bytes": 268336,
+      "sha256": "8e4cd54d31aafe27fdb4cda7362f7567798533041ca9420935ad4fedcc95a92c"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124357Z/status.json",
+      "bytes": 173,
+      "sha256": "094930c147e1e6f1ef786def16a7808b073a642e692953974252c7d84003aeba"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/backup.log",
+      "bytes": 209,
+      "sha256": "0e2c50fbf813b0c2ef528003996475997986cbd3b68a7ad9550e83521d62c4c0"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/benchmark-process/command.log",
+      "bytes": 7578,
+      "sha256": "56f98018e2fa41470151ca79df1ac35e2893f0428ef4cb2cd3eb3f85056e11d3"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/benchmark/requests.jsonl",
+      "bytes": 7431,
+      "sha256": "107eb679a45885b22599329565b5c9edab5218d293ced0ee83355f52075b3872"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/benchmark/summary.json",
+      "bytes": 1294,
+      "sha256": "68c92e00536e5bcefdeb22bee0303479779f680d1fcf723d951ca2643b1cbb15"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/server.log",
+      "bytes": 48324,
+      "sha256": "4f92758bb38b5960fd644e7fe75577fd1174ae112540df448dcbff532a472603"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/bird512.png",
+      "bytes": 404895,
+      "sha256": "a61ffb64d4764551572a8b31aebd4f7f64626779cf163cb922e524f66d4c63b9"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/command.log",
+      "bytes": 8235,
+      "sha256": "3810a73c5525942e56601fb0fe481519c102478cfdfe20f71398b95cc301e03e"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/edit-one.png",
+      "bytes": 340219,
+      "sha256": "0ff998abd87da8ae1da74bd142e5201147e40338e22b90391a0d17ddbecd53a0"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/edit-two.png",
+      "bytes": 345444,
+      "sha256": "ee998292c4cc436d5bfb9a947947622e2a162d6655900a7faba161d9c20ce3a8"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/models-response.json",
+      "bytes": 588,
+      "sha256": "c3b900200f3182b215e7a92c4ec59698e95d73ae098ab6f280b0b29609919d57"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/summary.json",
+      "bytes": 9930,
+      "sha256": "74bc8dc9fccb293d70005baa681ff83e36937c380b5c00a58568a5c2fe5049f7"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/text1024.png",
+      "bytes": 926923,
+      "sha256": "c43dc233555aef56caeeaf4cb48d07ec62ba2feeaf1f3bc877e36b30cceda461"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/text2048.png",
+      "bytes": 5873994,
+      "sha256": "c9a1a10260f1e3d0f75eae4bc212580127e8ada3a1114772cbce042960afb637"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/text512-otherseed.png",
+      "bytes": 331101,
+      "sha256": "bfb6efdf02c681ede694470251b0eaeb66aa4d1873077ff716041e8056fef11f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/text512-repeat.png",
+      "bytes": 332933,
+      "sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/smoke/text512.png",
+      "bytes": 332933,
+      "sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/trace/first-request-24001.json",
+      "bytes": 107,
+      "sha256": "3af208096674d20eba5298f66c3168e891a0be237e9bb0a597f4de6ea5b542de"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/trace/first-request-steps-24001.jsonl",
+      "bytes": 581,
+      "sha256": "ca373af0cd0718ed3e6507ea4731b643e71924fbd2237fd7ac7e4d7546341c6f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/trace/loaded-24001.json",
+      "bytes": 582,
+      "sha256": "88643052313caf3bf1fec54917f5114540f33ee77be35cbc7648a712ca99f173"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-1/trace/requests-24001.jsonl",
+      "bytes": 6015,
+      "sha256": "b2484583fc5fc0dde07b3a1234ab50daacc7763dc40c9814261bbfa5fa4283b4"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-2/benchmark-process/command.log",
+      "bytes": 7586,
+      "sha256": "1e28ff413d06e3a3a586378418ce4fe55d8af1aa5922b0c22f3af4a101aa280e"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-2/benchmark/requests.jsonl",
+      "bytes": 7439,
+      "sha256": "a502c0b99f8d079243681be83effdb54ecd5892b56f6e1cc565229f50bc46654"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-2/benchmark/summary.json",
+      "bytes": 1298,
+      "sha256": "592546dc229c8d203d889f4464513968abda3c477721c55b01ae91ea390c6fc1"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-2/server.log",
+      "bytes": 34077,
+      "sha256": "36c9fc79193d8b3afc107b3029a486b1bbe71ed8ddebcb4ebb41a432db1800d5"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-2/trace/first-request-25104.json",
+      "bytes": 107,
+      "sha256": "3af208096674d20eba5298f66c3168e891a0be237e9bb0a597f4de6ea5b542de"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-2/trace/first-request-steps-25104.jsonl",
+      "bytes": 581,
+      "sha256": "ca373af0cd0718ed3e6507ea4731b643e71924fbd2237fd7ac7e4d7546341c6f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-2/trace/loaded-25104.json",
+      "bytes": 582,
+      "sha256": "88643052313caf3bf1fec54917f5114540f33ee77be35cbc7648a712ca99f173"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/round-2/trace/requests-25104.jsonl",
+      "bytes": 3664,
+      "sha256": "ceba7a0d9177bead848d527bd12d4ddbfec40e0ac7b5d6d6d58f23614969617e"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T005955Z/status.json",
+      "bytes": 1743,
+      "sha256": "18731372407e72b3956502e359c4a74b1c8ab7a733826088ef173f3519eb7a8d"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/backup.log",
+      "bytes": 209,
+      "sha256": "aae084da245e03f1745fd791c4848a2fd7dd42ca9f67cbc3183e253e049a0f71"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/post-stop.json",
+      "bytes": 98,
+      "sha256": "b3333796be85beddb1427bb029c5228d40e509a66bb56e5dc8d0da6fc9388bf0"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/benchmark-process/command.log",
+      "bytes": 7576,
+      "sha256": "ad1a2ed3364c1d340a6ee56f065ea2ae64cdd375c304dd73d13f88c80a74a6e0"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/benchmark/requests.jsonl",
+      "bytes": 7429,
+      "sha256": "2299ccca752f8ede1b6fbbafe9c05be500fd8790fc875e55744cd4cad0ce0a8f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/benchmark/summary.json",
+      "bytes": 1292,
+      "sha256": "3f854258d675d7ea8e9f3817c8f5f22d4492b0955566879434aec5e88494bbd5"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/server.log",
+      "bytes": 48857,
+      "sha256": "5b94c5ddf3044b76c73b8d22ede1cc5e9a99437e44531546ec038607c62a5787"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/bird512.png",
+      "bytes": 404895,
+      "sha256": "a61ffb64d4764551572a8b31aebd4f7f64626779cf163cb922e524f66d4c63b9"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/command.log",
+      "bytes": 8234,
+      "sha256": "834392a0a204a31c2de36ae282fa521178a685341e5f3a7bb670b83cca29719b"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/edit-one.png",
+      "bytes": 340219,
+      "sha256": "0ff998abd87da8ae1da74bd142e5201147e40338e22b90391a0d17ddbecd53a0"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/edit-two.png",
+      "bytes": 345444,
+      "sha256": "ee998292c4cc436d5bfb9a947947622e2a162d6655900a7faba161d9c20ce3a8"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/models-response.json",
+      "bytes": 588,
+      "sha256": "aa08b6ba59f6620884de19f6f5019a523afd58a0733971a5ca027bc8e1de21d9"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/summary.json",
+      "bytes": 9929,
+      "sha256": "ad7fd715d30985944c8e4de5513e893578d93add8060c72001bcbac4f72f7770"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/text1024.png",
+      "bytes": 926923,
+      "sha256": "c43dc233555aef56caeeaf4cb48d07ec62ba2feeaf1f3bc877e36b30cceda461"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/text2048.png",
+      "bytes": 5873994,
+      "sha256": "c9a1a10260f1e3d0f75eae4bc212580127e8ada3a1114772cbce042960afb637"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/text512-otherseed.png",
+      "bytes": 331101,
+      "sha256": "bfb6efdf02c681ede694470251b0eaeb66aa4d1873077ff716041e8056fef11f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/text512-repeat.png",
+      "bytes": 332933,
+      "sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/smoke/text512.png",
+      "bytes": 332933,
+      "sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/trace/first-request-246.json",
+      "bytes": 107,
+      "sha256": "3af208096674d20eba5298f66c3168e891a0be237e9bb0a597f4de6ea5b542de"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/trace/first-request-steps-246.jsonl",
+      "bytes": 581,
+      "sha256": "ca373af0cd0718ed3e6507ea4731b643e71924fbd2237fd7ac7e4d7546341c6f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/trace/loaded-246.json",
+      "bytes": 582,
+      "sha256": "88643052313caf3bf1fec54917f5114540f33ee77be35cbc7648a712ca99f173"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-1/trace/requests-246.jsonl",
+      "bytes": 6015,
+      "sha256": "b2484583fc5fc0dde07b3a1234ab50daacc7763dc40c9814261bbfa5fa4283b4"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/benchmark-process/command.log",
+      "bytes": 7580,
+      "sha256": "37ead059256365f9d3746a65240058ff2fe3e71264d45d6e268c91bcd30e4e55"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/benchmark/requests.jsonl",
+      "bytes": 7433,
+      "sha256": "1d0cd4f1f5b33c23afae1aaaf7bd20fe015cf030f79c1e16dd093cd86a43b738"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/benchmark/summary.json",
+      "bytes": 1293,
+      "sha256": "882ddb5f790e21e26fab6c01cd1d67a6ea93ec51c0d78efaf70d69394802ef8c"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/server.log",
+      "bytes": 49253,
+      "sha256": "f65cb493c4a99a37352dc57c8d60e2f5696192fc7d27c8eca539dc4128ee721b"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/bird512.png",
+      "bytes": 404895,
+      "sha256": "a61ffb64d4764551572a8b31aebd4f7f64626779cf163cb922e524f66d4c63b9"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/command.log",
+      "bytes": 8232,
+      "sha256": "4824755bd032cef4a0eaba04254b5203c2fe5ccaf5471fd52888337d857671f6"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/edit-one.png",
+      "bytes": 340219,
+      "sha256": "0ff998abd87da8ae1da74bd142e5201147e40338e22b90391a0d17ddbecd53a0"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/edit-two.png",
+      "bytes": 345444,
+      "sha256": "ee998292c4cc436d5bfb9a947947622e2a162d6655900a7faba161d9c20ce3a8"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/models-response.json",
+      "bytes": 588,
+      "sha256": "2395570cd7756ff86785ed6408f239ccc97dd6f4e3827c83b63e65a846fb96d1"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/summary.json",
+      "bytes": 9927,
+      "sha256": "a32d8d86028f09c5029ce0fe4470ef0ca25c3c5b3eedb139d5fafa4029d37c84"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/text1024.png",
+      "bytes": 926923,
+      "sha256": "c43dc233555aef56caeeaf4cb48d07ec62ba2feeaf1f3bc877e36b30cceda461"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/text2048.png",
+      "bytes": 5873994,
+      "sha256": "c9a1a10260f1e3d0f75eae4bc212580127e8ada3a1114772cbce042960afb637"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/text512-otherseed.png",
+      "bytes": 331101,
+      "sha256": "bfb6efdf02c681ede694470251b0eaeb66aa4d1873077ff716041e8056fef11f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/text512-repeat.png",
+      "bytes": 332933,
+      "sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/smoke/text512.png",
+      "bytes": 332933,
+      "sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/trace/first-request-1333.json",
+      "bytes": 107,
+      "sha256": "3af208096674d20eba5298f66c3168e891a0be237e9bb0a597f4de6ea5b542de"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/trace/first-request-steps-1333.jsonl",
+      "bytes": 581,
+      "sha256": "ca373af0cd0718ed3e6507ea4731b643e71924fbd2237fd7ac7e4d7546341c6f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/trace/loaded-1333.json",
+      "bytes": 582,
+      "sha256": "88643052313caf3bf1fec54917f5114540f33ee77be35cbc7648a712ca99f173"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/round-2/trace/requests-1333.jsonl",
+      "bytes": 6015,
+      "sha256": "b2484583fc5fc0dde07b3a1234ab50daacc7763dc40c9814261bbfa5fa4283b4"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z/status.json",
+      "bytes": 1871,
+      "sha256": "8c0992db09c54848d55991664501ddf986033ec0ec832cdfd5d5c11fd4ddab3d"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261026T124842Z/launch.json",
+      "bytes": 432,
+      "sha256": "6bd5ce12485d5acfe417702b03fddec891421d1b0d06184bf0cfeb27650ed9cd"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261026T124842Z/server.log",
+      "bytes": 15156,
+      "sha256": "f039f52280bf2f85a4507015251ef892039b2ccffb99d4634c9dd1239a213fe7"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261026T130057Z/client.log",
+      "bytes": 147,
+      "sha256": "603cde3fb6156b1573795a92e1d7afcb139a86c4eec74fc60353acfb605d94db"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261026T130057Z/launch.json",
+      "bytes": 432,
+      "sha256": "6bd5ce12485d5acfe417702b03fddec891421d1b0d06184bf0cfeb27650ed9cd"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261026T130057Z/server.log",
+      "bytes": 13672,
+      "sha256": "ecb15fc41af02fbf5f82c340663bbf017e6f6da649db9867d4e62578183b4a01"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261026T130057Z/smoke/models-response.json",
+      "bytes": 588,
+      "sha256": "6f16454d4eb46c4f00ff5ede19c25f1400310d4aadc8aac038a2a0b5de2ac260"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261026T130057Z/trace/first-request-21345.json",
+      "bytes": 107,
+      "sha256": "3af208096674d20eba5298f66c3168e891a0be237e9bb0a597f4de6ea5b542de"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261026T130057Z/trace/first-request-steps-21345.jsonl",
+      "bytes": 581,
+      "sha256": "ca373af0cd0718ed3e6507ea4731b643e71924fbd2237fd7ac7e4d7546341c6f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261026T130057Z/trace/loaded-21345.json",
+      "bytes": 582,
+      "sha256": "88643052313caf3bf1fec54917f5114540f33ee77be35cbc7648a712ca99f173"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/client.log",
+      "bytes": 7210,
+      "sha256": "04edcd86674ff9d8ea24d790a5ea4ac214dfea2428496e8f06c0254e6d4512af"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/launch.json",
+      "bytes": 437,
+      "sha256": "fff21a09ae894cbd39540b17159cddc41cbeb9bf0270237c372ba35abe58e218"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/server.log",
+      "bytes": 26443,
+      "sha256": "7d5a5cb89cce4285c426de1d6ec0fdc0a4fdd70c1387279a86c498fe2b5c1a9d"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/smoke/bird512.png",
+      "bytes": 404895,
+      "sha256": "a61ffb64d4764551572a8b31aebd4f7f64626779cf163cb922e524f66d4c63b9"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/smoke/edit-one.png",
+      "bytes": 340219,
+      "sha256": "0ff998abd87da8ae1da74bd142e5201147e40338e22b90391a0d17ddbecd53a0"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/smoke/edit-two.png",
+      "bytes": 345444,
+      "sha256": "ee998292c4cc436d5bfb9a947947622e2a162d6655900a7faba161d9c20ce3a8"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/smoke/models-response.json",
+      "bytes": 588,
+      "sha256": "c8860a6fd7b0fc23d5ebdf1fd76ba40521c026fa4fb911705542f396969aca8f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/smoke/summary.json",
+      "bytes": 8685,
+      "sha256": "5bb58a5cc342ef6a87bdfb8302806ab6a2d1cbca1401f93d8597b78313c436b3"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/smoke/text1024.png",
+      "bytes": 926923,
+      "sha256": "c43dc233555aef56caeeaf4cb48d07ec62ba2feeaf1f3bc877e36b30cceda461"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/smoke/text2048.png",
+      "bytes": 5873994,
+      "sha256": "c9a1a10260f1e3d0f75eae4bc212580127e8ada3a1114772cbce042960afb637"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/smoke/text512-repeat.png",
+      "bytes": 332933,
+      "sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/smoke/text512.png",
+      "bytes": 332933,
+      "sha256": "81ef2af675b62a0e2644dae24af32ec775ab3e47d4ad906dc5ab55b8358d3848"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/trace/first-request-22908.json",
+      "bytes": 107,
+      "sha256": "3af208096674d20eba5298f66c3168e891a0be237e9bb0a597f4de6ea5b542de"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/trace/first-request-steps-22908.jsonl",
+      "bytes": 581,
+      "sha256": "ca373af0cd0718ed3e6507ea4731b643e71924fbd2237fd7ac7e4d7546341c6f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/sglang-20261027T005138Z/trace/loaded-22908.json",
+      "bytes": 582,
+      "sha256": "88643052313caf3bf1fec54917f5114540f33ee77be35cbc7648a712ca99f173"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/validation-20261026T123349Z/backup.log",
+      "bytes": 208,
+      "sha256": "97bbc030cd8d0c9720fa8ff54ba8a96fef4d82b5a7be0236425e05160f7d8f1a"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/validation-20261026T123349Z/preflight.log",
+      "bytes": 1802,
+      "sha256": "fce69ea4b0cb6f7fb8563ccbe40f0d5e33cadfaad617222a46b0b326a148c45e"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/validation-20261026T123349Z/status.json",
+      "bytes": 151,
+      "sha256": "a76ca39775b661a081de754a4f5ae205a192a6dabb0e3aedd4c443340fddcc45"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/validation-20261026T123349Z/weights.log",
+      "bytes": 869,
+      "sha256": "e4dc872ecb1de98a21367f665f9d971865ed090686026de3513caf0c4de8563b"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/scnet/validation-20261026T123349Z/weights/weights-check.json",
+      "bytes": 3467,
+      "sha256": "2b4c89cbe5622b584017867817c1c0508112071eeb8921835cbafd36e513bcf3"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/service-validation-launch.log",
+      "bytes": 292,
+      "sha256": "6edf803963d8c53d67d883f7a18c092de8b68d8755b2d2889075737e3ae31686"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/sglang-help-compatible.log",
+      "bytes": 52190,
+      "sha256": "c9d8368d9dda4915ca6cfe7d15f544a160d05db165da0e0ccf667c7a15186c8f"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/sglang-help.log",
+      "bytes": 6187,
+      "sha256": "84e06be496bb776415b24f10a6a00b9170996c687808fd5d919e134fff489e4b"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/results/verify_result.json",
+      "bytes": 261,
+      "sha256": "ca47ce488b67c76243778010377981e4f642c9da7496f93d704e14091eb813e2"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/run-scnet.sh",
+      "bytes": 1219,
+      "sha256": "92920e2b79b30ea57b15c7e72d726880ba629548e4bbb1191507ae077b59cc40"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/run.sh",
+      "bytes": 374,
+      "sha256": "4f239c8c88fe242b4e63cc491e7f532653954e86f2199a4b0e1c8f17900f7536"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/runtime-config.json",
+      "bytes": 1057,
+      "sha256": "351b63b8aaeb3afb8b2468209501bffb342c63d523eb462d2f33a00bc847a866"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/benchmark_api.py",
+      "bytes": 2642,
+      "sha256": "f202c97093257254746918c9f184d5b8dfb98fc38d725c9bc94309fb95180801"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/check_baked_runtime.py",
+      "bytes": 5804,
+      "sha256": "2f2ecac6cef89349c867fd2e3a07a0fcebf0b1642afbabf7b9d7a22751d92712"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/check_weights.py",
+      "bytes": 1047,
+      "sha256": "38189ea16848ef17020314dadf8f212035d4ed75579aeaa074ce1e053a2a6956"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/config_probe.py",
+      "bytes": 1353,
+      "sha256": "926dea8eb5f632bda9dc96222b9d712358a4a96cc1b351dac7365fa9205d59cb"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/image_gate.py",
+      "bytes": 3471,
+      "sha256": "5ccc5665ebc295175be89918ce36c5edc639c735e80e8d780f10e7a41bdb2d90"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/install_runtime.py",
+      "bytes": 678,
+      "sha256": "61c879c5a084cca53427476491b878e67e0ace0c77b15505b5c68899810d5dd3"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/preflight.py",
+      "bytes": 2358,
+      "sha256": "70a7d82fbd03f6abe0dfe588b209761969b0289d99b310b9c6ec1d288656eb56"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/prepare_evidence.py",
+      "bytes": 2570,
+      "sha256": "f6c36cd035ea112f8b946b98c750adeac5304011a5943cadc4ae276262995def"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/prepare_image_context.py",
+      "bytes": 3614,
+      "sha256": "8468c44981d5301d82474ef47a5ade4297c9b59e68d987f0138ecb657ff2795b"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/prepare_runtime_local.py",
+      "bytes": 2792,
+      "sha256": "5188813d645c7c8838a0af6d2d096735a80c99e4bd03b2a0c0ac8ced155bed8e"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/run_runtime_probe.py",
+      "bytes": 1623,
+      "sha256": "638e718b1743bd9c56b4a159a664786a4cf63de60afc068ec301668ff602fc71"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/run_service_validation.py",
+      "bytes": 4359,
+      "sha256": "e8bee3a0bc2f5bfe00a4e1e510c270f39f09a08b09ce0ae448f7749a1159c294"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/run_validation.py",
+      "bytes": 1354,
+      "sha256": "33ecbbeddf72a08c7d4fb08d7b931c66bac97a8e8618f11a33c90bd070b0e53c"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/serve_sglang.py",
+      "bytes": 6213,
+      "sha256": "2876e048d4d97d1d082c9d68e0534c5b85d15505f9fa28373a7fb0e6f4ef3bae"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/smoke_api.py",
+      "bytes": 4507,
+      "sha256": "7bb4e61252f1b44d14d811cdcacc7fa7c38329779444dafda575387fa2a6bff0"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/scripts/smoke_pipeline.py",
+      "bytes": 2278,
+      "sha256": "65f59ea52143586d776add6b6e122b6abbd80b13bad04ea9888db990d5b70704"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/smoke.sh",
+      "bytes": 222,
+      "sha256": "848d656ae0fcd98084ba4df9f361429f43918167f52674abadc6474c77e25691"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/sources/LICENSE",
+      "bytes": 7831,
+      "sha256": "8dc973f024ff95966bea25866efa443fd16776dcb1001e681e3d467ea572b28d"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/sources/base-extra-requirements.txt",
+      "bytes": 138,
+      "sha256": "bfe07641a333482a1fe26875fc50244cd0fdc620e0def0b5b89c0e25ab5fd49b"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/sources/base-extra-wheel-files.json",
+      "bytes": 3223,
+      "sha256": "c493804872412c17676dccfb71217f5c3d914dc9a332cecfa76eafd2e2a3c618"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/sources/diffusers-runtime-files.json",
+      "bytes": 704,
+      "sha256": "f3abb06b1ed593d452943ceb0102ee8b766f113185ea9da9603f3a898e78e756"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/sources/image-build-files.json",
+      "bytes": 167547,
+      "sha256": "f9e176839d1ec037a902721058b74cd25ce987f65266b83e9526ab25c63ef0c6"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/sources/model_index.json",
+      "bytes": 578,
+      "sha256": "97e2febeb19d93cb41fa44807cde8bd42757950b5dffeacdb0331fb2d390cf20"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/sources/modelscope-files.json",
+      "bytes": 20888,
+      "sha256": "2e2bd8819b94c6c902a4be21290834445d2636907d9be7361d4ce07cccdeea61"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/sources/runtime-dependencies.json",
+      "bytes": 1320,
+      "sha256": "e6a412d37b1356b4911a42817a35b019ac491a85749b691b8a80f451d8f78979"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/sources/scnet-image.json",
+      "bytes": 686,
+      "sha256": "8557a97512bf26a1f4875a594648014fa8af3b86018b7a544866f628d9183a61"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/verify.py",
+      "bytes": 5708,
+      "sha256": "151012ff6f0a8d37372d58c77fc77f63f0b8e0fba260c34ea6ee36dd5d779adc"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/优化说明.md",
+      "bytes": 1607,
+      "sha256": "5cd9675b26c23079da2abc479782301e7082ff84fe31e5b4ebae600923736ff6"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/提交填写信息.md",
+      "bytes": 1256,
+      "sha256": "02b99c9434d415d35b694503056ee9afa4de4cb22b48f59559298be5770bcfd3"
+    },
+    {
+      "path": "Qwen-Image-2.1-Turbo/测试说明.md",
+      "bytes": 2665,
+      "sha256": "b3adde4a7fd2581fb2d1d597ab06fd76908ac9d6e8b3455741477fe98cdec7cc"
+    },
+    {
+      "path": "platform/scnet-notebook/backup_shared.py",
+      "bytes": 2739,
+      "sha256": "16712145c24af2df1de0213346f1b18488ac173d25da3ed2e1cfcd07f29cb4cd"
+    },
+    {
+      "path": "platform/scnet-notebook/env-scnet.sh",
+      "bytes": 848,
+      "sha256": "1b1768582ba3d0223dc248f87bde485af4d0ef5a0c214c922cbd989d5b79dbc8"
+    }
+  ]
+}

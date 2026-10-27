@@ -1,0 +1,8 @@
+{"step": 0, "timestep": 1000.0, "latent_shape": [1, 4096, 64]}
+{"step": 1, "timestep": 978.4530029296875, "latent_shape": [1, 4096, 64]}
+{"step": 2, "timestep": 954.1799926757812, "latent_shape": [1, 4096, 64]}
+{"step": 3, "timestep": 926.6260375976562, "latent_shape": [1, 4096, 64]}
+{"step": 4, "timestep": 895.0799560546875, "latent_shape": [1, 4096, 64]}
+{"step": 5, "timestep": 845.1480102539062, "latent_shape": [1, 4096, 64]}
+{"step": 6, "timestep": 704.5339965820312, "latent_shape": [1, 4096, 64]}
+{"step": 7, "timestep": 414.5679931640625, "latent_shape": [1, 4096, 64]}

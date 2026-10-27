@@ -1,0 +1,50 @@
+{
+  "before": [
+    {
+      "loader": "AutoConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "axial"
+        }
+      }
+    },
+    {
+      "loader": "Qwen3VLConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "axial"
+        }
+      }
+    }
+  ],
+  "after": [
+    {
+      "loader": "AutoConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "default"
+        }
+      }
+    },
+    {
+      "loader": "Qwen3VLConfig",
+      "class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLConfig",
+      "vision_class": "transformers.models.qwen3_vl.configuration_qwen3_vl.Qwen3VLVisionConfig",
+      "vision_rope": {
+        "rope_parameters": {
+          "rope_theta": 10000.0,
+          "rope_type": "default"
+        }
+      }
+    }
+  ]
+}

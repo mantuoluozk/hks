@@ -1,0 +1,13 @@
+Python 3.10 compatible Diffusers source ready
+/root/private_data/hks/models/Qwen-Image-2.1-Turbo/results/scnet/runtime-20261026T124038Z
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/scripts/run_runtime_probe.py", line 17, in <module>
+    subprocess.run(['bash','run-scnet.sh','python','-u','scripts/'+script],cwd=ROOT,
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['bash', 'run-scnet.sh', 'python', '-u', 'scripts/preflight.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "<string>", line 11, in <module>
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '-u', 'scripts/run_runtime_probe.py']' returned non-zero exit status 1.

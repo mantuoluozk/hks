@@ -1,0 +1,20 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo",
+      "object": "model",
+      "created": 1793062504,
+      "owned_by": "sglang",
+      "root": "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo",
+      "parent": null,
+      "max_model_len": null,
+      "num_gpus": 1,
+      "task_type": "TI2I",
+      "dit_precision": "bf16",
+      "vae_precision": "bf16",
+      "pipeline_name": "DiffusersPipeline",
+      "pipeline_class": "DiffusersPipeline"
+    }
+  ]
+}

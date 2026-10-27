@@ -1,0 +1,23 @@
+{
+  "server_pid": 22798,
+  "client_pid": 22799,
+  "args": [
+    "bash",
+    "run-scnet.sh",
+    "python",
+    "scripts/serve_sglang.py",
+    "--model-path",
+    "/root/private_data/SothisAI/model/Aihub/Qwen-Image-2.1-Turbo/main/Qwen-Image-2.1-Turbo",
+    "--backend",
+    "diffusers",
+    "--num-gpus",
+    "1",
+    "--dit-precision",
+    "bf16",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "30003"
+  ],
+  "resumed_by_owner": true
+}

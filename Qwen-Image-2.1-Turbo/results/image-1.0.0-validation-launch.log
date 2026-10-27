@@ -1,0 +1,6 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+{
+  "results": "/root/private_data/hks/models/Qwen-Image-2.1-Turbo/results/scnet/service-validation-20261027T015635Z",
+  "status": "completed"
+}
