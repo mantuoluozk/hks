@@ -7,7 +7,6 @@
 - [发布者模型说明](https://huggingface.co/BAAI/Recon2Reason-Reasoning-4B)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177)
 - [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Recon2Reason-Reasoning-4B/`
-- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/Recon2Reason-Reasoning-4B)
 
 | 验证项 | 当前结果 |
 |---|---|
@@ -32,7 +31,6 @@
 | 镜像用途 | 共用基础镜像 |
 | 镜像版本 | `0.5.18` |
 | 镜像地址 | `image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18` |
-| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
 | 访问状态 | 公开访问状态待提交时核对 |
 | 镜像复验 | 基础镜像上实测；未完成模型专用新镜像复验 |
 <!-- report-environment:end -->
@@ -50,7 +48,6 @@ SCNet Notebook，BW × 1，65520 MiB、80 CU；Ubuntu 22.04.5，驱动 6.3.31-V1
 
 镜像：`image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18`
 
-镜像摘要：待核实（旧记录摘要长度有误，不能作为固定镜像引用）
 
 环境记录见 `env.log`。模型通过 SCNet AI 社区克隆获取，权重路径为 `/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B`。13 个关键文件通过 SHA256 校验，未修改权重、结构、tokenizer 或采样语义。
 

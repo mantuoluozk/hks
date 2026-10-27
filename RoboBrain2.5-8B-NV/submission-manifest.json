@@ -1,7 +1,6 @@
 {
   "model": "RoboBrain2.5-8B-NV",
-  "github_report_commit": "add2cbdb8797e1393764943f57acefbe15567b5a",
-  "sourcefind_code_base": "6c36065d056a944384f40a4887b0ed7081a1c3b7",
+  "sourcefind_code_base": "35d46416c7385bae0fd63742a185e6a32113abf2",
   "files": [
     {
       "path": "RoboBrain2.5-8B-NV/.gitignore",
@@ -10,8 +9,8 @@
     },
     {
       "path": "RoboBrain2.5-8B-NV/README.md",
-      "sha256": "dec15de8b1eb4234d351ea28c6bf84dc354260dffe1f733e15c00e005291885a",
-      "bytes": 9800
+      "sha256": "fc0cc0084ef792deacedf3d51e6b7b84d3061b56e8b892b20e27ac38ba433921",
+      "bytes": 9540
     },
     {
       "path": "RoboBrain2.5-8B-NV/bench.sh",
@@ -935,8 +934,8 @@
     },
     {
       "path": "RoboBrain2.5-8B-NV/提交填写信息.md",
-      "sha256": "faae3319b6e53c5c321136403f5c3abe96f47d98a47f5d832676b57c060f6950",
-      "bytes": 1588
+      "sha256": "02f005f75c9495f3c6ca2c835e91a5f0b91480dd4bd412acb83d07699284dc99",
+      "bytes": 1249
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

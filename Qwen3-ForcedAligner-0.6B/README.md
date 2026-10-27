@@ -7,7 +7,6 @@
 - [发布者模型说明](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)
 - [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Qwen3-ForcedAligner-0.6B/`
-- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/Qwen3-ForcedAligner-0.6B)
 
 | 验证项 | 当前结果 |
 |---|---|
@@ -31,7 +30,6 @@ T04 强制对齐，模型为 `Qwen/Qwen3-ForcedAligner-0.6B`，输入音频及�
 | 镜像用途 | ASR 专用镜像；其他模型按报告复用 |
 | 镜像版本 | `v1` |
 | 镜像地址 | `appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1` |
-| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
 | 访问状态 | 私有，提交时开放 |
 | 镜像复验 | 复用 ASR 镜像；同 Notebook 两个独立进程验证 |
 <!-- report-environment:end -->
@@ -46,7 +44,7 @@ SCNet Notebook，华中一区（A区），单张 BW，逻辑设备 0；HIP 6.3.2
 | OpenAI Python | 2.30.0 |
 | librosa | 0.11.0 |
 
-[实际使用的 SCNet 镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)：`appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1`，版本 `v1`。镜像保持私有，提交时开放；固定摘要待提交前补充。沿用镜像内 `/opt/qwen3-asr-deps`，本模型未新增系统依赖或修改框架源码。原生强制对齐实现的导入检查及代码哈希见 `results/scnet/validation-20261026T094355Z/preflight/summary.json`。
+[实际使用的 SCNet 镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)：`appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1`，版本 `v1`。镜像保持私有，提交时开放。沿用镜像内 `/opt/qwen3-asr-deps`，本模型未新增系统依赖或修改框架源码。原生强制对齐实现的导入检查及代码哈希见 `results/scnet/validation-20261026T094355Z/preflight/summary.json`。
 
 ## 3. 适配与配置
 

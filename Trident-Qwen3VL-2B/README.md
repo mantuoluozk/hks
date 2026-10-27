@@ -7,7 +7,6 @@
 - [发布者模型说明](https://huggingface.co/OpenBMB/Trident-Qwen3VL-2B)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)
 - [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Trident-Qwen3VL-2B/`
-- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/Trident-Qwen3VL-2B)
 
 | 验证项 | 当前结果 |
 |---|---|
@@ -31,7 +30,6 @@ T02 混合模态检索嵌入模型，输入文本、图片或图文融合内容�
 | 镜像用途 | ASR 专用镜像；其他模型按报告复用 |
 | 镜像版本 | `v1` |
 | 镜像地址 | `appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1` |
-| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
 | 访问状态 | 私有，提交时开放 |
 | 镜像复验 | 复用 ASR 镜像与随仓库 Python 依赖；同 Notebook 两个独立进程验证 |
 <!-- report-environment:end -->
@@ -46,7 +44,7 @@ SCNet Notebook，华中一区（A区），单张 BW、64GB / 80 CU、逻辑设�
 | pillow | 11.3.0 |
 | torchvision | 0.26.0+dtk2604.torch2110.2609101802.gee55be |
 
-实际使用 [SCNet 镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)：`appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1`，版本 `v1`。镜像保持私有，固定摘要待提交前补充。沿用镜像推理栈，无额外系统安装或框架源码修改；`qwen-vl-utils 0.0.14` 的小型 Python 源码随本模型目录提供，通过 PYTHONPATH 加载，并保留 Apache-2.0 许可与哈希。设备、版本与框架文件指纹见 `results/scnet/validation-20261026T114901Z/preflight/summary.json`。
+实际使用 [SCNet 镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)：`appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1`，版本 `v1`。镜像保持私有。沿用镜像推理栈，无额外系统安装或框架源码修改；`qwen-vl-utils 0.0.14` 的小型 Python 源码随本模型目录提供，通过 PYTHONPATH 加载，并保留 Apache-2.0 许可与哈希。设备、版本与框架文件指纹见 `results/scnet/validation-20261026T114901Z/preflight/summary.json`。
 
 ## 3. 适配与配置
 
@@ -113,6 +111,6 @@ native 相对同 BW 参考差 **-0.0548 pt**，相对论文参考差 **-0.7417 p
 
 ## 8. 复现与限制
 
-同一个 SCNet Notebook、同一镜像、同一 BW 上，两个独立初始化进程按相同缓存策略与负载运行。第二轮 12 个配对档位最大绝对吞吐偏差 **3.88%**，≤20% 检查 **通过**。本项是独立进程复跑，尚未另建 Notebook 做独立实例复验。镜像固定摘要及公开访问在提交前补齐。
+同一个 SCNet Notebook、同一镜像、同一 BW 上，两个独立初始化进程按相同缓存策略与负载运行。第二轮 12 个配对档位最大绝对吞吐偏差 **3.88%**，≤20% 检查 **通过**。本项是独立进程复跑，尚未另建 Notebook 做独立实例复验。提交前开放镜像访问。
 
 `python verify.py --selfcheck` 校验来源文件、公开测评与功能/性能证据哈希；默认 `python verify.py` 如实保留官方精度待验状态并返回 2。逐项证据清单见 `results/scnet/validation-summary.json`。后续优化需在同卡、同框架、同负载与缓存策略下另行配对测量并回归检索精度。

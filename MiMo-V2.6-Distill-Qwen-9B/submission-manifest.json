@@ -1,7 +1,6 @@
 {
   "model": "MiMo-V2.6-Distill-Qwen-9B",
-  "github_report_commit": "add2cbdb8797e1393764943f57acefbe15567b5a",
-  "sourcefind_code_base": "6c36065d056a944384f40a4887b0ed7081a1c3b7",
+  "sourcefind_code_base": "35d46416c7385bae0fd63742a185e6a32113abf2",
   "files": [
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/.gitattributes",
@@ -15,8 +14,8 @@
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/README.md",
-      "sha256": "295a771959b0fa5dc3e2206cd981931d6cf77f9bce07e32494e71fdb577225f1",
-      "bytes": 7845
+      "sha256": "229a3c6175455e0f626f545d54b5ab4133aec6bca1221d43ad4d84126f40ad38",
+      "bytes": 7580
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench.sh",
@@ -445,8 +444,8 @@
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/提交填写信息.md",
-      "sha256": "986e4b6c029f5ca007746240e7669e78510bf7c1b16cfd6d0434017744679d64",
-      "bytes": 1569
+      "sha256": "f4b3691d21f54a2597147095595ea342300634500e0c846a719d28213e4ec77b",
+      "bytes": 1223
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

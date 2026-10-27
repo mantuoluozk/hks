@@ -7,7 +7,6 @@
 - [发布者模型说明](https://huggingface.co/BAAI/RoboBrain2.5-8B-NV)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177)
 - [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `RoboBrain2.5-8B-NV/`
-- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/RoboBrain2.5-8B-NV)
 
 | 验证项 | 当前结果 |
 |---|---|
@@ -32,7 +31,6 @@
 | 镜像用途 | 共用基础镜像 |
 | 镜像版本 | `0.5.18` |
 | 镜像地址 | `image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18` |
-| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
 | 访问状态 | 公开访问状态待提交时核对 |
 | 镜像复验 | 基础镜像 + 启动时源码补丁；未构建烘焙补丁的专用镜像 |
 <!-- report-environment:end -->
@@ -52,7 +50,7 @@ SCNet Notebook，BW × 1，65520 MiB、80 CU、gfx936，逻辑设备 0，TP=1、
 
 基础镜像：`image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18`。
 
-固定摘要：待核实（旧记录摘要长度有误，不能作为固定镜像引用）。启动时自动重放第 3 节的固定源码补丁；未额外安装或升级推理依赖包。
+启动时自动重放第 3 节的固定源码补丁；未额外安装或升级推理依赖包。
 
 权重通过 SCNet AI 社区克隆获取，路径 `/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV`。13 个关键模型文件通过固定 SHA256 校验；说明文件和仓库属性文件不参与运行文件一致性校验。权重、结构、tokenizer 和图像处理配置未修改。环境及校验记录见 `env.log`、`results/scnet/runtime/`。
 

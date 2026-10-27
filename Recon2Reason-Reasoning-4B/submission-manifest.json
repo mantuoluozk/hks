@@ -1,7 +1,6 @@
 {
   "model": "Recon2Reason-Reasoning-4B",
-  "github_report_commit": "add2cbdb8797e1393764943f57acefbe15567b5a",
-  "sourcefind_code_base": "6c36065d056a944384f40a4887b0ed7081a1c3b7",
+  "sourcefind_code_base": "35d46416c7385bae0fd63742a185e6a32113abf2",
   "files": [
     {
       "path": "Recon2Reason-Reasoning-4B/.gitignore",
@@ -10,8 +9,8 @@
     },
     {
       "path": "Recon2Reason-Reasoning-4B/README.md",
-      "sha256": "b71d0d02a81b906ba2fc581c901a86e2ebeb3dbf2f330d20d8d06880fb6f51c9",
-      "bytes": 7334
+      "sha256": "1786c269d5c50d40b5007163f80aa3bb969695b2a8d481ca79eac7a185c50fed",
+      "bytes": 7069
     },
     {
       "path": "Recon2Reason-Reasoning-4B/bench.sh",
@@ -450,8 +449,8 @@
     },
     {
       "path": "Recon2Reason-Reasoning-4B/提交填写信息.md",
-      "sha256": "e5c843ea1dbb11ad3efa2eb9db3a46c2d86e38f51c50df8c860ebe441019516c",
-      "bytes": 1573
+      "sha256": "e1af698e839ab2aa5eeb6b8421dea0a0b8a8d7bbb8b9e11aebb6010c37e8a769",
+      "bytes": 1227
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

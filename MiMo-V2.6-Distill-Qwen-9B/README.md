@@ -7,7 +7,6 @@
 - [发布者模型说明](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177)
 - [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `MiMo-V2.6-Distill-Qwen-9B/`
-- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/MiMo-V2.6-Distill-Qwen-9B)
 
 | 验证项 | 当前结果 |
 |---|---|
@@ -31,7 +30,6 @@ T01 文本模型适配，模型为 `XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B`，BF16
 | 镜像用途 | 共用基础镜像 |
 | 镜像版本 | `0.5.18` |
 | 镜像地址 | `image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18` |
-| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
 | 访问状态 | 公开访问状态待提交时核对 |
 | 镜像复验 | 基础镜像上实测；新 Notebook 完整性能复验待补 |
 <!-- report-environment:end -->
@@ -45,7 +43,7 @@ SCNet Notebook，华中一区（A区），BW × 1，65520 MiB、80 CU，逻辑�
 | Transformers | 5.12.1 |
 | Triton | 3.6.0+dtk2604.torch2110.2609231415.g8cce4a |
 
-[实际使用的 SCNet 镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177)：`image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18`，固定摘要 待核实（旧记录摘要长度有误，不能作为固定镜像引用）。环境与参数见 `results/scnet/validation-20261026T021625Z/runtime/`。
+[实际使用的 SCNet 镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177)：`image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18`。环境与参数见 `results/scnet/validation-20261026T021625Z/runtime/`。
 
 ## 3. 适配与配置
 

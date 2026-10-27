@@ -11,7 +11,7 @@
     "bench.sh": "a12561512a34a1c9476fd270b8cb8cd00fffc6c47c91e515d15017e22809fe4a",
     "Dockerfile.scnet": "7bf3a8d16e2a351fcf7605da24c74521f66714c76b484055748ed954eb6da4b2",
     "env_check.sh": "f87f4268fab0f65a8fc28bcb3f7092a8a6bc983cc0dd3640b51adfdaac700a4c",
-    "README.md": "95c4e95fd96d1810ec6ba137a17ab0792d4f2d9348f0adaf8432bdfebcf77b0e",
+    "README.md": "b23f4f30508b94d93f978b905d71b493f1e35c273a091a2bab070bd0fb1f7a01",
     "results/bootstrap-worker.log": "9dc124d332bc8728cd86b4071a4e22dab3de0fbcd3c35123504f19ac627e8dce",
     "results/config-probe/config-comparison.json": "478a4b617e919ef52778492706d11378c9692dc9f6a4c7aae877ba8b19195c4c",
     "results/config-probe-fixed/config-comparison.json": "c3a69a6e786340666486e2d117edfc55cfb5c5bfb7f22671776c3914fc9f421a",
@@ -139,7 +139,7 @@
     "run-scnet.sh": "92920e2b79b30ea57b15c7e72d726880ba629548e4bbb1191507ae077b59cc40",
     "run.sh": "4f239c8c88fe242b4e63cc491e7f532653954e86f2199a4b0e1c8f17900f7536",
     "runtime-config.json": "351b63b8aaeb3afb8b2468209501bffb342c63d523eb462d2f33a00bc847a866",
-    "SCNet\u955c\u50cf\u91cd\u5efa.md": "575e74e39d28810e8b0df39c9b4a7161dfeb1ad54288f47677cc9631188030f4",
+    "SCNet\u955c\u50cf\u91cd\u5efa.md": "91adb1e746bc59b4af762d7975d051a84d9df812d7ab9c58e6f537ebf9da4af0",
     "scripts/benchmark_api.py": "f202c97093257254746918c9f184d5b8dfb98fc38d725c9bc94309fb95180801",
     "scripts/check_baked_runtime.py": "2f2ecac6cef89349c867fd2e3a07a0fcebf0b1642afbabf7b9d7a22751d92712",
     "scripts/check_weights.py": "38189ea16848ef17020314dadf8f212035d4ed75579aeaa074ce1e053a2a6956",
@@ -169,7 +169,7 @@
     "sources/scnet-image.json": "8557a97512bf26a1f4875a594648014fa8af3b86018b7a544866f628d9183a61",
     "verify.py": "151012ff6f0a8d37372d58c77fc77f63f0b8e0fba260c34ea6ee36dd5d779adc",
     "\u4f18\u5316\u8bf4\u660e.md": "5cd9675b26c23079da2abc479782301e7082ff84fe31e5b4ebae600923736ff6",
-    "\u6d4b\u8bd5\u8bf4\u660e.md": "b3adde4a7fd2581fb2d1d597ab06fd76908ac9d6e8b3455741477fe98cdec7cc"
+    "\u6d4b\u8bd5\u8bf4\u660e.md": "2b3c03d8e2460152c1f96cf3315dfda5eaa6bee320760a86f67f7277780a9ba9"
   },
   "image_preflight": "results/scnet/image-1.0.0-preflight/summary.json",
   "image_install_check": "results/scnet/image-1.0.0-preflight/installed-files.json",

@@ -1,7 +1,6 @@
 {
   "model": "Qwen-Image-2.1-Turbo",
-  "github_report_commit": "add2cbdb8797e1393764943f57acefbe15567b5a",
-  "sourcefind_code_base": "6c36065d056a944384f40a4887b0ed7081a1c3b7",
+  "sourcefind_code_base": "35d46416c7385bae0fd63742a185e6a32113abf2",
   "files": [
     {
       "path": "Qwen-Image-2.1-Turbo/.gitattributes",
@@ -20,13 +19,13 @@
     },
     {
       "path": "Qwen-Image-2.1-Turbo/README.md",
-      "sha256": "95c4e95fd96d1810ec6ba137a17ab0792d4f2d9348f0adaf8432bdfebcf77b0e",
-      "bytes": 12063
+      "sha256": "b23f4f30508b94d93f978b905d71b493f1e35c273a091a2bab070bd0fb1f7a01",
+      "bytes": 11828
     },
     {
       "path": "Qwen-Image-2.1-Turbo/SCNet镜像重建.md",
-      "sha256": "575e74e39d28810e8b0df39c9b4a7161dfeb1ad54288f47677cc9631188030f4",
-      "bytes": 2673
+      "sha256": "91adb1e746bc59b4af762d7975d051a84d9df812d7ab9c58e6f537ebf9da4af0",
+      "bytes": 2622
     },
     {
       "path": "Qwen-Image-2.1-Turbo/bench.sh",
@@ -65,7 +64,7 @@
     },
     {
       "path": "Qwen-Image-2.1-Turbo/results/evidence-manifest.json",
-      "sha256": "c6e5b4af18e82d0c6a6116fdf299dd9943cb00cf3b20b0f41546b38f3309ed6d",
+      "sha256": "c552e9d9b71db673e19bc647d3f5ed2fdadf4804b65f6a8a7202a3ce86b07574",
       "bytes": 22631
     },
     {
@@ -830,13 +829,13 @@
     },
     {
       "path": "Qwen-Image-2.1-Turbo/提交填写信息.md",
-      "sha256": "6bf0dba634cb1fa5ee4ce1fccd2436b0f64952360c57d94561e33e31e6dcc6dc",
-      "bytes": 1610
+      "sha256": "40e2e03e619793364bf1b1ae598907936dcc69ebcddb1d1d3ea78c35cf3e3870",
+      "bytes": 1269
     },
     {
       "path": "Qwen-Image-2.1-Turbo/测试说明.md",
-      "sha256": "b3adde4a7fd2581fb2d1d597ab06fd76908ac9d6e8b3455741477fe98cdec7cc",
-      "bytes": 2665
+      "sha256": "2b3c03d8e2460152c1f96cf3315dfda5eaa6bee320760a86f67f7277780a9ba9",
+      "bytes": 2641
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

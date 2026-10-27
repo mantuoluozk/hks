@@ -1,7 +1,6 @@
 {
   "model": "Qwen3-ASR-1.7B",
-  "github_report_commit": "add2cbdb8797e1393764943f57acefbe15567b5a",
-  "sourcefind_code_base": "6c36065d056a944384f40a4887b0ed7081a1c3b7",
+  "sourcefind_code_base": "35d46416c7385bae0fd63742a185e6a32113abf2",
   "files": [
     {
       "path": "Qwen3-ASR-1.7B/.gitattributes",
@@ -20,8 +19,8 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/README.md",
-      "sha256": "5e4a5379a6ca666468bbc2e43b68a339c6d3d512c2768d253ac6d05ea03acc19",
-      "bytes": 8848
+      "sha256": "b87af908f31a459660803b47bdd6e7c7bfa3af40c1809ff4a0499d55165235c9",
+      "bytes": 8652
     },
     {
       "path": "Qwen3-ASR-1.7B/env.sh",
@@ -540,8 +539,8 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/提交填写信息.md",
-      "sha256": "6be4f3a241fd922809c430902803deee97589693f130f36abc4cc498fc365729",
-      "bytes": 1541
+      "sha256": "bf8b490935b5c9ce71911a00788754b342ccf221e029daa0baeb2863102616b0",
+      "bytes": 1206
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

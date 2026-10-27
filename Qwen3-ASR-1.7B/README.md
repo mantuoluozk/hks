@@ -7,7 +7,6 @@
 - [发布者模型说明](https://huggingface.co/Qwen/Qwen3-ASR-1.7B)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)
 - [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Qwen3-ASR-1.7B/`
-- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/Qwen3-ASR-1.7B)
 
 | 验证项 | 当前结果 |
 |---|---|
@@ -31,7 +30,6 @@ T04 语音识别适配，模型为 `Qwen/Qwen3-ASR-1.7B`，BF16、单张 BW。�
 | 镜像用途 | ASR 专用镜像；其他模型按报告复用 |
 | 镜像版本 | `v1` |
 | 镜像地址 | `appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1` |
-| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
 | 访问状态 | 私有，提交时开放 |
 | 镜像复验 | 专用镜像已完成新 Notebook 复验 |
 <!-- report-environment:end -->
@@ -45,7 +43,7 @@ SCNet Notebook，华中一区（A区），BW × 1，逻辑设备 0。Python 3.10
 | Transformers | 5.12.1 |
 | OpenAI Python | 2.30.0 |
 
-[ASR 专用镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)：`appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1`，版本 `v1`，固定摘要待提交前补充。当前镜像为私有，提交时开放访问。八个补充依赖固定版本见 `requirements-scnet.txt`，wheel 来源及 SHA256 见 `sources/scnet-wheel-files.json`；镜像内安装文件逐项核对通过，见 `results/scnet/validation-20261026T080803Z/runtime/image-dependencies.json`。PyTorch、Transformers、vLLM 保持基础镜像版本。
+[ASR 专用镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)：`appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1`，版本 `v1`。当前镜像为私有，提交时开放访问。八个补充依赖固定版本见 `requirements-scnet.txt`，wheel 来源及 SHA256 见 `sources/scnet-wheel-files.json`；镜像内安装文件逐项核对通过，见 `results/scnet/validation-20261026T080803Z/runtime/image-dependencies.json`。PyTorch、Transformers、vLLM 保持基础镜像版本。
 
 ## 3. 适配与配置
 
