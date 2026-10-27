@@ -2,28 +2,58 @@
 
 ## 1. 简介
 
+<!-- report-resources:start -->
+- [SCNet 模型来源](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen3-ASR-1.7B)
+- [发布者模型说明](https://huggingface.co/Qwen/Qwen3-ASR-1.7B)
+- [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)
+- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Qwen3-ASR-1.7B/`
+- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/Qwen3-ASR-1.7B)
+
+| 验证项 | 当前结果 |
+|---|---|
+| 功能 | 在线 6/6；PCM 4/4 |
+| 公开精度自评 | test-clean 2620 条，WER 1.6501% |
+| 首次性能与复现 | 128 请求；复跑最大偏差 7.28% |
+| 镜像验证范围 | 专用镜像已完成新 Notebook 复验 |
+| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+<!-- report-resources:end -->
+
 T04 语音识别适配，模型为 `Qwen/Qwen3-ASR-1.7B`，BF16、单张 BW。权重来自 [SCNet AI 社区](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen3-ASR-1.7B)，11 个运行文件逐项 SHA256 校验通过，含两片权重共 4,698,521,512 字节。模型卡和 `.gitattributes` 不属于运行文件，社区说明文件与发布者快照不同，未将这两项计入运行文件一致性检查。模型文件清单见 `sources/modelscope-files.json`，实际校验见 `results/scnet/validation-20261026T080803Z/runtime/weights-check.json`。
 
 ## 2. 环境
 
+<!-- report-environment:start -->
+| 环境项 | 配置 |
+|---|---|
+| 平台 / 区域 | SCNet Notebook / 华中一区（A区） |
+| 加速卡 / 精度 | BW × 1 / BF16；设备与运行参数见下文 |
+| 框架 | vLLM；实际组件版本见下文 |
+| 镜像用途 | ASR 专用镜像；其他模型按报告复用 |
+| 镜像版本 | `v1` |
+| 镜像地址 | `appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1` |
+| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
+| 访问状态 | 私有，提交时开放 |
+| 镜像复验 | 专用镜像已完成新 Notebook 复验 |
+<!-- report-environment:end -->
+
 SCNet Notebook，华中一区（A区），BW × 1，逻辑设备 0。Python 3.10.12，HIP 6.3.26113。
 
-| 组件 | 实测版本 |
+| 组件 | 版本 |
 |---|---|
-| PyTorch | 2.11.0 |
+| PyTorch（模块版本） | 2.11.0 |
 | vLLM | 0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a |
 | Transformers | 5.12.1 |
 | OpenAI Python | 2.30.0 |
 
 [ASR 专用镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)：`appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1`，版本 `v1`，固定摘要待提交前补充。当前镜像为私有，提交时开放访问。八个补充依赖固定版本见 `requirements-scnet.txt`，wheel 来源及 SHA256 见 `sources/scnet-wheel-files.json`；镜像内安装文件逐项核对通过，见 `results/scnet/validation-20261026T080803Z/runtime/image-dependencies.json`。PyTorch、Transformers、vLLM 保持基础镜像版本。
 
-## 3. 适配与优化
+## 3. 适配与配置
 
 采用镜像原生 vLLM Qwen3-ASR 实现，未修改模型权重、结构、tokenizer 或框架源码。补齐 librosa、soxr、audioread、lazy-loader、pooch、scikit-learn、editdistance；OpenAI Python 固定为 2.30.0，提供 vLLM 导入所需的 `NamespaceTool`。补充包安装至镜像内 `/opt/qwen3-asr-deps`，由启动脚本显式加载。
 
 BF16、上下文 8192、最大运行请求 16、显存比例 0.4，关闭 eager，采用默认编译与图执行。Prefix cache 与多模态处理缓存关闭；使用原始音频处理器、greedy 解码、自然 EOS，不强制补满输出 token。本版记录平台首版结果，不以不同设备或环境的成绩差异计算优化奖励。
 
-## 4. 服务启动脚本
+## 4. 启动与复现
 
 将模型目录部署至 `/root/private_data/hks/models/Qwen3-ASR-1.7B`，配套 `platform/scnet-notebook` 目录部署至 `/root/private_data/hks/platform/scnet-notebook`。Notebook 已是容器，无需嵌套 Docker。指定社区权重放在 `run-scnet.sh` 默认路径，或通过 `MODEL_PATH` 覆盖。镜像重建文件为 `Dockerfile.scnet`。
 
@@ -40,7 +70,7 @@ BENCH_OUTPUT_DIR="$PWD/results/scnet/reproduce/bench" bash run-scnet.sh python s
 
 服务为 `127.0.0.1:30128`，模型别名 `qwen3-asr-1.7b`。启动时校验权重、检查依赖和端口，并记录实际参数。`stop.sh` 仅停止模型路径、服务名及端口与记录相符的 PID。
 
-## 5. Smoke 测试
+## 5. 功能测试
 
 新镜像中英文 WAV 分别通过聊天音频输入、音频转写 API、SSE 输出，共 **6/6**；两种语言的三个接口转写分别一致。原始请求响应及判定见 `results/scnet/validation-20261026T080803Z/smoke/`。
 
@@ -62,7 +92,7 @@ bash run-scnet.sh python scripts/prepare_librispeech_parquet.py
 EVAL_OUTPUT_DIR="$PWD/results/scnet/reproduce/accuracy" bash run-scnet.sh python scripts/evaluate_librispeech.py
 ```
 
-## 7. 性能参考
+## 7. 首次性能
 
 负载为发布者两个演示 WAV：15.051 秒英文 48 kHz、4.204 秒中文 16 kHz，交替请求；并发 1/4/8/16，每档 N=max(8,2C)，连续两轮，报告第二轮。每轮另有两条预热。新镜像 8/8 项、128/128 个计数请求完成，不强制固定输出长度。
 
@@ -75,7 +105,7 @@ EVAL_OUTPUT_DIR="$PWD/results/scnet/reproduce/accuracy" bash run-scnet.sh python
 
 聚合音频秒/墙钟秒越高越好，RTF=请求耗时/音频时长，越低越好且包含排队。两个演示样本不能外推完整语音场景，也不替代官方 T04 性能协议。逐请求输出、计时和两轮结果见 `results/scnet/validation-20261026T080803Z/bench/`。
 
-## 8. 镜像复现与注意事项
+## 8. 复现与限制
 
 专用镜像新建 Notebook 后，不额外安装补充依赖，直接从 `/opt/qwen3-asr-deps` 加载；功能、性能、完整公开集精度及离线 PCM 检查串行完成。与首轮平台测试的第二轮性能比较如下，使用相同 BW 卡型、框架、参数、音频和并发；不同 Notebook 的波动按实际值记录。
 

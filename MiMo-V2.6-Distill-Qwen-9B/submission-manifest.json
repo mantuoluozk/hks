@@ -1,451 +1,462 @@
 {
-  "source_commit": "10484707deea7c023c8e796237615a7b0e3e6810",
   "model": "MiMo-V2.6-Distill-Qwen-9B",
+  "github_report_commit": "add2cbdb8797e1393764943f57acefbe15567b5a",
+  "sourcefind_code_base": "6c36065d056a944384f40a4887b0ed7081a1c3b7",
   "files": [
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/.gitattributes",
-      "bytes": 64,
-      "sha256": "0ca9c0a98dda4fa4cfd7fff5b789be5ef5322221c8ebceeaa6159ed28ac886da"
+      "sha256": "0ca9c0a98dda4fa4cfd7fff5b789be5ef5322221c8ebceeaa6159ed28ac886da",
+      "bytes": 64
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/.gitignore",
-      "bytes": 64,
-      "sha256": "3f5ed81f487928cdec680381d21e084e5d305f8d8e5e45bc20611a9ab7171572"
+      "sha256": "3f5ed81f487928cdec680381d21e084e5d305f8d8e5e45bc20611a9ab7171572",
+      "bytes": 64
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/README.md",
-      "bytes": 6243,
-      "sha256": "23bd6f3116cb8a38eafc0652af0fc36b6aff5218f6d235af6a94d2e965a53a0d"
+      "sha256": "295a771959b0fa5dc3e2206cd981931d6cf77f9bce07e32494e71fdb577225f1",
+      "bytes": 7845
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench.sh",
-      "bytes": 1930,
-      "sha256": "11b509dd580c8f54ebd55b63eb93c7a8bc2ec9c64c59dc88ad31733c7356c719"
+      "sha256": "11b509dd580c8f54ebd55b63eb93c7a8bc2ec9c64c59dc88ad31733c7356c719",
+      "bytes": 1930
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/audit.json",
-      "bytes": 2439,
-      "sha256": "cedd3c05c10eaa50246fda4c7125a6a8d28723b02a6b5a404161324c29377f89"
+      "sha256": "cedd3c05c10eaa50246fda4c7125a6a8d28723b02a6b5a404161324c29377f89",
+      "bytes": 2439
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/protocol.json",
-      "bytes": 266,
-      "sha256": "4932b65994b32f825f41e3cdb888a8f4047cd16719c1aa4eef85fff2b4af3ecc"
+      "sha256": "4932b65994b32f825f41e3cdb888a8f4047cd16719c1aa4eef85fff2b4af3ecc",
+      "bytes": 266
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round1.jsonl",
-      "bytes": 334599,
-      "sha256": "4948ed845b1e6e95bd325917cf3e7b0bfc0b5f062e02dd1cf74412010b8e8777"
+      "sha256": "4948ed845b1e6e95bd325917cf3e7b0bfc0b5f062e02dd1cf74412010b8e8777",
+      "bytes": 334599
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round1_16384_1024_c1.log",
-      "bytes": 8527,
-      "sha256": "9a619220a29cda379212d7d2ac335e534bcc1e75d42525201a62e6ed53db4089"
+      "sha256": "9a619220a29cda379212d7d2ac335e534bcc1e75d42525201a62e6ed53db4089",
+      "bytes": 8527
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round1_16384_1024_c64.log",
-      "bytes": 8628,
-      "sha256": "f5e550ac4f70a3163eb41a5bf1c3077a25a539d0a080b58f00d977f35716e2e9"
+      "sha256": "f5e550ac4f70a3163eb41a5bf1c3077a25a539d0a080b58f00d977f35716e2e9",
+      "bytes": 8628
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round1_16384_1024_c8.log",
-      "bytes": 8177,
-      "sha256": "5fa3edacbbf033ac8f67f22ad9223263920e2ee6d758d8749d4c567ddee9085f"
+      "sha256": "5fa3edacbbf033ac8f67f22ad9223263920e2ee6d758d8749d4c567ddee9085f",
+      "bytes": 8177
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round1_4096_1024_c1.log",
-      "bytes": 8524,
-      "sha256": "472ef9e17771925198669a35ed6b73d8d63aab076126514b1829eeb6a1f2aa2b"
+      "sha256": "472ef9e17771925198669a35ed6b73d8d63aab076126514b1829eeb6a1f2aa2b",
+      "bytes": 8524
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round1_4096_1024_c64.log",
-      "bytes": 8185,
-      "sha256": "f1a32d315c932ab39d1be544d8213aed02bf0aae356fc35ae2bdc8e3248a0190"
+      "sha256": "f1a32d315c932ab39d1be544d8213aed02bf0aae356fc35ae2bdc8e3248a0190",
+      "bytes": 8185
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round1_4096_1024_c8.log",
-      "bytes": 8174,
-      "sha256": "52ced9fce6958620d8f6e365715d911374d516f4129a220e3cbb19ae50b757b4"
+      "sha256": "52ced9fce6958620d8f6e365715d911374d516f4129a220e3cbb19ae50b757b4",
+      "bytes": 8174
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round2.jsonl",
-      "bytes": 334602,
-      "sha256": "0abc4ddc2ef93d0d59d0c329ff8a456d9e78a7eb9566b55dfd4a692a9929dbda"
+      "sha256": "0abc4ddc2ef93d0d59d0c329ff8a456d9e78a7eb9566b55dfd4a692a9929dbda",
+      "bytes": 334602
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round2_16384_1024_c1.log",
-      "bytes": 8527,
-      "sha256": "b9056ef7175fd41f768359b460cdf82dfff9a3d71c515fedba9de5803d22c21a"
+      "sha256": "b9056ef7175fd41f768359b460cdf82dfff9a3d71c515fedba9de5803d22c21a",
+      "bytes": 8527
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round2_16384_1024_c64.log",
-      "bytes": 8628,
-      "sha256": "6a89f878f06f67b44efea740818c97ec983c8b06366660d4576d6ace3a4c5cb1"
+      "sha256": "6a89f878f06f67b44efea740818c97ec983c8b06366660d4576d6ace3a4c5cb1",
+      "bytes": 8628
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round2_16384_1024_c8.log",
-      "bytes": 8177,
-      "sha256": "d805c8f7fe541a5e58c2eca16963f9bd677575315e141a08bf277117681d33d7"
+      "sha256": "d805c8f7fe541a5e58c2eca16963f9bd677575315e141a08bf277117681d33d7",
+      "bytes": 8177
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round2_4096_1024_c1.log",
-      "bytes": 8524,
-      "sha256": "2db74032aca195194bb73da4677966b90fd9324836a75c85fc441baf48796523"
+      "sha256": "2db74032aca195194bb73da4677966b90fd9324836a75c85fc441baf48796523",
+      "bytes": 8524
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round2_4096_1024_c64.log",
-      "bytes": 8185,
-      "sha256": "5a7e00fa063a5cba62faeb064fa37d50bce70a0c57efced805cd3b718392cbc1"
+      "sha256": "5a7e00fa063a5cba62faeb064fa37d50bce70a0c57efced805cd3b718392cbc1",
+      "bytes": 8185
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/round2_4096_1024_c8.log",
-      "bytes": 8174,
-      "sha256": "f6336d000f71ae481333b7f9936114b418d5c5e59ff17addffd3d6fa107eddaf"
+      "sha256": "f6336d000f71ae481333b7f9936114b418d5c5e59ff17addffd3d6fa107eddaf",
+      "bytes": 8174
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/runtime-config.json",
-      "bytes": 800,
-      "sha256": "69c26011f7044986c139eea083683eb1604e848e53064748032e27cec25505d8"
+      "sha256": "69c26011f7044986c139eea083683eb1604e848e53064748032e27cec25505d8",
+      "bytes": 800
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/matrix-20261026T022326Z/summary.md",
-      "bytes": 431,
-      "sha256": "568f8c393df707ccb10478aaa21053c4fb8166ee5a215b236ed3559b0ddbe711"
+      "sha256": "568f8c393df707ccb10478aaa21053c4fb8166ee5a215b236ed3559b0ddbe711",
+      "bytes": 431
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/audit.json",
-      "bytes": 900,
-      "sha256": "e69674a19c3d12c48ba8bbc23e4c0492e0a3ca2a24c0ee15ecfb39f8ed95dc99"
+      "sha256": "e69674a19c3d12c48ba8bbc23e4c0492e0a3ca2a24c0ee15ecfb39f8ed95dc99",
+      "bytes": 900
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/protocol.json",
-      "bytes": 265,
-      "sha256": "7e41d72360a09944dcf25e9a2113edeeb8569fc1a65b21067c78ef1bd9a6484e"
+      "sha256": "7e41d72360a09944dcf25e9a2113edeeb8569fc1a65b21067c78ef1bd9a6484e",
+      "bytes": 265
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/round1.jsonl",
-      "bytes": 111509,
-      "sha256": "3d76331133a67ae932bc184f0d273b2c5c8baefa0b0e9d5f764f7a12c621506d"
+      "sha256": "3d76331133a67ae932bc184f0d273b2c5c8baefa0b0e9d5f764f7a12c621506d",
+      "bytes": 111509
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/round1_512_128_c1.log",
-      "bytes": 8517,
-      "sha256": "88ce2d7c3534b539d5a12a7c7541e3b712eada3c631ae251f858bc43af5c1906"
+      "sha256": "88ce2d7c3534b539d5a12a7c7541e3b712eada3c631ae251f858bc43af5c1906",
+      "bytes": 8517
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/round1_512_128_c4.log",
-      "bytes": 8163,
-      "sha256": "a3f0c72f61f40a6ff932e70503158015f201394b648a19d01bd1e342c758ea19"
+      "sha256": "a3f0c72f61f40a6ff932e70503158015f201394b648a19d01bd1e342c758ea19",
+      "bytes": 8163
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/round2.jsonl",
-      "bytes": 111510,
-      "sha256": "2a375c246268e3db801a7c86c8690de54e5595bd37f36af1bcfcf57b261ba72d"
+      "sha256": "2a375c246268e3db801a7c86c8690de54e5595bd37f36af1bcfcf57b261ba72d",
+      "bytes": 111510
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/round2_512_128_c1.log",
-      "bytes": 8517,
-      "sha256": "a055d17fef54572b5276f3c63051745b6f10c074c56f9969fb63e4601d46829a"
+      "sha256": "a055d17fef54572b5276f3c63051745b6f10c074c56f9969fb63e4601d46829a",
+      "bytes": 8517
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/round2_512_128_c4.log",
-      "bytes": 8163,
-      "sha256": "56afb955c49e994801856182af9a30b4a395f3d0dd785d6947f7c6bb6ea65109"
+      "sha256": "56afb955c49e994801856182af9a30b4a395f3d0dd785d6947f7c6bb6ea65109",
+      "bytes": 8163
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/runtime-config.json",
-      "bytes": 800,
-      "sha256": "69c26011f7044986c139eea083683eb1604e848e53064748032e27cec25505d8"
+      "sha256": "69c26011f7044986c139eea083683eb1604e848e53064748032e27cec25505d8",
+      "bytes": 800
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench/smoke-20261026T021937Z/summary.md",
-      "bytes": 209,
-      "sha256": "d62766d53fb010fe9faf1952881d531735e385a90ae56d63017fc3be626b264c"
+      "sha256": "d62766d53fb010fe9faf1952881d531735e385a90ae56d63017fc3be626b264c",
+      "bytes": 209
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/env.sh",
-      "bytes": 2860,
-      "sha256": "274a5963afcfb73275c4c418fd0188ed7c5bc7c4d7c5b0e6c130e12186c68440"
+      "sha256": "b28baa4813d618af7af618ee0489eb38de8454fcd79bf8521baaea6c291a4343",
+      "bytes": 2794
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/env_check.sh",
-      "bytes": 1784,
-      "sha256": "6cece849d6285d4a2a901f725328364bb2b50c17bafd5a5c85b3b3dfff6fcc6c"
+      "sha256": "6cece849d6285d4a2a901f725328364bb2b50c17bafd5a5c85b3b3dfff6fcc6c",
+      "bytes": 1784
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/data-verification.json",
-      "bytes": 894,
-      "sha256": "4bd03127395564e6f608f5414d10614e52d60e55cd1dd3fd1b8cace2cfa8e4b2"
+      "sha256": "4bd03127395564e6f608f5414d10614e52d60e55cd1dd3fd1b8cace2cfa8e4b2",
+      "bytes": 894
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/benchmark-matrix.log",
-      "bytes": 2805,
-      "sha256": "ce476d8e2f6d93fd030c439d9d82a8f849904e8fff37e121494094fd8cd64fe4"
+      "sha256": "ce476d8e2f6d93fd030c439d9d82a8f849904e8fff37e121494094fd8cd64fe4",
+      "bytes": 2805
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/benchmark-smoke.log",
-      "bytes": 1264,
-      "sha256": "8f98ab7c3034f3473584259e19244c28c551a603c94f99d7e10fa7141d5bde8d"
+      "sha256": "8f98ab7c3034f3473584259e19244c28c551a603c94f99d7e10fa7141d5bde8d",
+      "bytes": 1264
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/data-verification.log",
-      "bytes": 1109,
-      "sha256": "1b7d5090bb428ce51c946dd0017909195f9a752f042d86d5060c2fb96b6c9346"
+      "sha256": "1b7d5090bb428ce51c946dd0017909195f9a752f042d86d5060c2fb96b6c9346",
+      "bytes": 1109
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/device-check.log",
-      "bytes": 224,
-      "sha256": "30008e1bc2fefc3c47bfaed7c0857185cace9aab8d2023aec9caf2a4411f0629"
+      "sha256": "30008e1bc2fefc3c47bfaed7c0857185cace9aab8d2023aec9caf2a4411f0629",
+      "bytes": 224
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/environment-capture.log",
-      "bytes": 10324,
-      "sha256": "59c669c2752b490eaaf542caa6b141a9e0ffeaa5d809091e888f2d04a1710f8c"
+      "sha256": "59c669c2752b490eaaf542caa6b141a9e0ffeaa5d809091e888f2d04a1710f8c",
+      "bytes": 10324
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/framework-source-check.json",
-      "bytes": 272,
-      "sha256": "96ade412b17550e1c572b0d0fea917fa9284f1c6a79b8cfb26de7874d3887f3a"
+      "sha256": "96ade412b17550e1c572b0d0fea917fa9284f1c6a79b8cfb26de7874d3887f3a",
+      "bytes": 272
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/launcher.log",
-      "bytes": 1017,
-      "sha256": "935ff3c480364cf7e5c72beb0a563c9ba875bcca100ff6aba4ccc9bd98704245"
+      "sha256": "935ff3c480364cf7e5c72beb0a563c9ba875bcca100ff6aba4ccc9bd98704245",
+      "bytes": 1017
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/public-quality.log",
-      "bytes": 949,
-      "sha256": "c9581e8b9e22fcc08909de5ecb7eeca157c8adb239c0bd65ca5e71b875afb34d"
+      "sha256": "c9581e8b9e22fcc08909de5ecb7eeca157c8adb239c0bd65ca5e71b875afb34d",
+      "bytes": 949
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/quality/manifest.json",
-      "bytes": 1732,
-      "sha256": "dc9382932788a5bade3429442f5595b5700690f5bc3271fc0f406bcfb83af145"
+      "sha256": "dc9382932788a5bade3429442f5595b5700690f5bc3271fc0f406bcfb83af145",
+      "bytes": 1732
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/quality/predictions.jsonl",
-      "bytes": 526934,
-      "sha256": "44a4cefce95ed354116d8683e388566f193ca7b0068762911cff5b3396d30f14"
+      "sha256": "44a4cefce95ed354116d8683e388566f193ca7b0068762911cff5b3396d30f14",
+      "bytes": 526934
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/quality/summary.json",
-      "bytes": 468,
-      "sha256": "7f6dbedd5897855bbb505fd04d8c93f7065f89ccd9be21f582c6809574c2ca0c"
+      "sha256": "7f6dbedd5897855bbb505fd04d8c93f7065f89ccd9be21f582c6809574c2ca0c",
+      "bytes": 468
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/runtime/environment.json",
-      "bytes": 1323,
-      "sha256": "deee7cbe5d7d69065a519b41cf3e03012497d72e5233df06d582bf0c70e0ca88"
+      "sha256": "deee7cbe5d7d69065a519b41cf3e03012497d72e5233df06d582bf0c70e0ca88",
+      "bytes": 1323
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/runtime/runtime-config.json",
-      "bytes": 800,
-      "sha256": "69c26011f7044986c139eea083683eb1604e848e53064748032e27cec25505d8"
+      "sha256": "69c26011f7044986c139eea083683eb1604e848e53064748032e27cec25505d8",
+      "bytes": 800
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/runtime/server-20261026T021736Z.log",
-      "bytes": 940191,
-      "sha256": "45e29666c471e03988f9f31349eb1e7be13bcbecb862d7b527a7b659de68f1fe"
+      "sha256": "45e29666c471e03988f9f31349eb1e7be13bcbecb862d7b527a7b659de68f1fe",
+      "bytes": 940191
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/runtime/weights-check.json",
-      "bytes": 3003,
-      "sha256": "5013b208e9cdaa5ef9d95e9882391ceafb90a691a8348af379dafb8622055df9"
+      "sha256": "5013b208e9cdaa5ef9d95e9882391ceafb90a691a8348af379dafb8622055df9",
+      "bytes": 3003
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke.log",
-      "bytes": 2751,
-      "sha256": "192c04e30e016a632079ed4495459cb5b5faa81cf8c5cea8e9fbe5e3a27c00ab"
+      "sha256": "192c04e30e016a632079ed4495459cb5b5faa81cf8c5cea8e9fbe5e3a27c00ab",
+      "bytes": 2751
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/health.json",
-      "bytes": 108,
-      "sha256": "3107382651253f577c49a6661c7e70e1dc2ae24ed3b66b82de91d7ec324dbf9c"
+      "sha256": "3107382651253f577c49a6661c7e70e1dc2ae24ed3b66b82de91d7ec324dbf9c",
+      "bytes": 108
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/models.json",
-      "bytes": 303,
-      "sha256": "1204c9e708f0767afecc82ebea141d1ede954e198271642647174abd748945ed"
+      "sha256": "1204c9e708f0767afecc82ebea141d1ede954e198271642647174abd748945ed",
+      "bytes": 303
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/multiturn.json",
-      "bytes": 1491,
-      "sha256": "d53c78973934d1059c08fff74b543920b24699debd82f0aa0e74df68e75766f0"
+      "sha256": "d53c78973934d1059c08fff74b543920b24699debd82f0aa0e74df68e75766f0",
+      "bytes": 1491
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/parallel-0.json",
-      "bytes": 1292,
-      "sha256": "a46f74485e21a65f22b2bc72e83552c4b1225178ae2dfd7f9050b6cfe1470eb9"
+      "sha256": "a46f74485e21a65f22b2bc72e83552c4b1225178ae2dfd7f9050b6cfe1470eb9",
+      "bytes": 1292
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/parallel-1.json",
-      "bytes": 1292,
-      "sha256": "f70de49309e8e0c057eb876944b82a05d5a2f06e4ad27193b8fba148402d8806"
+      "sha256": "f70de49309e8e0c057eb876944b82a05d5a2f06e4ad27193b8fba148402d8806",
+      "bytes": 1292
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/parallel-2.json",
-      "bytes": 1292,
-      "sha256": "da830a6003e178726fd9fcbdfbce853ec2a3fa2271db43113a5323dee7aa995a"
+      "sha256": "da830a6003e178726fd9fcbdfbce853ec2a3fa2271db43113a5323dee7aa995a",
+      "bytes": 1292
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/parallel-3.json",
-      "bytes": 1291,
-      "sha256": "bc6e2e3033c73bd518cba04def433ac2718ffdd591e628f7a91807924d0c0492"
+      "sha256": "bc6e2e3033c73bd518cba04def433ac2718ffdd591e628f7a91807924d0c0492",
+      "bytes": 1291
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/simple.json",
-      "bytes": 1287,
-      "sha256": "7eda4713d34e4445b3ac91338eae97d5ec7148db7497a5fbea49a30846371258"
+      "sha256": "7eda4713d34e4445b3ac91338eae97d5ec7148db7497a5fbea49a30846371258",
+      "bytes": 1287
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/stream.json",
-      "bytes": 2549,
-      "sha256": "cf68bf4a0e5a310406ba15a4b30b3890e483226d691399d0467d8810cbaa4757"
+      "sha256": "cf68bf4a0e5a310406ba15a4b30b3890e483226d691399d0467d8810cbaa4757",
+      "bytes": 2549
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/summary.json",
-      "bytes": 3143,
-      "sha256": "5609c1f374e80ba51db81e39ebf5effe49cf329e75f77caebeaaeb12f6fce5c4"
+      "sha256": "5609c1f374e80ba51db81e39ebf5effe49cf329e75f77caebeaaeb12f6fce5c4",
+      "bytes": 3143
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/thinking-stream.json",
-      "bytes": 19565,
-      "sha256": "c10a859acc7f338cb7185a6f14885db450e08a9412e6c5c768eee7bed1934c66"
+      "sha256": "c10a859acc7f338cb7185a6f14885db450e08a9412e6c5c768eee7bed1934c66",
+      "bytes": 19565
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/smoke/thinking.json",
-      "bytes": 1733,
-      "sha256": "cf6be520176dd22ed6db2c39082e2920f7b514a3f3db4240b3f56642a422c539"
+      "sha256": "cf6be520176dd22ed6db2c39082e2920f7b514a3f3db4240b3f56642a422c539",
+      "bytes": 1733
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/status.json",
-      "bytes": 4858,
-      "sha256": "247b42a824d92d4648b4085816bb2e0222f154455e1fd1b53abb4c2a84bff3c6"
+      "sha256": "247b42a824d92d4648b4085816bb2e0222f154455e1fd1b53abb4c2a84bff3c6",
+      "bytes": 4858
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/summarize-results.log",
-      "bytes": 122,
-      "sha256": "68dbdf118a207a1ba47031555e5ccc8070a7aa8b0f393b188da80a11fba35054"
+      "sha256": "68dbdf118a207a1ba47031555e5ccc8070a7aa8b0f393b188da80a11fba35054",
+      "bytes": 122
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/validation-20261026T021625Z/validation-summary.json",
-      "bytes": 5555,
-      "sha256": "ec40f2ca8df0f124650462300ed7cd335ac958c3cfb331848dc41904360173b5"
+      "sha256": "ec40f2ca8df0f124650462300ed7cd335ac958c3cfb331848dc41904360173b5",
+      "bytes": 5555
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/run-scnet.sh",
-      "bytes": 935,
-      "sha256": "cd86468a96dccd2d7ae9cc59c9ebf378ccd8871c9a0ce6631851312ce83e55bb"
+      "sha256": "3e591241b2254740c20d1b572860cef7e8f8ac2e5990f100a10b413a8d87adc8",
+      "bytes": 869
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/run.sh",
-      "bytes": 2459,
-      "sha256": "d94600d08c4d23945c7bc5b25ad4f7d2a88b2630a21c1d434a60535e5a9118d0"
+      "sha256": "d94600d08c4d23945c7bc5b25ad4f7d2a88b2630a21c1d434a60535e5a9118d0",
+      "bytes": 2459
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/audit_bench.py",
-      "bytes": 2877,
-      "sha256": "84620012c8c8e97f08a84da8085cf19c2a199d27c20e6e7ac1eb2d2324e7c339"
+      "sha256": "84620012c8c8e97f08a84da8085cf19c2a199d27c20e6e7ac1eb2d2324e7c339",
+      "bytes": 2877
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/check_weights.py",
-      "bytes": 1609,
-      "sha256": "10b42c6f1cd9df9257a6fdb198cbbe28c0be57a88caf3ff7e0ea84396243056e"
+      "sha256": "10b42c6f1cd9df9257a6fdb198cbbe28c0be57a88caf3ff7e0ea84396243056e",
+      "bytes": 1609
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/download_publisher.py",
-      "bytes": 1741,
-      "sha256": "12a1e697168648dd1e28c7d5425854306fc88dce36ce7c048d186570a52e4a9f"
+      "sha256": "12a1e697168648dd1e28c7d5425854306fc88dce36ce7c048d186570a52e4a9f",
+      "bytes": 1741
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/files.json",
-      "bytes": 7397,
-      "sha256": "4c18923fef4e6652c8af3f08a355c5b6be9ccbb5a3d7e83677b949691a023e4c"
+      "sha256": "4c18923fef4e6652c8af3f08a355c5b6be9ccbb5a3d7e83677b949691a023e4c",
+      "bytes": 7397
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/finalize_scnet_report.py",
-      "bytes": 8735,
-      "sha256": "9a42e650c53d3165bae725ee5f51bd13f801e3b0f033a1e13fa738b8e36a28ea"
+      "sha256": "9a42e650c53d3165bae725ee5f51bd13f801e3b0f033a1e13fa738b8e36a28ea",
+      "bytes": 8735
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/prepare_data.py",
-      "bytes": 3644,
-      "sha256": "cd695cd2baf7aefc65ad43d89b7ba254c20049551c3facecfe7e43591ce86f82"
+      "sha256": "cd695cd2baf7aefc65ad43d89b7ba254c20049551c3facecfe7e43591ce86f82",
+      "bytes": 3644
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/prepare_scnet_eval.py",
-      "bytes": 2484,
-      "sha256": "2dfac3e5d8751934617fda3b483f440ec92ffd11cb84124ab2540e7f9c350889"
+      "sha256": "2dfac3e5d8751934617fda3b483f440ec92ffd11cb84124ab2540e7f9c350889",
+      "bytes": 2484
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/public_eval.py",
-      "bytes": 5499,
-      "sha256": "19ea84fdf23729c8a12ee1072628b4df595e738ad04fb7347dbdba4d24aa5247"
+      "sha256": "19ea84fdf23729c8a12ee1072628b4df595e738ad04fb7347dbdba4d24aa5247",
+      "bytes": 5499
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/run_scnet_validation.py",
-      "bytes": 7893,
-      "sha256": "bfb77d6b2a5c0b91e3fd4a4f1a64b8c2ade60d989c60bbb0a991bb8d9f30cf6b"
+      "sha256": "bfb77d6b2a5c0b91e3fd4a4f1a64b8c2ade60d989c60bbb0a991bb8d9f30cf6b",
+      "bytes": 7893
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/smoke.py",
-      "bytes": 5230,
-      "sha256": "5ba98d6c14f90bc93edf36970145285aee8330734d5b304102d2f6e925ccc2b3"
+      "sha256": "5ba98d6c14f90bc93edf36970145285aee8330734d5b304102d2f6e925ccc2b3",
+      "bytes": 5230
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/summarize_scnet.py",
-      "bytes": 7644,
-      "sha256": "94437c6c3c093a5cf0e8518b43f6110326234bd03cca019d1fd20db43da0d20d"
+      "sha256": "94437c6c3c093a5cf0e8518b43f6110326234bd03cca019d1fd20db43da0d20d",
+      "bytes": 7644
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/sources/evaluation-files.json",
-      "bytes": 646,
-      "sha256": "a5b59569e4d155b4ea449c1e1de012a9cad006e88a46a4c45526adc9e637ca93"
+      "sha256": "a5b59569e4d155b4ea449c1e1de012a9cad006e88a46a4c45526adc9e637ca93",
+      "bytes": 646
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/sources/image-reference-correction.json",
+      "sha256": "e8c1153289a718e0999686eadd726b58baeb20210c34c1bb4fdc2710ef89d7ee",
+      "bytes": 444
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/sources/modelscope-files.json",
-      "bytes": 7397,
-      "sha256": "4c18923fef4e6652c8af3f08a355c5b6be9ccbb5a3d7e83677b949691a023e4c"
+      "sha256": "4c18923fef4e6652c8af3f08a355c5b6be9ccbb5a3d7e83677b949691a023e4c",
+      "bytes": 7397
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/sources/publisher-readme.md",
-      "bytes": 3030,
-      "sha256": "09f915ac8116db54ca78586cfdf9ddb14209cba1ca23561a202f38039eac95ca"
+      "sha256": "09f915ac8116db54ca78586cfdf9ddb14209cba1ca23561a202f38039eac95ca",
+      "bytes": 3030
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/sources/report-image-status.json",
+      "sha256": "dc28b25174417d91034b837cad68743795ccb94b3d73b0d4b1d33d78758028ac",
+      "bytes": 421
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/stop.sh",
-      "bytes": 1165,
-      "sha256": "78ac06a8f6c64bc912272cc31b608450ab72aea5ed3e769a61521b19ecd3013e"
+      "sha256": "78ac06a8f6c64bc912272cc31b608450ab72aea5ed3e769a61521b19ecd3013e",
+      "bytes": 1165
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/verify.py",
-      "bytes": 661,
-      "sha256": "8509996dae8d734f8b3548918dc95ebe8f8a55025a6414878afb4cc9f9731ed8"
+      "sha256": "8509996dae8d734f8b3548918dc95ebe8f8a55025a6414878afb4cc9f9731ed8",
+      "bytes": 661
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/verify_result.json",
-      "bytes": 845,
-      "sha256": "18eb51a3e23d1c8cfd3dfbf390ce306f00b9eef28001a63e879bbe4b6f1915c1"
+      "sha256": "18eb51a3e23d1c8cfd3dfbf390ce306f00b9eef28001a63e879bbe4b6f1915c1",
+      "bytes": 845
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/优化说明.md",
-      "bytes": 450,
-      "sha256": "37a3e85021600c90912981c4ea6b5e1460a21e16240fc6d063137df7c3d7e7fc"
+      "sha256": "37a3e85021600c90912981c4ea6b5e1460a21e16240fc6d063137df7c3d7e7fc",
+      "bytes": 450
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/提交填写信息.md",
-      "bytes": 924,
-      "sha256": "8c1c81d02740094cdff139c39ab869a8541920af98e28c2b2fdab378c7757fa0"
+      "sha256": "986e4b6c029f5ca007746240e7669e78510bf7c1b16cfd6d0434017744679d64",
+      "bytes": 1569
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",
-      "bytes": 2739,
-      "sha256": "16712145c24af2df1de0213346f1b18488ac173d25da3ed2e1cfcd07f29cb4cd"
+      "sha256": "16712145c24af2df1de0213346f1b18488ac173d25da3ed2e1cfcd07f29cb4cd",
+      "bytes": 2739
     },
     {
       "path": "platform/scnet-notebook/env-scnet.sh",
-      "bytes": 848,
-      "sha256": "1b1768582ba3d0223dc248f87bde485af4d0ef5a0c214c922cbd989d5b79dbc8"
+      "sha256": "1b1768582ba3d0223dc248f87bde485af4d0ef5a0c214c922cbd989d5b79dbc8",
+      "bytes": 848
     }
   ]
 }

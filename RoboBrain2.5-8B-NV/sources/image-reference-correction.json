@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-27",
+  "invalid_recorded_digest": "sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f",
+  "reason": "65 hexadecimal characters; invalid SHA256 digest, not a verified registry digest.",
+  "base_image_tag": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18",
+  "verified_registry_digest": null,
+  "historical_runtime_records": "Preserved unchanged; the old digest field is not authoritative."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "Qwen-Image-2.1-Turbo",
+  "image": "appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-image21-turbo:1.0.0",
+  "version": "1.0.0",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2114893402085822465/versions",
+  "region": "华中一区（A区）",
+  "digest": null,
+  "verification_scope": "专用镜像已完成新 Notebook 复验",
+  "visibility": "私有，提交时开放"
+}

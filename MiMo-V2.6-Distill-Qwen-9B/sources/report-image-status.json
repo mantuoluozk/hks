@@ -1,0 +1,10 @@
+{
+  "model": "MiMo-V2.6-Distill-Qwen-9B",
+  "image": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18",
+  "version": "0.5.18",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177",
+  "region": "华中一区（A区）",
+  "digest": null,
+  "verification_scope": "基础镜像上实测；新 Notebook 完整性能复验待补",
+  "visibility": "公开访问状态待提交时核对"
+}

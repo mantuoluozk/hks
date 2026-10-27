@@ -1,14 +1,41 @@
-# Recon2Reason-Reasoning-4B on BW + SGLang 0.5.18
+# Recon2Reason-Reasoning-4B · BW × SGLang 技术报告
 
 ## 1. 简介
 
+<!-- report-resources:start -->
+- [SCNet 模型来源](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Recon2Reason-Reasoning-4B)
+- [发布者模型说明](https://huggingface.co/BAAI/Recon2Reason-Reasoning-4B)
+- [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177)
+- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Recon2Reason-Reasoning-4B/`
+- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/Recon2Reason-Reasoning-4B)
+
+| 验证项 | 当前结果 |
+|---|---|
+| 功能 | 5/5 |
+| 公开精度自评 | OCRBench 463/1000；MMMU 437/900 |
+| 首次性能与复现 | 12 轮、608 请求 |
+| 镜像验证范围 | 基础镜像上实测；未完成模型专用新镜像复验 |
+| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+<!-- report-resources:end -->
+
 本项目完成 `BAAI/Recon2Reason-Reasoning-4B` 在超算互联网单张 BW 加速卡上的 SGLang BF16 部署与验证。模型采用标准 Qwen3-VL 架构，约 4.44B 参数，支持单图、多图和空间推理。
 
-- [模型下载](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Recon2Reason-Reasoning-4B)
-- [模型官方说明](https://huggingface.co/BAAI/Recon2Reason-Reasoning-4B)
-- [SCNet 镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177)
 
-## 2. 验证环境
+## 2. 环境
+
+<!-- report-environment:start -->
+| 环境项 | 配置 |
+|---|---|
+| 平台 / 区域 | SCNet Notebook / 华中一区（A区） |
+| 加速卡 / 精度 | BW × 1 / BF16；设备与运行参数见下文 |
+| 框架 | SGLang；实际组件版本见下文 |
+| 镜像用途 | 共用基础镜像 |
+| 镜像版本 | `0.5.18` |
+| 镜像地址 | `image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18` |
+| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
+| 访问状态 | 公开访问状态待提交时核对 |
+| 镜像复验 | 基础镜像上实测；未完成模型专用新镜像复验 |
+<!-- report-environment:end -->
 
 SCNet Notebook，BW × 1，65520 MiB、80 CU；Ubuntu 22.04.5，驱动 6.3.31-V1.5.3.beta，Python 3.10，DTK 26.04，HIP 6.3.26113。部署精度为 BF16，TP=1，服务地址 `127.0.0.1:30123`。
 
@@ -23,11 +50,11 @@ SCNet Notebook，BW × 1，65520 MiB、80 CU；Ubuntu 22.04.5，驱动 6.3.31-V1
 
 镜像：`image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18`
 
-镜像摘要：`sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f`
+镜像摘要：待核实（旧记录摘要长度有误，不能作为固定镜像引用）
 
 环境记录见 `env.log`。模型通过 SCNet AI 社区克隆获取，权重路径为 `/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B`。13 个关键文件通过 SHA256 校验，未修改权重、结构、tokenizer 或采样语义。
 
-## 3. 适配优化方案
+## 3. 适配与配置
 
 直接使用镜像内推理框架和依赖，无额外模型运行包升级，无模型或框架算子补丁。
 
@@ -35,7 +62,7 @@ SCNet Notebook，BW × 1，65520 MiB、80 CU；Ubuntu 22.04.5，驱动 6.3.31-V1
 
 运行脚本加载 DTK 和驱动环境，使用 `/usr/bin/python` 与逻辑设备 0。完整参数见 `env.sh` 和 `results/scnet/runtime-config.json`。
 
-## 4. 服务启动脚本
+## 4. 启动与复现
 
 ```bash
 bash run.sh
@@ -49,7 +76,7 @@ python -m sglang.launch_server --model-path /root/private_data/SothisAI/model/Ai
 
 模型路径可通过 `MODEL_PATH` 覆盖；服务启动后轮询 `/health`，启动日志写入 `server.log`。
 
-## 5. Smoke 测试
+## 5. 功能测试
 
 ```bash
 bash smoke.sh
@@ -80,7 +107,7 @@ bash smoke.sh
 
 模型官方尚未公布可比的 OCRBench/MMMU 数值基线，本节为公开数据集实测，暂不计算相对官方基线的劣化。汇总见 `verify_result.json`；逐题记录、评分结果和运行 manifest 见 `results/scnet/public-accuracy-20261025T115032Z/`。
 
-## 7. 性能参考
+## 7. 首次性能
 
 单卡执行 4K/16K 输入 × 1K 输出 × 并发 1/8/64 的六档负载，每档连续两轮，第一轮预热、第二轮计入。每请求一张 1080p 图像，请求数为并发的两倍且至少为 8。12 轮共 608 个请求，均完成并通过固定输出 token 数校验。
 
@@ -95,7 +122,7 @@ bash smoke.sh
 
 原始两轮 JSONL、日志、配置及汇总见 `bench/matrix-20261025T104835Z/`。本次结果作为首版性能基准，后续优化在同卡型、同框架、同负载下对比。
 
-## 8. 注意事项
+## 8. 复现与限制
 
 以下命令在模型目录执行。首次部署时，将本模型目录放到 `/root/private_data/hks/models/Recon2Reason-Reasoning-4B`，并部署随代码提供的运行环境脚本：
 

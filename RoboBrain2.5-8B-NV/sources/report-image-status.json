@@ -1,0 +1,10 @@
+{
+  "model": "RoboBrain2.5-8B-NV",
+  "image": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18",
+  "version": "0.5.18",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177",
+  "region": "华中一区（A区）",
+  "digest": null,
+  "verification_scope": "基础镜像 + 启动时源码补丁；未构建烘焙补丁的专用镜像",
+  "visibility": "公开访问状态待提交时核对"
+}

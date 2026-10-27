@@ -2,9 +2,39 @@
 
 ## 1. 简介
 
+<!-- report-resources:start -->
+- [SCNet 模型来源](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Trident-Qwen3VL-2B)
+- [发布者模型说明](https://huggingface.co/OpenBMB/Trident-Qwen3VL-2B)
+- [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)
+- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Trident-Qwen3VL-2B/`
+- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/Trident-Qwen3VL-2B)
+
+| 验证项 | 当前结果 |
+|---|---|
+| 功能 | 6 条多模态输入及 HTTP embedding |
+| 公开精度自评 | ChartQA Origin NDCG@10 ×100 = 69.4483 |
+| 首次性能与复现 | 每进程 1536 请求；复跑最大偏差 3.88% |
+| 镜像验证范围 | 复用 ASR 镜像与随仓库 Python 依赖；同 Notebook 两个独立进程验证 |
+| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+<!-- report-resources:end -->
+
 T02 混合模态检索嵌入模型，输入文本、图片或图文融合内容，输出 2048 维 L2 归一化向量。使用 [SCNet AI 社区模型](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Trident-Qwen3VL-2B)，13 个运行文件逐项 SHA256 校验通过。BF16 权重 4,255,140,312 字节，SHA256 `984c6dad40e50c68497764e363b4980634a3c82ea9396d395e81e0668e62ea2f`；未替换模型参数，LoRA 已由发布者合并。许可与固定来源见 `sources/`。
 
 ## 2. 环境
+
+<!-- report-environment:start -->
+| 环境项 | 配置 |
+|---|---|
+| 平台 / 区域 | SCNet Notebook / 华中一区（A区） |
+| 加速卡 / 精度 | BW × 1 / BF16；设备与运行参数见下文 |
+| 框架 | vLLM；实际组件版本见下文 |
+| 镜像用途 | ASR 专用镜像；其他模型按报告复用 |
+| 镜像版本 | `v1` |
+| 镜像地址 | `appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1` |
+| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
+| 访问状态 | 私有，提交时开放 |
+| 镜像复验 | 复用 ASR 镜像与随仓库 Python 依赖；同 Notebook 两个独立进程验证 |
+<!-- report-environment:end -->
 
 SCNet Notebook，华中一区（A区），单张 BW、64GB / 80 CU、逻辑设备 0，gfx936。Python 3.10.12；实际版本：
 
@@ -24,7 +54,7 @@ SCNet Notebook，华中一区（A区），单张 BW、64GB / 80 CU、逻辑设�
 
 query 指令为 `Represent the query for retrieving relevant content.`，doc 指令为 `Represent the candidate content for retrieval.`；以 system 角色注入，图像在用户文本之前，保留 assistant generation prefix，对最后有效 token 池化。图像 min/max pixels 为 262144 / 1310720。原始发布者实现与解析、格式化及评分代码固定在 `OpenBMB/Trident@7fbf4b2033e1b3a43a99185fc125d765a549c52d`。保留原始文件，未将上游 CUDA 依赖清单直接安装到 DTK 环境。
 
-## 4. 启动脚本
+## 4. 启动与复现
 
 代码部署在 `/root/private_data/hks/models/Trident-Qwen3VL-2B`，配套 `platform/scnet-notebook` 环境脚本放在项目根目录；Notebook 已是容器。权重采用 `run-scnet.sh` 默认社区目录，或通过 `MODEL_PATH` 指定完整权重路径。
 

@@ -2,9 +2,39 @@
 
 ## 1. 简介
 
+<!-- report-resources:start -->
+- [SCNet 模型来源](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen3-ForcedAligner-0.6B)
+- [发布者模型说明](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B)
+- [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)
+- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Qwen3-ForcedAligner-0.6B/`
+- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/Qwen3-ForcedAligner-0.6B)
+
+| 验证项 | 当前结果 |
+|---|---|
+| 功能 | 中英文 2/2 |
+| 公开精度自评 | 尚无可对齐的自测 AAS 成绩 |
+| 首次性能与复现 | 每进程 512 请求；复跑最大偏差 7.18% |
+| 镜像验证范围 | 复用 ASR 镜像；同 Notebook 两个独立进程验证 |
+| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+<!-- report-resources:end -->
+
 T04 强制对齐，模型为 `Qwen/Qwen3-ForcedAligner-0.6B`，输入音频及对应文本，输出词 / 字级起止时间。权重来自 [SCNet AI 社区](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen3-ForcedAligner-0.6B)，9 个运行文件逐项 SHA256 校验通过；单文件 BF16 权重 1,835,544,544 字节，SHA256 为 `47831d0e82f96b20e9034dba01a075ee06436654719f6a68289e49f1b65ce0e7`。社区说明文件不计入运行文件匹配。完整清单与实际校验见 `sources/modelscope-files.json` 和 `results/scnet/validation-20261026T094057Z/runtime/weights-check.json`。
 
 ## 2. 环境
+
+<!-- report-environment:start -->
+| 环境项 | 配置 |
+|---|---|
+| 平台 / 区域 | SCNet Notebook / 华中一区（A区） |
+| 加速卡 / 精度 | BW × 1 / BF16；设备与运行参数见下文 |
+| 框架 | vLLM；实际组件版本见下文 |
+| 镜像用途 | ASR 专用镜像；其他模型按报告复用 |
+| 镜像版本 | `v1` |
+| 镜像地址 | `appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1` |
+| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
+| 访问状态 | 私有，提交时开放 |
+| 镜像复验 | 复用 ASR 镜像；同 Notebook 两个独立进程验证 |
+<!-- report-environment:end -->
 
 SCNet Notebook，华中一区（A区），单张 BW，逻辑设备 0；HIP 6.3.26113。实际包版本：
 
@@ -26,7 +56,7 @@ SCNet Notebook，华中一区（A区），单张 BW，逻辑设备 0；HIP 6.3.2
 
 分类头含 5000 档，每档 80ms。只在 `<timestamp>` 位置取分类 argmax，按模型配置换算毫秒，再执行发布者原始 `fix_timestamp` / `parse_timestamp`，最终输出秒。原始分类档位和后处理结果同时保留。
 
-## 4. 启动脚本
+## 4. 启动与复现
 
 本版为离线强制对齐 CLI，不使用生成式聊天接口。将模型目录部署到 `/root/private_data/hks/models/Qwen3-ForcedAligner-0.6B`，配套平台目录放到 `/root/private_data/hks/platform/scnet-notebook`。Notebook 已是容器，不嵌套 Docker。完整社区权重放在 `run-scnet.sh` 默认路径，或显式设置 `MODEL_PATH`。
 

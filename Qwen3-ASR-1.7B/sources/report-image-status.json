@@ -1,0 +1,10 @@
+{
+  "model": "Qwen3-ASR-1.7B",
+  "image": "appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1",
+  "version": "v1",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions",
+  "region": "华中一区（A区）",
+  "digest": null,
+  "verification_scope": "专用镜像已完成新 Notebook 复验",
+  "visibility": "私有，提交时开放"
+}

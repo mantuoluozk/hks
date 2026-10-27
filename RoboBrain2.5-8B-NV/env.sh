@@ -5,7 +5,7 @@ if mountpoint -q /root/private_data && [ -f "${HKS_ROOT:-/root/private_data/hks}
     export PATH="/usr/bin:$PATH"
     export EXECUTION_PLATFORM="SCNet Notebook"
     export MODEL_PATH="${MODEL_PATH:-/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV}"
-    export IMAGE="${IMAGE:-image.ac.com:5000/dcu/zack233/base/sglang-jupyter@sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f}"
+    export IMAGE="${IMAGE:-image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18}"
     export CARD="${CARD:-BW}"
     export HIP_VISIBLE_DEVICES="${HIP_VISIBLE_DEVICES:-0}"
     export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1

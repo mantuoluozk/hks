@@ -1,0 +1,10 @@
+{
+  "model": "Recon2Reason-Reasoning-4B",
+  "image": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18",
+  "version": "0.5.18",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177",
+  "region": "华中一区（A区）",
+  "digest": null,
+  "verification_scope": "基础镜像上实测；未完成模型专用新镜像复验",
+  "visibility": "公开访问状态待提交时核对"
+}

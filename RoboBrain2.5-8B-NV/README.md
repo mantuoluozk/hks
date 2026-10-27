@@ -1,15 +1,41 @@
-# RoboBrain2.5-8B-NV on BW + SGLang 0.5.18
+# RoboBrain2.5-8B-NV · BW × SGLang 技术报告
 
 ## 1. 简介
 
+<!-- report-resources:start -->
+- [SCNet 模型来源](https://www.scnet.cn/ui/aihub/models/sugon_scnet/RoboBrain2.5-8B-NV)
+- [发布者模型说明](https://huggingface.co/BAAI/RoboBrain2.5-8B-NV)
+- [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177)
+- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `RoboBrain2.5-8B-NV/`
+- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/RoboBrain2.5-8B-NV)
+
+| 验证项 | 当前结果 |
+|---|---|
+| 功能 | 8/8 |
+| 公开精度自评 | CV-Bench 2638 题，88.10% |
+| 首次性能与复现 | 12 轮、608 请求；完整矩阵独立复跑待补 |
+| 镜像验证范围 | 基础镜像 + 启动时源码补丁；未构建烘焙补丁的专用镜像 |
+| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+<!-- report-resources:end -->
+
 本项目完成 `BAAI/RoboBrain2.5-8B-NV` 在超算互联网单张 BW 加速卡上的 SGLang BF16 serving 适配。模型采用 Qwen3-VL 架构，支持文本、单图、多图输入，以及文本、坐标和轨迹输出；机器人实机任务不在本次部署范围。
 
-- [模型下载](https://www.scnet.cn/ui/aihub/models/sugon_scnet/RoboBrain2.5-8B-NV)
-- [发布者模型说明](https://huggingface.co/BAAI/RoboBrain2.5-8B-NV)
-- [SCNet 镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114287084172722177)
-- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks)，模型目录 `RoboBrain2.5-8B-NV/`。
 
-## 2. 验证环境
+## 2. 环境
+
+<!-- report-environment:start -->
+| 环境项 | 配置 |
+|---|---|
+| 平台 / 区域 | SCNet Notebook / 华中一区（A区） |
+| 加速卡 / 精度 | BW × 1 / BF16；设备与运行参数见下文 |
+| 框架 | SGLang；实际组件版本见下文 |
+| 镜像用途 | 共用基础镜像 |
+| 镜像版本 | `0.5.18` |
+| 镜像地址 | `image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18` |
+| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
+| 访问状态 | 公开访问状态待提交时核对 |
+| 镜像复验 | 基础镜像 + 启动时源码补丁；未构建烘焙补丁的专用镜像 |
+<!-- report-environment:end -->
 
 SCNet Notebook，BW × 1，65520 MiB、80 CU、gfx936，逻辑设备 0，TP=1、BF16。Ubuntu 22.04.5，驱动 6.3.31-V1.5.3.beta，Python 3.10.12、DTK 26.04、HIP 6.3.26113。
 
@@ -26,11 +52,11 @@ SCNet Notebook，BW × 1，65520 MiB、80 CU、gfx936，逻辑设备 0，TP=1、
 
 基础镜像：`image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18`。
 
-固定摘要：`sha256:98dca2a455d62b758a2455e674fb480bc39ac236a2b3b472de8a1525743ec8a3f`。启动时自动重放第 3 节的固定源码补丁；未额外安装或升级推理依赖包。
+固定摘要：待核实（旧记录摘要长度有误，不能作为固定镜像引用）。启动时自动重放第 3 节的固定源码补丁；未额外安装或升级推理依赖包。
 
 权重通过 SCNet AI 社区克隆获取，路径 `/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV`。13 个关键模型文件通过固定 SHA256 校验；说明文件和仓库属性文件不参与运行文件一致性校验。权重、结构、tokenizer 和图像处理配置未修改。环境及校验记录见 `env.log`、`results/scnet/runtime/`。
 
-## 3. 适配优化方案
+## 3. 适配与配置
 
 使用 Triton 文本注意力、SDPA 视觉注意力、确定性推理；上下文长度 32768，静态显存比例 0.75，最大运行请求数 64，chunked prefill 4096；完整解码图最大批次 32，关闭预填充图。
 
@@ -40,7 +66,7 @@ SCNet Notebook，BW × 1，65520 MiB、80 CU、gfx936，逻辑设备 0，TP=1、
 
 矩阵核检查中，BF16 GEMM 对 FP32 参考相对 L2 误差为 0.00166328，首行跨 batch 大小逐字节一致；BF16/FP32 BMM 数值及首批次一致性检查通过，记录见 `results/scnet/runtime/deterministic-gemm-check.json`。这些检查不能替代模型级 GPU 精度验收。
 
-## 4. 服务启动脚本
+## 4. 启动与复现
 
 ```bash
 bash run-scnet.sh
@@ -54,7 +80,7 @@ python -m sglang.launch_server --model-path /root/private_data/SothisAI/model/Ai
 
 `MODEL_PATH` 可覆盖。日志、PID 和实际参数写入 `results/scnet/runtime/`；`stop.sh` 仅停止 PID、模型路径、服务名称和端口均匹配的本模型服务。
 
-## 5. Smoke 测试
+## 5. 功能测试
 
 `/health` 返回 200，`/v1/models` 包含 `robobrain25-8b`。8 项功能和诊断检查全部通过：
 
@@ -85,7 +111,7 @@ T02 具身 serving 验收要求在公示图像（含深度图）输入集上，�
 
 本轮精度运行保留 BF16、确定性推理及 checkpoint 图像处理器，静态显存比例调整为 0.5，为高分辨率视觉临时矩阵留出空间，实际配置单独记录。
 
-## 7. 性能参考
+## 7. 首次性能
 
 本节保留首版 `robobrain-bw-sglang-v1.0.0` 在静态显存比例 0.75、框架补丁 SHA256 `9668a00e1f8d068d3528c5f6fea55b7ec6994259ebf42fc2edf031525aa87a1b` 下的实测。本轮修复和精度配置尚未重跑此矩阵。
 
@@ -104,7 +130,7 @@ T02 具身 serving 验收要求在公示图像（含深度图）输入集上，�
 
 原始两轮 JSONL、逐档日志、参数和审计见 `bench/scnet-matrix-20261025T134821Z/`。本次结果作为平台首版性能基准，后续优化在相同卡型、框架和负载下比较。
 
-## 8. 注意事项
+## 8. 复现与限制
 
 在 SCNet Notebook 的共享存储中部署本模型目录，以及随代码提供的 `platform/scnet-notebook/env-scnet.sh`：
 

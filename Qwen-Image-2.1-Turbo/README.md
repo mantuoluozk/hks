@@ -2,6 +2,22 @@
 
 ## 1. 简介
 
+<!-- report-resources:start -->
+- [SCNet 模型来源](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen-Image-2.1-Turbo)
+- [发布者模型说明](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo)
+- [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114893402085822465/versions)
+- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Qwen-Image-2.1-Turbo/`
+- [GitHub 模型代码](https://github.com/mantuoluozk/hks/tree/main/models/Qwen-Image-2.1-Turbo)
+
+| 验证项 | 当前结果 |
+|---|---|
+| 功能 | 两个独立进程各 8/8 |
+| 公开精度自评 | CLIP score / FID 待官方评测 |
+| 首次性能与复现 | 每进程 9 实测 + 3 预热；复跑最大偏差 17.09% |
+| 镜像验证范围 | 专用镜像已完成新 Notebook 复验 |
+| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+<!-- report-resources:end -->
+
 当前阶段：专用镜像 1.0.0 已在新 Notebook 完成环境预检——镜像内 1093 个构建文件、10 个 wheel 的 4,881 个安装文件 SHA256 全部通过，依赖导入路径与服务 launcher 同构建记录一致；两个独立服务进程各自执行相同的 8 项功能检查，两轮全部通过；自测性能两轮复测，三档最大偏差 17.09%，未超过 20% 复现门槛。正式 T03 精度尚未下发，`official_accuracy_pass=null`，本报告不宣称官方验收通过。
 
 正式 T03 图像指标为公示 prompt/条件集上的 CLIP score/FID 子集，对照 GPU 参考劣化 ≤2%；固定 seed 或肉眼观察不能替代该精度验收。
@@ -10,11 +26,35 @@
 
 ## 2. 环境
 
+<!-- report-environment:start -->
+| 环境项 | 配置 |
+|---|---|
+| 平台 / 区域 | SCNet Notebook / 华中一区（A区） |
+| 加速卡 / 精度 | BW × 1 / BF16；设备与运行参数见下文 |
+| 框架 | SGLang；实际组件版本见下文 |
+| 镜像用途 | Qwen-Image 专用镜像 |
+| 镜像版本 | `1.0.0` |
+| 镜像地址 | `appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-image21-turbo:1.0.0` |
+| 固定摘要 | 待提交前补充；未使用未经核验的摘要 |
+| 访问状态 | 私有，提交时开放 |
+| 镜像复验 | 专用镜像已完成新 Notebook 复验 |
+<!-- report-environment:end -->
+
 SCNet Notebook，华中一区（A区），单张 BW、gfx936、80 CU、总显存 68,702,699,520 字节；Python 3.10.12。专用镜像为 `appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-image21-turbo:1.0.0`，版本 1.0.0，保持私有，固定摘要待提交前补充，[镜像版本页](https://www.scnet.cn/ui/aihub/image/zack233/2114893402085822465/versions)。
 
 新 Notebook 预检通过：镜像内 1093 个构建文件、10 个 wheel 对应的 4,881 个安装文件 SHA256 校验全部通过；实际依赖导入路径与镜像构建记录一致，服务 launcher 与构建时相同。预检记录及环境证明见 `results/scnet/image-1.0.0-preflight/summary.json`。
 
 厂商 Torch distribution 版本为 `2.11.0+dtk2604.2609201441.gf74cd7`；SGLang 0.5.18。隔离使用 Transformers 5.17.0、tokenizers 0.23.1，以及兼容 Python 3.10 的 Diffusers 提交 `ea981b8b7d80f10deaff369bcda8cbf2c90428dd`（0.41.0.dev0），不覆盖厂商框架。版本及实际导入路径见 `results/scnet/image-1.0.0-preflight/summary.json`。
+
+<!-- report-components:start -->
+| 组件 | 版本 |
+|---|---|
+| PyTorch（distribution） | 2.11.0+dtk2604.2609201441.gf74cd7 |
+| SGLang | 0.5.18 |
+| Transformers（隔离） | 5.17.0 |
+| tokenizers（隔离） | 0.23.1 |
+| Diffusers（隔离） | 0.41.0.dev0；提交 ea981b8b7d80f10deaff369bcda8cbf2c90428dd |
+<!-- report-components:end -->
 
 ## 3. 适配与配置
 
@@ -22,7 +62,7 @@ SGLang 使用 generic Diffusers 后端，未声明原生优化算子或性能提
 
 单卡 BF16、CPU 数学库线程 4、CPU Generator、seed=42、true_cfg_scale=1、use_kv_cache=true，保留 checkpoint 内置 8 个 sample_sigmas。SGLang 当前自动策略关闭 DiT CPU 卸载，保留文本编码器 CPU 卸载；两轮性能使用同一策略。完整配置见 `runtime-config.json`。
 
-## 4. 启动脚本
+## 4. 启动与复现
 
 代码放在 `/root/private_data/hks/models/Qwen-Image-2.1-Turbo`，配套项目根目录 `platform/scnet-notebook` 环境脚本；Notebook 已是容器。权重路径使用包装器默认社区目录，或设置 MODEL_PATH。
 

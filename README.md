@@ -1,19 +1,23 @@
-# 国芯国模黑客松
+# 国芯国模 · BW 模型适配
 
-## 模型目录
+七个模型的 SCNet BW 单卡 BF16 技术报告、复现代码与原始测试证据。公开自评、功能、性能和官方验收分别记录。
 
-| 模型 | 环境 | 技术报告 | 功能与性能 | 精度实测 |
+| 模型 | 框架 | 功能 | 公开精度自评 | 首次性能与复现 |
 |---|---|---|---|---|
-| Recon2Reason-Reasoning-4B | BW × 1 / SGLang 0.5.18 / BF16 | [README](Recon2Reason-Reasoning-4B/README.md) | 5/5 Smoke；12 轮、608 请求完成 | OCRBench 463/1000；MMMU 437/900 |
-| RoboBrain2.5-8B-NV | BW × 1 / SGLang 0.5.18 / BF16 | [README](RoboBrain2.5-8B-NV/README.md) | 8/8 Smoke；12 轮、608 请求完成 | 公开 CV-Bench 全量 88.10（参考 94.58，差 -6.48 pt）；官方 GPU 动作/坐标一致率单列未判定 |
-| MiMo-V2.6-Distill-Qwen-9B | BW × 1 / SGLang 0.5.18 / BF16 | [README](MiMo-V2.6-Distill-Qwen-9B/README.md) | 11/11 Smoke；12轮608请求 | 固定公开样本GSM8K 179/200、MMLU 160/200；正式精度待官方代码复验 |
-| Qwen3-ASR-1.7B | BW × 1 / vLLM 0.25.1 / BF16 | [README](Qwen3-ASR-1.7B/README.md) | 在线6/6、PCM4/4；性能8项128请求；镜像复验最大偏差7.28% | 完整 test-clean 2620条 WER 1.6501%，零错误零截断；正式精度待官方代码 |
-| Qwen3-ForcedAligner-0.6B | BW × 1 / vLLM 0.25.1 / BF16 | [README](Qwen3-ForcedAligner-0.6B/README.md) | 中英文2/2；每进程8项512请求；独立进程复现最大偏差7.18% | 正式AAS待官方代码；批次8存在80ms边界差异 |
-| Trident-Qwen3VL-2B | BW × 1 / vLLM 0.25.1 / BF16 | [README](Trident-Qwen3VL-2B/README.md) | 多模态6条及HTTP embedding通过；每进程24格1536请求；复跑偏差3.88% | 完整ChartQA Origin 1250查询/1509图表，NDCG@10 69.4483（论文70.19）；正式精度待官方验收 |
-| Qwen-Image-2.1-Turbo | BW × 1 / SGLang 0.5.18 generic Diffusers / BF16 | [README](Qwen-Image-2.1-Turbo/README.md) | 专用镜像1.0.0新Notebook复验；每进程8项功能；三档性能复跑最大偏差17.09%；报告附生成/编辑样例图 | 正式CLIP/FID及GPU参考待官方评测代码 |
+| [Recon2Reason-Reasoning-4B](Recon2Reason-Reasoning-4B/README.md) | SGLang | 5/5 | OCRBench 463/1000；MMMU 437/900 | 12 轮、608 请求 |
+| [RoboBrain2.5-8B-NV](RoboBrain2.5-8B-NV/README.md) | SGLang | 8/8 | CV-Bench 2638 题，88.10% | 12 轮、608 请求；完整矩阵独立复跑待补 |
+| [MiMo-V2.6-Distill-Qwen-9B](MiMo-V2.6-Distill-Qwen-9B/README.md) | SGLang | 11/11 | GSM8K 179/200；MMLU 160/200 | 12 轮、608 请求 |
+| [Qwen3-ASR-1.7B](Qwen3-ASR-1.7B/README.md) | vLLM | 在线 6/6；PCM 4/4 | test-clean 2620 条，WER 1.6501% | 128 请求；复跑最大偏差 7.28% |
+| [Qwen3-ForcedAligner-0.6B](Qwen3-ForcedAligner-0.6B/README.md) | vLLM | 中英文 2/2 | 尚无可对齐的自测 AAS 成绩 | 每进程 512 请求；复跑最大偏差 7.18% |
+| [Trident-Qwen3VL-2B](Trident-Qwen3VL-2B/README.md) | vLLM | 6 条多模态输入及 HTTP embedding | ChartQA Origin NDCG@10 ×100 = 69.4483 | 每进程 1536 请求；复跑最大偏差 3.88% |
+| [Qwen-Image-2.1-Turbo](Qwen-Image-2.1-Turbo/README.md) | SGLang | 两个独立进程各 8/8 | CLIP score / FID 待官方评测 | 每进程 9 实测 + 3 预热；复跑最大偏差 17.09% |
 
-每个模型的配置、启动脚本、精度与性能结果位于对应目录，报告按比赛八章模板组织。
+以上七个模型均未宣称官方验收通过。正式精度与 GPU 参考仍待官方评测代码对齐；RoboBrain 与 Recon2Reason 保留现有结果，等待官方代码复验。
 
-首版作为性能基准；后续优化采用模型专属 tag，保持卡型、框架和负载一致。
+[镜像与复验范围总表](镜像与复验总表.md)列明三套镜像的复用关系、额外依赖及未完成项。所有固定摘要均待提交前补充；私有镜像提交时开放。
 
-Qwen3-ASR 与 Qwen-Image 专用镜像保持私有，固定摘要待正式提交前补齐。
+## 复现方式
+
+进入相应模型目录，按技术报告第 4 章执行。默认在 SCNet Notebook 内运行，HKS_ROOT 指向包含 platform/scnet-notebook 的项目根目录；Notebook 已是容器。模型权重与评测数据不随代码分发，从模型报告标注的来源获取并按固定清单核验。
+
+各报告统一为简介、环境、适配与配置、启动与复现、功能测试、精度测评、首次性能、复现与限制八章。各模型吞吐的输入、批次和计时范围不同，不直接横向比较。
