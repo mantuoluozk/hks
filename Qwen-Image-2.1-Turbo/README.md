@@ -51,6 +51,24 @@ python verify.py
 
 同 BW Diffusers 参考图与 SGLang 512 输出的最大差为 1 个 8 位像素单位、平均绝对差约 0.0994，原样记录，不将编码或量化差异解释为正式精度。后端请求 trace 已核对 CPU Generator、CFG=1、尺寸及单/双条件图的实际传入。
 
+以下为新镜像复验的原始样例，使用 BF16、CPU Generator、seed=42 和原生 8 步采样。样例用于展示功能，不替代正式精度评测。
+
+**中文海报生成（1024×1024）**：白色背景、深蓝色“国芯国模”文字和红色圆环。
+
+![Qwen-Image 中文海报生成样例](results/scnet/service-validation-20261027T015635Z/round-1/smoke/text1024.png)
+
+**单图编辑（512×512）**：将原图的红色茶壶改为绿色，保留蓝色杯子与木桌。
+
+| 输入图片 | 编辑结果 |
+| --- | --- |
+| ![红色茶壶输入图](results/scnet/service-validation-20261027T015635Z/round-1/smoke/text512.png) | ![茶壶变绿的单图编辑结果](results/scnet/service-validation-20261027T015635Z/round-1/smoke/edit-one.png) |
+
+**双图编辑（512×512）**：将第一张参考图的茶壶与第二张参考图的黄鸟组合在木桌场景中。
+
+| 参考图一 | 参考图二 | 合成结果 |
+| --- | --- | --- |
+| ![茶壶参考图](results/scnet/service-validation-20261027T015635Z/round-1/smoke/text512.png) | ![黄鸟参考图](results/scnet/service-validation-20261027T015635Z/round-1/smoke/bird512.png) | ![茶壶与黄鸟的双图合成结果](results/scnet/service-validation-20261027T015635Z/round-1/smoke/edit-two.png) |
+
 ## 6. 精度测评
 
 T03 要求公示 prompt/条件集上的 CLIP score / FID 子集，与 GPU 参考按官方单位及容差判定。评测代码、固定输入及 GPU 参考文件尚未下发，`official_accuracy_pass=null`。未声明正式精度或赛事验收通过。
