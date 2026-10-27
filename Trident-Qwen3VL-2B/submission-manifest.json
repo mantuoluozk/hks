@@ -1,6 +1,6 @@
 {
   "model": "Trident-Qwen3VL-2B",
-  "sourcefind_code_base": "4affa2d53dee14273b23534ff640590b2165fd58",
+  "sourcefind_code_base": "5d5bd617c41710769e3f19c46e4c5b7140af856f",
   "files": [
     {
       "path": "Trident-Qwen3VL-2B/.gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "path": "Trident-Qwen3VL-2B/README.md",
-      "sha256": "b2e5acfd59751499877cd82a56e848578f183981f0c0cc55c149c4351987d847",
-      "bytes": 9704
+      "sha256": "6e71553f9f88ca2ab334daaaabbd2713ddf44e068dca1138fbe1cca3c3776da3",
+      "bytes": 9609
     },
     {
       "path": "Trident-Qwen3VL-2B/bench.sh",
@@ -674,8 +674,8 @@
     },
     {
       "path": "Trident-Qwen3VL-2B/提交填写信息.md",
-      "sha256": "f19e402bcff9cf42a3c3549645ddeb3d771838082774e22ad765936b2e29a4ce",
-      "bytes": 1411
+      "sha256": "8a6c06a26dc0f19682704f110ffc55eb1b39cea764b32c57a8e3d4ed9f6c25d7",
+      "bytes": 1369
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",
