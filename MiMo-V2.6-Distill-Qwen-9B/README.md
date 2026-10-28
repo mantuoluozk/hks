@@ -77,6 +77,8 @@ BENCH_PROFILE=matrix bash run-scnet.sh bash bench.sh
 
 赛事最低精度标准调整为 Qwen3.5-9B。具体参考成绩以 [Qwen 官方模型卡](https://huggingface.co/Qwen/Qwen3.5-9B) 为来源，须匹配数据集、版本、思考模式、提示、采样和评分协议后对照；该模型公布的 MMLU-Pro/MMLU-Redux 不能与下列 MMLU 小样本互换。
 
+后续选用完整MMLU-Pro test（12,032题），参考门槛82.5%。[测试脚本与协议准备](MMLU-Pro测试准备.md)已完成CPU检查，尚未启动模型实测；本节既有分数保持不变。
+
 固定 GSM8K 与 MMLU 各 200 题公开自评样本，seed=20261023；来源固定版本和 SHA256 见 `sources/evaluation-files.json`，样本重建一致性见 `results/scnet/data-verification.json`。0-shot、greedy，temperature=0、top_p=1、开启思考、max_tokens=4096、并发 8。GSM8K 解析最终 `####` 数值，MMLU 解析最终 `ANSWER: A/B/C/D`；没有随机回退，错误、截断与解析失败均保留在分母。
 
 | 数据集 | 正确 / 总数 | 自评准确率 | 请求错误 | 截断 | 未解析 |

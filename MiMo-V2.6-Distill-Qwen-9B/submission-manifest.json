@@ -13,9 +13,14 @@
       "bytes": 64
     },
     {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/MMLU-Pro测试准备.md",
+      "sha256": "9a6105b0012e932307fda00d42c96941a46a021e78de56e5f0d73c6c3e878f60",
+      "bytes": 3627
+    },
+    {
       "path": "MiMo-V2.6-Distill-Qwen-9B/README.md",
-      "sha256": "aeb01c941b66a2683a4e10315298a2df5477fc5bdf18e3630532f795739ed786",
-      "bytes": 7891
+      "sha256": "14c3d590a19aa93cec9cba9a849f51e2db5d9addb5297e6252949bbbf1105767",
+      "bytes": 8097
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench.sh",
@@ -163,6 +168,11 @@
       "bytes": 209
     },
     {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/configs/mmlu-pro.json",
+      "sha256": "280b42d413cc4a2ddee82e88df1a39bfa1b07e21b8f760a408cb614ae5febc52",
+      "bytes": 942
+    },
+    {
       "path": "MiMo-V2.6-Distill-Qwen-9B/env.sh",
       "sha256": "b28baa4813d618af7af618ee0489eb38de8454fcd79bf8521baaea6c291a4343",
       "bytes": 2794
@@ -171,6 +181,26 @@
       "path": "MiMo-V2.6-Distill-Qwen-9B/env_check.sh",
       "sha256": "6cece849d6285d4a2a901f725328364bb2b50c17bafd5a5c85b3b3dfff6fcc6c",
       "bytes": 1784
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/results/mmlu-pro-preparation/check-summary.json",
+      "sha256": "54f67ed40bdd3b3183dc0c9aed67dbdf799837097cdb83e6cec5298a1f03c765",
+      "bytes": 1544
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/results/mmlu-pro-preparation/dry-run.json",
+      "sha256": "c03f383555cfafafe5729d508781567be32b451d93ef62f101071cd382e0667c",
+      "bytes": 297
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/results/mmlu-pro-preparation/prepare.log",
+      "sha256": "7e66bf33e334b3d327ecefd050cca507adcef20df0abb0bb01809dde70eae864",
+      "bytes": 178
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/results/mmlu-pro-preparation/unit-tests.log",
+      "sha256": "37f9d03f6d7ab5749235385c00d7d5ccad10368f463e0956254267ef0251c18a",
+      "bytes": 1373
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/results/scnet/data-verification.json",
@@ -368,9 +398,24 @@
       "bytes": 8735
     },
     {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/mmlu_pro_common.py",
+      "sha256": "86506a26aeeca68ae38d78814afc57eb16590185cb22dc6f70fe224242f68de1",
+      "bytes": 4214
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/mmlu_pro_eval.py",
+      "sha256": "f0768eeb7d2880fe785a75429babbf28679c0bebeeb547149f18fc3b478dcfa2",
+      "bytes": 8267
+    },
+    {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/prepare_data.py",
       "sha256": "cd695cd2baf7aefc65ad43d89b7ba254c20049551c3facecfe7e43591ce86f82",
       "bytes": 3644
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/prepare_mmlu_pro.py",
+      "sha256": "093da1dba0acfd8b9c876610b580e6321d8a8ba82d01f0e347b30f6fed11cc53",
+      "bytes": 2934
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/prepare_scnet_eval.py",
@@ -381,6 +426,11 @@
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/public_eval.py",
       "sha256": "19ea84fdf23729c8a12ee1072628b4df595e738ad04fb7347dbdba4d24aa5247",
       "bytes": 5499
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/run_mmlu_pro_server.sh",
+      "sha256": "ea8f3a932060c7368d528c32347e3c38c032a0eeca2b58993f63b9c0b44d7174",
+      "bytes": 358
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/run_scnet_validation.py",
@@ -398,6 +448,11 @@
       "bytes": 7644
     },
     {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/test_mmlu_pro.py",
+      "sha256": "0bb97ed090cd553cee050ce3061d49e7fbb02045f042c12cccbf0d9fbdd4683a",
+      "bytes": 6175
+    },
+    {
       "path": "MiMo-V2.6-Distill-Qwen-9B/sources/competition-policy-20261028.json",
       "sha256": "8209afb88baf9066f8181e270db712280527c77d9297dcd278d09d355fbb6361",
       "bytes": 273
@@ -413,6 +468,31 @@
       "bytes": 444
     },
     {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/sources/mmlu-pro-files.json",
+      "sha256": "5ee66fa0a773b228902aaa32ca24bf3c7bc8d878acc90ddfd4646da702e6963e",
+      "bytes": 3062
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/sources/mmlu-pro-reference/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/sources/mmlu-pro-reference/evaluate_from_api.py",
+      "sha256": "6e00c0d57ed307b9e707b712ea796fbd2286c6d21889cd63bb58090fa72c5a99",
+      "bytes": 13486
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/sources/mmlu-pro-reference/qwen35-9b-model-card.md",
+      "sha256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+      "bytes": 77643
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/sources/mmlu-pro-reference/revision.txt",
+      "sha256": "36f1e553cd8e5a937192d76c5dea6edfe7f0ba5511db961829f5969042d8d93f",
+      "bytes": 41
+    },
+    {
       "path": "MiMo-V2.6-Distill-Qwen-9B/sources/modelscope-files.json",
       "sha256": "4c18923fef4e6652c8af3f08a355c5b6be9ccbb5a3d7e83677b949691a023e4c",
       "bytes": 7397
@@ -421,6 +501,11 @@
       "path": "MiMo-V2.6-Distill-Qwen-9B/sources/publisher-readme.md",
       "sha256": "09f915ac8116db54ca78586cfdf9ddb14209cba1ca23561a202f38039eac95ca",
       "bytes": 3030
+    },
+    {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/sources/qwen35-reference-files.json",
+      "sha256": "450f67bdd1efeda5639aee63f0a418887eee10547ec3381478c4f989ca315609",
+      "bytes": 22938
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/sources/report-image-status.json",
@@ -444,8 +529,8 @@
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/优化说明.md",
-      "sha256": "22da27e7076e17f97a0bc4196becf009438e0358613b8bcd1970b89cfd5d6121",
-      "bytes": 689
+      "sha256": "b1c39d29e314f0fb696dee9e64503e0a41fa18001ff5a07cb8dbfb5ca0bbca8a",
+      "bytes": 1058
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/提交填写信息.md",
@@ -462,5 +547,6 @@
       "sha256": "1b1768582ba3d0223dc248f87bde485af4d0ef5a0c214c922cbd989d5b79dbc8",
       "bytes": 848
     }
-  ]
+  ],
+  "latest_update": "2026-10-28 MMLU-Pro CPU preparation only; no model accuracy measurement"
 }

@@ -1,0 +1,11 @@
+{
+  "dataset": "MMLU-Pro",
+  "selected": 12032,
+  "full_test_split": true,
+  "reference_accuracy_percent": 82.5,
+  "inference_executed": false,
+  "context_length": 49152,
+  "max_tokens": 32768,
+  "prompt_protocol": "fixed upstream 5-shot CoT",
+  "exact_qwen_benchmark_protocol_confirmed": false
+}

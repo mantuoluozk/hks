@@ -1,0 +1,24 @@
+CPU fixture tests only; no MiMo inference or benchmark accuracy measurement.
+test_active_auk_guard (__main__.ProtocolTests) ... ok
+test_canonical_answer (__main__.ProtocolTests) ... ok
+test_duplicates_rejected (__main__.ProtocolTests) ... ok
+test_equal_threshold_is_pass (__main__.ProtocolTests) ... ok
+test_incomplete_denominator (__main__.ProtocolTests) ... ok
+test_markdown_cleaning (__main__.ProtocolTests) ... ok
+test_never_parse_hidden_reasoning (__main__.ProtocolTests) ... ok
+test_no_guess_on_unparseable (__main__.ProtocolTests) ... ok
+test_no_two_percent_tolerance (__main__.ProtocolTests) ... ok
+test_out_of_range (__main__.ProtocolTests) ... ok
+test_pilot_never_reports_full_threshold (__main__.ProtocolTests) ... ok
+test_prompt_matches_actual_upstream_call (__main__.ProtocolTests) ... ok
+test_requires_five_examples (__main__.ProtocolTests) ... ok
+test_truncation_is_wrong_even_if_letter_present (__main__.ProtocolTests) ... ok
+test_unicode_line_separator_is_inside_json_string (__main__.ProtocolTests) ... ok
+test_health_accepts_sglang_empty_body (__main__.RunnerTests) ... ok
+test_transport_errors_retained_and_resume_checked (__main__.RunnerTests) ... {"completed": 2, "expected": 2, "accuracy_percent": 50.0, "errors": 1, "truncated": 0, "unparsed": 1}
+ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.014s
+
+OK

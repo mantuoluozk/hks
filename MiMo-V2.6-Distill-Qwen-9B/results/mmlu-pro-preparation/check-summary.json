@@ -1,0 +1,35 @@
+{
+  "model": "MiMo-V2.6-Distill-Qwen-9B",
+  "scope": "CPU script/data preparation only",
+  "mimo_inference_executed": false,
+  "fixture_tests_passed": 17,
+  "data": {
+    "test_rows": 12032,
+    "validation_rows": 70,
+    "categories": 14,
+    "prepared_sha256": "8f4a5729f7b8d647240987cf139e5fc0400ca8657e9300b54b1c8eb0e0ba978f",
+    "inference_executed": false
+  },
+  "dry_run": {
+    "dataset": "MMLU-Pro",
+    "selected": 12032,
+    "full_test_split": true,
+    "reference_accuracy_percent": 82.5,
+    "inference_executed": false,
+    "context_length": 49152,
+    "max_tokens": 32768,
+    "prompt_protocol": "fixed upstream 5-shot CoT",
+    "exact_qwen_benchmark_protocol_confirmed": false
+  },
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "pyarrow": "25.0.1",
+  "files_sha256": {
+    "configs/mmlu-pro.json": "280b42d413cc4a2ddee82e88df1a39bfa1b07e21b8f760a408cb614ae5febc52",
+    "scripts/mmlu_pro_common.py": "86506a26aeeca68ae38d78814afc57eb16590185cb22dc6f70fe224242f68de1",
+    "scripts/mmlu_pro_eval.py": "f0768eeb7d2880fe785a75429babbf28679c0bebeeb547149f18fc3b478dcfa2",
+    "scripts/prepare_mmlu_pro.py": "093da1dba0acfd8b9c876610b580e6321d8a8ba82d01f0e347b30f6fed11cc53",
+    "scripts/run_mmlu_pro_server.sh": "ea8f3a932060c7368d528c32347e3c38c032a0eeca2b58993f63b9c0b44d7174",
+    "scripts/test_mmlu_pro.py": "0bb97ed090cd553cee050ce3061d49e7fbb02045f042c12cccbf0d9fbdd4683a",
+    "sources/mmlu-pro-reference/evaluate_from_api.py": "6e00c0d57ed307b9e707b712ea796fbd2286c6d21889cd63bb58090fa72c5a99"
+  }
+}
