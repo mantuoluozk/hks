@@ -80,6 +80,12 @@ RUN_RESULTS_DIR="$PWD/results/scnet/benchmark" bash run-scnet.sh bash bench.sh
 
 发布者公开 AAS 参考值：MFA-Labeled Raw 中文 33.1ms、英文 37.5ms、平均 42.9ms；Concat-300s 平均 52.9ms；Human-Labeled 平均 32.4ms。不同评测组不能混用，来源及口径见 `官方精度基线查证.md`。
 
+发布者使用过公开数据。论文列出的语料来源包括 AISHELL、WenetSpeech、LibriSpeech、GigaSpeech、LibriTTS、Emilia、MLS 等，但评测集同时包含内部语料。相关论文 §4.1、附录 A.1 说明，预留音频再划分为 Raw 与拼接测试组，人工时间边界组来自内部中文数据。公开原始音频不等于公开了用于复现成绩的样本清单、切分及时间边界标注。
+
+截至 2026-10-28，核对发布者论文及官方仓库，尚未找到与所列 AAS 成绩对应的完整公开标注包，也未找到公开语料子集单独的 AAS 成绩。因此，不能仅下载 LibriSpeech 或 AISHELL 后，将自测结果直接与官方中文 33.1ms、英文 37.5ms 比较并判定劣化率。当前暂停 AAS 精度测试，尚无新的模型 AAS 实测值，不作精度通过判定。
+
+来源：[Qwen3-ASR 技术报告 §4.1、表9](https://arxiv.org/html/2601.21337v2)、[LLM-ForcedAligner 论文 §4.1、附录 A.1](https://arxiv.org/abs/2601.18220)。前者作为本 checkpoint 的成绩来源，后者补充说明数据构成。
+
 当前两个演示样本用于功能及吞吐检查，没有匹配的真实边界标注，未计算或声称通过 AAS。英文给定文本取自演示音频转写，不作为人工时间边界真值。正式精度等待赛事匹配的标注集、评分代码及 GPU 基线，`official_accuracy_pass=null`。格式合法、单调、批量一致或独立进程一致均不能替代 AAS 验收。
 
 ## 7. 首次性能

@@ -1,6 +1,6 @@
 {
   "model": "Qwen3-ForcedAligner-0.6B",
-  "sourcefind_code_base": "b98807b44234ad5981f9d417102f790ad5b62241",
+  "sourcefind_code_base": "8ef83d6f6ec889e8f6db862af6490587b7335fea",
   "files": [
     {
       "path": "Qwen3-ForcedAligner-0.6B/.gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "path": "Qwen3-ForcedAligner-0.6B/README.md",
-      "sha256": "7b58325a1e6315b3867cdb615d500ef55ec43a9bac55e9782358c88ce7e50a75",
-      "bytes": 8931
+      "sha256": "4d0507b128314e2c09ba7cceb32678498aecf731c32f67e90b80319437cd8ff8",
+      "bytes": 10024
     },
     {
       "path": "Qwen3-ForcedAligner-0.6B/bench.sh",
@@ -259,12 +259,12 @@
     },
     {
       "path": "Qwen3-ForcedAligner-0.6B/官方精度基线查证.md",
-      "sha256": "a48a13054f52f6185d227d5a37f706484215aaf8932c2dca604e2eaf8a6f895f",
-      "bytes": 1012
+      "sha256": "fdf9f715ccc39469ba1e4d11906a5ae00ca9cfa5861edbf79faa59de3a434979",
+      "bytes": 2142
     },
     {
       "path": "Qwen3-ForcedAligner-0.6B/提交填写信息.md",
-      "sha256": "2d7fda85125fdd87c6757e3fc1857e260f6c1a5e40ba39aad24d231eb9df2691",
+      "sha256": "55e1ecebf03e73cac756566a9b2c9e648733d15cd322a98981c840f033ad8d2a",
       "bytes": 1248
     },
     {
