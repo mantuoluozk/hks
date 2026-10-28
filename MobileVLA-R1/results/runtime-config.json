@@ -1,0 +1,25 @@
+{
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "platform": "Linux-5.15.0-25-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "transformers": "5.12.1",
+    "openai": "2.30.0",
+    "pillow": "11.3.0",
+    "fastapi": "0.115.12",
+    "uvicorn": "0.53.0",
+    "safetensors": "0.8.0"
+  },
+  "precision": "bfloat16",
+  "device_count": 1,
+  "image": "appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-image21-turbo:1.0.0",
+  "context": 4096,
+  "max_images": 8,
+  "gpu_memory_utilization": 0.5,
+  "enforce_eager": true,
+  "prefix_caching": false,
+  "frontend": "SiglipVisionModel+original mlp_downsample",
+  "language_backend": "vLLM LlamaForCausalLM prompt_embeds",
+  "official_accuracy_tested": false
+}

@@ -1,0 +1,127 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+INFO 10-28 21:42:36 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-28 21:42:36 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-28 21:42:36 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-28 21:42:36 [__init__.py:237] Platform plugin hcu is activated
+INFO 10-28 21:43:01 [api_utils.py:273] non-default args: {'enable_prompt_embeds': True, 'dtype': 'bfloat16', 'max_model_len': 4096, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.5, 'max_num_seqs': 2, 'disable_log_stats': True, 'enforce_eager': True, 'model': '/root/private_data/hks/models/MobileVLA-R1/weights/mobilevla-r1-rl/llm'}
+INFO 10-28 21:43:32 [model.py:619] Resolved architecture: LlamaForCausalLM
+INFO 10-28 21:43:32 [model.py:1776] Using max model len 4096
+INFO 10-28 21:43:32 [scheduler.py:252] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 10-28 21:43:32 [vllm.py:1042] Asynchronous scheduling is enabled.
+WARNING 10-28 21:43:32 [vllm.py:1096] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 10-28 21:43:32 [vllm.py:1144] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 10-28 21:43:32 [kernel.py:292] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+INFO 10-28 21:43:32 [vllm.py:1322] Cudagraph is disabled under eager mode
+[HCU FLASH_ATTN:varlen]: Setting kv cache block size to 64.
+WARNING 10-28 21:43:32 [vllm.py:548] Model Runner V2 does not yet support prompt embeds; using the V1 model runner instead.
+INFO 10-28 21:43:32 [compilation.py:312] Enabled custom fusions: norm_quant, act_quant
+WARNING 10-28 21:43:36 [system_utils.py:157] We must use the `spawn` multiprocessing start method. Overriding VLLM_WORKER_MULTIPROC_METHOD to 'spawn'. See https://docs.vllm.ai/en/latest/usage/troubleshooting.html#python-multiprocessing for more information. Reasons: CUDA is initialized
+WARNING 10-28 21:43:36 [rocm.py:123] Using CUDA_VISIBLE_DEVICES on ROCm is deprecated and support will be removed in vLLM v0.26.0. Please use HIP_VISIBLE_DEVICES instead.
+INFO 10-28 21:43:38 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-28 21:43:38 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-28 21:43:38 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-28 21:43:38 [__init__.py:237] Platform plugin hcu is activated
+WARNING 10-28 21:44:03 [rocm.py:123] Using CUDA_VISIBLE_DEVICES on ROCm is deprecated and support will be removed in vLLM v0.26.0. Please use HIP_VISIBLE_DEVICES instead.
+INFO 10-28 21:44:03 [api_utils.py:273] non-default args: {'enable_prompt_embeds': True, 'dtype': 'bfloat16', 'max_model_len': 4096, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.5, 'max_num_seqs': 2, 'disable_log_stats': True, 'enforce_eager': True, 'model': '/root/private_data/hks/models/MobileVLA-R1/weights/mobilevla-r1-rl/llm'}
+INFO 10-28 21:44:03 [model.py:619] Resolved architecture: LlamaForCausalLM
+INFO 10-28 21:44:03 [model.py:1776] Using max model len 4096
+INFO 10-28 21:44:03 [scheduler.py:252] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 10-28 21:44:03 [vllm.py:1042] Asynchronous scheduling is enabled.
+WARNING 10-28 21:44:03 [vllm.py:1096] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 10-28 21:44:03 [vllm.py:1144] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 10-28 21:44:03 [kernel.py:292] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+INFO 10-28 21:44:03 [vllm.py:1322] Cudagraph is disabled under eager mode
+[HCU FLASH_ATTN:varlen]: Setting kv cache block size to 64.
+WARNING 10-28 21:44:03 [vllm.py:548] Model Runner V2 does not yet support prompt embeds; using the V1 model runner instead.
+INFO 10-28 21:44:03 [compilation.py:312] Enabled custom fusions: norm_quant, act_quant
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/usr/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/usr/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/private_data/hks/models/MobileVLA-R1/scripts/probe_vllm.py", line 11, in <module>
+    model=LLM(model=str(ROOT/'weights/mobilevla-r1-rl/llm'),dtype='bfloat16',
+  File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/llm.py", line 349, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/llm_engine.py", line 179, in from_engine_args
+    return cls(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/llm_engine.py", line 105, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core_client.py", line 103, in make_client
+    return SyncMPClient(vllm_config, executor_class, log_stats)
+  File "/usr/local/lib/python3.10/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core_client.py", line 786, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core_client.py", line 573, in __init__
+    with launch_core_engines(
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/utils.py", line 1195, in launch_core_engines
+    local_engine_manager = CoreEngineProcManager(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/utils.py", line 210, in __init__
+    proc.start()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/usr/lib/python3.10/multiprocessing/context.py", line 288, in _Popen
+    return Popen(process_obj)
+  File "/usr/lib/python3.10/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/usr/lib/python3.10/multiprocessing/popen_spawn_posix.py", line 42, in _launch
+    prep_data = spawn.get_preparation_data(process_obj._name)
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 154, in get_preparation_data
+    _check_not_importing_main()
+  File "/usr/lib/python3.10/multiprocessing/spawn.py", line 134, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/MobileVLA-R1/scripts/probe_vllm.py", line 11, in <module>
+    model=LLM(model=str(ROOT/'weights/mobilevla-r1-rl/llm'),dtype='bfloat16',
+  File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/llm.py", line 349, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/llm_engine.py", line 179, in from_engine_args
+    return cls(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/llm_engine.py", line 105, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core_client.py", line 103, in make_client
+    return SyncMPClient(vllm_config, executor_class, log_stats)
+  File "/usr/local/lib/python3.10/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core_client.py", line 786, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core_client.py", line 573, in __init__
+    with launch_core_engines(
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/utils.py", line 1213, in launch_core_engines
+    wait_for_engine_startup(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/utils.py", line 1272, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}

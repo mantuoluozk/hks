@@ -1,0 +1,28 @@
+{
+  "independent_processes": true,
+  "same_functional_prefix": true,
+  "first": "http-v5",
+  "second": "http-v6",
+  "results": [
+    {
+      "images": 1,
+      "first_mean_seconds": 1.1407209363145132,
+      "second_mean_seconds": 1.1691996847900252,
+      "deviation_percent": 2.4965570078447312
+    },
+    {
+      "images": 2,
+      "first_mean_seconds": 1.5721319033764303,
+      "second_mean_seconds": 1.6450782576575875,
+      "deviation_percent": 4.639963995673144
+    },
+    {
+      "images": 8,
+      "first_mean_seconds": 1.8511989048371713,
+      "second_mean_seconds": 1.9122125611950953,
+      "deviation_percent": 3.295899549124391
+    }
+  ],
+  "within_20_percent": true,
+  "official_accuracy_tested": false
+}

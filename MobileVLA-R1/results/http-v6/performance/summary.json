@@ -1,0 +1,34 @@
+{
+  "concurrency": 1,
+  "max_tokens": 64,
+  "temperature": 0,
+  "image_size": [
+    384,
+    384
+  ],
+  "includes_visual_frontend": true,
+  "synthetic_workload": true,
+  "results": [
+    {
+      "images": 1,
+      "requests": 3,
+      "mean_seconds": 1.1691996847900252,
+      "output_tokens": 108,
+      "output_tokens_per_second": 30.790292255736613
+    },
+    {
+      "images": 2,
+      "requests": 3,
+      "mean_seconds": 1.6450782576575875,
+      "output_tokens": 153,
+      "output_tokens_per_second": 31.001564674873553
+    },
+    {
+      "images": 8,
+      "requests": 3,
+      "mean_seconds": 1.9122125611950953,
+      "output_tokens": 165,
+      "output_tokens_per_second": 28.762492787740122
+    }
+  ]
+}

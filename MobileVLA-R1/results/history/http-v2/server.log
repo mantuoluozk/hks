@@ -1,0 +1,116 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+INFO 10-28 21:55:49 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-28 21:55:49 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-28 21:55:49 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-28 21:55:49 [__init__.py:237] Platform plugin hcu is activated
+Loading weights:   0%|          | 0/448 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 175/448 [00:00<00:00, 1741.63it/s]Loading weights:  81%|████████  | 362/448 [00:00<00:00, 1772.52it/s]Loading weights: 100%|██████████| 448/448 [00:00<00:00, 1847.47it/s]
+INFO 10-28 21:55:56 [api_utils.py:273] non-default args: {'enable_prompt_embeds': True, 'dtype': 'bfloat16', 'max_model_len': 4096, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.5, 'max_num_seqs': 1, 'disable_log_stats': True, 'enforce_eager': True, 'model': '/root/private_data/hks/models/MobileVLA-R1/weights/mobilevla-r1-rl/llm'}
+INFO 10-28 21:55:56 [model.py:619] Resolved architecture: LlamaForCausalLM
+INFO 10-28 21:55:56 [model.py:1776] Using max model len 4096
+INFO 10-28 21:55:57 [scheduler.py:252] Chunked prefill is enabled with max_num_batched_tokens=4096.
+INFO 10-28 21:55:57 [vllm.py:1042] Asynchronous scheduling is enabled.
+WARNING 10-28 21:55:57 [vllm.py:1096] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 10-28 21:55:57 [vllm.py:1144] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 10-28 21:55:57 [kernel.py:292] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+INFO 10-28 21:55:57 [vllm.py:1322] Cudagraph is disabled under eager mode
+[HCU FLASH_ATTN:varlen]: Setting kv cache block size to 64.
+WARNING 10-28 21:55:57 [vllm.py:548] Model Runner V2 does not yet support prompt embeds; using the V1 model runner instead.
+INFO 10-28 21:55:57 [compilation.py:312] Enabled custom fusions: norm_quant, act_quant
+WARNING 10-28 21:56:00 [system_utils.py:157] We must use the `spawn` multiprocessing start method. Overriding VLLM_WORKER_MULTIPROC_METHOD to 'spawn'. See https://docs.vllm.ai/en/latest/usage/troubleshooting.html#python-multiprocessing for more information. Reasons: CUDA is initialized
+WARNING 10-28 21:56:00 [rocm.py:123] Using CUDA_VISIBLE_DEVICES on ROCm is deprecated and support will be removed in vLLM v0.26.0. Please use HIP_VISIBLE_DEVICES instead.
+INFO 10-28 21:56:06 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-28 21:56:06 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-28 21:56:06 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-28 21:56:06 [__init__.py:237] Platform plugin hcu is activated
+WARNING 10-28 21:56:27 [rocm.py:123] Using CUDA_VISIBLE_DEVICES on ROCm is deprecated and support will be removed in vLLM v0.26.0. Please use HIP_VISIBLE_DEVICES instead.
+(EngineCore pid=30930) INFO 10-28 21:56:29 [core.py:114] Initializing a V1 LLM engine (v0.25.1) with config: model='/root/private_data/hks/models/MobileVLA-R1/weights/mobilevla-r1-rl/llm', speculative_config=None, tokenizer='/root/private_data/hks/models/MobileVLA-R1/weights/mobilevla-r1-rl/llm', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=/root/private_data/hks/models/MobileVLA-R1/weights/mobilevla-r1-rl/llm, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['+sparse_attn_indexer', 'all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [4096], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_mla_dual_rms_norm': False, 'fuse_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, moe_backend='auto', linear_backend='auto')
+(EngineCore pid=30930) WARNING 10-28 21:56:29 [vllm.py:548] Model Runner V2 does not yet support prompt embeds; using the V1 model runner instead.
+(EngineCore pid=30930) INFO 10-28 21:56:29 [parallel_state.py:1607] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.31.175.11:45199 backend=nccl
+(EngineCore pid=30930) INFO 10-28 21:56:29 [parallel_state.py:1942] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231] EngineCore failed to start.
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231] Traceback (most recent call last):
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core.py", line 1200, in run_engine_core
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm_hcu/patch/platform/framework_opt/patch_engine_core.py", line 98, in hcu_engine_core_proc_init
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     return proc_init(self, *args, **kwargs)
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     return func(*args, **kwargs)
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core.py", line 966, in __init__
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     super().__init__(
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core.py", line 123, in __init__
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     return func(*args, **kwargs)
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/executor/abstract.py", line 109, in __init__
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     self._init_executor()
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/executor/uniproc_executor.py", line 63, in _init_executor
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     self.driver_worker.init_device()
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/worker/worker_base.py", line 331, in init_device
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     self.worker.init_device()  # type: ignore
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm_hcu/v1/worker.py", line 272, in init_device
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     self.requested_memory = request_memory(init_snapshot, self.cache_config)
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/worker/utils.py", line 415, in request_memory
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231]     raise ValueError(
+(EngineCore pid=30930) ERROR 10-28 21:56:29 [core.py:1231] ValueError: Free memory on device cuda:0 (28.29/63.98 GiB) on startup is less than desired GPU memory utilization (0.5, 31.99 GiB). Decrease GPU memory utilization or reduce GPU memory used by other processes.
+(EngineCore pid=30930) Process EngineCore:
+(EngineCore pid=30930) Traceback (most recent call last):
+(EngineCore pid=30930)   File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+(EngineCore pid=30930)     self.run()
+(EngineCore pid=30930)   File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+(EngineCore pid=30930)     self._target(*self._args, **self._kwargs)
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core.py", line 1235, in run_engine_core
+(EngineCore pid=30930)     raise e
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core.py", line 1200, in run_engine_core
+(EngineCore pid=30930)     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm_hcu/patch/platform/framework_opt/patch_engine_core.py", line 98, in hcu_engine_core_proc_init
+(EngineCore pid=30930)     return proc_init(self, *args, **kwargs)
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=30930)     return func(*args, **kwargs)
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core.py", line 966, in __init__
+(EngineCore pid=30930)     super().__init__(
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core.py", line 123, in __init__
+(EngineCore pid=30930)     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=30930)     return func(*args, **kwargs)
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/executor/abstract.py", line 109, in __init__
+(EngineCore pid=30930)     self._init_executor()
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/executor/uniproc_executor.py", line 63, in _init_executor
+(EngineCore pid=30930)     self.driver_worker.init_device()
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/worker/worker_base.py", line 331, in init_device
+(EngineCore pid=30930)     self.worker.init_device()  # type: ignore
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm_hcu/v1/worker.py", line 272, in init_device
+(EngineCore pid=30930)     self.requested_memory = request_memory(init_snapshot, self.cache_config)
+(EngineCore pid=30930)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/worker/utils.py", line 415, in request_memory
+(EngineCore pid=30930)     raise ValueError(
+(EngineCore pid=30930) ValueError: Free memory on device cuda:0 (28.29/63.98 GiB) on startup is less than desired GPU memory utilization (0.5, 31.99 GiB). Decrease GPU memory utilization or reduce GPU memory used by other processes.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W1028 21:56:30.661995 30930 ProcessGroupNCCL.cpp:1570] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/MobileVLA-R1/scripts/serve.py", line 113, in <module>
+    if __name__=='__main__':main()
+  File "/root/private_data/hks/models/MobileVLA-R1/scripts/serve.py", line 89, in main
+    pipeline=Pipeline();app=FastAPI()
+  File "/root/private_data/hks/models/MobileVLA-R1/scripts/serve.py", line 57, in __init__
+    self.engine=LLM(model=str(w/'llm'),dtype='bfloat16',trust_remote_code=False,
+  File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/llm.py", line 349, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/llm_engine.py", line 179, in from_engine_args
+    return cls(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/llm_engine.py", line 105, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core_client.py", line 103, in make_client
+    return SyncMPClient(vllm_config, executor_class, log_stats)
+  File "/usr/local/lib/python3.10/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core_client.py", line 786, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/core_client.py", line 573, in __init__
+    with launch_core_engines(
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/utils.py", line 1213, in launch_core_engines
+    wait_for_engine_startup(
+  File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/utils.py", line 1272, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}

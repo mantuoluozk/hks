@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "checks": 12,
+  "reference_token_parity": true,
+  "synthetic_functional_only": true,
+  "official_accuracy_tested": false
+}

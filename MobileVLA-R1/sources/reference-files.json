@@ -1,0 +1,91 @@
+{
+  "revision": "9d98cce3b623dfddf479740d78869ec30364b75a",
+  "files": [
+    {
+      "path": "inference.py",
+      "git_blob_sha1": "84a7e844bc3e3d10f62e8e575d1cf673c83ed9c4",
+      "sha256": "0586180f1d9805200f5946ee7d5a8e85a03bbb55771c563e7726c45f7a2e8d98"
+    },
+    {
+      "path": "inference_remote.py",
+      "git_blob_sha1": "82f0e35531070ddff006b943a12155eda9e83689",
+      "sha256": "0b0581c5d1f0f04050328c627fe0ab60660e9b2df0b4da603e7b6e55fe04e13f"
+    },
+    {
+      "path": "pyproject.toml",
+      "git_blob_sha1": "959b662bfa2be105bca140a2614cc6ff279d66e7",
+      "sha256": "94269c9871cf186e5f5e435457ea32dd3354c6cfa4ce5c1e41023603be9b9f9e"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha1": "4753491f04d17e9e5190414a9019478e428c8ec0",
+      "sha256": "fb0a1f8f547e6d50d4bb69af245152706a57a6ec0433a35d91a2879fb4f9b5ba"
+    },
+    {
+      "path": "llava/constants.py",
+      "git_blob_sha1": "2edbb280dc02bacb8721578afc6e1db61870ee04",
+      "sha256": "eb2d293a06404c5e380d8d419d410e4c5831c29468dff4f70475587540bda36d"
+    },
+    {
+      "path": "llava/conversation.py",
+      "git_blob_sha1": "de5fe599a41601a3d2bb61f1ab39313d37145494",
+      "sha256": "5995bc8d45e153395bdeaa31ca7f6c0d1f637135c24e66a1947e9d56ebaa39a1"
+    },
+    {
+      "path": "llava/mm_utils.py",
+      "git_blob_sha1": "58a2b09e9acf40fd6cd407f5a4a436e9ff1dbe50",
+      "sha256": "117d382783c3eba5f6336ff1ee6ee7adedec737fa440a2f8834f40f7ddf7de81"
+    },
+    {
+      "path": "llava/eval/run_navigation.py",
+      "git_blob_sha1": "ee0779b4f3387b4d26f6c43a6386af5b996e1678",
+      "sha256": "85f2ffb86bb72f6c5c67bea2ad76e155cd552cab39272b14fb8154f746cb5d03"
+    },
+    {
+      "path": "llava/model/builder.py",
+      "git_blob_sha1": "9a23035dc03685b008a1b27e37d62d6f3213eb4d",
+      "sha256": "7df26111b6ccb5dfc9698b13de260f84193bc60e58258a2737576296ed94a64e"
+    },
+    {
+      "path": "llava/model/llava_arch.py",
+      "git_blob_sha1": "607f1dfd979c63554a767ad7d0210d50b12c7d9f",
+      "sha256": "bcc8243c58add2d501b1b70c442ee57bbe2bb056ced25be5e02f21a85334d542"
+    },
+    {
+      "path": "llava/model/language_model/builder.py",
+      "git_blob_sha1": "daf6f287a662acf25d5357899e1b5e4c3dc563bf",
+      "sha256": "90847af5a9353ea002589c528b63b1a1f47fee55cc20b4d6709831ef86acccf8"
+    },
+    {
+      "path": "llava/model/language_model/llava_llama.py",
+      "git_blob_sha1": "c6c46be3d5d5b15bea25435fb5bbb1852de6f6aa",
+      "sha256": "2686f9b1bc5ddd12fddc2fbf7ac5605fc9eaafa28d71182ffa19ea537df694ad"
+    },
+    {
+      "path": "llava/model/multimodal_encoder/siglip_encoder.py",
+      "git_blob_sha1": "b7f6cda134ef761236dd02f2c56abb39ee437fd1",
+      "sha256": "85c48b61b70b4a6071d0cf261bb80f079b079f6cd2836935a57da288803d0215"
+    },
+    {
+      "path": "llava/model/multimodal_encoder/vision_encoder.py",
+      "git_blob_sha1": "384fd6a2f2f95434f4b888ee15e6549750fdf5d9",
+      "sha256": "9a24c3a46758bc611e4babbc5eee5bb79bb9164f61439249e311c4904c4e0f7e"
+    },
+    {
+      "path": "llava/model/multimodal_projector/base_projector.py",
+      "git_blob_sha1": "4cf812ba00eef0303b6c25d0557269a5a69ea433",
+      "sha256": "52f699c2839870959c68f72b86a686cca07e81036a2ef4e0bc85930b91e064f4"
+    },
+    {
+      "path": "mobilevla/data.py",
+      "git_blob_sha1": "f50211cf70adf8166a4d078d42c5e5d238da7ae6",
+      "sha256": "ec0d58fbd2c0cd34e172ee43742f4ab1b9897b686b05dbb50e2bb489acf194f9"
+    },
+    {
+      "path": "mobilevla/actions.py",
+      "git_blob_sha1": "62f49147c7cd68a654070451a5f6b6f02ad02775",
+      "sha256": "36da42238183b4774ce359cae52dc84f0f757694c4de0780ba053465d7f85618"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,4 @@
+{
+  "error": "NotImplementedError('Module [Module] is missing the required \"forward\" function')",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/private_data/hks/models/MobileVLA-R1/scripts/probe_reference.py\", line 59, in <module>\n    features=projector(hidden)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py\", line 403, in _forward_unimplemented\n    raise NotImplementedError(\nNotImplementedError: Module [Module] is missing the required \"forward\" function\n"
+}

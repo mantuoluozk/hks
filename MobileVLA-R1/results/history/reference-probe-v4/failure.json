@@ -1,0 +1,4 @@
+{
+  "error": "TypeError(\"'NoneType' object is not subscriptable\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/private_data/hks/models/MobileVLA-R1/scripts/probe_reference.py\", line 59, in <module>\n    pixels=tokens_ns['process_image'](image,args,None).unsqueeze(0).to('cuda',dtype=torch.bfloat16)\n  File \"/root/private_data/hks/models/MobileVLA-R1/sources/code-reference/llava/mm_utils.py\", line 357, in process_image\n    image = image.resize((crop_size[\"height\"], crop_size[\"width\"]))\nTypeError: 'NoneType' object is not subscriptable\n"
+}

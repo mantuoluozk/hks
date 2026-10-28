@@ -1,0 +1,7 @@
+{
+  "evidence_consistent": true,
+  "functional_checks": 24,
+  "performance_requests": 24,
+  "performance_within_20_percent": true,
+  "official_accuracy_tested": false
+}
