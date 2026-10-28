@@ -14,7 +14,7 @@
 | 公开精度自评 | OCRBench 463/1000；MMMU 437/900 |
 | 首次性能与复现 | 12 轮、608 请求 |
 | 镜像验证范围 | 基础镜像上实测；未完成模型专用新镜像复验 |
-| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+| 赛事精度要求 | 官方不要求精度；已有自测保留，可按现有材料提交 |
 <!-- report-resources:end -->
 
 本项目完成 `BAAI/Recon2Reason-Reasoning-4B` 在超算互联网单张 BW 加速卡上的 SGLang BF16 部署与验证。模型采用标准 Qwen3-VL 架构，约 4.44B 参数，支持单图、多图和空间推理。
@@ -31,7 +31,6 @@
 | 镜像用途 | 共用基础镜像 |
 | 镜像版本 | `0.5.18` |
 | 镜像地址 | `image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18` |
-| 访问状态 | 公开访问状态待提交时核对 |
 | 镜像复验 | 基础镜像上实测；未完成模型专用新镜像复验 |
 <!-- report-environment:end -->
 
@@ -93,6 +92,8 @@ bash smoke.sh
 
 ## 6. 精度测评
 
+赛事最新要求不对本模型设置精度门槛。本节保留已完成的补充自测结果；这些成绩不再作为提交前置条件。
+
 采用 OCRBench test 全量 1000 题、MMMU validation 全量 900 题。数据文件按固定版本下载并校验 SHA256；greedy 解码，temperature=0，top_p=1，max_tokens=2048，使用原始 processor，max_pixels=50176。
 
 | 数据集 | 题数 | 正确数 / 得分 | 请求错误 | 截断 |
@@ -102,7 +103,7 @@ bash smoke.sh
 
 截断题保留在分母。MMMU 随机回退为 0，严格计分同为 437/900。评分脚本五项自检通过。
 
-模型官方尚未公布可比的 OCRBench/MMMU 数值基线，本节为公开数据集实测，暂不计算相对官方基线的劣化。汇总见 `verify_result.json`；逐题记录、评分结果和运行 manifest 见 `results/scnet/public-accuracy-20261025T115032Z/`。
+本节为公开数据集补充实测，不进行赛事精度达标判定。汇总见 `verify_result.json`；逐题记录、评分结果和运行 manifest 见 `results/scnet/public-accuracy-20261025T115032Z/`。
 
 ## 7. 首次性能
 

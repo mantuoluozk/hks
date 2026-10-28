@@ -1,6 +1,6 @@
 {
   "model": "MiMo-V2.6-Distill-Qwen-9B",
-  "sourcefind_code_base": "b98807b44234ad5981f9d417102f790ad5b62241",
+  "sourcefind_code_base": "ebf3944497d3c20860e4bf6d29eabdc39f6f4cd7",
   "files": [
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/.gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/README.md",
-      "sha256": "229a3c6175455e0f626f545d54b5ab4133aec6bca1221d43ad4d84126f40ad38",
-      "bytes": 7580
+      "sha256": "aeb01c941b66a2683a4e10315298a2df5477fc5bdf18e3630532f795739ed786",
+      "bytes": 7891
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench.sh",
@@ -398,6 +398,11 @@
       "bytes": 7644
     },
     {
+      "path": "MiMo-V2.6-Distill-Qwen-9B/sources/competition-policy-20261028.json",
+      "sha256": "8209afb88baf9066f8181e270db712280527c77d9297dcd278d09d355fbb6361",
+      "bytes": 273
+    },
+    {
       "path": "MiMo-V2.6-Distill-Qwen-9B/sources/evaluation-files.json",
       "sha256": "a5b59569e4d155b4ea449c1e1de012a9cad006e88a46a4c45526adc9e637ca93",
       "bytes": 646
@@ -439,13 +444,13 @@
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/优化说明.md",
-      "sha256": "37a3e85021600c90912981c4ea6b5e1460a21e16240fc6d063137df7c3d7e7fc",
-      "bytes": 450
+      "sha256": "22da27e7076e17f97a0bc4196becf009438e0358613b8bcd1970b89cfd5d6121",
+      "bytes": 689
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/提交填写信息.md",
-      "sha256": "5455ac60bb836dd335a478f5ba0a57bacb6b6675a2e74cf8d093ab96fe2c4e4b",
-      "bytes": 1223
+      "sha256": "18a4383299d5190b3728e9a1bdd9abe67dff344da041fc93700f876f35387de0",
+      "bytes": 1251
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

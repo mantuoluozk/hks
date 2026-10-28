@@ -1,6 +1,6 @@
 {
   "model": "RoboBrain2.5-8B-NV",
-  "sourcefind_code_base": "b98807b44234ad5981f9d417102f790ad5b62241",
+  "sourcefind_code_base": "ebf3944497d3c20860e4bf6d29eabdc39f6f4cd7",
   "files": [
     {
       "path": "RoboBrain2.5-8B-NV/.gitignore",
@@ -9,8 +9,8 @@
     },
     {
       "path": "RoboBrain2.5-8B-NV/README.md",
-      "sha256": "fc0cc0084ef792deacedf3d51e6b7b84d3061b56e8b892b20e27ac38ba433921",
-      "bytes": 9540
+      "sha256": "14ca70d8d9467aaad14407ee463c284e004b81fa112e72d2d33b1681d55f8142",
+      "bytes": 9275
     },
     {
       "path": "RoboBrain2.5-8B-NV/bench.sh",
@@ -863,6 +863,11 @@
       "bytes": 125
     },
     {
+      "path": "RoboBrain2.5-8B-NV/sources/competition-policy-20261028.json",
+      "sha256": "ff0038920594607a7c9e4c7e2af0733071f97a767e35001dfd688c163ec00316",
+      "bytes": 261
+    },
+    {
       "path": "RoboBrain2.5-8B-NV/sources/image-reference-correction.json",
       "sha256": "e8c1153289a718e0999686eadd726b58baeb20210c34c1bb4fdc2710ef89d7ee",
       "bytes": 444
@@ -919,23 +924,23 @@
     },
     {
       "path": "RoboBrain2.5-8B-NV/优化说明.md",
-      "sha256": "d37aa212b47448eb74a322a955e1f881911fd696ea601ee4791f34ebe6b457a2",
-      "bytes": 1583
+      "sha256": "fb795ef6afa7d2cd089c859ffed4b7875cbc199b174184eea1049a9093a66b31",
+      "bytes": 1886
     },
     {
       "path": "RoboBrain2.5-8B-NV/公开基准复测.md",
-      "sha256": "2a4f5de45d9bdba07083e57474f80c7f06b8a43359eca3aa2f42e736c45a0095",
-      "bytes": 5341
+      "sha256": "2d42a447ebf1eea5ecbe7b2f69958c1380ea7ea3db91792992d30f7b0fb76682",
+      "bytes": 5644
     },
     {
       "path": "RoboBrain2.5-8B-NV/官方精度基线查证.md",
-      "sha256": "4e2e44170610405cbf1bf3eee772fb7391515fb97d5dec60af282a5bcdcda6f1",
-      "bytes": 4127
+      "sha256": "d9e44e39ff1b4bdcb9ad5bd6163083ebed6edc89162e5fc512e31fd5dd87c035",
+      "bytes": 4430
     },
     {
       "path": "RoboBrain2.5-8B-NV/提交填写信息.md",
-      "sha256": "7b79af7543b376fae49b53d4ab97733ab463f9ac0a5e6673d0e538af423c26b8",
-      "bytes": 1249
+      "sha256": "1b3369b2cef94655ef257c5ebcc16bb71101458a8cc9267690d27711a0518ce8",
+      "bytes": 1253
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

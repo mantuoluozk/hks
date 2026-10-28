@@ -1,6 +1,6 @@
 {
   "model": "Recon2Reason-Reasoning-4B",
-  "sourcefind_code_base": "b98807b44234ad5981f9d417102f790ad5b62241",
+  "sourcefind_code_base": "ebf3944497d3c20860e4bf6d29eabdc39f6f4cd7",
   "files": [
     {
       "path": "Recon2Reason-Reasoning-4B/.gitignore",
@@ -9,8 +9,8 @@
     },
     {
       "path": "Recon2Reason-Reasoning-4B/README.md",
-      "sha256": "1786c269d5c50d40b5007163f80aa3bb969695b2a8d481ca79eac7a185c50fed",
-      "bytes": 7069
+      "sha256": "b8adf8f2beea97f166eaaf5b4d04db2fc9ee49e0c0178d7e4f53d0708aad4251",
+      "bytes": 7099
     },
     {
       "path": "Recon2Reason-Reasoning-4B/bench.sh",
@@ -403,6 +403,11 @@
       "bytes": 11357
     },
     {
+      "path": "Recon2Reason-Reasoning-4B/sources/competition-policy-20261028.json",
+      "sha256": "ff0038920594607a7c9e4c7e2af0733071f97a767e35001dfd688c163ec00316",
+      "bytes": 261
+    },
+    {
       "path": "Recon2Reason-Reasoning-4B/sources/datasets-metadata.json",
       "sha256": "7966297693d6ec2f157cfd84e87d83750b62d913cf3370d76ecfc5e338b6bbb5",
       "bytes": 14432
@@ -444,13 +449,13 @@
     },
     {
       "path": "Recon2Reason-Reasoning-4B/优化说明.md",
-      "sha256": "fec578a42ecfadc47f6308aeddddc1d13675e2d7aba28139cddb350000c4f126",
-      "bytes": 573
+      "sha256": "522d3223d1fcf94e7c3a10a1d49d5883578cdd3e194b9dfa843cef453529e186",
+      "bytes": 876
     },
     {
       "path": "Recon2Reason-Reasoning-4B/提交填写信息.md",
-      "sha256": "197fc5e470bb1cedfbdcc0ca4afc05b6c711dea800c511561c014b234653bd8e",
-      "bytes": 1227
+      "sha256": "56037f34793a7f515583924cf2cd486f939028f434b256bb381bc639090e800e",
+      "bytes": 1231
     },
     {
       "path": "platform/scnet-notebook/backup_shared.py",

@@ -14,7 +14,7 @@
 | 公开精度自评 | CV-Bench 2638 题，88.10% |
 | 首次性能与复现 | 12 轮、608 请求；完整矩阵独立复跑待补 |
 | 镜像验证范围 | 基础镜像 + 启动时源码补丁；未构建烘焙补丁的专用镜像 |
-| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+| 赛事精度要求 | 官方不要求精度；已有自测保留，可按现有材料提交 |
 <!-- report-resources:end -->
 
 本项目完成 `BAAI/RoboBrain2.5-8B-NV` 在超算互联网单张 BW 加速卡上的 SGLang BF16 serving 适配。模型采用 Qwen3-VL 架构，支持文本、单图、多图输入，以及文本、坐标和轨迹输出；机器人实机任务不在本次部署范围。
@@ -31,7 +31,6 @@
 | 镜像用途 | 共用基础镜像 |
 | 镜像版本 | `0.5.18` |
 | 镜像地址 | `image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18` |
-| 访问状态 | 公开访问状态待提交时核对 |
 | 镜像复验 | 基础镜像 + 启动时源码补丁；未构建烘焙补丁的专用镜像 |
 <!-- report-environment:end -->
 
@@ -62,7 +61,7 @@ SCNet Notebook，BW × 1，65520 MiB、80 CU、gfx936，逻辑设备 0，TP=1、
 
 重放脚本为 `scripts/apply_deterministic_lds_patch.py`，实际差异及许可证位于 `patches/`。脚本校验补丁前 SHA256 `9a9fdb89d84f8c392ae9a46f46c0a846b332e78f4ae77c24f240f8db55e6a6e4`，补丁后 SHA256 `371f9816ae1614d944dce1616ee2e88a6d1b6dfed2ca660275ae28cb9785bb39`，拒绝修改其他版本的源码。
 
-矩阵核检查中，BF16 GEMM 对 FP32 参考相对 L2 误差为 0.00166328，首行跨 batch 大小逐字节一致；BF16/FP32 BMM 数值及首批次一致性检查通过，记录见 `results/scnet/runtime/deterministic-gemm-check.json`。这些检查不能替代模型级 GPU 精度验收。
+矩阵核检查中，BF16 GEMM 对 FP32 参考相对 L2 误差为 0.00166328，首行跨 batch 大小逐字节一致；BF16/FP32 BMM 数值及首批次一致性检查通过，记录见 `results/scnet/runtime/deterministic-gemm-check.json`。这些是算子数值与一致性检查，独立于模型补充自测。
 
 ## 4. 启动与复现
 
@@ -101,9 +100,9 @@ python -m sglang.launch_server --model-path /root/private_data/SothisAI/model/Ai
 
 ## 6. 精度测评
 
-T02 具身 serving 验收要求在公示图像（含深度图）输入集上，解析动作/坐标与 GPU 参考输出一致率 ≥98%。当前缺少对应输入集、逐例 GPU 参考输出及比较协议，`official_accuracy_pass=null`，不填写 PASS。
+赛事最新要求不对本模型设置精度门槛。本节保留已完成的补充自测结果；这些成绩不再作为提交前置条件。
 
-发布者论文中的空间理解与轨迹基准成绩不能替代逐例 GPU 一致率；同服务重复稳定性和功能格式检查也不作为该一致率分数。正式状态与缺失项见 `verify_result.json`；来源索引见 `官方精度基线查证.md`。
+历史 `verify_result.json` 保留旧规则下缺少参考输出的状态，不改写原始测评证据；其中的98%一致率要求不适用于本次更新后的精度要求。来源索引见 `官方精度基线查证.md`。
 
 公开基准复测按照发布者采用的 FlagEvalMM 及公开数据开展。已固定 CV-Bench 完整 test 的 2,638 题、数据版本、提示和计分函数，全量 2,638 题已完成，请求错误 0；按上游分组汇总总分 88.10，与论文 NV 8B 的 94.58 相差 -6.48 个百分点。高分辨率 BMM 修复后 8/8 预跑请求正常；这 8 题仅为运行诊断，不是全量精度。协议、其余基准状态与复现命令见 [公开基准复测](公开基准复测.md)。
 
@@ -138,7 +137,6 @@ cp platform/scnet-notebook/env-scnet.sh /root/private_data/hks/platform/scnet-no
 bash env_check.sh
 bash run.sh                 # 在独立终端保持运行
 bash smoke.sh
-python verify.py            # 缺少官方参考时记录未判定并返回 2
 BENCH_PROFILE=matrix bash bench.sh
 ```
 

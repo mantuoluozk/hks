@@ -14,7 +14,7 @@
 | 公开精度自评 | GSM8K 179/200；MMLU 160/200 |
 | 首次性能与复现 | 12 轮、608 请求 |
 | 镜像验证范围 | 基础镜像上实测；新 Notebook 完整性能复验待补 |
-| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+| 最低精度标准 | Qwen3.5-9B；同协议对照尚未完成 |
 <!-- report-resources:end -->
 
 T01 文本模型适配，模型为 `XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B`，BF16、单张 BW、TP1。权重来自[发布者 Hugging Face 仓库](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B)，固定 revision `2367e865d009c13ac81713a2878291d33ab28177`，15 个运行文件及四个权重分片逐项 SHA256 校验通过。SCNet AI 社区克隆内容不完整，本次采用发布者固定快照，不将其标注为社区完整克隆。
@@ -75,6 +75,8 @@ BENCH_PROFILE=matrix bash run-scnet.sh bash bench.sh
 
 ## 6. 精度测评
 
+赛事最低精度标准调整为 Qwen3.5-9B。具体参考成绩以 [Qwen 官方模型卡](https://huggingface.co/Qwen/Qwen3.5-9B) 为来源，须匹配数据集、版本、思考模式、提示、采样和评分协议后对照；该模型公布的 MMLU-Pro/MMLU-Redux 不能与下列 MMLU 小样本互换。
+
 固定 GSM8K 与 MMLU 各 200 题公开自评样本，seed=20261023；来源固定版本和 SHA256 见 `sources/evaluation-files.json`，样本重建一致性见 `results/scnet/data-verification.json`。0-shot、greedy，temperature=0、top_p=1、开启思考、max_tokens=4096、并发 8。GSM8K 解析最终 `####` 数值，MMLU 解析最终 `ANSWER: A/B/C/D`；没有随机回退，错误、截断与解析失败均保留在分母。
 
 | 数据集 | 正确 / 总数 | 自评准确率 | 请求错误 | 截断 | 未解析 |
@@ -82,7 +84,7 @@ BENCH_PROFILE=matrix bash run-scnet.sh bash bench.sh
 | GSM8K | 179/200 | 89.50% | 0 | 0 | 2 |
 | MMLU | 160/200 | 80.00% | 0 | 5 | 5 |
 
-这些是固定公开样本成绩，不是完整测试集或发布者 GPU 基线。正式精度为**待官方测评代码复验**，`official_accuracy_pass=null`；不依据这组分数填写正式验收 PASS。原始逐题响应、输入摘要与完整协议见 `results/scnet/validation-20261026T021625Z/quality/`。
+这些是固定公开样本成绩，不是完整测试集或发布者 GPU 基线。这组成绩尚不能判定是否达到 Qwen3.5-9B 的最低标准；历史 `official_accuracy_pass=null` 保留，不依据这些小样本填写达标。原始逐题响应、输入摘要与完整协议见 `results/scnet/validation-20261026T021625Z/quality/`。
 
 ```bash
 # 先按 sources/evaluation-files.json 获取两个固定来源文件到相应 cache 路径

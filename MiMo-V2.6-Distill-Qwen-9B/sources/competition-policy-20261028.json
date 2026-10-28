@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-28",
+  "source": "Entrant relayed latest organizer clarification in project conversation",
+  "accuracy_required": true,
+  "minimum_reference_model": "Qwen/Qwen3.5-9B",
+  "existing_measurements_preserved": true,
+  "official_acceptance_claimed": false
+}
