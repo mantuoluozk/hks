@@ -1,0 +1,101 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+AUK_TORCH_POLICY backend=math deterministic=True
+AUK_OMNI_SOURCE=/opt/auk/sglang-omni/sglang_omni/__init__.py
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Failed to import torchada: No module named 'torchada'. MUSA platform compatibility will not work.
+2026-10-28 15:39:25,423 [INFO] sglang_omni.pipeline.control_plane: Coordinator control plane started
+2026-10-28 15:39:25,424 [INFO] sglang_omni.pipeline.coordinator: Coordinator started
+2026-10-28 15:39:25,427 [INFO] sglang_omni.pipeline.stage_workers: StageGroup pipeline: spawned 1 process(es) (pids=[162])
+AUK_TORCH_POLICY backend=math deterministic=True
+AUK_OMNI_SOURCE=/opt/auk/sglang-omni/sglang_omni/__init__.py
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Failed to import torchada: No module named 'torchada'. MUSA platform compatibility will not work.
+2026-10-28 15:39:48,026 [INFO] stage_workers.pipeline: Building scheduler for preprocessing (tp_rank=0/1) ...
+/opt/auk/site-packages/x_transformers/x_transformers.py:507: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/opt/auk/site-packages/x_transformers/x_transformers.py:531: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+2026-10-28 15:39:48,138 [INFO] stage_workers.pipeline: Set current device to 0 for stage conditioning
+2026-10-28 15:39:48,139 [INFO] stage_workers.pipeline: Building scheduler for conditioning (tp_rank=0/1) ...
+2026-10-28 15:39:48,139 [INFO] stage_workers.pipeline: Acquired GPU startup lock for stage conditioning: /tmp/sglang_omni_gpu_0_startup.lock
+2026-10-28 15:39:48,192 [INFO] sglang_omni.models.auk.reference_encode: AuK: loading Qwen2.5-Omni Thinker from /root/private_data/hks/models/AuK/weights/Qwen2.5-Omni-3B; checkpoint talker/token2wav branches are unused
+[transformers] Model config: tts_text_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151860. This may result in unexpected behavior.
+[transformers] Model config: tts_text_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151861. This may result in unexpected behavior.
+[transformers] Model config: tts_text_pad_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151859. This may result in unexpected behavior.
+[transformers] Model config: vision_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151652. This may result in unexpected behavior.
+[transformers] Model config: vision_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151653. This may result in unexpected behavior.
+[transformers] Model config: audio_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151647. This may result in unexpected behavior.
+[transformers] Model config: audio_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151648. This may result in unexpected behavior.
+Loading weights:   0%|          | 0/1442 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 177/1442 [00:00<00:00, 1743.22it/s]Loading weights:  24%|██▍       | 352/1442 [00:00<00:00, 1407.62it/s]Loading weights:  34%|███▍      | 497/1442 [00:00<00:00, 1173.16it/s]Loading weights:  43%|████▎     | 619/1442 [00:00<00:00, 950.15it/s] Loading weights:  50%|████▉     | 720/1442 [00:00<00:00, 891.99it/s]Loading weights:  56%|█████▋    | 813/1442 [00:00<00:00, 826.59it/s]Loading weights:  62%|██████▏   | 901/1442 [00:00<00:00, 827.72it/s]Loading weights:  69%|██████▊   | 990/1442 [00:01<00:00, 843.72it/s]Loading weights:  75%|███████▌  | 1084/1442 [00:01<00:00, 865.96it/s]Loading weights:  82%|████████▏ | 1189/1442 [00:01<00:00, 913.50it/s]Loading weights:  90%|████████▉ | 1295/1442 [00:01<00:00, 951.54it/s]Loading weights:  97%|█████████▋| 1394/1442 [00:01<00:00, 958.42it/s]Loading weights: 100%|██████████| 1442/1442 [00:01<00:00, 970.58it/s]
+/usr/local/lib/python3.10/dist-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+2026-10-28 15:40:11,484 [INFO] sglang_omni.models.auk.weight_loader: AuK: loaded weights from /root/private_data/SothisAI/model/Aihub/AuK/main/AuK/vae.safetensors (loaded=1137 missing=0 unexpected=0)
+2026-10-28 15:40:23,176 [INFO] sglang_omni.models.auk.weight_loader: AuK: loaded weights from /root/private_data/SothisAI/model/Aihub/AuK/main/AuK/auk_base.safetensors (loaded=420 missing=0 unexpected=0)
+2026-10-28 15:41:07,522 [INFO] stage_workers.pipeline: Set current device to 0 for stage auk_engine
+2026-10-28 15:41:07,522 [INFO] stage_workers.pipeline: Building scheduler for auk_engine (tp_rank=0/1) ...
+2026-10-28 15:41:07,523 [INFO] stage_workers.pipeline: Acquired GPU startup lock for stage auk_engine: /tmp/sglang_omni_gpu_0_startup.lock
+2026-10-28 15:41:07,541 [INFO] stage_workers.pipeline: Set current device to 0 for stage decode
+2026-10-28 15:41:07,541 [INFO] stage_workers.pipeline: Building scheduler for decode (tp_rank=0/1) ...
+2026-10-28 15:41:07,541 [INFO] stage_workers.pipeline: Acquired GPU startup lock for stage decode: /tmp/sglang_omni_gpu_0_startup.lock
+2026-10-28 15:41:07,543 [INFO] sglang_omni.pipeline.control_plane: Stage preprocessing control plane started
+2026-10-28 15:41:07,544 [INFO] sglang_omni.pipeline.stage.runtime: Stage preprocessing started
+2026-10-28 15:41:07,544 [INFO] sglang_omni.pipeline.control_plane: Stage conditioning control plane started
+2026-10-28 15:41:07,545 [INFO] sglang_omni.pipeline.stage.runtime: Scheduler thread for stage conditioning set cuda device to 0
+2026-10-28 15:41:07,545 [INFO] sglang_omni.pipeline.stage.runtime: Stage conditioning started
+2026-10-28 15:41:07,546 [INFO] sglang_omni.pipeline.control_plane: Stage auk_engine control plane started
+2026-10-28 15:41:07,547 [INFO] sglang_omni.pipeline.stage.runtime: Scheduler thread for stage auk_engine set cuda device to 0
+2026-10-28 15:41:07,547 [INFO] sglang_omni.pipeline.stage.runtime: Stage auk_engine started
+2026-10-28 15:41:07,583 [INFO] sglang_omni.pipeline.control_plane: Stage decode control plane started
+2026-10-28 15:41:07,583 [INFO] sglang_omni.pipeline.stage.runtime: Scheduler thread for stage decode set cuda device to 0
+2026-10-28 15:41:07,584 [INFO] sglang_omni.pipeline.stage.runtime: Stage decode started
+2026-10-28 15:41:07,584 [INFO] stage_workers.pipeline: Process pipeline ready with stages=['preprocessing', 'conditioning', 'auk_engine', 'decode']
+2026-10-28 15:41:07,584 [INFO] sglang_omni.pipeline.stage_workers: Process pipeline ready
+2026-10-28 15:41:07,584 [INFO] sglang_omni.pipeline.coordinator: Coordinator registered stage: preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-zbopc6qw/stage_preprocessing.sock
+2026-10-28 15:41:07,584 [INFO] sglang_omni.pipeline.coordinator: Coordinator registered stage: conditioning at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-zbopc6qw/stage_conditioning.sock
+2026-10-28 15:41:07,584 [INFO] sglang_omni.pipeline.coordinator: Coordinator registered stage: auk_engine at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-zbopc6qw/stage_auk_engine.sock
+2026-10-28 15:41:07,585 [INFO] sglang_omni.pipeline.coordinator: Coordinator registered stage: decode at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-zbopc6qw/stage_decode.sock
+2026-10-28 15:41:07,585 [INFO] sglang_omni.pipeline.mp_runner: MultiProcessPipelineRunner started: 4 stage(s), 1 process(es)
+2026-10-28 15:41:07,585 [INFO] sglang_omni.serve.launcher: Resolved placement/topology plan: placement={'topology': 'AuKPipelineConfig', 'pipeline': '/root/private_data/SothisAI/model/Aihub/AuK/main/AuK', 'process_groups': {'pipeline': {'stages': ['preprocessing', 'conditioning', 'auk_engine', 'decode'], 'gpu': 0}}, 'tp_process_groups': {}, 'stage_runtime': {'conditioning': {'gpu': 0, 'total_gpu_memory_fraction': None, 'kv_cache_bytes': None, 'total_reserve_bytes': None, 'mem_fraction_static': None}, 'auk_engine': {'gpu': 0, 'total_gpu_memory_fraction': None, 'kv_cache_bytes': None, 'total_reserve_bytes': None, 'mem_fraction_static': None}, 'decode': {'gpu': 0, 'total_gpu_memory_fraction': None, 'kv_cache_bytes': None, 'total_reserve_bytes': None, 'mem_fraction_static': None}}, 'gpus': {0: {'hardware': {'device_id': 0, 'name': 'BW', 'total_memory': '63.98GiB'}, 'stages': ['conditioning', 'auk_engine', 'decode'], 'total_gpu_memory_fraction': 0.0, 'missing_fraction_stages': ['auk_engine', 'conditioning', 'decode'], 'total_kv_cache_bytes': 0, 'total_reserve_bytes': 0}}}
+2026-10-28 15:41:07,585 [INFO] sglang_omni.serve.launcher: Model capabilities: {"architecture": "AuKForConditionalGeneration", "batch_vocoder": false, "breakable_prefill_cuda_graph": false, "cuda_graph": false, "reference_audio": true, "streaming_vocoder": false, "torch_compile": false}
+2026-10-28 15:41:07,585 [INFO] sglang_omni.serve.launcher: Pipeline '/root/private_data/SothisAI/model/Aihub/AuK/main/AuK' started (1 GPU(s))
+INFO:     Started server process [127]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:30005 (Press CTRL+C to quit)
+INFO:     127.0.0.1:43576 - "GET /health HTTP/1.1" 200 OK
+2026-10-28 15:41:09,125 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-d0c10fe7-f5f1-4b2b-beb5-efa696544f47 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-zbopc6qw/stage_preprocessing.sock bindings=None
+/usr/local/lib/python3.10/dist-packages/transformers/integrations/sdpa_attention.py:92: UserWarning: 1Torch was not compiled with memory efficient attention. (Triggered internally at /builds/dcutoolkit/deeplearing/pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:867.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+2026-10-28 15:41:15,403 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:43578 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [127]
+2026-10-28 15:41:21,199 [INFO] sglang_omni.serve.launcher: Shutting down pipeline …
+2026-10-28 15:41:21,200 [INFO] sglang_omni.pipeline.coordinator: Sent shutdown to stage: preprocessing
+2026-10-28 15:41:21,200 [INFO] sglang_omni.pipeline.coordinator: Sent shutdown to stage: conditioning
+2026-10-28 15:41:21,200 [INFO] sglang_omni.pipeline.coordinator: Sent shutdown to stage: auk_engine
+2026-10-28 15:41:21,200 [INFO] sglang_omni.pipeline.coordinator: Sent shutdown to stage: decode
+2026-10-28 15:41:21,206 [INFO] sglang_omni.pipeline.stage.runtime: Stage auk_engine stopped
+2026-10-28 15:41:21,227 [INFO] sglang_omni.pipeline.stage.runtime: Stage decode stopped
+2026-10-28 15:41:21,291 [INFO] sglang_omni.pipeline.stage.runtime: Stage conditioning stopped
+2026-10-28 15:41:21,294 [INFO] sglang_omni.pipeline.stage.runtime: Stage preprocessing stopped
+2026-10-28 15:41:26,889 [INFO] sglang_omni.pipeline.coordinator: Coordinator completion loop cancelled
+2026-10-28 15:41:26,889 [INFO] sglang_omni.pipeline.coordinator: Coordinator stopped
+2026-10-28 15:41:26,890 [INFO] sglang_omni.serve.launcher: Pipeline stopped.

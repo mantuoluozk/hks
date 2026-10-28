@@ -1,0 +1,11 @@
+{
+  "input": "Hello, welcome to our speech generation test.",
+  "seed": 42,
+  "response_format": "wav",
+  "stage_params": {
+    "auk_engine": {
+      "gen_seconds": 4
+    }
+  },
+  "instructions": "A calm, warm female voice."
+}

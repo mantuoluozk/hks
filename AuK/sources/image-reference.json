@@ -1,0 +1,10 @@
+{
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2115345884192739329",
+  "region": "华中一区（A区）",
+  "runtime_path": "/opt/auk",
+  "verification_scope": "new Notebook: baked file hashes and one real speech HTTP request",
+  "quick_functional_check_passed": true,
+  "new_notebook_full_performance_repeated": false,
+  "new_notebook_accuracy_repeated": false,
+  "result": "results/new-image-quick-20261028/summary.json"
+}

@@ -1,0 +1,13 @@
+{
+  "attention_backend": "default",
+  "rounds": [],
+  "complete": false,
+  "byte_exact_waveform_repeatability_required_for_performance": false,
+  "phase": "failed",
+  "server_pid": 8383,
+  "smoke_exit": 2,
+  "http_functionality_passed": true,
+  "byte_exact_waveform_repeatability": false,
+  "error": "CalledProcessError: Command '['bash', '/root/private_data/hks/models/AuK/run-scnet.sh', '/usr/bin/python', 'scripts/http_bench.py', '--output', '/root/private_data/hks/models/AuK/results/performance-20261028/first/bench']' returned non-zero exit status 1.",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/private_data/hks/models/AuK/scripts/run_performance.py\", line 71, in <module>\n    subprocess.run(['bash', str(ROOT/'run-scnet.sh'), sys.executable,\n  File \"/usr/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['bash', '/root/private_data/hks/models/AuK/run-scnet.sh', '/usr/bin/python', 'scripts/http_bench.py', '--output', '/root/private_data/hks/models/AuK/results/performance-20261028/first/bench']' returned non-zero exit status 1.\n"
+}

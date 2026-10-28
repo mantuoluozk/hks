@@ -1,0 +1,251 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+AUK_TORCH_POLICY backend=math deterministic=True
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Failed to import torchada: No module named 'torchada'. MUSA platform compatibility will not work.
+2026-10-28 15:05:48,993 [INFO] sglang_omni.pipeline.control_plane: Coordinator control plane started
+2026-10-28 15:05:48,993 [INFO] sglang_omni.pipeline.coordinator: Coordinator started
+2026-10-28 15:05:48,996 [INFO] sglang_omni.pipeline.stage_workers: StageGroup pipeline: spawned 1 process(es) (pids=[11928])
+AUK_TORCH_POLICY backend=math deterministic=True
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Failed to import torchada: No module named 'torchada'. MUSA platform compatibility will not work.
+2026-10-28 15:06:11,904 [INFO] stage_workers.pipeline: Building scheduler for preprocessing (tp_rank=0/1) ...
+/root/private_data/hks/models/AuK/runtime/deps/x_transformers/x_transformers.py:507: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/root/private_data/hks/models/AuK/runtime/deps/x_transformers/x_transformers.py:531: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+2026-10-28 15:06:11,999 [INFO] stage_workers.pipeline: Set current device to 0 for stage conditioning
+2026-10-28 15:06:11,999 [INFO] stage_workers.pipeline: Building scheduler for conditioning (tp_rank=0/1) ...
+2026-10-28 15:06:12,000 [INFO] stage_workers.pipeline: Acquired GPU startup lock for stage conditioning: /tmp/sglang_omni_gpu_0_startup.lock
+2026-10-28 15:06:12,050 [INFO] sglang_omni.models.auk.reference_encode: AuK: loading Qwen2.5-Omni Thinker from /root/private_data/hks/models/AuK/weights/Qwen2.5-Omni-3B; checkpoint talker/token2wav branches are unused
+[transformers] Model config: tts_text_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151860. This may result in unexpected behavior.
+[transformers] Model config: tts_text_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151861. This may result in unexpected behavior.
+[transformers] Model config: tts_text_pad_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151859. This may result in unexpected behavior.
+[transformers] Model config: vision_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151652. This may result in unexpected behavior.
+[transformers] Model config: vision_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151653. This may result in unexpected behavior.
+[transformers] Model config: audio_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151647. This may result in unexpected behavior.
+[transformers] Model config: audio_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151648. This may result in unexpected behavior.
+Loading weights:   0%|          | 0/1442 [00:00<?, ?it/s]Loading weights:  42%|████▏     | 611/1442 [00:00<00:00, 6100.46it/s]Loading weights:  85%|████████▍ | 1222/1442 [00:00<00:00, 5655.40it/s]Loading weights: 100%|██████████| 1442/1442 [00:00<00:00, 5665.22it/s]
+/usr/local/lib/python3.10/dist-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+2026-10-28 15:06:22,656 [INFO] sglang_omni.models.auk.weight_loader: AuK: loaded weights from /root/private_data/SothisAI/model/Aihub/AuK/main/AuK/vae.safetensors (loaded=1137 missing=0 unexpected=0)
+2026-10-28 15:06:31,565 [INFO] sglang_omni.models.auk.weight_loader: AuK: loaded weights from /root/private_data/SothisAI/model/Aihub/AuK/main/AuK/auk_base.safetensors (loaded=420 missing=0 unexpected=0)
+2026-10-28 15:06:33,209 [INFO] stage_workers.pipeline: Set current device to 0 for stage auk_engine
+2026-10-28 15:06:33,209 [INFO] stage_workers.pipeline: Building scheduler for auk_engine (tp_rank=0/1) ...
+2026-10-28 15:06:33,210 [INFO] stage_workers.pipeline: Acquired GPU startup lock for stage auk_engine: /tmp/sglang_omni_gpu_0_startup.lock
+2026-10-28 15:06:33,227 [INFO] stage_workers.pipeline: Set current device to 0 for stage decode
+2026-10-28 15:06:33,227 [INFO] stage_workers.pipeline: Building scheduler for decode (tp_rank=0/1) ...
+2026-10-28 15:06:33,228 [INFO] stage_workers.pipeline: Acquired GPU startup lock for stage decode: /tmp/sglang_omni_gpu_0_startup.lock
+2026-10-28 15:06:33,229 [INFO] sglang_omni.pipeline.control_plane: Stage preprocessing control plane started
+2026-10-28 15:06:33,230 [INFO] sglang_omni.pipeline.stage.runtime: Stage preprocessing started
+2026-10-28 15:06:33,230 [INFO] sglang_omni.pipeline.control_plane: Stage conditioning control plane started
+2026-10-28 15:06:33,231 [INFO] sglang_omni.pipeline.stage.runtime: Scheduler thread for stage conditioning set cuda device to 0
+2026-10-28 15:06:33,232 [INFO] sglang_omni.pipeline.stage.runtime: Stage conditioning started
+2026-10-28 15:06:33,232 [INFO] sglang_omni.pipeline.control_plane: Stage auk_engine control plane started
+2026-10-28 15:06:33,233 [INFO] sglang_omni.pipeline.stage.runtime: Scheduler thread for stage auk_engine set cuda device to 0
+2026-10-28 15:06:33,233 [INFO] sglang_omni.pipeline.stage.runtime: Stage auk_engine started
+2026-10-28 15:06:33,284 [INFO] sglang_omni.pipeline.control_plane: Stage decode control plane started
+2026-10-28 15:06:33,285 [INFO] sglang_omni.pipeline.stage.runtime: Scheduler thread for stage decode set cuda device to 0
+2026-10-28 15:06:33,285 [INFO] sglang_omni.pipeline.stage.runtime: Stage decode started
+2026-10-28 15:06:33,285 [INFO] stage_workers.pipeline: Process pipeline ready with stages=['preprocessing', 'conditioning', 'auk_engine', 'decode']
+2026-10-28 15:06:33,286 [INFO] sglang_omni.pipeline.stage_workers: Process pipeline ready
+2026-10-28 15:06:33,286 [INFO] sglang_omni.pipeline.coordinator: Coordinator registered stage: preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock
+2026-10-28 15:06:33,286 [INFO] sglang_omni.pipeline.coordinator: Coordinator registered stage: conditioning at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_conditioning.sock
+2026-10-28 15:06:33,286 [INFO] sglang_omni.pipeline.coordinator: Coordinator registered stage: auk_engine at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_auk_engine.sock
+2026-10-28 15:06:33,286 [INFO] sglang_omni.pipeline.coordinator: Coordinator registered stage: decode at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_decode.sock
+2026-10-28 15:06:33,286 [INFO] sglang_omni.pipeline.mp_runner: MultiProcessPipelineRunner started: 4 stage(s), 1 process(es)
+2026-10-28 15:06:33,287 [INFO] sglang_omni.serve.launcher: Resolved placement/topology plan: placement={'topology': 'AuKPipelineConfig', 'pipeline': '/root/private_data/SothisAI/model/Aihub/AuK/main/AuK', 'process_groups': {'pipeline': {'stages': ['preprocessing', 'conditioning', 'auk_engine', 'decode'], 'gpu': 0}}, 'tp_process_groups': {}, 'stage_runtime': {'conditioning': {'gpu': 0, 'total_gpu_memory_fraction': None, 'kv_cache_bytes': None, 'total_reserve_bytes': None, 'mem_fraction_static': None}, 'auk_engine': {'gpu': 0, 'total_gpu_memory_fraction': None, 'kv_cache_bytes': None, 'total_reserve_bytes': None, 'mem_fraction_static': None}, 'decode': {'gpu': 0, 'total_gpu_memory_fraction': None, 'kv_cache_bytes': None, 'total_reserve_bytes': None, 'mem_fraction_static': None}}, 'gpus': {0: {'hardware': {'device_id': 0, 'name': 'BW', 'total_memory': '63.98GiB'}, 'stages': ['conditioning', 'auk_engine', 'decode'], 'total_gpu_memory_fraction': 0.0, 'missing_fraction_stages': ['auk_engine', 'conditioning', 'decode'], 'total_kv_cache_bytes': 0, 'total_reserve_bytes': 0}}}
+2026-10-28 15:06:33,287 [INFO] sglang_omni.serve.launcher: Model capabilities: {"architecture": "AuKForConditionalGeneration", "batch_vocoder": false, "breakable_prefill_cuda_graph": false, "cuda_graph": false, "reference_audio": true, "streaming_vocoder": false, "torch_compile": false}
+2026-10-28 15:06:33,287 [INFO] sglang_omni.serve.launcher: Pipeline '/root/private_data/SothisAI/model/Aihub/AuK/main/AuK' started (1 GPU(s))
+INFO:     Started server process [11893]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:30005 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56522 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56524 - "GET /health HTTP/1.1" 200 OK
+2026-10-28 15:06:34,955 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-aa2e50df-3d51-4d90-9b79-3f060bb2ba01 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+/usr/local/lib/python3.10/dist-packages/transformers/integrations/sdpa_attention.py:92: UserWarning: 1Torch was not compiled with memory efficient attention. (Triggered internally at /builds/dcutoolkit/deeplearing/pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:867.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+2026-10-28 15:06:42,384 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56526 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:06:47,535 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-91a5cc39-ee50-4dbb-8a0d-f97fdf4478c9 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:06:47,617 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56530 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:06:50,544 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-fc1b2828-b176-4155-970c-0b8ad493254c to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:06:50,624 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56532 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:06:53,571 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-142dd1f3-ced0-469c-a1b4-f9b67362aaad to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:06:53,651 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56534 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:06:56,389 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-ebcceb6f-41d3-41c8-83ef-90f1d17c9510 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:06:56,464 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56536 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:06:59,327 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-aba94bcb-e4b9-4629-897d-9cde3a5740b4 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:02,505 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56538 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:07,610 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=d09041ca-1a8c-4147-bcef-c401c5e525da to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:07,918 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56540 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56542 - "POST /v1/audio/speech HTTP/1.1" 400 Bad Request
+2026-10-28 15:07:12,726 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-8de9f06c-f555-4e35-8d35-985eb7700a16 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:12,726 [ERROR] sglang_omni.scheduling.simple_scheduler: SimpleScheduler: compute_fn failed for speech-8de9f06c-f555-4e35-8d35-985eb7700a16
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/AuK/runtime/sglang-omni/sglang_omni/scheduling/simple_scheduler.py", line 288, in worker
+    result = await asyncio.to_thread(
+  File "/usr/lib/python3.10/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/private_data/hks/models/AuK/runtime/sglang-omni/sglang_omni/scheduling/simple_scheduler.py", line 214, in _run_compute_in_thread
+    result = self._fn(payload)
+  File "/root/private_data/hks/models/AuK/runtime/sglang-omni/sglang_omni/models/auk/request_builders.py", line 227, in preprocess_auk_payload
+    state = build_auk_state(payload, context.config)
+  File "/root/private_data/hks/models/AuK/runtime/sglang-omni/sglang_omni/models/auk/request_builders.py", line 177, in build_auk_state
+    raise ValueError(f"AuK gen_seconds must be positive, got {gen_seconds}")
+ValueError: AuK gen_seconds must be positive, got 0.0
+2026-10-28 15:07:12,729 [WARNING] sglang_omni.serve.openai_api: Rejecting speech request speech-8de9f06c-f555-4e35-8d35-985eb7700a16: AuK gen_seconds must be positive, got 0.0
+INFO:     127.0.0.1:56544 - "POST /v1/audio/speech HTTP/1.1" 400 Bad Request
+2026-10-28 15:07:13,277 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-7e84f534-078b-4a9b-894d-598692338c36 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:13,355 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56546 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:16,332 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-5ec5c126-7029-4c07-8f2d-a6560597568d to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:16,414 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56548 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:19,362 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-850a2913-4a2a-4527-af9c-4a1afd8947ee to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:19,442 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56550 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:22,391 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-dd1a54b4-d8d0-4edf-82bd-825005de80a5 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:22,472 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56552 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:25,420 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-bc1aa6d2-5d09-4902-bdfb-288ad0bed99a to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:25,500 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56554 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:28,446 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-0987fa07-2b0b-4582-aefc-6c3ff5e05043 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:28,527 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56556 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:31,475 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-c8b28fc2-ccc2-4a9f-8ff4-1ab62d5ebed9 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:31,554 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56558 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:34,500 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-a33da4eb-5ea6-4126-9237-6f68c2f1ecb2 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:34,580 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56560 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:37,525 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-58efc714-b93d-4080-a8f1-8b5ab25fccae to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:37,605 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56562 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:40,564 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-c7ddcecc-261f-4ed4-b270-5b5fe783c5fc to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:40,564 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-4db3db3a-80b6-4548-8051-04757fd16005 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:40,647 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+2026-10-28 15:07:43,444 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56566 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56564 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:46,461 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-75422ff9-101f-49c8-b9a8-db18def7e4a5 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:46,461 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-57e40c07-434b-45c7-a31c-7aa30ccb86f4 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:46,545 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+2026-10-28 15:07:49,345 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56570 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:49,562 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-b1a88a3a-b101-492a-84f3-c6b6f2291f0b to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:52,205 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56572 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:52,424 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-b478b14c-8ec1-4f8e-a3cd-2cad814498d1 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:55,068 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56574 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:55,287 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-10ec940c-4056-4fdd-976a-f413486e12c8 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:07:57,931 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56576 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:07:58,151 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-96190234-cf5e-42a7-ad40-aaa80ba8b5f6 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:00,794 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56578 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:01,026 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-d54ebea1-54c4-4606-8f9b-fa88083e0265 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:03,661 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56580 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:03,892 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-2679b48c-35f7-41de-890b-4e0e4e1b7ec3 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:06,544 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56582 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56584 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:09,789 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-509dce08-ae52-4be5-9aa5-84e1f2ec6df2 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:09,870 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56586 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:12,937 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-9830931b-cfa4-421e-a18a-572838626209 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:13,022 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56588 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:16,036 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-7aa67881-acb4-4223-bc59-90f4a0bc9e47 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:16,116 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56590 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:19,128 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-cb4f356e-88f6-4521-ae7b-c0fbc1a0f4dd to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:19,208 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56592 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:22,223 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-9149889f-cd50-4782-8fad-e42a4492fb20 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:22,303 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56594 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:25,517 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-d70a5500-cc08-4962-9b57-594c1764eb74 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:25,599 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56596 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:28,608 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-12364738-75c6-4a3f-97aa-a013f562f528 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:28,688 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56598 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:31,698 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-125c67a4-3b3f-4af6-8ecc-27d604672739 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:31,778 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56600 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:34,786 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-1597b336-31dc-4a83-a654-c8e5ab6c2708 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:34,865 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56602 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:37,886 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-79a7c351-9af8-4cb7-b3c6-717c45a55518 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:37,886 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-b8192a02-59e4-46c7-ae5a-09c9a99abbde to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:37,968 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+2026-10-28 15:08:40,747 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56604 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56606 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:43,851 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-f283a101-39c1-40fa-a2c8-9c163fa4059f to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:43,851 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-52da7a82-18cf-46ad-8602-2e99c23e1034 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:43,934 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+2026-10-28 15:08:46,713 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56608 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:47,260 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-0e78884a-1af9-4e2f-a1e7-1cb30294e1b1 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:49,586 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56610 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:49,924 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-b5a6e46a-9f80-4093-9cc4-6bca67c921bb to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:52,461 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56612 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:52,804 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-a0f1a6f7-5de2-4f36-9167-07b91a9876a3 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:55,334 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56614 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:55,672 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-1aa80944-b503-4420-a8e7-392367274f78 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:08:58,208 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56616 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:08:58,550 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-108a6ed7-d81c-4a24-9175-a89678bc6bb3 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:09:01,079 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56618 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+2026-10-28 15:09:01,420 [INFO] sglang_omni.pipeline.coordinator: Coordinator submitted req=speech-ec8d5353-2a78-4491-b52b-4c927cabb787 to preprocessing at ipc:///tmp/sglang_omni/root-private-data-sothisai-model-aihub-auk-main-auk-17bbzk0l/stage_preprocessing.sock bindings=None
+2026-10-28 15:09:03,952 [INFO] sglang_omni.models.auk.stages: AuK DiT: sampling batch of 1 requests
+INFO:     127.0.0.1:56620 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56622 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11893]
+2026-10-28 15:09:07,197 [INFO] sglang_omni.serve.launcher: Shutting down pipeline …
+2026-10-28 15:09:07,197 [INFO] sglang_omni.pipeline.coordinator: Sent shutdown to stage: preprocessing
+2026-10-28 15:09:07,198 [INFO] sglang_omni.pipeline.coordinator: Sent shutdown to stage: conditioning
+2026-10-28 15:09:07,198 [INFO] sglang_omni.pipeline.coordinator: Sent shutdown to stage: auk_engine
+2026-10-28 15:09:07,198 [INFO] sglang_omni.pipeline.coordinator: Sent shutdown to stage: decode
+2026-10-28 15:09:07,210 [INFO] sglang_omni.pipeline.stage.runtime: Stage auk_engine stopped
+2026-10-28 15:09:07,227 [INFO] sglang_omni.pipeline.stage.runtime: Stage conditioning stopped
+2026-10-28 15:09:07,238 [INFO] sglang_omni.pipeline.stage.runtime: Stage decode stopped
+2026-10-28 15:09:07,290 [INFO] sglang_omni.pipeline.stage.runtime: Stage preprocessing stopped
+2026-10-28 15:09:13,986 [INFO] sglang_omni.pipeline.coordinator: Coordinator completion loop cancelled
+2026-10-28 15:09:13,986 [INFO] sglang_omni.pipeline.coordinator: Coordinator stopped
+2026-10-28 15:09:13,987 [INFO] sglang_omni.serve.launcher: Pipeline stopped.

@@ -1,0 +1,2830 @@
+{
+  "repository": "https://github.com/sgl-project/sglang-omni",
+  "revision": "428b73225f808f0d93669140983e90839c9aea0e",
+  "python_310_grammar_passed": true,
+  "package_metadata_python": ">=3.10,<3.13",
+  "source_modified": false,
+  "files": [
+    {
+      "path": "sglang_omni/admission.py",
+      "bytes": 738,
+      "sha256": "42643e2d0e91e516c6a9f565fa2cc8b87f3edcfb6c37e86004e886e1dcd01d09"
+    },
+    {
+      "path": "sglang_omni/quantization.py",
+      "bytes": 10098,
+      "sha256": "b14f840c7f83fedb831320e642b8ae3c7e01a54e8dd52e89ae2e422b035ff038"
+    },
+    {
+      "path": "sglang_omni/__init__.py",
+      "bytes": 2316,
+      "sha256": "c14e497b295d406be942364f7c8d53527103f33f35d4898ea1bf52f6abe83100"
+    },
+    {
+      "path": "sglang_omni/cli/check_gpu.py",
+      "bytes": 1098,
+      "sha256": "cdf1e0a84761ae841c6464718156cc00798180a5609e5a0a419f1bd71103f4d6"
+    },
+    {
+      "path": "sglang_omni/cli/config.py",
+      "bytes": 13765,
+      "sha256": "e0062da1677f15da3253b85685418f7722b2d24ccbead90143cb73855c7bb711"
+    },
+    {
+      "path": "sglang_omni/cli/serve.py",
+      "bytes": 15961,
+      "sha256": "20d8f78edd59e8c6a554413035c0a6d36a0a80a5f34207c28f8830d1c9a71f45"
+    },
+    {
+      "path": "sglang_omni/cli/sglang_backend.py",
+      "bytes": 1269,
+      "sha256": "58e6e7f6e2d14a414a5b4eab7af3aa63e0879ee6ce5df8d29d894da05e79f7ad"
+    },
+    {
+      "path": "sglang_omni/cli/__init__.py",
+      "bytes": 392,
+      "sha256": "dae41ab58cdd577123fa9f25603ba42fe6e8e3b164fda9faa878d5d9febd3ec6"
+    },
+    {
+      "path": "sglang_omni/cli/__main__.py",
+      "bytes": 60,
+      "sha256": "70ca7a4157edd9414b0dd7e002e82949c9d110537c12dca9c6b838635d6ed772"
+    },
+    {
+      "path": "sglang_omni/client/audio.py",
+      "bytes": 14587,
+      "sha256": "8312ea9eb554174d218e56b609ee92353dbaae24b16b954f6100a3dae4b565df"
+    },
+    {
+      "path": "sglang_omni/client/client.py",
+      "bytes": 26077,
+      "sha256": "c4aebfe4fbfd9129f5c93d3a9423a75d8b43425a10741ccf4eb3cb319f980ebb"
+    },
+    {
+      "path": "sglang_omni/client/types.py",
+      "bytes": 7116,
+      "sha256": "28459da31908be792d16597627b6be8b29e91614cc8a3773c8d5d1f7ea4c6369"
+    },
+    {
+      "path": "sglang_omni/client/__init__.py",
+      "bytes": 686,
+      "sha256": "dcf63d55c0d4948535fe72f5710148b310d5f20a542145521eead4a3815d4d9b"
+    },
+    {
+      "path": "sglang_omni/comm/data_ref.py",
+      "bytes": 7044,
+      "sha256": "d59d01405fad14aed1c57dedcb641e6de4832d15e17a0d4fa7ab4868cdef77e6"
+    },
+    {
+      "path": "sglang_omni/comm/engine.py",
+      "bytes": 43423,
+      "sha256": "6e694d0c9b6bccd37412f46e0d37d3e0587169221de5a43fa92649abd46a9a8c"
+    },
+    {
+      "path": "sglang_omni/comm/kv_transfer.py",
+      "bytes": 4152,
+      "sha256": "2439a3f71976f8a35750e9771c5a4da6d0d9c481407013efdb352892d727c097"
+    },
+    {
+      "path": "sglang_omni/comm/router.py",
+      "bytes": 15770,
+      "sha256": "9d3eee6eecd51ac5bed15d5f5b71a8c319bf36e602b608575339b6bd8024d470"
+    },
+    {
+      "path": "sglang_omni/comm/stage_io.py",
+      "bytes": 28623,
+      "sha256": "7148de13d86461ebe7cdb31359585133689a9d33fa14ca99013c5300b5a897da"
+    },
+    {
+      "path": "sglang_omni/comm/__init__.py",
+      "bytes": 823,
+      "sha256": "6ee7c99280b1527acebec519f688a132908dbbaf750407d7c4b8213894cd3019"
+    },
+    {
+      "path": "sglang_omni/config/compat.py",
+      "bytes": 2772,
+      "sha256": "39ae593552113f45866508b78c2fd469d6a28430d42c31281ed5a507a71332a9"
+    },
+    {
+      "path": "sglang_omni/config/manager.py",
+      "bytes": 8435,
+      "sha256": "7c0ca4086f8c0e9e12241eb489a1d206b3fb2006bec488bc149181ee711f5506"
+    },
+    {
+      "path": "sglang_omni/config/patch.py",
+      "bytes": 9166,
+      "sha256": "845cdfc78622a32a0bd0af0ad67dc33618d953545608123e63c78008e1666ad9"
+    },
+    {
+      "path": "sglang_omni/config/path.py",
+      "bytes": 32212,
+      "sha256": "ceaec7a4ec151465be1a50972a21360084e901ad4b43563621c6fed9099ad955"
+    },
+    {
+      "path": "sglang_omni/config/placement.py",
+      "bytes": 10229,
+      "sha256": "ff3c27921490823f84af9f77e2438e42a20f514864f9f44b29c3f0940e840c9f"
+    },
+    {
+      "path": "sglang_omni/config/provenance.py",
+      "bytes": 5165,
+      "sha256": "443cd0ac68693038a603a39df3fccf023e78d223112015e1347824db8b791dae"
+    },
+    {
+      "path": "sglang_omni/config/resolver.py",
+      "bytes": 7318,
+      "sha256": "0da6501e2b22d41f623d366bda5773e86e4acc2230be07598fb30b6f0a9d943e"
+    },
+    {
+      "path": "sglang_omni/config/runtime.py",
+      "bytes": 8421,
+      "sha256": "0b364aab5bcebaf514eb0c292333062f69df28e7fe294039db1989fef0e60700"
+    },
+    {
+      "path": "sglang_omni/config/schema.py",
+      "bytes": 37748,
+      "sha256": "e37409997908bf51e75bad59c58654ce8cc01fadf7f4a2fe43e16fd241cda94e"
+    },
+    {
+      "path": "sglang_omni/config/sources.py",
+      "bytes": 20071,
+      "sha256": "6afea23b4c18459ece147859a18e773f6fe75269da104442050e18cf6f3f4bd9"
+    },
+    {
+      "path": "sglang_omni/config/topology.py",
+      "bytes": 16938,
+      "sha256": "4d589b86f2fbecb45a0ad726b4aea4ff0f9a63cd69173f9e07bc8bf657837b76"
+    },
+    {
+      "path": "sglang_omni/config/__init__.py",
+      "bytes": 1864,
+      "sha256": "c1ceb8e5a79901086f9178a261b8c98b8a99309bc9ca40f3d68494be0a5cfc54"
+    },
+    {
+      "path": "sglang_omni/diagnostics/gpu.py",
+      "bytes": 15045,
+      "sha256": "f20ce833753f00b7809fff870407fed498623339aff74c627d074a6b927cdcc4"
+    },
+    {
+      "path": "sglang_omni/diagnostics/__init__.py",
+      "bytes": 245,
+      "sha256": "4c5baa23ce75f061aa26b15561adc26b7894c07af124f67e3ac2a237b1763fc3"
+    },
+    {
+      "path": "sglang_omni/http/admin_auth.py",
+      "bytes": 1526,
+      "sha256": "a418f6120a6a3f8177a6e2803e8f4c4be21a7dfd0a51f366eed566f1c70d6785"
+    },
+    {
+      "path": "sglang_omni/http/favicon.py",
+      "bytes": 1125,
+      "sha256": "f261cb1216c2da72baf41dcaffef4f432f31e811f5d24c18fde5df1f20508eb8"
+    },
+    {
+      "path": "sglang_omni/http/__init__.py",
+      "bytes": 100,
+      "sha256": "f4f5e9d0f67ba253c062b1f54f23a48bc1bdb36921d0fb52fe7a7d250978fbc5"
+    },
+    {
+      "path": "sglang_omni/models/model_capabilities.py",
+      "bytes": 3109,
+      "sha256": "8349b12efbeb50e4fb829717cfc1b07169ece19e3af25df66620765483a11978"
+    },
+    {
+      "path": "sglang_omni/models/registry.py",
+      "bytes": 5079,
+      "sha256": "aa02c80800372ca9ee4ef3ec4aeb8e267a39d9613bd6f4e9cbafbf8f1e7a4b8b"
+    },
+    {
+      "path": "sglang_omni/models/weight_loader.py",
+      "bytes": 9281,
+      "sha256": "a3900336a775f9b4ea7e4e260725a60691f404eff22cfa382b22823a200921d6"
+    },
+    {
+      "path": "sglang_omni/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sglang_omni/model_runner/base.py",
+      "bytes": 42407,
+      "sha256": "39e3357b7b021e2af3e27f35064f618d433e6303809a2f9774b9d6b6832faafb"
+    },
+    {
+      "path": "sglang_omni/model_runner/ming_thinker_model_runner.py",
+      "bytes": 9758,
+      "sha256": "4231e2f77e21d051076d9e440eff85a3e0e11034f8a4cfbf5423591511cf099b"
+    },
+    {
+      "path": "sglang_omni/model_runner/mlx_model_worker.py",
+      "bytes": 10975,
+      "sha256": "b68df7b8822c3f26b37c6b1db07c53d0f66c4ed4f51772a6987a38aa4bd13802"
+    },
+    {
+      "path": "sglang_omni/model_runner/model_worker.py",
+      "bytes": 22781,
+      "sha256": "f0a6267e280248bbbe220fb70c4029df9263fa9660320f703a5c0736e6f65d5d"
+    },
+    {
+      "path": "sglang_omni/model_runner/prefill_inputs.py",
+      "bytes": 2829,
+      "sha256": "ca5af80b35127f66b47e7922365d0881082c673517a989a959fb38237374accc"
+    },
+    {
+      "path": "sglang_omni/model_runner/sglang_execution.py",
+      "bytes": 4609,
+      "sha256": "bbd2b0f8d63685dd1e03d83bf7f1db154067fb193066f7dbc45559d08de10815"
+    },
+    {
+      "path": "sglang_omni/model_runner/sglang_model_runner.py",
+      "bytes": 28982,
+      "sha256": "617c2d37eb85dc07f8a3070a73ae163715e7d010d9c5a3523389181dacbe7716"
+    },
+    {
+      "path": "sglang_omni/model_runner/thinker_model_runner.py",
+      "bytes": 20928,
+      "sha256": "f61fca7eaf77a568a4321efda7bab5b9da841eae12b219d22913b9c59569ecde"
+    },
+    {
+      "path": "sglang_omni/model_runner/weight_checker.py",
+      "bytes": 6644,
+      "sha256": "97718d6f795874ff68ca0c12f81ca8e2f589c29896679ddc2530c88154898526"
+    },
+    {
+      "path": "sglang_omni/model_runner/whisper_prefill_cuda_graph_runner.py",
+      "bytes": 2282,
+      "sha256": "884eda1371996a3777ee1ac9f2641c3fe8214299dca4fb998583e496d0e2a1bc"
+    },
+    {
+      "path": "sglang_omni/model_runner/_hidden_capture.py",
+      "bytes": 5623,
+      "sha256": "ddc0a41af9b0cf213c6a885357faa95b1e86839977ade88b59fb1c33badfe72e"
+    },
+    {
+      "path": "sglang_omni/model_runner/__init__.py",
+      "bytes": 94,
+      "sha256": "c13bcb6435b839f79a3758e123b0bcd3ad80a7ab13e5c73b351874c2ec47a9fe"
+    },
+    {
+      "path": "sglang_omni/mps/control.py",
+      "bytes": 7661,
+      "sha256": "5feaf6a7d979345e6f305a8f8ab2d8c3c41466b9268c46d78d5cdfbbc54dc560"
+    },
+    {
+      "path": "sglang_omni/mps/decision.py",
+      "bytes": 3579,
+      "sha256": "c6d2880b174c167a5ae2a8ba0d811153debad4562775224ea0bf89e25c23dfb3"
+    },
+    {
+      "path": "sglang_omni/mps/devices.py",
+      "bytes": 5943,
+      "sha256": "276008ab300e8092f73d4baa3b865086df0a01ea7592cd11c4f5271c99de6f87"
+    },
+    {
+      "path": "sglang_omni/mps/manager.py",
+      "bytes": 31442,
+      "sha256": "d7ff5db3cafaee893704188ffbfb8c93fda214b9d9840a8db2659022e7a80925"
+    },
+    {
+      "path": "sglang_omni/mps/runtime.py",
+      "bytes": 22318,
+      "sha256": "af6c47ae57f4a16dac6f214c1aea2ca7e3c8ac42f35c864ec4584e22aa48c51a"
+    },
+    {
+      "path": "sglang_omni/mps/state.py",
+      "bytes": 3693,
+      "sha256": "e2c8667979cc4f3660cdd497f612547d86d6b907fa3e79659b85f4585881a95c"
+    },
+    {
+      "path": "sglang_omni/mps/__init__.py",
+      "bytes": 81,
+      "sha256": "998ba06b242aa30abf6910a4e9a68edf03d8f47925aaa378961add13bec6847f"
+    },
+    {
+      "path": "sglang_omni/pipeline/control_plane.py",
+      "bytes": 14972,
+      "sha256": "94cf31fe45c9d470d7ecf83b3dfeba8415d959a82fefb55cc7e2fdcc31ae25ea"
+    },
+    {
+      "path": "sglang_omni/pipeline/coordinator.py",
+      "bytes": 32032,
+      "sha256": "66581c2874f2097dbda3dfda2b1254a40bf638dbb93a1ace36a2b3b6e4cacd05"
+    },
+    {
+      "path": "sglang_omni/pipeline/local_dispatch.py",
+      "bytes": 2667,
+      "sha256": "1299f1436fcb402989698183cae40eb0114b4d00eb4e5c4020c115870f20c55c"
+    },
+    {
+      "path": "sglang_omni/pipeline/mp_runner.py",
+      "bytes": 35112,
+      "sha256": "a5e84d7cccc994f7d48b795ba851410d7896b6eb46f194230a5e231d63411e08"
+    },
+    {
+      "path": "sglang_omni/pipeline/replicas.py",
+      "bytes": 10067,
+      "sha256": "0c552991e1884dd20ae11bd7f0fd97cdcbfd0738550cf41d8235b09b76bc4751"
+    },
+    {
+      "path": "sglang_omni/pipeline/runtime_config.py",
+      "bytes": 8970,
+      "sha256": "e6ec3a8bf9bd7abe8e7f3cab8d99880f0a63c3ee887de9c7c67cd85413f92373"
+    },
+    {
+      "path": "sglang_omni/pipeline/stage_workers.py",
+      "bytes": 35155,
+      "sha256": "cc4f0314014cea2b9193c74b1d1a6c7652f5b6e62ac1317de543a9cdc38d28b7"
+    },
+    {
+      "path": "sglang_omni/pipeline/tp_control.py",
+      "bytes": 5985,
+      "sha256": "b6aa7a38383b0a69825a934e2d66c2c282ef8b47f67da6ff547f244ca8dd519f"
+    },
+    {
+      "path": "sglang_omni/pipeline/weight_share.py",
+      "bytes": 10061,
+      "sha256": "f7162377b44c56ff5535b1fd4d95c1f25b9f9b293e1ac61e0facd3489a570e23"
+    },
+    {
+      "path": "sglang_omni/pipeline/__init__.py",
+      "bytes": 1109,
+      "sha256": "a9f643983ab744852d3072e95098ee81e2d03f78722e4b9401af6a564c752714"
+    },
+    {
+      "path": "sglang_omni/platforms/apple.py",
+      "bytes": 4066,
+      "sha256": "d1d4fe663f7e59125881f0c1df059fc31e4c3ba8ce7f219b02572d1220afb328"
+    },
+    {
+      "path": "sglang_omni/platforms/cpu.py",
+      "bytes": 231,
+      "sha256": "a603b1064b852c56729360fa45f31346365275d5105e251f68058784c4b75dc4"
+    },
+    {
+      "path": "sglang_omni/platforms/cuda.py",
+      "bytes": 7960,
+      "sha256": "d123bd65552d9426e60de3da99539eb382d5988f7905e65d93b4fb508daff62a"
+    },
+    {
+      "path": "sglang_omni/platforms/device_graph.py",
+      "bytes": 2551,
+      "sha256": "0809cd60dd52eebe1fa998d383552879e3056db2577d0cfed537f43e25196e61"
+    },
+    {
+      "path": "sglang_omni/platforms/interface.py",
+      "bytes": 3901,
+      "sha256": "c43a718964989350148b84f69a861c8172a07c6ed4a608e3b5454dd9a7c8aead"
+    },
+    {
+      "path": "sglang_omni/platforms/musa.py",
+      "bytes": 1153,
+      "sha256": "be0df60aefc16ad984291abfa2252e8835f06ce604a3c157823ae3f8331866b9"
+    },
+    {
+      "path": "sglang_omni/platforms/npu.py",
+      "bytes": 751,
+      "sha256": "5830756ff12d3e9fb50cf3e6369e440877755ffa87c49f4f96b8917182f11f23"
+    },
+    {
+      "path": "sglang_omni/platforms/rocm.py",
+      "bytes": 3974,
+      "sha256": "21db7b55ad9144711792bc84ae4f6ee4d10ab4756278fcddb1ebabc27a812a43"
+    },
+    {
+      "path": "sglang_omni/platforms/xpu.py",
+      "bytes": 5213,
+      "sha256": "ac718a13c380230b1589d806ffc3736f0f0998dc414ead3a8112456a0eca43ee"
+    },
+    {
+      "path": "sglang_omni/platforms/__init__.py",
+      "bytes": 3136,
+      "sha256": "1273f8bb9d0fb1db9c1818df512183341803ce6439c52de31191b7c381bb6783"
+    },
+    {
+      "path": "sglang_omni/preprocessing/audio.py",
+      "bytes": 10314,
+      "sha256": "1f3d6bf6b2e5299ce284ac6a57a30212d34330f4e09410ba961f9ba5666e823d"
+    },
+    {
+      "path": "sglang_omni/preprocessing/base.py",
+      "bytes": 2138,
+      "sha256": "b4ea894a0746f599e19b03762da6962242081f852d57126bee1abdcf04f89d80"
+    },
+    {
+      "path": "sglang_omni/preprocessing/cache_key.py",
+      "bytes": 7918,
+      "sha256": "e37075f71ae46c72ddf89a10fc53095a7ea121526211c4406721ddd9bf6e4241"
+    },
+    {
+      "path": "sglang_omni/preprocessing/image.py",
+      "bytes": 4530,
+      "sha256": "1b304eb5344ad1f11d413483f780d7f62fa52a9a6c176ee52533a9b787ac9a1e"
+    },
+    {
+      "path": "sglang_omni/preprocessing/resource_connector.py",
+      "bytes": 20388,
+      "sha256": "fab8169eed30401a3603ac9fd23052387b38d57b59da416c21e3e494469e214c"
+    },
+    {
+      "path": "sglang_omni/preprocessing/text.py",
+      "bytes": 3416,
+      "sha256": "ab6252c43e37b14a6589b2b2b51ad9775292fc76e836d98d2c38e6d62a805acb"
+    },
+    {
+      "path": "sglang_omni/preprocessing/transcription.py",
+      "bytes": 3793,
+      "sha256": "b29e36937b884f9a6bd450eee178fab3df932ec533a9865ae047100fd0f56a05"
+    },
+    {
+      "path": "sglang_omni/preprocessing/video.py",
+      "bytes": 16420,
+      "sha256": "b9b5b9331393a764636455ea7f664074a0d3285d28235fd2591fa9857639668d"
+    },
+    {
+      "path": "sglang_omni/preprocessing/__init__.py",
+      "bytes": 2664,
+      "sha256": "8d5e2e4c20796fcb2eb2050b3c1d1ccc61c5c522ff212975ea35356f0df52e5a"
+    },
+    {
+      "path": "sglang_omni/profiler/base_profiler.py",
+      "bytes": 1580,
+      "sha256": "862772bb6bf30fdabd6c5bc069add31ad95f002ab40e1cd59eae11ebe26c5f08"
+    },
+    {
+      "path": "sglang_omni/profiler/comm_trace.py",
+      "bytes": 832,
+      "sha256": "d642d123542dc2e36544f39a5e91e6e615d689081df5f4bb5c4ab78d4de8bab0"
+    },
+    {
+      "path": "sglang_omni/profiler/event_recorder.py",
+      "bytes": 10561,
+      "sha256": "e0bc923a2c5d28f851b459d4a15243e159ca1a259288f9ad6aff665699fa116f"
+    },
+    {
+      "path": "sglang_omni/profiler/profiler_control.py",
+      "bytes": 2808,
+      "sha256": "e8f729156bff1fe1b4a71d220e5948f4ca3c7c56b3970d2036a94816733a24f1"
+    },
+    {
+      "path": "sglang_omni/profiler/torch_profiler.py",
+      "bytes": 7352,
+      "sha256": "e2a7e4fde6f3eb92b4a9d6b7dc49b987712a609effd0337c71a3512450f96333"
+    },
+    {
+      "path": "sglang_omni/profiler/views.py",
+      "bytes": 15139,
+      "sha256": "2a3cd307fdf5f85667080c7f3d30f9255c2979cfddf9e72aa165cbceecb3f9e0"
+    },
+    {
+      "path": "sglang_omni/profiler/__main__.py",
+      "bytes": 2014,
+      "sha256": "a544545ace029131e898efcd8a70b4221e37e2ac14d1641628bf0a44b0b0a3b6"
+    },
+    {
+      "path": "sglang_omni/proto/admin.py",
+      "bytes": 3186,
+      "sha256": "a74e4f3491d5f470d12e7c9ad16928008522ceca5a0da57205c5fc1145aa1303"
+    },
+    {
+      "path": "sglang_omni/proto/kv_transfer.py",
+      "bytes": 2544,
+      "sha256": "77933206aabf146a001add077231824f3fc52866de5aadc4b2b9399d5c56d7bd"
+    },
+    {
+      "path": "sglang_omni/proto/messages.py",
+      "bytes": 13751,
+      "sha256": "71280544a0b52b95da0cc2f64396576afd276d9a4422c4867e13397ea2c135f8"
+    },
+    {
+      "path": "sglang_omni/proto/request.py",
+      "bytes": 2775,
+      "sha256": "f9a3ccdb4e0fb1fe31ac9a6654c944b23487726c9af1e826294a4a740dcaafff"
+    },
+    {
+      "path": "sglang_omni/proto/stage.py",
+      "bytes": 229,
+      "sha256": "9a0e9e3b4cab4d6159abf3ec3690c5e46708fcaceabd0e7420c7c1415eadf88c"
+    },
+    {
+      "path": "sglang_omni/proto/__init__.py",
+      "bytes": 1974,
+      "sha256": "b2d065fd171a6796d56ef3e58702a84db30a5409474b0d04a1c7244020d2a832"
+    },
+    {
+      "path": "sglang_omni/relay/base.py",
+      "bytes": 5738,
+      "sha256": "bb6b05967b91eb77d4a75a619c5f56e763e5ded23ab215bd5d98922281e20cfa"
+    },
+    {
+      "path": "sglang_omni/relay/cuda_ipc.py",
+      "bytes": 46411,
+      "sha256": "24b329e4e370de3711be35d0886eafa0eb7e0575b9153f0b7393f87b51f3484d"
+    },
+    {
+      "path": "sglang_omni/relay/mooncake.py",
+      "bytes": 27186,
+      "sha256": "ca49cecdd0b93da210452d4388f7dc3ffeae69e2868c80b7dbb33551659973e4"
+    },
+    {
+      "path": "sglang_omni/relay/nccl.py",
+      "bytes": 9575,
+      "sha256": "c84a3379e1b5fa842dee9108ce45b874841f49ba8aca4f4ee35a63db4492dca5"
+    },
+    {
+      "path": "sglang_omni/relay/nixl.py",
+      "bytes": 12125,
+      "sha256": "7350e87b5a8e901c0003f9144d57b964c3c3b64e4fdc77a95e207072baa3a6ca"
+    },
+    {
+      "path": "sglang_omni/relay/shm.py",
+      "bytes": 6367,
+      "sha256": "e516fa085c148db958fb7269c89c7f45e58cc122801c40739d5bf7a4b5ce73e7"
+    },
+    {
+      "path": "sglang_omni/relay/__init__.py",
+      "bytes": 577,
+      "sha256": "8df4b1e5a28ad1e32f1545cee44a8788548c708fd10575aba0d165eade95e75b"
+    },
+    {
+      "path": "sglang_omni/sampling/seed.py",
+      "bytes": 1675,
+      "sha256": "b550abb31d33900c08bdcf440059450b1f3a8b0017080b88c50a7e16b0e4746f"
+    },
+    {
+      "path": "sglang_omni/sampling/__init__.py",
+      "bytes": 39,
+      "sha256": "1ed4e17af60fd6047eadaa4ba1b930eac450bbc4099d8443dbc1f00a3d527650"
+    },
+    {
+      "path": "sglang_omni/scheduling/bootstrap.py",
+      "bytes": 10388,
+      "sha256": "41821ba37189c8fa7a57a8feedce58ec1d42c5bbd0f8c05b6ad86661b2f35cf2"
+    },
+    {
+      "path": "sglang_omni/scheduling/dllm_scheduler.py",
+      "bytes": 14288,
+      "sha256": "774139c195e1b583cd686fdbd019ba208d3cc7f8bd00fbb09cae2d02c2f9b5d6"
+    },
+    {
+      "path": "sglang_omni/scheduling/engine_factory.py",
+      "bytes": 19523,
+      "sha256": "d8e3f98ce76cc6a550fa54b1909fe474dd752e87a90911c296dbdeedeef89197"
+    },
+    {
+      "path": "sglang_omni/scheduling/generation_batch_policy.py",
+      "bytes": 17647,
+      "sha256": "a73e13b55ec998795827d681cd44b8bc5ab27ccd9bccafd15003981a199e40b6"
+    },
+    {
+      "path": "sglang_omni/scheduling/messages.py",
+      "bytes": 579,
+      "sha256": "19403b6e76f754ed724f789019dac057387f72e717b566da35d0907ce4f53fc6"
+    },
+    {
+      "path": "sglang_omni/scheduling/omni_scheduler.py",
+      "bytes": 117941,
+      "sha256": "da6236bcdef15a05a87b2bebf646d434a5c4c8dfb9f8c611806613dddf8765a5"
+    },
+    {
+      "path": "sglang_omni/scheduling/pipeline_state.py",
+      "bytes": 11182,
+      "sha256": "b13157d04cc3c0a69374d638bcf13f844c1da93992e1db9dab18da2ba9bfc918"
+    },
+    {
+      "path": "sglang_omni/scheduling/prepared_request_queue.py",
+      "bytes": 4366,
+      "sha256": "0453485d1efa6ad3fee0931d291a9eaa3e6476776975ed3530414282ba33be5b"
+    },
+    {
+      "path": "sglang_omni/scheduling/pre_lm_encoder.py",
+      "bytes": 11496,
+      "sha256": "496a0e326acf673e488ef30fc2892a7a73530cacacd5c6d5980ec9b1e2735c6e"
+    },
+    {
+      "path": "sglang_omni/scheduling/reference_encoder.py",
+      "bytes": 15779,
+      "sha256": "0c8d76dd56b6c8ff1117681a5a3718328f648699314ac513c8712591a6e5e989"
+    },
+    {
+      "path": "sglang_omni/scheduling/simple_scheduler.py",
+      "bytes": 12605,
+      "sha256": "1d0a16d12959a27372c99ddf00a52885f0dba5a75b456b117428b5fc8866ea6e"
+    },
+    {
+      "path": "sglang_omni/scheduling/speaker_cache.py",
+      "bytes": 4125,
+      "sha256": "e8820171fff846c8ae1ac608279c18f4288ff67355fcbd78b5e03423b99ceaf3"
+    },
+    {
+      "path": "sglang_omni/scheduling/stage_cache.py",
+      "bytes": 6795,
+      "sha256": "0f3efa03406e32d26e078d3022eeaa4e8480fc5dbc7622cf076927dedde3ef09"
+    },
+    {
+      "path": "sglang_omni/scheduling/stage_kv_budget.py",
+      "bytes": 3077,
+      "sha256": "1c106320313ccb6235d6d1368ee440f5cc2c7e7ba57b2b3071e6717e01ee3ecf"
+    },
+    {
+      "path": "sglang_omni/scheduling/streaming_simple_scheduler.py",
+      "bytes": 21601,
+      "sha256": "dcb61e9e975ea51f8acd575f512e3125d7a70911638dda19201040dc7eeaf967"
+    },
+    {
+      "path": "sglang_omni/scheduling/streaming_vocoder.py",
+      "bytes": 22087,
+      "sha256": "5caf164ff611f24d14eb0943db119d3200367fb1aa1a41a947d6c8a7a71fd66c"
+    },
+    {
+      "path": "sglang_omni/scheduling/threaded_simple_scheduler.py",
+      "bytes": 8602,
+      "sha256": "d9691ace2a34f42c1844b5a89dd1e36a7784e9c272bdfd6cebd7aaa5cf1ef5c2"
+    },
+    {
+      "path": "sglang_omni/scheduling/token_text_streaming.py",
+      "bytes": 4237,
+      "sha256": "e34bbb28af512a2798bf28c76b9e32de35f1094a8f17c0b373b6d03075f2363f"
+    },
+    {
+      "path": "sglang_omni/scheduling/typed_tensor.py",
+      "bytes": 3084,
+      "sha256": "590bcc2b0c1664b4d62ff96ed4e5b4740bcc3e816c1eb361a9ab64cbda585a28"
+    },
+    {
+      "path": "sglang_omni/scheduling/types.py",
+      "bytes": 3901,
+      "sha256": "3a84ad4c0f12b621242533062882c1e8672141d9f3e99c66d9f52704048f364f"
+    },
+    {
+      "path": "sglang_omni/scheduling/vocoder_base.py",
+      "bytes": 2256,
+      "sha256": "5e0da12fb9000be53c80511dfcbda14036bdd7fb82e09fb9bcb937438b80ea08"
+    },
+    {
+      "path": "sglang_omni/scheduling/__init__.py",
+      "bytes": 209,
+      "sha256": "494e4278bea0ffd6fe8dc11802e676539d49e6a92b4c7501f96d30775428f55d"
+    },
+    {
+      "path": "sglang_omni/serve/generation_params.py",
+      "bytes": 450,
+      "sha256": "f9d0e5c48e67eb4a56e86252b328fdce3a84caa290ba1c0ecc35e27ba742eff8"
+    },
+    {
+      "path": "sglang_omni/serve/launcher.py",
+      "bytes": 20567,
+      "sha256": "fd1b261d7d1b65c1a7d20b1305fd58a31cb33c8ec40b02d1b5ad4e49c7a70055"
+    },
+    {
+      "path": "sglang_omni/serve/openai_api.py",
+      "bytes": 59422,
+      "sha256": "9fa057d90c35cd2ac7579fe268f3f6d7a87b92780ab7433e665a51c249672828"
+    },
+    {
+      "path": "sglang_omni/serve/openai_errors.py",
+      "bytes": 1562,
+      "sha256": "698a6fadf16d291b1e990293b0c8aa283954f9249d34473943f690affa7215e0"
+    },
+    {
+      "path": "sglang_omni/serve/protocol.py",
+      "bytes": 19478,
+      "sha256": "89ac7fadd1b0eab94af2648a98df18a1646a7d82d96a72a6acc111ed5ce66639"
+    },
+    {
+      "path": "sglang_omni/serve/speech_errors.py",
+      "bytes": 3437,
+      "sha256": "51b0f359d375100a6dcc50373aab8c249eaa7b514426ffb31642d7c387043ebf"
+    },
+    {
+      "path": "sglang_omni/serve/speech_limits.py",
+      "bytes": 623,
+      "sha256": "3f9300cccd20017d41889d70636863b47321039eddc346c804bb326612331afb"
+    },
+    {
+      "path": "sglang_omni/serve/speech_service.py",
+      "bytes": 45127,
+      "sha256": "4622c1499ff82a8fbd97667e6c246aee701aee592f7ee22eafdf27014307aab4"
+    },
+    {
+      "path": "sglang_omni/serve/speech_to_text.py",
+      "bytes": 20091,
+      "sha256": "6f9b599ca39ef1831035dd4a7c096dc3786f4aa9a6fb9a1c8e0906991ca02e45"
+    },
+    {
+      "path": "sglang_omni/serve/speech_voices.py",
+      "bytes": 20423,
+      "sha256": "9d1f69c57265ab0e92768c8d20dfb4acbe717d34843ebb41ef80491f39b0f31f"
+    },
+    {
+      "path": "sglang_omni/serve/speech_ws.py",
+      "bytes": 25424,
+      "sha256": "f081328fd41658617499047bf26d07ff93e5f4cf7ceaf684dd0c617ba70ea900"
+    },
+    {
+      "path": "sglang_omni/serve/streaming.py",
+      "bytes": 1313,
+      "sha256": "1f6c8f9948355af58baae4b8a0f6c93b30d6a197b6dadcbc1586b7c846d60638"
+    },
+    {
+      "path": "sglang_omni/serve/subtitles.py",
+      "bytes": 1949,
+      "sha256": "4d851a6deec96ba21b03ae6266e6ef57b74999a2d72bca75eacafe01b4ee1f58"
+    },
+    {
+      "path": "sglang_omni/serve/transcriptions.py",
+      "bytes": 19543,
+      "sha256": "b03d7fb1a6d7400450bc92aae53cadb85284e9f4352d5c7e318a16feb20d9ed1"
+    },
+    {
+      "path": "sglang_omni/serve/transcription_chunking.py",
+      "bytes": 10927,
+      "sha256": "56626acf66dae49ad0950385bb20df923cc01060e5b40aac4b98924e736ea7c2"
+    },
+    {
+      "path": "sglang_omni/serve/translations.py",
+      "bytes": 6684,
+      "sha256": "c526c279c66529ef8113ed7978b07ad6dab50a0b069f10d0376020460a74aae5"
+    },
+    {
+      "path": "sglang_omni/serve/__init__.py",
+      "bytes": 640,
+      "sha256": "026317ea25bb11735e6549d7e5961f92902b969bda2d95bb8b829e5e3b2a6d4e"
+    },
+    {
+      "path": "sglang_omni/utils/audio.py",
+      "bytes": 12275,
+      "sha256": "609efaae86617c6ffe9f8630e5ab83cfc425356c24441c6ae051e651f356f89a"
+    },
+    {
+      "path": "sglang_omni/utils/audio_features.py",
+      "bytes": 2485,
+      "sha256": "1a1a5932e02344dcb25777b4d6431cbca0b4fef8c2ad3b057fa251209f30bc87"
+    },
+    {
+      "path": "sglang_omni/utils/audio_payload.py",
+      "bytes": 1763,
+      "sha256": "11ad552831dc261110ef3ab20714190bbd97cf1a195b014917c0bc6226395de7"
+    },
+    {
+      "path": "sglang_omni/utils/checkpoint.py",
+      "bytes": 613,
+      "sha256": "c68844696697ff4834f0cc81f248a2237ce8c02b11ed632fd86541cd6a4d0525"
+    },
+    {
+      "path": "sglang_omni/utils/codec_delay.py",
+      "bytes": 1177,
+      "sha256": "bcc672f45361eef0c816cc25697c7be6e5b8a085d4efdc885ff65b7641cde0c5"
+    },
+    {
+      "path": "sglang_omni/utils/connection.py",
+      "bytes": 1284,
+      "sha256": "7016c7ad0d7ca502175563444828a4cf52c7602d8b968ddcc859855d3cd1219f"
+    },
+    {
+      "path": "sglang_omni/utils/cpu.py",
+      "bytes": 4593,
+      "sha256": "f78b234f2e97471dd81aa531e8aa36759c597e69f95b26ee238c3269b673e918"
+    },
+    {
+      "path": "sglang_omni/utils/cuda_graph_batch_validator.py",
+      "bytes": 13618,
+      "sha256": "ca37a1f8f780b1e6bfb3e952ef5d27df24751eff5f22f82b0f6b8c41bab54c9d"
+    },
+    {
+      "path": "sglang_omni/utils/cuda_staging.py",
+      "bytes": 6782,
+      "sha256": "09bac70e25354e89f43719d628f58fa4e468556191920e4d7903665d46bfa614"
+    },
+    {
+      "path": "sglang_omni/utils/device.py",
+      "bytes": 1780,
+      "sha256": "2befbc6bd15435ae0fc5d8d4d2d03288cd39394cb4d16ab31e0eaf41dd958d98"
+    },
+    {
+      "path": "sglang_omni/utils/g711.py",
+      "bytes": 3590,
+      "sha256": "6120486d8cc419a21dddf393c46e7c8dd2b4ef56b99e1d851379569a99a5df36"
+    },
+    {
+      "path": "sglang_omni/utils/gpu_compat.py",
+      "bytes": 8593,
+      "sha256": "e5bdfa8f9b0bc4c2453f146a986930afbc77154180f2a06ffedbc31d4010c0a1"
+    },
+    {
+      "path": "sglang_omni/utils/gpu_memory.py",
+      "bytes": 11237,
+      "sha256": "21f842da00124a7ae8adc08c47aedaf85598aed503a1e30b2fa632cd8ac76978"
+    },
+    {
+      "path": "sglang_omni/utils/hf.py",
+      "bytes": 7758,
+      "sha256": "b6b76a285a38d63953a7795f33eef3268cf2ce5ec0a1ade3ad44134f47b4e0db"
+    },
+    {
+      "path": "sglang_omni/utils/imports.py",
+      "bytes": 686,
+      "sha256": "691751341b199589bdc9bbea4fdc1f74c11ed637efa2ee741af351fc3fac8ead"
+    },
+    {
+      "path": "sglang_omni/utils/ipc_weights.py",
+      "bytes": 49729,
+      "sha256": "2b7d816ec5b3c169c93c5e30204462751e64ddfcd127efd1f3bb312fc62fa13c"
+    },
+    {
+      "path": "sglang_omni/utils/misc.py",
+      "bytes": 3336,
+      "sha256": "eca80ac5dc6fffae75e8d6e0cef3192abb7d468a0d205e55974b5779d7938c70"
+    },
+    {
+      "path": "sglang_omni/utils/__init__.py",
+      "bytes": 1804,
+      "sha256": "22531351629b0139b538de2488c541735ad487e9c62db203fdfba41b5557fc6f"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/audio_lengths.py",
+      "bytes": 1256,
+      "sha256": "ca0b0044f9fe84b5df1522e93d1de65d781da457d5039f35c2fb1538a07fcfa7"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/audio_tower.py",
+      "bytes": 12463,
+      "sha256": "2563bdc4358ac2729fe835edc82556f0dfe39369da657743190c8d8c6a632b23"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/config.py",
+      "bytes": 2996,
+      "sha256": "2a092ed7290e2cc108d08c5522407d84768244b6df3cb1cf970057801cdd43c2"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/configuration_arkasr.py",
+      "bytes": 3650,
+      "sha256": "077c2aa15d5217ee9ac56b4a0e19bfb1ed0a38771630fa34ec97badb7c094d01"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/encoder_cuda_graph.py",
+      "bytes": 12134,
+      "sha256": "67ba4cb800e40831006922e83dba3dd34bc2d3466698c4c44e17782632ece2c0"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/encoder_service.py",
+      "bytes": 23453,
+      "sha256": "48d6924959063695cf0bbe662b47c271bbc886a29a5954afa9eb162fa298b5f1"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/engine_builder.py",
+      "bytes": 9836,
+      "sha256": "641d22006f8463e3e29160252664a8ed94df9cc46503d24fad551fb961c7ed20"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/request_builders.py",
+      "bytes": 12039,
+      "sha256": "eae21d846b05e8cd2e6ed02c80a945776d32e7b41c6f706ffd160181441b2ed3"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/sglang_model.py",
+      "bytes": 10830,
+      "sha256": "0129f1dd43b98145d58f39689b179a07d0a34b6080ce97a26ceec0ff5a0a727e"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/stages.py",
+      "bytes": 3147,
+      "sha256": "ce2b99265ba1148c557ff0d034acc4c66aadf2bad1cda152867c27a3d417e1e6"
+    },
+    {
+      "path": "sglang_omni/models/arkasr/__init__.py",
+      "bytes": 136,
+      "sha256": "9eeddc93f93add4b51907b27e8310b361aa4483e28090c9c7639605081a29801"
+    },
+    {
+      "path": "sglang_omni/models/audar_tts/config.py",
+      "bytes": 1947,
+      "sha256": "f8eabc20789560b4acc3f63e3b1ee5b2f44aa0ebf4693bed20ff79143a9d115f"
+    },
+    {
+      "path": "sglang_omni/models/audar_tts/payload_types.py",
+      "bytes": 684,
+      "sha256": "dcf27cc6b7fb6249cf89c500eb7220eba83881ae97246ba353f66899907ae3e2"
+    },
+    {
+      "path": "sglang_omni/models/audar_tts/protocol.py",
+      "bytes": 843,
+      "sha256": "cbea886fec55bbf34cd232263415040d581d334775d3b8359a42720dab792a8f"
+    },
+    {
+      "path": "sglang_omni/models/audar_tts/README.md",
+      "bytes": 1625,
+      "sha256": "963ed7c3a39273d5c7c51d6f57868ba7295ee43eb11f9f4ca178aea60a87134e"
+    },
+    {
+      "path": "sglang_omni/models/audar_tts/request_builders.py",
+      "bytes": 5467,
+      "sha256": "c540d44cb6b5d877e470d27e22f3df19e26b4c5451cc79a3168b111a00ce0dc6"
+    },
+    {
+      "path": "sglang_omni/models/audar_tts/stages.py",
+      "bytes": 12718,
+      "sha256": "9198fc3bdfdcee0ee95f78810ad32d4f8092f03cc7ae06fd6a05e5f71e819702"
+    },
+    {
+      "path": "sglang_omni/models/audar_tts/__init__.py",
+      "bytes": 449,
+      "sha256": "905694d50eba46c9776e98efe73980f789c63be3fde47a1424437e598cea4bd9"
+    },
+    {
+      "path": "sglang_omni/models/auk/config.py",
+      "bytes": 2537,
+      "sha256": "355570273e8f89218c8d1d5f047e280f93d3a23ddc40ff575bf502827c917c4e"
+    },
+    {
+      "path": "sglang_omni/models/auk/constants.py",
+      "bytes": 912,
+      "sha256": "6fa8a0b9b9b6dd6f0d8a6aa30857065213053e0e47c5d055bc9826b93f0a7aca"
+    },
+    {
+      "path": "sglang_omni/models/auk/dit.py",
+      "bytes": 22920,
+      "sha256": "8c0c9c27f39eede7c56d8e0b608177c69a44e24da375614da641bc8a4933d006"
+    },
+    {
+      "path": "sglang_omni/models/auk/flow_matching.py",
+      "bytes": 7105,
+      "sha256": "d0ddc5c61ec45a50e770e8deede6c46d2cffc016c3f49794d7e5bf4093a5794c"
+    },
+    {
+      "path": "sglang_omni/models/auk/hf_config.py",
+      "bytes": 3790,
+      "sha256": "757243c3317670fe6a49cf6905a68c48f6935055b64503827e6f0f9962805e29"
+    },
+    {
+      "path": "sglang_omni/models/auk/LICENSE",
+      "bytes": 1679,
+      "sha256": "4eafe226eb47c42a0b1c13d00b6d9b474b9982f4b6b6d6a0e127945a0e2ace3a"
+    },
+    {
+      "path": "sglang_omni/models/auk/payload_types.py",
+      "bytes": 1153,
+      "sha256": "a3d9e3c6f99434fa2cf469bfd603e2d8722bb17697b4ddfe265b0a74e4f90aaf"
+    },
+    {
+      "path": "sglang_omni/models/auk/reference_encode.py",
+      "bytes": 3554,
+      "sha256": "ae6cb04901047e13f5345fd873dcf990ec8c0864a68ecdc298346b2abb73bd89"
+    },
+    {
+      "path": "sglang_omni/models/auk/request_builders.py",
+      "bytes": 8480,
+      "sha256": "fc74e0af4e51e19dab9abc2d5ac3fc7f7017d26eaf46bc23ca3d45a741ed9d52"
+    },
+    {
+      "path": "sglang_omni/models/auk/stages.py",
+      "bytes": 10801,
+      "sha256": "8ccded164a147fd590c7e6e4cac57cd15f2e4088bf8e145efdbf1f00e85747b7"
+    },
+    {
+      "path": "sglang_omni/models/auk/vae.py",
+      "bytes": 30907,
+      "sha256": "0f212ad3060827f6f268e4c6dabbeef281551fe5f0add59f20d64042fad03224"
+    },
+    {
+      "path": "sglang_omni/models/auk/weight_loader.py",
+      "bytes": 3408,
+      "sha256": "7a9b13b0aaf62d138299b6555f0670fed3802a36b8467fe4e2d0a0618bfd010d"
+    },
+    {
+      "path": "sglang_omni/models/auk/__init__.py",
+      "bytes": 503,
+      "sha256": "8bb08a10af627d377b9ad0b8d5b617cfd7b2f037f8561178482d005485ab974f"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/codec.py",
+      "bytes": 12123,
+      "sha256": "e41ca58632e8f07af75cb537b46238222a4db22fa073222afdd1b13bc0f6f810"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/compat.py",
+      "bytes": 2021,
+      "sha256": "c76c4774be76746bd791ecb67c35bb7ee585793e8dd985cf173a94f322ccb508"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/config.py",
+      "bytes": 6181,
+      "sha256": "f9f164dc80554310b5b8f0dd9e6607aece99d0d60f33159f7453ea4702323b6e"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/engine_builder.py",
+      "bytes": 7808,
+      "sha256": "9b949279b2013614f0bd7e92c6b880ec06084b13835b5984fec838ff0b1c1eed"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/flow_head.py",
+      "bytes": 32751,
+      "sha256": "c2abd25a14802e7157055f96eb0cab2738e7a9de0b83e834c068c9cda0886dcd"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/hf_config.py",
+      "bytes": 2123,
+      "sha256": "a256afdd51ab64692a3fdcdd13a5871b8934a01970910e65ceb49bdb70cdd8fa"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/model_runner.py",
+      "bytes": 14297,
+      "sha256": "ce9d9577d257abb73c33383fbd061f05f2eeaf4375843e5f1f9cd078c1eaad9d"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/payload_types.py",
+      "bytes": 1895,
+      "sha256": "83704b4c7bdf0b8736c9c34429e9f90cc01233e34eed5e3ec363a61d60eb16cf"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/request_builders.py",
+      "bytes": 6407,
+      "sha256": "61adbe4e48de784e7a29de4408fcfb5158a0a34c1d3b899155f594e995d48999"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/sglang_model.py",
+      "bytes": 6170,
+      "sha256": "54ad35b334349d55483ec26ac44cfe5c40342e57b3d2af3cd60eba20b8845c6b"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/stages.py",
+      "bytes": 16834,
+      "sha256": "74bb3224c3716f7998eef64f9a3bab5c58767daa1167584d86627c0261e29d4c"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/tail.py",
+      "bytes": 47878,
+      "sha256": "f71272a21131df06da987866123b7eb291c05aeddf2d85957633d296b39acdef"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/vocoder.py",
+      "bytes": 16716,
+      "sha256": "c01dd760632ae8a017f8f727d8baadefd2f9a58ca0d9cf5b8d038383408e8ef2"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/vocoder_slot_pool.py",
+      "bytes": 10047,
+      "sha256": "1e4ee7d95ea3373943aea32328c1954c1e6514c9363b949e58d84ac3affc0db5"
+    },
+    {
+      "path": "sglang_omni/models/dots_tts/__init__.py",
+      "bytes": 496,
+      "sha256": "e27c334e24cc2ceb47c7b793195c1809a20823a1c1b985e374cd8353c41240d2"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/bootstrap.py",
+      "bytes": 6362,
+      "sha256": "8b0b854b624c10d825218dbd78b244a8f66b89e90e3601db80f06fc475dca58f"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/config.py",
+      "bytes": 1712,
+      "sha256": "2042eb036164c7cbd599dc579c8b7e1b642d7e37bb5993bdc3f74d69aaf6418b"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/engine_builder.py",
+      "bytes": 7880,
+      "sha256": "89933ba1b087c1870d5593cd63dd5004e45eadb23387152995c728aa6a172420"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/model_runner.py",
+      "bytes": 8718,
+      "sha256": "1469341ec28545aa148f0d12c658da3bca08f8d36a0436de19643bd2d2529e91"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/payload_types.py",
+      "bytes": 1480,
+      "sha256": "5e6b0c3b1e47cfa3ecee10eee575281058329e5ee5b7dec2b82fed30c4f6f8f2"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/README.md",
+      "bytes": 10399,
+      "sha256": "7546e424bf7367f0ca2cae2e1cbd32897305d419dce5d7cb474d25d4d1002d6d"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/request_builders.py",
+      "bytes": 9839,
+      "sha256": "8ca0e9d573f924845eee5f04d7076d10e230e044e0b9e4d8f87eac02e8dde43e"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/routing.py",
+      "bytes": 640,
+      "sha256": "735cd93cffe64e96b232bf90916642053f4a31dc95b5de7fc36109a022c178d2"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/sglang_model.py",
+      "bytes": 21943,
+      "sha256": "1cbeabfba001b08d18ebf22e22378bf77706b276ad97e0f23a33bfa205c910da"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/stages.py",
+      "bytes": 15808,
+      "sha256": "0bf207a082dae7424be9817ead93a3a155d4b59f7fc5da340a393906a1895d06"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/streaming_vocoder.py",
+      "bytes": 16656,
+      "sha256": "b12f33f51e3091bde3426f2770db26f9c4fb279ea1929fbebe8dda2f6a2daaef"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/tokenizer.py",
+      "bytes": 5033,
+      "sha256": "3d79d7383d1970146f6e67406dbc2a0f505e369fb326672b57265c2f810d1a48"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/__init__.py",
+      "bytes": 492,
+      "sha256": "c776c4662449abeb71332ab3778a86b46bc82d4fc370438702a2348ce2471ace"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/config.py",
+      "bytes": 1129,
+      "sha256": "39a63404bdc4677dd8993e318696f136c4c8bf7c917b8dbc1b1e5fa235a9b716"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/configuration_fun_asr.py",
+      "bytes": 16910,
+      "sha256": "1646676c8f17a5b7b248eebcf1ec1fe85170fcead59ef13c4e10bf23c148d4cc"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/encoder_cuda_graph.py",
+      "bytes": 8564,
+      "sha256": "52445ce12a02f255443c9f87a06f57b3a112c85c3113832452a027432bc0eb73"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/encoder_service.py",
+      "bytes": 17514,
+      "sha256": "4d441be40333e081536a458afec1e9a0fe938de9bec4a5914e2443186d3aaaf3"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/engine_builder.py",
+      "bytes": 10081,
+      "sha256": "466f9a085adcb4bf70dd6a2f48ebc0a7e0c255e89769c6f9e05f689e9e05d0c0"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/request_builders.py",
+      "bytes": 14500,
+      "sha256": "3b85e29d3a017ba5deb467e4c8b0dd1163f69fb7bf601e385111212ccb7bffcc"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/sglang_model.py",
+      "bytes": 23435,
+      "sha256": "c0be7562ca355c5eae6baf0f1cc07ae99049e7daed699c66ed17fdd43945be82"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/stages.py",
+      "bytes": 7334,
+      "sha256": "e2bee83415767005eeef02ea4c9eb8b8437642f5e5ef4b4b99b5ac508939055d"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/__init__.py",
+      "bytes": 135,
+      "sha256": "69c07895cac1272ef14f49778928a9da5d1d8714623e4a4b9185232cf94b3324"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/config.py",
+      "bytes": 3913,
+      "sha256": "7c386816b4396e035c13c02dc0c663ec9fbd45a030ac24b621711a6da7794bdc"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/engine_builder.py",
+      "bytes": 5127,
+      "sha256": "d3c3b214b09f5cdfd600130fcd3375fd4d523ebbb39e5ebceccab3ae2913a69b"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/flow_estimator_trt.py",
+      "bytes": 16904,
+      "sha256": "5a0725867f78e3a0105aa3667c0d7b8fb3a9f21d2b810b656bdd28607b19edae"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/model_runner.py",
+      "bytes": 8146,
+      "sha256": "d855a413445e38f41abecebdf2b4bc1f1d02af2c93751ebc7c8e54c54b77fef3"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/payload_types.py",
+      "bytes": 1174,
+      "sha256": "06750c50ac7c25552f71fd8d449b43e8bafb98be37823b0f58a7bd9281527ef7"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/request_builders.py",
+      "bytes": 32720,
+      "sha256": "5752f6be28a09bc194368e8603a147976fea68539a181b09ee131816e234d1d8"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/sglang_model.py",
+      "bytes": 4195,
+      "sha256": "a09901c3995f17429e2e5a8f71ef7108d8b9e4aa28d598f9ee1b09ff2943ddbf"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/stages.py",
+      "bytes": 46419,
+      "sha256": "b8c6cf875e883265974366b18d94b091d5ae1e32061c19094274a3118a611927"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/streaming.py",
+      "bytes": 6964,
+      "sha256": "e43b72b868e7c3513b4997dc107eabf6fdf18db1f04e650ed8b124bba1d132df"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/streaming_vocoder.py",
+      "bytes": 33581,
+      "sha256": "d7d589049bd09d92b0e2cac69008683fff2a7ef690cce9727b76a47249b8d168"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/utils.py",
+      "bytes": 11409,
+      "sha256": "05b6a06bfbb65bfdfdf8220d396f24ce4a227db59cfe7d9f1e5a916c9fe24305"
+    },
+    {
+      "path": "sglang_omni/models/fun_cosyvoice3/__init__.py",
+      "bytes": 490,
+      "sha256": "61c8387ddded2a1781b2f50c3c82a3a769fc4b1ea6a45d12d6dbe13f0102fcc5"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/audio_codec.py",
+      "bytes": 18703,
+      "sha256": "b40aa89283901419c7660a35e6f4815dc0434f71e48132ce4d14fc18dc8fcaeb"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/config.py",
+      "bytes": 6102,
+      "sha256": "cb717d2e1754a2db98cd630813b9169b0d823cc2c7bee874525441448bae7e1a"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/engine_builder.py",
+      "bytes": 6500,
+      "sha256": "c2fa4f793ff84e0b4ee84b351cd8080077bdfa9fb9918750e5980e8848250c51"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/hf_config.py",
+      "bytes": 2426,
+      "sha256": "03d962a1eaca69917b573cee2744cebb33183f83a6c1e7b88ec854dd93a6be14"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/model.py",
+      "bytes": 23494,
+      "sha256": "6046f61aba4f6b69e2945efe4a11d8dbdf53413418db35a4cedfc286424ffe96"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/modeling.py",
+      "bytes": 2122,
+      "sha256": "942983c42c5b6f5cb2423531bff7a5d37fdba4fbddf50775ec80518bfcaef5f2"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/model_runner.py",
+      "bytes": 32757,
+      "sha256": "bf9e2826ff1e7e6a4d304c92fb8bb685b7c1942ab3dee19246e03bbb8fba6768"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/npu_fallback.py",
+      "bytes": 1570,
+      "sha256": "7c824c51d7a1aedd1731ff69385bff3dba16e79a2887db558da6f855b9a1fa90"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/payload_types.py",
+      "bytes": 1944,
+      "sha256": "d03f2787ba3369a257cee6504b393a453a6d927ffecdecbaadb3bfad0ea6ca6a"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/request_builders.py",
+      "bytes": 9721,
+      "sha256": "06753e3d37b0030de2024ddfb50412799a3b79a2de26c138a8031a92c5a70f77"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/rollout_trace.py",
+      "bytes": 3540,
+      "sha256": "909b4309781e952f4dae70f17b3dcd33129a15ef8232954694c8c9dec3389d39"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/sampler.py",
+      "bytes": 17822,
+      "sha256": "6e20151c2f215d06e78736fb2e6420a02aa149a9b01d26c490e85eb48fef6a02"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/stages.py",
+      "bytes": 25946,
+      "sha256": "3608e3b13226399f3198cd01288574265f1b526cc38e29e1d2a0678a6a38cb3c"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/text_tokenizer.py",
+      "bytes": 2755,
+      "sha256": "2dd71ebe47595428b6fbc59b57902858255531a5ecda25b8c2739fa8a76e3b5e"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/utils.py",
+      "bytes": 5961,
+      "sha256": "fc2d9e96b5cc483d49215516e278746dc82014e8281785b816480cef16bff070"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/vocoder_scheduler.py",
+      "bytes": 18357,
+      "sha256": "041340f9f2609653c2354bf1dc7303005a89867348d332bc62146c327bec385e"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/weight_loader.py",
+      "bytes": 1993,
+      "sha256": "1487033f1ada7a58d262f661810a12519423cd924933b478107945f46b1e99c2"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/__init__.py",
+      "bytes": 1073,
+      "sha256": "b20cd7c7cb19736a4e0ed70617d183911d5c771fdb1cdb9932879720df2a2097"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/bootstrap.py",
+      "bytes": 2308,
+      "sha256": "8f1012b7ae23991f3471d278255f14638ee7c35d3246cb187164ca2ad91e3706"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/config.py",
+      "bytes": 2012,
+      "sha256": "4a550c2302cfe8be11d7957b159eaf2d0c0031ea6e4d4f7e42e5d6d4032f6abc"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/merge.py",
+      "bytes": 788,
+      "sha256": "86f99b4219d69179cb4135f5c429021190dafab4026202151d28cd18efb7350c"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/payload_types.py",
+      "bytes": 2271,
+      "sha256": "3289add88f7a64ad45bdf8b737325483d5745f7fda7db7e04be08dda1bacb07a"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/request_builders.py",
+      "bytes": 6850,
+      "sha256": "eb3b137711379b9764473a9cf3d99ebb805f6add8d01fa8c4195e5a4e29b8eb4"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/stages.py",
+      "bytes": 6023,
+      "sha256": "f33c08cb43774387ac714577acc0729a74a825d411794aebb45448684bbb06f4"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/__init__.py",
+      "bytes": 96,
+      "sha256": "85c37510896e7673485188d879c65105a0dc50e9eabb8191b0778492275c8ae1"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/bootstrap.py",
+      "bytes": 16044,
+      "sha256": "fa86da5682b907b5d5e454224b24eed6abdd84e5ad150a89d94b488373dfd0d0"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/config.py",
+      "bytes": 13053,
+      "sha256": "4a62f28464f8f338c61b591184b3e02898b5d7832932545f8c98b0f6a4df76f3"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/configuration.py",
+      "bytes": 3492,
+      "sha256": "ef33b8ae8c0f94468bfef42184210a6da460fb79f2358fec550cf15083077b8e"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/hf_config.py",
+      "bytes": 7266,
+      "sha256": "7a7231156113aa56e613609b5706eeda126f918bb34ad96bdc4f75fac16e35b4"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/io.py",
+      "bytes": 4016,
+      "sha256": "f08b7c278172a895472aabf6b7f3159a310e3931db265180f916434ed82be24a"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/registration.py",
+      "bytes": 878,
+      "sha256": "9377a8c3f151a9fb5cf56514917138a88e1f3289c8f925079b26a0007cf47152"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/stages.py",
+      "bytes": 13364,
+      "sha256": "df1fd9fb38153ac9c33a241120bb37afc49a563bbc352756d3249902ae2580d0"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/thinker.py",
+      "bytes": 37282,
+      "sha256": "7747e59d712552ae3635080c917971e906a5526072c48f778e36a626bcf88d83"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/tp_utils.py",
+      "bytes": 2094,
+      "sha256": "3acf9b8f2d528baac74d723dab28f01756cb3e0a81cf63d9d4ef785ccc2a3b49"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/__init__.py",
+      "bytes": 209,
+      "sha256": "82cd9ae65b63505bc9863f9de2818800a1f0c4a37608b16a1f9fa4bee4485caa"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/audio_config.py",
+      "bytes": 2035,
+      "sha256": "8bb6e6b8991e4075b8a82b0f6cacaad884fe1d3648321c8deb8f6f1cf29e7cf7"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/audio_decode.py",
+      "bytes": 47295,
+      "sha256": "546e3255719df04b569ce9cb5ba945a57f3e3ad349abaa540562ccafc11d7dd8"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/config.py",
+      "bytes": 12324,
+      "sha256": "f8f05000076898665a443a30cfe513fc20666a699aca94ba70c5a7bff768b32c"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/engine_builder.py",
+      "bytes": 8991,
+      "sha256": "24a4b2ab78358d7bd94a6920fcbe8d08cc1308de405188f2a15b91bfc694db98"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/engine_io.py",
+      "bytes": 6789,
+      "sha256": "24acc969d0dc97a94391ebbe469b4b91d063c101e9deae47789040c6d25edaf5"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/flow_matching.py",
+      "bytes": 7776,
+      "sha256": "2b02299d6ea182e407c7cb0e65d8d587d913681c999c3d597d92094cd8b58ebc"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/hf_config.py",
+      "bytes": 10981,
+      "sha256": "d5833bf4d16779c93c747f0b4eba066114c1d6b715188aa13676d232822e671a"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/model_runner.py",
+      "bytes": 20895,
+      "sha256": "e1a5e87343077482350532ae73076a3d274803c7df2e0a57b2573f1eedd078a4"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/payload_types.py",
+      "bytes": 2417,
+      "sha256": "1f29cbc806a5740263465af84f0df162625b81795b57dcf5742694e15c1c45fc"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/prompt_builder.py",
+      "bytes": 4703,
+      "sha256": "7c9b1b6afb302ede8c6b89e1176eefbc85ad95ea19e2ecfda0e983f48d287af0"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/reference_encode.py",
+      "bytes": 10159,
+      "sha256": "a7f407a3d97321e5f7461a64b9d060e34cd3945aef180eccf03132c4fdf1b633"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/request_builders.py",
+      "bytes": 14532,
+      "sha256": "29c57a7bb830699f5dea505add992d931387492fb33997fa81aa3084cf44da74"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/sglang_model.py",
+      "bytes": 42602,
+      "sha256": "61fd057f0c53e69c55c3d58731b9c2850f858146bff62e835fb47307ede7f990"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/stages.py",
+      "bytes": 17546,
+      "sha256": "4a51a87487df086cde55699a702a7b8a27bb06710de8442299bfc73a1298cf3d"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/streaming_vocoder.py",
+      "bytes": 15280,
+      "sha256": "96e90a1efc3232bb21bcc8bea90a62c281057fbb901a082c9af02e5964e76609"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/tokenizer.py",
+      "bytes": 6208,
+      "sha256": "e94ffc99b17a009f8f5402bc5c84d0d02f2f7549fc9d1200005d9a15eec72028"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/weight_loading.py",
+      "bytes": 16972,
+      "sha256": "d168a413f61737feda5df99cfc039e55a17fa0186ef8beb2eacbe8747122194a"
+    },
+    {
+      "path": "sglang_omni/models/ming_tts/__init__.py",
+      "bytes": 455,
+      "sha256": "ffea8833881aa0c8dc066cf678896634a66d540ce83ce0df8624cc6449649ba6"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/acoustic.py",
+      "bytes": 20260,
+      "sha256": "57f0c26c014ef3ade906c67f6971bee282df3c5a81f052a755737ad7c168e456"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/checkpoint.py",
+      "bytes": 3563,
+      "sha256": "00ceee16e5675dff682fc37050536c211c00f2c2e76b15ba42f9e6e4094bedab"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/chunking.py",
+      "bytes": 1940,
+      "sha256": "9ad016ec5c77254911dfee53b84078b55ec61f23afae4ba52a97e93234999986"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/config.py",
+      "bytes": 4723,
+      "sha256": "a3ab2457d91e048bfe84654ee93d1442c0d68b0353236bd1d3b8504bd4eda6ce"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/constants.py",
+      "bytes": 849,
+      "sha256": "ce3395adfd3fd2407bf78dad43fdc532c1777440168bbee311266a8b3435d5d6"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/dav.py",
+      "bytes": 4928,
+      "sha256": "ba0d58d4ce64f9907473c5f942c57f6dc2b11190128f6f2b94dcc9f0ab3d9fbf"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/dit.py",
+      "bytes": 19256,
+      "sha256": "412c8218f2284bfac6ef8772f7522c73d3b5c0946d43a456fc0f35e2d2300dca"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/engine_builder.py",
+      "bytes": 8043,
+      "sha256": "aefa2310faaef616beb40170f518b3597509e15e38165dc4a3e469e97fc737cc"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/model_runner.py",
+      "bytes": 18448,
+      "sha256": "b1f17cc3a99885f95f8bc7663d440aa3f6063b514275f82ad6970d5496db6029"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/payload_types.py",
+      "bytes": 1005,
+      "sha256": "080be5f9e93d5e992ae9656db4b2b4b5d681f3133edce430a63447fb50e475c7"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/prompt.py",
+      "bytes": 3909,
+      "sha256": "ec426cfc6274fa26924c9422c87c1a12ef37e8a76b8bd66aec6ee7b8c1626d59"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/README.md",
+      "bytes": 2554,
+      "sha256": "ac60e6cd1fcebe34a12aa0bde90c690ada1f25c3bcfac47ab24b53a2c3fc299a"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/request_builders.py",
+      "bytes": 4132,
+      "sha256": "76ad3f61afaab6cb92906feba96eb3f0402f76ff0f3f320592f31cb540e6a7c5"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/rvq_cuda_graph.py",
+      "bytes": 4224,
+      "sha256": "99511262215c7516a717ae69de3977d0d259e7f6046d674d5a75dc5b0925ad0d"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/rvq_decoder.py",
+      "bytes": 7550,
+      "sha256": "2cbd8e77d2d504baac2b309a2fa80ef86a9617d82de10ddeb9e512174d652165"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/scheduler.py",
+      "bytes": 3810,
+      "sha256": "21eb9b07064549d27e20c3909b2fe0baa8fa2957df33ad25fe715b3cdb501e39"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/sglang_model.py",
+      "bytes": 11639,
+      "sha256": "a8da1de555995691fef62297117a54263564398f43460a07c75f4731cd1abc7d"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/sglang_request_builder.py",
+      "bytes": 6280,
+      "sha256": "4484eb0ab77ae90742ef4a8b40c5ef3a14fffeeea4d894edca6f2dc9c087773a"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/stages.py",
+      "bytes": 4889,
+      "sha256": "9d155369c8b03f643170fc62d1b0423992fb3762ed37909a98fbc2b26e14e8fd"
+    },
+    {
+      "path": "sglang_omni/models/minimax_music3/__init__.py",
+      "bytes": 465,
+      "sha256": "aebc20165fb2a29a8c9ce9c71e85f56bcc9797d8c36a5272640bef3efb3a7a9c"
+    },
+    {
+      "path": "sglang_omni/models/moss_transcribe_diarize/config.py",
+      "bytes": 4200,
+      "sha256": "68be93694e354e8c28c680a26bcfc7185053b78d1b8c88a13977846f259b79bc"
+    },
+    {
+      "path": "sglang_omni/models/moss_transcribe_diarize/encoder_cuda_graph.py",
+      "bytes": 5139,
+      "sha256": "55435bc7059da1018a1d8ed654517ec6a119c8339365604b6b2e6a4563cf2b6a"
+    },
+    {
+      "path": "sglang_omni/models/moss_transcribe_diarize/encoder_service.py",
+      "bytes": 9533,
+      "sha256": "330c2114d5d85b3b13b4b5aec4e190c6980cb83f8420afe04f9a0b6de14ccf1a"
+    },
+    {
+      "path": "sglang_omni/models/moss_transcribe_diarize/engine_builder.py",
+      "bytes": 8720,
+      "sha256": "eb9f291a607e3c2cbf84d7c2d019eba8908e577fa3ad844dc8b0f9918174441f"
+    },
+    {
+      "path": "sglang_omni/models/moss_transcribe_diarize/hf_config.py",
+      "bytes": 2883,
+      "sha256": "6887345df59af732852930d7f2ceabcca3552cf01c2959e1b0e3aa359324664b"
+    },
+    {
+      "path": "sglang_omni/models/moss_transcribe_diarize/request_builders.py",
+      "bytes": 23699,
+      "sha256": "9d14adcd71706c87fd4bdbb2331f8095ca5e50046550f691555fa1a2b290b771"
+    },
+    {
+      "path": "sglang_omni/models/moss_transcribe_diarize/sglang_model.py",
+      "bytes": 17710,
+      "sha256": "577cf1d1f64813840d5d5b0a162f0759aa41b5daa47603d43049d4071c49cca1"
+    },
+    {
+      "path": "sglang_omni/models/moss_transcribe_diarize/stages.py",
+      "bytes": 5901,
+      "sha256": "94d3bf0fa0e1f60ec14d6b286c948c8acedce00fe1b36605934a62b6373f8e53"
+    },
+    {
+      "path": "sglang_omni/models/moss_transcribe_diarize/__init__.py",
+      "bytes": 451,
+      "sha256": "275ef3f2343c8219fb0e3d53092ed2f3ba1fc94b43e67292c68b0e6deaed4663"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/attention.py",
+      "bytes": 50829,
+      "sha256": "f9bbc3806218ce619a77f385c32f06be158fdcd0e0412999b1c03076c6774fdc"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/audio_tokenizer.py",
+      "bytes": 84953,
+      "sha256": "aa69a28beb0c29da86b57b847b7494077ce087f7bba318691e78f55a0e25857c"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/config.py",
+      "bytes": 4934,
+      "sha256": "cb425ffbd68cbeefa807cb3a0248c800d17e62dea18bdb726290c254e4f7aaf3"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/delay_pattern.py",
+      "bytes": 2438,
+      "sha256": "66741fab987cbe4a567cccf2d7862893f985b4e2af72b753703044be77f6a47b"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/engine_builder.py",
+      "bytes": 3705,
+      "sha256": "60b4d4dd112e725d49e18ef54f61d0797ad58301112903d5fa68dcef57208b8b"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/hf_loading.py",
+      "bytes": 8162,
+      "sha256": "98adcf4cfdcf4cb2ad89250cdebd36208b1fee7fd0e1a3e1138dcc4d5ef51a60"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/model_runner.py",
+      "bytes": 32501,
+      "sha256": "867e4338c4faa3c003d035db12ef8f574b59fb7959a985e3f4b19c685cd27dca"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/payload_types.py",
+      "bytes": 2753,
+      "sha256": "97a6b7d381fb589432311210a1b4dd9e07bdc08e79d58b9ff9b9bf72e75adb21"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/request_builders.py",
+      "bytes": 30718,
+      "sha256": "3adb4891253eacbecefb3afa8f80a15307d163728eb59ce58117245f1fe4fa63"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/sampler.py",
+      "bytes": 10016,
+      "sha256": "dc1e01517d4da4d0231cd500065497c68e6ab5da125512e032b9c39bec93174d"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/sampling_cuda_graph.py",
+      "bytes": 12587,
+      "sha256": "97d01ee8edcf649ab55452c8d1ba431a8239d531ed98d36bf2467e9936946774"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/sampling_kernels.py",
+      "bytes": 14971,
+      "sha256": "1a661b9acdd95d6384d08e3143674d24333b4bd974e669a27f9b41034bad1cca"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/sglang_model.py",
+      "bytes": 34314,
+      "sha256": "8beca4900c252b4a003773e9ebeb018408efd1cdbda1760d4c1205e6b85cca4f"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/stages.py",
+      "bytes": 21149,
+      "sha256": "9daf28b8f8a7dee221f7a49a2ddac925618db9a79be8bfc400f22ff0d96ec514"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/streaming_vocoder.py",
+      "bytes": 16373,
+      "sha256": "aebaac87ce83f3e8214906dc6817d2854fa48b4f82f3a2578e90b6a39d5ea991"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/vocoder.py",
+      "bytes": 17294,
+      "sha256": "d2bcb257b50119b660438bbe91606f6e84f2b817524ffade94d1b39b274d7543"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/vocoder_kernels.py",
+      "bytes": 5226,
+      "sha256": "c2fb8984115bc95759fc1c01d4ec87adf2ebc55bde684747b782e45acd274a94"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/vocoder_quantizer.py",
+      "bytes": 5326,
+      "sha256": "27eb2cd91663a1e5d64beeb85606a0605f50ecfb165547c36f4fa4e3df8b5fad"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts/__init__.py",
+      "bytes": 444,
+      "sha256": "fdf1a4e023e65e810c3fa7111964e698aa99d0520c829f8cafad64e3effc9520"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/config.py",
+      "bytes": 11265,
+      "sha256": "8d2df3c4203c80a518ec58c2261f2e65f42d7a86de510ad5c8f7f3ec04ee5ece"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/engine_builder.py",
+      "bytes": 7486,
+      "sha256": "d0523242f3377c24241f877432c969a4758a4705b31d9e26c4279798a4b0b4b8"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/local_transformer.py",
+      "bytes": 6720,
+      "sha256": "45260a9b27f7c035626b9ac34918b649e0e43c092a79d83e7c149fb3cd008c76"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/model_runner.py",
+      "bytes": 29390,
+      "sha256": "8c7b2e0dc8e81cc1907052187b1e9a85b5ce9155efca9c7c005a3890c99c847b"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/payload_types.py",
+      "bytes": 1723,
+      "sha256": "6b3bbe35bf4c974233f7bf48109b76e06e085fed2a7cd54cce6370a55f5d8ccf"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/radix_hash.py",
+      "bytes": 4300,
+      "sha256": "2bd037251033f049999c9410604ffb1e5723036d7323d30223937ff7bb87365f"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/request_builders.py",
+      "bytes": 17145,
+      "sha256": "4da12ca98ad4cc8ae948f5d4ef5b46af894f9ca3f39ccaa8374a55626d204d6d"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/sglang_model.py",
+      "bytes": 33066,
+      "sha256": "5c494dd29187141a7e018cd497727e581e4e1bb03be4b599938bdd9336ccf361"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/stages.py",
+      "bytes": 27892,
+      "sha256": "8ecb847a2f2297a973a978cb097f642e4de9e0df313e16190972661416d7e5a0"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/state_pool.py",
+      "bytes": 13156,
+      "sha256": "70f46caf451158ea560582ea3b4e66b4c440a2dc622d8c0c1128558e02946818"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/streaming_vocoder.py",
+      "bytes": 32230,
+      "sha256": "852d0897aa58656f953108b1bb24486e51f936c5c78af401fe88065abd93b863"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/vocoder_cuda_graph.py",
+      "bytes": 12275,
+      "sha256": "c6752e522ce225b78b343a0815e8c2c7e43b61a70d795e5dcb1ca4049db6ca48"
+    },
+    {
+      "path": "sglang_omni/models/moss_tts_local/__init__.py",
+      "bytes": 450,
+      "sha256": "dd84f3e160188cf469daa9bf8bb5122645f5d68192877c1c3293ed00de0c905e"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/audio_lengths.py",
+      "bytes": 2237,
+      "sha256": "6fd6b1d6cadeb4176171ba56e8d01813e1b1d8cca1ecb1c5b3807f080d215be0"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/config.py",
+      "bytes": 5109,
+      "sha256": "f57caef50ee3ccb5a02551bdcf99e7e92de2f23f996dc725603e4a02de20a3b2"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/configuration_qwen3_asr.py",
+      "bytes": 6464,
+      "sha256": "bb33cb4639979b8c6f5cc6b577826955fe1ffb6b1b4e78dae380389e91beb58b"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/encoder_cuda_graph.py",
+      "bytes": 14034,
+      "sha256": "64f5b4b22157b80381223995bdbcc4dd580933bb866f89a7f7bd1e4c87e793a1"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/encoder_service.py",
+      "bytes": 21998,
+      "sha256": "5144dd7e99d1fab3b3ada1492cdeb7374d67d8ac68766633a0349562ca1050ed"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/engine_builder.py",
+      "bytes": 19635,
+      "sha256": "b64b630fee6327e615a3d5aef8974c313d66189e359ae581739ab7124fbfd297"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/languages.py",
+      "bytes": 2169,
+      "sha256": "a0aa9b554cb665d3629764a338ad89497be6d95a57807f17db8e9a3775576806"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/mrope_fast_path.py",
+      "bytes": 2682,
+      "sha256": "7b871e9b30717b4a9c2c1c37af66e497a6f47e0f1a5a78c35168c03dc760470d"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/request_builders.py",
+      "bytes": 25849,
+      "sha256": "81cb3844279d8db5ada0729f67c4f34ff7f2b2a2c96af21551be6478787b346b"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/sglang_model.py",
+      "bytes": 14081,
+      "sha256": "60acd168822f04cbb575a26a4381dbbb56d833caf106af99ee2747dfd51b1346"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/stages.py",
+      "bytes": 3408,
+      "sha256": "d82fec106854721df2a48f027dd8c30e1a803e1ebf80f083431a330b6af9e9ba"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/streaming.py",
+      "bytes": 2483,
+      "sha256": "4de5ee69e893ab8057f0299a428b69bc872635a6a70ef5ce6e737620aa4c0e1c"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/torch_mps_runner.py",
+      "bytes": 9064,
+      "sha256": "95dbb9f4ebcd17661c5ece92324f3909c9d24ddcb1b2b3ed76b025f6bf096f02"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/__init__.py",
+      "bytes": 135,
+      "sha256": "14609450eda3a68b493ad642fbd4790f001ec144e4944e4a25401095215fee5a"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/bootstrap.py",
+      "bytes": 10585,
+      "sha256": "26d0d780d01d7e86e38b21210ce21d722d8befbb35101f60f1899675d6cc8aa4"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/config.py",
+      "bytes": 14643,
+      "sha256": "518df0aa17a171b5a08c23ee3534bcf6896da5c7516457f8dc1a02e46ba668f3"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/hf_config.py",
+      "bytes": 14788,
+      "sha256": "709ac516ddf2a304c647754e2ee919f65ce58752eae1f779232380b71cc7c8e0"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/merge.py",
+      "bytes": 10204,
+      "sha256": "f223244b07348dc1071ae7ff3e52a64c219cae2af4a2abba9d5da8c1fdced3bb"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/mrope_positions.py",
+      "bytes": 13539,
+      "sha256": "ff75b9d8f4217f3813c165c7677691938550aebf3b1aff4d219805bf37019a8a"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/payload_types.py",
+      "bytes": 4081,
+      "sha256": "bab6b880d0db46cff6bdfc5debf597f4bdc5c9ea1d2edb4a586f5e4a9b59ae14"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/pending_text_queue.py",
+      "bytes": 5269,
+      "sha256": "dbd80747ec7c03d80a6f8282a0d5ab705004461e11c485cbf2ee2f927d2dd53a"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/placement.py",
+      "bytes": 6079,
+      "sha256": "336cfd66f23746658198747ac575aae104ae2a3ecfb5db0e5e51937b1b0cdeb7"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/request_builders.py",
+      "bytes": 44374,
+      "sha256": "a854463ac29548e58371efdc366972410478f74885067c6388e4c1aa13b728eb"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/stages.py",
+      "bytes": 45861,
+      "sha256": "253246597ef8b0ac92f140473cf4662248e738f48027047910feffebb6a5dba5"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/talker_model_runner.py",
+      "bytes": 17715,
+      "sha256": "d1f8b36d7a55d974ea3e036cce5ad32d294ddba72d6a9443f64ea5196363e6ea"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/talker_scheduler.py",
+      "bytes": 6182,
+      "sha256": "f393c495dd25d5c4839e3ef23671514cdcdde9a268e13426806e6afa6ba74a39"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/thinker_model_runner.py",
+      "bytes": 12235,
+      "sha256": "dec611f2be45ce93c2a38bafc3f0b7625717249f32d6bd9e0c7aaad26c034f25"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/__init__.py",
+      "bytes": 2114,
+      "sha256": "6eef2cf72024fc71fa9cec41b7d28d6d55ecf0636ee14bddaf36a6886a7a91ee"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/codec_state_arena.py",
+      "bytes": 11268,
+      "sha256": "c5983208b80000df64ed007c5efd91ec0d7f083564151534cd3040d591bb0d8b"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/compat.py",
+      "bytes": 4468,
+      "sha256": "580dde01511e536d4904f7defee05ca283407b73072e49024f3889fc9f152548"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/config.py",
+      "bytes": 8032,
+      "sha256": "1ce9ab16016953547eee7084786b00565efcab499095482eb5ef4199d9529c44"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/engine_builder.py",
+      "bytes": 9122,
+      "sha256": "6a12cd88de0af6ce2f0c5c32620f04ce1db88a2c66af9edf9fb6a4c12091d7e6"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/incremental_codec.py",
+      "bytes": 28175,
+      "sha256": "21d3ed090b5c19d53c44fb6f3ce68664c7f3b3246327ee5b3a87d3d1a5f599b0"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/incremental_codec_cuda_graph.py",
+      "bytes": 22239,
+      "sha256": "4428d4be98a9531ba14b5519617a86c7e9391d63638a2f3d306b99b2c05fe3ca"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/model_runner.py",
+      "bytes": 14594,
+      "sha256": "cf6386fd55e2afbf1e1d9f06dc2ea22a99b4eaa7ff54611cde6b7f11e6ab8699"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/payload_types.py",
+      "bytes": 2105,
+      "sha256": "a64ba787c02266b0628a7ba6ee0b674dd34b05878bf10c262564da6f5d1af960"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/predictor_kernels.py",
+      "bytes": 4457,
+      "sha256": "75b7bc6c01a003e2ad4144c0e8dfa2ba6ca0396506aae270d27a6f52e7e79acd"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/prompt_frontend.py",
+      "bytes": 6629,
+      "sha256": "d3a983324de167a09a88c39c5e492ca60931b91ba62fc3970eb9e4a1254b35c4"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/request_builders.py",
+      "bytes": 62188,
+      "sha256": "d7377edcb2fe13c16ab01ece4fe436e3822680dd02ab47d0301dd694f2487e3c"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/sampling_kernels.py",
+      "bytes": 19867,
+      "sha256": "7d21b761c19fd0d827802a1d23a35d2e616b7cb484b9f08b9562d01f17b114cb"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/sglang_model.py",
+      "bytes": 78057,
+      "sha256": "9362f610f2ec1aeacb79449227480dd8f1f1055288d8471de99698b5896aeab7"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/stages.py",
+      "bytes": 12278,
+      "sha256": "48d29d838ce0b129886b679ae084a937244e4dace6e39dacf76435d0c93a5cf7"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/streaming_vocoder.py",
+      "bytes": 122704,
+      "sha256": "d18389be4be5fdbd58edc112f5b2594e904ba5148cd5b231ceee18c072eaec97"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/vocoder_kernels.py",
+      "bytes": 9630,
+      "sha256": "bf3ba987d75e044c3210fecfca066c87579a9fe9e9715682cd434cccf9ff53e8"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_tts/__init__.py",
+      "bytes": 490,
+      "sha256": "3dff74227a81cdacddb3cdd3970b801e1df999edfad77a99282d0b5ee4fce424"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/acoustic_transformer.py",
+      "bytes": 17827,
+      "sha256": "4aac1cec31e36eac47a7e8502c8d4eb99ed32afd9a5ab7eefc7b9f976a8d41c5"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/audio_tokenizer.py",
+      "bytes": 24583,
+      "sha256": "c30c5d0ef99fa39474cf1e59c84b0f489328c06efbe3028bf17ba4311b6a0b5c"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/config.py",
+      "bytes": 1928,
+      "sha256": "b77eff395a536603ca26af203379d7b1e37f4f2e3fa0ed58cbf73b4d468c9ef3"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/io.py",
+      "bytes": 681,
+      "sha256": "29a2c4906833c41a63e2c6b67d7a26efdad39dc68c71b56759aa9e44067e5276"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/model_config.py",
+      "bytes": 4137,
+      "sha256": "3216a0a65cabde7a03c84f1f7ffac1a8dbbec60c954f85e4199590b2c183a374"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/model_runner.py",
+      "bytes": 5564,
+      "sha256": "a2bca3eb365f261c87f42870a78a443c3f83f791bfc56aa98d9b58977731e290"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/request_builders.py",
+      "bytes": 3978,
+      "sha256": "e3fd1103120b51cb0fe0960329b902e6a0442bb3ed3f205a4e0dc092c6f471e2"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/sglang_model.py",
+      "bytes": 12903,
+      "sha256": "f7929f9a27e435d2e5c5c3bc4fe4eec0c8ff7db19e1b47004d008bdaaf34076e"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/voxtral_tts_audio_generation.py",
+      "bytes": 24097,
+      "sha256": "1e6aab5461e7a273927a9db9a7fe956e74e515daa2623dd7cf66a1ef43188f57"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/__init__.py",
+      "bytes": 454,
+      "sha256": "8b238fc42e16bc6fd95279d3ac4e769737a5b39c2ff76f25edaba410ba825ccd"
+    },
+    {
+      "path": "sglang_omni/models/whisper_asr/config.py",
+      "bytes": 3593,
+      "sha256": "cc0d729fc9931fc2f23716d0301c85eb0a77f8292090f6a861d47bff2748bf66"
+    },
+    {
+      "path": "sglang_omni/models/whisper_asr/encoder_cuda_graph.py",
+      "bytes": 5882,
+      "sha256": "60248e0907cabe5474ba81196460864108f8e91fc6d713cf037ab486caf2a518"
+    },
+    {
+      "path": "sglang_omni/models/whisper_asr/encoder_service.py",
+      "bytes": 20819,
+      "sha256": "89f8d23d0454779c10acba97776a4a639014feec15ec27f91fca2f9d0ad548d4"
+    },
+    {
+      "path": "sglang_omni/models/whisper_asr/engine_builder.py",
+      "bytes": 16259,
+      "sha256": "1d6ec0fe89faa129f3da7d8b9c237b09d1e116af8bf1379b0fcb79983b7feb8e"
+    },
+    {
+      "path": "sglang_omni/models/whisper_asr/request_builders.py",
+      "bytes": 13671,
+      "sha256": "ab2c989e6af172b57b946b1675226a61d7ba0ecbacf2f9f00e75ea262a165f6b"
+    },
+    {
+      "path": "sglang_omni/models/whisper_asr/sglang_model.py",
+      "bytes": 23151,
+      "sha256": "317312a34c2ecd06c633cf17d8b330b04bd45576f354ad8e80fbbc16c8f979ca"
+    },
+    {
+      "path": "sglang_omni/models/whisper_asr/stages.py",
+      "bytes": 3023,
+      "sha256": "9d2fb946f378f47a48ba4b740dd704fbb88648e3a48b0941109632a6c8a99fd0"
+    },
+    {
+      "path": "sglang_omni/models/whisper_asr/timestamp_logit_processor.py",
+      "bytes": 2969,
+      "sha256": "017d194f1154fdf2d3cd13a388d33622665460c77b21afa84a25844a2ecb0a7a"
+    },
+    {
+      "path": "sglang_omni/models/whisper_asr/__init__.py",
+      "bytes": 137,
+      "sha256": "952a2c141b8cdd8f5bb5890852b5a1040d8a41d6ba58f6b910af3ce6479b80f0"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/callbacks.py",
+      "bytes": 5894,
+      "sha256": "b23b49dc33ce285dcc1a24a6bc17353b47b633421395b429ae7087add9007107"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/config.py",
+      "bytes": 3570,
+      "sha256": "282a862ac4a4ffa2b5b33c96e86e39cc6314089d9ccf054a94e63562731249ad"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/engine_builder.py",
+      "bytes": 9341,
+      "sha256": "e8623ed370d86a699dfe2f90d604894a9fb52ab9df0d2838aafe81004a31c6ed"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/hf_config.py",
+      "bytes": 6246,
+      "sha256": "bfefe4161701d4f970a69b0cebaa9ef0014fabb40163407ccab038adcc75b1b4"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/model_runner.py",
+      "bytes": 19852,
+      "sha256": "e6f7d9bdb9d137a3d75261ea35f3a616bc8a58259196f1c7b7dc1795632f6b75"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/payload_types.py",
+      "bytes": 1958,
+      "sha256": "bac85aaf452da879eefda5a74e4776f2c609f739bbb416e8642ba33881f011bf"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/radix_hash.py",
+      "bytes": 1218,
+      "sha256": "5b647bc603c5193e92d2b439bd34077bad1dedc32da920be59d6d96bd056235b"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/request_builders.py",
+      "bytes": 9236,
+      "sha256": "3486773d90ea2088f3a2b65f359ba21e3d8f6dad947b5ecc0928d5133c64bf3a"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/sampler.py",
+      "bytes": 5989,
+      "sha256": "3135d49165ce5aa23d4479d648f835b090183ce29d590200373adc887c75daea"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/sglang_model.py",
+      "bytes": 25910,
+      "sha256": "18e6dd1db63202bca20d0da96c8113696bfa3f21cb4a04d6a8025cd31574a8a0"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/stages.py",
+      "bytes": 9236,
+      "sha256": "a94ec2aa520f25ddffd5208ff1ed83e08ead1b871e58bb201716d72495cb8d41"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/state_pool.py",
+      "bytes": 6682,
+      "sha256": "bfbb32928d6255480de951089e89a531738c392ecc763849eed875844f3c0c41"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/streaming_contract.py",
+      "bytes": 1214,
+      "sha256": "9b71f9d2e09a9869aa86ea5feeb780b16039269817fcab59a92ebbdcf985ea23"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/__init__.py",
+      "bytes": 599,
+      "sha256": "d42e7228b4002126bbea67dfeaa361c831813e7a668707a18c608a3168d4f68c"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/tokenizer.py",
+      "bytes": 1461,
+      "sha256": "afd478befae30fe800470648514fcbed9fbcfaea22c5d29aa31f0c1832fe93d8"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/configs/modded_dac_vq.yaml",
+      "bytes": 1606,
+      "sha256": "5f94cd592deb9efe1106738b1b237b46f0d8aaa3c888eddb5521811fb7270e6f"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/utils/logger.py",
+      "bytes": 173,
+      "sha256": "c119946a612393be594731891e9f17339e95966bcce2388646b3ae11f1737055"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/utils/__init__.py",
+      "bytes": 117,
+      "sha256": "2681b50e41f75fe3f961dd1039b6f954ce1d96f37b24a672326d3a312beeaf0d"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/dac/modded_dac.py",
+      "bytes": 36937,
+      "sha256": "746526ffaadf59f9457bcaf5e198e4afd865f585aa032d76acddd80347ade361"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/dac/rvq.py",
+      "bytes": 13542,
+      "sha256": "436d7b9b8896e378b8a88df009a4ad9511298f13cd954778878259170c0141b2"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/dac/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/kernels/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/text2semantic/audio_decoder.py",
+      "bytes": 17605,
+      "sha256": "0c9bce682835464fb9a9959d5c1b1a0afbc77175852fb2275d9638b4a39c491c"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/text2semantic/configuration.py",
+      "bytes": 18482,
+      "sha256": "6c74e76f329bb6deea8380639c39628d1db8e383e549e5aa8a2491cfc9a0e3b4"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/text2semantic/utils.py",
+      "bytes": 1112,
+      "sha256": "47563f7681f5da2ea076dfe36ee07f766010ed1979c5099076e73264906ef58b"
+    },
+    {
+      "path": "sglang_omni/models/fishaudio_s2_pro/fish_speech/models/text2semantic/__init__.py",
+      "bytes": 545,
+      "sha256": "c3da55a945a1f484bcfbc02a88bb8197ff6692a24b9e6df161edcfda38ca15c8"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/tool_funcs/audio_lengths.py",
+      "bytes": 342,
+      "sha256": "881ab46c00ae71961981e71045025dced79e2cad04545b1bd931f2b3124b0620"
+    },
+    {
+      "path": "sglang_omni/models/fun_asr/tool_funcs/__init__.py",
+      "bytes": 155,
+      "sha256": "ed92263d1ee9dfe3b1cc962a9cb8bcd5565b873cbf02605664092dfde170d408"
+    },
+    {
+      "path": "sglang_omni/models/higgs_tts/configs/higgs_audio_v2_tokenizer.json",
+      "bytes": 2660,
+      "sha256": "a25d2d0e712a648ff25a2255022376b01f04891d2c78c9f587a2e618a9eb4861"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/components/common.py",
+      "bytes": 1072,
+      "sha256": "a545af6f57741ce9599ff10344b979b5540e3af5364fcf2dd302f5d221a864aa"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/components/image_encoder.py",
+      "bytes": 13042,
+      "sha256": "4f07097bcd1b3f21402d85f6381b9e8a4669b152b5023397e4584cd32ce2f814"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/components/preprocessor.py",
+      "bytes": 15594,
+      "sha256": "4c202fae36d291c1419cefb482db4b1d4e24d1982d9c1b75fb97093a80ba2e16"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/components/thinker.py",
+      "bytes": 20352,
+      "sha256": "b6b0e69aad9a83aba04b1dc229eac344781e67aec8a713bd06e53fa9291b70ac"
+    },
+    {
+      "path": "sglang_omni/models/llada2_uni/components/__init__.py",
+      "bytes": 75,
+      "sha256": "681bbb2105084ff7d2601049fc497bcd807b05c29321b08787aaef5ea79e4b3b"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/audio_encoder.py",
+      "bytes": 10469,
+      "sha256": "2cb427a47a261c5c0f2eac30a67323d32e6afa5858bc3336cddf443ee3fe5fbf"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/common.py",
+      "bytes": 4404,
+      "sha256": "9344d5c1ebafb7ae7377bfae11ba0c3ef8e9059e08f12c36342cdf62880965d0"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/image_encoder.py",
+      "bytes": 10072,
+      "sha256": "af49e8ca0d5085efa3c770f198b0d93a9fbc8b59543c5053b1e45d831efe3862"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/preprocessor.py",
+      "bytes": 31442,
+      "sha256": "cb48724a34dce75f21dc3fab80b6620f58afaaa86d6068fc200a9486dbd0a9b7"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/projectors.py",
+      "bytes": 3019,
+      "sha256": "c408120fce9f88bb4ee1264327c8a875c7697583599c7d7aec13e03d2bf01fa5"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/streaming_detokenizer.py",
+      "bytes": 13669,
+      "sha256": "801dad071218c3245ad4a0b0c7c6d08add2e260763ec82f79148fb672ad8f018"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/streaming_segmenter.py",
+      "bytes": 10484,
+      "sha256": "d5d7113251ba6d744d6aa377f2e27e275bd87bed5dfb661bf16ea83846396639"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/streaming_talker.py",
+      "bytes": 18636,
+      "sha256": "b0e8306517e8fb4ed311d6f8fb2c2eb4112f40ca0a07f7caec67b37124c9dbb9"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/streaming_text.py",
+      "bytes": 5285,
+      "sha256": "2c14b1d97fcc2750c664ea3d758de33ef25ecaa00059befd69e983791f8fa072"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/talker_executor.py",
+      "bytes": 14590,
+      "sha256": "0e671ada96a1ffad048a05470f08c82792bde07df5af8d31319a2ba32113461c"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/vision_encoder.py",
+      "bytes": 15617,
+      "sha256": "2536def5d464995862989e24144a04f20bf97fcd85d61e314e457692997b1e02"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/components/__init__.py",
+      "bytes": 39,
+      "sha256": "1ed4e17af60fd6047eadaa4ba1b930eac450bbc4099d8443dbc1f00a3d527650"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/pipeline/engine_io.py",
+      "bytes": 6433,
+      "sha256": "e685e2412c04899f56e9955964a0801e6dd2e98682c523c338a95b0c53ff887a"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/pipeline/merge.py",
+      "bytes": 7584,
+      "sha256": "07f1047597bd2825c89d093eff2bf2ae106f6540684d1382980c69dd893eab8e"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/pipeline/next_stage.py",
+      "bytes": 2119,
+      "sha256": "312404176151851903b158a79e93dfbf24a761c0172a51e57040372e043a22f0"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/pipeline/sampling.py",
+      "bytes": 1178,
+      "sha256": "e30dfb36fde894318639ecc96b33a7a706de428e1400a45093477a0c0be40775"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/pipeline/stages.py",
+      "bytes": 14056,
+      "sha256": "dcc183c1ccac5c88ddde60ad37e3475cd5970aff7e6dec31327ac0ce689c1d31"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/pipeline/state_io.py",
+      "bytes": 543,
+      "sha256": "b9f51a8db959796744fff9a9427ebc856f2182f5aeb5c864bb290ba128d4e07a"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/pipeline/usage.py",
+      "bytes": 1398,
+      "sha256": "b6126aab312f17dc0f54f21298b3addd2d9639a24658402dc8043fc4cf8fdef3"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/pipeline/__init__.py",
+      "bytes": 39,
+      "sha256": "1ed4e17af60fd6047eadaa4ba1b930eac450bbc4099d8443dbc1f00a3d527650"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/configuration_bailing_talker.py",
+      "bytes": 2528,
+      "sha256": "80e12472c8a5162f8d3c97d3866543f758034ee68af49d6663f51d5fd1fcee9c"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/modeling_ming_omni_talker.py",
+      "bytes": 56466,
+      "sha256": "60c0c2ca0d59ef7369c2b360585c3cf670e0e19a067d784433a4ee90e34956a0"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/__init__.py",
+      "bytes": 384,
+      "sha256": "185ab49694dfb434097cea5dcd6fa94b179b3124bf76574203c406ab27da929a"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/audio_vae/configuration_audio_vae.py",
+      "bytes": 537,
+      "sha256": "36f459021363da82aea08a8304599f53f451e1501eaae20e43fb47fa124e72fe"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/audio_vae/istft.py",
+      "bytes": 8524,
+      "sha256": "06122217ccf981d7494d6933334958a67dbf3560894d04cc3d598916fccab519"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/audio_vae/modeling_audio_vae.py",
+      "bytes": 3661,
+      "sha256": "b8ac3be65061b957d390ad489b26adb4764f4966031a7af1c3f7981dc0583025"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/audio_vae/vae_modules.py",
+      "bytes": 8676,
+      "sha256": "f4e0edbe442a408234805f6d66a2f1235d9454a6f9d3a054b09ec0e84f863c8e"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/audio_vae/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/front/number_en.py",
+      "bytes": 6013,
+      "sha256": "3176293d108698fd5f475514673705388e9d36d7ec77ff7e5b292fc30414a037"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/front/text_segment_cut.py",
+      "bytes": 9297,
+      "sha256": "c0155827de3f411f70e85bbd23488dad91a001c824051c36f4da037534d0b04b"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/front/toolkit.py",
+      "bytes": 480,
+      "sha256": "51cadadcb52b9c0c32380116e0fb321361cc10774d6c7e4e217540a98e27c2bb"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/front/__init__.py",
+      "bytes": 92,
+      "sha256": "bce62a73fe9a2b5eb129bd00eff736e521ef9cb7088e5ed5f2df7746325a8cfc"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/talker_module/aggregator.py",
+      "bytes": 4438,
+      "sha256": "60a74cce9c1657cbe40fbb56cfc53315c43417b017eb3f63b5760a262b8def16"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/talker_module/cfm.py",
+      "bytes": 2882,
+      "sha256": "1b300ff6ea58b1a4c9dfcb70e62364b5f44c77bf7a8986f235e36acd0ac4c2b6"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/talker_module/dit.py",
+      "bytes": 7664,
+      "sha256": "acbb98c8494462ca59a779e98fdf111f88ddc6f2eb37c68f12da3d69f17d5229"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/talker_module/modules.py",
+      "bytes": 12614,
+      "sha256": "2401a41b5de73167de639ccff129f2f27d3a518b5e890472305d0b2a21b202f7"
+    },
+    {
+      "path": "sglang_omni/models/ming_omni/talker/talker_module/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/mlx/config.py",
+      "bytes": 4644,
+      "sha256": "395f6edb50eb9c5e9a7781ecebac810000620e6ccde6694b1038f4db52fc795e"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/mlx/model.py",
+      "bytes": 22718,
+      "sha256": "26729dab462ab4fbb52f5c6373753310bd8b96ba93974ccc4695b6872f2a7333"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/mlx/runner.py",
+      "bytes": 8846,
+      "sha256": "d6141fb7f0fc17ad141545043b3ac48dd7413176bca6358ef84d4126e29cfa10"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_asr/mlx/__init__.py",
+      "bytes": 82,
+      "sha256": "0f9386b5c33c159ef5790f2909706214cbe3e29ffc70e64b3b4877fa76960c5c"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/audio_encoder.py",
+      "bytes": 9499,
+      "sha256": "4c965fc6c34d8206b562857ebaca1431f644671a4c1f878172506dce3e05fd17"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/audio_layer_graph.py",
+      "bytes": 11286,
+      "sha256": "c0e23caa842e7f9930b2dc329d856499ba182cd9ee8bc0c8d36f51710be9310f"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/code2wav_cuda_graph.py",
+      "bytes": 30981,
+      "sha256": "cc52a047529e14a68e34bf845f10667a0d3922ac781ea7af438d6bddec9de3e6"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/code2wav_scheduler.py",
+      "bytes": 43178,
+      "sha256": "4386f71c955cb21d72b636944e5ce07166fc175a3464cb68bbfdb1e7b9fe28ea"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/common.py",
+      "bytes": 1064,
+      "sha256": "dea5a65a0485d84d1cbf32917d190c5452fb4e1963e3549f98a4adb924ed3d65"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/image_encoder.py",
+      "bytes": 7018,
+      "sha256": "02b3a1c96638ba70416c1788fcdbff93ee306a7b91250cfa2f742a7af85b36aa"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/preprocessor.py",
+      "bytes": 29142,
+      "sha256": "5aef18913c5b2ef9a70d0d2f9cd7c1e0a5bb9cba1082848c53587f1f8acd9158"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/sglang_thinker.py",
+      "bytes": 10391,
+      "sha256": "874a39f2de8fac23fd36df33f41945e27b8be423ece5c22b6f3fe5533d0b9851"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/streaming_detokenizer.py",
+      "bytes": 12056,
+      "sha256": "35a1683acf734da8c1d14d2ebdb4b5709e9efb8a30f491646aa27cb529d02ad0"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/talker.py",
+      "bytes": 71544,
+      "sha256": "b944a29d7c8ee49706c0f2ca7406a895e75525c51214fd50d8af682163c509cf"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/talker_input.py",
+      "bytes": 9279,
+      "sha256": "46e84b63531384082a755eb268a6291e5e1a9addda6686f2b9984b0c16bef92c"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/talker_prefill.py",
+      "bytes": 15801,
+      "sha256": "da62cea3df5fa0e8f55105edaed073e0a090b5243b6b34300591d2efd9ce7436"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/thinker.py",
+      "bytes": 15254,
+      "sha256": "493c80a663220cace184ffbf221a1119cdd6c325c07716e9e40f6ca2d340a3f1"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/thinker_fused_rope.py",
+      "bytes": 5976,
+      "sha256": "59608c407d481d5afc798dd176ecd8213cb0cea15cf042a48acf286230206fd9"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/thinker_model.py",
+      "bytes": 30906,
+      "sha256": "6b87ebdd0e9e4b71e9a80580e07e2e36318e708fe882dc64b2631727133035f7"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/vision_compat.py",
+      "bytes": 6237,
+      "sha256": "345ff730c97b150ae64233251e68b32b5ba1d38421b6e22d474317a996c86c67"
+    },
+    {
+      "path": "sglang_omni/models/qwen3_omni/components/__init__.py",
+      "bytes": 75,
+      "sha256": "2ffd6cd2ba509c269e440667ece1edb2ed4674119c2acdc325c5490b669e42d2"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/pipeline/engine_builder.py",
+      "bytes": 2440,
+      "sha256": "4027afada76ee89c8bfedea7743f146b5e75e6b82772086e593f5eb693da1ff6"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/pipeline/next_stage.py",
+      "bytes": 582,
+      "sha256": "d1e9bdc7e2d15ec11133153dc68cde7c952898d797cb04f89002398919ca8801"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/pipeline/stages.py",
+      "bytes": 14521,
+      "sha256": "5e49192c485b372eb8c013e3932bac53ebbfd4b8f21137286e7cc91d8bc6e537"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/pipeline/state_io.py",
+      "bytes": 650,
+      "sha256": "21ceed5024a3c3c0a79dc5536d7642cd7985a1da3af2bc586c15f60fabe3fe63"
+    },
+    {
+      "path": "sglang_omni/models/voxtral_tts/pipeline/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/components/audio_codec.py",
+      "bytes": 6505,
+      "sha256": "9cf3d9cc6b9daf124f9135d5ea9e2c0332c1e10a96d8d3205aea5a89c258a691"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/components/speaker_encoder.py",
+      "bytes": 13929,
+      "sha256": "838d07bc7571b966d4f86000eb90ae2647139f5b5370355cf055cc777ec7156f"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/components/streaming_vocoder.py",
+      "bytes": 15755,
+      "sha256": "bcbc805f96ec4168ba882af3c15636684c84d26772e0766d45f363f3df89f78c"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/components/text_frontend.py",
+      "bytes": 15229,
+      "sha256": "912964bd02f7b343f3e5edc2b21f132e2915a8881deab1147aab92ee3dc4b64f"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/components/__init__.py",
+      "bytes": 39,
+      "sha256": "1ed4e17af60fd6047eadaa4ba1b930eac450bbc4099d8443dbc1f00a3d527650"
+    },
+    {
+      "path": "sglang_omni/models/zonos2/moe_configs/triton_3_6_0/E=16,N=3072,device_name=NVIDIA_H100_80GB_HBM3.json",
+      "bytes": 3337,
+      "sha256": "a0b0e28f5e3280ee473e565f6488b01c000c6921960988e124ffb139e84a49cd"
+    },
+    {
+      "path": "sglang_omni/pipeline/stage/input.py",
+      "bytes": 4933,
+      "sha256": "2db434802cdcc2e5893e9cc06c60878c7acfaf0a416cb08682ae9402a7c1aae0"
+    },
+    {
+      "path": "sglang_omni/pipeline/stage/runtime.py",
+      "bytes": 72060,
+      "sha256": "4edc4e9504536cf2e8863e586a2d9eaf7fc99157fd94a2a3705e0eb1e9a29b6e"
+    },
+    {
+      "path": "sglang_omni/pipeline/stage/stream_queue.py",
+      "bytes": 4605,
+      "sha256": "66eccc7581e71cd8447139ea08f7c0687f47f35cc1c96c81eb0bffa647f19894"
+    },
+    {
+      "path": "sglang_omni/pipeline/stage/__init__.py",
+      "bytes": 845,
+      "sha256": "51dae43784aca354de6f2e476f474d3285bf89da3fdfa79c72eb5fd8e9d6a5f2"
+    },
+    {
+      "path": "sglang_omni/scheduling/sglang_backend/cache.py",
+      "bytes": 1428,
+      "sha256": "54e5dedd401ae283aeecaf4be45648bc0c661c0abdee930869301e1718184ba6"
+    },
+    {
+      "path": "sglang_omni/scheduling/sglang_backend/evict_heap_radix_cache.py",
+      "bytes": 2748,
+      "sha256": "d8374211bc8d84ec358ca23af97b7d2ac6ad227b58a08cfd1b9edf99d1ce3f01"
+    },
+    {
+      "path": "sglang_omni/scheduling/sglang_backend/output_processor.py",
+      "bytes": 9701,
+      "sha256": "3e9af5e42b3b796541ee856b82b1ec4c086520e5dd1af1f65eaeb5989920e9ab"
+    },
+    {
+      "path": "sglang_omni/scheduling/sglang_backend/request_data.py",
+      "bytes": 1271,
+      "sha256": "62d195586f7700a46246bb36111b012b8312de8d45ce6f90b69480bd426c0e3b"
+    },
+    {
+      "path": "sglang_omni/scheduling/sglang_backend/server_args_builder.py",
+      "bytes": 6117,
+      "sha256": "49050195da735b87d03f495070cc4c26b3129e5661c918d86b1721bf847e2b05"
+    },
+    {
+      "path": "sglang_omni/scheduling/sglang_backend/__init__.py",
+      "bytes": 665,
+      "sha256": "9ee82d05e624a0247c12cd25c79e6f40e33e86b608ec0733f54a4eb3e93b2068"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/audio_buffer.py",
+      "bytes": 3005,
+      "sha256": "e1394c50afb41407fd4ef82368ff068da23bfa4adb236d487f0ce2d6fc19bd18"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/events.py",
+      "bytes": 4464,
+      "sha256": "88f45f7ecd4981e93d7a145f68c9e376cae96d7a1bd9f24975a986afa0ac27be"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/manager.py",
+      "bytes": 3095,
+      "sha256": "a0eda94c7d4de102b495452c0f5d38c54ae631befaa4f84dd18702c270a0af7d"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/semantic_vad.py",
+      "bytes": 7831,
+      "sha256": "bcf9b2974e9af2860d66476aa208ef003fa99675ee9190f355d01ff45a66289f"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/session.py",
+      "bytes": 43816,
+      "sha256": "ee374ea4d9b6b1c76f571a3f3fdfe86645e2597c0b0a7312b07f7aef32d5ffd4"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/smart_turn.py",
+      "bytes": 3808,
+      "sha256": "4b7f144cfc008a8d9d77f5d15eb88b241b794a94ab7de9dee6e9d089b2f0491f"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/transcription_session.py",
+      "bytes": 26223,
+      "sha256": "2d05140bed8a4a72cd3976a65510824032d1821d71ebed5d0ac9d03d45d0d23b"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/turn_detector.py",
+      "bytes": 3428,
+      "sha256": "1f34925ac83011db6ca3dd4fae2bb211990d1dd559b4279e4e0bcc5c963755cf"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/vad.py",
+      "bytes": 4343,
+      "sha256": "e310d4f04b8dbdcb6e5e88da8f570214dd832f2976ca48ff34653d21aac3331d"
+    },
+    {
+      "path": "sglang_omni/serve/realtime/__init__.py",
+      "bytes": 512,
+      "sha256": "6cb5d644d67e33a9da23737ba048db2bb5c2fbd348f9c95f887cda9ab6363275"
+    },
+    {
+      "path": "sglang_omni/serve/transcription_adapters/base.py",
+      "bytes": 5572,
+      "sha256": "871c0c7f40edc328c198e362c920ed4b1d64f40d07126db5590e155685086690"
+    },
+    {
+      "path": "sglang_omni/serve/transcription_adapters/moss_transcribe_diarize.py",
+      "bytes": 5061,
+      "sha256": "6d4004f1604e87e72cacab3ab6dce46b8c0222e74c562158e4423b8dbc23463b"
+    },
+    {
+      "path": "sglang_omni/serve/transcription_adapters/whisper.py",
+      "bytes": 2677,
+      "sha256": "5fe1a4b1f1384da542e2c81bcc731264e1edc523ace8be00f5597db672675381"
+    },
+    {
+      "path": "sglang_omni/serve/transcription_adapters/whisper_asr.py",
+      "bytes": 5609,
+      "sha256": "f528be1e3ccfe2e496d5cce5f549bce555358df42462a79867f4a292fd3ed14c"
+    },
+    {
+      "path": "sglang_omni/serve/transcription_adapters/__init__.py",
+      "bytes": 768,
+      "sha256": "65d0852c6f8285f7e0d6d0892aaf73a3787dec4879fb735505faf9143d1258c2"
+    },
+    {
+      "path": "sglang_omni/vendor/sglang/core.py",
+      "bytes": 1033,
+      "sha256": "310be3881ab7dd756660da6c63937a91dd55859f2cc73ea02304644825bec7bc"
+    },
+    {
+      "path": "sglang_omni/vendor/sglang/distributed.py",
+      "bytes": 569,
+      "sha256": "b1ea394181d6c1dee23abb4650d61542ebd8815477188b022b91656db37c89fd"
+    },
+    {
+      "path": "sglang_omni/vendor/sglang/layers.py",
+      "bytes": 3747,
+      "sha256": "4bd8bec9394430a6bc8943d14b05ff079c884cea1724183f656678a2bfcef2f5"
+    },
+    {
+      "path": "sglang_omni/vendor/sglang/models.py",
+      "bytes": 1828,
+      "sha256": "37a091c93f636be46b611c3ce34b8292eb7221c149c38df6e6a1e47d614c9ec6"
+    },
+    {
+      "path": "sglang_omni/vendor/sglang/server_args.py",
+      "bytes": 1467,
+      "sha256": "338a1d87a4a216460b391def1095516b038bb7dc482d4c2673a2eb7c787d6ebd"
+    },
+    {
+      "path": "sglang_omni/vendor/sglang/utils.py",
+      "bytes": 623,
+      "sha256": "515ce268642e2f742d97e6a34be667cf46f2f3371e1f9954512ea312531f29c3"
+    },
+    {
+      "path": "sglang_omni/vendor/sglang/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11554,
+      "sha256": "fb576006b32d09620b812e9949b0fb08ac94759605f8eec7b33015f0fd83121f"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 7471,
+      "sha256": "7974545ab3368a1850c2b6941463fdae2673d81d0c2d1253dc87981fa0c1cf3e"
+    }
+  ],
+  "archive_sha256": "b035dc6220cc2cef3820c1d7f70d1364c391d1fe02686c07d546b5483c013f97"
+}

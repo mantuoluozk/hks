@@ -1,0 +1,4 @@
+jiwer==2.5.1
+Levenshtein==0.20.2
+rapidfuzz==2.13.7
+zhon==2.1.1

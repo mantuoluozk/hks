@@ -1,0 +1,35 @@
+{
+  "phase": "finished",
+  "accuracy_summary": {
+    "count": 1088,
+    "scored": 1088,
+    "errors": 0,
+    "full_dataset": true,
+    "mean_sample_wer_percent": 1.7137189421737433,
+    "wer_above_50_count": 1,
+    "filter_high_error_samples": false,
+    "asr_model": "openai/whisper-large-v3",
+    "asr_revision": "06f233fe06e710322aca913c1bc4249a0d71fce1",
+    "asr_dtype": "float32",
+    "generation_keyword": "forced_decoder_ids",
+    "forced_decoder_ids_expected": [
+      [
+        1,
+        50259
+      ],
+      [
+        2,
+        50360
+      ],
+      [
+        3,
+        50364
+      ]
+    ],
+    "legacy_bpe_cleanup_enabled": true,
+    "score_source_revision": "752f4297f090c46bb1a55a1f7439e5944ddefe8d",
+    "normalizer_ast_sha256": "900d46f5a49b8f002deae59cceabd4823d3de34d9911dfc09e3989bdf92005f5",
+    "official_acceptance_claimed": false
+  },
+  "full_dataset_evaluated": true
+}

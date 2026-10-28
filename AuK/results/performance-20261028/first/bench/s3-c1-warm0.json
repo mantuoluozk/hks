@@ -1,0 +1,13 @@
+{
+  "name": "s3-c1-warm0",
+  "requested_seconds": 3,
+  "concurrency": 1,
+  "warmup": true,
+  "seed": 1234,
+  "status": 200,
+  "latency_seconds": 2.7808854086324573,
+  "audio_seconds": 3.0,
+  "sample_rate": 24000,
+  "samples": 72000,
+  "response_sha256": "6ed1d6a82b474b2401e6f37ec46bc21e55e5699dc5d6976384ecaf74851ff161"
+}

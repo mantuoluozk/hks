@@ -1,0 +1,121 @@
+{
+  "cases": [
+    {
+      "name": "english",
+      "endpoint": "/v1/audio/speech",
+      "passed": true,
+      "status": 200,
+      "seconds": 10.88929769396782,
+      "content_type": "audio/wav",
+      "response_sha256": "49430912cf2e02270006ddf48dba60055ec5357389a4664a6c9ba566ee6f2b9b",
+      "sample_rate": 24000,
+      "samples": 96000,
+      "rms": 0.05322843790054321,
+      "waveform_sha256": "185260a0badc64d55e125ac0ca7237d41e23dee06cbf6937c8f3cbd18c479493"
+    },
+    {
+      "name": "chinese",
+      "endpoint": "/v1/audio/speech",
+      "passed": true,
+      "status": 200,
+      "seconds": 2.8419575947336853,
+      "content_type": "audio/wav",
+      "response_sha256": "270c6184cef6ae27e7ebe22c162e223d40338b1ea817369a83eeb80474cbad85",
+      "sample_rate": 24000,
+      "samples": 96000,
+      "rms": 0.05837813392281532,
+      "waveform_sha256": "2b358327144848977b230b4a8e12db5da5634dd419912c03c72c721bf219fb3a"
+    },
+    {
+      "name": "repeat_seed42",
+      "endpoint": "/v1/audio/speech",
+      "passed": true,
+      "status": 200,
+      "seconds": 2.8580140927806497,
+      "content_type": "audio/wav",
+      "response_sha256": "5c3c40f1ed874c3ffab6989a0bcac2bd0c134fbc9bc363cf7f45957c118662bc",
+      "sample_rate": 24000,
+      "samples": 96000,
+      "rms": 0.05331260710954666,
+      "waveform_sha256": "51347e44b18888b7c4ec23b2d67a0ea919d5095523ca18e527d0ac736d565a7d"
+    },
+    {
+      "name": "different_seed43",
+      "endpoint": "/v1/audio/speech",
+      "passed": true,
+      "status": 200,
+      "seconds": 2.850670308806002,
+      "content_type": "audio/wav",
+      "response_sha256": "561476e21598c24e8ed460139ac7aad9f1938f73ecef2ee3616f4efba9a1a75c",
+      "sample_rate": 24000,
+      "samples": 96000,
+      "rms": 0.04613906517624855,
+      "waveform_sha256": "87b90fd39e2f09dc9bb1223a1443128b4d8c5b9da3633c4c20dfd95cca62009b"
+    },
+    {
+      "name": "voice_instruction",
+      "endpoint": "/v1/audio/speech",
+      "passed": true,
+      "status": 200,
+      "seconds": 2.8408612073399127,
+      "content_type": "audio/wav",
+      "response_sha256": "dbeeb3f1ca72efe6d3e728c1b3e9f20cb2dec5adde0e30d416f1228a7aeb4851",
+      "sample_rate": 24000,
+      "samples": 96000,
+      "rms": 0.0391598604619503,
+      "waveform_sha256": "6e6efff975ec64a0972f655b05272d35d63a103b05aef657e5dfe9acc682c504"
+    },
+    {
+      "name": "reference_voice",
+      "endpoint": "/v1/audio/speech",
+      "passed": true,
+      "status": 200,
+      "seconds": 5.917937666643411,
+      "content_type": "audio/wav",
+      "response_sha256": "fb82e226dbd6a3109f22feb339b8189e9d3f22a8b4f425cd46a7adfc4590adeb",
+      "sample_rate": 24000,
+      "samples": 96000,
+      "rms": 0.07061773538589478,
+      "waveform_sha256": "3f4f9406664fa5633edc1deeb099c3cdf644b66432179713a86279363dbe4e2e"
+    },
+    {
+      "name": "editing",
+      "endpoint": "/generate",
+      "passed": true,
+      "status": 200,
+      "seconds": 3.3544807829894125,
+      "content_type": "application/json",
+      "response_sha256": "3565b4e4e19b452b0c29e94492b93825572210aeafb28b8d8fcd17d9d8b64c33",
+      "sample_rate": 24000,
+      "samples": 96000,
+      "rms": 0.05380062013864517,
+      "waveform_sha256": "06a9d757426f4e9130d44767d3b559f538a8261c582b38eb577bd32c067c5c0b"
+    },
+    {
+      "name": "empty_input",
+      "endpoint": "/v1/audio/speech",
+      "passed": true,
+      "status": 400,
+      "seconds": 0.003062453120946884,
+      "content_type": "application/json",
+      "response_sha256": "3dcb9ce208637a3e39b30eb2194f3b5b06c510fa6baf4dee0154abd2e83e204d"
+    },
+    {
+      "name": "zero_duration",
+      "endpoint": "/v1/audio/speech",
+      "passed": true,
+      "status": 400,
+      "seconds": 0.007702945731580257,
+      "content_type": "application/json",
+      "response_sha256": "5fd429015e6b00141be66d66c620879922ff69f67a208c604ead7b04f250f7ee"
+    }
+  ],
+  "checks": {
+    "same_seed_pcm_equal": false,
+    "same_seed_max_abs_difference": 0.022064208984375,
+    "different_seed_pcm_differs": true
+  },
+  "passed": false,
+  "semantic_quality_measured": false,
+  "official_accuracy_tested": false
+}

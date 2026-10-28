@@ -1,0 +1,13 @@
+{
+  "name": "s5-c2-measure4",
+  "requested_seconds": 5,
+  "concurrency": 2,
+  "warmup": false,
+  "seed": 1238,
+  "status": 200,
+  "latency_seconds": 5.745895863045007,
+  "audio_seconds": 5.0,
+  "sample_rate": 24000,
+  "samples": 120000,
+  "response_sha256": "40fb028b72d479403a29736ef6e341ec1d4902fb31f8ffc8028265dc311c0288"
+}

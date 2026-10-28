@@ -1,0 +1,15 @@
+{
+  "framework": "SGLang-Omni",
+  "upstream_revision": "428b73225f808f0d93669140983e90839c9aea0e",
+  "conditioning_dtype": "bfloat16",
+  "dit_dtype": "float32",
+  "vae_dtype": "float32",
+  "attention_backend": "math",
+  "deterministic_algorithms": true,
+  "nfe": 32,
+  "cfg_strength": 2.0,
+  "sway": -1.0,
+  "sample_rate": 24000,
+  "server_max_batch_size": 1,
+  "port": 30005
+}

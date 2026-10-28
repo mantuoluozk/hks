@@ -1,0 +1,6 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+{"requested_seconds": 3, "concurrency": 1, "requests": 8, "warmup_requests": 1, "wall_seconds": 24.266221263911575, "mean_latency_seconds": 3.020775560173206, "p95_latency_seconds": 3.0246963915182277, "mean_rtf": 1.006925186724402, "audio_seconds_per_wall_second": 0.9890291421554168}
+{"requested_seconds": 3, "concurrency": 2, "requests": 8, "warmup_requests": 2, "wall_seconds": 23.05547688808292, "mean_latency_seconds": 5.402845724893268, "p95_latency_seconds": 5.883458250109106, "mean_rtf": 1.8009485749644227, "audio_seconds_per_wall_second": 1.0409674072890374}
+{"requested_seconds": 5, "concurrency": 1, "requests": 8, "warmup_requests": 1, "wall_seconds": 24.767296022735536, "mean_latency_seconds": 3.082167349755764, "p95_latency_seconds": 3.085866005718708, "mean_rtf": 0.6164334699511528, "audio_seconds_per_wall_second": 1.615032983951149}
+{"requested_seconds": 5, "concurrency": 2, "requests": 8, "warmup_requests": 2, "wall_seconds": 23.262831436935812, "mean_latency_seconds": 5.455482111370657, "p95_latency_seconds": 5.967244778852909, "mean_rtf": 1.0910964222741313, "audio_seconds_per_wall_second": 1.719481143490107}

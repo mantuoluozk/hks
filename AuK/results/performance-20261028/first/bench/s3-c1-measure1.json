@@ -1,0 +1,13 @@
+{
+  "name": "s3-c1-measure1",
+  "requested_seconds": 3,
+  "concurrency": 1,
+  "warmup": false,
+  "seed": 1235,
+  "status": 200,
+  "latency_seconds": 2.7262927680276334,
+  "audio_seconds": 3.0,
+  "sample_rate": 24000,
+  "samples": 72000,
+  "response_sha256": "af4c9cfdf3346661d12323534af1da86e61ba9cfcafdfc37fca457ebce2862ae"
+}

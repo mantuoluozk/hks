@@ -1,0 +1,22 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/AuK/scripts/http_bench.py", line 48, in <module>
+    rows = list(executor.map(lambda i: send(duration, concurrency, i, False), range(8)))
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/private_data/hks/models/AuK/scripts/http_bench.py", line 48, in <lambda>
+    rows = list(executor.map(lambda i: send(duration, concurrency, i, False), range(8)))
+  File "/root/private_data/hks/models/AuK/scripts/http_bench.py", line 29, in send
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/dist-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http://127.0.0.1:30005/v1/audio/speech

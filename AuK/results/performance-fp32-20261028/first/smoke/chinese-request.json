@@ -1,0 +1,10 @@
+{
+  "input": "你好，欢迎参加语音生成测试。",
+  "seed": 42,
+  "response_format": "wav",
+  "stage_params": {
+    "auk_engine": {
+      "gen_seconds": 4
+    }
+  }
+}

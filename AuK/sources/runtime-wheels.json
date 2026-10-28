@@ -1,0 +1,74 @@
+[
+  {
+    "package": "librosa",
+    "version": "0.11.0",
+    "file": "librosa-0.11.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/b5/ba/c63c5786dfee4c3417094c4b00966e61e4a63efecee22cb7b4c0387dda83/librosa-0.11.0-py3-none-any.whl",
+    "bytes": 260749,
+    "sha256": "0b6415c4fd68bff4c29288abe67c6d80b587e0e1e2cfb0aad23e4559504a7fa1"
+  },
+  {
+    "package": "soxr",
+    "version": "1.0.0",
+    "file": "soxr-1.0.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/75/34/e18f1003e242aabed44ed8902534814d3e64209e4d1d874f5b9b67d73cde/soxr-1.0.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "bytes": 242310,
+    "sha256": "d255741b2f0084fd02d4a2ddd77cd495be9e7e7b6f9dba1c9494f86afefac65b"
+  },
+  {
+    "package": "audioread",
+    "version": "3.1.0",
+    "file": "audioread-3.1.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/7e/16/fbe8e1e185a45042f7cd3a282def5bb8d95bb69ab9e9ef6a5368aa17e426/audioread-3.1.0-py3-none-any.whl",
+    "bytes": 23143,
+    "sha256": "b30d1df6c5d3de5dcef0fb0e256f6ea17bdcf5f979408df0297d8a408e2971b4"
+  },
+  {
+    "package": "lazy-loader",
+    "version": "0.6",
+    "file": "lazy_loader-0.6-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/23/93/4e45e37f26c820216704b36b8e67cc55c490a7abd287a78a26a2c0e21386/lazy_loader-0.6-py3-none-any.whl",
+    "bytes": 8791,
+    "sha256": "77253be3391b06124a0e16105bd663b6c54470af1a9ca8e1cf026f38d58ed056"
+  },
+  {
+    "package": "pooch",
+    "version": "1.9.0",
+    "file": "pooch-1.9.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/2a/2d/d4bf65e47cea8ff2c794a600c4fd1273a7902f268757c531e0ee9f18aa58/pooch-1.9.0-py3-none-any.whl",
+    "bytes": 67175,
+    "sha256": "f265597baa9f760d25ceb29d0beb8186c243d6607b0f60b83ecf14078dbc703b"
+  },
+  {
+    "package": "scikit-learn",
+    "version": "1.7.2",
+    "file": "scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/58/0e/8c2a03d518fb6bd0b6b0d4b114c63d5f1db01ff0f9925d8eb10960d01c01/scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "bytes": 9660938,
+    "sha256": "7a58814265dfc52b3295b1900cfb5701589d30a8bb026c7540f1e9d3499d5ec8"
+  },
+  {
+    "package": "editdistance",
+    "version": "0.8.1",
+    "file": "editdistance-0.8.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/c2/fb/2940d26ebda12efd280ae939436f17ac482930d862df9e774cb8b771ab03/editdistance-0.8.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "bytes": 401846,
+    "sha256": "67d143429a49ab552411505f550a0fb4285a1d4336e096804d233ec495ac20fc"
+  },
+  {
+    "package": "openai",
+    "version": "2.30.0",
+    "file": "openai-2.30.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/2a/9e/5bfa2270f902d5b92ab7d41ce0475b8630572e71e349b2a4996d14bdda93/openai-2.30.0-py3-none-any.whl",
+    "bytes": 1146656,
+    "sha256": "9a5ae616888eb2748ec5e0c5b955a51592e0b201a11f4262db920f2a78c5231d"
+  },
+  {
+    "package": "x-transformers",
+    "version": "1.31.14",
+    "file": "x_transformers-1.31.14-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/54/9c/201b1503778851472759b05e9ec88cfc43d30c409b155eac148b6274460a/x_transformers-1.31.14-py3-none-any.whl",
+    "bytes": 37505,
+    "sha256": "991335a9ec5058e8eb0960b195da9057e6e043420e93d3938bce154fdcdd2194"
+  }
+]

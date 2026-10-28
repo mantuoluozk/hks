@@ -1,0 +1,123 @@
+{
+  "_id": "6a8404f456b7a7f6a5c07551",
+  "id": "tencent/AuK",
+  "private": false,
+  "pipeline_tag": "text-to-speech",
+  "tags": [
+    "audio",
+    "speech",
+    "text-to-speech",
+    "zero-shot-tts",
+    "voice-cloning",
+    "speech-generation",
+    "speech-editing",
+    "speech-enhancement",
+    "source-separation",
+    "speech-separation",
+    "instruction-guided",
+    "diffusion",
+    "arxiv:2609.08936",
+    "license:mit",
+    "region:us"
+  ],
+  "downloads": 1800,
+  "likes": 392,
+  "modelId": "tencent/AuK",
+  "author": "tencent",
+  "sha": "790742b71a4430120daf2b2099192abae449eb9f",
+  "lastModified": "2026-09-10T02:54:12.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "license": "mit",
+    "tags": [
+      "audio",
+      "speech",
+      "text-to-speech",
+      "zero-shot-tts",
+      "voice-cloning",
+      "speech-generation",
+      "speech-editing",
+      "speech-enhancement",
+      "source-separation",
+      "speech-separation",
+      "instruction-guided",
+      "diffusion"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "80e2a77eb7788ce20789b004eb100e1f1caca514",
+      "size": 1630
+    },
+    {
+      "rfilename": "LICENSE",
+      "blobId": "b31579283157c96863764d672053fd95017de0d9",
+      "size": 1653
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "7d8bc248df44282f03d38eb2a425d48145e9cc6e",
+      "size": 10096
+    },
+    {
+      "rfilename": "assets/arch.png",
+      "blobId": "3c0c2c3eb597b0ac2249751475135c836faf9cda",
+      "size": 861271,
+      "lfs": {
+        "sha256": "1512b37ee0a642be4ec67a79b37152b87900f63dc9176585a891d42ebaef891a",
+        "size": 861271,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "assets/performance.png",
+      "blobId": "cd0074972c8ae1d6275957e389a6ba66031bf4d3",
+      "size": 2249748,
+      "lfs": {
+        "sha256": "d194d8dd5157b6564be2e88a9b289b749485eeb160224b7ca5fa4c5468a88541",
+        "size": 2249748,
+        "pointerSize": 132
+      }
+    },
+    {
+      "rfilename": "auk_base.safetensors",
+      "blobId": "067ab3f652d26c02e02ff5332a66d6a86f4dde75",
+      "size": 6122209092,
+      "lfs": {
+        "sha256": "29c65c0c6045e8d8fb454019f99c9680508f553fc98fa143feaca3711d0b8614",
+        "size": 6122209092,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "config.yaml",
+      "blobId": "1e37113f88f175bcfe151c8481327c2d69025f1d",
+      "size": 1310
+    },
+    {
+      "rfilename": "vae.safetensors",
+      "blobId": "8885289a84518a1ebba109c800d9a36696a1f341",
+      "size": 637322604,
+      "lfs": {
+        "sha256": "0f5857fd0d6b916d161c73fef433e0ccb42484a2dad3aa08e8a51975e29a0645",
+        "size": 637322604,
+        "pointerSize": 134
+      }
+    }
+  ],
+  "spaces": [
+    "hf-audio/open_tts_leaderboard",
+    "tencent/AuK",
+    "hugging-apps/drbaph-auk-comfyui",
+    "eustlb/tts-models-on-the-hub",
+    "ramu23/AuK",
+    "akhaliq/AuK",
+    "goooooooooooooooooo/AuK"
+  ],
+  "createdAt": "2026-08-18T07:08:36.000Z",
+  "usedStorage": 6762642715
+}

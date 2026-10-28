@@ -1,0 +1,10 @@
+{
+  "transformation": "remove target_text and reference_text only",
+  "raw_files_sha256": {
+    "scored.jsonl": "c3aacbbe3bde4521158076df535eb5cd5d25de0210f23c66b4fb517d2609d54a",
+    "generated.jsonl": "1de2c557b581f07af1779d0b2552080f18f5d41ba2077a08a8c2800979620422"
+  },
+  "rows": 1088,
+  "measurements_modified": false,
+  "dataset_text_redistributed": false
+}

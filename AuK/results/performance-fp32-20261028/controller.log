@@ -1,0 +1,11 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+{"phase": "first_startup", "server_pid": 11893}
+{"phase": "first_functional"}
+{"phase": "first_performance", "smoke_exit": 0, "http_functionality_passed": true, "byte_exact_waveform_repeatability": true}
+{"phase": "first_stopped"}
+{"phase": "repeat_startup", "server_pid": 12835}
+{"phase": "repeat_functional"}
+{"phase": "repeat_performance", "smoke_exit": 0, "http_functionality_passed": true, "byte_exact_waveform_repeatability": true}
+{"phase": "repeat_stopped"}
+{"phase": "finished", "complete": true, "differences_percent": [{"requested_seconds": 3, "concurrency": 1, "mean_latency_seconds": 0.20293785101511072, "audio_seconds_per_wall_second": 0.17396271010963282}, {"requested_seconds": 3, "concurrency": 2, "mean_latency_seconds": 0.24340892169763378, "audio_seconds_per_wall_second": 1.158259312065358}, {"requested_seconds": 5, "concurrency": 1, "mean_latency_seconds": 0.12474665890017536, "audio_seconds_per_wall_second": 0.6984783199446393}, {"requested_seconds": 5, "concurrency": 2, "mean_latency_seconds": 0.7052849495615011, "audio_seconds_per_wall_second": 0.23684842873034861}], "maximum_difference_percent": 1.158259312065358, "performance_reproduction_passed": true}

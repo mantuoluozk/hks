@@ -1,0 +1,7 @@
+{
+  "official_function_recomputed_rows": 1088,
+  "all_recorded_wer_match": true,
+  "mean_sample_wer_percent": 1.7137189421737433,
+  "source_scored_jsonl_sha256": "c3aacbbe3bde4521158076df535eb5cd5d25de0210f23c66b4fb517d2609d54a",
+  "model_inference_executed": false
+}

@@ -1,0 +1,25 @@
+{
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2115345884192739329",
+  "scope": "new Notebook image integrity + one real HTTP speech request",
+  "full_performance_repeated": false,
+  "official_accuracy_tested": false,
+  "passed": true,
+  "baked_files_verified": 588,
+  "omni_origin": "/opt/auk/sglang-omni/sglang_omni/__init__.py",
+  "runtime_root": "/opt/auk",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+    "transformers": "5.12.1",
+    "x-transformers": "1.31.14",
+    "openai": "2.30.0"
+  },
+  "phase": "speech_passed",
+  "http_status": 200,
+  "request_seconds": 11.807465136051178,
+  "sample_rate": 24000,
+  "samples": 96000,
+  "waveform_sha256": "d91dfdcac0c1ff3757da86146c1e61c1552ec6ff6c49983d80af5df04d97aa90",
+  "wav_sha256": "1251cf0054b92e66f86565678ab28b771d8a41676dd1c0406cb6a4b78b51f9ce",
+  "owned_server_stopped": true
+}

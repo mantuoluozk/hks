@@ -1,0 +1,31 @@
+{
+  "scope": "model-local Omni checkout; installed SGLang unchanged",
+  "change": "use real resolved_view from legacy overrides module when renamed module is absent",
+  "files": [
+    {
+      "path": "sglang_omni/platforms/interface.py",
+      "original_sha256": "c43a718964989350148b84f69a861c8172a07c6ed4a608e3b5454dd9a7c8aead",
+      "sha256": "bf9d42b4d0ae772f3656eacbfa8ebd2e3aab8f178d79dcee3d19063edc1a24b9"
+    },
+    {
+      "path": "sglang_omni/platforms/cuda.py",
+      "original_sha256": "d123bd65552d9426e60de3da99539eb382d5988f7905e65d93b4fb508daff62a",
+      "sha256": "c64f568ef21674c9ad17c4d2663f74e0027d155e19872f5031ec91da6a8f13dd"
+    },
+    {
+      "path": "sglang_omni/platforms/rocm.py",
+      "original_sha256": "21db7b55ad9144711792bc84ae4f6ee4d10ab4756278fcddb1ebabc27a812a43",
+      "sha256": "431891b1defa9eb79c7870f7d6bbf8dbf2c7fddeedba8dafd8a458390b5adf91"
+    },
+    {
+      "path": "sglang_omni/platforms/xpu.py",
+      "original_sha256": "ac718a13c380230b1589d806ffc3736f0f0998dc414ead3a8112456a0eca43ee",
+      "sha256": "0c80f7462ecfe01edd9ae9f88a6cb66a3b02fa326faf3c5e396df6ad0568593b"
+    },
+    {
+      "path": "sglang_omni/vendor/sglang/resolved_view.py",
+      "original_sha256": null,
+      "sha256": "c49bdbf7cf9608804a666f1ec9bc4052e61a9ae0f38b53dbf2b48181df816871"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "dataset": "Seed-TTS-Eval test-en",
+  "rows": 1088,
+  "metric": "mean per-sample WER (%)",
+  "lower_is_better": true,
+  "publisher_wer_percent": 1.02,
+  "publisher_source": "https://arxiv.org/html/2609.08936v1#A1.T5",
+  "measured_wer_percent": 1.7137189421737433,
+  "increase_percentage_points": 0.6937189421737433,
+  "tolerance_percentage_points": 2,
+  "upper_bound_wer_percent": 3.02,
+  "comparison_rule": "measured WER minus publisher WER <= 2 percentage points",
+  "criterion_origin": "criterion adopted for this submission; no claim of independently verified full contest rule text",
+  "numeric_criterion_met": true,
+  "measured_runs": 1,
+  "publisher_runs": 3,
+  "publisher_exact_protocol_confirmed": false,
+  "official_acceptance_claimed": false
+}

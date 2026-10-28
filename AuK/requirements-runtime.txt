@@ -1,0 +1,9 @@
+librosa==0.11.0
+soxr==1.0.0
+audioread==3.1.0
+lazy-loader==0.6
+pooch==1.9.0
+scikit-learn==1.7.2
+editdistance==0.8.1
+openai==2.30.0
+x-transformers==1.31.14

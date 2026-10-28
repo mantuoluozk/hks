@@ -1,0 +1,166 @@
+{
+  "attention_backend": "math",
+  "dit_compute_dtype": "float32",
+  "conditioning_compute_dtype": "bfloat16",
+  "rounds": [
+    {
+      "label": "first",
+      "server_pid": 11893,
+      "http_functionality_passed": true,
+      "byte_exact_waveform_repeatability": true,
+      "performance": {
+        "cells": [
+          {
+            "requested_seconds": 3,
+            "concurrency": 1,
+            "requests": 8,
+            "warmup_requests": 1,
+            "wall_seconds": 24.224007087759674,
+            "mean_latency_seconds": 3.014657678664662,
+            "p95_latency_seconds": 3.01716627785936,
+            "mean_rtf": 1.0048858928882207,
+            "audio_seconds_per_wall_second": 0.9907526823721553
+          },
+          {
+            "requested_seconds": 3,
+            "concurrency": 2,
+            "requests": 8,
+            "warmup_requests": 2,
+            "wall_seconds": 23.322519096080214,
+            "mean_latency_seconds": 5.416028822248336,
+            "p95_latency_seconds": 5.8763333656126635,
+            "mean_rtf": 1.8053429407494452,
+            "audio_seconds_per_wall_second": 1.0290483588470358
+          },
+          {
+            "requested_seconds": 5,
+            "concurrency": 1,
+            "requests": 8,
+            "warmup_requests": 1,
+            "wall_seconds": 24.940290215890855,
+            "mean_latency_seconds": 3.07832723937463,
+            "p95_latency_seconds": 3.0827626831363886,
+            "mean_rtf": 0.615665447874926,
+            "audio_seconds_per_wall_second": 1.6038305750954638
+          },
+          {
+            "requested_seconds": 5,
+            "concurrency": 2,
+            "requests": 8,
+            "warmup_requests": 2,
+            "wall_seconds": 23.207733786199242,
+            "mean_latency_seconds": 5.417274886916857,
+            "p95_latency_seconds": 5.946370804053731,
+            "mean_rtf": 1.0834549773833715,
+            "audio_seconds_per_wall_second": 1.7235633762649623
+          }
+        ],
+        "complete": true,
+        "nfe": 32,
+        "cfg_strength": 2.0,
+        "sway": -1.0,
+        "server_max_batch_size": 1,
+        "attention_backend": "math",
+        "dit_compute_dtype": "float32",
+        "warmups_counted_in_metrics": false
+      }
+    },
+    {
+      "label": "repeat",
+      "server_pid": 12835,
+      "http_functionality_passed": true,
+      "byte_exact_waveform_repeatability": true,
+      "performance": {
+        "cells": [
+          {
+            "requested_seconds": 3,
+            "concurrency": 1,
+            "requests": 8,
+            "warmup_requests": 1,
+            "wall_seconds": 24.266221263911575,
+            "mean_latency_seconds": 3.020775560173206,
+            "p95_latency_seconds": 3.0246963915182277,
+            "mean_rtf": 1.006925186724402,
+            "audio_seconds_per_wall_second": 0.9890291421554168
+          },
+          {
+            "requested_seconds": 3,
+            "concurrency": 2,
+            "requests": 8,
+            "warmup_requests": 2,
+            "wall_seconds": 23.05547688808292,
+            "mean_latency_seconds": 5.402845724893268,
+            "p95_latency_seconds": 5.883458250109106,
+            "mean_rtf": 1.8009485749644227,
+            "audio_seconds_per_wall_second": 1.0409674072890374
+          },
+          {
+            "requested_seconds": 5,
+            "concurrency": 1,
+            "requests": 8,
+            "warmup_requests": 1,
+            "wall_seconds": 24.767296022735536,
+            "mean_latency_seconds": 3.082167349755764,
+            "p95_latency_seconds": 3.085866005718708,
+            "mean_rtf": 0.6164334699511528,
+            "audio_seconds_per_wall_second": 1.615032983951149
+          },
+          {
+            "requested_seconds": 5,
+            "concurrency": 2,
+            "requests": 8,
+            "warmup_requests": 2,
+            "wall_seconds": 23.262831436935812,
+            "mean_latency_seconds": 5.455482111370657,
+            "p95_latency_seconds": 5.967244778852909,
+            "mean_rtf": 1.0910964222741313,
+            "audio_seconds_per_wall_second": 1.719481143490107
+          }
+        ],
+        "complete": true,
+        "nfe": 32,
+        "cfg_strength": 2.0,
+        "sway": -1.0,
+        "server_max_batch_size": 1,
+        "attention_backend": "math",
+        "dit_compute_dtype": "float32",
+        "warmups_counted_in_metrics": false
+      }
+    }
+  ],
+  "complete": true,
+  "byte_exact_waveform_repeatability_required_for_performance": false,
+  "phase": "finished",
+  "server_pid": 12835,
+  "smoke_exit": 0,
+  "http_functionality_passed": true,
+  "byte_exact_waveform_repeatability": true,
+  "differences_percent": [
+    {
+      "requested_seconds": 3,
+      "concurrency": 1,
+      "mean_latency_seconds": 0.20293785101511072,
+      "audio_seconds_per_wall_second": 0.17396271010963282
+    },
+    {
+      "requested_seconds": 3,
+      "concurrency": 2,
+      "mean_latency_seconds": 0.24340892169763378,
+      "audio_seconds_per_wall_second": 1.158259312065358
+    },
+    {
+      "requested_seconds": 5,
+      "concurrency": 1,
+      "mean_latency_seconds": 0.12474665890017536,
+      "audio_seconds_per_wall_second": 0.6984783199446393
+    },
+    {
+      "requested_seconds": 5,
+      "concurrency": 2,
+      "mean_latency_seconds": 0.7052849495615011,
+      "audio_seconds_per_wall_second": 0.23684842873034861
+    }
+  ],
+  "maximum_difference_percent": 1.158259312065358,
+  "performance_reproduction_passed": true
+}
