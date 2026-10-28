@@ -1,0 +1,486 @@
+{
+  "model": "Kimi-VL-A3B-Instruct",
+  "version": "kimi-vl-a3b-instruct-bw-vllm-v1.0.0",
+  "files": [
+    {
+      "path": "Kimi-VL-A3B-Instruct/.gitattributes",
+      "sha256": "28e7f8c49ac04d2e7c555f6609ea5b3a4ab1ab06b4dbc483ba2f3f942259157c",
+      "bytes": 102
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/.gitignore",
+      "sha256": "dfcc06bcee5d62536c7db2e8b0b078c0257d74d009be1ba03224478e8751e670",
+      "bytes": 62
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/README.md",
+      "sha256": "6f1486799924a12e4cbe76f4e465d857ef678126aa9293a9a95bdae7daad327f",
+      "bytes": 10067
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/evidence-manifest.json",
+      "sha256": "33d172d54149317d49ad5b46b3b87b8a4d85788a4ed338db8d8b7a32cf81f054",
+      "bytes": 11414
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/native-import.json",
+      "sha256": "5c4a55de7f0797c7a53cb25bd256c582b9191406f3f651a5fe01e7f229345965",
+      "bytes": 694
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/preflight-20261028/preflight.log",
+      "sha256": "7e569972a4976ec62ec8afcac336fa9b4ea5b6f9eee34dd05a06e6eb1ed33b23",
+      "bytes": 1484
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/preflight-20261028/summary.json",
+      "sha256": "7c573b5b513de1d70b9094539da3d87568d70edd8db8be1bab28c99f1db69466",
+      "bytes": 4271
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/preflight-20261028/weights-and-environment.json",
+      "sha256": "609e04c426395a5293f10705eab488abbaf46221978c617e738b7087573b3cd4",
+      "bytes": 3569
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/runtime-config.json",
+      "sha256": "8b8eebc8e98181b1a4052a438b8ebdfacc944acdac946d1fa99267542dd91476",
+      "bytes": 1506
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/blue-zh.json",
+      "sha256": "5ab6fcdfdc2a5666d318dbd6e86b651fd175c92f7d01e62021925d1cdadcd463",
+      "bytes": 1512
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/demo.json",
+      "sha256": "ebf01e7d1a29a9fc956df966431686e1cd6bc10e52dc0f1209d711fa00ed31f4",
+      "bytes": 1503
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/models.json",
+      "sha256": "0d2f2f12ceb4ba1d60ef3794feaf18604f2c8613a66a30900d2158dfb6821188",
+      "bytes": 768
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/ocr.json",
+      "sha256": "ac220eeb14b3e43b724992aafa567c1f136bc5092654ce0b08706fd0350234f1",
+      "bytes": 1496
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/red.json",
+      "sha256": "69256697a584be4bd7ed8ddefd39c7e09fe8b1eb42354db92e00b88f90000681",
+      "bytes": 1496
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/repeat.json",
+      "sha256": "c89e54cff786022e141974c1709211084803adc8a02d01c771b5847639520706",
+      "bytes": 1499
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/stream.json",
+      "sha256": "7deeb16fe458d9c49276972c5a06d54dd9454a8d6cbab5124b755ae47aec6539",
+      "bytes": 2619
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/summary.json",
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255",
+      "bytes": 324
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/text.json",
+      "sha256": "e3231e345787a1cebfca88e1eceb71993d2824bc87a23cd184d314cd4d183857",
+      "bytes": 1399
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional/two-images.json",
+      "sha256": "88067c5dc96b7ea32dfbbb0c6407a9967f87c675f83a547a4f2fbd64d563f886",
+      "bytes": 1634
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/functional.log",
+      "sha256": "8adacb3b897738a32fdcdedeabd6625998a6874a446daf097f650d3f08d81a48",
+      "bytes": 1240
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance/c1-o128/requests.jsonl",
+      "sha256": "0ddc73fa4174b0515f4b3868b1c596b2e33aebed07a8e3c86a4523c3dbe94f7b",
+      "bytes": 265870
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance/c1-o128/summary.json",
+      "sha256": "a4b694640f0499d8c4e0f1e21baece3262055e493247832b2827cc7a8e138413",
+      "bytes": 437
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance/c1-o32/requests.jsonl",
+      "sha256": "7f11df776ba329dee47263aba8f1191a18a02010eef6c32046c7aaa32d8c94b2",
+      "bytes": 71912
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance/c1-o32/summary.json",
+      "sha256": "08bdbc153784c343d9e238fd9512ab40d200d01af256e5d12050461a75150a8a",
+      "bytes": 439
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance/c2-o128/requests.jsonl",
+      "sha256": "ea0cca684696d742929277f65d6600e2402d02d71537bd84af259d6d8c55626f",
+      "bytes": 266834
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance/c2-o128/summary.json",
+      "sha256": "b7bed1f3fb3701ec588dfb10292c4f0ae1e3f1f289f78594db0d9cbd31dd7b7c",
+      "bytes": 439
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance/c2-o32/requests.jsonl",
+      "sha256": "b929439e2be6fe4d9d95ffdf79e03c7e849eceb377359b1e4faf39e1d6427e3b",
+      "bytes": 73835
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance/c2-o32/summary.json",
+      "sha256": "d98bf02b47e19f85e007f6394682517427d906aaf4eb378c39ab232b159e7aad",
+      "bytes": 437
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance/summary.json",
+      "sha256": "4c304f8966c52b434b733e8f6f0cbf258fe12c9df949c71e9f0471f064c02dd5",
+      "bytes": 2911
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/performance.log",
+      "sha256": "aca35ffb5c3e3b2c7070aa9dd1d5ee14411d00646a8ffa2552af7018cfc241bc",
+      "bytes": 1659
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/fresh-vllm-20261028/server.log",
+      "sha256": "011119c73228d2b9268cd9306fd672e894f06088bd316296b1eae902bc6f7f23",
+      "bytes": 30403
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-20261028/server.log",
+      "sha256": "1863044b50789a31985bd404db1588fe9d8d78e5772ba0250d2fcdadbdbcef88",
+      "bytes": 20537
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v2-20261028/server.log",
+      "sha256": "4b307de7087dd6f0b3e2d043f002bfc4a2290e231e7108883f5445645a7682d0",
+      "bytes": 37105
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/blue-zh.json",
+      "sha256": "be775defad2e8ece37feac6072d8dec8527c0d93cb994044c274a1e08c4ad8e4",
+      "bytes": 1511
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/demo.json",
+      "sha256": "5b0f97db9335956b611b54cb2d5553d8977eadc399ff382fa6eba661563fb9c0",
+      "bytes": 1503
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/models.json",
+      "sha256": "953cb312becc4fcfc5fb3d155c3aa1271702b2d15e8f87a4b77a40b10ece2e42",
+      "bytes": 768
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/ocr.json",
+      "sha256": "c3f1a049ffa57050cb4899c4e2aa5c7c2a6ac1ef13bbcfec63264f8d95de67da",
+      "bytes": 1495
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/red.json",
+      "sha256": "2e7ef5c9f0d18ae351dd06501f83067ed8a57043517f843b744ced6081fce8f6",
+      "bytes": 1495
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/repeat.json",
+      "sha256": "156114dc0cec269c8f2167270fe394c4a3a7f1ebf68fea774e56629d240611fa",
+      "bytes": 1499
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/stream.json",
+      "sha256": "cd03d0a69d2540d714882f00f2cdbf9c8351aa039b116aea9ea1a4834fd6eb0c",
+      "bytes": 2620
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/summary.json",
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255",
+      "bytes": 324
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/text.json",
+      "sha256": "7afae23b1e1c96c43a0bfdad374a40c678a17b2b3682f3983a2bcf0d6b2ac590",
+      "bytes": 1400
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional/two-images.json",
+      "sha256": "5f18ff3344f7f34250bfe69acfb850e24708e556e1cf67bc5416b6c2e74b126a",
+      "bytes": 1635
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/functional.log",
+      "sha256": "36e05d79d7ac31dc4f824d529f7d2237a6898dd73b456450ae7259d98f0083fc",
+      "bytes": 1240
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance/c1-o128/requests.jsonl",
+      "sha256": "0d0b7c98300ff0e693705a02a310110f17dc5e259b61a920e1f6e610b3c6b0da",
+      "bytes": 265869
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance/c1-o128/summary.json",
+      "sha256": "29242db7a05c625df1a9ddc9a572dd93f1ec4aee296810ad09c77c11f0b1026d",
+      "bytes": 439
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance/c1-o32/requests.jsonl",
+      "sha256": "54c870f7534590886cdc1269074d3c8a0890a243be20dd10c75555ea114dde23",
+      "bytes": 72393
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance/c1-o32/summary.json",
+      "sha256": "de1166b1e2f178db024a6bb63ecc2589fbf28d44e4b78c1628559fed71a0419f",
+      "bytes": 437
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance/c2-o128/requests.jsonl",
+      "sha256": "9b29b1f9b4cfe6a3252b76d32b6e6e6836fd0894f43b3e3e1fa9f884a39ef143",
+      "bytes": 266835
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance/c2-o128/summary.json",
+      "sha256": "b44f56545373bc7c84bc022f3839094162ebb0700c33dd6a8f405887892aaafa",
+      "bytes": 438
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance/c2-o32/requests.jsonl",
+      "sha256": "4e6191da5e53c99aea8da15c514c23a097ffdf4e4b04c180a6c51a483094449a",
+      "bytes": 73838
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance/c2-o32/summary.json",
+      "sha256": "b200f57d7f1b37f3262d5c88a3edbf3d6a5c6f12013d6ab7d155b85aad701387",
+      "bytes": 438
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance/summary.json",
+      "sha256": "12d60ff233e7c3e4a9a0c2eb00de11d7c92e3e3ef4dc5f61e9dd72d6f659a35e",
+      "bytes": 2911
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/performance.log",
+      "sha256": "88e7406cba47080c1272432f774ef22cf5e09a01bf12c847eee83079d74e361c",
+      "bytes": 1659
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/native-vllm-v3-20261028/server.log",
+      "sha256": "a1cb8b792c92839ee9da58a3057f80633f7a46be4ce20f7ff4671a109f0acab6",
+      "bytes": 136701
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-controller-20261028.log",
+      "sha256": "ee198ec281618999fedf43ab6fd8ced637f9ab1864ab74d1a61962a1fe77a0ca",
+      "bytes": 78884
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-full-20261028/audit.log",
+      "sha256": "028f68c63f84aaf999f390fee8fc2249a3538d8868b0ef6acfe8bf19af5cb268",
+      "bytes": 484
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-full-20261028/manifest.json",
+      "sha256": "7fbdb4479f0cad6c4b9177a0d3cab84879223aed691a9c814a7e8ba716f76845",
+      "bytes": 27332
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-full-20261028/predictions.jsonl",
+      "sha256": "2397739dc5e6c8cd31bd17eb1f3d03765f2c37bcf5d60ec54d07d02f12710e15",
+      "bytes": 1223073
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-full-20261028/scored.jsonl",
+      "sha256": "073f8a21797c1094cdccfc6963101139ce03e07dcd52e948d3a97a095b1d4885",
+      "bytes": 1240204
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-full-20261028/summary.json",
+      "sha256": "f06a59cd1f26b77e03277d1c4f6523c7a105102cf1edc4c280e9c2f342b71529",
+      "bytes": 1085
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-full-20261028/upstream-scoring-audit.json",
+      "sha256": "84a025b8d0e7b5291d2071db4355a0fc8294a5dde7ba05378630fdf2f20e28b8",
+      "bytes": 367
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-pilot-20261028/manifest.json",
+      "sha256": "84fb78feb37f755a6aae9b9392a3521bb5e9f5f2281d7888355aa249ef071588",
+      "bytes": 1540
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-pilot-20261028/predictions.jsonl",
+      "sha256": "12f43a3852f5b6e134b95303c8687d1216e2b70660fcad7ec5073b236042a1ae",
+      "bytes": 9767
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-pilot-20261028/scored.jsonl",
+      "sha256": "4ee3bcb3b42046ea8287b0070448043d7fc5c3364dc425790c30502a8db24e91",
+      "bytes": 9904
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/ocrbench-pilot-20261028/summary.json",
+      "sha256": "023c6820734bb19b31341fb2ea771c58abc0e032487cdaac3842466973745111",
+      "bytes": 330
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/reproduction-controller-20261028.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/reproduction-metric-audit-20261028.json",
+      "sha256": "e7daa2fa18226122a581a9368955941ede961c3a9bab0daa8b66624a39d9b316",
+      "bytes": 4164
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/reproduction-state-20261028.json",
+      "sha256": "79402385608f8da8aef2f151b72bb64102f4a7b5bf431e01f439cc1c942e15e5",
+      "bytes": 1227
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/reproduction-summary-20261028.json",
+      "sha256": "4476b7c6eff87798ae862957742387ebfb1940e35eb02d8137e171cbcf40d39c",
+      "bytes": 1178
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/scnet/scoring-tests-20261028.log",
+      "sha256": "ef4b781667615e978feead288bb34c7e7389a54c695f6db8af786cb4ecadfc5b",
+      "bytes": 523
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/results/weights-download-20261028.json",
+      "sha256": "b1134690f7f140a50a0cb149d51be00634e1e6064d1a2fd77651401368e3ba5c",
+      "bytes": 4504
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/run-scnet.sh",
+      "sha256": "40841bc3c0b6ab7a70dcd4e476c7f724c61a84f04dd1a588f0c54513019088fe",
+      "bytes": 940
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/run.sh",
+      "sha256": "17ed1a8ae34e5aec4ee6e9b340c7f353ed0f8bed0ebd531e2da30843aebd9917",
+      "bytes": 246
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/audit_ocrbench.py",
+      "sha256": "8eeffb5f6e86dc16e2ebd3a370a8e044a5821138ffc7145c524384fdca05134d",
+      "bytes": 2292
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/audit_performance.py",
+      "sha256": "61246ca10842c501b12050bfd2f74a38bcb7030d537c325be76127e82fcbed86",
+      "bytes": 2513
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/bench_http.py",
+      "sha256": "5bca0dc0c7b031af0807f06b2efcc7087eed32e650c1aaca619c1123726f0306",
+      "bytes": 4678
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/download_weights.py",
+      "sha256": "8fd035545f209537c40c952c026f7e3d61719093171a75273d38bb38333bb1bb",
+      "bytes": 7301
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/eval_ocrbench.py",
+      "sha256": "da786bbd83ffff41babc9cecfe55ede95ff1572df5eec303f81045c75d44e6b8",
+      "bytes": 6741
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/finalize_report.py",
+      "sha256": "01f3271ce363dd74bf6191309bedf6693a97857637f9968a2ddd770c9bf1f73a",
+      "bytes": 13429
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/preflight.py",
+      "sha256": "cafa5ba451225b1f6b1fafc336b3e2d4be07429ecaf839de285c6f203e8a98e6",
+      "bytes": 2255
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/prepare_examples.py",
+      "sha256": "7f0654ac163e951380b0d96966b6bbb4155206b5e6b66ec3cb942c0c30d3095b",
+      "bytes": 1133
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/run_accuracy.sh",
+      "sha256": "d3d1607857851c8de59d84c35063d13b4def79cd30409fe5cb04d5acfd435735",
+      "bytes": 419
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/run_reproduction.py",
+      "sha256": "b9557d5a9ad12e50a5ab13a767649ff60eed0416ab871c863f91a757b25bd145",
+      "bytes": 4731
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/smoke_http.py",
+      "sha256": "3b13c8aa6e1903b9f14ab1ed897b934304469c6184d63bb203e094b163caa3ba",
+      "bytes": 6758
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/scripts/test_ocrbench_scoring.py",
+      "sha256": "add1a4dccce1b6078f5659a57cae2f05ecdc737fc6df561afa4077604c00832f",
+      "bytes": 1139
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/serve-scnet.sh",
+      "sha256": "568e1bba56f9f37a976f2a5e6f93273cef11ee8a9e71fb119c2595984514a9b7",
+      "bytes": 620
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/smoke.sh",
+      "sha256": "c6aa2eb6d941dbc3ea2fa6afd7b4c6271e8b06e1e4534e4b8af2b340318a38df",
+      "bytes": 218
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/sources/ocrbench-dataset.json",
+      "sha256": "84f7151753bd1cd9e08a3c342bdb8f7743b8e8e5ed144ed846279b70fe1c11ad",
+      "bytes": 536
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/sources/ocrbench_example.py",
+      "sha256": "70194609de34d25e89b9c3b397e854729027d28b8a28d25670cdcf90a6f738cf",
+      "bytes": 9341
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/sources/publisher-evaluation.json",
+      "sha256": "459966c9c85b71167fccb5374733e5d90766f63bcdcfaf6578b1c8d367f1492e",
+      "bytes": 604
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/sources/publisher-files.json",
+      "sha256": "458bd4a75c4a0b3ae1e289496f310e349f6b1db64a1c18a098bb409310000845",
+      "bytes": 10124
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/sources/report-image-status.json",
+      "sha256": "64153a61c923c4ba02b7a75ff53350bc2d74ed45350d492ea5a623d5f45ddcb1",
+      "bytes": 364
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/verify.py",
+      "sha256": "41ceddb24294c2e0acdbf7e9b484fea65dfe7dac494739be7477556f108e439b",
+      "bytes": 7079
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/优化说明.md",
+      "sha256": "4b6e6b158c14ea86f5a21f1fe7269d0156c82f3b668e14befd95adbd1a362170",
+      "bytes": 346
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct/提交填写信息.md",
+      "sha256": "12d0ba471f7415ed5be56128c1f94f36e72f21212bcd30a6d428def9b3e3fe1b",
+      "bytes": 1155
+    }
+  ]
+}

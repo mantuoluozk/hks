@@ -1,0 +1,62 @@
+{
+  "question": "Read the text in this image. Output only the text.",
+  "images_sha256": [
+    "0f1d25a49d090ecb2c6c5cbbdec3f522eb58126935a8192e79d3860ee66e855d"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "HKS2026",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 222,
+    "total_tokens": 228,
+    "completion_tokens": 6,
+    "prompt_tokens_details": null
+  },
+  "raw_response": {
+    "id": "chatcmpl-b1d167bb6f19b5a8",
+    "object": "chat.completion",
+    "created": 1793151607,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "HKS2026",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-701f9145",
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 228,
+      "completion_tokens": 6,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "seconds": 0.5137013159692287,
+  "id": "ocr",
+  "passed": true
+}

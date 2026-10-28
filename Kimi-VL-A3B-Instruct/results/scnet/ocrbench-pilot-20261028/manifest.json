@@ -1,0 +1,46 @@
+{
+  "model": "kimi-vl-a3b-instruct",
+  "revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "dataset": {
+    "repo": "echo840/OCRBench",
+    "revision": "92a54bd1384387c178d5a07140a2d85e0a3d12e1",
+    "files": [
+      {
+        "type": "file",
+        "oid": "7da03b7d73c5978bd84596d8d9db7147f175772f",
+        "size": 67576988,
+        "lfs": {
+          "oid": "d9cc9f488e5310143d8d89956c19d0bdfd71e7089025da5202643f73720df7f5",
+          "size": 67576988,
+          "pointerSize": 133
+        },
+        "xetHash": "0d440c32732605248d49554a2fa555c69a042103b86a3ddcd8f5f11a3e060242",
+        "path": "data/test-00000-of-00001.parquet"
+      }
+    ]
+  },
+  "ids": [
+    "ocrbench_test_0000",
+    "ocrbench_test_0001",
+    "ocrbench_test_0002",
+    "ocrbench_test_0003",
+    "ocrbench_test_0004",
+    "ocrbench_test_0005",
+    "ocrbench_test_0006",
+    "ocrbench_test_0007"
+  ],
+  "workers": 2,
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 1024
+  },
+  "prompt": "Original OCRBench question and original image; no benchmark-specific resizing override",
+  "evaluator_sha256": "da786bbd83ffff41babc9cecfe55ede95ff1572df5eec303f81045c75d44e6b8",
+  "source_scorer_sha256": "70194609de34d25e89b9c3b397e854729027d28b8a28d25670cdcf90a6f738cf",
+  "launch_script_sha256": "568e1bba56f9f37a976f2a5e6f93273cef11ee8a9e71fb119c2595984514a9b7",
+  "environment_script_sha256": "40841bc3c0b6ab7a70dcd4e476c7f724c61a84f04dd1a588f0c54513019088fe",
+  "public_baseline": 867,
+  "official_accuracy_pass": null
+}

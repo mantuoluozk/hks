@@ -1,0 +1,36 @@
+{
+  "comparisons": [
+    {
+      "concurrency": 1,
+      "max_tokens": 32,
+      "first_output_tokens_per_second": 14.244140469892164,
+      "repeat_output_tokens_per_second": 14.114773579866437,
+      "deviation_percent": -0.9082112767644368
+    },
+    {
+      "concurrency": 1,
+      "max_tokens": 128,
+      "first_output_tokens_per_second": 15.087667891718118,
+      "repeat_output_tokens_per_second": 15.126822016312689,
+      "deviation_percent": 0.2595107797677798
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 32,
+      "first_output_tokens_per_second": 25.995976237012368,
+      "repeat_output_tokens_per_second": 26.34018263781699,
+      "deviation_percent": 1.3240756864308478
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 128,
+      "first_output_tokens_per_second": 29.19977724171418,
+      "repeat_output_tokens_per_second": 29.28279848081496,
+      "deviation_percent": 0.2843214809946426
+    }
+  ],
+  "maximum_absolute_deviation_percent": 1.3240756864308478,
+  "scope": "Two fresh server processes on the same SCNet Notebook and image; not a new-instance test",
+  "official_accuracy_pass": null,
+  "performance_reproduction_passed": true
+}

@@ -1,0 +1,145 @@
+{
+  "comparisons": [
+    {
+      "concurrency": 1,
+      "max_tokens": 32,
+      "metric": "output_tokens_per_second",
+      "first": 14.244140469892164,
+      "repeat": 14.114773579866437,
+      "deviation_percent": -0.9082112767644368
+    },
+    {
+      "concurrency": 1,
+      "max_tokens": 32,
+      "metric": "mean_latency_seconds",
+      "first": 2.2444638239685446,
+      "repeat": 2.2650998338940553,
+      "deviation_percent": 0.9194182461369937
+    },
+    {
+      "concurrency": 1,
+      "max_tokens": 32,
+      "metric": "mean_ttft_seconds",
+      "first": 0.28757670090999454,
+      "repeat": 0.3375755342422053,
+      "deviation_percent": 17.386260143466693
+    },
+    {
+      "concurrency": 1,
+      "max_tokens": 32,
+      "metric": "mean_tpot_seconds",
+      "first": 0.06312539106640484,
+      "repeat": 0.06217820321457581,
+      "deviation_percent": -1.500486311178073
+    },
+    {
+      "concurrency": 1,
+      "max_tokens": 128,
+      "metric": "output_tokens_per_second",
+      "first": 15.087667891718118,
+      "repeat": 15.126822016312689,
+      "deviation_percent": 0.2595107797677798
+    },
+    {
+      "concurrency": 1,
+      "max_tokens": 128,
+      "metric": "mean_latency_seconds",
+      "first": 8.481421218835749,
+      "repeat": 8.45960019476479,
+      "deviation_percent": -0.25728027777347506
+    },
+    {
+      "concurrency": 1,
+      "max_tokens": 128,
+      "metric": "mean_ttft_seconds",
+      "first": 0.2873086960753426,
+      "repeat": 0.2950767959118821,
+      "deviation_percent": 2.703746855786915
+    },
+    {
+      "concurrency": 1,
+      "max_tokens": 128,
+      "metric": "mean_tpot_seconds",
+      "first": 0.06452057104535752,
+      "repeat": 0.06428758581773943,
+      "deviation_percent": -0.3611022404843678
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 32,
+      "metric": "output_tokens_per_second",
+      "first": 25.995976237012368,
+      "repeat": 26.34018263781699,
+      "deviation_percent": 1.3240756864308478
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 32,
+      "metric": "mean_latency_seconds",
+      "first": 2.4592689251876436,
+      "repeat": 2.427160111721605,
+      "deviation_percent": -1.305624331571975
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 32,
+      "metric": "mean_ttft_seconds",
+      "first": 0.4388320403522812,
+      "repeat": 0.43310150294564664,
+      "deviation_percent": -1.305861213332149
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 32,
+      "metric": "mean_tpot_seconds",
+      "first": 0.06517538338178588,
+      "repeat": 0.06432447125083737,
+      "deviation_percent": -1.3055728816568912
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 128,
+      "metric": "output_tokens_per_second",
+      "first": 29.19977724171418,
+      "repeat": 29.28279848081496,
+      "deviation_percent": 0.2843214809946426
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 128,
+      "metric": "mean_latency_seconds",
+      "first": 8.764648346113972,
+      "repeat": 8.739840574446134,
+      "deviation_percent": -0.28304354821990785
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 128,
+      "metric": "mean_ttft_seconds",
+      "first": 0.4393178014433943,
+      "repeat": 0.44377934688236564,
+      "deviation_percent": 1.0155621794320169
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 128,
+      "metric": "mean_tpot_seconds",
+      "first": 0.06555378381630377,
+      "repeat": 0.06532331675247062,
+      "deviation_percent": -0.35156942958314286
+    }
+  ],
+  "metrics": [
+    "output_tokens_per_second",
+    "mean_latency_seconds",
+    "mean_ttft_seconds",
+    "mean_tpot_seconds"
+  ],
+  "maximum_absolute_deviation_percent": 17.386260143466693,
+  "all_metrics_within_20_percent": true,
+  "scope": "Four workload cells and four reported metrics; all independently recalculated from request records",
+  "source_sha256": {
+    "results/scnet/native-vllm-v3-20261028/performance/summary.json": "12d60ff233e7c3e4a9a0c2eb00de11d7c92e3e3ef4dc5f61e9dd72d6f659a35e",
+    "results/scnet/fresh-vllm-20261028/performance/summary.json": "4c304f8966c52b434b733e8f6f0cbf258fe12c9df949c71e9f0471f064c02dd5"
+  }
+}
