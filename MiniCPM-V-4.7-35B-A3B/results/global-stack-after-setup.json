@@ -1,0 +1,10 @@
+{
+  "global_packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2",
+    "openai": "2.6.1"
+  },
+  "original_vllm_base_sha256": "6a099f72934a3ef1041980bdbfed41241701c6050ae81b52ac54ca677f94f302"
+}

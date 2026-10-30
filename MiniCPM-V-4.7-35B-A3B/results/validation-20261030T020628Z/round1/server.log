@@ -1,0 +1,84 @@
+{"passed": true, "checked": 24, "missing_or_invalid": []}
+[{"file": "base.py", "sha256": "cb905a32ceb24ab46bda46205e4c9c20b7950d343f90942ee4c84ef3c67a32d7"}, {"file": "model.py", "sha256": "edeb81155dc53ce57e13dc8ba526de49ad4d00a900f6b21e5e5940e71b21f127"}, {"file": "test_upstream.py", "sha256": "05f2d8e2bd1a116dc048114499f9fe672d704b2a0a8ef18eec3f030288f8cee2"}, {"file": "parser.py", "sha256": "1ef9951c23983b9b7f4c64857f3a8edba1657d939a466bfea631b4c0a1fc8321"}, {"file": "reasoning.py", "sha256": "397f7c3b7ab9ce0d9749b26b46dcd32c26e6c42ea38756e4b05bde986090a391"}, {"file": "test_parser.py", "sha256": "808b6f06e795c33ee7e907fc28865fdd04865e1447b3d771e2cb907fba3369f9"}, {"file": "parser_helpers.py", "sha256": "a888d186696c319305553ba575023fdd8f35745483694bf0ddcc30a0ba390ed3"}, {"file": "streaming_helpers.py", "sha256": "969ab05da36e3200c99a1c3d7a2a6a68bfaea5ccc8f3ab158da020a05092177c"}]
+Pinned runtime already installed
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+INFO 10-30 10:07:48 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-30 10:07:48 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-30 10:07:48 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-30 10:07:49 [__init__.py:237] Platform plugin hcu is activated
+INFO 10-30 10:08:41 [model.py:619] Resolved architecture: MiniCPMV4_7ForConditionalGeneration
+INFO 10-30 10:08:41 [model.py:1776] Using max model len 8192
+{"passed": true, "weights_loaded": false, "transformers": "5.18.0", "transformers_path": "/root/private_data/hks/models/MiniCPM-V-4.7-35B-A3B/cache/runtime/transformers/__init__.py", "tokenizers": "0.23.1", "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a", "torch": "2.11.0", "model_class": "MiniCPMV4_7ForConditionalGeneration", "architecture": ["MiniCPMV4_7ForConditionalGeneration"], "source_sha256": {"python/minicpm_adapter/base.py": "cb905a32ceb24ab46bda46205e4c9c20b7950d343f90942ee4c84ef3c67a32d7", "python/minicpm_adapter/test_upstream.py": "05f2d8e2bd1a116dc048114499f9fe672d704b2a0a8ef18eec3f030288f8cee2", "python/minicpm_adapter/__init__.py": "e762517b32cb1c9688c8486071f5da38f55492628118e84cea552b58f1b03e4f", "python/minicpm_adapter/reasoning.py": "397f7c3b7ab9ce0d9749b26b46dcd32c26e6c42ea38756e4b05bde986090a391", "python/minicpm_adapter/model.py": "edeb81155dc53ce57e13dc8ba526de49ad4d00a900f6b21e5e5940e71b21f127", "python/minicpm_adapter/parser.py": "1ef9951c23983b9b7f4c64857f3a8edba1657d939a466bfea631b4c0a1fc8321", "python/minicpm_adapter/parser_helpers.py": "a888d186696c319305553ba575023fdd8f35745483694bf0ddcc30a0ba390ed3", "python/minicpm_adapter/streaming_helpers.py": "969ab05da36e3200c99a1c3d7a2a6a68bfaea5ccc8f3ab158da020a05092177c", "python/minicpm_adapter/test_parser.py": "808b6f06e795c33ee7e907fc28865fdd04865e1447b3d771e2cb907fba3369f9"}}
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+INFO 10-30 10:08:49 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-30 10:08:49 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-30 10:08:49 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-30 10:08:49 [__init__.py:237] Platform plugin hcu is activated
+(APIServer pid=852) INFO 10-30 10:09:44 [api_utils.py:339] 
+(APIServer pid=852) INFO 10-30 10:09:44 [api_utils.py:339]        █     █     █▄   ▄█
+(APIServer pid=852) INFO 10-30 10:09:44 [api_utils.py:339]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.25.1
+(APIServer pid=852) INFO 10-30 10:09:44 [api_utils.py:339]   █▄█▀ █     █     █     █  model   /root/private_data/hks/models/MiniCPM-V-4.7-35B-A3B/weights
+(APIServer pid=852) INFO 10-30 10:09:44 [api_utils.py:339]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=852) INFO 10-30 10:09:44 [api_utils.py:339] 
+(APIServer pid=852) INFO 10-30 10:09:44 [api_utils.py:273] non-default args: {'host': '127.0.0.1', 'port': 30147, 'model': '/root/private_data/hks/models/MiniCPM-V-4.7-35B-A3B/weights', 'dtype': 'bfloat16', 'max_model_len': 8192, 'enforce_eager': True, 'served_model_name': ['minicpm-v-4.7'], 'reasoning_parser': 'minicpmv', 'tensor_parallel_size': 2, 'gpu_memory_utilization': 0.85, 'enable_prefix_caching': False, 'limit_mm_per_prompt': {'image': 8, 'video': 0}, 'max_num_seqs': 4}
+(APIServer pid=852) INFO 10-30 10:09:44 [model.py:619] Resolved architecture: MiniCPMV4_7ForConditionalGeneration
+(APIServer pid=852) INFO 10-30 10:09:44 [model.py:1776] Using max model len 8192
+(APIServer pid=852) INFO 10-30 10:09:44 [vllm.py:1042] Asynchronous scheduling is enabled.
+(APIServer pid=852) WARNING 10-30 10:09:44 [vllm.py:1096] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(APIServer pid=852) WARNING 10-30 10:09:44 [vllm.py:1144] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(APIServer pid=852) INFO 10-30 10:09:44 [kernel.py:292] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(APIServer pid=852) INFO 10-30 10:09:44 [vllm.py:1322] Cudagraph is disabled under eager mode
+(APIServer pid=852) INFO 10-30 10:09:47 [compilation.py:312] Enabled custom fusions: norm_quant, act_quant
+(APIServer pid=852) Traceback (most recent call last):
+(APIServer pid=852)   File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+(APIServer pid=852)     return _run_code(code, main_globals, None,
+(APIServer pid=852)   File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+(APIServer pid=852)     exec(code, run_globals)
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 738, in <module>
+(APIServer pid=852)     uvloop.run(run_server(args))
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/uvloop/__init__.py", line 69, in run
+(APIServer pid=852)     return loop.run_until_complete(wrapper())
+(APIServer pid=852)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=852)     return await main
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 698, in run_server
+(APIServer pid=852)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 712, in run_server_worker
+(APIServer pid=852)     async with build_async_engine_client(
+(APIServer pid=852)   File "/usr/lib/python3.10/contextlib.py", line 199, in __aenter__
+(APIServer pid=852)     return await anext(self.gen)
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 100, in build_async_engine_client
+(APIServer pid=852)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=852)   File "/usr/lib/python3.10/contextlib.py", line 199, in __aenter__
+(APIServer pid=852)     return await anext(self.gen)
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 136, in build_async_engine_client_from_engine_args
+(APIServer pid=852)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/async_llm.py", line 217, in from_vllm_config
+(APIServer pid=852)     return cls(
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/async_llm.py", line 135, in __init__
+(APIServer pid=852)     self.input_processor = InputProcessor(self.vllm_config, renderer)
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/v1/engine/input_processor.py", line 62, in __init__
+(APIServer pid=852)     mm_budget = MultiModalBudget(vllm_config, mm_registry)
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/multimodal/encoder_budget.py", line 87, in __init__
+(APIServer pid=852)     all_mm_max_toks_per_item = get_mm_max_toks_per_item(
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/multimodal/encoder_budget.py", line 32, in get_mm_max_toks_per_item
+(APIServer pid=852)     mm_inputs = mm_registry.get_dummy_mm_inputs(
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/multimodal/registry.py", line 256, in get_dummy_mm_inputs
+(APIServer pid=852)     mm_inputs = processor.apply(
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/multimodal/processing/processor.py", line 1685, in apply
+(APIServer pid=852)     ) = self._cached_apply_hf_processor(inputs, timing_ctx)
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/multimodal/processing/processor.py", line 1474, in _cached_apply_hf_processor
+(APIServer pid=852)     ) = self._apply_hf_processor_main(
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/multimodal/processing/processor.py", line 1287, in _apply_hf_processor_main
+(APIServer pid=852)     prompt_ids = self._apply_hf_processor_text_only(prompt, tokenization_kwargs)
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/multimodal/processing/processor.py", line 1188, in _apply_hf_processor_text_only
+(APIServer pid=852)     prompt_ids, _, _ = self._apply_hf_processor_text_mm(
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/multimodal/processing/processor.py", line 1153, in _apply_hf_processor_text_mm
+(APIServer pid=852)     processed_data = self._call_hf_processor(
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/minicpmv.py", line 890, in _call_hf_processor
+(APIServer pid=852)     mm_inputs = self.process_mm_inputs(mm_data, mm_kwargs, tok_kwargs)
+(APIServer pid=852)   File "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/minicpmv.py", line 842, in process_mm_inputs
+(APIServer pid=852)     **self.process_images(mm_data, mm_kwargs, tok_kwargs),
+(APIServer pid=852) TypeError: MiniCPMV4_6MultiModalProcessor.process_images() takes 3 positional arguments but 4 were given

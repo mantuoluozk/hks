@@ -1,0 +1,19 @@
+{
+  "dataset": "ocrbench",
+  "rows": 1000,
+  "indices": null,
+  "dataset_json_sha256": "e1145cedf583b9ec9e334f7cab350fe3c216be92195e278b16d19146c6d9e642",
+  "thinking": false,
+  "downsample_mode": "16x",
+  "max_slice_nums": 9,
+  "temperature": 0,
+  "max_tokens": 1024,
+  "workers": 4,
+  "base": "http://127.0.0.1:30147",
+  "seed": 42,
+  "scorer_sha256": "d77401f861cdd44ba40ef06d1cadb3aa90325b335cddcc68091f5885abe91529",
+  "official_protocol_fully_known": false,
+  "scoring_changed_from_dsh": false,
+  "mmmu_options": "explicit labels, image placeholders interleaved",
+  "retry_policy": "none"
+}

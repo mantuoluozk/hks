@@ -1,0 +1,57 @@
+{
+  "dataset": "ocrbench",
+  "completed": 1000,
+  "expected": 1000,
+  "correct": 888,
+  "http_errors": 0,
+  "length": 3,
+  "empty": 0,
+  "official_protocol_fully_known": false,
+  "accuracy_x100": 88.8,
+  "responses_sha256": "7ba8f32f4cf6b1f390ef128b8bd7c15f0993e0c1dacabb55469861eb1350e11d",
+  "raw_path": "/root/private_data/hks/models/MiniCPM-V-4.7-35B-A3B/data/accuracy-runs/ocrbench-16x-review-20261030T060837Z/full/ocrbench",
+  "all_ids_verified": true,
+  "full_dataset": true,
+  "by_type": {
+    "Regular Text Recognition": [
+      48,
+      50
+    ],
+    "Irregular Text Recognition": [
+      49,
+      50
+    ],
+    "Artistic Text Recognition": [
+      47,
+      50
+    ],
+    "Handwriting Recognition": [
+      44,
+      50
+    ],
+    "Digit String Recognition": [
+      46,
+      50
+    ],
+    "Non-Semantic Text Recognition": [
+      48,
+      50
+    ],
+    "Scene Text-centric VQA": [
+      174,
+      200
+    ],
+    "Doc-oriented VQA": [
+      179,
+      200
+    ],
+    "Key Information Extraction": [
+      176,
+      200
+    ],
+    "Handwritten Mathematical Expression Recognition": [
+      77,
+      100
+    ]
+  }
+}

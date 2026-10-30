@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "weights_loaded": false,
+  "transformers": "5.18.0",
+  "transformers_path": "/root/private_data/hks/models/MiniCPM-V-4.7-35B-A3B/cache/runtime/transformers/__init__.py",
+  "tokenizers": "0.23.1",
+  "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+  "torch": "2.11.0",
+  "model_class": "MiniCPMV4_7ForConditionalGeneration",
+  "architecture": [
+    "MiniCPMV4_7ForConditionalGeneration"
+  ],
+  "source_sha256": {
+    "python/minicpm_adapter/base.py": "cb905a32ceb24ab46bda46205e4c9c20b7950d343f90942ee4c84ef3c67a32d7",
+    "python/minicpm_adapter/test_upstream.py": "05f2d8e2bd1a116dc048114499f9fe672d704b2a0a8ef18eec3f030288f8cee2",
+    "python/minicpm_adapter/__init__.py": "e762517b32cb1c9688c8486071f5da38f55492628118e84cea552b58f1b03e4f",
+    "python/minicpm_adapter/reasoning.py": "397f7c3b7ab9ce0d9749b26b46dcd32c26e6c42ea38756e4b05bde986090a391",
+    "python/minicpm_adapter/model.py": "edeb81155dc53ce57e13dc8ba526de49ad4d00a900f6b21e5e5940e71b21f127",
+    "python/minicpm_adapter/parser.py": "1ef9951c23983b9b7f4c64857f3a8edba1657d939a466bfea631b4c0a1fc8321",
+    "python/minicpm_adapter/parser_helpers.py": "a888d186696c319305553ba575023fdd8f35745483694bf0ddcc30a0ba390ed3",
+    "python/minicpm_adapter/streaming_helpers.py": "969ab05da36e3200c99a1c3d7a2a6a68bfaea5ccc8f3ab158da020a05092177c",
+    "python/minicpm_adapter/test_parser.py": "808b6f06e795c33ee7e907fc28865fdd04865e1447b3d771e2cb907fba3369f9"
+  }
+}

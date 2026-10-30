@@ -1,0 +1,46 @@
+{
+  "vllm_commit": "c85616efc6f0eaa50ca1f1a09c32368aedffd3d8",
+  "changes": [
+    "model-local import paths",
+    "cached_encode uses DAS _cached_encode identical signature",
+    "copy upstream video field mapping helper",
+    "old protocol import path",
+    "DAS engine no-thinking end hook",
+    "DAS image/video processor tok_kwargs call signature",
+    "parser registry wrapper scoped to minicpmv"
+  ],
+  "files": [
+    {
+      "file": "base.py",
+      "sha256": "362b3fd695547cb7bc6965fbf11a34308152cc33789b5594bac582ba133dc2ba"
+    },
+    {
+      "file": "model.py",
+      "sha256": "edeb81155dc53ce57e13dc8ba526de49ad4d00a900f6b21e5e5940e71b21f127"
+    },
+    {
+      "file": "test_upstream.py",
+      "sha256": "8a6881df207113808ef0eb34c641ca11285330f06515add2bad4de5fbd8aa1a2"
+    },
+    {
+      "file": "parser.py",
+      "sha256": "1ef9951c23983b9b7f4c64857f3a8edba1657d939a466bfea631b4c0a1fc8321"
+    },
+    {
+      "file": "reasoning.py",
+      "sha256": "397f7c3b7ab9ce0d9749b26b46dcd32c26e6c42ea38756e4b05bde986090a391"
+    },
+    {
+      "file": "test_parser.py",
+      "sha256": "808b6f06e795c33ee7e907fc28865fdd04865e1447b3d771e2cb907fba3369f9"
+    },
+    {
+      "file": "parser_helpers.py",
+      "sha256": "a888d186696c319305553ba575023fdd8f35745483694bf0ddcc30a0ba390ed3"
+    },
+    {
+      "file": "streaming_helpers.py",
+      "sha256": "969ab05da36e3200c99a1c3d7a2a6a68bfaea5ccc8f3ab158da020a05092177c"
+    }
+  ]
+}

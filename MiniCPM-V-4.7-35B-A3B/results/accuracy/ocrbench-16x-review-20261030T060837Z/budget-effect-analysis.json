@@ -1,0 +1,23 @@
+{
+  "wrong_to_right": 43,
+  "recovered_over_64_tokens": 40,
+  "recovered_long_same_old_prefix": 28,
+  "length_cases": [
+    {
+      "id": "561",
+      "score": 1,
+      "type": "Doc-oriented VQA"
+    },
+    {
+      "id": "689",
+      "score": 1,
+      "type": "Doc-oriented VQA"
+    },
+    {
+      "id": "693",
+      "score": 1,
+      "type": "Doc-oriented VQA"
+    }
+  ],
+  "elapsed_approx_seconds": 1287.0
+}

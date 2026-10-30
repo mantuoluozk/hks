@@ -1,0 +1,11 @@
+{
+  "policy": "competition technical report template 2026-10-23",
+  "precision_tolerance_points": 2.0,
+  "scale": 100,
+  "publisher_baseline": 90.4,
+  "publisher_mode": "16x/instruct",
+  "dataset": "OCRBench",
+  "official_full_harness_available": false,
+  "official_acceptance": null,
+  "policy_file": "赛事资料/官方更新-20261023/图片和附件/国芯国模黑客松-技术报告模板.md"
+}

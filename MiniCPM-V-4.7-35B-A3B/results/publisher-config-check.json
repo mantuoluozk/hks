@@ -1,0 +1,36 @@
+{
+  "revision": "ee2d0a272c9d55db52a8b6841b6b24c9d0dda0a3",
+  "files": [
+    {
+      "file": "chat_template.jinja",
+      "sha256": "49c37bcc86c7f7f20ed2ebf79e9f872be41ba2b5f9d0d51e6712cc038ef51d6c",
+      "git_blob_matches": true
+    },
+    {
+      "file": "config.json",
+      "sha256": "3a47edeb5fdd3e0c7b95fee2b8a3d7dfcd3c193ca6c185ef54142134c53e0097",
+      "git_blob_matches": true
+    },
+    {
+      "file": "generation_config.json",
+      "sha256": "7fa47217744f0e0918f6cf846e7541e4f322e6bc66917044cf2ad580699216c8",
+      "git_blob_matches": true
+    },
+    {
+      "file": "preprocessor_config.json",
+      "sha256": "c64289d04f36e48d9d059e3a0069f54062b2ef6044a807adb448b98449cb54de",
+      "git_blob_matches": true
+    },
+    {
+      "file": "processor_config.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "git_blob_matches": true
+    },
+    {
+      "file": "tokenizer_config.json",
+      "sha256": "9c3033c8e5b0274b09cde7b73df789b5e405f7b285ed2f4eb6b3a64af65c584e",
+      "git_blob_matches": true
+    }
+  ],
+  "passed": true
+}

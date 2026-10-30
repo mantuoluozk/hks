@@ -1,0 +1,24 @@
+[{"file": "base.py", "sha256": "cb905a32ceb24ab46bda46205e4c9c20b7950d343f90942ee4c84ef3c67a32d7"}, {"file": "model.py", "sha256": "edeb81155dc53ce57e13dc8ba526de49ad4d00a900f6b21e5e5940e71b21f127"}, {"file": "test_upstream.py", "sha256": "05f2d8e2bd1a116dc048114499f9fe672d704b2a0a8ef18eec3f030288f8cee2"}, {"file": "parser.py", "sha256": "1ef9951c23983b9b7f4c64857f3a8edba1657d939a466bfea631b4c0a1fc8321"}, {"file": "reasoning.py", "sha256": "397f7c3b7ab9ce0d9749b26b46dcd32c26e6c42ea38756e4b05bde986090a391"}, {"file": "test_parser.py", "sha256": "808b6f06e795c33ee7e907fc28865fdd04865e1447b3d771e2cb907fba3369f9"}, {"file": "parser_helpers.py", "sha256": "a888d186696c319305553ba575023fdd8f35745483694bf0ddcc30a0ba390ed3"}, {"file": "streaming_helpers.py", "sha256": "969ab05da36e3200c99a1c3d7a2a6a68bfaea5ccc8f3ab158da020a05092177c"}]
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+INFO 10-30 10:03:13 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-30 10:03:13 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-30 10:03:13 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-30 10:03:13 [__init__.py:237] Platform plugin hcu is activated
+INFO 10-30 10:03:49 [model.py:619] Resolved architecture: MiniCPMV4_7ForConditionalGeneration
+INFO 10-30 10:03:49 [model.py:1776] Using max model len 8192
+{"passed": true, "weights_loaded": false, "transformers": "5.18.0", "transformers_path": "/root/private_data/hks/models/MiniCPM-V-4.7-35B-A3B/cache/runtime/transformers/__init__.py", "tokenizers": "0.23.1", "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a", "torch": "2.11.0", "model_class": "MiniCPMV4_7ForConditionalGeneration", "architecture": ["MiniCPMV4_7ForConditionalGeneration"], "source_sha256": {"python/minicpm_adapter/base.py": "cb905a32ceb24ab46bda46205e4c9c20b7950d343f90942ee4c84ef3c67a32d7", "python/minicpm_adapter/test_upstream.py": "05f2d8e2bd1a116dc048114499f9fe672d704b2a0a8ef18eec3f030288f8cee2", "python/minicpm_adapter/__init__.py": "e762517b32cb1c9688c8486071f5da38f55492628118e84cea552b58f1b03e4f", "python/minicpm_adapter/reasoning.py": "397f7c3b7ab9ce0d9749b26b46dcd32c26e6c42ea38756e4b05bde986090a391", "python/minicpm_adapter/model.py": "edeb81155dc53ce57e13dc8ba526de49ad4d00a900f6b21e5e5940e71b21f127", "python/minicpm_adapter/parser.py": "1ef9951c23983b9b7f4c64857f3a8edba1657d939a466bfea631b4c0a1fc8321", "python/minicpm_adapter/parser_helpers.py": "a888d186696c319305553ba575023fdd8f35745483694bf0ddcc30a0ba390ed3", "python/minicpm_adapter/streaming_helpers.py": "969ab05da36e3200c99a1c3d7a2a6a68bfaea5ccc8f3ab158da020a05092177c", "python/minicpm_adapter/test_parser.py": "808b6f06e795c33ee7e907fc28865fdd04865e1447b3d771e2cb907fba3369f9"}}
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+....................................                                     [100%]
+=============================== warnings summary ===============================
+../../../../../usr/local/lib/python3.10/dist-packages/torch/jit/_script.py:365: 14 warnings
+  /usr/local/lib/python3.10/dist-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+python/minicpm_adapter/test_upstream.py:14
+  /root/private_data/hks/models/MiniCPM-V-4.7-35B-A3B/python/minicpm_adapter/test_upstream.py:14: PytestUnknownMarkWarning: Unknown pytest.mark.skip_global_cleanup - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    pytestmark = pytest.mark.skip_global_cleanup
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+36 passed, 1 deselected, 15 warnings in 72.28s (0:01:12)

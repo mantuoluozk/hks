@@ -1,0 +1,2 @@
+[vllm.general_plugins]
+hks_minicpm47 = minicpm_adapter:register

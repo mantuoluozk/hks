@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "weights_loaded": false,
+  "processor": "MiniCPMV4_7Processor",
+  "cases": [
+    {
+      "thinking": false,
+      "images": 1,
+      "input_tokens": 85,
+      "keys": [
+        "input_ids",
+        "attention_mask",
+        "mm_token_type_ids",
+        "pixel_values",
+        "target_sizes"
+      ],
+      "tensor_shapes": {
+        "input_ids": [
+          1,
+          85
+        ],
+        "attention_mask": [
+          1,
+          85
+        ],
+        "mm_token_type_ids": [
+          1,
+          85
+        ],
+        "pixel_values": [
+          1,
+          3,
+          14,
+          14112
+        ],
+        "target_sizes": [
+          1,
+          2
+        ]
+      },
+      "prompt_suffix": "scribe the colors.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    },
+    {
+      "thinking": false,
+      "images": 2,
+      "input_tokens": 154,
+      "keys": [
+        "input_ids",
+        "attention_mask",
+        "mm_token_type_ids",
+        "pixel_values",
+        "target_sizes"
+      ],
+      "tensor_shapes": {
+        "input_ids": [
+          1,
+          154
+        ],
+        "attention_mask": [
+          1,
+          154
+        ],
+        "mm_token_type_ids": [
+          1,
+          154
+        ],
+        "pixel_values": [
+          1,
+          3,
+          14,
+          28224
+        ],
+        "target_sizes": [
+          2,
+          2
+        ]
+      },
+      "prompt_suffix": "scribe the colors.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    },
+    {
+      "thinking": true,
+      "images": 1,
+      "input_tokens": 83,
+      "keys": [
+        "input_ids",
+        "attention_mask",
+        "mm_token_type_ids",
+        "pixel_values",
+        "target_sizes"
+      ],
+      "tensor_shapes": {
+        "input_ids": [
+          1,
+          83
+        ],
+        "attention_mask": [
+          1,
+          83
+        ],
+        "mm_token_type_ids": [
+          1,
+          83
+        ],
+        "pixel_values": [
+          1,
+          3,
+          14,
+          14112
+        ],
+        "target_sizes": [
+          1,
+          2
+        ]
+      },
+      "prompt_suffix": "ge_pad|>\nDescribe the colors.<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    },
+    {
+      "thinking": true,
+      "images": 2,
+      "input_tokens": 152,
+      "keys": [
+        "input_ids",
+        "attention_mask",
+        "mm_token_type_ids",
+        "pixel_values",
+        "target_sizes"
+      ],
+      "tensor_shapes": {
+        "input_ids": [
+          1,
+          152
+        ],
+        "attention_mask": [
+          1,
+          152
+        ],
+        "mm_token_type_ids": [
+          1,
+          152
+        ],
+        "pixel_values": [
+          1,
+          3,
+          14,
+          28224
+        ],
+        "target_sizes": [
+          2,
+          2
+        ]
+      },
+      "prompt_suffix": "ge_pad|>\nDescribe the colors.<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "model": "MiniCPM-V-4.7-35B-A3B",
+  "dataset": "OCRBench",
+  "rows": 1000,
+  "got": 88.8,
+  "reference": 90.4,
+  "worse_points": 1.6,
+  "tolerance_points": 2.0,
+  "precision_numeric_pass": true,
+  "performance_reproduced": true,
+  "functional_checks": "8/8 in each of two independent services",
+  "reference_kind": "publisher 16x instruct public score",
+  "protocol": "declared local protocol; full publisher harness unavailable",
+  "clean_environment_scope": "same Notebook, independent service processes; no cross-Notebook claim",
+  "official_acceptance": null,
+  "http_errors": 0,
+  "truncated_responses": 3
+}

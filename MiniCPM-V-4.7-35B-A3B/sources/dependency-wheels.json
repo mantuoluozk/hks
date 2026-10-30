@@ -1,0 +1,26 @@
+[
+  {
+    "package": "transformers",
+    "version": "5.18.0",
+    "file": "transformers-5.18.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/2d/3b/f84d7d12886147c5267216ed6c57d1163e68d24a89b2ad29d835a7089463/transformers-5.18.0-py3-none-any.whl",
+    "size": 12579646,
+    "sha256": "d79e5a515a572ee3deb33eb0d578be47d91e70c75d54cf21bf6eede6edef14a9"
+  },
+  {
+    "package": "tokenizers",
+    "version": "0.23.1",
+    "file": "tokenizers-0.23.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/0d/d5/1353e5f677ec27c2494fb6a6725e82d56c985f53e90ec511369e7e4f02c6/tokenizers-0.23.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 3346235,
+    "sha256": "5075b405006415ea148a992d093699c66eb01952bf59f4d5727089a98bda45a4"
+  },
+  {
+    "package": "openai",
+    "version": "2.30.0",
+    "file": "openai-2.30.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/2a/9e/5bfa2270f902d5b92ab7d41ce0475b8630572e71e349b2a4996d14bdda93/openai-2.30.0-py3-none-any.whl",
+    "size": 1146656,
+    "sha256": "9a5ae616888eb2748ec5e0c5b955a51592e0b201a11f4262db920f2a78c5231d"
+  }
+]

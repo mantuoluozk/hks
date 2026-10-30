@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "weights_loaded": false,
+  "cases": [
+    {
+      "images": 1,
+      "prompt_tokens": 8192,
+      "keys": [
+        "type",
+        "prompt_token_ids",
+        "mm_kwargs",
+        "mm_hashes",
+        "mm_placeholders"
+      ]
+    },
+    {
+      "images": 2,
+      "prompt_tokens": 8192,
+      "keys": [
+        "type",
+        "prompt_token_ids",
+        "mm_kwargs",
+        "mm_hashes",
+        "mm_placeholders"
+      ]
+    },
+    {
+      "images": 8,
+      "prompt_tokens": 8192,
+      "keys": [
+        "type",
+        "prompt_token_ids",
+        "mm_kwargs",
+        "mm_hashes",
+        "mm_placeholders"
+      ]
+    }
+  ]
+}

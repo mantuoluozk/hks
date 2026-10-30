@@ -1,0 +1,4 @@
+{
+  "stage": "failed",
+  "error": "KeyboardInterrupt('Interrupted by signal 15')"
+}

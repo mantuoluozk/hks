@@ -1,0 +1,20 @@
+{
+  "dataset": "OCRBench",
+  "full_rows": 1000,
+  "official_16x_instruct_reference": 90.4,
+  "thinking": false,
+  "visual_compression": "16x",
+  "max_slice_nums": 9,
+  "output_budget": 1024,
+  "context": 8192,
+  "workers": 4,
+  "temperature": 0,
+  "seed": 42,
+  "pilot_gate": "transport only, no accuracy gate",
+  "other_datasets_cancelled": [
+    "MMMU",
+    "ChartQA"
+  ],
+  "official_full_protocol_unknown": true,
+  "legacy_score_preserved": 84.8
+}

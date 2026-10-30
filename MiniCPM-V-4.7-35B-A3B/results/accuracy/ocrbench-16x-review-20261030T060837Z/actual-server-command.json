@@ -1,0 +1,4 @@
+{
+  "pid": 22161,
+  "command": "python -m vllm.entrypoints.openai.api_server --model /root/private_data/hks/models/MiniCPM-V-4.7-35B-A3B/weights --served-model-name minicpm-v-4.7 --host 127.0.0.1 --port 30147 --tensor-parallel-size 2 --dtype bfloat16 --max-model-len 8192 --max-num-seqs 4 --mamba-ssm-cache-dtype float32 --gpu-memory-utilization 0.85 --enforce-eager --reasoning-parser minicpmv --no-enable-prefix-caching --limit-mm-per-prompt {\"image\":8,\"video\":0} "
+}

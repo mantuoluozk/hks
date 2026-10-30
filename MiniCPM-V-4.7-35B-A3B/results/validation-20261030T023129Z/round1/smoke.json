@@ -1,0 +1,92 @@
+[
+  {
+    "seconds": 20.637625323608518,
+    "text": "Understood.",
+    "usage": {
+      "prompt_tokens": 18,
+      "total_tokens": 22,
+      "completion_tokens": 4,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 0,
+    "case": "text"
+  },
+  {
+    "seconds": 7.152455246075988,
+    "text": "The image features a large red square with a smaller white square centered inside it. The white square is perfectly aligned in the middle of the red background, creating a simple, bold geometric design.",
+    "usage": {
+      "prompt_tokens": 89,
+      "total_tokens": 128,
+      "completion_tokens": 39,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 1,
+    "case": "single"
+  },
+  {
+    "seconds": 4.813569763675332,
+    "text": "The image features a solid blue background with a white square centered in the middle.",
+    "usage": {
+      "prompt_tokens": 354,
+      "total_tokens": 371,
+      "completion_tokens": 17,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 1,
+    "case": "large"
+  },
+  {
+    "seconds": 5.065613648854196,
+    "text": "The image displays two separate squares, one above the other.\n\n- The top image features a white square centered on a solid red background.\n- The bottom image features an identical white square centered on a solid blue background.",
+    "usage": {
+      "prompt_tokens": 424,
+      "total_tokens": 470,
+      "completion_tokens": 46,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 2,
+    "case": "two"
+  },
+  {
+    "seconds": 9.121961331926286,
+    "text": "The images show a sequence of eight frames, alternating between a red background and a blue background. In each frame, there is a white square positioned in the center. The white square remains the same size and position in all frames, while the background color alternates between red and blue.",
+    "usage": {
+      "prompt_tokens": 1639,
+      "total_tokens": 1697,
+      "completion_tokens": 58,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 8,
+    "case": "eight"
+  },
+  {
+    "seconds": 4.357561005745083,
+    "text": "The image features a large red square with a smaller white square centered inside it. The white square is perfectly aligned in the middle of the red background, creating a simple, bold geometric design.",
+    "usage": null,
+    "stream": true,
+    "image_count": 1,
+    "case": "stream"
+  },
+  {
+    "seconds": 5.596725733950734,
+    "text": "red",
+    "usage": {
+      "prompt_tokens": 41,
+      "total_tokens": 43,
+      "completion_tokens": 2,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 0,
+    "case": "multi_turn"
+  },
+  {
+    "case": "invalid_max_tokens",
+    "status": 400
+  }
+]

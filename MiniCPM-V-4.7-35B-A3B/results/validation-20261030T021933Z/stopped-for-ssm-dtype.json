@@ -1,0 +1,5 @@
+{
+  "reason": "GDN warmup RuntimeError: vLLM initial_state must be float32; publisher text_config.mamba_ssm_dtype is float32",
+  "next_setting": "--mamba-ssm-cache-dtype float32",
+  "weights_dtype": "bfloat16"
+}

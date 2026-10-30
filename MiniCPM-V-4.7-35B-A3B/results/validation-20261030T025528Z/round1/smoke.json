@@ -1,0 +1,92 @@
+[
+  {
+    "seconds": 1.927451137918979,
+    "text": "Understood.",
+    "usage": {
+      "prompt_tokens": 18,
+      "total_tokens": 22,
+      "completion_tokens": 4,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 0,
+    "case": "text"
+  },
+  {
+    "seconds": 4.4861487108282745,
+    "text": "The image features a large red square with a smaller white square centered inside it. The white square is perfectly aligned in the middle of the red background, creating a simple, bold geometric design.",
+    "usage": {
+      "prompt_tokens": 89,
+      "total_tokens": 128,
+      "completion_tokens": 39,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 1,
+    "case": "single"
+  },
+  {
+    "seconds": 2.0291974898427725,
+    "text": "The image features a solid blue background with a white square centered in the middle.",
+    "usage": {
+      "prompt_tokens": 354,
+      "total_tokens": 371,
+      "completion_tokens": 17,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 1,
+    "case": "large"
+  },
+  {
+    "seconds": 5.128071074839681,
+    "text": "The image displays two separate squares, one above the other.\n\n- The top image features a white square centered on a solid red background.\n- The bottom image features an identical white square centered on a solid blue background.",
+    "usage": {
+      "prompt_tokens": 424,
+      "total_tokens": 470,
+      "completion_tokens": 46,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 2,
+    "case": "two"
+  },
+  {
+    "seconds": 10.06667102407664,
+    "text": "The images display a simple, repeating pattern. Each image consists of a solid-colored background with a smaller, white square in the center.\n\nThe background color alternates between red and blue across the sequence of images:\n- The first, third, fifth, and seventh images have a red background.\n- The second, fourth, sixth, and eighth images have a blue background.\n\nThe white square is identical in size and position in all eight images.",
+    "usage": {
+      "prompt_tokens": 1639,
+      "total_tokens": 1732,
+      "completion_tokens": 93,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 8,
+    "case": "eight"
+  },
+  {
+    "seconds": 4.2564370152540505,
+    "text": "The image features a large red square with a smaller white square centered inside it. The white square is perfectly aligned in the middle of the red background, creating a simple, bold geometric design.",
+    "usage": null,
+    "stream": true,
+    "image_count": 1,
+    "case": "stream"
+  },
+  {
+    "seconds": 0.40651964070275426,
+    "text": "red",
+    "usage": {
+      "prompt_tokens": 41,
+      "total_tokens": 43,
+      "completion_tokens": 2,
+      "prompt_tokens_details": null
+    },
+    "stream": false,
+    "image_count": 0,
+    "case": "multi_turn"
+  },
+  {
+    "case": "invalid_max_tokens",
+    "status": 400
+  }
+]
