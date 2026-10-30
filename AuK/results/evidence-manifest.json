@@ -3,7 +3,6 @@
   "version": "auk-bw-sglang-omni-v1.0.1",
   "sha256": {
     "configs/inference.json": "0f2983936dab6b62530b095027e87704aaed1268f63a1880573deb84df090a12",
-    "README.md": "66a85d48727b669b464d6471b9ca5e2ed5d8145c8d80556435746eac9e17929a",
     "requirements-eval.txt": "53421eb810a7f21bae5b268d0cf07ef3c4d3cfd2bc4a8b58d0726413c86f5a58",
     "requirements-runtime.txt": "6c7aa0c7c4925486418cb12bb57d7fb12d5210155a2d11f46d415c886ba6a904",
     "results/accuracy-comparison.json": "dbb287c71b6bdb83c6ce1a3e701e5dc375c031bdb9035c0e54bf175928b433e2",

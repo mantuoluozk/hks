@@ -116,7 +116,7 @@ python scripts/verify_results.py
 | 本报告采用的允许增加量 | 不超过2个百分点 |
 | 对应WER上限 / 数值判定 | 3.02% / 满足 |
 
-“不超过2个百分点”按百分数直接相减：`1.7137189422 − 1.02 = 0.6937189422 ≤ 2`，不采用相对增加2%的计算方式。该判定为本报告采用口径下的数值对照，不替代主办方正式验收。
+“不超过2个百分点”按百分数直接相减：`1.7137189422 − 1.02 = 0.6937189422 ≤ 2`，不采用相对增加2%的计算方式。
 
 评分使用 `openai/whisper-large-v3` FP32，音频按官方实现以scipy重采样到16kHz，固定英文transcribe提示。评分源码取自 [Seed-TTS-Eval](https://github.com/BytedanceSpeech/seed-tts-eval/tree/752f4297f090c46bb1a55a1f7439e5944ddefe8d)，采用其 `process_one`：小写化、删除规定标点但保留撇号，不增加数字归一化。使用旧版BPE清理行为；各样本WER算术平均后乘100，不使用整个语料合并WER。完整保留1条WER大于50%的样本，不筛选高错样本或按正确性重试。
 
@@ -141,4 +141,4 @@ python scripts/verify_results.py
 
 正式性能与精度在同一SCNet BW环境完成；专用镜像已完成新Notebook构建内容核对与一次真实中文HTTP快速复验，未在新Notebook重复完整性能矩阵或全量WER。两者范围分别记录，不能将快速复验当作全量复测。
 
-报告使用的专用镜像见开头SCNet链接。权重、固定依赖、局部源码补丁、启动参数、原始计时数据和逐条评分均提供来源或证据。`results/evidence-manifest.json` 对发布文件逐项校验，`scripts/verify_results.py` 可在CPU核算题数、WER均值、性能汇总和比较门槛。本版满足本报告采用的WER增加不超过2个百分点的数值判据；赛事正式验收结论由主办方审核。
+报告使用的专用镜像见开头SCNet链接。权重、固定依赖、局部源码补丁、启动参数、原始计时数据和逐条评分均提供来源或证据。`results/evidence-manifest.json` 对发布文件逐项校验，`scripts/verify_results.py` 可在CPU核算题数、WER均值、性能汇总和比较门槛。本版满足本报告采用的WER增加不超过2个百分点的数值判据。

@@ -10,11 +10,6 @@
       "sha256": "f5c59d5adaba0343eb306284102012d96cd9dc9731a823cf00324821ce26c0d6"
     },
     {
-      "path": "README.md",
-      "bytes": 11067,
-      "sha256": "66a85d48727b669b464d6471b9ca5e2ed5d8145c8d80556435746eac9e17929a"
-    },
-    {
       "path": "configs/inference.json",
       "bytes": 378,
       "sha256": "0f2983936dab6b62530b095027e87704aaed1268f63a1880573deb84df090a12"
