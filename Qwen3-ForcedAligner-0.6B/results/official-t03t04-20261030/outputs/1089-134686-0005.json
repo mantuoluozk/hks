@@ -1,0 +1,174 @@
+{
+  "id": "1089-134686-0005",
+  "language": "English",
+  "audio_seconds": 9.635,
+  "elapsed_seconds": 0.07897454826161265,
+  "classification_shape": [
+    213,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    5,
+    6,
+    6,
+    12,
+    12,
+    15,
+    15,
+    21,
+    21,
+    24,
+    24,
+    27,
+    27,
+    32,
+    32,
+    33,
+    33,
+    40,
+    45,
+    46,
+    46,
+    51,
+    51,
+    52,
+    52,
+    59,
+    59,
+    66,
+    66,
+    70,
+    70,
+    71,
+    71,
+    77,
+    77,
+    84,
+    84,
+    95,
+    99,
+    104,
+    104,
+    107,
+    107,
+    116
+  ],
+  "items": [
+    {
+      "text": "THE",
+      "start_time": 0.4,
+      "end_time": 0.48
+    },
+    {
+      "text": "MUSIC",
+      "start_time": 0.48,
+      "end_time": 0.96
+    },
+    {
+      "text": "CAME",
+      "start_time": 0.96,
+      "end_time": 1.2
+    },
+    {
+      "text": "NEARER",
+      "start_time": 1.2,
+      "end_time": 1.68
+    },
+    {
+      "text": "AND",
+      "start_time": 1.68,
+      "end_time": 1.92
+    },
+    {
+      "text": "HE",
+      "start_time": 1.92,
+      "end_time": 2.16
+    },
+    {
+      "text": "RECALLED",
+      "start_time": 2.16,
+      "end_time": 2.56
+    },
+    {
+      "text": "THE",
+      "start_time": 2.56,
+      "end_time": 2.64
+    },
+    {
+      "text": "WORDS",
+      "start_time": 2.64,
+      "end_time": 3.2
+    },
+    {
+      "text": "THE",
+      "start_time": 3.6,
+      "end_time": 3.68
+    },
+    {
+      "text": "WORDS",
+      "start_time": 3.68,
+      "end_time": 4.08
+    },
+    {
+      "text": "OF",
+      "start_time": 4.08,
+      "end_time": 4.16
+    },
+    {
+      "text": "SHELLEY'S",
+      "start_time": 4.16,
+      "end_time": 4.72
+    },
+    {
+      "text": "FRAGMENT",
+      "start_time": 4.72,
+      "end_time": 5.28
+    },
+    {
+      "text": "UPON",
+      "start_time": 5.28,
+      "end_time": 5.6
+    },
+    {
+      "text": "THE",
+      "start_time": 5.6,
+      "end_time": 5.68
+    },
+    {
+      "text": "MOON",
+      "start_time": 5.68,
+      "end_time": 6.16
+    },
+    {
+      "text": "WANDERING",
+      "start_time": 6.16,
+      "end_time": 6.72
+    },
+    {
+      "text": "COMPANIONLESS",
+      "start_time": 6.72,
+      "end_time": 7.6
+    },
+    {
+      "text": "PALE",
+      "start_time": 7.92,
+      "end_time": 8.32
+    },
+    {
+      "text": "FOR",
+      "start_time": 8.32,
+      "end_time": 8.56
+    },
+    {
+      "text": "WEARINESS",
+      "start_time": 8.56,
+      "end_time": 9.28
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "e1de54742a0e04615bb7fb80ef9a613fc03ec91ed4f1548e8f0e96aac024361f",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

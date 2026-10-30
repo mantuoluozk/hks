@@ -13,11 +13,6 @@
       "bytes": 64
     },
     {
-      "path": "Qwen3-ForcedAligner-0.6B/README.md",
-      "sha256": "4d0507b128314e2c09ba7cceb32678498aecf731c32f67e90b80319437cd8ff8",
-      "bytes": 10024
-    },
-    {
       "path": "Qwen3-ForcedAligner-0.6B/bench.sh",
       "sha256": "9c3a69d4f6fee8bae989ea6b87bf44289ef9b4baa9122ab2879cb64c74f42e85",
       "bytes": 112
@@ -277,5 +272,176 @@
       "sha256": "1b1768582ba3d0223dc248f87bde485af4d0ef5a0c214c922cbd989d5b79dbc8",
       "bytes": 848
     }
-  ]
+  ],
+  "additional_files_without_checksums": [
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/README.md",
+      "bytes": 8722
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/run_official_conditions.py",
+      "bytes": 6734
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/scripts/verify_official_conditions.py",
+      "bytes": 2794
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/sources/official-t03t04-20261030.json",
+      "bytes": 509
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/delivery-package.json",
+      "bytes": 152
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/environment.json",
+      "bytes": 792
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0000.json",
+      "bytes": 3345
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0001.json",
+      "bytes": 1328
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0002.json",
+      "bytes": 2342
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0003.json",
+      "bytes": 1226
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0004.json",
+      "bytes": 1636
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0005.json",
+      "bytes": 2754
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0006.json",
+      "bytes": 2951
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0007.json",
+      "bytes": 1334
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0008.json",
+      "bytes": 2037
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0009.json",
+      "bytes": 3229
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0010.json",
+      "bytes": 1915
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0011.json",
+      "bytes": 4472
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0012.json",
+      "bytes": 3361
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0013.json",
+      "bytes": 3014
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0014.json",
+      "bytes": 1317
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0015.json",
+      "bytes": 1932
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0016.json",
+      "bytes": 1528
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0017.json",
+      "bytes": 2935
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0019.json",
+      "bytes": 4490
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0021.json",
+      "bytes": 2228
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0022.json",
+      "bytes": 3764
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0023.json",
+      "bytes": 4171
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0024.json",
+      "bytes": 3565
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0025.json",
+      "bytes": 2327
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0026.json",
+      "bytes": 1825
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0027.json",
+      "bytes": 1419
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0028.json",
+      "bytes": 2341
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0029.json",
+      "bytes": 1634
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0030.json",
+      "bytes": 1036
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/outputs/1089-134686-0031.json",
+      "bytes": 1936
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/README.md",
+      "bytes": 676
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/summary.json",
+      "bytes": 6766
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/verified-summary.json",
+      "bytes": 371
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/反馈表.csv",
+      "bytes": 2285
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/环境说明.txt",
+      "bytes": 593
+    },
+    {
+      "path": "Qwen3-ForcedAligner-0.6B/results/official-t03t04-current.json",
+      "bytes": 168
+    }
+  ],
+  "release_tag": "qwen3-forcedaligner-bw-vllm-v1.0.1"
 }

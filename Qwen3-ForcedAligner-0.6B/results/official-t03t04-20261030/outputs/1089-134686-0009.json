@@ -1,0 +1,209 @@
+{
+  "id": "1089-134686-0009",
+  "language": "English",
+  "audio_seconds": 10.575,
+  "elapsed_seconds": 0.07541633164510131,
+  "classification_shape": [
+    241,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    5,
+    8,
+    8,
+    13,
+    19,
+    22,
+    22,
+    22,
+    22,
+    28,
+    28,
+    32,
+    32,
+    34,
+    34,
+    35,
+    35,
+    42,
+    42,
+    45,
+    45,
+    51,
+    50,
+    52,
+    52,
+    56,
+    56,
+    60,
+    66,
+    73,
+    68,
+    73,
+    73,
+    83,
+    76,
+    83,
+    83,
+    85,
+    85,
+    88,
+    88,
+    90,
+    90,
+    97,
+    100,
+    105,
+    104,
+    111,
+    112,
+    119,
+    112,
+    119,
+    119,
+    126
+  ],
+  "items": [
+    {
+      "text": "AT",
+      "start_time": 0.4,
+      "end_time": 0.64
+    },
+    {
+      "text": "MOST",
+      "start_time": 0.64,
+      "end_time": 1.04
+    },
+    {
+      "text": "BY",
+      "start_time": 1.52,
+      "end_time": 1.76
+    },
+    {
+      "text": "AN",
+      "start_time": 1.76,
+      "end_time": 1.76
+    },
+    {
+      "text": "ALMS",
+      "start_time": 1.76,
+      "end_time": 2.24
+    },
+    {
+      "text": "GIVEN",
+      "start_time": 2.24,
+      "end_time": 2.56
+    },
+    {
+      "text": "TO",
+      "start_time": 2.56,
+      "end_time": 2.72
+    },
+    {
+      "text": "A",
+      "start_time": 2.72,
+      "end_time": 2.8
+    },
+    {
+      "text": "BEGGAR",
+      "start_time": 2.8,
+      "end_time": 3.36
+    },
+    {
+      "text": "WHOSE",
+      "start_time": 3.36,
+      "end_time": 3.6
+    },
+    {
+      "text": "BLESSING",
+      "start_time": 3.6,
+      "end_time": 4.08
+    },
+    {
+      "text": "HE",
+      "start_time": 4.08,
+      "end_time": 4.16
+    },
+    {
+      "text": "FLED",
+      "start_time": 4.16,
+      "end_time": 4.48
+    },
+    {
+      "text": "FROM",
+      "start_time": 4.48,
+      "end_time": 4.8
+    },
+    {
+      "text": "HE",
+      "start_time": 5.28,
+      "end_time": 5.84
+    },
+    {
+      "text": "MIGHT",
+      "start_time": 5.84,
+      "end_time": 5.84
+    },
+    {
+      "text": "HOPE",
+      "start_time": 5.84,
+      "end_time": 6.64
+    },
+    {
+      "text": "WEARILY",
+      "start_time": 6.64,
+      "end_time": 6.64
+    },
+    {
+      "text": "TO",
+      "start_time": 6.64,
+      "end_time": 6.8
+    },
+    {
+      "text": "WIN",
+      "start_time": 6.8,
+      "end_time": 7.04
+    },
+    {
+      "text": "FOR",
+      "start_time": 7.04,
+      "end_time": 7.2
+    },
+    {
+      "text": "HIMSELF",
+      "start_time": 7.2,
+      "end_time": 7.76
+    },
+    {
+      "text": "SOME",
+      "start_time": 8.0,
+      "end_time": 8.4
+    },
+    {
+      "text": "MEASURE",
+      "start_time": 8.4,
+      "end_time": 8.88
+    },
+    {
+      "text": "OF",
+      "start_time": 8.96,
+      "end_time": 9.52
+    },
+    {
+      "text": "ACTUAL",
+      "start_time": 9.52,
+      "end_time": 9.52
+    },
+    {
+      "text": "GRACE",
+      "start_time": 9.52,
+      "end_time": 10.08
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "a2808efab49a93b7194d07e868b0cd04586379c2f44a08b8c6f969d92accf922",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

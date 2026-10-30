@@ -18,6 +18,8 @@
 
 AuK T03/T04固定条件补测：120/120 条生成完成，交付ZIP及逐项反馈见 [补测材料](AuK/results/official-t03t04-20261030/README.md)。本次未计算质量分数。
 
+Qwen3-ForcedAligner T03/T04固定条件：英文30条词级时间戳输出全部完成。材料见 [补测记录](Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/README.md)。
+
 [镜像与复验范围总表](镜像与复验总表.md)列明四套镜像的复用关系、额外依赖及未完成项。
 
 ## 复现方式

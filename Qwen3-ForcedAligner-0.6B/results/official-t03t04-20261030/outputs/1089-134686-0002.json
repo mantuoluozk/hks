@@ -1,0 +1,146 @@
+{
+  "id": "1089-134686-0002",
+  "language": "English",
+  "audio_seconds": 6.625,
+  "elapsed_seconds": 0.08010502904653549,
+  "classification_shape": [
+    158,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    5,
+    9,
+    10,
+    13,
+    13,
+    22,
+    22,
+    24,
+    24,
+    27,
+    27,
+    33,
+    33,
+    34,
+    34,
+    38,
+    38,
+    39,
+    42,
+    44,
+    44,
+    46,
+    46,
+    51,
+    51,
+    53,
+    53,
+    60,
+    60,
+    66,
+    66,
+    68,
+    68,
+    69,
+    69,
+    77
+  ],
+  "items": [
+    {
+      "text": "AFTER",
+      "start_time": 0.4,
+      "end_time": 0.72
+    },
+    {
+      "text": "EARLY",
+      "start_time": 0.8,
+      "end_time": 1.04
+    },
+    {
+      "text": "NIGHTFALL",
+      "start_time": 1.04,
+      "end_time": 1.76
+    },
+    {
+      "text": "THE",
+      "start_time": 1.76,
+      "end_time": 1.92
+    },
+    {
+      "text": "YELLOW",
+      "start_time": 1.92,
+      "end_time": 2.16
+    },
+    {
+      "text": "LAMPS",
+      "start_time": 2.16,
+      "end_time": 2.64
+    },
+    {
+      "text": "WOULD",
+      "start_time": 2.64,
+      "end_time": 2.72
+    },
+    {
+      "text": "LIGHT",
+      "start_time": 2.72,
+      "end_time": 3.04
+    },
+    {
+      "text": "UP",
+      "start_time": 3.04,
+      "end_time": 3.12
+    },
+    {
+      "text": "HERE",
+      "start_time": 3.36,
+      "end_time": 3.52
+    },
+    {
+      "text": "AND",
+      "start_time": 3.52,
+      "end_time": 3.68
+    },
+    {
+      "text": "THERE",
+      "start_time": 3.68,
+      "end_time": 4.08
+    },
+    {
+      "text": "THE",
+      "start_time": 4.08,
+      "end_time": 4.24
+    },
+    {
+      "text": "SQUALID",
+      "start_time": 4.24,
+      "end_time": 4.8
+    },
+    {
+      "text": "QUARTER",
+      "start_time": 4.8,
+      "end_time": 5.28
+    },
+    {
+      "text": "OF",
+      "start_time": 5.28,
+      "end_time": 5.44
+    },
+    {
+      "text": "THE",
+      "start_time": 5.44,
+      "end_time": 5.52
+    },
+    {
+      "text": "BROTHELS",
+      "start_time": 5.52,
+      "end_time": 6.16
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "66277a3fa3df407261dc2a3ce685a7ceef19999ab0c10531bee5257cb64cb59d",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

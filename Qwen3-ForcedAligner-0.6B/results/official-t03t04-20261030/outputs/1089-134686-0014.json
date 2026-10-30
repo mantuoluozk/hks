@@ -1,0 +1,76 @@
+{
+  "id": "1089-134686-0014",
+  "language": "English",
+  "audio_seconds": 2.225,
+  "elapsed_seconds": 0.07151365233585238,
+  "classification_shape": [
+    58,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    4,
+    6,
+    6,
+    9,
+    9,
+    10,
+    10,
+    16,
+    16,
+    18,
+    18,
+    20,
+    20,
+    22,
+    22,
+    26
+  ],
+  "items": [
+    {
+      "text": "HE",
+      "start_time": 0.32,
+      "end_time": 0.48
+    },
+    {
+      "text": "TRIED",
+      "start_time": 0.48,
+      "end_time": 0.72
+    },
+    {
+      "text": "TO",
+      "start_time": 0.72,
+      "end_time": 0.8
+    },
+    {
+      "text": "THINK",
+      "start_time": 0.8,
+      "end_time": 1.28
+    },
+    {
+      "text": "HOW",
+      "start_time": 1.28,
+      "end_time": 1.44
+    },
+    {
+      "text": "IT",
+      "start_time": 1.44,
+      "end_time": 1.6
+    },
+    {
+      "text": "COULD",
+      "start_time": 1.6,
+      "end_time": 1.76
+    },
+    {
+      "text": "BE",
+      "start_time": 1.76,
+      "end_time": 2.08
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "a18c81f8bb1bea70a226008e95a9b8d2e4f897a56dad5ef332f4f843f230a129",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

@@ -1,0 +1,11 @@
+Qwen3-ForcedAligner-0.6B T03/T04 固定条件实测环境说明
+平台：SCNet Notebook；设备：BW / gfx936:sramecc+:xnack-；设备数：1
+Python：3.10.12
+PyTorch：2.11.0+dtk2604.2609201441.gf74cd7
+vLLM：0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a
+Transformers：5.12.1
+OpenAI Python：2.30.0
+librosa：0.11.0
+精度：bfloat16；批次大小：1；最大模型长度：8192；最大并发序列：8
+模型运行参数：显存使用率0.35；eager=True；prefix caching=False
+评测范围：30条英文强制对齐，给定文本，词级起止时间单位秒；未计算AAS。

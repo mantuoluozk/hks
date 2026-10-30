@@ -1,0 +1,55 @@
+{
+  "id": "1089-134686-0030",
+  "language": "English",
+  "audio_seconds": 2.715,
+  "elapsed_seconds": 0.07254976266995072,
+  "classification_shape": [
+    58,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    4,
+    12,
+    12,
+    14,
+    14,
+    21,
+    21,
+    24,
+    24,
+    32
+  ],
+  "items": [
+    {
+      "text": "BEWARE",
+      "start_time": 0.32,
+      "end_time": 0.96
+    },
+    {
+      "text": "OF",
+      "start_time": 0.96,
+      "end_time": 1.12
+    },
+    {
+      "text": "MAKING",
+      "start_time": 1.12,
+      "end_time": 1.68
+    },
+    {
+      "text": "THAT",
+      "start_time": 1.68,
+      "end_time": 1.92
+    },
+    {
+      "text": "MISTAKE",
+      "start_time": 1.92,
+      "end_time": 2.56
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "c34eca555b34763a3ec2e4790f848cba338af56b387ac2a4e2ec2bc53b713ac5",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

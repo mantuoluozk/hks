@@ -11,10 +11,9 @@
 | 验证项 | 当前结果 |
 |---|---|
 | 功能 | 中英文 2/2 |
-| 公开精度自评 | 尚无可对齐的自测 AAS 成绩 |
+| T03/T04固定条件 | 英文30条词级时间戳输出，30/30成功 |
 | 首次性能与复现 | 每进程 512 请求；复跑最大偏差 7.18% |
 | 镜像验证范围 | 复用 ASR 镜像；同 Notebook 两个独立进程验证 |
-| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
 <!-- report-resources:end -->
 
 T04 强制对齐，模型为 `Qwen/Qwen3-ForcedAligner-0.6B`，输入音频及对应文本，输出词 / 字级起止时间。权重来自 [SCNet AI 社区](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen3-ForcedAligner-0.6B)，9 个运行文件逐项 SHA256 校验通过；单文件 BF16 权重 1,835,544,544 字节，SHA256 为 `47831d0e82f96b20e9034dba01a075ee06436654719f6a68289e49f1b65ce0e7`。社区说明文件不计入运行文件匹配。完整清单与实际校验见 `sources/modelscope-files.json` 和 `results/scnet/validation-20261026T094057Z/runtime/weights-check.json`。
@@ -76,17 +75,17 @@ RUN_RESULTS_DIR="$PWD/results/scnet/benchmark" bash run-scnet.sh bash bench.sh
 
 批量测试均保留与本轮单条输出的逐边界比较。批次 8 中存在一档 80ms 边界差异，不能标记全部批量结果逐字 / 逐时间戳一致；首版建议使用单条或批次不超过 4。具体数量及最大差异见第 7 节。
 
-## 6. 精度测评
+## 6. T03/T04 固定条件测试
 
-发布者公开 AAS 参考值：MFA-Labeled Raw 中文 33.1ms、英文 37.5ms、平均 42.9ms；Concat-300s 平均 52.9ms；Human-Labeled 平均 32.4ms。不同评测组不能混用，来源及口径见 `官方精度基线查证.md`。
+按官方固定条件完成英文 LibriSpeech test-clean 30 条强制对齐，使用清单给定音频与文本，参数为 BF16、seed 42。30/30 条成功生成词级起止时间，时间单位为秒。
 
-发布者使用过公开数据。论文列出的语料来源包括 AISHELL、WenetSpeech、LibriSpeech、GigaSpeech、LibriTTS、Emilia、MLS 等，但评测集同时包含内部语料。相关论文 §4.1、附录 A.1 说明，预留音频再划分为 Raw 与拼接测试组，人工时间边界组来自内部中文数据。公开原始音频不等于公开了用于复现成绩的样本清单、切分及时间边界标注。
+| 项目 | 结果 |
+|---|---|
+| 固定条件 | 英文30条；每条音频不超过15秒；给定对应文本 |
+| 完成情况 | 30/30成功，反馈表无失败项 |
+| 输出 | 每条一个词级时间戳JSON，另附反馈表及环境说明 |
 
-截至 2026-10-28，核对发布者论文及官方仓库，尚未找到与所列 AAS 成绩对应的完整公开标注包，也未找到公开语料子集单独的 AAS 成绩。因此，不能仅下载 LibriSpeech 或 AISHELL 后，将自测结果直接与官方中文 33.1ms、英文 37.5ms 比较并判定劣化率。当前暂停 AAS 精度测试，尚无新的模型 AAS 实测值，不作精度通过判定。
-
-来源：[Qwen3-ASR 技术报告 §4.1、表9](https://arxiv.org/html/2601.21337v2)、[LLM-ForcedAligner 论文 §4.1、附录 A.1](https://arxiv.org/abs/2601.18220)。前者作为本 checkpoint 的成绩来源，后者补充说明数据构成。
-
-当前两个演示样本用于功能及吞吐检查，没有匹配的真实边界标注，未计算或声称通过 AAS。英文给定文本取自演示音频转写，不作为人工时间边界真值。正式精度等待赛事匹配的标注集、评分代码及 GPU 基线，`official_accuracy_pass=null`。格式合法、单调、批量一致或独立进程一致均不能替代 AAS 验收。
+结果文件见 `results/official-t03t04-20261030/`，完整提交材料包在本次交付目录中。
 
 ## 7. 首次性能
 
@@ -114,4 +113,4 @@ RUN_RESULTS_DIR="$PWD/results/scnet/benchmark" bash run-scnet.sh bash bench.sh
 
 最大绝对偏差 **7.18%**，≤20% 检查 **通过**。此项为同镜像独立进程复跑，不冒充另建 Notebook 的独立实例复验；后者尚未执行。汇总与 SHA256 索引见 `results/scnet/validation-summary.json`，原始结果分别位于 `results/scnet/validation-20261026T094057Z/`、`results/scnet/validation-20261026T094355Z/`。
 
-`python verify.py --selfcheck` 校验保存的证据；默认 `python verify.py` 保留正式 AAS 待复验状态并返回 2。首版保留上述限制，后续优化需同卡、同框架、同负载另行配对测量。
+`python verify.py --selfcheck` 校验保存的首版功能与性能证据；T03/T04固定条件结果及反馈表见 `results/official-t03t04-20261030/`。

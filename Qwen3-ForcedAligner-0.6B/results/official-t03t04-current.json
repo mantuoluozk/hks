@@ -1,0 +1,8 @@
+{
+  "job": "results/official-t03t04-20261030T093454Z/generation",
+  "model": "forced_aligner",
+  "expected": 30,
+  "completed": 30,
+  "successful": 30,
+  "failed": 0
+}

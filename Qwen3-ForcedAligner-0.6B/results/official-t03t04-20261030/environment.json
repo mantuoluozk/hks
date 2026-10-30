@@ -1,0 +1,29 @@
+{
+  "sourcefind_baseline": "df57f2b5bff16660b9d83e666c78d0eae5651738",
+  "python": "3.10.12",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "transformers": "5.12.1",
+    "openai": "2.30.0",
+    "librosa": "0.11.0"
+  },
+  "devices": [
+    {
+      "name": "BW",
+      "arch": "gfx936:sramecc+:xnack-"
+    }
+  ],
+  "device_count": 1,
+  "dtype": "bfloat16",
+  "batch_size": 1,
+  "max_model_len": 8192,
+  "max_num_seqs": 8,
+  "gpu_memory_utilization": 0.35,
+  "enforce_eager": true,
+  "enable_prefix_caching": false,
+  "mm_processor_cache_gb": 0,
+  "evaluation": "word timestamp predictions only; no boundary accuracy or AAS scoring",
+  "model": "Qwen3-ForcedAligner-0.6B",
+  "platform": "SCNet Notebook"
+}

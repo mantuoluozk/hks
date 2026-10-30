@@ -1,0 +1,90 @@
+{
+  "id": "1089-134686-0016",
+  "language": "English",
+  "audio_seconds": 3.54,
+  "elapsed_seconds": 0.07129258010536432,
+  "classification_shape": [
+    85,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    4,
+    6,
+    6,
+    6,
+    6,
+    9,
+    9,
+    12,
+    12,
+    14,
+    14,
+    20,
+    20,
+    22,
+    22,
+    23,
+    23,
+    31,
+    31,
+    38
+  ],
+  "items": [
+    {
+      "text": "THEN",
+      "start_time": 0.32,
+      "end_time": 0.48
+    },
+    {
+      "text": "YOU",
+      "start_time": 0.48,
+      "end_time": 0.48
+    },
+    {
+      "text": "CAN",
+      "start_time": 0.48,
+      "end_time": 0.72
+    },
+    {
+      "text": "ASK",
+      "start_time": 0.72,
+      "end_time": 0.96
+    },
+    {
+      "text": "HIM",
+      "start_time": 0.96,
+      "end_time": 1.12
+    },
+    {
+      "text": "QUESTIONS",
+      "start_time": 1.12,
+      "end_time": 1.6
+    },
+    {
+      "text": "ON",
+      "start_time": 1.6,
+      "end_time": 1.76
+    },
+    {
+      "text": "THE",
+      "start_time": 1.76,
+      "end_time": 1.84
+    },
+    {
+      "text": "CATECHISM",
+      "start_time": 1.84,
+      "end_time": 2.48
+    },
+    {
+      "text": "DEDALUS",
+      "start_time": 2.48,
+      "end_time": 3.04
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "0395ee9d489d945eb92835a7b53a214dccf5454674e813730e2e134cb01c033b",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

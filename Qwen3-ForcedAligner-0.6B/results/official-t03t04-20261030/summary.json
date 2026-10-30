@@ -1,0 +1,250 @@
+{
+  "expected": 30,
+  "completed": 30,
+  "successful": 30,
+  "failed": 0,
+  "rows": [
+    {
+      "condition_id": "1089-134686-0000",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0000.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0001",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0001.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0002",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0002.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0003",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0003.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0004",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0004.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0005",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0005.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0006",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0006.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0007",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0007.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0008",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0008.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0009",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0009.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0010",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0010.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0011",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0011.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0012",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0012.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0013",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0013.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0014",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0014.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0015",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0015.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0016",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0016.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0017",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0017.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0019",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0019.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0021",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0021.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0022",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0022.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0023",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0023.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0024",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0024.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0025",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0025.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0026",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0026.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0027",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0027.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0028",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0028.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0029",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0029.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0030",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0030.json",
+      "error": "",
+      "parameter_changes": "无"
+    },
+    {
+      "condition_id": "1089-134686-0031",
+      "model": "forced_aligner",
+      "status": "成功",
+      "output_path": "outputs/1089-134686-0031.json",
+      "error": "",
+      "parameter_changes": "无"
+    }
+  ],
+  "boundary_accuracy_computed": false,
+  "all_conditions_processed": true
+}

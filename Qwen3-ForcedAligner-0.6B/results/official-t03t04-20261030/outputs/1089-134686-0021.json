@@ -1,0 +1,139 @@
+{
+  "id": "1089-134686-0021",
+  "language": "English",
+  "audio_seconds": 6.55,
+  "elapsed_seconds": 0.07303014723584056,
+  "classification_shape": [
+    149,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    4,
+    6,
+    6,
+    6,
+    6,
+    12,
+    15,
+    16,
+    16,
+    20,
+    20,
+    28,
+    29,
+    32,
+    32,
+    33,
+    33,
+    39,
+    39,
+    44,
+    44,
+    50,
+    50,
+    51,
+    51,
+    56,
+    59,
+    62,
+    62,
+    63,
+    63,
+    69,
+    69,
+    78
+  ],
+  "items": [
+    {
+      "text": "IF",
+      "start_time": 0.32,
+      "end_time": 0.48
+    },
+    {
+      "text": "A",
+      "start_time": 0.48,
+      "end_time": 0.48
+    },
+    {
+      "text": "LAYMAN",
+      "start_time": 0.48,
+      "end_time": 0.96
+    },
+    {
+      "text": "IN",
+      "start_time": 1.2,
+      "end_time": 1.28
+    },
+    {
+      "text": "GIVING",
+      "start_time": 1.28,
+      "end_time": 1.6
+    },
+    {
+      "text": "BAPTISM",
+      "start_time": 1.6,
+      "end_time": 2.24
+    },
+    {
+      "text": "POUR",
+      "start_time": 2.32,
+      "end_time": 2.56
+    },
+    {
+      "text": "THE",
+      "start_time": 2.56,
+      "end_time": 2.64
+    },
+    {
+      "text": "WATER",
+      "start_time": 2.64,
+      "end_time": 3.12
+    },
+    {
+      "text": "BEFORE",
+      "start_time": 3.12,
+      "end_time": 3.52
+    },
+    {
+      "text": "SAYING",
+      "start_time": 3.52,
+      "end_time": 4.0
+    },
+    {
+      "text": "THE",
+      "start_time": 4.0,
+      "end_time": 4.08
+    },
+    {
+      "text": "WORDS",
+      "start_time": 4.08,
+      "end_time": 4.48
+    },
+    {
+      "text": "IS",
+      "start_time": 4.72,
+      "end_time": 4.96
+    },
+    {
+      "text": "THE",
+      "start_time": 4.96,
+      "end_time": 5.04
+    },
+    {
+      "text": "CHILD",
+      "start_time": 5.04,
+      "end_time": 5.52
+    },
+    {
+      "text": "BAPTIZED",
+      "start_time": 5.52,
+      "end_time": 6.24
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "65fed77809380e14e0eca62e875ac5a6ffb59fc3ef28c258b22fcd8d19d4f7d8",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

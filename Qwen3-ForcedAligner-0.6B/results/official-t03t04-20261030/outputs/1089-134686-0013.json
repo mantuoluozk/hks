@@ -1,0 +1,195 @@
+{
+  "id": "1089-134686-0013",
+  "language": "English",
+  "audio_seconds": 7.915,
+  "elapsed_seconds": 0.07681419607251883,
+  "classification_shape": [
+    193,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    7,
+    9,
+    9,
+    12,
+    12,
+    14,
+    14,
+    17,
+    17,
+    23,
+    23,
+    23,
+    25,
+    30,
+    30,
+    34,
+    34,
+    38,
+    38,
+    41,
+    41,
+    43,
+    43,
+    44,
+    44,
+    51,
+    57,
+    59,
+    59,
+    65,
+    65,
+    72,
+    67,
+    72,
+    72,
+    75,
+    75,
+    77,
+    77,
+    78,
+    78,
+    82,
+    82,
+    83,
+    83,
+    86,
+    86,
+    88,
+    88,
+    94
+  ],
+  "items": [
+    {
+      "text": "IF",
+      "start_time": 0.56,
+      "end_time": 0.72
+    },
+    {
+      "text": "EVER",
+      "start_time": 0.72,
+      "end_time": 0.96
+    },
+    {
+      "text": "HE",
+      "start_time": 0.96,
+      "end_time": 1.12
+    },
+    {
+      "text": "WAS",
+      "start_time": 1.12,
+      "end_time": 1.36
+    },
+    {
+      "text": "IMPELLED",
+      "start_time": 1.36,
+      "end_time": 1.84
+    },
+    {
+      "text": "TO",
+      "start_time": 1.84,
+      "end_time": 1.84
+    },
+    {
+      "text": "CAST",
+      "start_time": 2.0,
+      "end_time": 2.4
+    },
+    {
+      "text": "SIN",
+      "start_time": 2.4,
+      "end_time": 2.72
+    },
+    {
+      "text": "FROM",
+      "start_time": 2.72,
+      "end_time": 3.04
+    },
+    {
+      "text": "HIM",
+      "start_time": 3.04,
+      "end_time": 3.28
+    },
+    {
+      "text": "AND",
+      "start_time": 3.28,
+      "end_time": 3.44
+    },
+    {
+      "text": "TO",
+      "start_time": 3.44,
+      "end_time": 3.52
+    },
+    {
+      "text": "REPENT",
+      "start_time": 3.52,
+      "end_time": 4.08
+    },
+    {
+      "text": "THE",
+      "start_time": 4.56,
+      "end_time": 4.72
+    },
+    {
+      "text": "IMPULSE",
+      "start_time": 4.72,
+      "end_time": 5.2
+    },
+    {
+      "text": "THAT",
+      "start_time": 5.2,
+      "end_time": 5.76
+    },
+    {
+      "text": "MOVED",
+      "start_time": 5.76,
+      "end_time": 5.76
+    },
+    {
+      "text": "HIM",
+      "start_time": 5.76,
+      "end_time": 6.0
+    },
+    {
+      "text": "WAS",
+      "start_time": 6.0,
+      "end_time": 6.16
+    },
+    {
+      "text": "THE",
+      "start_time": 6.16,
+      "end_time": 6.24
+    },
+    {
+      "text": "WISH",
+      "start_time": 6.24,
+      "end_time": 6.56
+    },
+    {
+      "text": "TO",
+      "start_time": 6.56,
+      "end_time": 6.64
+    },
+    {
+      "text": "BE",
+      "start_time": 6.64,
+      "end_time": 6.88
+    },
+    {
+      "text": "HER",
+      "start_time": 6.88,
+      "end_time": 7.04
+    },
+    {
+      "text": "KNIGHT",
+      "start_time": 7.04,
+      "end_time": 7.52
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "abeec9e59254d6db3d624853704f082a1c6f28918301549dfbc93eba17e6b42d",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

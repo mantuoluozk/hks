@@ -1,0 +1,230 @@
+{
+  "id": "1089-134686-0024",
+  "language": "English",
+  "audio_seconds": 11.655,
+  "elapsed_seconds": 0.07665709406137466,
+  "classification_shape": [
+    267,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    4,
+    6,
+    6,
+    7,
+    7,
+    13,
+    13,
+    17,
+    16,
+    19,
+    19,
+    26,
+    30,
+    32,
+    32,
+    34,
+    34,
+    39,
+    39,
+    44,
+    44,
+    47,
+    47,
+    55,
+    56,
+    60,
+    60,
+    62,
+    62,
+    64,
+    64,
+    66,
+    66,
+    76,
+    80,
+    82,
+    82,
+    88,
+    88,
+    96,
+    96,
+    100,
+    100,
+    105,
+    106,
+    109,
+    109,
+    111,
+    111,
+    119,
+    120,
+    122,
+    122,
+    127,
+    127,
+    131,
+    131,
+    133,
+    133,
+    140
+  ],
+  "items": [
+    {
+      "text": "IF",
+      "start_time": 0.32,
+      "end_time": 0.48
+    },
+    {
+      "text": "THE",
+      "start_time": 0.48,
+      "end_time": 0.56
+    },
+    {
+      "text": "WINE",
+      "start_time": 0.56,
+      "end_time": 1.04
+    },
+    {
+      "text": "CHANGE",
+      "start_time": 1.04,
+      "end_time": 1.36
+    },
+    {
+      "text": "INTO",
+      "start_time": 1.36,
+      "end_time": 1.52
+    },
+    {
+      "text": "VINEGAR",
+      "start_time": 1.52,
+      "end_time": 2.08
+    },
+    {
+      "text": "AND",
+      "start_time": 2.4,
+      "end_time": 2.56
+    },
+    {
+      "text": "THE",
+      "start_time": 2.56,
+      "end_time": 2.72
+    },
+    {
+      "text": "HOST",
+      "start_time": 2.72,
+      "end_time": 3.12
+    },
+    {
+      "text": "CRUMBLE",
+      "start_time": 3.12,
+      "end_time": 3.52
+    },
+    {
+      "text": "INTO",
+      "start_time": 3.52,
+      "end_time": 3.76
+    },
+    {
+      "text": "CORRUPTION",
+      "start_time": 3.76,
+      "end_time": 4.4
+    },
+    {
+      "text": "AFTER",
+      "start_time": 4.48,
+      "end_time": 4.8
+    },
+    {
+      "text": "THEY",
+      "start_time": 4.8,
+      "end_time": 4.96
+    },
+    {
+      "text": "HAVE",
+      "start_time": 4.96,
+      "end_time": 5.12
+    },
+    {
+      "text": "BEEN",
+      "start_time": 5.12,
+      "end_time": 5.28
+    },
+    {
+      "text": "CONSECRATED",
+      "start_time": 5.28,
+      "end_time": 6.08
+    },
+    {
+      "text": "IS",
+      "start_time": 6.4,
+      "end_time": 6.56
+    },
+    {
+      "text": "JESUS",
+      "start_time": 6.56,
+      "end_time": 7.04
+    },
+    {
+      "text": "CHRIST",
+      "start_time": 7.04,
+      "end_time": 7.68
+    },
+    {
+      "text": "STILL",
+      "start_time": 7.68,
+      "end_time": 8.0
+    },
+    {
+      "text": "PRESENT",
+      "start_time": 8.0,
+      "end_time": 8.4
+    },
+    {
+      "text": "UNDER",
+      "start_time": 8.48,
+      "end_time": 8.72
+    },
+    {
+      "text": "THEIR",
+      "start_time": 8.72,
+      "end_time": 8.88
+    },
+    {
+      "text": "SPECIES",
+      "start_time": 8.88,
+      "end_time": 9.52
+    },
+    {
+      "text": "AS",
+      "start_time": 9.6,
+      "end_time": 9.76
+    },
+    {
+      "text": "GOD",
+      "start_time": 9.76,
+      "end_time": 10.16
+    },
+    {
+      "text": "AND",
+      "start_time": 10.16,
+      "end_time": 10.48
+    },
+    {
+      "text": "AS",
+      "start_time": 10.48,
+      "end_time": 10.64
+    },
+    {
+      "text": "MAN",
+      "start_time": 10.64,
+      "end_time": 11.2
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "afbd260aa399b391a4361f7f649a899b48d138c82ce574fa19fb9ba6050250f0",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

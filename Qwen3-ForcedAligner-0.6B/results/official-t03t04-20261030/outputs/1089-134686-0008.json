@@ -1,0 +1,125 @@
+{
+  "id": "1089-134686-0008",
+  "language": "English",
+  "audio_seconds": 6.73,
+  "elapsed_seconds": 0.07317140931263566,
+  "classification_shape": [
+    154,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    7,
+    8,
+    8,
+    15,
+    15,
+    17,
+    17,
+    20,
+    20,
+    22,
+    22,
+    28,
+    28,
+    37,
+    37,
+    43,
+    43,
+    45,
+    45,
+    46,
+    47,
+    55,
+    55,
+    64,
+    59,
+    64,
+    72,
+    80,
+    62,
+    80
+  ],
+  "items": [
+    {
+      "text": "THE",
+      "start_time": 0.56,
+      "end_time": 0.64
+    },
+    {
+      "text": "CHAOS",
+      "start_time": 0.64,
+      "end_time": 1.2
+    },
+    {
+      "text": "IN",
+      "start_time": 1.2,
+      "end_time": 1.36
+    },
+    {
+      "text": "WHICH",
+      "start_time": 1.36,
+      "end_time": 1.6
+    },
+    {
+      "text": "HIS",
+      "start_time": 1.6,
+      "end_time": 1.76
+    },
+    {
+      "text": "ARDOUR",
+      "start_time": 1.76,
+      "end_time": 2.24
+    },
+    {
+      "text": "EXTINGUISHED",
+      "start_time": 2.24,
+      "end_time": 2.96
+    },
+    {
+      "text": "ITSELF",
+      "start_time": 2.96,
+      "end_time": 3.44
+    },
+    {
+      "text": "WAS",
+      "start_time": 3.44,
+      "end_time": 3.6
+    },
+    {
+      "text": "A",
+      "start_time": 3.6,
+      "end_time": 3.68
+    },
+    {
+      "text": "COLD",
+      "start_time": 3.76,
+      "end_time": 4.4
+    },
+    {
+      "text": "INDIFFERENT",
+      "start_time": 4.4,
+      "end_time": 5.12
+    },
+    {
+      "text": "KNOWLEDGE",
+      "start_time": 5.12,
+      "end_time": 5.12
+    },
+    {
+      "text": "OF",
+      "start_time": 5.76,
+      "end_time": 6.4
+    },
+    {
+      "text": "HIMSELF",
+      "start_time": 6.4,
+      "end_time": 6.4
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "1bdf7eede41ca2cc8883defb66bbd2e59ec93bf2d587327cb051d0ae427495ae",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

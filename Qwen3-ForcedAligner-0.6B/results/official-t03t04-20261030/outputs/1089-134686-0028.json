@@ -1,0 +1,146 @@
+{
+  "id": "1089-134686-0028",
+  "language": "English",
+  "audio_seconds": 7.83,
+  "elapsed_seconds": 0.07428807998076081,
+  "classification_shape": [
+    177,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    3,
+    5,
+    5,
+    12,
+    12,
+    14,
+    14,
+    20,
+    20,
+    24,
+    24,
+    31,
+    28,
+    40,
+    40,
+    42,
+    42,
+    47,
+    47,
+    52,
+    48,
+    52,
+    52,
+    59,
+    61,
+    68,
+    68,
+    77,
+    71,
+    77,
+    77,
+    81,
+    81,
+    84,
+    84,
+    93
+  ],
+  "items": [
+    {
+      "text": "THE",
+      "start_time": 0.24,
+      "end_time": 0.4
+    },
+    {
+      "text": "RETREAT",
+      "start_time": 0.4,
+      "end_time": 0.96
+    },
+    {
+      "text": "WILL",
+      "start_time": 0.96,
+      "end_time": 1.12
+    },
+    {
+      "text": "BEGIN",
+      "start_time": 1.12,
+      "end_time": 1.6
+    },
+    {
+      "text": "ON",
+      "start_time": 1.6,
+      "end_time": 1.92
+    },
+    {
+      "text": "WEDNESDAY",
+      "start_time": 1.92,
+      "end_time": 2.48
+    },
+    {
+      "text": "AFTERNOON",
+      "start_time": 2.48,
+      "end_time": 3.2
+    },
+    {
+      "text": "IN",
+      "start_time": 3.2,
+      "end_time": 3.36
+    },
+    {
+      "text": "HONOUR",
+      "start_time": 3.36,
+      "end_time": 3.76
+    },
+    {
+      "text": "OF",
+      "start_time": 3.76,
+      "end_time": 4.16
+    },
+    {
+      "text": "SAINT",
+      "start_time": 4.16,
+      "end_time": 4.16
+    },
+    {
+      "text": "FRANCIS",
+      "start_time": 4.16,
+      "end_time": 4.72
+    },
+    {
+      "text": "XAVIER",
+      "start_time": 4.88,
+      "end_time": 5.44
+    },
+    {
+      "text": "WHOSE",
+      "start_time": 5.44,
+      "end_time": 6.16
+    },
+    {
+      "text": "FEAST",
+      "start_time": 6.16,
+      "end_time": 6.16
+    },
+    {
+      "text": "DAY",
+      "start_time": 6.16,
+      "end_time": 6.48
+    },
+    {
+      "text": "IS",
+      "start_time": 6.48,
+      "end_time": 6.72
+    },
+    {
+      "text": "SATURDAY",
+      "start_time": 6.72,
+      "end_time": 7.44
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "623ff761fcde7f6d41716c9889f2bc99a798eced81b7f3bf5a680f760cd9dd51",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}
