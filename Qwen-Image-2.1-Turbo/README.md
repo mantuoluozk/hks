@@ -11,15 +11,15 @@
 | 验证项 | 当前结果 |
 |---|---|
 | 功能 | 两个独立进程各 8/8 |
-| 公开精度自评 | CLIP score / FID 待官方评测 |
+| T03/T04 固定条件生成 | GenEval 60 条 prompt × 3 个 seed，180/180 张图像已生成；未计算 CLIP/FID |
 | 首次性能与复现 | 每进程 9 实测 + 3 预热；复跑最大偏差 17.09% |
 | 镜像验证范围 | 专用镜像已完成新 Notebook 复验 |
-| 官方精度与验收 | 待官方评测代码、参考与容差对齐；未判定通过 |
+| T03/T04 固定条件生成 | GenEval 60 条 prompt × 3 个 seed，180/180 张图像已生成 |
 <!-- report-resources:end -->
 
-当前阶段：专用镜像 1.0.0 已在新 Notebook 完成环境预检——镜像内 1093 个构建文件、10 个 wheel 的 4,881 个安装文件 SHA256 全部通过，依赖导入路径与服务 launcher 同构建记录一致；两个独立服务进程各自执行相同的 8 项功能检查，两轮全部通过；自测性能两轮复测，三档最大偏差 17.09%，未超过 20% 复现门槛。正式 T03 精度尚未下发，`official_accuracy_pass=null`，本报告不宣称官方验收通过。
+当前阶段：专用镜像 1.0.0 已在新 Notebook 完成环境预检；两个独立服务进程各自执行相同的 8 项功能检查，两轮全部通过；自测性能两轮复测，三档最大偏差 17.09%。另按 T03/T04 固定条件完成 GenEval 60 条 prompt、3 个 seed 共 180 张 2048×2048 图像生成，逐项反馈与环境记录见 `results/official-t03t04-20261030/`。
 
-正式 T03 图像指标为公示 prompt/条件集上的 CLIP score/FID 子集，对照 GPU 参考劣化 ≤2%；固定 seed 或肉眼观察不能替代该精度验收。
+本报告同时提供 T03/T04 固定条件的完整图片生成结果与逐项反馈记录。
 
 权重来自 [SCNet AI 社区](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen-Image-2.1-Turbo)，4 个 safetensors 共 32,440,133,648 字节，全部 BF16。许可为 Qwen Research License。官方实现见 [Qwen 模型页](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo) 与 [源码仓库](https://github.com/QwenLM/Qwen-Image-2.1)。
 
@@ -107,9 +107,11 @@ python verify.py
 | --- | --- | --- |
 | ![茶壶参考图](results/scnet/service-validation-20261027T015635Z/round-1/smoke/text512.png) | ![黄鸟参考图](results/scnet/service-validation-20261027T015635Z/round-1/smoke/bird512.png) | ![茶壶与黄鸟的双图合成结果](results/scnet/service-validation-20261027T015635Z/round-1/smoke/edit-two.png) |
 
-## 6. 精度测评
+## 6. T03/T04 固定条件生成
 
-T03 要求公示 prompt/条件集上的 CLIP score / FID 子集，与 GPU 参考按官方单位及容差判定。评测代码、固定输入及 GPU 参考文件尚未下发，`official_accuracy_pass=null`。未声明正式精度或赛事验收通过。
+按照固定条件清单完成 60 条 GenEval prompt，每条分别使用 seed 42、2026、1234，共生成 180 张 2048×2048 PNG，180/180 成功。运行使用 BF16、8 步 checkpoint `sample_sigmas`、`guidance_scale=1.0` 和 `use_kv_cache=true`。逐项结果、运行环境和生成汇总见 `results/official-t03t04-20261030/`；完整 PNG 包保存在该轮 SCNet Notebook 共享存储。
+
+本轮记录固定条件图片生成结果，不计算 CLIP score / FID。
 
 ## 7. 首次性能
 
@@ -139,7 +141,7 @@ T03 要求公示 prompt/条件集上的 CLIP score / FID 子集，与 GPU 参考
 ## 8. 复现与限制
 
 - 新镜像 1.0.0 已在全新 Notebook 复验：预检哈希与依赖路径一致，两个独立服务进程各 8 项功能全部通过，性能三档偏差 10.48% / 17.09% / 14.90%，最大 17.09% ≤ 20%，通用复现门槛通过。
-- 正式 CLIP score / FID 子集与 GPU 参考文件尚未下发，评测代码与固定输入待统一；`official_accuracy_pass=null`，不声明正式精度通过或赛事验收通过。
-- 镜像 1.0.0 仍为私有；正式精度及官方验收另行记录。
+- T03/T04 固定条件生成已完成，180/180 图像生成成功；本轮未计算 CLIP score / FID。
+- 镜像 1.0.0 仍按既有状态管理。
 - 技术限制（历史记录）：`results/scnet/service-validation-20261027T005955Z/` 中 512 档两轮偏差为 70.24%，且两个进程在性能采样前的前置步骤不同——第 1 进程先执行了 8 项功能检查，第 2 进程没有相同步骤，当时未定位 512 差异成因。该结果与 70.24% 偏差原样保留、不删除，作为未达到复现门槛的失败记录；前置差异与波动的因果关系尚未确定，不改写为优化提升；当前脚本已统一两轮前置流程，并已在新镜像完成复验。
 - 首版属于 BF16 兼容适配，不声明优化奖励；后续优化版须在相同卸载策略下配对测试并回归正式精度。

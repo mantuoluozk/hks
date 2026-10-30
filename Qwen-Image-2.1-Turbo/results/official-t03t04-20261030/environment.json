@@ -1,0 +1,28 @@
+{
+  "model": "Qwen/Qwen-Image-2.1-Turbo",
+  "device": {
+    "name": "BW",
+    "gcn_arch": "gfx936:sramecc+:xnack-",
+    "total_memory": 68702699520,
+    "compute_units": 80
+  },
+  "framework": "SGLang 0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+  "torch": "2.11.0",
+  "diffusers": "0.41.0.dev0",
+  "transformers": "5.17.0",
+  "tokenizers": "0.23.1",
+  "image_runtime": "/opt/qwen-image21",
+  "precision": "bfloat16",
+  "official_conditions": 180,
+  "resolution": "2048x2048",
+  "seeds": [
+    42,
+    2026,
+    1234
+  ],
+  "steps": 8,
+  "guidance_scale": 1.0,
+  "use_kv_cache": true,
+  "kv_cache_mapping": "SGLang diffusers_kwargs -> QwenImage21Pipeline.use_kv_cache; checkpoint transformer causal_condition=True",
+  "schedule": "checkpoint sample_sigmas"
+}

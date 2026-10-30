@@ -10,7 +10,7 @@
 | [Qwen3-ASR-1.7B](Qwen3-ASR-1.7B/README.md) | vLLM | 在线 6/6；PCM 4/4；官方条件识别 300/300 | test-clean 2620 条，WER 1.6501% | 128 请求；复跑最大偏差 7.28% |
 | [Qwen3-ForcedAligner-0.6B](Qwen3-ForcedAligner-0.6B/README.md) | vLLM | 中英文 2/2；官方条件词级对齐 30/30 | — | 每进程 512 请求；复跑最大偏差 7.18% |
 | [Trident-Qwen3VL-2B](Trident-Qwen3VL-2B/README.md) | vLLM | 6 条多模态输入及 HTTP embedding | ChartQA Origin NDCG@10 ×100 = 69.4483 | 每进程 1536 请求；复跑最大偏差 3.88% |
-| [Qwen-Image-2.1-Turbo](Qwen-Image-2.1-Turbo/README.md) | SGLang | 两个独立进程各 8/8 | CLIP score / FID 待官方评测 | 每进程 9 实测 + 3 预热；复跑最大偏差 17.09% |
+| [Qwen-Image-2.1-Turbo](Qwen-Image-2.1-Turbo/README.md) | SGLang | 两个独立进程各 8/8；T03/T04 固定条件生成 180/180 | T03/T04 GenEval 图片已生成；未计算 CLIP/FID | 每进程 9 实测 + 3 预热；复跑最大偏差 17.09% |
 | [Kimi-VL-A3B-Instruct](Kimi-VL-A3B-Instruct/README.md) | vLLM | 两个独立进程各8/8 | OCRBench 869/1000；发布者867 | 每进程32请求；吞吐偏差1.32%，全指标最大17.39% |
 | [AuK](AuK/README.md) | SGLang-Omni | 两独立服务各9/9；新镜像中文HTTP通过 | Seed-TTS-Eval英文1088条，WER 1.7137%；较发布者增加0.6937个百分点 | 每进程32实测+6预热；均值延迟/音频吞吐偏差1.1583% |
 | [MobileVLA-R1](MobileVLA-R1/README.md) | RGB前端 + vLLM语言后端 | 两独立服务各12/12；两条单图参考token一致 | 未测；闭环环境及权重对应难点见报告 | 每进程9实测+3预热；均值延迟偏差4.64% |
@@ -21,6 +21,8 @@ AuK T03/T04固定条件补测：120/120 条生成完成，交付ZIP及逐项反�
 Qwen3-ForcedAligner T03/T04固定条件：英文30条词级时间戳输出全部完成。材料见 [补测记录](Qwen3-ForcedAligner-0.6B/results/official-t03t04-20261030/README.md)。
 
 Qwen3-ASR T03/T04固定条件：AISHELL-1、LibriSpeech test-clean、test-other 各100条，共300/300识别完成。材料见 [补测记录](Qwen3-ASR-1.7B/results/official-t03t04-20261030/README.md)。
+
+Qwen-Image-2.1-Turbo T03/T04固定条件：GenEval 60条 prompt、每条3个seed，共180/180张2048×2048图像生成完成。材料见 [补测记录](Qwen-Image-2.1-Turbo/results/official-t03t04-20261030/README.md)。
 
 [镜像与复验范围总表](镜像与复验总表.md)列明四套镜像的复用关系、额外依赖及未完成项。
 

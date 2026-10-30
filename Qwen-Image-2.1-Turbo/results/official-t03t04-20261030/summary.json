@@ -1,0 +1,22 @@
+{
+  "expected": 180,
+  "processed": 180,
+  "successful": 180,
+  "failed": 0,
+  "status": "complete",
+  "task": "Qwen-Image-2.1-Turbo T03/T04 official conditions",
+  "datasets": {
+    "GenEval": 60
+  },
+  "seeds": [
+    42,
+    2026,
+    1234
+  ],
+  "size": "2048x2048",
+  "num_inference_steps": 8,
+  "guidance_scale": 1.0,
+  "use_kv_cache": true,
+  "schedule": "checkpoint sample_sigmas",
+  "dtype": "bf16"
+}

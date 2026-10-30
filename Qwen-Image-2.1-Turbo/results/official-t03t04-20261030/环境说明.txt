@@ -1,0 +1,8 @@
+Qwen-Image-2.1-Turbo T03/T04 固定条件实测环境说明
+设备：BW / gfx936:sramecc+:xnack-，1卡
+框架：SGLang 0.5.18+dtk2604.torch2110.2609231937.gc3bbbd
+PyTorch：2.11.0
+Diffusers：0.41.0.dev0；Transformers：5.17.0；tokenizers：0.23.1
+精度：BF16；输出格式：PNG；尺寸：2048×2048
+条件：60条GenEval prompt，各使用seed 42、2026、1234，共180条
+采样：8步，guidance_scale=1.0，checkpoint sample_sigmas，use_kv_cache=True
