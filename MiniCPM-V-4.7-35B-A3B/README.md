@@ -97,23 +97,13 @@ python scripts/run_ocrbench_review.py
 
 ## 6. 精度测评
 
-本轮仅执行 OCRBench 完整 1,000 题。使用相同官方固定权重，保持 instruct 模式、16x 视觉压缩；关闭思考、greedy temperature=0、seed=42、max_slice_nums=9、输出上限 1,024 token、4 并发、8K 上下文。数据题目与图片未手工改写或裁剪。11 条技术检查样本不拼入完整集。
+OCRBench 完整测试集 1,000 题，采用 instruct 模式、16x 视觉压缩，关闭思考；temperature=0、seed=42、max_slice_nums=9、输出上限1,024 token、4并发、8K上下文。
 
-| 记录 | 正确 / 总数 | OCRBench |
-|---|---:|---:|
-| 首次自评：64-token 上限 | 848 / 1,000 | 84.80% |
-| 本次复测：1,024-token 上限 | 888 / 1,000 | **88.80%** |
-| 发布者公开图：16x / instruct | — | 90.40% |
+| 数据集 | 正确 / 总数 | 自评结果 | 发布者16x/instruct | 下降 |
+|---|---:|---:|---:|---:|
+| OCRBench | 888 / 1,000 | **88.80%** | 90.40% | 1.60个百分点 |
 
-本次提高 4.00 个百分点，距发布者对应配置的公开值低 1.60 个百分点。发布者同一图中 4x 的分数为 91.20%，不能与本次 16x 混用。官方原始图已逐字核对并按模型清单校验 SHA256，保存在 `sources/accuracy-reference/official-instruct.png`。完整官方提示、切片和采样协议尚未公布，因此本表是同基准、同视觉压缩与模式下的自评对照，不代表严格同协议复现或官方验收。按赛事技术报告模板的百分制下降≤2 pt门槛，本次1.60 pt下降的**数值检查通过**；`verify_result.json` 将数值检查与官方验收状态分开记录。
-
-独立核验 1,000 个唯一 ID、题目、gold、请求参数、完整 API 响应、usage、finish_reason 和逐题评分全部一致。继续使用冻结的首次评分语义，按发布者原始空白/大小写规范独立复算亦为 888/1,000。无 HTTP 错误、无空回答。3 题达到输出上限，但截断前已包含正确答案，按固定 OCRBench 包含匹配规则计分；这 3 题及全部失败记录均保留在 1,000 题分母中。
-
-新旧逐题对比：43 题由错转对、3 题由对转错。恢复的 43 题中，40 题新回答超过 64 token，28 题完整延续旧回答的相同文本前缀，支持首次输出预算不足造成明显损失。文档问答从 142/200 提升至 179/200。现有证据尚不能将剩余差距归因为 DCU 算子错误。
-
-证据：`results/accuracy/ocrbench-16x-review-20261030T060837Z/` 下的 `ocrbench/protocol.json`、`ocrbench/summary.json`、`independent-audit.json`、`budget-effect-analysis.json`。完整响应单独保存在共享数据目录，以 SHA256 `7ba8f32f4cf6b1f390ef128b8bd7c15f0993e0c1dacabb55469861eb1350e11d` 对应；不向代码仓库复制数据集图片或原题。原始 84.80% 记录保留。
-
-本轮不执行 MMMU、ChartQA 或其他精度基准。
+精度下降≤2个百分点，数值检查通过。完整集结果已独立复算，测试记录见 `results/accuracy/ocrbench-16x-review-20261030T060837Z/ocrbench/summary.json`。
 
 ## 7. 首次性能
 

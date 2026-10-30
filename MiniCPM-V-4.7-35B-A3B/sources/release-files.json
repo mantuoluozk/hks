@@ -7,8 +7,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "9767c1467b80fb6856c20bb828863796be9987d8c4d41a86f9540be245b37a30",
-      "bytes": 12878
+      "sha256": "f981f0d106db2a0e6f109419ac48f2333a408496e41a63b311359dc92d97d743",
+      "bytes": 10957
     },
     {
       "path": "bench.sh",
