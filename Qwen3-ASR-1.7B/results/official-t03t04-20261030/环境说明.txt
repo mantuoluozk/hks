@@ -1,0 +1,9 @@
+Qwen3-ASR-1.7B T03/T04 固定条件实测环境说明
+平台：SCNet Notebook
+设备：Hygon DCU (HCU) BW，1卡
+框架：vLLM 0.25.1（DAS/DTK构建），OpenAI-compatible server
+精度：BF16
+解码：temperature=0，max_tokens=1024，语种自动识别
+任务：AISHELL-1 100条；LibriSpeech test-clean 100条；LibriSpeech test-other 100条
+结果：300/300完成，300成功，0失败
+模型请求未传参考文本或语种标签。

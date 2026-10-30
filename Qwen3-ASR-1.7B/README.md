@@ -11,6 +11,7 @@
 | 验证项 | 当前结果 |
 |---|---|
 | 功能 | 在线 6/6；PCM 4/4 |
+| T03/T04 官方条件识别 | 300/300：AISHELL-1、LibriSpeech test-clean、test-other 各 100 条 |
 | 公开精度自评 | test-clean 2620 条，WER 1.6501% |
 | 首次性能与复现 | 128 请求；复跑最大偏差 7.28% |
 | 镜像验证范围 | 专用镜像已完成新 Notebook 复验 |
@@ -84,6 +85,12 @@ BENCH_OUTPUT_DIR="$PWD/results/scnet/reproduce/bench" bash run-scnet.sh python s
 
 完整 test-clean 实测 WER **1.6501%**，相比发布者 **1.63%** 增加 **0.0201 个百分点**，相对增加约 **1.23%**。逐条预测、参考归一化摘要及编辑距离见两轮 `accuracy/`。本次采用上述 Whisper 归一化与评分实现；该对照反映所列评测协议下的数值差异，不表示两侧评分实现完全相同。中文演示音频仅用于功能检查，未据此声称中文 CER 达标。
 
+### T03/T04 官方条件测试
+
+按固定条件完成 300 条语音识别：AISHELL-1、LibriSpeech test-clean、LibriSpeech test-other 各 100 条。300 条全部完成且反馈状态均成功。推理使用 BF16、temperature=0、最大输出 1024、自动识别语种；模型请求未传入参考文本或语种标签。
+
+逐条识别结果、官方反馈表、环境信息及汇总见 [`results/official-t03t04-20261030/`](results/official-t03t04-20261030/README.md)。
+
 ```bash
 bash run-scnet.sh python scripts/prepare_librispeech_parquet.py
 EVAL_OUTPUT_DIR="$PWD/results/scnet/reproduce/accuracy" bash run-scnet.sh python scripts/evaluate_librispeech.py
@@ -115,4 +122,4 @@ EVAL_OUTPUT_DIR="$PWD/results/scnet/reproduce/accuracy" bash run-scnet.sh python
 
 最大绝对偏差 **7.28%**；≤20% 检查为 **通过**。证据位于 `results/scnet/validation-20261026T064636Z/` 与 `results/scnet/validation-20261026T080803Z/`，汇总文件为 `results/scnet/validation-summary.json`。权重、音频、数据集和编译缓存不随代码分发。首次启动须等待真实健康检查通过；每次复跑使用新的输出目录。在线服务必须停止后再运行离线 PCM 检查，避免同卡进程争用。
 
-`python verify.py --selfcheck` 校验已保存证据。报告记录已完成的功能、公开集精度及性能结果；赛事验收结论以主办方审核为准。
+`python verify.py --selfcheck` 校验已保存证据。

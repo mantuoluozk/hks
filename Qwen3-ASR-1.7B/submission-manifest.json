@@ -18,11 +18,6 @@
       "bytes": 624
     },
     {
-      "path": "Qwen3-ASR-1.7B/README.md",
-      "sha256": "4ef5d165f3f27c7c43b475c54cf17f97acad63c0e52266265b9ec97c283090e7",
-      "bytes": 8569
-    },
-    {
       "path": "Qwen3-ASR-1.7B/env.sh",
       "sha256": "8d75f674f47cbe2ce548a5a74a40ca709d59e7f9ec0b90aeb428fa1c8227dfd5",
       "bytes": 1261

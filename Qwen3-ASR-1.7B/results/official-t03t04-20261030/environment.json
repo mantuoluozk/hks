@@ -1,0 +1,12 @@
+{
+  "model": "qwen3-asr-1.7b",
+  "framework": "vLLM 0.25.1 (DAS/DTK build) OpenAI-compatible server",
+  "device": "Hygon DCU (HCU) BW, 1 card",
+  "decoding": {
+    "temperature": 0,
+    "max_tokens": 1024,
+    "language": null,
+    "dtype": "bfloat16"
+  },
+  "note": "reference text and language labels were NOT passed to the model"
+}
