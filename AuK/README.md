@@ -96,6 +96,12 @@ python scripts/verify_results.py
 
 证据：`results/performance-fp32-20261028/{first,repeat}/smoke/summary.json`。专用镜像另在新Notebook核对588项构建内容及清单/校验器，单次中文HTTP200，输出4秒、96000采样点，实测PCM哈希与正式功能测试中文样本一致；测试自有服务已停止，见 `results/new-image-quick-20261028/summary.json`。
 
+## 5.1 T03/T04 固定条件输出
+
+按赛事固定条件完成 120 条 AuK base 语音生成，中文与英文各 60 条，覆盖 seed 42、2026、1234；120/120 成功。输出为 24 kHz 单声道 WAV，独立校验了清单 ID、反馈状态、文件 SHA256、波形有效性和逐条时长范围。本项未计算质量分数。
+
+完整 WAV 与反馈材料见 `results/official-t03t04-20261030/` 的交付包说明；逐项反馈、环境和逐条校验摘要也在该目录。交付 ZIP 共 125 个文件、27,477,679 字节，SHA256 为 `f857718f8b6d1b9b4362d9d7e9e0eed0ab1c147635c4b7ca8fc89871f2a1975e`。
+
 ## 6. 精度测评
 
 采用发布者公布成绩的 **Seed-TTS-Eval test-en完整1088条**，零样本参考音频语音合成；不使用其他数据集替代。发布者[技术报告表5](https://arxiv.org/html/2609.08936v1#A1.T5)中AuK base英文WER为1.02%。发布者报告三次运行均值，本次为固定seed1234的一次完整运行，未宣称随机重复次数完全一致。

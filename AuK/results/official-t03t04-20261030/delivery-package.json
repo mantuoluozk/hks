@@ -1,0 +1,9 @@
+{
+  "job": "/root/private_data/hks/models/AuK/results/official-t03t04-20261030T090517Z",
+  "archive": "/root/private_data/hks/models/AuK/artifacts/official-t03t04-20261030T090517Z/AuK-outputs-and-feedback.zip",
+  "bytes": 27477679,
+  "sha256": "f857718f8b6d1b9b4362d9d7e9e0eed0ab1c147635c4b7ca8fc89871f2a1975e",
+  "files": 125,
+  "wav_files": 120,
+  "verified": true
+}

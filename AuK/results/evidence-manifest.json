@@ -1,9 +1,9 @@
 {
   "model": "AuK",
-  "version": "auk-bw-sglang-omni-v1.0.0",
+  "version": "auk-bw-sglang-omni-v1.0.1",
   "sha256": {
     "configs/inference.json": "0f2983936dab6b62530b095027e87704aaed1268f63a1880573deb84df090a12",
-    "README.md": "e3859b3cfaf067326aa9f771a1c82cecbce341eb138e4a4d7f2f18f4c8d7f86e",
+    "README.md": "66a85d48727b669b464d6471b9ca5e2ed5d8145c8d80556435746eac9e17929a",
     "requirements-eval.txt": "53421eb810a7f21bae5b268d0cf07ef3c4d3cfd2bc4a8b58d0726413c86f5a58",
     "requirements-runtime.txt": "6c7aa0c7c4925486418cb12bb57d7fb12d5210155a2d11f46d415c886ba6a904",
     "results/accuracy-comparison.json": "dbb287c71b6bdb83c6ce1a3e701e5dc375c031bdb9035c0e54bf175928b433e2",
@@ -192,7 +192,17 @@
     "sources/x-transformers-release.json": "3297c44330eab37b314191d362510d65a814ceae4ce3853c8124ad14ec2d045f",
     "优化说明.md": "b1b8c54928b735ed69337e503bee1e04b3c76d73554112464363150867356832",
     "重建说明.md": "d85ef0bedf7d614f57432b7a802621ea6b49fe9868212754cf32f412ab2e3a24",
-    "results/score-audit.json": "351c3819747a14577634d0f45f6b637b5d44d3c3d9e8ec5a2b3877e62ac88ef5"
+    "results/score-audit.json": "351c3819747a14577634d0f45f6b637b5d44d3c3d9e8ec5a2b3877e62ac88ef5",
+    "results/official-t03t04-20261030/README.md": "6d4fb710572232bf7b0599e3667ef745106b5a1fb9277d28ce03fcbf197afc6e",
+    "results/official-t03t04-20261030/environment.json": "4353f86da379621da2e678c7bb32d6fcbce7f55aa02ebad43e77308b82d5c284",
+    "results/official-t03t04-20261030/环境说明.txt": "4353f86da379621da2e678c7bb32d6fcbce7f55aa02ebad43e77308b82d5c284",
+    "results/official-t03t04-20261030/反馈表.csv": "7064680f21c0a7f03bb86927ee73a1a1bb8beaf0a439095ef6c987d4598b3edc",
+    "results/official-t03t04-20261030/verified-outputs.json": "672135c5d01616ac2051ce67918af963ca02121246ca00e84baf859914442e3f",
+    "results/official-t03t04-20261030/summary.json": "a4e537736ed4de0722a38025bbc2fd8639d2d6fa2d9d94c1f1070b2a2602e30c",
+    "results/official-t03t04-20261030/delivery-package.json": "497bbe81529b216da7ff2faa51d06aef3acb4377018a848f27bdfb54cb84a649",
+    "scripts/run_official_conditions.py": "545f9b62b2ed27151ace04f0af3da9d04fa67292781ece9c66d094e8f0eb8c67",
+    "scripts/verify_official_conditions.py": "fbea3c046486518d33d8ec8910ae9609eee20d3717c30b22a1a6306aea4faf73",
+    "sources/official-t03t04-20261030.json": "ea8e5e48af473931bd0a4830b924095e962a4d617665da18ceebea5701a0d82a"
   },
   "dataset_text_included": false,
   "weights_included": false

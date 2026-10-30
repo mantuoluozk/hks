@@ -1,0 +1,25 @@
+{
+  "sourcefind_commit": "df57f2b5bff16660b9d83e666c78d0eae5651738",
+  "model_revision": "790742b71a4430120daf2b2099192abae449eb9f",
+  "encoder_revision": "f75b40e3da2003cdd6e1829b1f420ca70797c34e",
+  "condition_sha256": "161effa0c6ed5c83351feaca60805617979eb3378f4b6684ede105c5add784f1",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+    "transformers": "5.12.1",
+    "openai": "2.30.0"
+  },
+  "framework": "SGLang-Omni",
+  "framework_revision": "428b73225f808f0d93669140983e90839c9aea0e",
+  "device": "BW",
+  "device_count_used": 1,
+  "conditioning_dtype": "bfloat16",
+  "dit_dtype": "float32",
+  "vae_dtype": "float32",
+  "nfe": 32,
+  "cfg_strength": 2.0,
+  "sway_sampling_coef": -1.0,
+  "attention_backend": "math",
+  "range": "auk.jsonl, all 120 IDs",
+  "scores_computed": false
+}

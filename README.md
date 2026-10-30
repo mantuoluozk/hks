@@ -16,6 +16,8 @@
 | [MobileVLA-R1](MobileVLA-R1/README.md) | RGB前端 + vLLM语言后端 | 两独立服务各12/12；两条单图参考token一致 | 未测；闭环环境及权重对应难点见报告 | 每进程9实测+3预热；均值延迟偏差4.64% |
 | [MiniCPM-V-4.7-35B-A3B](MiniCPM-V-4.7-35B-A3B/README.md) | vLLM，BW×2 TP2 | 两独立服务各8/8 | OCRBench 888/1000，88.80%；发布者16x/instruct90.40%，下降1.60 pt≤2 pt | 六格复跑最大偏差10.31%；同Notebook独立进程 |
 
+AuK T03/T04固定条件补测：120/120 条生成完成，交付ZIP及逐项反馈见 [补测材料](AuK/results/official-t03t04-20261030/README.md)。本次未计算质量分数。
+
 [镜像与复验范围总表](镜像与复验总表.md)列明四套镜像的复用关系、额外依赖及未完成项。
 
 ## 复现方式

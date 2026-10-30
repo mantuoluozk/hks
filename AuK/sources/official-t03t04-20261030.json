@@ -1,0 +1,17 @@
+{
+  "sourcefind_commit": "df57f2b5bff16660b9d83e666c78d0eae5651738",
+  "condition_sha256": "161effa0c6ed5c83351feaca60805617979eb3378f4b6684ede105c5add784f1",
+  "rows": 120,
+  "model": "auk",
+  "seeds": [
+    42,
+    2026,
+    1234
+  ],
+  "baseline_files": {
+    "run.sh": "3470714784ee3b95fc0459405702973dddc610dffb749bc8812532c12f5e5b51",
+    "run-scnet.sh": "e9f38498be13ade97212e074fe4a93aa03f45074447db94af2f9d897269d14e0",
+    "scripts/serve.py": "259f5cbb6caa7448be4758777f605703335e431f19499ee398f05e4d9117e45e",
+    "configs/inference.json": "0f2983936dab6b62530b095027e87704aaed1268f63a1880573deb84df090a12"
+  }
+}
