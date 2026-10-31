@@ -1,0 +1,45 @@
+{
+  "dataset": "TIGER-Lab/MMLU-Pro",
+  "dataset_revision": "b189ec765aa7ed75c8acfea42df31fdae71f97be",
+  "benchmark_code_repo": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+  "benchmark_code_commit": "f418b116db00b065c2aea046518d8fcf74d39872",
+  "paper": "https://arxiv.org/html/2510.26692v1",
+  "published_reference": 72.7,
+  "published_metric": "MMLU-Pro EM, Kimi-Linear-Instruct 5.7T",
+  "protocol_adjustments": [
+    "official evaluator loaded pinned local parquet files instead of accessing Hugging Face",
+    "temperature set to 1.0 per Kimi Linear paper (upstream API script default is 0.1)",
+    "local endpoint request stagger reduced from 2.0 s to 0.05 s; concurrency 4",
+    "max_tokens and retry settings recorded in run metadata"
+  ],
+  "files": {
+    "compute_accuracy.py": {
+      "bytes": 2041,
+      "sha256": "c0052d10d0d8ada49f796a4a73fcf36c3a9348a0017f8fe46f41cede5457a599"
+    },
+    "eval.yaml": {
+      "bytes": 590,
+      "sha256": "2c40150225e27de8529ee29c19ce26ad2d53ee1add6b871c495250668b538e1c"
+    },
+    "evaluate_from_apiX.py": {
+      "bytes": 63334,
+      "sha256": "5fbb119bd11fce378cac8a1d2fe122c964c6a34270fb5fe92a0e6466f94d7fd9"
+    },
+    "LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "README.md": {
+      "bytes": 5993,
+      "sha256": "dfbab62320e644f3682d4697e206160bbb59baafa324c59a17e4424328e3e5a5"
+    },
+    "test.parquet": {
+      "bytes": 4144185,
+      "sha256": "0e24a191921c2f453518a537a8b2117bd137e7714d4ef1565e9ba06c1ecb9ad8"
+    },
+    "validation.parquet": {
+      "bytes": 42857,
+      "sha256": "139423c23722e480c807ac4a191409a710cfce4eba744c1d641cf88e730e2078"
+    }
+  }
+}

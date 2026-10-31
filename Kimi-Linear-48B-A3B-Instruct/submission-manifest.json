@@ -1,0 +1,107 @@
+{
+  "model": "Kimi-Linear-48B-A3B-Instruct",
+  "sourcefind_code_base": "e906280",
+  "note": "GSM8K 200-sample self-evaluation is the reported accuracy (92.50%, zero truncation). MMLU stopped at 96/200 and is recorded as evidence only, not as an accuracy conclusion. Publisher publishes no GSM8K/MMLU score for this Instruct checkpoint.",
+  "files": [
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/.gitignore",
+      "sha256": "f054c59ad64a0754dae2c243e2d5a73fd2ce5d9d42f11e69684a7889707ff669",
+      "bytes": 71
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/env.sh",
+      "sha256": "58136adeb7e976d862854cb6aa3eafb91794033e3e088186a1f91fefb3d7eeee",
+      "bytes": 668
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/README.md",
+      "sha256": "1c5586abe19a97a5025d77eb26bdc3d04361179d119a3567a7160b447d9d9c44",
+      "bytes": 3522
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/accuracy-gsm8k-mmlu-200/manifest.json",
+      "sha256": "cdb1664a436be6007b8cfdb96fc38c28c5e64ca11bd07dc5139d17cabea4f61a",
+      "bytes": 1029
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/accuracy-gsm8k-mmlu-200/predictions.jsonl",
+      "sha256": "8ff942032033614e780393386b08e0cf4e9e05ea94711bd96af36dfe74f2b92c",
+      "bytes": 835163
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/accuracy-gsm8k-mmlu-200/summary-rescored.json",
+      "sha256": "4c8932ad05b2b3e396eb4364fe65477aeb5598af9515ecc4dfbf5914c113896c",
+      "bytes": 499
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/run-scnet.sh",
+      "sha256": "26b6af53d4b4ec7babf5cfb99d3dac41a9fe3dfa91987098344587819db3ef42",
+      "bytes": 977
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/run-sglang.sh",
+      "sha256": "98491afe1b06e700c4435e3876200004b163e89d7f9e485bafb5b307082b4a28",
+      "bytes": 674
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/run.sh",
+      "sha256": "3fe2a25e2057a4862f82e2a74eb6ccecbe7f997612048b8fe624c2758aa5e067",
+      "bytes": 1324
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/scripts/bench_http.py",
+      "sha256": "1889690c438e0d2a0d26f817fccf5b9ffa29c6ea2dd425b0441339a53bd016e0",
+      "bytes": 2172
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/scripts/check_weights.py",
+      "sha256": "ebb71b2ce116c931839d2c95fd6fdc45bd419fff606a2d7c487e314189dfac0b",
+      "bytes": 2613
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/scripts/kl_gsm_mmlu.py",
+      "sha256": "c14f0b3676360eeab10a814ef5115a150a1908d3e8e1762d93c26c6e27484daf",
+      "bytes": 7564
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/scripts/kl_rescore.py",
+      "sha256": "68cbf3983c003c4fee2b4de9fad34636f997c82523993abdcf483c8c88133321",
+      "bytes": 3963
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/scripts/run_mmlu_pro_accuracy.py",
+      "sha256": "2f02d22a4e1a70c908e89bb9389f572717758ca7323764a72de2699d4c870729",
+      "bytes": 6856
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/scripts/run_validation.py",
+      "sha256": "0b1d5f10289827fa0575d6565d5e7f9b4acf784f68d810f27cc57669b6b15cba",
+      "bytes": 4986
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/sources/accuracy-reference.json",
+      "sha256": "ba70588998ae1653e50bacd1f51a0b4b24d6df4e0ad583725aa3b60d1efb9e0c",
+      "bytes": 999
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/sources/mmlu-pro-manifest.json",
+      "sha256": "90c734963af05e2f77edd50cd3c453e673bb285d40e3729d20ed61dc215dc115",
+      "bytes": 1757
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/sources/publisher-files.json",
+      "sha256": "aefa0251ff461265c741bcc0b1e181d375544d2c0f07058e338fc32331bb4c02",
+      "bytes": 10503
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/提交填写信息.md",
+      "sha256": "6d5f77192711d73d5b3840da2c8c620f708caa97597172adb4e717f8b5ae52ea",
+      "bytes": 1788
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/环境说明.txt",
+      "sha256": "f77c50cbd2c212e2fa620847ad3a4f076bcdbf54825f6eb9954d9c9d45f98f05",
+      "bytes": 2598
+    }
+  ]
+}

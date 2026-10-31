@@ -1,0 +1,67 @@
+Kimi-Linear-48B-A3B-Instruct —— 环境说明
+==========================================
+
+模型及权重版本
+--------------
+  model            : moonshotai/Kimi-Linear-48B-A3B-Instruct
+  architecture     : Kimi Linear (KDA 线性注意力 + MLA 全局注意力, 3:1 混合)
+  total params     : 48B
+  activated params : 3B
+  dtype            : BF16
+
+框架及版本
+----------
+  framework        : SGLang (sglang.launch_server)
+  parallelism      : tensor parallel TP4
+  served name      : kimi-linear-48b-a3b
+  endpoint         : http://127.0.0.1:30148
+
+设备信息
+--------
+  device           : BW (海光 DCU / HCU)
+  device count     : 4
+  device arch      : gfx936
+  显存占用         : 每卡约 84%
+
+执行范围
+--------
+  数据集           : 固定 200+200 公开自评样本（GSM8K 200 / MMLU 200）
+  数据来源         : 与同批 MiMo-V2.6-Distill-Qwen-9B 共用同一份文件
+  gsm8k sha256     : 03bd22060d201b82f3545a56dc89a01d300a5406d79e1d51529fdedceb698546
+  mmlu  sha256     : 84f929be5a22b7f7895961ef19f3842dc3d9a276a42b82c42a6fe95e1395682d
+
+采样与评分配置
+--------------
+  few_shot         : 0
+  temperature      : 0（greedy）
+  top_p            : 1
+  enable_thinking  : True
+  max_tokens       : 4096
+  workers（并发）   : 32
+  GSM8K 评分       : 取最终 "####" 后的数值，Decimal 比较
+  MMLU  评分       : 取最终 "ANSWER: A/B/C/D"
+  分母口径         : 全部样本；错误 / 截断 / 解析失败均计为错误，无随机回退
+
+结果摘要
+--------
+  GSM8K            : 185/200 = 92.50%（截断 0、解析失败 0、请求错误 0）
+  MMLU             : 96/200 后停止；中间值 70/96 = 72.92%
+                     （其中 19 条被 4096 截断、18 条未解析，不作为精度结论）
+
+与同批模型的差异（如实记录）
+----------------------------
+  temperature / top_p / max_tokens 与同批 MiMo-V2.6-9B 一致（0 / 1 / 4096）
+  但本次并发为 32，同批 MiMo 为 8。greedy 解码下并发不影响逐题判定结果，
+  仍在此注明，不宣称完全同协议。
+
+未执行项
+--------
+  发布者唯一公布的成绩为 MMLU-Pro 全量 12,032 题 EM 72.7%。
+  全量评测在单卡 DCU 上预估约 28 小时，本轮未执行，因此本目录没有
+  可与发布者直接对照的完整基准成绩。
+
+真实性与边界
+------------
+  本文件记录实际执行的参数与实测结果，未编造版本、成绩或运行数据。
+  GSM8K 结果为零截断的完整结果，可作为适配后的能力自评。
+  MMLU 结果不完整且截断率偏高，不对外引用。
