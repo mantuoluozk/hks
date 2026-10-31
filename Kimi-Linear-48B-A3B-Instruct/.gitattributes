@@ -1,0 +1,4 @@
+* text=auto eol=lf
+results/** -text
+sources/** -text
+*.json -text

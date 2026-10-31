@@ -15,7 +15,7 @@
 | [AuK](AuK/README.md) | SGLang-Omni | 两独立服务各9/9；新镜像中文HTTP通过 | Seed-TTS-Eval英文1088条，WER 1.7137%；较发布者增加0.6937个百分点 | 每进程32实测+6预热；均值延迟/音频吞吐偏差1.1583% |
 | [MobileVLA-R1](MobileVLA-R1/README.md) | RGB前端 + vLLM语言后端 | 两独立服务各12/12；两条单图参考token一致 | 未测；闭环环境及权重对应难点见报告 | 每进程9实测+3预热；均值延迟偏差4.64% |
 | [MiniCPM-V-4.7-35B-A3B](MiniCPM-V-4.7-35B-A3B/README.md) | vLLM，BW×2 TP2 | 两独立服务各8/8 | OCRBench 888/1000，88.80%；发布者16x/instruct90.40%，下降1.60 pt≤2 pt | 六格复跑最大偏差10.31%；同Notebook独立进程 |
-| [Kimi-Linear-48B-A3B-Instruct](Kimi-Linear-48B-A3B-Instruct/README.md) | SGLang TP4 | SGLang TP4 服务正常；会话/健康检查通过 | GSM8K 185/200，92.50%（零截断） | TP4 四卡，BW |
+| [Kimi-Linear-48B-A3B-Instruct](Kimi-Linear-48B-A3B-Instruct/README.md) | SGLang TP4 | 两独立服务各6/6 | GSM8K 185/200（92.50%）；MMLU未完成不作结论 | 6档 ×2轮，最大偏差12.69% |
 
 AuK T03/T04固定条件补测：120/120 条生成完成，交付ZIP及逐项反馈见 [补测材料](AuK/results/official-t03t04-20261030/README.md)。本次未计算质量分数。
 

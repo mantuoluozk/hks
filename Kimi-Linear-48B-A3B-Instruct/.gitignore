@@ -1,7 +1,10 @@
-cache/
-weights/
-runtime/
-logs/
+/cache/
+/weights/
+/data/
+/runtime/
+/logs/
+/artifacts/
 __pycache__/
-*.safetensors
 *.pyc
+*.pid
+*.safetensors
