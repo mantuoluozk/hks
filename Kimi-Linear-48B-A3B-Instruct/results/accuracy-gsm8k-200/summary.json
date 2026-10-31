@@ -1,0 +1,22 @@
+{
+  "benchmark": "GSM8K",
+  "dataset_sha256": "03bd22060d201b82f3545a56dc89a01d300a5406d79e1d51529fdedceb698546",
+  "dataset_rows_available": 200,
+  "responses": 200,
+  "correct": 185,
+  "accuracy_percent": 92.5,
+  "errors": 0,
+  "truncated": 0,
+  "unparsed": 0,
+  "protocol": {
+    "few_shot": 0,
+    "temperature": 0,
+    "top_p": 1,
+    "enable_thinking": true,
+    "max_tokens": 4096,
+    "workers": 32,
+    "scoring": "final '####' numeric value compared as Decimal (tolerates $, thousands separators, bold markup)",
+    "denominator": "all samples; errors / truncation / unparsed counted incorrect"
+  },
+  "publisher_baseline": "the publisher publishes no GSM8K score for this Instruct checkpoint; this number is a self-measured adaptation check, not a reproduction of a published baseline"
+}

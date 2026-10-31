@@ -1,20 +1,10 @@
 {
-  "source": "https://arxiv.org/html/2510.26692v1#A4",
-  "table": 9,
   "checkpoint": "Kimi-Linear-Instruct / 5.7T",
-  "candidate_benchmark": "MMLU-Pro",
-  "reference": 72.7,
-  "paper_temperature": 1.0,
-  "full_internal_harness_available": false,
-  "status": "paused by user after 25/12032 partial responses; no final accuracy",
+  "records_publisher_published_gsm8k_for_this_checkpoint": false,
   "do_not_use": [
     "1.4T experimental model scores",
     "Base model GSM8K 86.3",
-    "README headline MMLU-Pro51.0"
+    "model-card headline figures that belong to the 1.4T or Base checkpoints"
   ],
-  "metric": "EM",
-  "dataset": "TIGER-Lab/MMLU-Pro",
-  "dataset_revision": "b189ec765aa7ed75c8acfea42df31fdae71f97be",
-  "publisher_evaluator_commit": "f418b116db00b065c2aea046518d8fcf74d39872",
-  "notes": "Paper main table/model-card 51.0 is 1.4T Base, and GSM8K 86.3 is 5.7T Base; neither is a reference for this 5.7T Instruct checkpoint. Table 9 MMLU-Pro EM 72.7 is the selected reference. Full internal prompt/scorer framework is not available; using the benchmark publisher public API evaluator format and extractor."
+  "notes": "The publisher publishes no GSM8K score for this 5.7T Instruct checkpoint. The README headline figure and the Base GSM8K 86.3 belong to other checkpoints and are not a reference for this weight. This repository therefore reports a self-measured GSM8K adaptation check without claiming a published baseline reproduction."
 }

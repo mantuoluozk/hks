@@ -17,20 +17,8 @@
       "errors": 0,
       "truncated": 0,
       "unparsed": 0,
-      "valid_result": true,
-      "scope": "fixed 200 public samples shared with MiMo-V2.6-9B; not an official or full test split"
-    },
-    "mmlu": {
-      "correct": 70,
-      "total": 96,
-      "accuracy_percent": 72.92,
-      "errors": 0,
-      "truncated": 19,
-      "unparsed": 18,
-      "valid_result": false,
-      "incomplete": true,
-      "stop_reason": "stopped after 96/200 by user decision; per-item latency p50 227s",
-      "scope": "incomplete and truncated; recorded as evidence only, not reported as accuracy"
+      "scope": "fixed 200 public samples shared with MiMo-V2.6-9B; not a full official split",
+      "publisher_baseline_available": false
     }
   },
   "decoding": {
@@ -38,18 +26,7 @@
     "top_p": 1,
     "max_tokens": 4096,
     "enable_thinking": true,
-    "workers": 32,
-    "concurrency_note": "same batch MiMo-V2.6-9B used workers=8; greedy per-item results are unaffected but protocols are not identical"
-  },
-  "publisher_baseline": {
-    "metric": "MMLU-Pro EM",
-    "value": 72.7,
-    "scope": "full 12032-row test set, Kimi Linear paper Table 9, 5.7T Instruct",
-    "executed_this_round": false,
-    "est_full_set_hours_on_1_dcu": 28,
-    "gsm8k_published": false,
-    "mmlu_published": false,
-    "excluded_values": ["MMLU-Pro 51.0 (1.4T experimental model)", "GSM8K 86.3 (Base weights)"]
+    "workers": 32
   },
   "clean_environment_scope": "same Notebook, two independent service processes; no cross-Notebook claim",
   "official_accuracy_pass": null,

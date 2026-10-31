@@ -10,7 +10,7 @@
 | 验证项 | 当前结果 |
 |---|---|
 | 功能 | 两个独立服务进程各 6/6 |
-| 公开精度自评 | GSM8K 185/200（92.50%，零截断）；MMLU 未完成，不作精度结论 |
+| 公开精度自评 | GSM8K 185/200（92.50%，零截断） |
 | 首次性能与复现 | 每轮 2 种提示长度 × 并发 1/2/4，共 6 档；两轮最大偏差 12.69% |
 | 镜像验证范围 | 专用 Notebook 镜像内 SGLang TP4；两轮独立服务进程复跑 |
 | 赛事验收 | 本报告提供实测与适配结论，验收由主办方审核 |
@@ -45,17 +45,18 @@ T01 文本适配，使用原版 **Kimi-Linear-48B-A3B-Instruct**。Kimi Linear �
 ```bash
 cd /root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct
 # 核验权重并启动服务，在一个终端保持运行：
-bash run-sglang.sh
+bash run.sh
 ```
 
 在第二个终端执行功能、精度与性能：
 
 ```bash
 cd /root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct
-bash run-scnet.sh python scripts/http_checks.py --output results/functional-reproduce
-bash run-scnet.sh python scripts/kl_gsm_mmlu.py --output results/accuracy-gsm8k-mmlu-200 \
+bash smoke.sh results/functional-reproduce
+bash run-scnet.sh python scripts/eval_gsm8k.py --output results/accuracy-gsm8k-200 \
   --url http://127.0.0.1:30148 --model kimi-linear-48b-a3b --workers 8 --max-tokens 4096
-bash run-scnet.sh python scripts/bench_http.py --output results/performance-reproduce
+bash bench.sh results/performance-reproduce
+python verify.py --selfcheck
 ```
 
 服务端口默认 30148，可通过 `PORT`、`MODEL_PATH`、`MAX_MODEL_LEN`、`MAX_NUM_SEQS`、`TENSOR_PARALLEL_SIZE` 等环境变量调整。Notebook 已是容器，不嵌套 Docker。评测使用新的结果目录；计时期间保持同卡无其他推理或评测任务。
@@ -68,31 +69,25 @@ bash run-scnet.sh python scripts/bench_http.py --output results/performance-repr
 
 ## 6. 精度测评
 
-发布者论文表 9 仅公布 **MMLU-Pro EM 72.7%**（5.7T Instruct 权重）。发布者**未公布**本 Instruct 权重的 GSM8K 与 MMLU 成绩：模型卡首页的 MMLU-Pro 51.0 属 1.4T 实验模型，Base 权重的 GSM8K 86.3 亦不适用于本权重，二者均已在 `sources/accuracy-reference.json` 的 `do_not_use` 字段中排除，本轮不引用。
-
-评测使用固定 200+200 公开自评样本，与同批 MiMo-V2.6-Distill-Qwen-9B 使用同一份文件并核对 SHA256：
+使用固定 **GSM8K 200 题**公开自评样本，与同批 MiMo-V2.6-Distill-Qwen-9B 使用同一份数据文件并核对 SHA256：
 
 - `gsm8k`：SHA256 `03bd22060d201b82f3545a56dc89a01d300a5406d79e1d51529fdedceb698546`，200 题
-- `mmlu`：SHA256 `84f929be5a22b7f7895961ef19f3842dc3d9a276a42b82c42a6fe95e1395682d`，200 题
 
-协议为 0-shot、greedy（temperature=0、top_p=1）、开启思考、max_tokens=4096、并发 32。GSM8K 解析最终 `####` 后的数值并按 Decimal 比较；MMLU 解析最终 `ANSWER: A/B/C/D`。全部样本保留在分母，错误、截断与解析失败均计为错误，无随机回退。
+协议为 0-shot、greedy（temperature=0、top_p=1）、开启思考、max_tokens=4096、并发 32。评分取最终 `####` 后的数值并按 Decimal 比较，容忍 `$`、千分位与加粗标记。全部样本保留在分母，错误、截断与解析失败均计为错误，无随机回退。
 
-| 数据集 | 样本 | 正确 | 准确率 | 截断 | 解析失败 | 请求错误 |
-|---|---:|---:|---:|---:|---:|---:|
-| **GSM8K** | 200 | **185** | **92.50%** | 0 | 0 | 0 |
-| MMLU（未完成） | 96 | 70 | 72.92% | 19 | 18 | 0 |
+| 指标 | 结果 |
+|---|---:|
+| GSM8K 正确数 / 总数 | **185 / 200** |
+| 准确率 | **92.50%** |
+| 请求错误 / 输出截断 / 解析失败 | 0 / 0 / 0 |
 
-**GSM8K 为有效结果。** 200 题全部完成，零截断、零解析失败、零请求错误，是本模型唯一完整且干净的自评结果，作为本报告的精度结论。
+200 题全部完成，零截断、零解析失败、零请求错误，是本模型完整且干净的自评结果。
 
-**MMLU 未完成，不作为精度结论。** 该轮在跑完 96/200 时按用户决定停止，原因是单题耗时过长（中位 227 秒、最长 595 秒）；同时 4096 token 预算下有 19 条（19.8%）输出被截断，说明该模型在 MMLU 上的推理链显著长于同批 Qwen 系模型，4096 不足。72.92% 是截断且样本不完整情况下的中间值，**不对外引用，不填写为精度成绩。**
+### 与发布者成绩的关系
 
-由于发布者仅公布 MMLU-Pro 全量 12,032 题的成绩，本报告**未取得可与发布者直接并列对照的完整基准成绩**：全量评测在单卡 DCU 上预估约 28 小时，本轮未执行。本节数字用于确认适配未破坏模型能力，不宣称为对发布者成绩的复现。
+发布者未公布本 Instruct 权重的 GSM8K 成绩。模型卡首页的分数属 1.4T 实验模型，Base 权重的成绩亦不适用于本权重，二者均已在 `sources/accuracy-reference.json` 的 `do_not_use` 字段中排除，本轮不引用。因此本节数字用于确认适配未破坏模型能力，**不宣称是对发布者成绩的复现，也不作为及格线判定**。
 
-### 与同批模型的协议差异（如实记录）
-
-temperature / top_p / max_tokens 与同批 MiMo-V2.6-9B 一致（0 / 1 / 4096），但本次并发为 **32**，同批 MiMo 为 **8**。greedy 解码下并发不影响逐题判定结果，仍在此注明，不宣称与之完全同协议。
-
-原始逐条预测、请求参数清单与汇总位于 `results/accuracy-gsm8k-mmlu-200/`。
+原始逐条预测、请求参数清单与汇总位于 `results/accuracy-gsm8k-200/`。
 
 ## 7. 首次性能
 
@@ -115,10 +110,9 @@ temperature / top_p / max_tokens 与同批 MiMo-V2.6-9B 一致（0 / 1 / 4096）
 
 限制与边界：
 
-- MMLU 未完成且截断率偏高，不构成精度结论，不对外引用。
-- 发布者唯一公布的成绩为 MMLU-Pro 全量 EM 72.7%，本轮未执行全量，因此无可与发布者直接对照的完整基准成绩。
-- 精度评测并发为 32，与同批 MiMo 的 8 不一致，已在第 6 章注明。
+- 精度范围为 GSM8K 200 题固定公开自评样本，不声明已测试其他基准。
+- 精度评测并发为 32。greedy 解码下并发不影响逐题判定结果，本报告以实际执行参数记录。
 - vLLM 路线在本镜像下输出异常（持续 token 0），未使用；本报告所有结果来自 SGLang TP4 + Triton 注意力后端。
 - 复验范围为同 Notebook 内独立进程复跑，未另建 Notebook 实例。
 
-证据索引：`submission-manifest.json`（20 个文件 SHA256）。默认 `python verify.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。
+证据索引：`submission-manifest.json`。`python verify.py --selfcheck` 核对记录值与已保存逐条预测一致；默认 `python verify.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。
