@@ -1,0 +1,117 @@
+{
+  "engine": "vLLM 0.25.1+das185 + vllm-hcu plugin",
+  "protocol": {
+    "global_warmup_rounds": 2,
+    "global_warmup_seconds": 49.52,
+    "global_warmup_shapes": [
+      [
+        32,
+        1
+      ],
+      [
+        32,
+        2
+      ],
+      [
+        32,
+        4
+      ],
+      [
+        256,
+        1
+      ],
+      [
+        256,
+        2
+      ],
+      [
+        256,
+        4
+      ]
+    ],
+    "per_point_warmup": 3,
+    "timed_requests_per_point": "3*concurrency",
+    "gen_tokens": 128,
+    "cold_start_excluded": "by global warmup before the first timed request"
+  },
+  "points": [
+    {
+      "prompt_repeat": 32,
+      "concurrency": 1,
+      "requests": 3,
+      "wall_s": 11.096,
+      "output_tokens_total": 123,
+      "output_tok_per_s": 11.085,
+      "mean_latency_s": 3.698,
+      "p50_latency_s": 3.701,
+      "max_latency_s": 3.712,
+      "mean_ttft_ms": 214.21,
+      "mean_tpot_ms": 87.09
+    },
+    {
+      "prompt_repeat": 32,
+      "concurrency": 2,
+      "requests": 6,
+      "wall_s": 11.327,
+      "output_tokens_total": 246,
+      "output_tok_per_s": 21.718,
+      "mean_latency_s": 3.775,
+      "p50_latency_s": 3.691,
+      "max_latency_s": 3.963,
+      "mean_ttft_ms": 220.06,
+      "mean_tpot_ms": 88.87
+    },
+    {
+      "prompt_repeat": 32,
+      "concurrency": 4,
+      "requests": 12,
+      "wall_s": 11.399,
+      "output_tokens_total": 492,
+      "output_tok_per_s": 43.163,
+      "mean_latency_s": 3.798,
+      "p50_latency_s": 3.785,
+      "max_latency_s": 3.835,
+      "mean_ttft_ms": 221.9,
+      "mean_tpot_ms": 89.41
+    },
+    {
+      "prompt_repeat": 256,
+      "concurrency": 1,
+      "requests": 3,
+      "wall_s": 10.21,
+      "output_tokens_total": 110,
+      "output_tok_per_s": 10.774,
+      "mean_latency_s": 3.403,
+      "p50_latency_s": 3.302,
+      "max_latency_s": 3.651,
+      "mean_ttft_ms": 231.02,
+      "mean_tpot_ms": 88.87
+    },
+    {
+      "prompt_repeat": 256,
+      "concurrency": 2,
+      "requests": 6,
+      "wall_s": 10.678,
+      "output_tokens_total": 220,
+      "output_tok_per_s": 20.604,
+      "mean_latency_s": 3.499,
+      "p50_latency_s": 3.457,
+      "max_latency_s": 3.631,
+      "mean_ttft_ms": 307.24,
+      "mean_tpot_ms": 89.5
+    },
+    {
+      "prompt_repeat": 256,
+      "concurrency": 4,
+      "requests": 12,
+      "wall_s": 11.61,
+      "output_tokens_total": 455,
+      "output_tok_per_s": 39.19,
+      "mean_latency_s": 3.695,
+      "p50_latency_s": 3.712,
+      "max_latency_s": 4.411,
+      "mean_ttft_ms": 313.73,
+      "mean_tpot_ms": 91.56
+    }
+  ]
+}

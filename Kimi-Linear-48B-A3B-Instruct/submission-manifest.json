@@ -62,8 +62,8 @@
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/README.md",
-      "sha256": "8070701b5ab4e35bfdee3015bb1128e16a2cf5c947f78fadcddbcd7bfa699271",
-      "bytes": 10711
+      "sha256": "b6ac7465a7b8f4835435b5e2919b2dc36b5468b0bf297939c2387f723871f10a",
+      "bytes": 10862
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/results/accuracy-gsm8k-200/manifest.json",
@@ -121,29 +121,19 @@
       "bytes": 642
     },
     {
-      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-comparison.json",
-      "sha256": "d39c521b6946ad100e220d2575dae77f72ad411e9075c84b0d1e8fae3e435469",
-      "bytes": 10466
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance/performance-comparison.json",
+      "sha256": "8391fa05ffe1637ae443e65ce35f94bcdd715058412bc61c01a209b6807f5697",
+      "bytes": 4023
     },
     {
-      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-gate.json",
-      "sha256": "8e41bf3938d26ef2c91707447ce78f0155c6737f8069159569ccc367c3cafd34",
-      "bytes": 6693
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance/summary-roundA.json",
+      "sha256": "47127b1ddc7f9f38783b6fcf5976003f3e6a54a480d799ee1e99ea465cc2e232",
+      "bytes": 2565
     },
     {
-      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-round1/summary-round1.json",
-      "sha256": "4cf13bd6cbce2388225fcf07da08b7773e36a0b0354b73061d9c7593371dcfdf",
-      "bytes": 2339
-    },
-    {
-      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-round2/summary-round2.json",
-      "sha256": "0506e3adae8257464fa05e836ac970699e159cdce65808b5ea4c3e9d270c6915",
-      "bytes": 2335
-    },
-    {
-      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-round3/summary-round3.json",
-      "sha256": "1123aed80ace525974607fc0e9216f337f4a23f49ed287df2218274e9af91f91",
-      "bytes": 2332
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance/summary-roundB.json",
+      "sha256": "9ceec8f260e48954eee04308f9ade885d3c577d3dfdb302e7d581fc587712a33",
+      "bytes": 2566
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/run-scnet.sh",
@@ -252,13 +242,13 @@
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/verify_vllm.py",
-      "sha256": "251c3322350c73da02797b57a2d49389ebd830bcd50db55c15f6907c16ba061d",
-      "bytes": 4324
+      "sha256": "40664ad5eb64d8b414ce1ddd549b594f361920a5dbf9001c73719cec1cbd320b",
+      "bytes": 4537
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/提交填写信息-vLLM.md",
-      "sha256": "d8eb8f3eb23189c1d63ccecd99527334d559efd8b4f67d9c8faa60f89070c7a8",
-      "bytes": 3071
+      "sha256": "c43412cd22cec0e58bc40206968f2c919b427eb0c91fd46454d46e1c120a9df3",
+      "bytes": 3037
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/提交填写信息.md",

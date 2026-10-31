@@ -1,0 +1,171 @@
+{
+  "engine": "vLLM",
+  "protocol": {
+    "rounds": 2,
+    "independent_service_processes": true,
+    "global_warmup_rounds": 2,
+    "per_point_warmup": 3,
+    "cold_start_excluded_by": "global warmup覆盖矩阵全部形状后才开始计时"
+  },
+  "gate": {
+    "threshold_percent": 20.0,
+    "max_deviation_percent": 14.3,
+    "passed": true
+  },
+  "per_metric": {
+    "吞吐": {
+      "max_dev_pct": 5.43,
+      "at": "repeat=256 conc=4",
+      "passed": true
+    },
+    "延迟": {
+      "max_dev_pct": 3.21,
+      "at": "repeat=256 conc=4",
+      "passed": true
+    },
+    "TTFT": {
+      "max_dev_pct": 14.3,
+      "at": "repeat=256 conc=2",
+      "passed": true
+    },
+    "TPOT": {
+      "max_dev_pct": 2.5,
+      "at": "repeat=256 conc=4",
+      "passed": true
+    }
+  },
+  "points": [
+    {
+      "prompt_repeat": 32,
+      "concurrency": 1,
+      "roundA": {
+        "output_tok_per_s": 10.962,
+        "mean_latency_s": 3.739,
+        "mean_ttft_ms": 215.11,
+        "mean_tpot_ms": 88.11
+      },
+      "roundB": {
+        "output_tok_per_s": 11.085,
+        "mean_latency_s": 3.698,
+        "mean_ttft_ms": 214.21,
+        "mean_tpot_ms": 87.09
+      },
+      "deviation_pct": {
+        "output_tok_per_s": 1.12,
+        "mean_latency_s": 1.1,
+        "mean_ttft_ms": 0.42,
+        "mean_tpot_ms": 1.16
+      }
+    },
+    {
+      "prompt_repeat": 32,
+      "concurrency": 2,
+      "roundA": {
+        "output_tok_per_s": 21.482,
+        "mean_latency_s": 3.816,
+        "mean_ttft_ms": 228.8,
+        "mean_tpot_ms": 89.69
+      },
+      "roundB": {
+        "output_tok_per_s": 21.718,
+        "mean_latency_s": 3.775,
+        "mean_ttft_ms": 220.06,
+        "mean_tpot_ms": 88.87
+      },
+      "deviation_pct": {
+        "output_tok_per_s": 1.1,
+        "mean_latency_s": 1.07,
+        "mean_ttft_ms": 3.82,
+        "mean_tpot_ms": 0.91
+      }
+    },
+    {
+      "prompt_repeat": 32,
+      "concurrency": 4,
+      "roundA": {
+        "output_tok_per_s": 43.448,
+        "mean_latency_s": 3.774,
+        "mean_ttft_ms": 223.02,
+        "mean_tpot_ms": 88.76
+      },
+      "roundB": {
+        "output_tok_per_s": 43.163,
+        "mean_latency_s": 3.798,
+        "mean_ttft_ms": 221.9,
+        "mean_tpot_ms": 89.41
+      },
+      "deviation_pct": {
+        "output_tok_per_s": 0.66,
+        "mean_latency_s": 0.64,
+        "mean_ttft_ms": 0.5,
+        "mean_tpot_ms": 0.73
+      }
+    },
+    {
+      "prompt_repeat": 256,
+      "concurrency": 1,
+      "roundA": {
+        "output_tok_per_s": 10.755,
+        "mean_latency_s": 3.471,
+        "mean_ttft_ms": 221.13,
+        "mean_tpot_ms": 89.43
+      },
+      "roundB": {
+        "output_tok_per_s": 10.774,
+        "mean_latency_s": 3.403,
+        "mean_ttft_ms": 231.02,
+        "mean_tpot_ms": 88.87
+      },
+      "deviation_pct": {
+        "output_tok_per_s": 0.18,
+        "mean_latency_s": 1.96,
+        "mean_ttft_ms": 4.47,
+        "mean_tpot_ms": 0.63
+      }
+    },
+    {
+      "prompt_repeat": 256,
+      "concurrency": 2,
+      "roundA": {
+        "output_tok_per_s": 21.284,
+        "mean_latency_s": 3.507,
+        "mean_ttft_ms": 268.8,
+        "mean_tpot_ms": 89.13
+      },
+      "roundB": {
+        "output_tok_per_s": 20.604,
+        "mean_latency_s": 3.499,
+        "mean_ttft_ms": 307.24,
+        "mean_tpot_ms": 89.5
+      },
+      "deviation_pct": {
+        "output_tok_per_s": 3.19,
+        "mean_latency_s": 0.23,
+        "mean_ttft_ms": 14.3,
+        "mean_tpot_ms": 0.42
+      }
+    },
+    {
+      "prompt_repeat": 256,
+      "concurrency": 4,
+      "roundA": {
+        "output_tok_per_s": 41.44,
+        "mean_latency_s": 3.58,
+        "mean_ttft_ms": 319.54,
+        "mean_tpot_ms": 89.33
+      },
+      "roundB": {
+        "output_tok_per_s": 39.19,
+        "mean_latency_s": 3.695,
+        "mean_ttft_ms": 313.73,
+        "mean_tpot_ms": 91.56
+      },
+      "deviation_pct": {
+        "output_tok_per_s": 5.43,
+        "mean_latency_s": 3.21,
+        "mean_ttft_ms": 1.82,
+        "mean_tpot_ms": 2.5
+      }
+    }
+  ]
+}

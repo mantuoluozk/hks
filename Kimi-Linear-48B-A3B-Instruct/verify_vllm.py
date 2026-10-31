@@ -30,11 +30,11 @@ def recompute_gsm8k():
 
 
 def recompute_gate():
-    def load(n):
-        p = VBASE / f"performance-round{n}" / f"summary-round{n}.json"
+    def load(tag):
+        p = VBASE / "performance" / f"summary-{tag}.json"
         return {(x["prompt_repeat"], x["concurrency"]): x
-                for x in json.loads(p.read_text())["points"]}
-    r2, r3 = load(2), load(3)
+                for x in json.loads(p.read_text(encoding="utf-8"))["points"]}
+    r2, r3 = load("roundA"), load("roundB")
     primary = ["output_tok_per_s", "mean_latency_s", "mean_tpot_ms"]
     aux = ["mean_ttft_ms"]
     def mx(metrics):
@@ -49,8 +49,10 @@ def recompute_gate():
         return round(worst, 2), where
     p, pw = mx(primary)
     a, aw = mx(aux)
-    return {"primary_max_dev_pct": p, "primary_at": pw, "primary_pass": p <= 20.0,
-            "ttft_max_dev_pct": a, "ttft_at": aw, "ttft_pass": a <= 20.0}
+    overall = max(p, a)
+    return {"throughput_latency_tpot_max_dev_pct": p, "at": pw,
+            "ttft_max_dev_pct": a, "ttft_at": aw,
+            "overall_max_dev_pct": round(overall, 2), "passed": overall <= 20.0}
 
 
 def main():
@@ -59,10 +61,11 @@ def main():
         gate = recompute_gate()
         print(f'vLLM GSM8K: {g["correct"]}/{g["responses"]} = {g["accuracy_percent"]}% '
               f'(errors={g["errors"]} truncated={g["truncated"]} unparsed={g["unparsed"]})')
-        print(f'performance primary max dev: {gate["primary_max_dev_pct"]}% ({gate["primary_at"]}) '
-              f'-> {"PASS" if gate["primary_pass"] else "FAIL"}')
-        print(f'performance TTFT max dev: {gate["ttft_max_dev_pct"]}% ({gate["ttft_at"]}) '
-              f'-> {"PASS" if gate["ttft_pass"] else "disclosed above 20%"}')
+        print(f'performance throughput/latency/TPOT max dev: '
+              f'{gate["throughput_latency_tpot_max_dev_pct"]}% ({gate["at"]})')
+        print(f'performance TTFT max dev: {gate["ttft_max_dev_pct"]}% ({gate["ttft_at"]})')
+        print(f'performance overall max dev: {gate["overall_max_dev_pct"]}% '
+              f'-> {"PASS" if gate["passed"] else "FAIL"}')
 
         ok = True
         if g["correct"] != 183 or g["responses"] != 200:
@@ -71,8 +74,8 @@ def main():
         if g["errors"] or g["truncated"] or g["unparsed"]:
             print("!! non-zero errors/truncation/unparsed")
             ok = False
-        if not gate["primary_pass"]:
-            print("!! primary performance gate failed")
+        if not gate["passed"]:
+            print("!! performance gate failed")
             ok = False
 
         sg_pred = SG / "predictions-gsm8k.jsonl"
