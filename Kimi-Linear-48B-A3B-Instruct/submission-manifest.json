@@ -1,15 +1,39 @@
 {
   "model": "Kimi-Linear-48B-A3B-Instruct",
-  "sourcefind_code_base": "dc0b0f0",
-  "reported_accuracy": {
-    "dataset": "GSM8K",
-    "correct": 185,
-    "total": 200,
-    "accuracy_percent": 92.5,
-    "note": "complete run, zero truncation / zero unparsed / zero request errors",
-    "publisher_baseline_available": false
+  "versions": {
+    "SGLang": {
+      "report": "Kimi-Linear-48B-A3B-Instruct/README-SGLang.md",
+      "submit_info": "Kimi-Linear-48B-A3B-Instruct/提交填写信息.md",
+      "backend": "SGLang TP4 + triton attention backend",
+      "gsm8k": {
+        "correct": 185,
+        "total": 200,
+        "accuracy_percent": 92.5
+      },
+      "extra_dependency": "none (no site-packages edits)"
+    },
+    "vLLM": {
+      "report": "Kimi-Linear-48B-A3B-Instruct/README.md",
+      "submit_info": "Kimi-Linear-48B-A3B-Instruct/提交填写信息-vLLM.md",
+      "backend": "vLLM 0.25.1+das185 + vllm-hcu 0.25.1+dtk2604 (TP4)",
+      "gsm8k": {
+        "correct": 183,
+        "total": 200,
+        "accuracy_percent": 91.5
+      },
+      "runtime_fix": {
+        "script": "Kimi-Linear-48B-A3B-Instruct/runtime/apply_vllm_kda_fix.py",
+        "edits": "3 installed files, 5 statements",
+        "idempotent": true,
+        "image_ships_fix": false
+      },
+      "performance": {
+        "primary_max_deviation_percent": 11.65,
+        "ttft_max_deviation_percent": 37.21,
+        "gate": "primary metrics pass 20%; TTFT single point disclosed"
+      }
+    }
   },
-  "score_scope": "GSM8K 200 fixed public samples shared with MiMo-V2.6-9B; not a full official split",
   "files": [
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/.gitattributes",
@@ -32,9 +56,14 @@
       "bytes": 668
     },
     {
-      "path": "Kimi-Linear-48B-A3B-Instruct/README.md",
+      "path": "Kimi-Linear-48B-A3B-Instruct/README-SGLang.md",
       "sha256": "8b0c80400a4d54267ce49bfaffe1a4352921d39ca46a1651db0447517e5082ba",
       "bytes": 7336
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/README.md",
+      "sha256": "8070701b5ab4e35bfdee3015bb1128e16a2cf5c947f78fadcddbcd7bfa699271",
+      "bytes": 10711
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/results/accuracy-gsm8k-200/manifest.json",
@@ -52,6 +81,71 @@
       "bytes": 821
     },
     {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/sglang-baseline/accuracy-gsm8k-summary-rescored.json",
+      "sha256": "4c8932ad05b2b3e396eb4364fe65477aeb5598af9515ecc4dfbf5914c113896c",
+      "bytes": 499
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/sglang-baseline/perf-round1.json",
+      "sha256": "fbdd104ca84b231e487d1d1f1884af3ca7104eb94c56660daf7cd4001b50d484",
+      "bytes": 7881
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/sglang-baseline/perf-round2.json",
+      "sha256": "72e1cdf94365ea8782dd34104ff8f7d722e96f8be632ba9220f58dc8c1b4bb56",
+      "bytes": 7883
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/sglang-baseline/performance-summary.json",
+      "sha256": "418a1a1b39325cec453b46f3343ab1f283f74ca16ccad447a7b85d13ebd2b081",
+      "bytes": 1508
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/accuracy-gsm8k-200/manifest.json",
+      "sha256": "7b453728d468c87058e3b138644a157a4b2b946362b7cbdb419d77e4449b5640",
+      "bytes": 641
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/accuracy-gsm8k-200/predictions.jsonl",
+      "sha256": "253b54e132b2ace265bc5f6c9329404c9b7bd31804989bccaa314245d5b3ca16",
+      "bytes": 225571
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/accuracy-gsm8k-200/summary.json",
+      "sha256": "8eeda9b3af066994591dbee7c3df9ec67fab2d4dea9dc175c9685f6e3ad628e0",
+      "bytes": 648
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/environment.json",
+      "sha256": "d21e2ea3b3105c287c2a8264d663c589228458954a0f2ab128d8dc42e243987d",
+      "bytes": 642
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-comparison.json",
+      "sha256": "d39c521b6946ad100e220d2575dae77f72ad411e9075c84b0d1e8fae3e435469",
+      "bytes": 10466
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-gate.json",
+      "sha256": "8e41bf3938d26ef2c91707447ce78f0155c6737f8069159569ccc367c3cafd34",
+      "bytes": 6693
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-round1/summary-round1.json",
+      "sha256": "4cf13bd6cbce2388225fcf07da08b7773e36a0b0354b73061d9c7593371dcfdf",
+      "bytes": 2339
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-round2/summary-round2.json",
+      "sha256": "0506e3adae8257464fa05e836ac970699e159cdce65808b5ea4c3e9d270c6915",
+      "bytes": 2335
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/results/vllm-tp4/performance-round3/summary-round3.json",
+      "sha256": "1123aed80ace525974607fc0e9216f337f4a23f49ed287df2218274e9af91f91",
+      "bytes": 2332
+    },
+    {
       "path": "Kimi-Linear-48B-A3B-Instruct/run-scnet.sh",
       "sha256": "26b6af53d4b4ec7babf5cfb99d3dac41a9fe3dfa91987098344587819db3ef42",
       "bytes": 977
@@ -67,9 +161,34 @@
       "bytes": 558
     },
     {
+      "path": "Kimi-Linear-48B-A3B-Instruct/runtime/apply_vllm_kda_fix.py",
+      "sha256": "535d2b9f86b98c4c3280d6343f781b220538f4462dacd98d79c566be8107784a",
+      "bytes": 3228
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/runtime/env.sh",
+      "sha256": "58136adeb7e976d862854cb6aa3eafb91794033e3e088186a1f91fefb3d7eeee",
+      "bytes": 668
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/runtime/run-scnet.sh",
+      "sha256": "26b6af53d4b4ec7babf5cfb99d3dac41a9fe3dfa91987098344587819db3ef42",
+      "bytes": 977
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/runtime/run-vllm.sh",
+      "sha256": "3fe2a25e2057a4862f82e2a74eb6ccecbe7f997612048b8fe624c2758aa5e067",
+      "bytes": 1324
+    },
+    {
       "path": "Kimi-Linear-48B-A3B-Instruct/scripts/bench_http.py",
       "sha256": "1889690c438e0d2a0d26f817fccf5b9ffa29c6ea2dd425b0441339a53bd016e0",
       "bytes": 2172
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/scripts/bench_vllm.py",
+      "sha256": "e871e31d9781e7b598213e377468f6fed7cf5eca3e1ae3b8ae005a3687914b08",
+      "bytes": 5026
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/scripts/check_weights.py",
@@ -82,6 +201,11 @@
       "bytes": 6913
     },
     {
+      "path": "Kimi-Linear-48B-A3B-Instruct/scripts/eval_gsm8k_vllm.py",
+      "sha256": "5f144dce73545bec7e9ed15e8f390cfcc7206914084a42ed4aa5adf5a390ae94",
+      "bytes": 5886
+    },
+    {
       "path": "Kimi-Linear-48B-A3B-Instruct/scripts/http_checks.py",
       "sha256": "e1a3a89862f83ab76cceb25534e8593943f4a3715d9f8e3cd262b015f2bf85a5",
       "bytes": 3590
@@ -90,6 +214,11 @@
       "path": "Kimi-Linear-48B-A3B-Instruct/scripts/run_validation.py",
       "sha256": "0b1d5f10289827fa0575d6565d5e7f9b4acf784f68d810f27cc57669b6b15cba",
       "bytes": 4986
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/scripts/vllm_smoke.py",
+      "sha256": "98bbd98782d8527f118b5a44699491eac08a4573bd9ee32bee18395a8feda8f6",
+      "bytes": 3243
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/smoke.sh",
@@ -120,6 +249,16 @@
       "path": "Kimi-Linear-48B-A3B-Instruct/verify_result.json",
       "sha256": "14c662b358f19a6865046c6b15edcec852ce4818790e3448e56c5b5824c239ad",
       "bytes": 1179
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/verify_vllm.py",
+      "sha256": "251c3322350c73da02797b57a2d49389ebd830bcd50db55c15f6907c16ba061d",
+      "bytes": 4324
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct/提交填写信息-vLLM.md",
+      "sha256": "d8eb8f3eb23189c1d63ccecd99527334d559efd8b4f67d9c8faa60f89070c7a8",
+      "bytes": 3071
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct/提交填写信息.md",

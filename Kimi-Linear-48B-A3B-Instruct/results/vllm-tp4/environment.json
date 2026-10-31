@@ -1,0 +1,17 @@
+{
+  "model": "Kimi-Linear-48B-A3B-Instruct",
+  "model_path": "/root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct/weights",
+  "python": "3.10.12",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "vllm-hcu": "0.25.1+dtk2604.torch2110.2609272150.gee325d",
+    "transformers": "5.12.1",
+    "boltops": "0.1.0+dtk2604.torch2110.2609241556.ga133e6",
+    "openai": "2.6.1"
+  },
+  "tp_size": 4,
+  "dtype": "bfloat16",
+  "max_model_len": 8192,
+  "runtime_fix": "apply_vllm_kda_fix.py (5 edits: conv contiguous, safe_gate, exp clamp x2, poly_solve off)"
+}

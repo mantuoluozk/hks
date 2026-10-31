@@ -1,0 +1,112 @@
+{
+  "engine": "vLLM 0.25.1+das185 + vllm-hcu plugin",
+  "concurrency_matrix": [
+    [
+      32,
+      1
+    ],
+    [
+      32,
+      2
+    ],
+    [
+      32,
+      4
+    ],
+    [
+      256,
+      1
+    ],
+    [
+      256,
+      2
+    ],
+    [
+      256,
+      4
+    ]
+  ],
+  "gen_tokens": 128,
+  "warmup_per_point": 3,
+  "timed_per_point": "3*concurrency",
+  "points": [
+    {
+      "prompt_repeat": 32,
+      "concurrency": 1,
+      "requests": 3,
+      "wall_s": 11.333,
+      "output_tokens_total": 123,
+      "output_tok_per_s": 10.853,
+      "mean_latency_s": 3.777,
+      "p50_latency_s": 3.741,
+      "max_latency_s": 3.874,
+      "mean_ttft_ms": 215.27,
+      "mean_tpot_ms": 89.03
+    },
+    {
+      "prompt_repeat": 32,
+      "concurrency": 2,
+      "requests": 6,
+      "wall_s": 12.314,
+      "output_tokens_total": 246,
+      "output_tok_per_s": 19.977,
+      "mean_latency_s": 4.104,
+      "p50_latency_s": 3.748,
+      "max_latency_s": 4.817,
+      "mean_ttft_ms": 578.25,
+      "mean_tpot_ms": 88.14
+    },
+    {
+      "prompt_repeat": 32,
+      "concurrency": 4,
+      "requests": 12,
+      "wall_s": 14.989,
+      "output_tokens_total": 506,
+      "output_tok_per_s": 33.757,
+      "mean_latency_s": 4.687,
+      "p50_latency_s": 4.816,
+      "max_latency_s": 7.142,
+      "mean_ttft_ms": 873.65,
+      "mean_tpot_ms": 92.14
+    },
+    {
+      "prompt_repeat": 256,
+      "concurrency": 1,
+      "requests": 3,
+      "wall_s": 10.368,
+      "output_tokens_total": 112,
+      "output_tok_per_s": 10.802,
+      "mean_latency_s": 3.456,
+      "p50_latency_s": 3.504,
+      "max_latency_s": 3.529,
+      "mean_ttft_ms": 219.75,
+      "mean_tpot_ms": 89.06
+    },
+    {
+      "prompt_repeat": 256,
+      "concurrency": 2,
+      "requests": 6,
+      "wall_s": 11.571,
+      "output_tokens_total": 226,
+      "output_tok_per_s": 19.532,
+      "mean_latency_s": 3.827,
+      "p50_latency_s": 3.567,
+      "max_latency_s": 4.515,
+      "mean_ttft_ms": 564.89,
+      "mean_tpot_ms": 88.99
+    },
+    {
+      "prompt_repeat": 256,
+      "concurrency": 4,
+      "requests": 12,
+      "wall_s": 19.151,
+      "output_tokens_total": 448,
+      "output_tok_per_s": 23.393,
+      "mean_latency_s": 6.331,
+      "p50_latency_s": 6.169,
+      "max_latency_s": 8.204,
+      "mean_ttft_ms": 1880.97,
+      "mean_tpot_ms": 122.31
+    }
+  ]
+}

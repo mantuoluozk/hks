@@ -1,0 +1,168 @@
+{
+  "checks": [
+    {
+      "request": {
+        "model": "kimi-linear-48b-a3b",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with the word READY only."
+          }
+        ],
+        "temperature": 0,
+        "seed": 42,
+        "max_tokens": 256
+      },
+      "status": 200,
+      "raw": "{\"id\":\"072965c3ea564d5a8deb9a989a96d9bc\",\"object\":\"chat.completion\",\"created\":1793374487,\"model\":\"kimi-linear-48b-a3b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"READY\",\"reasoning_content\":null,\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":163586}],\"usage\":{\"prompt_tokens\":14,\"total_tokens\":16,\"completion_tokens\":2,\"prompt_tokens_details\":null,\"reasoning_tokens\":0},\"metadata\":{\"weight_version\":\"default\"}}",
+      "seconds": 0.9637883696705103,
+      "name": "english",
+      "passed": true
+    },
+    {
+      "request": {
+        "model": "kimi-linear-48b-a3b",
+        "messages": [
+          {
+            "role": "user",
+            "content": "计算2+3，只输出阿拉伯数字。"
+          }
+        ],
+        "temperature": 0,
+        "seed": 42,
+        "max_tokens": 256
+      },
+      "status": 200,
+      "raw": "{\"id\":\"5110048d2b8c484cad7e041a50bb7e88\",\"object\":\"chat.completion\",\"created\":1793374487,\"model\":\"kimi-linear-48b-a3b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"5\",\"reasoning_content\":null,\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":163586}],\"usage\":{\"prompt_tokens\":17,\"total_tokens\":19,\"completion_tokens\":2,\"prompt_tokens_details\":null,\"reasoning_tokens\":0},\"metadata\":{\"weight_version\":\"default\"}}",
+      "seconds": 0.34555753879249096,
+      "name": "chinese",
+      "passed": true
+    },
+    {
+      "request": {
+        "model": "kimi-linear-48b-a3b",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Remember this code: 9381."
+          },
+          {
+            "role": "assistant",
+            "content": "I will remember the code."
+          },
+          {
+            "role": "user",
+            "content": "What is the code? Reply with the code only."
+          }
+        ],
+        "temperature": 0,
+        "seed": 42,
+        "max_tokens": 256
+      },
+      "status": 200,
+      "raw": "{\"id\":\"5782a070f7454a1c9ed11cdb4392360d\",\"object\":\"chat.completion\",\"created\":1793374488,\"model\":\"kimi-linear-48b-a3b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"9381\",\"reasoning_content\":null,\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":163586}],\"usage\":{\"prompt_tokens\":40,\"total_tokens\":43,\"completion_tokens\":3,\"prompt_tokens_details\":null,\"reasoning_tokens\":0},\"metadata\":{\"weight_version\":\"default\"}}",
+      "seconds": 0.6926278881728649,
+      "name": "multi_turn",
+      "passed": true
+    },
+    {
+      "request": {
+        "model": "kimi-linear-48b-a3b",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with READY only."
+          }
+        ],
+        "temperature": 0,
+        "seed": 42,
+        "max_tokens": 256,
+        "stream": true
+      },
+      "status": 200,
+      "raw": "data: {\"id\":\"2268bb459fea4a7cb4b08b48ede8f338\",\"object\":\"chat.completion.chunk\",\"created\":1793374488,\"model\":\"kimi-linear-48b-a3b\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"role\":\"assistant\",\"content\":\"\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}\n\ndata: {\"id\":\"2268bb459fea4a7cb4b08b48ede8f338\",\"object\":\"chat.completion.chunk\",\"created\":1793374488,\"model\":\"kimi-linear-48b-a3b\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"READY\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}\n\ndata: {\"id\":\"2268bb459fea4a7cb4b08b48ede8f338\",\"object\":\"chat.completion.chunk\",\"created\":1793374489,\"model\":\"kimi-linear-48b-a3b\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":163586}]}\n\ndata: [DONE]\n\n",
+      "seconds": 0.5416902080178261,
+      "name": "stream",
+      "passed": true
+    },
+    {
+      "request": {
+        "model": "kimi-linear-48b-a3b",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Hello"
+          }
+        ],
+        "temperature": 0,
+        "seed": 42,
+        "max_tokens": -1
+      },
+      "status": 400,
+      "raw": "{\"object\":\"error\",\"message\":\"max_new_tokens must be at least 0, got -1.\",\"type\":\"BadRequestError\",\"param\":null,\"code\":400}",
+      "seconds": 0.002294511068612337,
+      "name": "invalid_parameter",
+      "passed": true
+    },
+    {
+      "name": "serial_vs_concurrent",
+      "serial": {
+        "request": {
+          "model": "kimi-linear-48b-a3b",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Reply with exactly: BLUE"
+            }
+          ],
+          "temperature": 0,
+          "seed": 42,
+          "max_tokens": 256
+        },
+        "status": 200,
+        "raw": "{\"id\":\"128434244e9c4a91b0abd29cb155fbaa\",\"object\":\"chat.completion\",\"created\":1793374489,\"model\":\"kimi-linear-48b-a3b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"BLUE\",\"reasoning_content\":null,\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":163586}],\"usage\":{\"prompt_tokens\":12,\"total_tokens\":14,\"completion_tokens\":2,\"prompt_tokens_details\":null,\"reasoning_tokens\":0},\"metadata\":{\"weight_version\":\"default\"}}",
+        "seconds": 0.28008143696933985
+      },
+      "parallel": [
+        {
+          "request": {
+            "model": "kimi-linear-48b-a3b",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with exactly: BLUE"
+              }
+            ],
+            "temperature": 0,
+            "seed": 42,
+            "max_tokens": 256
+          },
+          "status": 200,
+          "raw": "{\"id\":\"3bc6d60320c5490e85c646bd5762b3bd\",\"object\":\"chat.completion\",\"created\":1793374490,\"model\":\"kimi-linear-48b-a3b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"BLUE\",\"reasoning_content\":null,\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":163586}],\"usage\":{\"prompt_tokens\":12,\"total_tokens\":14,\"completion_tokens\":2,\"prompt_tokens_details\":null,\"reasoning_tokens\":0},\"metadata\":{\"weight_version\":\"default\"}}",
+          "seconds": 0.656985139939934
+        },
+        {
+          "request": {
+            "model": "kimi-linear-48b-a3b",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Reply with exactly: BLUE"
+              }
+            ],
+            "temperature": 0,
+            "seed": 42,
+            "max_tokens": 256
+          },
+          "status": 200,
+          "raw": "{\"id\":\"e6c8feb07bbc4fe3a8dfb4158cffa62e\",\"object\":\"chat.completion\",\"created\":1793374490,\"model\":\"kimi-linear-48b-a3b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"BLUE\",\"reasoning_content\":null,\"tool_calls\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":163586}],\"usage\":{\"prompt_tokens\":12,\"total_tokens\":14,\"completion_tokens\":2,\"prompt_tokens_details\":null,\"reasoning_tokens\":0},\"metadata\":{\"weight_version\":\"default\"}}",
+          "seconds": 0.656388423871249
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "total": 6,
+  "successes": 6
+}

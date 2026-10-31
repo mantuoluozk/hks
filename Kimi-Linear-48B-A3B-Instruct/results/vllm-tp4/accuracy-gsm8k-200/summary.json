@@ -1,0 +1,23 @@
+{
+  "benchmark": "GSM8K",
+  "engine": "vLLM 0.25.1+das185 + vllm-hcu plugin",
+  "dataset_sha256": "03bd22060d201b82f3545a56dc89a01d300a5406d79e1d51529fdedceb698546",
+  "responses": 200,
+  "correct": 183,
+  "accuracy_percent": 91.5,
+  "errors": 0,
+  "truncated": 0,
+  "unparsed": 0,
+  "degenerate_exclamation": 0,
+  "protocol": {
+    "engine": "vLLM 0.25.1+das185 + vllm-hcu plugin",
+    "few_shot": 0,
+    "temperature": 0,
+    "top_p": 1,
+    "enable_thinking": true,
+    "max_tokens": 4096,
+    "workers": 8,
+    "scoring": "final '####' numeric, Decimal compare",
+    "denominator": "all 200; errors/truncation/unparsed counted incorrect"
+  }
+}

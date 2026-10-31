@@ -1,0 +1,21 @@
+{
+  "model": "kimi-linear-48b-a3b",
+  "endpoint": "http://127.0.0.1:30149",
+  "benchmark": "GSM8K",
+  "dataset": {
+    "path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B/data/gsm8k.jsonl",
+    "sha256": "03bd22060d201b82f3545a56dc89a01d300a5406d79e1d51529fdedceb698546",
+    "count": 200
+  },
+  "protocol": {
+    "engine": "vLLM 0.25.1+das185 + vllm-hcu plugin",
+    "few_shot": 0,
+    "temperature": 0,
+    "top_p": 1,
+    "enable_thinking": true,
+    "max_tokens": 4096,
+    "workers": 8,
+    "scoring": "final '####' numeric, Decimal compare",
+    "denominator": "all 200; errors/truncation/unparsed counted incorrect"
+  }
+}

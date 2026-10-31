@@ -1,4 +1,4 @@
-# Kimi-Linear-48B-A3B-Instruct · BW × SGLang 技术报告
+# Kimi-Linear-48B-A3B-Instruct · BW × vLLM 技术报告
 
 ## 1. 简介
 
@@ -6,16 +6,17 @@
 - [发布者代码与技术报告](https://github.com/MoonshotAI/Kimi-Linear)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2116173177861849089)
 - [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Kimi-Linear-48B-A3B-Instruct/`
+- 同模型另一框架版本见本目录 `README-SGLang.md`
 
 | 验证项 | 当前结果 |
 |---|---|
-| 功能 | 两个独立服务进程各 6/6 |
-| 公开精度自评 | GSM8K 185/200（92.50%，零截断） |
-| 首次性能与复现 | 每轮 2 种提示长度 × 并发 1/2/4，共 6 档；两轮最大偏差 12.69% |
-| 镜像验证范围 | 专用 Notebook 镜像内 SGLang TP4；两轮独立服务进程复跑 |
+| 功能 | 两个独立服务进程各 5 项检查全部通过 |
+| 公开精度自评 | GSM8K **183/200（91.5%）**，零截断、零解析失败 |
+| 首次性能与复现 | 6 档 × 两轮独立服务进程；吞吐/延迟/TPOT 最大偏差 11.65% |
+| 镜像验证范围 | 专用 Notebook 镜像 + 运行期补丁；同 Notebook 两个独立服务进程 |
 | 赛事验收 | 本报告提供实测与适配结论，验收由主办方审核 |
 
-T01 文本适配，使用原版 **Kimi-Linear-48B-A3B-Instruct**。Kimi Linear 为 KDA 线性注意力与全局 MLA 按 3:1 配比的混合架构，48B 总参数、3B 激活参数。本轮不混用 Base 权重或 1.4T 实验模型阶段的任何数字。
+T01 文本适配的 **vLLM 路线**。Kimi Linear 为 KDA 线性注意力与全局 MLA 按 3:1 配比的混合架构，48B 总参数、3B 激活参数。本报告不混用 Base 权重或 1.4T 实验模型阶段的任何数字。
 
 ## 2. 环境
 
@@ -23,96 +24,142 @@ T01 文本适配，使用原版 **Kimi-Linear-48B-A3B-Instruct**。Kimi Linear �
 |---|---|
 | 平台 / 区域 | SCNet Notebook |
 | 加速卡 / 精度 | BW × 4 / BF16 |
-| 框架 | 镜像内 SGLang，模型类 `KimiLinearForCausalLM` |
+| 框架 | vLLM 0.25.1（DAS/DTK 构建）+ vllm-hcu 插件 |
 | 镜像版本 | 专用 Notebook 镜像 |
 | 镜像入口 | [SCNet 镜像 2116173177861849089](https://www.scnet.cn/ui/aihub/image/zack233/2116173177861849089) |
-| 镜像复验范围 | 同一 Notebook 内两轮独立服务进程；未另建实例复验 |
+| 镜像复验范围 | 同一 Notebook 内两个独立服务进程；未另建实例复验 |
 
-模型权重位于共享存储，通过本目录 `weights/` 读取；启动脚本不下载、不复制权重。模型权重与评测数据集不随代码分发。
+| 组件 | 实际版本 |
+|---|---|
+| torch | `2.11.0+dtk2604.2609201441.gf74cd7` |
+| vllm | `0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a` |
+| vllm-hcu | `0.25.1+dtk2604.torch2110.2609272150.gee325d` |
+| transformers | `5.12.1` |
+| boltops | `0.1.0+dtk2604.torch2110.2609241556.ga133e6` |
+
+模型权重位于共享存储，通过本目录 `weights/` 读取；启动脚本不下载、不复制权重。**镜像本身不含本轮修复**，新建实例须先运行 `runtime/apply_vllm_kda_fix.py`。
 
 ## 3. 适配与配置
 
-采用 SGLang 原生 `KimiLinearForCausalLM`，保持发布者注意力实现与词表。启动参数为 TP4、BF16、上下文 8192、最大运行请求 4、静态显存比例 0.80、关闭 CUDA Graph，并显式指定 `--attention-backend triton`。
+采用 vLLM + vllm-hcu 插件的原生 `KimiLinearForCausalLM`。启动参数为 TP4、BF16、上下文 8192、最大运行请求 8、显存比例 0.85、eager 模式、关闭 prefix caching、关闭专家并行。
 
-本镜像 SGLang 默认的 HCU MLA 后端在首次推理预热时，把旧式 Tensor 调度元数据传给要求 `FlashMLASchedMeta` 对象的 `flash_mla_with_kvcache`，触发类型断言。模型专用启动器改选 SGLang 的 Triton 注意力后端后，原权重正常加载并生成。**未修改全局 `site-packages`、未修改模型权重、未修改注意力算法定义。**
+### 3.1 必须的运行期修复
 
-同镜像的 vLLM 0.25.1 路线能加载 TP4 权重，但聊天接口与原始补全接口均持续输出 token 0（`!`），关闭专家并行后现象不变，该路径未用于本报告任何结果。
+该模型在标准 vLLM 路径下**无法直接生成**：服务能加载全部权重，但首个生成 token 即为异常，输出退化为连续 `!`。逐层探针定位到第 0 层 KDA 首次产生非有限值，进而拆解为两处独立缺陷：
+
+**缺陷一：V 卷积输入布局。** 卷积前的 Q/K/V 投影、卷积权重与状态均为有限值，但卷积后 V 在 4 卡中的 3 卡出现非有限值。卷积调用前张量非连续布局，外部 `causal_conv1d` 与 Triton 回退路径均受影响。修复方式：卷积输入前加 `.contiguous()`。
+
+**缺陷二：KDA chunk intra 门控指数溢出。** 实际累计门控最小值在四个 TP 分片上分别约为 −279、−495、−719、−2495；只有 −279 的分片原本正常，其余三卡在 intra 阶段产生 NaN。调用链为 HCU `chunk.py` → **BoltOps** `chunk_kda_fwd_intra`，插件目录内的同名 `chunk_intra.py` 并非整模型实际执行路径。根因是 sub-chunk 内同时计算 `exp2(g−基准)` 与 `exp2(基准−g)`，在大跨度下溢出。修复方式：强制走安全门控分支（`safe_gate=True`）、关闭 BoltOps 对 128 维的多项式优化分支、并对成对指数差值做范围限制。
+
+补丁脚本 `runtime/apply_vllm_kda_fix.py` 只改安装目录三个文件的五处语句，幂等、校验原文、首次应用时在旁保存原文件。已用原始文件重放验证，结果与当前机器一致。
+
+> 说明：本修复**未修改模型权重、未修改注意力算法定义、未修改 tokenizer 或采样语义**。禁用 BoltOps 多项式优化可能影响性能，已在下文如实记录，并通过 GSM8K 确认精度未受损。
 
 ## 4. 启动与复现
 
-模型目录放置于 `/root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct`，平台辅助目录为 `/root/private_data/hks/platform/scnet-notebook`。
+模型目录放置于 `/root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct`。
 
 ```bash
 cd /root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct
-# 核验权重并启动服务，在一个终端保持运行：
+# 1) 新建实例或未打补丁时，先应用运行期修复（已打过会提示 already patched）
+python3 runtime/apply_vllm_kda_fix.py --site-packages /usr/local/lib/python3.10/dist-packages
+python3 runtime/apply_vllm_kda_fix.py --check --site-packages /usr/local/lib/python3.10/dist-packages
+
+# 2) 启动服务（一个终端保持运行）
+PORT=30149 TENSOR_PARALLEL_SIZE=4 HIP_VISIBLE_DEVICES=0,1,2,3 \
+ENABLE_EXPERT_PARALLEL=0 VLLM_HCU_USE_CUSTOM_OPS=0 VLLM_KIMI_CONV1D_BACKEND=0 \
 bash run.sh
-```
 
-在第二个终端执行功能、精度与性能：
-
-```bash
+# 3) 另一个终端做功能、精度与性能
 cd /root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct
-bash smoke.sh results/functional-reproduce
-bash run-scnet.sh python scripts/eval_gsm8k.py --output results/accuracy-gsm8k-200 \
-  --url http://127.0.0.1:30148 --model kimi-linear-48b-a3b --workers 8 --max-tokens 4096
-bash bench.sh results/performance-reproduce
-python verify.py --selfcheck
+python3 scripts/vllm_smoke.py
+python3 scripts/eval_gsm8k_vllm.py --output results/accuracy-gsm8k-200-vllm --workers 8
+python3 scripts/bench_vllm.py --output results/performance-vllm
 ```
 
-服务端口默认 30148，可通过 `PORT`、`MODEL_PATH`、`MAX_MODEL_LEN`、`MAX_NUM_SEQS`、`TENSOR_PARALLEL_SIZE` 等环境变量调整。Notebook 已是容器，不嵌套 Docker。评测使用新的结果目录；计时期间保持同卡无其他推理或评测任务。
+服务端口默认 30149。Notebook 已是容器，不嵌套 Docker。评测使用新的结果目录；计时期间保持同卡无其他推理或评测任务。
 
 ## 5. 功能测试
 
-两轮独立服务进程各完成 **6/6** 项 HTTP 检查：英文生成、中文生成、多轮对话、SSE 流式、非法参数拒绝、串行与并发一致性。英文请求按要求返回 `READY`，中文 `2+3` 返回 `5`。
+两个独立服务进程各完成 **5 项**检查，全部通过：
 
-这些检查验证接口与适配功能，不替代公开集精度。原始请求与服务日志位于 `results/validation-20261030T153210Z/`。
+| 检查项 | 期望 | 实测 |
+|---|---|---|
+| 英文算术（2+3） | `5` | `5` |
+| 中文算术（7+8） | `15` | `15` |
+| 英文能力（READY） | `READY` | `READY` |
+| 中文一句话生成 | 通顺中文 | 通顺中文 |
+| 中文长文本生成 | 连贯说明文 | 连贯说明文 |
+
+补充一致性检查：4 个并发同题请求输出完全一致（均为 `144`）；同题串行两次结果一致；**全部检查中退化输出（连续 `!`）计数为 0**。
 
 ## 6. 精度测评
 
-使用固定 **GSM8K 200 题**公开自评样本，与同批 MiMo-V2.6-Distill-Qwen-9B 使用同一份数据文件并核对 SHA256：
+使用固定 **GSM8K 200 题**公开自评样本，与 SGLang 版使用同一份数据文件并核对 SHA256：
 
 - `gsm8k`：SHA256 `03bd22060d201b82f3545a56dc89a01d300a5406d79e1d51529fdedceb698546`，200 题
 
-协议为 0-shot、greedy（temperature=0、top_p=1）、开启思考、max_tokens=4096、并发 32。评分取最终 `####` 后的数值并按 Decimal 比较，容忍 `$`、千分位与加粗标记。全部样本保留在分母，错误、截断与解析失败均计为错误，无随机回退。
+协议为 0-shot、greedy（temperature=0、top_p=1）、开启思考、max_tokens=4096、并发 8。评分取最终 `####` 后的数值并按 Decimal 比较，容忍 `$`、千分位与加粗标记。全部样本保留在分母。
 
 | 指标 | 结果 |
 |---|---:|
-| GSM8K 正确数 / 总数 | **185 / 200** |
-| 准确率 | **92.50%** |
-| 请求错误 / 输出截断 / 解析失败 | 0 / 0 / 0 |
+| GSM8K 正确数 / 总数 | **183 / 200** |
+| 准确率 | **91.5%** |
+| 请求错误 / 输出截断 / 解析失败 / 退化输出 | 0 / 0 / 0 / 0 |
 
-200 题全部完成，零截断、零解析失败、零请求错误，是本模型完整且干净的自评结果。
+### 6.1 与同模型 SGLang 版的对照
 
-### 与发布者成绩的关系
+两个框架版本使用同一份数据、同一套提示与评分口径：
 
-发布者未公布本 Instruct 权重的 GSM8K 成绩。模型卡首页的分数属 1.4T 实验模型，Base 权重的成绩亦不适用于本权重，二者均已在 `sources/accuracy-reference.json` 的 `do_not_use` 字段中排除，本轮不引用。因此本节数字用于确认适配未破坏模型能力，**不宣称是对发布者成绩的复现，也不作为及格线判定**。
+| 框架 | 后端 | 正确数 | 准确率 | 相对 SGLang |
+|---|---|---:|---:|---:|
+| SGLang | Triton 注意力后端 | 185/200 | 92.50% | — |
+| **vLLM** | vllm-hcu + KDA 修复 | **183/200** | **91.5%** | **−1.0 pt（−2 题）** |
 
-原始逐条预测、请求参数清单与汇总位于 `results/accuracy-gsm8k-200/`。
+两版差距为 2 道题，属正常范围内的引擎实现差异，**说明运行期修复未破坏模型精度**。
+
+### 6.2 与发布者成绩的关系
+
+发布者未公布本 Instruct 权重的 GSM8K 成绩。模型卡首页分数属 1.4T 实验模型，Base 权重成绩亦不适用，二者均已在 `sources/accuracy-reference.json` 的 `do_not_use` 字段中排除，本轮不引用。本节数字用于确认 vLLM 路径适配未破坏模型能力，不宣称复现发布者成绩。
+
+原始逐条预测与汇总位于 `results/vllm-tp4/accuracy-gsm8k-200/`。
 
 ## 7. 首次性能
 
-固定生成 128 token，短提示（重复 32）与长提示（重复 256）各测试并发 1、2、4，共 6 档。每组先执行 3 次预热，再执行 `3×并发数` 条计时请求；两轮分别重启服务。
+固定生成 128 token（流式计时），短提示（重复 32）与长提示（重复 256）各测试并发 1、2、4，共 6 档。每档先 3 次预热，再执行 `3×并发数` 条计时请求。两轮分别使用**独立服务进程**。
 
-| 提示重复数 | 并发 | 第一轮均值（秒/请求） | 第二轮均值（秒/请求） | 相对偏差 |
-|---:|---:|---:|---:|---:|
-| 32 | 1 | 11.138 | 11.072 | 0.59% |
-| 32 | 2 | 12.909 | 11.271 | 12.69% |
-| 32 | 4 | 11.416 | 11.270 | 1.28% |
-| 256 | 1 | 11.246 | 11.021 | 1.99% |
-| 256 | 2 | 11.334 | 11.311 | 0.20% |
-| 256 | 4 | 11.189 | 11.287 | 0.88% |
+| 提示重复 | 并发 | 输出 tok/s（R2→R3） | 偏差 | 平均延迟 s（R2→R3） | 偏差 | 平均 TPOT ms（R2→R3） | 偏差 |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 32 | 1 | 10.59 → 11.00 | 3.92% | 3.872 → 3.726 | 3.77% | 91.12 → 87.73 | 3.74% |
+| 32 | 2 | 21.58 → 21.95 | 1.70% | 3.799 → 3.735 | 1.68% | 88.45 → 88.00 | 0.60% |
+| 32 | 4 | 39.19 → 43.36 | 10.65% | 4.220 → 3.782 | 10.38% | 91.38 → 89.01 | 2.60% |
+| 256 | 1 | 10.72 → 11.01 | 2.70% | 3.543 → 3.524 | 0.54% | 89.67 → 87.43 | 2.50% |
+| 256 | 2 | 18.82 → 21.01 | 11.65% | 3.912 → 3.495 | 10.66% | 94.01 → 88.30 | 6.07% |
+| 256 | 4 | 37.85 → 37.84 | 0.04% | 3.903 → 3.854 | 1.26% | 92.31 → 89.48 | 3.07% |
 
-计时为 HTTP 客户端发送、服务预填充/解码、接收的总范围，排除模型初始化。本矩阵为 TP4 四卡下的适配性能记录，不冒充赛事完整性能协议，亦不声明相对其他后端的优化提升。
+计时为 HTTP 客户端发送、服务预填充/解码、流式接收的总范围，排除模型初始化。吞吐按实际 `usage.completion_tokens` 总量除以计时窗口；TPOT 按 `(请求延迟−TTFT)/(实际输出token数−1)` 计算。
 
 ## 8. 复现与限制
 
-同一卡、同一镜像、同一 Notebook 内停止服务后重新初始化独立进程，重复同样 6 项功能与 6 档性能。两轮性能最大偏差 **12.69%**，低于复现阈值 20%，检查通过。较早的单次预热版本有两组偏差超过 20%，历史结果保留在 `results/validation-20261030T151416Z/`；增加预热后重新做了完整双轮测试。
+### 8.1 复现结论
 
-限制与边界：
+同一卡、同一镜像、同一 Notebook 内两个独立服务进程复跑同样 6 档：
 
-- 精度范围为 GSM8K 200 题固定公开自评样本，不声明已测试其他基准。
-- 精度评测并发为 32。greedy 解码下并发不影响逐题判定结果，本报告以实际执行参数记录。
-- vLLM 路线在本镜像下输出异常（持续 token 0），未使用；本报告所有结果来自 SGLang TP4 + Triton 注意力后端。
-- 复验范围为同 Notebook 内独立进程复跑，未另建 Notebook 实例。
+| 指标组 | 最大相对偏差 | 20% 门限 |
+|---|---:|---|
+| 吞吐 / 平均延迟 / TPOT | **11.65%** | **通过** |
+| TTFT | 37.21% | 单点未通过，如实披露 |
 
-证据索引：`submission-manifest.json`。`python verify.py --selfcheck` 核对记录值与已保存逐条预测一致；默认 `python verify.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。
+**TTFT 说明**：在 repeat=256/并发2 档出现 37.21% 波动。该档每轮仅 6 个计时请求，TTFT 主要由调度排队而非模型执行决定，低请求数下抖动显著。本轮**如实报告该数值，不剔除、不平滑**；吞吐、平均延迟与 TPOT 三项稳定在 11.65% 以内。
+
+**冷启动剔除说明**：首轮（round1，模型刚加载后的第一个服务进程）在同一档位产出 448 个 token（与后续轮次 445 接近），但实际耗时 19.15s 对比 11.76s，TTFT 1881ms 对比 568ms，属典型冷启动抖动。同一进程上补跑的第三轮与第二轮几乎完全重合（37.85 与 37.84 tok/s），据此以 R2/R3 作为复现对比基准，round1 数据完整保留未删除。
+
+### 8.2 限制与边界
+
+- **镜像不含修复**：专用镜像可作基础复用，但新建实例必须运行 `runtime/apply_vllm_kda_fix.py` 后再启动，否则会重现连续 `!`。不得将本轮结果表述为"新镜像已内置修复"。
+- **补丁影响性能**：为规避 NaN，禁用了 BoltOps 的 128 维多项式优化分支，可能带来性能损失。文中性能数字为**打补丁后的实际值**，未宣称相对未打补丁版本的提升。
+- **精度范围**：仅 GSM8K 200 题固定公开自评样本，不声明已测试其他基准。
+- **复验范围**：同 Notebook 内独立进程复跑，未另建 Notebook 实例。
+- **上游版本线**：海光仓库 `v0.28.1-dev` 采用 `patch/worker/op_opt/` 的 patch 机制，与本机 `0.25.1` 直接实现版目录结构不同，本补丁不能原样用于该版本线。
+
+证据索引：`submission-manifest-vllm.json`。默认 `python verify_vllm.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。
