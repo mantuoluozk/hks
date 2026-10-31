@@ -11,8 +11,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-PRED = ROOT / "results" / "vllm-tp4" / "accuracy-gsm8k-200" / "predictions.jsonl"
-VBASE = ROOT / "results" / "vllm-tp4"
+PRED = ROOT / "results" / "accuracy-gsm8k-200" / "predictions.jsonl"
+VBASE = ROOT / "results"
 SG = ROOT / "results" / "sglang-baseline"
 
 

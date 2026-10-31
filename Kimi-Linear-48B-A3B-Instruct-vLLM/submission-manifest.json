@@ -1,0 +1,165 @@
+{
+  "model": "Kimi-Linear-48B-A3B-Instruct",
+  "version": "vLLM",
+  "framework": "vLLM",
+  "gsm8k": {
+    "correct": 183,
+    "total": 200,
+    "accuracy_percent": 91.5
+  },
+  "functional": "6/6 in each of two independent service processes",
+  "performance": {
+    "matrix": "2 prompt lengths x concurrency 1/2/4",
+    "rounds": 2,
+    "global_warmup_required": true,
+    "max_deviation_percent": 14.3
+  },
+  "runtime_fix": {
+    "script": "Kimi-Linear-48B-A3B-Instruct-vLLM/runtime/apply_vllm_kda_fix.py",
+    "edits": "3 installed files, 5 statements",
+    "idempotent": true,
+    "image_ships_fix": false
+  },
+  "files": [
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/.gitattributes",
+      "sha256": "9cc55bea23328087acce719baf36aa31267384e4e5e9b0965ca89dbc3ff4cd44",
+      "bytes": 66
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/.gitignore",
+      "sha256": "c8de1dff15ad2e04ee4c2a5e4ff40a5e04c481b26004cc5b908d29069df21ba7",
+      "bytes": 93
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/bench.sh",
+      "sha256": "47545f7931f7446b5866c67442678dd7da9114db7b878f16e7cb460fd6da843e",
+      "bytes": 280
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/env.sh",
+      "sha256": "58136adeb7e976d862854cb6aa3eafb91794033e3e088186a1f91fefb3d7eeee",
+      "bytes": 668
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/README.md",
+      "sha256": "b6ac7465a7b8f4835435b5e2919b2dc36b5468b0bf297939c2387f723871f10a",
+      "bytes": 10862
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/results/vllm-tp4/accuracy-gsm8k-200/manifest.json",
+      "sha256": "7b453728d468c87058e3b138644a157a4b2b946362b7cbdb419d77e4449b5640",
+      "bytes": 641
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/results/vllm-tp4/accuracy-gsm8k-200/predictions.jsonl",
+      "sha256": "253b54e132b2ace265bc5f6c9329404c9b7bd31804989bccaa314245d5b3ca16",
+      "bytes": 225571
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/results/vllm-tp4/accuracy-gsm8k-200/summary.json",
+      "sha256": "8eeda9b3af066994591dbee7c3df9ec67fab2d4dea9dc175c9685f6e3ad628e0",
+      "bytes": 648
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/results/vllm-tp4/environment.json",
+      "sha256": "d21e2ea3b3105c287c2a8264d663c589228458954a0f2ab128d8dc42e243987d",
+      "bytes": 642
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/results/vllm-tp4/performance/performance-comparison.json",
+      "sha256": "8391fa05ffe1637ae443e65ce35f94bcdd715058412bc61c01a209b6807f5697",
+      "bytes": 4023
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/results/vllm-tp4/performance/summary-roundA.json",
+      "sha256": "47127b1ddc7f9f38783b6fcf5976003f3e6a54a480d799ee1e99ea465cc2e232",
+      "bytes": 2565
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/results/vllm-tp4/performance/summary-roundB.json",
+      "sha256": "9ceec8f260e48954eee04308f9ade885d3c577d3dfdb302e7d581fc587712a33",
+      "bytes": 2566
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/run-scnet.sh",
+      "sha256": "26b6af53d4b4ec7babf5cfb99d3dac41a9fe3dfa91987098344587819db3ef42",
+      "bytes": 977
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/run.sh",
+      "sha256": "9d825cef53021e195bdf922eec607e902f61b5f1c9842406bf6b207fdec861c7",
+      "bytes": 558
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/runtime/apply_vllm_kda_fix.py",
+      "sha256": "535d2b9f86b98c4c3280d6343f781b220538f4462dacd98d79c566be8107784a",
+      "bytes": 3228
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/runtime/env.sh",
+      "sha256": "58136adeb7e976d862854cb6aa3eafb91794033e3e088186a1f91fefb3d7eeee",
+      "bytes": 668
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/runtime/run-scnet.sh",
+      "sha256": "26b6af53d4b4ec7babf5cfb99d3dac41a9fe3dfa91987098344587819db3ef42",
+      "bytes": 977
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/runtime/run-vllm.sh",
+      "sha256": "3fe2a25e2057a4862f82e2a74eb6ccecbe7f997612048b8fe624c2758aa5e067",
+      "bytes": 1324
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/scripts/bench_vllm.py",
+      "sha256": "e871e31d9781e7b598213e377468f6fed7cf5eca3e1ae3b8ae005a3687914b08",
+      "bytes": 5026
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/scripts/check_weights.py",
+      "sha256": "ebb71b2ce116c931839d2c95fd6fdc45bd419fff606a2d7c487e314189dfac0b",
+      "bytes": 2613
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/scripts/eval_gsm8k_vllm.py",
+      "sha256": "5f144dce73545bec7e9ed15e8f390cfcc7206914084a42ed4aa5adf5a390ae94",
+      "bytes": 5886
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/scripts/vllm_smoke.py",
+      "sha256": "98bbd98782d8527f118b5a44699491eac08a4573bd9ee32bee18395a8feda8f6",
+      "bytes": 3243
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/smoke.sh",
+      "sha256": "2e27ab6501d8076844d410779b479e0af66957a78035a31bf382f687057da795",
+      "bytes": 277
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/sources/accuracy-reference.json",
+      "sha256": "ce0f04c7d4e9cc13e03c9a7f98af5a7545020300a16014eb3ed7d76611aad45b",
+      "bytes": 617
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/sources/publisher-files.json",
+      "sha256": "aefa0251ff461265c741bcc0b1e181d375544d2c0f07058e338fc32331bb4c02",
+      "bytes": 10503
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/stop.sh",
+      "sha256": "e595e6962293e6648d5e7406093f8c1707482b06b9ccf80fdc9507373495e057",
+      "bytes": 494
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/verify.py",
+      "sha256": "40664ad5eb64d8b414ce1ddd549b594f361920a5dbf9001c73719cec1cbd320b",
+      "bytes": 4537
+    },
+    {
+      "path": "Kimi-Linear-48B-A3B-Instruct-vLLM/提交填写信息.md",
+      "sha256": "c43412cd22cec0e58bc40206968f2c919b427eb0c91fd46454d46e1c120a9df3",
+      "bytes": 3037
+    }
+  ]
+}

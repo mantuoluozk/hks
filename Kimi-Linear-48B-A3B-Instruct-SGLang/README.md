@@ -5,7 +5,8 @@
 - [发布者模型与权重](https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct)
 - [发布者代码与技术报告](https://github.com/MoonshotAI/Kimi-Linear)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2116173177861849089)
-- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Kimi-Linear-48B-A3B-Instruct/`
+- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Kimi-Linear-48B-A3B-Instruct-SGLang/`
+- 同模型另一框架版本见仓库 `Kimi-Linear-48B-A3B-Instruct-vLLM/`
 
 | 验证项 | 当前结果 |
 |---|---|

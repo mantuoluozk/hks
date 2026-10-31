@@ -6,7 +6,7 @@
 - [发布者代码与技术报告](https://github.com/MoonshotAI/Kimi-Linear)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2116173177861849089)
 - [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Kimi-Linear-48B-A3B-Instruct/`
-- 同模型另一框架版本见本目录 `README-SGLang.md`
+- 同模型另一框架版本见仓库 `Kimi-Linear-48B-A3B-Instruct-SGLang/`
 
 | 验证项 | 当前结果 |
 |---|---|
@@ -85,7 +85,7 @@ python3 scripts/bench_vllm.py --output results/performance-vllm
 
 这 6 项检查中，全部检查均未出现退化输出（连续 `!`），另有 4 并发同题一致性检查结果完全一致。
 
-这些检查验证接口与适配功能，不替代公开集精度。原始请求与服务日志位于 `results/vllm-tp4/`。
+这些检查验证接口与适配功能，不替代公开集精度。原始请求与服务日志位于 `results/`。
 
 ## 6. 精度测评
 
@@ -143,7 +143,7 @@ python3 scripts/bench_vllm.py --output results/performance-vllm
 | TTFT | 14.30% | repeat=256 / 并发2 | 通过 |
 | **全指标** | **14.30%** | — | **通过** |
 
-全部指标均在 20% 门限内，**检查通过**。完整比较见 `results/vllm-tp4/performance/performance-comparison.json`。
+全部指标均在 20% 门限内，**检查通过**。完整比较见 `results/performance/performance-comparison.json`。
 
 ### 8.2 关于预热
 
@@ -157,4 +157,4 @@ python3 scripts/bench_vllm.py --output results/performance-vllm
 - **复验范围**：同 Notebook 内独立进程复跑，未另建 Notebook 实例。
 - **上游版本线**：海光仓库 `v0.28.1-dev` 采用 `patch/worker/op_opt/` 的 patch 机制，与本机 `0.25.1` 直接实现版目录结构不同，本补丁不能原样用于该版本线。
 
-证据索引：`submission-manifest-vllm.json`。默认 `python verify_vllm.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。
+证据索引：`submission-manifest.json`。默认 `python verify_vllm.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。
