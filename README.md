@@ -14,7 +14,7 @@
 | [Qwen-Image-2.1-Turbo](Qwen-Image-2.1-Turbo/README.md) | SGLang | 两个独立进程各 8/8；T03/T04 固定条件生成 180/180 | T03/T04 GenEval 图片已生成；未计算 CLIP/FID | 每进程 9 实测 + 3 预热；复跑最大偏差 17.09% |
 | [Kimi-VL-A3B-Instruct](Kimi-VL-A3B-Instruct/README.md) | vLLM | 两个独立进程各8/8 | OCRBench 869/1000；发布者867 | 每进程32请求；吞吐偏差1.32%，全指标最大17.39% |
 | [AuK](AuK/README.md) | SGLang-Omni | 两独立服务各9/9；新镜像中文HTTP通过 | Seed-TTS-Eval英文1088条，WER 1.7137%；较发布者增加0.6937个百分点 | 每进程32实测+6预热；均值延迟/音频吞吐偏差1.1583% |
-| [MobileVLA-R1](MobileVLA-R1/README.md) | RGB前端 + vLLM语言后端 | 两独立服务各12/12；两条单图参考token一致 | 未测；闭环环境及权重对应难点见报告 | 每进程9实测+3预热；均值延迟偏差4.64% |
+| [MobileVLA-R1](MobileVLA-R1/README.md) | RGB前端 + vLLM语言后端 | 两独立服务各12/12；两条单图参考token一致 | 未测（闭环导航需 Habitat 环境） | 每进程9实测+3预热；均值延迟偏差4.64%；官方六档矩阵未执行（见报告7.2） |
 | [MiniCPM-V-4.7-35B-A3B](MiniCPM-V-4.7-35B-A3B/README.md) | vLLM，BW×2 TP2 | 两独立服务各8/8 | OCRBench 888/1000，88.80%；发布者16x/instruct90.40%，下降1.60 pt≤2 pt | 六格复跑最大偏差10.31%；同Notebook独立进程 |
 | [Kimi-Linear-48B-A3B-Instruct-SGLang](Kimi-Linear-48B-A3B-Instruct-SGLang/README.md) | SGLang | 两独立服务各6/6 | GSM8K 185/200（92.50%） | 6档 ×2轮，最大偏差12.69% |
 | [Kimi-Linear-48B-A3B-Instruct-vLLM](Kimi-Linear-48B-A3B-Instruct-vLLM/README.md) | vLLM | 历史两独立服务各6/6；发布入口 CPU 回归通过 | GSM8K 183/200（91.5%） | 历史6档 ×2轮（均含预热），最大偏差14.30%；官方矩阵待补 |
