@@ -37,7 +37,7 @@ T01 文本适配，使用原版 **Kimi-Linear-48B-A3B-Instruct**。Kimi Linear �
 
 本镜像 SGLang 默认的 HCU MLA 后端在首次推理预热时，把旧式 Tensor 调度元数据传给要求 `FlashMLASchedMeta` 对象的 `flash_mla_with_kvcache`，触发类型断言。模型专用启动器改选 SGLang 的 Triton 注意力后端后，原权重正常加载并生成。**未修改全局 `site-packages`、未修改模型权重、未修改注意力算法定义。**
 
-同镜像的 vLLM 0.25.1 路线能加载 TP4 权重，但聊天接口与原始补全接口均持续输出 token 0（`!`），关闭专家并行后现象不变，该路径未用于本报告任何结果。
+在本报告所述的 SGLang 版本范围内，同镜像的 vLLM 0.25.1 路线能加载 TP4 权重，但聊天接口与原始补全接口均持续输出 token 0（`!`），关闭专家并行后现象不变，该路径未用于本报告任何结果。该问题后续已定位为 KDA 卷积布局与 chunk intra 门控指数溢出两处缺陷并修复，修复后的 vLLM 版本见同模型另一目录 `Kimi-Linear-48B-A3B-Instruct-vLLM/`，本报告不涉及该版本。
 
 ## 4. 启动与复现
 

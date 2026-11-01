@@ -22,10 +22,10 @@ T01 文本适配的 **vLLM 路线**。Kimi Linear 为 KDA 线性注意力与全�
 
 | 环境项 | 配置 |
 |---|---|
-| 平台 / 区域 | SCNet Notebook |
+| 平台 / 区域 | SCNet Notebook / 华中一区（A区） |
 | 加速卡 / 精度 | BW × 4 / BF16 |
 | 框架 | vLLM |
-| 镜像版本 | 专用 Notebook 镜像 |
+| 镜像版本 | `0.25.1+dtk2604` 系列（SCNet 平台 Notebook 镜像，见页面 2116173177861849089） |
 | 镜像入口 | [SCNet 镜像 2116173177861849089](https://www.scnet.cn/ui/aihub/image/zack233/2116173177861849089) |
 | 镜像复验范围 | 同一 Notebook 内两个独立服务进程；未另建实例复验 |
 
@@ -57,27 +57,60 @@ T01 文本适配的 **vLLM 路线**。Kimi Linear 为 KDA 线性注意力与全�
 
 ## 4. 启动与复现
 
-模型目录放置于 `/root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct`。
+模型目录放置于 `/root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct`。权重在本目录 `weights/`（或通过 `MODEL_PATH` 指定），**不随代码分发**。
 
 ```bash
 cd /root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct
-# 1) 新建实例或未打补丁时，先应用运行期修复（已打过会提示 already patched）
-python3 runtime/apply_vllm_kda_fix.py --site-packages /usr/local/lib/python3.10/dist-packages
-python3 runtime/apply_vllm_kda_fix.py --check --site-packages /usr/local/lib/python3.10/dist-packages
 
-# 2) 启动服务（一个终端保持运行）
-PORT=30149 TENSOR_PARALLEL_SIZE=4 HIP_VISIBLE_DEVICES=0,1,2,3 \
-ENABLE_EXPERT_PARALLEL=0 VLLM_HCU_USE_CUSTOM_OPS=0 VLLM_KIMI_CONV1D_BACKEND=0 \
+# 1) 新容器必做：应用 KDA 运行期修复，并确认已生效
+python3 runtime/apply_vllm_kda_fix.py
+python3 runtime/apply_vllm_kda_fix.py --check
+
+# 2) 启动服务（一个终端保持运行）。run.sh 会再次校验补丁，
+#    未打补丁时直接拒绝启动，避免白等一次权重加载
 bash run.sh
 
 # 3) 另一个终端做功能、精度与性能
-cd /root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct
-python3 scripts/vllm_smoke.py
-python3 scripts/eval_gsm8k_vllm.py --output results/accuracy-gsm8k-200-vllm --workers 8
-python3 scripts/bench_vllm.py --output results/performance-vllm
+bash smoke.sh                                  # 6 项功能检查
+python3 scripts/eval_gsm8k_vllm.py \
+    --output results/accuracy-gsm8k-200 --workers 8
+bash bench.sh                                  # 6 档性能矩阵
+python3 verify.py --selfcheck
 ```
 
-服务端口默认 30149。Notebook 已是容器，不嵌套 Docker。评测使用新的结果目录；计时期间保持同卡无其他推理或评测任务。
+### 环境变量
+
+默认值集中在 `env.sh`，与第 2、7 章报告的配置一致：
+
+| 变量 | 默认 | 说明 |
+|---|---|---|
+| `PORT` | `30149` | 服务端口 |
+| `TENSOR_PARALLEL_SIZE` | `4` | 四卡 TP4 |
+| `HIP_VISIBLE_DEVICES` | 按 TP 自动 | TP4 → `0,1,2,3` |
+| `MAX_MODEL_LEN` | `8192` | 上下文 |
+| `MAX_NUM_SEQS` | `8` | 最大并发序列 |
+| `GPU_MEMORY_UTILIZATION` | `0.85` | 显存比例 |
+| `ENABLE_EXPERT_PARALLEL` | `0` | 结果均在该设置下取得 |
+| `VLLM_HCU_USE_CUSTOM_OPS` | `0` | 同上 |
+| `VLLM_KIMI_CONV1D_BACKEND` | `0` | 同上 |
+
+### 隔离依赖（openai）
+
+镜像自带 openai 2.6.1，缺少本 vLLM 构建所需符号。`run-scnet.sh` 会把 `openai 2.30.0` 隔离安装到 `cache/runtime` 并置于 `PYTHONPATH` 最前，torch / vLLM / transformers / boltops 保持镜像版本。新容器首次运行时若该目录不存在，会自动调用 `scripts/prepare_runtime.py` 构建（需要能访问 pip 源）：
+
+```bash
+# 手动准备（需要网络；可指定内网镜像）
+python3 scripts/prepare_runtime.py --dest cache/runtime --index-url <镜像源>
+python3 scripts/prepare_runtime.py --dest cache/runtime --check
+```
+
+完全离线时，把 `KIMI_AUTO_PREPARE_RUNTIME=0` 与 `KIMI_LINEAR_RUNTIME=<已准备好的目录>` 一起设置即可跳过自动构建。
+
+### 评测数据
+
+GSM8K 固定 200 题文件**不在仓库内**，需自行提供（`--data`、`KIMI_GSM8K_PATH` 或约定路径），脚本会校验 SHA256。来源与重建步骤见 [docs/gsm8k-200-samples.md](docs/gsm8k-200-samples.md)。
+
+Notebook 已是容器，不嵌套 Docker。评测使用新的结果目录；计时期间保持同卡无其他推理或评测任务。
 
 ## 5. 功能测试
 
