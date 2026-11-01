@@ -5,7 +5,7 @@
 - [发布者模型与权重](https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct)
 - [发布者代码与技术报告](https://github.com/MoonshotAI/Kimi-Linear)
 - [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2116173177861849089)
-- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Kimi-Linear-48B-A3B-Instruct/`
+- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Kimi-Linear-48B-A3B-Instruct-vLLM/`
 - 同模型另一框架版本见仓库 `Kimi-Linear-48B-A3B-Instruct-SGLang/`
 
 | 验证项 | 当前结果 |
@@ -25,7 +25,7 @@ T01 文本适配的 **vLLM 路线**。Kimi Linear 为 KDA 线性注意力与全�
 | 平台 / 区域 | SCNet Notebook / 华中一区（A区） |
 | 加速卡 / 精度 | BW × 4 / BF16 |
 | 框架 | vLLM |
-| 镜像版本 | `0.25.1+dtk2604` 系列（SCNet 平台 Notebook 镜像，见页面 2116173177861849089） |
+| 镜像框架发行线 | `0.25.1+dtk2604`（框架发行线，不是镜像拉取 tag；实际镜像见下方页面） |
 | 镜像入口 | [SCNet 镜像 2116173177861849089](https://www.scnet.cn/ui/aihub/image/zack233/2116173177861849089) |
 | 镜像复验范围 | 同一 Notebook 内两个独立服务进程；未另建实例复验 |
 
@@ -53,18 +53,18 @@ T01 文本适配的 **vLLM 路线**。Kimi Linear 为 KDA 线性注意力与全�
 
 补丁脚本 `runtime/apply_vllm_kda_fix.py` 只改安装目录三个文件的五处语句，幂等、校验原文、首次应用时在旁保存原文件。已用原始文件重放验证，结果与当前机器一致。
 
-> 说明：本修复**未修改模型权重、未修改注意力算法定义、未修改 tokenizer 或采样语义**。禁用 BoltOps 多项式优化可能影响性能，已在下文如实记录，并通过 GSM8K 确认精度未受损。
+> 说明：本修复未修改模型权重、tokenizer 或采样参数，但调整了算子的数值计算路径。禁用 BoltOps 多项式优化可能影响性能；GSM8K 200 题自评见第 6 章，不能据此证明所有任务精度等价。
 
 ## 4. 启动与复现
 
-模型目录放置于 `/root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct`。权重在本目录 `weights/`（或通过 `MODEL_PATH` 指定），**不随代码分发**。
+模型目录放置于 `/root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct-vLLM`。权重在本目录 `weights/`（或通过 `MODEL_PATH` 指定现有共享权重），**不随代码分发**。`HKS_ROOT` 指向包含 `platform/scnet-notebook/env-scnet.sh` 的项目根目录。
 
 ```bash
-cd /root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct
+cd /root/private_data/hks/models/Kimi-Linear-48B-A3B-Instruct-vLLM
 
 # 1) 新容器必做：应用 KDA 运行期修复，并确认已生效
-python3 runtime/apply_vllm_kda_fix.py
-python3 runtime/apply_vllm_kda_fix.py --check
+bash run-scnet.sh python runtime/apply_vllm_kda_fix.py
+bash run-scnet.sh python runtime/apply_vllm_kda_fix.py --check
 
 # 2) 启动服务（一个终端保持运行）。run.sh 会再次校验补丁，
 #    未打补丁时直接拒绝启动，避免白等一次权重加载
@@ -72,11 +72,16 @@ bash run.sh
 
 # 3) 另一个终端做功能、精度与性能
 bash smoke.sh                                  # 6 项功能检查
-python3 scripts/eval_gsm8k_vllm.py \
+bash run-scnet.sh python scripts/eval_gsm8k_vllm.py \
     --output results/accuracy-gsm8k-200 --workers 8
 bash bench.sh                                  # 6 档性能矩阵
 python3 verify.py --selfcheck
+bash stop.sh                                   # 仅停止本目录 PID 对应的 vLLM 服务
 ```
+
+`smoke.sh` 与 `bench.sh` 接受第一个参数指定全新的结果目录，使用 `PORT` 和 `MODEL_NAME`；底层脚本支持 `--base`、`--model`、`--output`。功能检查失败返回非零，原始请求和响应写入该结果目录。基准按后端实际 `usage.completion_tokens` 计数，缺少计数、流式终止标记或内容时返回失败；只有一个输出 token 时 TPOT 记为 null。
+
+`run.sh` 在加载模型前检查补丁及权重；检查失败终止启动。`stop.sh` 只向 `results/server.pid` 记录且命令行匹配本模型名的 vLLM API 进程发送 SIGTERM，不搜索其他服务。
 
 ### 环境变量
 
@@ -104,7 +109,7 @@ python3 scripts/prepare_runtime.py --dest cache/runtime --index-url <镜像源>
 python3 scripts/prepare_runtime.py --dest cache/runtime --check
 ```
 
-完全离线时，把 `KIMI_AUTO_PREPARE_RUNTIME=0` 与 `KIMI_LINEAR_RUNTIME=<已准备好的目录>` 一起设置即可跳过自动构建。
+完全离线时，把 `KIMI_AUTO_PREPARE_RUNTIME=0` 与 `KIMI_LINEAR_RUNTIME=<已准备好的目录>` 一起设置即可跳过自动构建。运行前仍严格检查该目录中的版本为 2.30.0 且含 `NamespaceTool`；不满足时停止，不回退到镜像旧版本。
 
 ### 评测数据
 
@@ -143,13 +148,15 @@ Notebook 已是容器，不嵌套 Docker。评测使用新的结果目录；计�
 | SGLang | Triton 注意力后端 | 185/200 | 92.50% | — |
 | vLLM | vLLM | 183/200 | 91.5% | −1.0 pt（−2 题） |
 
-两版差距为 2 道题，属正常范围内的引擎实现差异，**说明运行期修复未破坏模型精度**。
+两版在该样本集相差 2 道题；这记录了已观察到的自评差异，不能单独证明补丁的逐算子等价或发布者全部基准精度。
 
 ## 7. 首次性能
 
-固定生成 128 token（流式计时），短提示（重复 32）与长提示（重复 256）各测试并发 1、2、4，共 6 档。两轮分别使用**独立服务进程**。
+输出上限 128 token（允许 EOS 提前结束，按实际输出计数，流式计时），短提示（重复 32）与长提示（重复 256）各测试并发 1、2、4，共 6 档。两轮分别使用**独立服务进程**。这是历史小负载矩阵，尚未完成官方 4K/16K 输入、1024 输出、并发 1/8/64 矩阵。
 
 **预热协议**：每轮服务就绪后先执行**全局预热**——按矩阵全部 6 个形状各跑一遍，重复 2 轮，再额外做一次 256 token 长生成；全部预热完成后才开始计时。此外每个档位计时前再做 3 次预热请求。这样冷启动、kernel 编译、显存分配增长与调度缓存都已在计时前完成，**冷启动按设计被排除，而不是事后剔除数据**。
+
+上述全局预热是历史两轮执行协议；当前 `bench.sh` 只包含每档 3 次预热，不自动执行额外全局预热。复跑该历史协议时需先完成上述全局预热，不能把直接运行 `bench.sh` 当作完整同协议复现。
 
 | 提示重复 | 并发 | 吞吐 tok/s（A→B） | 偏差 | 平均延迟 s（A→B） | 偏差 | 平均 TTFT ms（A→B） | 偏差 | 平均 TPOT ms（A→B） | 偏差 |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -190,4 +197,14 @@ Notebook 已是容器，不嵌套 Docker。评测使用新的结果目录；计�
 - **复验范围**：同 Notebook 内独立进程复跑，未另建 Notebook 实例。
 - **上游版本线**：海光仓库 `v0.28.1-dev` 采用 `patch/worker/op_opt/` 的 patch 机制，与本机 `0.25.1` 直接实现版目录结构不同，本补丁不能原样用于该版本线。
 
-证据索引：`submission-manifest.json`。默认 `python verify_vllm.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。
+### 8.4 发布入口修复（2026-11-01）
+
+补齐纳入版本控制的 KDA 补丁，统一 vLLM 启动、测试、停止入口，恢复失败即终止的权重/依赖检查。CPU 本地假 HTTP 服务、临时依赖包和补丁文件夹的 6 项回归测试通过，覆盖正常路径及报错、退化输出、不完整流、旧依赖和校验失败反例：
+
+```bash
+python scripts/test_publish_entrypoints.py
+```
+
+这是发布入口的回归验证，未启动四卡模型、未执行新的精度/性能测试，也未完成新 Notebook 复验。第 5—8 章模型实测数字沿用历史记录；新功能检查脚本的真机六组结果仍需复跑。CPU 检查记录见 `results/publish-entrypoint-check-20261101.json`。
+
+历史发布清单保留于 `results/submission-manifest-before-entrypoint-fix.json`，其中源码摘要仅对应当时文件，不是当前代码的完整性清单。当前证据入口见 `submission-manifest.json`。默认 `python verify.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。

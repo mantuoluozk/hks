@@ -12,10 +12,9 @@ Usage (needs network, e.g. the SCNet mirror or an online Notebook):
 
 Offline alternative on a machine that already has openai 2.30.0:
     KIMI_AUTO_PREPARE_RUNTIME=0 KIMI_LINEAR_RUNTIME=/path/to/prepared \\
-        python -m vllm.entrypoints.openai.api_server ...
+        bash run-scnet.sh python -m vllm.entrypoints.openai.api_server ...
 """
 import argparse
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -30,15 +29,19 @@ def check(dest: Path) -> bool:
     try:
         out = subprocess.run(
             [sys.executable, "-c",
-             "import sys;sys.path.insert(0,{!r});import openai;"
-             "print(openai.__version__)".format(str(dest))],
+             "import sys;from pathlib import Path;sys.path.insert(0,{!r});"
+             "import openai;from openai.types.responses import NamespaceTool;"
+             "assert openai.__version__=='2.30.0',openai.__version__;"
+             "assert Path(openai.__file__).resolve().is_relative_to(Path({!r}).resolve());"
+             "print(openai.__version__)".format(str(dest.resolve()),str(pkg.resolve()))],
             capture_output=True, text=True, timeout=120,
         )
         if out.returncode != 0:
+            print(out.stderr.strip(),file=sys.stderr)
             return False
         ver = out.stdout.strip()
         print(f"isolated openai version in {dest}: {ver}")
-        return True
+        return ver == '2.30.0'
     except Exception as exc:  # noqa: BLE001
         print(f"check failed: {exc}")
         return False

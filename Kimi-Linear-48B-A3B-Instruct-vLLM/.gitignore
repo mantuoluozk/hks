@@ -1,7 +1,8 @@
 /cache/
 /weights/
 /data/
-/runtime/
+/runtime/*
+!/runtime/apply_vllm_kda_fix.py
 /logs/
 /artifacts/
 __pycache__/

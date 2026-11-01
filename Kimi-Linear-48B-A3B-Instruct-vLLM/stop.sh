@@ -1,16 +1,19 @@
 #!/usr/bin/env bash
-# Stop a Kimi-Linear service started from this directory.
+# Stop only the owned vLLM process; never search for SGLang services.
 set -euo pipefail
-PIDS=$(pgrep -f "sglang.launch_server.*kimi-linear-48b-a3b" || true)
-if [[ -z "${PIDS}" ]]; then
-  echo "no Kimi-Linear sglang.launch_server process found"
-  exit 0
-fi
-echo "stopping: ${PIDS}"
-kill ${PIDS}
-for _ in $(seq 1 30); do
-  pgrep -f "sglang.launch_server.*kimi-linear-48b-a3b" >/dev/null || { echo stopped; exit 0; }
-  sleep 2
-done
-echo "force killing"
-kill -9 ${PIDS} 2>/dev/null || true
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
+source ./env.sh
+python3 - <<'PY'
+import os,signal
+from pathlib import Path
+p=Path('results/server.pid')
+if p.exists():
+    pid=int(p.read_text());cmd=Path(f'/proc/{pid}/cmdline')
+    if cmd.exists():
+        argv=cmd.read_bytes().split(b'\0')
+        if b'vllm.entrypoints.openai.api_server' in argv and os.environ['MODEL_NAME'].encode() in argv:
+            os.kill(pid,signal.SIGTERM);print('Stopped owned vLLM server',pid)
+        else:print('PID is not the owned vLLM server; no action')
+    else:print('Server already stopped')
+else:print('No owned server PID file')
+PY

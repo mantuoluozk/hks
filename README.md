@@ -17,7 +17,7 @@
 | [MobileVLA-R1](MobileVLA-R1/README.md) | RGB前端 + vLLM语言后端 | 两独立服务各12/12；两条单图参考token一致 | 未测；闭环环境及权重对应难点见报告 | 每进程9实测+3预热；均值延迟偏差4.64% |
 | [MiniCPM-V-4.7-35B-A3B](MiniCPM-V-4.7-35B-A3B/README.md) | vLLM，BW×2 TP2 | 两独立服务各8/8 | OCRBench 888/1000，88.80%；发布者16x/instruct90.40%，下降1.60 pt≤2 pt | 六格复跑最大偏差10.31%；同Notebook独立进程 |
 | [Kimi-Linear-48B-A3B-Instruct-SGLang](Kimi-Linear-48B-A3B-Instruct-SGLang/README.md) | SGLang | 两独立服务各6/6 | GSM8K 185/200（92.50%） | 6档 ×2轮，最大偏差12.69% |
-| [Kimi-Linear-48B-A3B-Instruct-vLLM](Kimi-Linear-48B-A3B-Instruct-vLLM/README.md) | vLLM | 两独立服务各6/6 | GSM8K 183/200（91.5%） | 6档 ×2轮（均含预热），全指标最大偏差14.30% |
+| [Kimi-Linear-48B-A3B-Instruct-vLLM](Kimi-Linear-48B-A3B-Instruct-vLLM/README.md) | vLLM | 历史两独立服务各6/6；发布入口 CPU 回归通过 | GSM8K 183/200（91.5%） | 历史6档 ×2轮（均含预热），最大偏差14.30%；官方矩阵待补 |
 
 AuK T03/T04固定条件补测：120/120 条生成完成，交付ZIP及逐项反馈见 [补测材料](AuK/results/official-t03t04-20261030/README.md)。本次未计算质量分数。
 

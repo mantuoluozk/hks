@@ -6,4 +6,4 @@ cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 source ./env.sh
 OUT="${1:-$PWD/results/performance-reproduce}"
 exec bash run-scnet.sh python scripts/bench_vllm.py --output "$OUT" \
-  --base "http://127.0.0.1:${PORT}"
+  --base "http://127.0.0.1:${PORT}" --model "$MODEL_NAME"

@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-01",
+  "scope": "CPU-only publishing entrypoint regression; no model loading",
+  "command": "TEST_BASH=<Git Bash> python scripts/test_publish_entrypoints.py",
+  "environment": {"os": "Windows", "python": "3.12", "shell": "Git Bash"},
+  "exit_code": 0,
+  "tests_run": 6,
+  "tests_skipped": 0,
+  "tests_passed": [
+    "Smoke uses custom endpoint/model, writes six groups of evidence, refuses existing output directory",
+    "Smoke rejects HTTP error, degenerate output and stream without DONE",
+    "Benchmark accepts endpoint/model arguments, records 60 mock requests, counts actual backend tokens, rejects missing usage/DONE; one-token TPOT is null",
+    "Runtime rejects openai 2.6.1 and missing NamespaceTool; accepts isolated 2.30.0 fixture",
+    "Patch fixture fails before application, applies idempotently with backups, passes check, refuses unknown source",
+    "Launcher stops on patch/weight validation failure, invokes vLLM on success; all root shell scripts pass bash -n"
+  ],
+  "historical_evidence_selfcheck": {
+    "command": "python verify.py --selfcheck",
+    "exit_code": 0,
+    "gsm8k_correct": 183,
+    "gsm8k_total": 200,
+    "performance_max_deviation_percent": 14.3
+  },
+  "new_gpu_test_performed": false,
+  "fresh_notebook_verified": false,
+  "official_performance_matrix_completed": false,
+  "new_smoke_model_results_available": false
+}

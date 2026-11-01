@@ -5,8 +5,8 @@
 # IMPORTANT: the base image does NOT contain the KDA runtime fix. A fresh
 # instance reproduces the degenerate "!!!!" output until the patch is applied.
 # Run this once per new container before starting:
-#     python3 runtime/apply_vllm_kda_fix.py
-#     python3 runtime/apply_vllm_kda_fix.py --check
+#     bash run-scnet.sh python runtime/apply_vllm_kda_fix.py
+#     bash run-scnet.sh python runtime/apply_vllm_kda_fix.py --check
 set -euo pipefail
 cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 
@@ -17,17 +17,21 @@ mkdir -p "$RUN_RESULTS_DIR"
 
 # Refuse to start on an unpatched installation: the service would load and then
 # emit only "!" tokens, wasting a full weight-load cycle.
-if ! python3 runtime/apply_vllm_kda_fix.py --check >/dev/null 2>&1; then
+if ! bash run-scnet.sh python runtime/apply_vllm_kda_fix.py --check > "$RUN_RESULTS_DIR/patch-check.log" 2>&1; then
   echo "ERROR: the Kimi KDA runtime fix is not applied to the installed packages." >&2
-  echo "       Run: python3 runtime/apply_vllm_kda_fix.py" >&2
+  echo "       Run: bash run-scnet.sh python runtime/apply_vllm_kda_fix.py" >&2
+  echo "       Details: $RUN_RESULTS_DIR/patch-check.log" >&2
   echo "       (idempotent; saves originals as *.kimi-linear-original)" >&2
   exit 3
 fi
 
 if [[ "${CHECK_WEIGHTS_ON_START:-1}" == "1" ]]; then
   bash run-scnet.sh python scripts/check_weights.py "$MODEL_PATH" \
-    --output "$RUN_RESULTS_DIR/weights-check.json" || true
+    --output "$RUN_RESULTS_DIR/weights-check.json"
 fi
+
+mkdir -p results
+echo "$$" > results/server.pid
 
 exec bash run-scnet.sh python -m vllm.entrypoints.openai.api_server \
   --model "$MODEL_PATH" \

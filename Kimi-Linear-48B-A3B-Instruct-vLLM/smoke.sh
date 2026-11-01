@@ -5,4 +5,5 @@ set -euo pipefail
 cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 source ./env.sh
 OUT="${1:-$PWD/results/functional-reproduce}"
-exec bash run-scnet.sh python scripts/vllm_smoke.py --output "$OUT"
+exec bash run-scnet.sh python scripts/vllm_smoke.py --output "$OUT" \
+  --base "http://127.0.0.1:${PORT}" --model "$MODEL_NAME"

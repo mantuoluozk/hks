@@ -1,73 +1,57 @@
 #!/usr/bin/env python3
-"""Functional smoke checks against the patched vLLM Kimi-Linear service."""
-import json
-import time
-import urllib.request
+"""Six functional groups with raw evidence and a nonzero failure exit status."""
+import argparse,json,time,urllib.request,urllib.error
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
-BASE = "http://127.0.0.1:30149"
-MODEL = "kimi-linear-48b-a3b"
+def main():
+    p=argparse.ArgumentParser()
+    p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--base',default='http://127.0.0.1:30149')
+    p.add_argument('--model',default='kimi-linear-48b-a3b')
+    p.add_argument('--timeout',type=float,default=600)
+    a=p.parse_args();a.output.mkdir(parents=True,exist_ok=False)
+    opener=urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    def ask(label,messages,stream=False,max_tokens=128):
+        body={'model':a.model,'messages':messages,'temperature':0,'max_tokens':max_tokens,'stream':stream}
+        (a.output/f'{label}.request.json').write_text(json.dumps(body,ensure_ascii=False,indent=2),encoding='utf-8')
+        t=time.monotonic()
+        try:
+            req=urllib.request.Request(a.base.rstrip('/')+'/v1/chat/completions',json.dumps(body).encode(),{'Content-Type':'application/json'})
+            with opener.open(req,timeout=a.timeout) as response:raw=response.read().decode()
+            (a.output/f'{label}.response.txt').write_text(raw,encoding='utf-8')
+            if stream:
+                lines=[line[6:] for line in raw.splitlines() if line.startswith('data: ')]
+                if '[DONE]' not in lines:raise ValueError('Stream missing DONE')
+                chunks=[json.loads(line) for line in lines if line!='[DONE]']
+                text=''.join(c['choices'][0].get('delta',{}).get('content') or '' for c in chunks if c.get('choices'))
+            else:text=json.loads(raw)['choices'][0]['message'].get('content') or ''
+            if not text.strip() or set(text.strip())=={'!'}:raise ValueError('Empty/degenerate response')
+            return {'ok':True,'content':text,'seconds':time.monotonic()-t}
+        except urllib.error.HTTPError as e:
+            raw=e.read().decode(errors='replace');(a.output/f'{label}.response.txt').write_text(raw,encoding='utf-8')
+            return {'ok':False,'status':e.code,'error':raw}
+        except Exception as e:return {'ok':False,'error':repr(e)}
+    def user(text):return [{'role':'user','content':text}]
+    checks=[]
+    cases=[('english',user('Reply with the word READY only.'),'READY',False),
+           ('chinese',user('计算2+3，只输出数字。'),'5',False),
+           ('multi_turn',[{'role':'user','content':'Remember the number 5.'},{'role':'assistant','content':'5'},
+              {'role':'user','content':'Add one to that number. Answer with one number only.'}],'6',False),
+           ('stream',user('Reply with the word READY only.'),'READY',True)]
+    for label,messages,expected,stream in cases:
+        result=ask(label,messages,stream);passed=result['ok'] and result['content'].strip()==expected
+        checks.append({'case':label,'passed':passed,**result})
+    rejected=ask('invalid',user('Hi'),max_tokens=-1)
+    checks.append({'case':'invalid_parameter','passed':not rejected['ok'] and rejected.get('status') in (400,422),'response':rejected})
+    messages=user('What is 2+3? Answer with one number only.')
+    serial=ask('serial',messages)
+    with ThreadPoolExecutor(4) as pool:parallel=list(pool.map(lambda i:ask(f'parallel{i}',messages),range(4)))
+    passed=all(x['ok'] and x.get('content','').strip()=='5' for x in [serial,*parallel])
+    checks.append({'case':'serial_parallel_consistency','passed':passed,'serial':serial,'parallel':parallel})
+    summary={'base':a.base,'model':a.model,'checks':checks,'passed':all(x['passed'] for x in checks)}
+    (a.output/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
+    print(json.dumps({'checks':len(checks),'passed':summary['passed'],'output':str(a.output)},ensure_ascii=False))
+    return 0 if summary['passed'] else 1
 
-
-def ask(prompt, max_tokens=256, **kw):
-    body = {"model": MODEL, "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0, "max_tokens": max_tokens, **kw}
-    t0 = time.time()
-    req = urllib.request.Request(BASE + "/v1/chat/completions",
-                                 data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"})
-    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
-    try:
-        with opener.open(req, timeout=600) as r:
-            raw = json.load(r)
-        ch = raw["choices"][0]
-        return {"ok": True, "content": (ch["message"].get("content") or ""),
-                "finish": ch.get("finish_reason"), "sec": round(time.time() - t0, 2),
-                "usage": raw.get("usage")}
-    except Exception as e:  # noqa: BLE001
-        return {"ok": False, "error": repr(e), "sec": round(time.time() - t0, 2)}
-
-
-checks = [
-    ("arithmetic_en", "What is 2+3? Answer with one number only.", 32),
-    ("arithmetic_zh", "计算 7+8，只输出阿拉伯数字。", 32),
-    ("english_cap", "Reply with the word READY only.", 32),
-    ("chinese_gen", "用一句话介绍杭州。", 128),
-    ("longer_gen", "请写一段约100字的说明，解释什么是线性注意力。", 300),
-]
-
-results = []
-for name, prompt, mt in checks:
-    r = ask(prompt, mt)
-    txt = r.get("content", "")
-    # detect the pathological repeated '!' failure mode
-    bad = txt.strip() and set(txt.strip()) == {"!"}
-    results.append({"name": name, "prompt": prompt, "max_tokens": mt,
-                    "content": txt[:200], "finish": r.get("finish"),
-                    "ok": r["ok"], "degenerate": bad, "sec": r["sec"]})
-    print(f"[{name}] ok={r['ok']} degenerate={bad} finish={r.get('finish')} {r['sec']}s")
-    print(f"    -> {txt[:160]!r}")
-
-print("\n=== concurrency consistency (4 identical requests) ===")
-with ThreadPoolExecutor(4) as ex:
-    outs = list(ex.map(lambda _: ask("What is 12*12? Answer with one number only.", 32), range(4)))
-texts = [(o.get("content") or "").strip() for o in outs]
-print("  outputs:", texts)
-print("  all identical:", len(set(texts)) == 1)
-print("  any degenerate:", any(set(t) == {"!"} for t in texts if t))
-
-print("\n=== sequential consistency (same prompt twice) ===")
-a = ask("What is 9+10? Answer with one number only.", 32)
-b = ask("What is 9+10? Answer with one number only.", 32)
-print("  a:", repr((a.get("content") or "")[:80]))
-print("  b:", repr((b.get("content") or "")[:80]))
-print("  identical:", (a.get("content") or "").strip() == (b.get("content") or "").strip())
-
-summary = {
-    "checks": results,
-    "concurrency_outputs": texts,
-    "concurrency_identical": len(set(texts)) == 1,
-    "degenerate_any": any(r["degenerate"] for r in results) or any(set(t) == {"!"} for t in texts if t),
-}
-open("/root/vllm_smoke.json", "w").write(json.dumps(summary, ensure_ascii=False, indent=2))
-print("\nwrote /root/vllm_smoke.json")
+if __name__=='__main__':raise SystemExit(main())

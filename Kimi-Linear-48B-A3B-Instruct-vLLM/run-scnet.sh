@@ -10,7 +10,9 @@
 # reproduced with one command instead of depending on a pre-existing cache.
 set -euo pipefail
 export HKS_ROOT="${HKS_ROOT:-/root/private_data/hks}"
-source "$HKS_ROOT/platform/scnet-notebook/env-scnet.sh" 2>/dev/null || true
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
+source ./env.sh
+source "$HKS_ROOT/platform/scnet-notebook/env-scnet.sh"
 export PATH="/usr/bin:$PATH"
 export OMP_NUM_THREADS="${OMP_NUM_THREADS:-4}"
 export MKL_NUM_THREADS="${MKL_NUM_THREADS:-4}"
@@ -25,16 +27,16 @@ export TORCHINDUCTOR_CACHE_DIR="$PWD/cache/inductor"
 # Isolated openai runtime. Point KIMI_LINEAR_RUNTIME at a prepared directory, or
 # let it default to cache/runtime and build it on first use.
 KIMI_LINEAR_RUNTIME="${KIMI_LINEAR_RUNTIME:-$PWD/cache/runtime}"
-if [[ ! -d "$KIMI_LINEAR_RUNTIME/openai" ]]; then
+if ! python scripts/prepare_runtime.py --dest "$KIMI_LINEAR_RUNTIME" --check; then
   if [[ "${KIMI_AUTO_PREPARE_RUNTIME:-1}" == "1" ]]; then
     echo "[run-scnet] isolated openai runtime missing; preparing into $KIMI_LINEAR_RUNTIME" >&2
-    python scripts/prepare_runtime.py --dest "$KIMI_LINEAR_RUNTIME" || {
-      echo "[run-scnet] WARNING: runtime preparation failed. If the image openai is" >&2
-      echo "             already new enough, this may still work; otherwise run" >&2
-      echo "             scripts/prepare_runtime.py manually with network access." >&2
-    }
+    python scripts/prepare_runtime.py --dest "$KIMI_LINEAR_RUNTIME"
+  else
+    echo "[run-scnet] openai runtime is missing/incompatible; prepare openai 2.30.0 and set KIMI_LINEAR_RUNTIME" >&2
+    exit 3
   fi
 fi
+python scripts/prepare_runtime.py --dest "$KIMI_LINEAR_RUNTIME" --check
 export PYTHONPATH="$KIMI_LINEAR_RUNTIME${PYTHONPATH:+:$PYTHONPATH}"
 
 export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
