@@ -1,0 +1,10 @@
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+results/** -text -whitespace
+logs/** -text -whitespace
+bench/*.jsonl -text -whitespace
+bench/reproduce/*.jsonl -text -whitespace
+server.log -text -whitespace
+env.log -text -whitespace
+*.png binary

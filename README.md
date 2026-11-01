@@ -1,10 +1,11 @@
 # 国芯国模 · BW 模型适配
 
-十一个模型的 SCNet BW 单卡/双卡技术报告、复现代码与原始测试证据。公开自评、功能、性能和官方验收分别记录。
+十二个模型、十四个模型×框架版本的 SCNet BW 单卡/多卡技术报告、复现代码与原始测试证据。公开自评、功能、性能和官方验收分别记录。
 
 | 模型 | 框架 | 功能 | 公开精度自评 | 首次性能与复现 |
 |---|---|---|---|---|
 | [Recon2Reason-Reasoning-4B](Recon2Reason-Reasoning-4B/README.md) | SGLang | 5/5 | OCRBench 463/1000；MMMU 437/900 | 12 轮、608 请求 |
+| [Recon2Reason-Reasoning-4B-vLLM](Recon2Reason-Reasoning-4B-vLLM/README.md) | vLLM | 新镜像两独立服务各5/5 | 赛事不要求精度 | 官方六档完整双进程1216请求；模板指标最大偏差9.65%；特殊token输出说明见报告 |
 | [RoboBrain2.5-8B-NV](RoboBrain2.5-8B-NV/README.md) | SGLang | 8/8 | CV-Bench 2638 题，88.10% | 12 轮、608 请求；完整矩阵独立复跑待补 |
 | [MiMo-V2.6-Distill-Qwen-9B](MiMo-V2.6-Distill-Qwen-9B/README.md) | SGLang | 11/11 | GSM8K 179/200；MMLU 160/200 | 12 轮、608 请求 |
 | [Qwen3-ASR-1.7B](Qwen3-ASR-1.7B/README.md) | vLLM | 在线 6/6；PCM 4/4；官方条件识别 300/300 | test-clean 2620 条，WER 1.6501% | 128 请求；复跑最大偏差 7.28% |
@@ -26,7 +27,7 @@ Qwen3-ASR T03/T04固定条件：AISHELL-1、LibriSpeech test-clean、test-other 
 
 Qwen-Image-2.1-Turbo T03/T04固定条件：GenEval 60条 prompt、每条3个seed，共180/180张2048×2048图像生成完成。材料见 [补测记录](Qwen-Image-2.1-Turbo/results/official-t03t04-20261030/README.md)。
 
-[镜像与复验范围总表](镜像与复验总表.md)列明四套镜像的复用关系、额外依赖及未完成项。
+[镜像与复验范围总表](镜像与复验总表.md)列明六套镜像的复用关系、额外依赖及未完成项。
 
 ## 复现方式
 

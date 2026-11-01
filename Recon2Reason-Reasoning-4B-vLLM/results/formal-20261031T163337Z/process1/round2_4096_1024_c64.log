@@ -1,0 +1,80 @@
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+INFO 11-01 01:01:20 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-01 01:01:20 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-01 01:01:20 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-01 01:01:20 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+/usr/local/lib/python3.10/dist-packages/sglang/benchmark/datasets/image.py:58: UserWarning: High resolution (up to 1920x1080) with 128 total images may take a long time. Consider reducing resolution or image count.
+  return sample_image_requests(
+benchmark_args=Namespace(backend='vllm-chat', base_url=None, host='127.0.0.1', port=30123, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B', served_model_name='recon2reason-4b', tokenizer='/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='/root/private_data/hks/models/Recon2Reason-Reasoning-4B-vLLM/results/formal-20261031T163337Z/process1/round2.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body='{"stream_options": {"include_usage": true}}', apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+Waiting up to 60s for http://127.0.0.1:30123/v1/models to become ready...
+Server ready in 0.0s.
+Namespace(backend='vllm-chat', base_url=None, host='127.0.0.1', port=30123, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B', served_model_name='recon2reason-4b', tokenizer='/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='/root/private_data/hks/models/Recon2Reason-Reasoning-4B-vLLM/results/formal-20261031T163337Z/process1/round2.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body='{"stream_options": {"include_usage": true}}', apply_chat_template=True, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+
+#Input tokens: 558910
+#Output tokens: 131072
+#Total images: 128
+#Images per request: 1 (fixed)
+
+=== Token Breakdown (per request avg / total) ===
+  Raw text prompt tokens (without overhead): avg=4096.0, total=524288
+  Text prompt tokens (with chat template): avg=4319.5, total=552894
+  Text prompt overhead: avg=223.5, total=28606
+  Vision tokens: avg=47.0, total=6016
+
+Created 128 random jpeg images with average 2089739 bytes per request
+Starting warmup with 1 sequences...
+Warmup completed with 1 sequences. Starting main benchmark run...
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [01:20<2:50:38, 80.62s/it]  2%|▏         | 2/128 [01:21<1:10:20, 33.50s/it]  2%|▏         | 3/128 [01:21<38:29, 18.48s/it]    3%|▎         | 4/128 [01:22<23:36, 11.42s/it]  4%|▍         | 5/128 [01:22<15:24,  7.52s/it]  5%|▍         | 6/128 [01:23<10:30,  5.17s/it]  5%|▌         | 7/128 [01:24<07:24,  3.67s/it]  6%|▋         | 8/128 [01:24<05:22,  2.69s/it]  7%|▋         | 9/128 [01:25<04:13,  2.13s/it]  8%|▊         | 10/128 [01:26<03:14,  1.65s/it]  9%|▊         | 11/128 [01:26<02:36,  1.33s/it]  9%|▉         | 12/128 [01:27<02:09,  1.12s/it] 10%|█         | 13/128 [01:28<01:50,  1.04it/s] 11%|█         | 14/128 [01:28<01:37,  1.17it/s] 12%|█▏        | 15/128 [01:29<01:38,  1.15it/s] 12%|█▎        | 16/128 [01:30<01:28,  1.26it/s] 13%|█▎        | 17/128 [01:30<01:21,  1.36it/s] 14%|█▍        | 18/128 [01:31<01:16,  1.44it/s] 15%|█▍        | 19/128 [01:31<01:12,  1.51it/s] 16%|█▌        | 20/128 [01:32<01:09,  1.56it/s] 16%|█▋        | 21/128 [01:33<01:07,  1.59it/s] 17%|█▋        | 22/128 [01:34<01:14,  1.42it/s] 18%|█▊        | 23/128 [01:34<01:10,  1.49it/s] 19%|█▉        | 24/128 [01:35<01:07,  1.54it/s] 20%|█▉        | 25/128 [01:35<01:05,  1.58it/s] 20%|██        | 26/128 [01:36<01:02,  1.62it/s] 21%|██        | 27/128 [01:36<01:01,  1.64it/s] 22%|██▏       | 28/128 [01:37<01:00,  1.66it/s] 23%|██▎       | 29/128 [01:38<01:07,  1.47it/s] 23%|██▎       | 30/128 [01:39<01:04,  1.53it/s] 24%|██▍       | 31/128 [01:39<01:01,  1.58it/s] 25%|██▌       | 32/128 [01:40<00:59,  1.62it/s] 26%|██▌       | 33/128 [01:40<00:57,  1.65it/s] 27%|██▋       | 34/128 [01:41<00:56,  1.67it/s] 27%|██▋       | 35/128 [01:42<01:02,  1.48it/s] 28%|██▊       | 36/128 [01:42<00:59,  1.55it/s] 29%|██▉       | 37/128 [01:43<00:56,  1.61it/s] 30%|██▉       | 38/128 [01:43<00:54,  1.64it/s] 30%|███       | 39/128 [01:44<00:53,  1.67it/s] 31%|███▏      | 40/128 [01:45<00:59,  1.48it/s] 32%|███▏      | 41/128 [01:45<00:55,  1.56it/s] 33%|███▎      | 42/128 [01:46<00:53,  1.62it/s] 34%|███▎      | 43/128 [01:47<00:51,  1.66it/s] 34%|███▍      | 44/128 [01:47<00:49,  1.69it/s] 35%|███▌      | 45/128 [01:48<00:48,  1.72it/s] 36%|███▌      | 46/128 [01:49<00:53,  1.52it/s] 37%|███▋      | 47/128 [01:49<00:50,  1.59it/s] 38%|███▊      | 48/128 [01:50<00:48,  1.65it/s] 38%|███▊      | 49/128 [01:50<00:46,  1.69it/s] 39%|███▉      | 50/128 [01:51<00:45,  1.72it/s] 40%|███▉      | 51/128 [01:51<00:44,  1.75it/s] 41%|████      | 52/128 [01:52<00:49,  1.54it/s] 41%|████▏     | 53/128 [01:53<00:46,  1.62it/s] 42%|████▏     | 54/128 [01:53<00:44,  1.67it/s] 43%|████▎     | 55/128 [01:54<00:42,  1.71it/s] 44%|████▍     | 56/128 [01:54<00:41,  1.74it/s] 45%|████▍     | 57/128 [01:57<01:21,  1.15s/it] 45%|████▌     | 58/128 [02:07<04:25,  3.79s/it] 46%|████▌     | 59/128 [02:13<05:06,  4.44s/it] 47%|████▋     | 60/128 [02:19<05:29,  4.85s/it] 48%|████▊     | 61/128 [02:24<05:45,  5.16s/it] 48%|████▊     | 62/128 [02:30<05:45,  5.24s/it] 49%|████▉     | 63/128 [02:35<05:38,  5.20s/it] 50%|█████     | 64/128 [02:40<05:29,  5.15s/it] 51%|█████     | 65/128 [02:58<09:29,  9.05s/it] 52%|█████▏    | 66/128 [02:59<06:44,  6.53s/it] 52%|█████▏    | 67/128 [02:59<04:49,  4.75s/it] 53%|█████▎    | 68/128 [03:00<03:30,  3.51s/it] 54%|█████▍    | 69/128 [03:01<02:41,  2.73s/it] 55%|█████▍    | 70/128 [03:02<02:01,  2.10s/it] 55%|█████▌    | 71/128 [03:02<01:34,  1.66s/it] 56%|█████▋    | 72/128 [03:03<01:15,  1.34s/it] 57%|█████▋    | 73/128 [03:03<01:00,  1.10s/it] 58%|█████▊    | 74/128 [03:03<00:43,  1.23it/s] 59%|█████▊    | 75/128 [03:04<00:31,  1.67it/s] 59%|█████▉    | 76/128 [03:04<00:23,  2.22it/s] 60%|██████    | 77/128 [03:04<00:17,  2.87it/s] 61%|██████    | 78/128 [03:04<00:13,  3.64it/s] 62%|██████▏   | 79/128 [03:04<00:11,  4.11it/s] 62%|██████▎   | 80/128 [03:04<00:09,  4.98it/s] 63%|██████▎   | 81/128 [03:04<00:08,  5.86it/s] 64%|██████▍   | 82/128 [03:04<00:06,  6.67it/s] 65%|██████▍   | 83/128 [03:04<00:06,  7.40it/s] 66%|██████▌   | 84/128 [03:05<00:05,  8.01it/s] 66%|██████▋   | 85/128 [03:05<00:05,  7.53it/s] 68%|██████▊   | 87/128 [03:05<00:04,  8.52it/s] 70%|██████▉   | 89/128 [03:05<00:04,  9.06it/s] 70%|███████   | 90/128 [03:05<00:04,  8.38it/s] 71%|███████   | 91/128 [03:05<00:04,  8.69it/s] 72%|███████▏  | 92/128 [03:05<00:04,  8.97it/s] 73%|███████▎  | 94/128 [03:06<00:03,  9.39it/s] 74%|███████▍  | 95/128 [03:06<00:03,  8.60it/s] 76%|███████▌  | 97/128 [03:06<00:03,  9.10it/s] 77%|███████▋  | 99/128 [03:06<00:03,  9.45it/s] 79%|███████▉  | 101/128 [03:06<00:03,  8.66it/s] 80%|████████  | 103/128 [03:07<00:02,  9.11it/s] 82%|████████▏ | 105/128 [03:07<00:02,  9.43it/s] 83%|████████▎ | 106/128 [03:07<00:02,  8.71it/s] 84%|████████▍ | 108/128 [03:07<00:02,  9.15it/s] 86%|████████▌ | 110/128 [03:07<00:02,  8.99it/s] 87%|████████▋ | 111/128 [03:08<00:02,  8.40it/s] 88%|████████▊ | 112/128 [03:08<00:01,  8.68it/s] 88%|████████▊ | 113/128 [03:08<00:01,  8.94it/s] 89%|████████▉ | 114/128 [03:08<00:01,  9.18it/s] 90%|████████▉ | 115/128 [03:08<00:01,  9.38it/s] 91%|█████████ | 116/128 [03:08<00:01,  8.44it/s] 91%|█████████▏| 117/128 [03:08<00:01,  8.81it/s] 92%|█████████▏| 118/128 [03:08<00:01,  9.10it/s] 94%|█████████▍| 120/128 [03:09<00:00,  9.53it/s] 95%|█████████▍| 121/128 [03:09<00:00,  7.21it/s] 95%|█████████▌| 122/128 [03:18<00:15,  2.54s/it] 96%|█████████▌| 123/128 [03:27<00:20,  4.16s/it] 97%|█████████▋| 124/128 [03:46<00:33,  8.36s/it] 98%|█████████▊| 125/128 [03:53<00:24,  8.05s/it] 99%|█████████▉| 127/128 [03:54<00:04,  4.49s/it]100%|██████████| 128/128 [03:54<00:00,  1.83s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 vllm-chat 
+Traffic request rate:                    inf       
+Max request concurrency:                 64        
+Successful requests:                     128       
+Benchmark duration (s):                  234.12    
+Total input tokens:                      558910    
+Total input text tokens:                 552894    
+Total input vision tokens:               6016      
+Total generated tokens:                  131072    
+Total generated tokens (retokenized):    16139     
+Request throughput (req/s):              0.55      
+Input token throughput (tok/s):          2387.32   
+Output token throughput (tok/s):         559.86    
+Peak output token throughput (tok/s):    645.00    
+Peak concurrent requests:                66        
+Total token throughput (tok/s):          2947.18   
+Concurrency:                             51.83     
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   94799.27  
+Median E2E Latency (ms):                 92426.73  
+P90 E2E Latency (ms):                    111567.77 
+P95 E2E Latency (ms):                    123224.23 
+P99 E2E Latency (ms):                    153485.24 
+---------------Time to First Token----------------
+Mean TTFT (ms):                          10737.91  
+Median TTFT (ms):                        7136.63   
+P90 TTFT (ms):                           23476.48  
+P95 TTFT (ms):                           27223.33  
+P99 TTFT (ms):                           31476.64  
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          82.17     
+Median TPOT (ms):                        83.53     
+P90 TPOT (ms):                           89.17     
+P95 TPOT (ms):                           95.52     
+P99 TPOT (ms):                           121.91    
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           143.80    
+Median ITL (ms):                         58.18     
+P90 ITL (ms):                            289.34    
+P95 ITL (ms):                            298.46    
+P99 ITL (ms):                            311.12    
+Max ITL (ms):                            17514.20  
+==================================================

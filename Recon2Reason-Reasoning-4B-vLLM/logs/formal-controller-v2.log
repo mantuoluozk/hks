@@ -1,0 +1,6 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Recon2Reason-Reasoning-4B-vLLM/scripts/run_formal_matrix.py", line 27, in <module>
+    try:probe.bind(('127.0.0.1',30123))
+OSError: [Errno 98] Address already in use

@@ -1,0 +1,54 @@
+[
+  {
+    "index": 71,
+    "skip_special_tokens": false,
+    "seconds": 49.85427840100601,
+    "input_tokens": 17329,
+    "output_tokens": 1024,
+    "token_counts": {
+      "151673": 1024
+    },
+    "content_characters": 12288,
+    "content_prefix": "<|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|fe",
+    "finish_reason": "length"
+  },
+  {
+    "index": 71,
+    "skip_special_tokens": true,
+    "seconds": 47.93284395895898,
+    "input_tokens": 17329,
+    "output_tokens": 1024,
+    "token_counts": {
+      "151673": 1024
+    },
+    "content_characters": 0,
+    "content_prefix": "",
+    "finish_reason": "length"
+  },
+  {
+    "index": 98,
+    "skip_special_tokens": false,
+    "seconds": 49.26223338674754,
+    "input_tokens": 17301,
+    "output_tokens": 1024,
+    "token_counts": {
+      "151673": 1024
+    },
+    "content_characters": 12288,
+    "content_prefix": "<|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|feat_pad|><|fe",
+    "finish_reason": "length"
+  },
+  {
+    "index": 98,
+    "skip_special_tokens": true,
+    "seconds": 47.845350889954716,
+    "input_tokens": 17301,
+    "output_tokens": 1024,
+    "token_counts": {
+      "151673": 1024
+    },
+    "content_characters": 0,
+    "content_prefix": "",
+    "finish_reason": "length"
+  }
+]

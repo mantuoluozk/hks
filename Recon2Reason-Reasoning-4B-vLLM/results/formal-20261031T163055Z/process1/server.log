@@ -1,0 +1,32 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+INFO 11-01 00:30:57 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-01 00:30:57 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-01 00:30:57 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-01 00:30:58 [__init__.py:237] Platform plugin hcu is activated
+INFO 11-01 00:31:31 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-01 00:31:31 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-01 00:31:31 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-01 00:31:32 [__init__.py:237] Platform plugin hcu is activated
+(APIServer pid=3187) INFO 11-01 00:31:57 [api_utils.py:339] 
+(APIServer pid=3187) INFO 11-01 00:31:57 [api_utils.py:339]        █     █     █▄   ▄█
+(APIServer pid=3187) INFO 11-01 00:31:57 [api_utils.py:339]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.25.1
+(APIServer pid=3187) INFO 11-01 00:31:57 [api_utils.py:339]   █▄█▀ █     █     █     █  model   /root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B
+(APIServer pid=3187) INFO 11-01 00:31:57 [api_utils.py:339]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=3187) INFO 11-01 00:31:57 [api_utils.py:339] 
+(APIServer pid=3187) INFO 11-01 00:31:57 [api_utils.py:273] non-default args: {'host': '127.0.0.1', 'port': 30123, 'model': '/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B', 'dtype': 'bfloat16', 'max_model_len': 32768, 'enforce_eager': True, 'served_model_name': ['recon2reason-4b'], 'gpu_memory_utilization': 0.8, 'limit_mm_per_prompt': {'image': 2}, 'max_num_seqs': 64}
+(APIServer pid=3187) INFO 11-01 00:31:57 [model.py:619] Resolved architecture: Qwen3VLForConditionalGeneration
+(APIServer pid=3187) INFO 11-01 00:31:57 [model.py:1776] Using max model len 32768
+(APIServer pid=3187) INFO 11-01 00:31:57 [vllm.py:1042] Asynchronous scheduling is enabled.
+(APIServer pid=3187) WARNING 11-01 00:31:57 [vllm.py:1096] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(APIServer pid=3187) WARNING 11-01 00:31:57 [vllm.py:1144] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(APIServer pid=3187) INFO 11-01 00:31:57 [kernel.py:292] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(APIServer pid=3187) INFO 11-01 00:31:57 [vllm.py:1322] Cudagraph is disabled under eager mode
+(APIServer pid=3187) INFO 11-01 00:31:57 [compilation.py:312] Enabled custom fusions: norm_quant, act_quant
+(APIServer pid=3187) [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+(APIServer pid=3187) WARNING 11-01 00:32:07 [rocm.py:123] Using CUDA_VISIBLE_DEVICES on ROCm is deprecated and support will be removed in vLLM v0.26.0. Please use HIP_VISIBLE_DEVICES instead.
+INFO 11-01 00:32:09 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-01 00:32:09 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-01 00:32:09 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-01 00:32:10 [__init__.py:237] Platform plugin hcu is activated
+WARNING 11-01 00:32:34 [rocm.py:123] Using CUDA_VISIBLE_DEVICES on ROCm is deprecated and support will be removed in vLLM v0.26.0. Please use HIP_VISIBLE_DEVICES instead.

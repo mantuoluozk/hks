@@ -1,0 +1,6 @@
+{
+  "version": "v1.0.0",
+  "base_image": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18",
+  "page": "https://www.scnet.cn/ui/aihub/image/zack233/2116559999150473218",
+  "repository": "appstore.scnet.cn:5000/aihub/dcu/zack233/recon2reason-vllm:v1.0.0"
+}

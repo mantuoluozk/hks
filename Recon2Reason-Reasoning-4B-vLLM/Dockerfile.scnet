@@ -1,0 +1,5 @@
+FROM image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18
+COPY recon2reason-vllm/ /opt/recon2reason-vllm/
+RUN python /opt/recon2reason-vllm/verify.py && cp -a /opt/recon2reason-vllm/deps /opt/qwen3-asr-deps
+ENV PYTHONPATH=/opt/qwen3-asr-deps
+# Keep the base image's Notebook/SSH startup. Model weights stay on shared storage.

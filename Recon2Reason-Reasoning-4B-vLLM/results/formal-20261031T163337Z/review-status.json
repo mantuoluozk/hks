@@ -1,0 +1,104 @@
+{
+  "run_completed": true,
+  "completed_requests": 1216,
+  "empty_text_requests": 8,
+  "anomalies": [
+    {
+      "process": 1,
+      "repeat": 1,
+      "input": 16384,
+      "concurrency": 64,
+      "index": 71,
+      "backend_output_tokens": 1024,
+      "ttft_seconds": 0.0,
+      "itl_count": 0,
+      "error": ""
+    },
+    {
+      "process": 1,
+      "repeat": 1,
+      "input": 16384,
+      "concurrency": 64,
+      "index": 98,
+      "backend_output_tokens": 1024,
+      "ttft_seconds": 0.0,
+      "itl_count": 0,
+      "error": ""
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "input": 16384,
+      "concurrency": 64,
+      "index": 71,
+      "backend_output_tokens": 1024,
+      "ttft_seconds": 0.0,
+      "itl_count": 0,
+      "error": ""
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "input": 16384,
+      "concurrency": 64,
+      "index": 98,
+      "backend_output_tokens": 1024,
+      "ttft_seconds": 0.0,
+      "itl_count": 0,
+      "error": ""
+    },
+    {
+      "process": 2,
+      "repeat": 1,
+      "input": 16384,
+      "concurrency": 64,
+      "index": 71,
+      "backend_output_tokens": 1024,
+      "ttft_seconds": 0.0,
+      "itl_count": 0,
+      "error": ""
+    },
+    {
+      "process": 2,
+      "repeat": 1,
+      "input": 16384,
+      "concurrency": 64,
+      "index": 98,
+      "backend_output_tokens": 1024,
+      "ttft_seconds": 0.0,
+      "itl_count": 0,
+      "error": ""
+    },
+    {
+      "process": 2,
+      "repeat": 2,
+      "input": 16384,
+      "concurrency": 64,
+      "index": 71,
+      "backend_output_tokens": 1024,
+      "ttft_seconds": 0.0,
+      "itl_count": 0,
+      "error": ""
+    },
+    {
+      "process": 2,
+      "repeat": 2,
+      "input": 16384,
+      "concurrency": 64,
+      "index": 98,
+      "backend_output_tokens": 1024,
+      "ttft_seconds": 0.0,
+      "itl_count": 0,
+      "error": ""
+    }
+  ],
+  "cached_metric_max_deviation": {
+    "input": 4096,
+    "c": 8,
+    "metric": "mean_ttft_ms",
+    "percent": 7.766068377701464
+  },
+  "verification_passed": false,
+  "reason": "Empty streamed text and zero TTFT require diagnosis; no raw evidence changed",
+  "official_acceptance": null
+}

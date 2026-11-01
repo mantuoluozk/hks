@@ -1,0 +1,145 @@
+{
+  "rounds": [
+    [
+      {
+        "prompt_repeats": 32,
+        "concurrency": 1,
+        "requests": 8,
+        "elapsed": 46.560820256359875,
+        "mean_seconds": 5.819734995136969,
+        "output_tokens_per_second": 21.992739697495534
+      },
+      {
+        "prompt_repeats": 32,
+        "concurrency": 2,
+        "requests": 8,
+        "elapsed": 24.425225225742906,
+        "mean_seconds": 6.105936774692964,
+        "output_tokens_per_second": 41.92387134759182
+      },
+      {
+        "prompt_repeats": 32,
+        "concurrency": 4,
+        "requests": 8,
+        "elapsed": 12.354950639884919,
+        "mean_seconds": 6.176434582506772,
+        "output_tokens_per_second": 82.88175564977718
+      },
+      {
+        "prompt_repeats": 256,
+        "concurrency": 1,
+        "requests": 8,
+        "elapsed": 47.55376459378749,
+        "mean_seconds": 5.944083581387531,
+        "output_tokens_per_second": 21.5335212416343
+      },
+      {
+        "prompt_repeats": 256,
+        "concurrency": 2,
+        "requests": 8,
+        "elapsed": 24.746242782566696,
+        "mean_seconds": 6.186159426579252,
+        "output_tokens_per_second": 41.380019140578
+      },
+      {
+        "prompt_repeats": 256,
+        "concurrency": 4,
+        "requests": 8,
+        "elapsed": 12.360011928714812,
+        "mean_seconds": 6.178899736143649,
+        "output_tokens_per_second": 82.84781648317349
+      }
+    ],
+    [
+      {
+        "prompt_repeats": 32,
+        "concurrency": 1,
+        "requests": 8,
+        "elapsed": 49.1385060059838,
+        "mean_seconds": 6.142196055268869,
+        "output_tokens_per_second": 20.83905440420397
+      },
+      {
+        "prompt_repeats": 32,
+        "concurrency": 2,
+        "requests": 8,
+        "elapsed": 25.556686415802687,
+        "mean_seconds": 6.388887441775296,
+        "output_tokens_per_second": 40.0677921753902
+      },
+      {
+        "prompt_repeats": 32,
+        "concurrency": 4,
+        "requests": 8,
+        "elapsed": 12.701975577045232,
+        "mean_seconds": 6.350122181233019,
+        "output_tokens_per_second": 80.6173806419966
+      },
+      {
+        "prompt_repeats": 256,
+        "concurrency": 1,
+        "requests": 8,
+        "elapsed": 49.00516099622473,
+        "mean_seconds": 6.125513656588737,
+        "output_tokens_per_second": 20.895758307556363
+      },
+      {
+        "prompt_repeats": 256,
+        "concurrency": 2,
+        "requests": 8,
+        "elapsed": 24.843409062363207,
+        "mean_seconds": 6.210608109424356,
+        "output_tokens_per_second": 41.218175711292375
+      },
+      {
+        "prompt_repeats": 256,
+        "concurrency": 4,
+        "requests": 8,
+        "elapsed": 12.490025660023093,
+        "mean_seconds": 6.2439596828771755,
+        "output_tokens_per_second": 81.98542003620724
+      }
+    ]
+  ],
+  "deviations": [
+    {
+      "prompt_repeats": 32,
+      "concurrency": 1,
+      "mean_seconds": 0.05540820336344384,
+      "output_tokens_per_second": 0.05245755231772879
+    },
+    {
+      "prompt_repeats": 32,
+      "concurrency": 2,
+      "mean_seconds": 0.04634025498840188,
+      "output_tokens_per_second": 0.044272609197104455
+    },
+    {
+      "prompt_repeats": 32,
+      "concurrency": 4,
+      "mean_seconds": 0.02812101324899867,
+      "output_tokens_per_second": 0.02732054829230273
+    },
+    {
+      "prompt_repeats": 256,
+      "concurrency": 1,
+      "mean_seconds": 0.030522800145225175,
+      "output_tokens_per_second": 0.029617215267368588
+    },
+    {
+      "prompt_repeats": 256,
+      "concurrency": 2,
+      "mean_seconds": 0.003952158546069645,
+      "output_tokens_per_second": 0.003911149212759025
+    },
+    {
+      "prompt_repeats": 256,
+      "concurrency": 4,
+      "mean_seconds": 0.010529374081433444,
+      "output_tokens_per_second": 0.010409404659945358
+    }
+  ],
+  "performance_reproduced": true,
+  "official_acceptance": null,
+  "accuracy": "exempt under supplied competition rule; synthetic smoke is not accuracy"
+}

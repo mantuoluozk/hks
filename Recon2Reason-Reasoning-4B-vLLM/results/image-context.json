@@ -1,0 +1,7 @@
+{
+  "dockerfile": "/public/home/zack233/dockerFileTemp/Dockerfile.recon2reason-vllm",
+  "context": "/public/home/zack233/dockerFileTemp",
+  "files": 2192,
+  "bytes": 41540297,
+  "manifest_sha256": "61c3de68ef06d52a5c2c22df753c5263fa8f4ef1a563d80ebab80b0c91c245ef"
+}

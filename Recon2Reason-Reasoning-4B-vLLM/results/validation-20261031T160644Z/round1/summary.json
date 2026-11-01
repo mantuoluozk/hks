@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_repeats": 32,
+    "concurrency": 1,
+    "requests": 8,
+    "elapsed": 46.560820256359875,
+    "mean_seconds": 5.819734995136969,
+    "output_tokens_per_second": 21.992739697495534
+  },
+  {
+    "prompt_repeats": 32,
+    "concurrency": 2,
+    "requests": 8,
+    "elapsed": 24.425225225742906,
+    "mean_seconds": 6.105936774692964,
+    "output_tokens_per_second": 41.92387134759182
+  },
+  {
+    "prompt_repeats": 32,
+    "concurrency": 4,
+    "requests": 8,
+    "elapsed": 12.354950639884919,
+    "mean_seconds": 6.176434582506772,
+    "output_tokens_per_second": 82.88175564977718
+  },
+  {
+    "prompt_repeats": 256,
+    "concurrency": 1,
+    "requests": 8,
+    "elapsed": 47.55376459378749,
+    "mean_seconds": 5.944083581387531,
+    "output_tokens_per_second": 21.5335212416343
+  },
+  {
+    "prompt_repeats": 256,
+    "concurrency": 2,
+    "requests": 8,
+    "elapsed": 24.746242782566696,
+    "mean_seconds": 6.186159426579252,
+    "output_tokens_per_second": 41.380019140578
+  },
+  {
+    "prompt_repeats": 256,
+    "concurrency": 4,
+    "requests": 8,
+    "elapsed": 12.360011928714812,
+    "mean_seconds": 6.178899736143649,
+    "output_tokens_per_second": 82.84781648317349
+  }
+]

@@ -1,0 +1,180 @@
+{
+  "job": "formal-20261031T163337Z",
+  "template": "image, 4096/16384 text length parameter, 1024 output, concurrency 1/8/64; second repetition measured",
+  "processes": 2,
+  "requests_per_process_excluding_client_internal_warmup": 608,
+  "complete": true,
+  "smoke": [
+    {
+      "path": "smoke-20261031T163623Z",
+      "checks": 5,
+      "passed": true
+    },
+    {
+      "path": "smoke-20261031T175818Z",
+      "checks": 5,
+      "passed": true
+    }
+  ],
+  "confirmed_special_only_requests": [
+    {
+      "process": 1,
+      "repeat": 1,
+      "index": 71,
+      "output_tokens": 1024,
+      "token_id": 151673
+    },
+    {
+      "process": 1,
+      "repeat": 1,
+      "index": 98,
+      "output_tokens": 1024,
+      "token_id": 151673
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "index": 71,
+      "output_tokens": 1024,
+      "token_id": 151673
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "index": 98,
+      "output_tokens": 1024,
+      "token_id": 151673
+    },
+    {
+      "process": 2,
+      "repeat": 1,
+      "index": 71,
+      "output_tokens": 1024,
+      "token_id": 151673
+    },
+    {
+      "process": 2,
+      "repeat": 1,
+      "index": 98,
+      "output_tokens": 1024,
+      "token_id": 151673
+    },
+    {
+      "process": 2,
+      "repeat": 2,
+      "index": 71,
+      "output_tokens": 1024,
+      "token_id": 151673
+    },
+    {
+      "process": 2,
+      "repeat": 2,
+      "index": 98,
+      "output_tokens": 1024,
+      "token_id": 151673
+    }
+  ],
+  "no_visible_token_ttft_count": 8,
+  "ttft_interpretation": "Raw client statistics retained; the eight hidden-special-only requests have no visible-content TTFT and are represented as zero by the unmodified client. No requests removed.",
+  "comparison": [
+    {
+      "input": 4096,
+      "output": 1024,
+      "concurrency": 1,
+      "deviation_percent": {
+        "duration": 0.1090188147160986,
+        "request_throughput": 0.10890009312533541,
+        "output_throughput": 0.10890009312533541,
+        "total_throughput": 0.10890009312534876,
+        "mean_ttft_ms": 6.849508719557051,
+        "p99_ttft_ms": 9.651723918618702,
+        "mean_tpot_ms": 0.08151625848357766,
+        "p99_tpot_ms": 1.1330317072926117,
+        "mean_e2e_latency_ms": 0.10776245325146491
+      }
+    },
+    {
+      "input": 4096,
+      "output": 1024,
+      "concurrency": 8,
+      "deviation_percent": {
+        "duration": 0.9342069356478085,
+        "request_throughput": 0.9255602872507056,
+        "output_throughput": 0.9255602872507056,
+        "total_throughput": 0.9255602872507108,
+        "mean_ttft_ms": 7.766068377701464,
+        "p99_ttft_ms": 0.25039239009600384,
+        "mean_tpot_ms": 0.970500658686168,
+        "p99_tpot_ms": 0.8912023536416396,
+        "mean_e2e_latency_ms": 0.8999489347792762
+      }
+    },
+    {
+      "input": 4096,
+      "output": 1024,
+      "concurrency": 64,
+      "deviation_percent": {
+        "duration": 0.39930288391457514,
+        "request_throughput": 0.3977147972593562,
+        "output_throughput": 0.3977147972593562,
+        "total_throughput": 0.3977147972593575,
+        "mean_ttft_ms": 0.4488278699555301,
+        "p99_ttft_ms": 0.3231560641934882,
+        "mean_tpot_ms": 0.25692658218217845,
+        "p99_tpot_ms": 0.17719974796155533,
+        "mean_e2e_latency_ms": 0.2786632412201069
+      }
+    },
+    {
+      "input": 16384,
+      "output": 1024,
+      "concurrency": 1,
+      "deviation_percent": {
+        "duration": 0.19383450236039662,
+        "request_throughput": 0.19345951107981119,
+        "output_throughput": 0.19345951107981119,
+        "total_throughput": 0.19345951107981796,
+        "mean_ttft_ms": 4.627718549402602,
+        "p99_ttft_ms": 2.882399066638923,
+        "mean_tpot_ms": 0.16896320912109436,
+        "p99_tpot_ms": 1.4445046447445065,
+        "mean_e2e_latency_ms": 0.19376981517292938
+      }
+    },
+    {
+      "input": 16384,
+      "output": 1024,
+      "concurrency": 8,
+      "deviation_percent": {
+        "duration": 0.04205503775966772,
+        "request_throughput": 0.042072731462774945,
+        "output_throughput": 0.042072731462774945,
+        "total_throughput": 0.04207273146277273,
+        "mean_ttft_ms": 0.9204573988007324,
+        "p99_ttft_ms": 2.8889139550634058,
+        "mean_tpot_ms": 0.06257190622262677,
+        "p99_tpot_ms": 0.3448608811157891,
+        "mean_e2e_latency_ms": 0.0434247416235282
+      }
+    },
+    {
+      "input": 16384,
+      "output": 1024,
+      "concurrency": 64,
+      "deviation_percent": {
+        "duration": 0.14114163345070602,
+        "request_throughput": 0.14134112462273427,
+        "output_throughput": 0.14134112462273427,
+        "total_throughput": 0.1413411246227402,
+        "mean_ttft_ms": 0.04427351672382517,
+        "p99_ttft_ms": 0.1826686423461047,
+        "mean_tpot_ms": 0.16338094443343223,
+        "p99_tpot_ms": 0.2629769494398367,
+        "mean_e2e_latency_ms": 0.019536998467137596
+      }
+    }
+  ],
+  "max_deviation_percent": 9.651723918618702,
+  "performance_reproduced": true,
+  "official_acceptance": null
+}

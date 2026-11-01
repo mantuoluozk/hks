@@ -1,0 +1,7 @@
+health: 
+{"case": "text", "seconds": 0.534, "answer": "5", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 21, "total_tokens": 23, "completion_tokens": 2, "prompt_tokens_details": null}}
+{"case": "single_image", "seconds": 1.328, "answer": "red", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 75, "total_tokens": 77, "completion_tokens": 2, "prompt_tokens_details": null}}
+{"case": "multi_image", "seconds": 0.31, "answer": "red, blue", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 134, "total_tokens": 138, "completion_tokens": 4, "prompt_tokens_details": null}}
+{"case": "multi_turn", "seconds": 0.165, "answer": "blue", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 104, "total_tokens": 106, "completion_tokens": 2, "prompt_tokens_details": null}}
+{"case": "stream_image", "seconds": 0.189, "answer": "red", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": null}
+Artifacts: /root/private_data/hks/models/Recon2Reason-Reasoning-4B-vLLM/results/smoke-20261031T163623Z

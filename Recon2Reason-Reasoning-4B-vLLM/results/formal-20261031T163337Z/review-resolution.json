@@ -1,0 +1,18 @@
+{
+  "status": "resolved_as_hidden_special_tokens",
+  "raw_requests_removed": false,
+  "raw_metrics_changed": false,
+  "cases": [
+    71,
+    98
+  ],
+  "token_id": 151673,
+  "vllm_tokens_each": 1024,
+  "publisher_reference_tokens_each": 64,
+  "token_ids_equal_across_rendering_flags": true,
+  "reference_prefix_matches": true,
+  "limitation": "No visible-content TTFT for eight records; raw client zeros retained and disclosed",
+  "performance_reproduced": true,
+  "max_template_metric_deviation_percent": 9.651723918618702,
+  "official_acceptance": null
+}
