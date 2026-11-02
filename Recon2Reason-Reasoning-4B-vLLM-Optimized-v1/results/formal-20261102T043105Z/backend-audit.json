@@ -1,0 +1,14 @@
+{
+  "matrix_requests": 608,
+  "matrix_output_tokens": 622592,
+  "internal_warmups": 12,
+  "warmup_output_tokens_each": 32,
+  "nonstream_functional_output_tokens": 10,
+  "stream_functional_expected_tokens": 2,
+  "stream_assumption": "Fixed red response: one visible token plus stop token; exact saved backend total matches this accounting.",
+  "expected_generation_tokens": 622988,
+  "observed_generation_tokens": 622988.0,
+  "successful_requests": 625.0,
+  "captured_before_special_token_diagnostics": true,
+  "official_acceptance": null
+}

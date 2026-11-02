@@ -1,0 +1,293 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+{
+  "cells": [
+    {
+      "prompt_repeats": 32,
+      "concurrency": 1,
+      "gain_percent": 345.9373279700087
+    },
+    {
+      "prompt_repeats": 32,
+      "concurrency": 2,
+      "gain_percent": 347.1531286427039
+    },
+    {
+      "prompt_repeats": 32,
+      "concurrency": 4,
+      "gain_percent": 337.61577385645245
+    },
+    {
+      "prompt_repeats": 256,
+      "concurrency": 1,
+      "gain_percent": 348.8513530259305
+    },
+    {
+      "prompt_repeats": 256,
+      "concurrency": 2,
+      "gain_percent": 363.21414693807634
+    },
+    {
+      "prompt_repeats": 256,
+      "concurrency": 4,
+      "gain_percent": 337.6798953908407
+    }
+  ],
+  "measured_requests_per_configuration": 48,
+  "warmups_per_configuration": 2,
+  "single_pass": true,
+  "paired_responses": [
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    },
+    {
+      "request": true,
+      "usage": true,
+      "text": true
+    }
+  ],
+  "all_requests_usage_text_equal": true,
+  "official_acceptance": null
+}

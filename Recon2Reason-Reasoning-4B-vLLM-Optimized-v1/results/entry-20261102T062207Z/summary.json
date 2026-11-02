@@ -1,0 +1,18 @@
+{
+  "commands": [
+    {
+      "command": "run.sh",
+      "returncode": 0
+    },
+    {
+      "command": "env_check.sh",
+      "returncode": 0
+    },
+    {
+      "command": "smoke.sh",
+      "returncode": 0
+    }
+  ],
+  "success": true,
+  "port_closed": true
+}

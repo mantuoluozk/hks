@@ -1,0 +1,14 @@
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+results/** -text -whitespace
+logs/** -text -whitespace
+bench/*.jsonl -text -whitespace
+bench/reproduce/*.jsonl -text -whitespace
+server.log -text -whitespace
+env.log -text -whitespace
+*.png binary

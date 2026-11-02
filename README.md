@@ -6,6 +6,7 @@
 |---|---|---|---|---|
 | [Recon2Reason-Reasoning-4B](Recon2Reason-Reasoning-4B/README.md) | SGLang | 5/5 | OCRBench 463/1000；MMMU 437/900 | 12 轮、608 请求 |
 | [Recon2Reason-Reasoning-4B-vLLM](Recon2Reason-Reasoning-4B-vLLM/README.md) | vLLM | 新镜像两独立服务各5/5 | 赛事不要求精度 | 官方六档完整双进程1216请求；模板指标最大偏差9.65%；特殊token输出说明见报告 |
+| [Recon2Reason-Reasoning-4B-vLLM · 优化版v1](Recon2Reason-Reasoning-4B-vLLM-Optimized-v1/README.md) | vLLM | 四服务各5/5 | 赛事不要求精度；短测50条请求/usage/输出一致 | 官方六档608/608；完整矩阵吞吐提升2.21%–347.89%，五档超过10%；单矩阵服务 |
 | [RoboBrain2.5-8B-NV](RoboBrain2.5-8B-NV/README.md) | SGLang | 8/8 | CV-Bench 2638 题，88.10% | 12 轮、608 请求；完整矩阵独立复跑待补 |
 | [MiMo-V2.6-Distill-Qwen-9B](MiMo-V2.6-Distill-Qwen-9B/README.md) | SGLang | 11/11 | GSM8K 179/200；MMLU 160/200 | 12 轮、608 请求 |
 | [Qwen3-ASR-1.7B](Qwen3-ASR-1.7B/README.md) | vLLM | 在线 6/6；PCM 4/4；官方条件识别 300/300 | test-clean 2620 条，WER 1.6501% | 128 请求；复跑最大偏差 7.28% |

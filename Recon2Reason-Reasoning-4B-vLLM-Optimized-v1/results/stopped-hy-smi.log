@@ -1,0 +1,10 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+
+================================= System Management Interface ==================================
+================================================================================================
+HCU     Temp     AvgPwr     Perf     PwrCap     VRAM%      HCU%      Dec%      Enc%      Mode     
+0       51.0C    456.0W     auto     1000.0W    0%         0.0%      0.0%      0.0%      Normal   
+================================================================================================
+======================================== End of SMI Log ========================================
+

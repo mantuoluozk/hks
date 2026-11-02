@@ -1,0 +1,7 @@
+{
+  "installed_path": "/usr/local/lib/python3.10/dist-packages/sglang/benchmark/serving.py",
+  "package": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+  "sha256": "a24937919cdf033bdc5123c317940a2578eb01cf81ed7788fc66fe9cd0090489",
+  "warmup_output_tokens": 32,
+  "warmup_requests_per_call": 1
+}

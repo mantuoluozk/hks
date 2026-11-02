@@ -1,0 +1,47 @@
+{
+  "cells": [
+    {
+      "prompt_repeats": 32,
+      "concurrency": 1,
+      "baseline_tps": 21.482527012992236,
+      "candidate_tps": 95.79860694217291,
+      "gain_pct": 345.9373279700087
+    },
+    {
+      "prompt_repeats": 32,
+      "concurrency": 2,
+      "baseline_tps": 41.27455492216938,
+      "candidate_tps": 184.56046366783153,
+      "gain_pct": 347.1531286427039
+    },
+    {
+      "prompt_repeats": 32,
+      "concurrency": 4,
+      "baseline_tps": 82.94570729343482,
+      "candidate_tps": 362.9834988528727,
+      "gain_pct": 337.61577385645245
+    },
+    {
+      "prompt_repeats": 256,
+      "concurrency": 1,
+      "baseline_tps": 21.47463594968173,
+      "candidate_tps": 96.38919401753932,
+      "gain_pct": 348.8513530259305
+    },
+    {
+      "prompt_repeats": 256,
+      "concurrency": 2,
+      "baseline_tps": 39.92985168410787,
+      "candidate_tps": 184.96072185217938,
+      "gain_pct": 363.21414693807634
+    },
+    {
+      "prompt_repeats": 256,
+      "concurrency": 4,
+      "baseline_tps": 80.24990938240666,
+      "candidate_tps": 351.2377194361619,
+      "gain_pct": 337.6798953908407
+    }
+  ],
+  "requests_and_text_equal": true
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "Post-start CPU evidence audit only; no inference protocol, service parameter or benchmark changes.",
+  "initial": "verify_optimized.initial.py",
+  "active": "verify_optimized.py",
+  "changes": [
+    "Seeded fallback for absent historical request cache",
+    "Validate generated request against original SHA instead of requiring an ignored cache file"
+  ],
+  "updated_at": "2026-11-02T04:42:13.664Z",
+  "initial_reconstruction": "The launch audit version was restored by reversing the recorded cache-independence patch; it is not a second inference run."
+}
