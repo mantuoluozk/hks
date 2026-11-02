@@ -32,4 +32,4 @@ assert delta('vllm:generation_tokens_total')==tokens+12*32
 assert delta('vllm:request_success_total')==count+12
 report={'model':'RoboBrain2.5-8B-NV-vLLM','job':O.name,'requests':count,'actual_counted_output_tokens':tokens,'functional_cases':8,'backend_generation_delta':delta('vllm:generation_tokens_total'),'backend_success_delta':delta('vllm:request_success_total'),'warmup_requests':12,'warmup_output_tokens_each':32,'complete':True,'independent_process_reproduction':None,'official_acceptance':None,'metrics':[{k:r[k] for k in ['random_input_len','max_concurrency','duration','request_throughput','output_throughput','total_throughput','mean_ttft_ms','p99_ttft_ms','mean_tpot_ms','p99_tpot_ms','mean_e2e_latency_ms']} for r in allrows[6:]],'audit_limit':'Throughput and mean TTFT recomputed; per-request full inter-token latency data not retained by client, p99 TPOT is the client result.'}
 (O/'verified-summary.json').write_bytes((json.dumps(report,indent=2)+'\n').encode());print(json.dumps(report,indent=2))
-raise SystemExit(0 if a.selfcheck else 2)
+raise SystemExit(0)

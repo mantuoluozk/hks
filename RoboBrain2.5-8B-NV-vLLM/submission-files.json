@@ -33,7 +33,7 @@
   },
   {
     "path": "README.md",
-    "bytes": 9215
+    "bytes": 9277
   },
   {
     "path": "results/entry-20261102T112332Z/request.json",
@@ -54,6 +54,10 @@
   {
     "path": "results/entry-20261102T112332Z/summary.json",
     "bytes": 236
+  },
+  {
+    "path": "results/entry-20261102T112332Z/verify-exit-check.json",
+    "bytes": 156
   },
   {
     "path": "results/entry-20261102T112332Z/weights/weights-check.json",
@@ -653,7 +657,7 @@
   },
   {
     "path": "scripts/write_report.py",
-    "bytes": 9746
+    "bytes": 9808
   },
   {
     "path": "serve.sh",
@@ -705,6 +709,6 @@
   },
   {
     "path": "verify.py",
-    "bytes": 3624
+    "bytes": 3602
   }
 ]
