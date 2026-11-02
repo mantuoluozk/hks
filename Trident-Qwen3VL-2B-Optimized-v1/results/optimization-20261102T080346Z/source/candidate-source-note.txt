@@ -1,0 +1,1 @@
+piecewise candidate capture sizes revised before its launch to cover prefill token counts 35/447/453 times batch 1/2/4/8; initial eager candidates already imported runtime and remain unchanged

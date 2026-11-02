@@ -1,0 +1,6 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Trident-Qwen3VL-2B-Optimized-v1/scripts/audit_optimization.py", line 28, in <module>
+    cosine=np.sum(va*vb,axis=1);assert np.min(cosine)>0.9999
+AssertionError

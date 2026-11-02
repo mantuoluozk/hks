@@ -1,0 +1,8 @@
+{
+  "model": "Trident-Qwen3VL-2B-Optimized-v1",
+  "image": "appstore.scnet.cn:5000/aihub/dcu/zack233/qwen-asr:v1",
+  "version": "v1",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490",
+  "region": "本轮实例未独立记录",
+  "verification_scope": "本轮Notebook完成五个优化候选与最终单进程两轮1536条embedding输入；未新增独立进程完整复现"
+}

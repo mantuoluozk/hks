@@ -12,6 +12,7 @@
 | [Qwen3-ASR-1.7B](Qwen3-ASR-1.7B/README.md) | vLLM | 在线 6/6；PCM 4/4；官方条件识别 300/300 | test-clean 2620 条，WER 1.6501% | 128 请求；复跑最大偏差 7.28% |
 | [Qwen3-ForcedAligner-0.6B](Qwen3-ForcedAligner-0.6B/README.md) | vLLM | 中英文 2/2；官方条件词级对齐 30/30 | — | 每进程 512 请求；复跑最大偏差 7.18% |
 | [Trident-Qwen3VL-2B](Trident-Qwen3VL-2B/README.md) | vLLM | 6 条多模态输入及 HTTP embedding | ChartQA Origin NDCG@10 ×100 = 69.4483 | 每进程 1536 请求；复跑最大偏差 3.88% |
+| [Trident-Qwen3VL-2B 优化版v1](Trident-Qwen3VL-2B-Optimized-v1/README.md) | vLLM | 6条多模态输入及HTTP embedding通过 | 首版ChartQA Origin 69.4483；优化版演示向量对照通过 | 1536条embedding输入；相对初版历史吞吐提升21.14%–346.72%；单进程两轮 |
 | [Qwen-Image-2.1-Turbo](Qwen-Image-2.1-Turbo/README.md) | SGLang | 两个独立进程各 8/8；T03/T04 固定条件生成 180/180 | T03/T04 GenEval 图片已生成；未计算 CLIP/FID | 每进程 9 实测 + 3 预热；复跑最大偏差 17.09% |
 | [Kimi-VL-A3B-Instruct](Kimi-VL-A3B-Instruct/README.md) | vLLM | 两个独立进程各8/8 | OCRBench 869/1000；发布者867 | 每进程32请求；吞吐偏差1.32%，全指标最大17.39% |
 | [Kimi-VL-A3B-Instruct · 优化版v1](Kimi-VL-A3B-Instruct-Optimized-v1/README.md) | vLLM | 优化短负载与正式服务各8/8 | 首版OCRBench 869/1000；优化对照32条输出文本及长度逐条一致 | 官方六档608/608；同简单负载吞吐提升195.20%–384.94% |

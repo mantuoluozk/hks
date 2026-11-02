@@ -1,0 +1,38 @@
+{
+  "criterion": "Minimum sum of elapsed LLM.embed calls across all 12 screen cells; same 64 requests per cell. Single-screen selection, no confidence intervals.",
+  "selected": "piecewise-best-cpu",
+  "settings": {
+    "TRIDENT_CPU_THREADS": "2",
+    "VLLM_ENABLE_V1_MULTIPROCESSING": "0",
+    "TRIDENT_MODE": "piecewise"
+  },
+  "candidates": [
+    {
+      "name": "inprocess",
+      "elapsed_seconds": 32.220519362483174,
+      "aggregate_rps": 23.835742414948204
+    },
+    {
+      "name": "piecewise-inprocess",
+      "elapsed_seconds": 25.93023181380704,
+      "aggregate_rps": 29.61793806991976
+    },
+    {
+      "name": "inprocess-cpu1",
+      "elapsed_seconds": 33.642865299247205,
+      "aggregate_rps": 22.828019943271148
+    },
+    {
+      "name": "inprocess-cpu2",
+      "elapsed_seconds": 31.69418630003929,
+      "aggregate_rps": 24.231573346908984
+    },
+    {
+      "name": "piecewise-best-cpu",
+      "elapsed_seconds": 25.70017805090174,
+      "aggregate_rps": 29.88306145112692
+    }
+  ],
+  "rejected": [],
+  "screen": "optimization-20261102T080346Z"
+}

@@ -1,0 +1,53 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+{
+  "model": "Trident-Qwen3VL-2B-Optimized-v1",
+  "job": "final-20261102T082038Z",
+  "functional_inputs": 6,
+  "embedding_api_pass": true,
+  "minimum_functional_cosine_to_publisher": 0.9996262788772583,
+  "measured_requests": 1536,
+  "measured_input_tokens": 478720,
+  "candidate_vector_diagnostics": [
+    {
+      "candidate": "inprocess",
+      "min_cosine_to_incidental_eager_screen": 0.9998373096795458,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    },
+    {
+      "candidate": "piecewise-inprocess",
+      "min_cosine_to_incidental_eager_screen": 0.9998306210332896,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    },
+    {
+      "candidate": "inprocess-cpu1",
+      "min_cosine_to_incidental_eager_screen": 0.9998373096795458,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    },
+    {
+      "candidate": "inprocess-cpu2",
+      "min_cosine_to_incidental_eager_screen": 0.9998373096795458,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    },
+    {
+      "candidate": "piecewise-best-cpu",
+      "min_cosine_to_incidental_eager_screen": 0.9998381403689629,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    }
+  ],
+  "independent_process_reproduction": null,
+  "official_accuracy_pass": null,
+  "historical_accuracy": {
+    "model_version": "original eager release",
+    "dataset": "ChartQA Origin",
+    "ndcg10_times100": 69.4483,
+    "rerun_for_optimized_version": false
+  },
+  "protocol": "One optimized process, two rounds, 12 cells each, 64 requests per cell, two warmup calls per cell. Second round reported. Embedding throughput, not a 608-request generation benchmark."
+}
+{"optimized_evidence_audit": true, "independent_process_reproduction": null, "official_accuracy_pass": null}

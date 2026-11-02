@@ -1,0 +1,14 @@
+{
+  "paper": "https://arxiv.org/pdf/2610.11816v1",
+  "paper_pdf_sha256": "050555efcdfdbfeb64b1423437cc6a8dbc973837908b62308dfbd1736b233af7",
+  "page": 8,
+  "table": 1,
+  "model_row": "Trident-Qwen3VL-2B (Ours)",
+  "metric": "NDCG@10 x100",
+  "ChartQA": {
+    "Origin": 70.19,
+    "Mix_six_dataset_merged_corpus": 65.82
+  },
+  "visual_table_verified": true,
+  "official_contest_tolerance": null
+}

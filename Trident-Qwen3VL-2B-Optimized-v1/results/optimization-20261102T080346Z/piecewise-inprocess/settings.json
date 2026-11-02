@@ -1,0 +1,6 @@
+{
+  "REFERENCE_RESULTS": "/root/private_data/hks/models/Trident-Qwen3VL-2B/results/scnet/validation-20261026T114901Z/publisher_reference/summary.json",
+  "TRIDENT_MODE": "piecewise",
+  "VLLM_ENABLE_V1_MULTIPROCESSING": "0",
+  "TRIDENT_SCREEN": "1"
+}

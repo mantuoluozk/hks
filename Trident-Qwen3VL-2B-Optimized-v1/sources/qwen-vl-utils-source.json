@@ -1,0 +1,23 @@
+{
+  "package": "qwen-vl-utils",
+  "version": "0.0.14",
+  "wheel_url": "https://files.pythonhosted.org/packages/c4/43/80f67e0336cb2fc725f8e06f7fe35c1d0fe946f4d2b8b2175e797e07349e/qwen_vl_utils-0.0.14-py3-none-any.whl",
+  "wheel_bytes": 8120,
+  "wheel_sha256": "5e28657bfd031e56bd447c5901b58ddfc3835285ed100f4c56580e0ade054e96",
+  "files": [
+    {
+      "path": "sources/vendor/qwen_vl_utils/__init__.py",
+      "sha256": "a0c454a56f2ba478731013afe1ba5d5d9caff652fe0ce51be1c315476e5c7905"
+    },
+    {
+      "path": "sources/vendor/qwen_vl_utils/vision_process.py",
+      "sha256": "f3710ced8ffe735da57d08cf5236cf9d326ff646ed1bdad2e62593a7801adc33"
+    },
+    {
+      "path": "sources/vendor/qwen_vl_utils/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ],
+  "license": "Apache-2.0",
+  "license_source": "https://raw.githubusercontent.com/QwenLM/Qwen2-VL/main/LICENSE"
+}

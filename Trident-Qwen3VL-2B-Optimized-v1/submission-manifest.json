@@ -1,0 +1,754 @@
+{
+  "model": "Trident-Qwen3VL-2B-Optimized-v1",
+  "base_commit": "7d31ddadb50eb9545512f751752721c56348efe8",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 172
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 192
+    },
+    {
+      "path": "bench.sh",
+      "bytes": 389
+    },
+    {
+      "path": "README.md",
+      "bytes": 8160
+    },
+    {
+      "path": "run-scnet.sh",
+      "bytes": 1229
+    },
+    {
+      "path": "run.sh",
+      "bytes": 154
+    },
+    {
+      "path": "runtime-config.json",
+      "bytes": 1008
+    },
+    {
+      "path": "smoke.sh",
+      "bytes": 331
+    },
+    {
+      "path": "verify.py",
+      "bytes": 744
+    },
+    {
+      "path": "verify_historical.py",
+      "bytes": 207
+    },
+    {
+      "path": "优化说明.md",
+      "bytes": 833
+    },
+    {
+      "path": "官方精度基线查证.md",
+      "bytes": 1418
+    },
+    {
+      "path": "提交填写信息.md",
+      "bytes": 868
+    },
+    {
+      "path": "results/environment-20261102.json",
+      "bytes": 574
+    },
+    {
+      "path": "results/final-audit.log",
+      "bytes": 2057
+    },
+    {
+      "path": "results/final-current.json",
+      "bytes": 128
+    },
+    {
+      "path": "results/optimization-current.json",
+      "bytes": 123
+    },
+    {
+      "path": "results/optimized-summary.json",
+      "bytes": 8007
+    },
+    {
+      "path": "scripts/audit_optimization.py",
+      "bytes": 2230
+    },
+    {
+      "path": "scripts/benchmark_native.py",
+      "bytes": 3335
+    },
+    {
+      "path": "scripts/check_weights.py",
+      "bytes": 1358
+    },
+    {
+      "path": "scripts/evaluate_chartqa.py",
+      "bytes": 5672
+    },
+    {
+      "path": "scripts/finalize_report.py",
+      "bytes": 8898
+    },
+    {
+      "path": "scripts/final_validation.py",
+      "bytes": 3650
+    },
+    {
+      "path": "scripts/native_runtime.py",
+      "bytes": 1103
+    },
+    {
+      "path": "scripts/native_smoke.py",
+      "bytes": 4673
+    },
+    {
+      "path": "scripts/preflight.py",
+      "bytes": 1885
+    },
+    {
+      "path": "scripts/prepare_chartqa.py",
+      "bytes": 2262
+    },
+    {
+      "path": "scripts/reference_smoke.py",
+      "bytes": 3746
+    },
+    {
+      "path": "scripts/run_native_suite.py",
+      "bytes": 648
+    },
+    {
+      "path": "scripts/run_release_validation.py",
+      "bytes": 1512
+    },
+    {
+      "path": "scripts/run_validation.py",
+      "bytes": 1607
+    },
+    {
+      "path": "scripts/screen_combined.py",
+      "bytes": 2198
+    },
+    {
+      "path": "scripts/screen_cpu.py",
+      "bytes": 1808
+    },
+    {
+      "path": "scripts/screen_optimization.py",
+      "bytes": 2044
+    },
+    {
+      "path": "scripts/serve_embeddings.py",
+      "bytes": 4409
+    },
+    {
+      "path": "scripts/summarize_optimized.py",
+      "bytes": 4279
+    },
+    {
+      "path": "scripts/summarize_results.py",
+      "bytes": 5223
+    },
+    {
+      "path": "scripts/write_optimized_report.py",
+      "bytes": 8004
+    },
+    {
+      "path": "sources/evaluation-source.json",
+      "bytes": 1354
+    },
+    {
+      "path": "sources/evaluation-tree.json",
+      "bytes": 13314
+    },
+    {
+      "path": "sources/modelscope-files.json",
+      "bytes": 8570
+    },
+    {
+      "path": "sources/original-submission-manifest.json",
+      "bytes": 27435
+    },
+    {
+      "path": "sources/public-baseline.json",
+      "bytes": 396
+    },
+    {
+      "path": "sources/qwen-vl-utils-source.json",
+      "bytes": 922
+    },
+    {
+      "path": "sources/report-image-status.json",
+      "bytes": 409
+    },
+    {
+      "path": "sources/upstream-source.json",
+      "bytes": 21090
+    },
+    {
+      "path": "results/dataset/chartqa-check.json",
+      "bytes": 1282
+    },
+    {
+      "path": "results/final-20261102T082038Z/api-summary.json",
+      "bytes": 600
+    },
+    {
+      "path": "results/final-20261102T082038Z/run.log",
+      "bytes": 27271
+    },
+    {
+      "path": "results/final-20261102T082038Z/selection.json",
+      "bytes": 1072
+    },
+    {
+      "path": "results/final-20261102T082038Z/state.json",
+      "bytes": 115
+    },
+    {
+      "path": "results/final-20261102T082038Z/summary.json",
+      "bytes": 380407
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/audit-strict-diagnostic.log",
+      "bytes": 381
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/audit.log",
+      "bytes": 381
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/batch-vector-diagnostic.json",
+      "bytes": 3931
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/combined-state.json",
+      "bytes": 39
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/cpu-state.json",
+      "bytes": 23
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/state.json",
+      "bytes": 27
+    },
+    {
+      "path": "results/runtime-review/preflight.log",
+      "bytes": 2956
+    },
+    {
+      "path": "results/runtime-review/summary.json",
+      "bytes": 2442
+    },
+    {
+      "path": "results/runtime-review/weights-check.json",
+      "bytes": 2481
+    },
+    {
+      "path": "results/runtime-review/weights.log",
+      "bytes": 520
+    },
+    {
+      "path": "results/final-20261102T082038Z/performance/summary.json",
+      "bytes": 6510734
+    },
+    {
+      "path": "results/final-20261102T082038Z/source/benchmark_native.py",
+      "bytes": 3335
+    },
+    {
+      "path": "results/final-20261102T082038Z/source/final_validation.py",
+      "bytes": 3532
+    },
+    {
+      "path": "results/final-20261102T082038Z/source/native_runtime.py",
+      "bytes": 1103
+    },
+    {
+      "path": "results/final-20261102T082038Z/source/native_smoke.py",
+      "bytes": 4673
+    },
+    {
+      "path": "results/final-20261102T082038Z/source/run-scnet.sh",
+      "bytes": 1103
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/baseline/api-summary.json",
+      "bytes": 600
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/baseline/exit.json",
+      "bytes": 16
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/baseline/run.log",
+      "bytes": 17722
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/baseline/settings.json",
+      "bytes": 245
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/baseline/summary.json",
+      "bytes": 380366
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess/api-summary.json",
+      "bytes": 615
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess/exit.json",
+      "bytes": 16
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess/run.log",
+      "bytes": 21918
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess/settings.json",
+      "bytes": 245
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess/summary.json",
+      "bytes": 380426
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/api-summary.json",
+      "bytes": 615
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/exit.json",
+      "bytes": 16
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/run.log",
+      "bytes": 21921
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/settings.json",
+      "bytes": 100
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/summary.json",
+      "bytes": 380426
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/api-summary.json",
+      "bytes": 615
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/exit.json",
+      "bytes": 16
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/run.log",
+      "bytes": 21919
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/settings.json",
+      "bytes": 100
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/summary.json",
+      "bytes": 380427
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/api-summary.json",
+      "bytes": 600
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/exit.json",
+      "bytes": 16
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/run.log",
+      "bytes": 24261
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/settings.json",
+      "bytes": 104
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/summary.json",
+      "bytes": 380406
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-inprocess/api-summary.json",
+      "bytes": 615
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-inprocess/exit.json",
+      "bytes": 16
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-inprocess/run.log",
+      "bytes": 24319
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-inprocess/settings.json",
+      "bytes": 249
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-inprocess/summary.json",
+      "bytes": 380367
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/source/benchmark_native.py",
+      "bytes": 3335
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/source/candidate-source-note.txt",
+      "bytes": 193
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/source/native_runtime-piecewise.py",
+      "bytes": 1103
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/source/native_runtime.py",
+      "bytes": 1081
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/source/native_smoke.py",
+      "bytes": 4673
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/source/run-scnet.sh",
+      "bytes": 999
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/source/screen_optimization.py",
+      "bytes": 1944
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/baseline/performance/summary.json",
+      "bytes": 3252966
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess/performance/summary.json",
+      "bytes": 3253471
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/performance/summary.json",
+      "bytes": 3253483
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/source/benchmark_native.py",
+      "bytes": 3335
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/source/native_runtime.py",
+      "bytes": 1103
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/source/native_smoke.py",
+      "bytes": 4673
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/source/run-scnet.sh",
+      "bytes": 1103
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu1/source/screen_cpu.py",
+      "bytes": 1808
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/performance/summary.json",
+      "bytes": 3253487
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/source/benchmark_native.py",
+      "bytes": 3335
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/source/native_runtime.py",
+      "bytes": 1103
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/source/native_smoke.py",
+      "bytes": 4673
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/source/run-scnet.sh",
+      "bytes": 1103
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/inprocess-cpu2/source/screen_cpu.py",
+      "bytes": 1808
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/performance/summary.json",
+      "bytes": 3255577
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/source/benchmark_native.py",
+      "bytes": 3335
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/source/native_runtime.py",
+      "bytes": 1103
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/source/native_smoke.py",
+      "bytes": 4673
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/source/run-scnet.sh",
+      "bytes": 1103
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-best-cpu/source/screen_combined.py",
+      "bytes": 2198
+    },
+    {
+      "path": "results/optimization-20261102T080346Z/piecewise-inprocess/performance/summary.json",
+      "bytes": 3253549
+    },
+    {
+      "path": "sources/upstream/LICENSE",
+      "bytes": 1076
+    },
+    {
+      "path": "sources/upstream/README.md",
+      "bytes": 21637
+    },
+    {
+      "path": "sources/upstream/requirements.txt",
+      "bytes": 1305
+    },
+    {
+      "path": "sources/upstream/configs/trident_qwen3vl.yaml",
+      "bytes": 4691
+    },
+    {
+      "path": "sources/upstream/figs/example_chart.png",
+      "bytes": 53485
+    },
+    {
+      "path": "sources/upstream/scripts/run_all_datasets.sh",
+      "bytes": 21336
+    },
+    {
+      "path": "sources/upstream/src/train.py",
+      "bytes": 10072
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/altclip.py",
+      "bytes": 6463
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/base.py",
+      "bytes": 17936
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/clip_openai.py",
+      "bytes": 6144
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/common.py",
+      "bytes": 12818
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/gr_clip.py",
+      "bytes": 17518
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/jina_clip_v2.py",
+      "bytes": 7538
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/jina_v5_omni.py",
+      "bytes": 6153
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/qwen3vl_official.py",
+      "bytes": 6488
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/siglip2.py",
+      "bytes": 7366
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/trident_jinaclip.py",
+      "bytes": 10139
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/trident_qwen3vl.py",
+      "bytes": 9554
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/unime_phi35v.py",
+      "bytes": 9883
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/visrag_ret.py",
+      "bytes": 6016
+    },
+    {
+      "path": "sources/upstream/src/embedding_backends/__init__.py",
+      "bytes": 1506
+    },
+    {
+      "path": "sources/upstream/src/eval/build_manifests.py",
+      "bytes": 6003
+    },
+    {
+      "path": "sources/upstream/src/eval/embed_jsonl_unified_multigpu.py",
+      "bytes": 58288
+    },
+    {
+      "path": "sources/upstream/src/eval/eval_common.py",
+      "bytes": 26240
+    },
+    {
+      "path": "sources/upstream/src/eval/eval_mix_retrieval.py",
+      "bytes": 11682
+    },
+    {
+      "path": "sources/upstream/src/eval/eval_retrieval.py",
+      "bytes": 5156
+    },
+    {
+      "path": "sources/upstream/src/eval/export_results_table.py",
+      "bytes": 19860
+    },
+    {
+      "path": "sources/upstream/src/eval/summarize_matryoshka.py",
+      "bytes": 5100
+    },
+    {
+      "path": "sources/upstream/src/mmemb/config.py",
+      "bytes": 3697
+    },
+    {
+      "path": "sources/upstream/src/mmemb/registry.py",
+      "bytes": 1429
+    },
+    {
+      "path": "sources/upstream/src/mmemb/__init__.py",
+      "bytes": 543
+    },
+    {
+      "path": "sources/upstream/src/tools/compute_gr_clip_calibration_means.py",
+      "bytes": 45042
+    },
+    {
+      "path": "sources/upstream/src/tools/merge_lora.py",
+      "bytes": 15967
+    },
+    {
+      "path": "sources/upstream/src/mmemb/engine/curriculum.py",
+      "bytes": 2000
+    },
+    {
+      "path": "sources/upstream/src/mmemb/engine/monitor.py",
+      "bytes": 11049
+    },
+    {
+      "path": "sources/upstream/src/mmemb/engine/trainer.py",
+      "bytes": 9853
+    },
+    {
+      "path": "sources/upstream/src/mmemb/engine/wrapper.py",
+      "bytes": 9453
+    },
+    {
+      "path": "sources/upstream/src/mmemb/engine/__init__.py",
+      "bytes": 264
+    },
+    {
+      "path": "sources/upstream/src/mmemb/eval/retrieval.py",
+      "bytes": 9136
+    },
+    {
+      "path": "sources/upstream/src/mmemb/eval/__init__.py",
+      "bytes": 144
+    },
+    {
+      "path": "sources/upstream/src/mmemb/losses/base.py",
+      "bytes": 3506
+    },
+    {
+      "path": "sources/upstream/src/mmemb/losses/false_negative.py",
+      "bytes": 10747
+    },
+    {
+      "path": "sources/upstream/src/mmemb/losses/infonce.py",
+      "bytes": 25293
+    },
+    {
+      "path": "sources/upstream/src/mmemb/losses/modality_balance.py",
+      "bytes": 14956
+    },
+    {
+      "path": "sources/upstream/src/mmemb/losses/spec.py",
+      "bytes": 12482
+    },
+    {
+      "path": "sources/upstream/src/mmemb/losses/__init__.py",
+      "bytes": 944
+    },
+    {
+      "path": "sources/upstream/src/mmemb/models/base.py",
+      "bytes": 6076
+    },
+    {
+      "path": "sources/upstream/src/mmemb/models/image_io.py",
+      "bytes": 2073
+    },
+    {
+      "path": "sources/upstream/src/mmemb/models/jina_clip.py",
+      "bytes": 30989
+    },
+    {
+      "path": "sources/upstream/src/mmemb/models/modeling_qwen3_vl_embedding.py",
+      "bytes": 7077
+    },
+    {
+      "path": "sources/upstream/src/mmemb/models/pooling.py",
+      "bytes": 2916
+    },
+    {
+      "path": "sources/upstream/src/mmemb/models/qwen3_vl_embedding.py",
+      "bytes": 26000
+    },
+    {
+      "path": "sources/upstream/src/mmemb/models/__init__.py",
+      "bytes": 3990
+    },
+    {
+      "path": "sources/upstream/src/mmemb/utils/dist.py",
+      "bytes": 3122
+    },
+    {
+      "path": "sources/upstream/src/mmemb/utils/env.py",
+      "bytes": 10492
+    },
+    {
+      "path": "sources/upstream/src/mmemb/utils/misc.py",
+      "bytes": 3415
+    },
+    {
+      "path": "sources/upstream/src/mmemb/utils/__init__.py",
+      "bytes": 109
+    },
+    {
+      "path": "sources/vendor/qwen_vl_utils/LICENSE",
+      "bytes": 11357
+    },
+    {
+      "path": "sources/vendor/qwen_vl_utils/vision_process.py",
+      "bytes": 21069
+    },
+    {
+      "path": "sources/vendor/qwen_vl_utils/__init__.py",
+      "bytes": 134
+    }
+  ]
+}

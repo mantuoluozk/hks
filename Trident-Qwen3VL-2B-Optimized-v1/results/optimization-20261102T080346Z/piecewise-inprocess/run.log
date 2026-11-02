@@ -1,0 +1,179 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+INFO 11-02 16:09:35 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-02 16:09:35 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-02 16:09:35 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-02 16:09:36 [__init__.py:237] Platform plugin hcu is activated
+INFO 11-02 16:09:58 [api_utils.py:273] non-default args: {'runner': 'pooling', 'convert': 'embed', 'dtype': 'bfloat16', 'max_model_len': 8192, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.45, 'max_num_seqs': 8, 'disable_log_stats': True, 'hf_overrides': {'architectures': ['Qwen3VLForConditionalGeneration']}, 'mm_processor_kwargs': {'min_pixels': 262144, 'max_pixels': 1310720}, 'mm_processor_cache_gb': 0, 'pooler_config': {'seq_pooling_type': 'LAST', 'use_activation': True}, 'compilation_config': {'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': [], 'ir_enable_torch_wrap': None, 'splitting_ops': None, 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': None, 'compile_ranges_endpoints': None, 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.PIECEWISE: 1>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [64, 128, 256, 512, 1024, 2048, 4096], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': None, 'pass_config': {}, 'max_cudagraph_capture_size': None, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': None, 'static_all_moe_layers': []}, 'model': '/root/private_data/SothisAI/model/Aihub/Trident-Qwen3VL-2B/main/Trident-Qwen3VL-2B'}
+WARNING 11-02 16:09:58 [arg_utils.py:1606] The global random seed is set to 0. Since VLLM_ENABLE_V1_MULTIPROCESSING is set to False, this may affect the random state of the Python process that launched vLLM.
+INFO 11-02 16:09:58 [model.py:619] Resolved architecture: Qwen3VLForConditionalGeneration
+INFO 11-02 16:09:58 [model.py:1776] Using max model len 8192
+INFO 11-02 16:09:58 [scheduler.py:252] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 11-02 16:09:58 [vllm.py:1042] Asynchronous scheduling is disabled.
+INFO 11-02 16:09:58 [kernel.py:292] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+[HCU FLASH_ATTN:varlen]: Setting kv cache block size to 64.
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+INFO 11-02 16:10:08 [core.py:114] Initializing a V1 LLM engine (v0.25.1) with config: model='/root/private_data/SothisAI/model/Aihub/Trident-Qwen3VL-2B/main/Trident-Qwen3VL-2B', speculative_config=None, tokenizer='/root/private_data/SothisAI/model/Aihub/Trident-Qwen3VL-2B/main/Trident-Qwen3VL-2B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=/root/private_data/SothisAI/model/Aihub/Trident-Qwen3VL-2B/main/Trident-Qwen3VL-2B, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=PoolerConfig(task=None, pooling_type=None, seq_pooling_type='LAST', tok_pooling_type='ALL', use_activation=True, dimensions=None, enable_chunked_processing=False, max_embed_len=None, logit_mean=None, logit_sigma=None, step_tag_id=None, returned_token_ids=None), compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['+sparse_attn_indexer', 'none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::qwen_gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update', 'vllm::hcu_sparse_attn_indexer'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.PIECEWISE: 1>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [64, 128, 256, 512, 1024, 2048, 4096], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_mla_dual_rms_norm': False, 'fuse_rope_kvcache': False}, 'max_cudagraph_capture_size': 4096, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, moe_backend='auto', linear_backend='auto')
+INFO 11-02 16:10:08 [parallel_state.py:1607] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.31.250.218:42925 backend=nccl
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I1102 16:10:08.871454  2346 ProcessGroupNCCL.cpp:1720] [PG ID 0 PG GUID 0 Rank 0] HeartbeatMonitor environments: TORCH_NCCL_ENABLE_MONITORING (Whether to kill program when no watchdog heartbeat detected): 1, TORCH_NCCL_DUMP_ON_TIMEOUT: 1, TORCH_NCCL_WAIT_TIMEOUT_DUMP_MILSEC: 15000, TORCH_NCCL_HEARTBEAT_TIMEOUT_SEC: 480, TORCH_NCCL_COORD_CHECK_MILSEC: 1000, TORCH_NCCL_LOG_CPP_STACK_ON_UNCLEAN_SHUTDOWN: 1
+I1102 16:10:08.871505  2346 ProcessGroupNCCL.cpp:2053] [PG ID 0 PG GUID 0 Rank 0] PGNCCL Watchdog environments: TORCH_NCCL_RETHROW_CUDA_ERRORS: 1, TORCH_NCCL_PROPAGATE_ERROR: 0, TORCH_NCCL_DESYNC_DEBUG: 0
+I1102 16:10:08.871654  2346 ProcessGroupNCCL.cpp:983] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 0
+I1102 16:10:08.871659  2346 ProcessGroupNCCL.cpp:994] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL environments: NCCL version: 2.22.3, TORCH_NCCL_ASYNC_ERROR_HANDLING: 3, TORCH_NCCL_ENABLE_TIMING: 0, TORCH_NCCL_BLOCKING_WAIT: 0, TORCH_DISTRIBUTED_DEBUG: OFF, TORCH_NCCL_USE_TENSOR_REGISTER_ALLOCATOR_HOOK: 0, TORCH_NCCL_TRACE_BUFFER_SIZE: 2000, TORCH_NCCL_NAN_CHECK: 0, TORCH_NCCL_CUDA_EVENT_CACHE: 1
+I1102 16:10:08.872159  2346 ProcessGroupNCCL.cpp:983] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 1
+I1102 16:10:08.904588  2346 ProcessGroupNCCL.cpp:983] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 3
+I1102 16:10:08.907091  2346 ProcessGroupNCCL.cpp:983] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 5
+I1102 16:10:08.909549  2346 ProcessGroupNCCL.cpp:983] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 7
+I1102 16:10:08.911542  2346 ProcessGroupNCCL.cpp:983] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 9
+I1102 16:10:08.914057  2346 ProcessGroupNCCL.cpp:983] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 11
+INFO 11-02 16:10:08 [parallel_state.py:1942] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+WARNING 11-02 16:10:09 [activation.py:783] [ROCm] PyTorch's native GELU with tanh approximation is unstable. Falling back to GELU(approximate='none').
+INFO 11-02 16:10:09 [mm_encoder_attention.py:373] Using AttentionBackendEnum.FLASH_ATTN for MMEncoderAttention.
+INFO 11-02 16:10:09 [kernel.py:292] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+[HCU FLASH_ATTN:varlen]: Setting kv cache block size to 64.
+WARNING 11-02 16:10:10 [compilation.py:1304] Op 'sparse_attn_indexer' not present in model, enabling with '+sparse_attn_indexer' has no effect
+INFO 11-02 16:10:10 [weight_utils.py:849] Filesystem type for checkpoints: NFS. Checkpoint size: 3.96 GiB. Available RAM: 393.87 GiB.
+INFO 11-02 16:10:10 [weight_utils.py:811] Prefetching checkpoint files into page cache started (in background, num_threads=8, block_size=16777216 bytes)
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.83it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.83it/s]
+
+INFO 11-02 16:10:11 [weight_utils.py:783] Prefetching checkpoint files: 10% (1/1)
+INFO 11-02 16:10:11 [weight_utils.py:806] Prefetching checkpoint files into page cache finished in 0.78s
+INFO 11-02 16:10:14 [default_loader.py:430] Loading weights took 3.93 seconds
+HCU memory profiling entered: rank=0 device=cuda:0
+INFO 11-02 16:10:30 [backends.py:1089] Using cache directory: /root/private_data/hks/models/Trident-Qwen3VL-2B-Optimized-v1/cache/xdg/vllm/torch_compile_cache/008a227958/rank_0_0/backbone for vLLM's torch.compile
+INFO 11-02 16:10:30 [backends.py:1148] Dynamo bytecode transform time: 10.22 s
+INFO 11-02 16:12:21 [backends.py:378] Cache the graph of compile range (1, 8192) for later use
+INFO 11-02 16:13:26 [backends.py:393] Compiling a graph for compile range (1, 8192) takes 175.64 s
+INFO 11-02 16:13:33 [decorators.py:708] saved AOT compiled function to /root/private_data/hks/models/Trident-Qwen3VL-2B-Optimized-v1/cache/xdg/vllm/torch_compile_cache/torch_aot_compile/d838b336484a39e256beffacbf61c14c3100b5f5944ba090254fd5dcc2384245/rank_0_0/model
+INFO 11-02 16:13:33 [monitor.py:53] torch.compile took 193.41 s in total
+INFO 11-02 16:13:35 [monitor.py:81] Initial profiling/warmup run took 2.07 s
+HCU memory profile: rank=0 device=cuda:0 init_free=63.67 GiB after_free=58.25 GiB weights=4.46 GiB non_torch_increase=0.89 GiB torch_peak_increase=1.05 GiB total_consumed=5.42 GiB transient_peak_headroom=0.94 GiB non_kv_cache_memory=6.36 GiB cudagraph_estimate=0.0 GiB requested=28.79 GiB available_kv=22.43 GiB
+INFO 11-02 16:13:36 [kv_cache_utils.py:2146] GPU KV cache size: 209,984 tokens
+INFO 11-02 16:13:36 [kv_cache_utils.py:2147] Maximum concurrency for 8,192 tokens per request: 25.63x
+INFO 11-02 16:13:36 [cutedsl_warmup.py:92] Skipping CuTeDSL warmup on non-CUDA platform.
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/7 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  14%|█▍        | 1/7 [00:00<00:05,  1.13it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  57%|█████▋    | 4/7 [00:01<00:00,  4.84it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 7/7 [00:01<00:00,  8.43it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 7/7 [00:01<00:00,  6.04it/s]
+INFO 11-02 16:13:39 [jit_monitor.py:73] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+INFO 11-02 16:13:39 [core.py:337] init engine (profile, create kv cache, warmup model) took 204.76 s (compilation: 193.41 s)
+INFO 11-02 16:13:39 [offline.py:41] Supported pooling task: embed
+WARNING 11-02 16:13:39 [jit_monitor.py:129] Triton kernel JIT compilation during inference: _compute_slot_mapping_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+WARNING 11-02 16:13:53 [jit_monitor.py:129] Triton kernel JIT compilation during inference: _bilinear_pos_embed_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+{
+  "backend": "native vLLM pooling convert=embed",
+  "dtype": "bfloat16",
+  "dimension": 2048,
+  "initialization_seconds": 221.7272830232978,
+  "comparisons": [
+    {
+      "role": "query",
+      "count": 1,
+      "elapsed_seconds": 0.13126364117488265,
+      "cosine_to_publisher_backend": [
+        0.999902606010437
+      ],
+      "maximum_absolute_embedding_difference": 0.002678021788597107,
+      "prompt_token_ids_equal": [
+        true
+      ]
+    },
+    {
+      "role": "doc",
+      "count": 5,
+      "elapsed_seconds": 13.99094461183995,
+      "cosine_to_publisher_backend": [
+        0.9998685121536255,
+        0.9996163249015808,
+        0.9996731281280518,
+        0.9999182224273682,
+        0.9996767640113831
+      ],
+      "maximum_absolute_embedding_difference": 0.0032338500022888184,
+      "prompt_token_ids_equal": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "scores": [
+    [
+      0.7675661444664001,
+      0.7453757524490356,
+      0.7305047512054443,
+      0.4372361898422241,
+      0.73587965965271
+    ]
+  ],
+  "ranking": [
+    0,
+    1,
+    4,
+    2,
+    3
+  ],
+  "publisher_ranking": [
+    0,
+    1,
+    4,
+    2,
+    3
+  ],
+  "official_accuracy_pass": null,
+  "comparison_scope": "Same BW device and inputs; not an official GPU precision baseline."
+}
+[16:13:54][INFO][mmemb.models] Environment profile=tf5x, available encoders: ['jina_clip', 'jina_clip_v1', 'jina_clip_v2', 'qwen3_vl_embedding']
+127.0.0.1 - - [02/Nov/2026 16:13:54] "POST /v1/embeddings HTTP/1.1" 200 -
+127.0.0.1 - - [02/Nov/2026 16:13:55] "POST /v1/embeddings HTTP/1.1" 200 -
+127.0.0.1 - - [02/Nov/2026 16:13:55] "POST /v1/embeddings HTTP/1.1" 400 -
+{"round": 1, "fixture": "text", "batch_size": 1, "requests": 64, "elapsed_seconds": 1.112224020063877, "requests_per_second": 57.5423645286175, "max_repeat_absolute_drift": 0.0, "input_tokens": 2240, "input_tokens_per_second": 2013.9827585016126}
+{"round": 1, "fixture": "text", "batch_size": 2, "requests": 64, "elapsed_seconds": 0.5696361307054758, "requests_per_second": 112.35242385474756, "max_repeat_absolute_drift": 0.0, "input_tokens": 2240, "input_tokens_per_second": 3932.3348349161647}
+{"round": 1, "fixture": "text", "batch_size": 4, "requests": 64, "elapsed_seconds": 0.30515101132914424, "requests_per_second": 209.73222314170164, "max_repeat_absolute_drift": 0.0, "input_tokens": 2240, "input_tokens_per_second": 7340.6278099595565}
+{"round": 1, "fixture": "text", "batch_size": 8, "requests": 64, "elapsed_seconds": 0.1738667981699109, "requests_per_second": 368.09788110008304, "max_repeat_absolute_drift": 0.0, "input_tokens": 2240, "input_tokens_per_second": 12883.425838502906}
+WARNING 11-02 16:13:58 [jit_monitor.py:129] Triton kernel JIT compilation during inference: rotary_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+{"round": 1, "fixture": "image", "batch_size": 1, "requests": 64, "elapsed_seconds": 3.836333953309804, "requests_per_second": 16.682593533022295, "max_repeat_absolute_drift": 0.0, "input_tokens": 28608, "input_tokens_per_second": 7457.1193092609665}
+{"round": 1, "fixture": "image", "batch_size": 2, "requests": 64, "elapsed_seconds": 2.872399673331529, "requests_per_second": 22.28102189058187, "max_repeat_absolute_drift": 0.0, "input_tokens": 28608, "input_tokens_per_second": 9959.616785090095}
+{"round": 1, "fixture": "image", "batch_size": 4, "requests": 64, "elapsed_seconds": 2.465870175976306, "requests_per_second": 25.95432664035552, "max_repeat_absolute_drift": 0.0, "input_tokens": 28608, "input_tokens_per_second": 11601.584008238919}
+{"round": 1, "fixture": "image", "batch_size": 8, "requests": 64, "elapsed_seconds": 2.3249021377414465, "requests_per_second": 27.528040411272343, "max_repeat_absolute_drift": 0.0, "input_tokens": 28608, "input_tokens_per_second": 12305.034063838737}
+{"round": 1, "fixture": "fused", "batch_size": 1, "requests": 64, "elapsed_seconds": 3.9551724386401474, "requests_per_second": 16.18134253130168, "max_repeat_absolute_drift": 0.0, "input_tokens": 28992, "input_tokens_per_second": 7330.148166679661}
+{"round": 1, "fixture": "fused", "batch_size": 2, "requests": 64, "elapsed_seconds": 2.9875603448599577, "requests_per_second": 21.42216143352914, "max_repeat_absolute_drift": 0.0, "input_tokens": 28992, "input_tokens_per_second": 9704.2391293887}
+{"round": 1, "fixture": "fused", "batch_size": 4, "requests": 64, "elapsed_seconds": 2.771621030755341, "requests_per_second": 23.091179959245107, "max_repeat_absolute_drift": 0.0, "input_tokens": 28992, "input_tokens_per_second": 10460.304521538033}
+{"round": 1, "fixture": "fused", "batch_size": 8, "requests": 64, "elapsed_seconds": 2.5554940989241004, "requests_per_second": 25.044080527106253, "max_repeat_absolute_drift": 0.0, "input_tokens": 28992, "input_tokens_per_second": 11344.968478779132}
+I1102 16:14:26.735510  2346 ProcessGroupNCCL.cpp:1561] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL destructor entered.
+W1102 16:14:26.737027  2346 ProcessGroupNCCL.cpp:1570] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+I1102 16:14:26.738621  2346 ProcessGroupNCCL.cpp:1487] [PG ID 1 PG GUID 1 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1102 16:14:26.740522  2346 ProcessGroupNCCL.cpp:1495] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL aborts successfully.
+I1102 16:14:26.741056  2346 ProcessGroupNCCL.cpp:2083] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1102 16:14:26.741148  2346 ProcessGroupNCCL.cpp:1749] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1102 16:14:26.746193  2346 ProcessGroupNCCL.cpp:1561] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL destructor entered.
+I1102 16:14:26.746206  2346 ProcessGroupNCCL.cpp:1487] [PG ID 2 PG GUID 3 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1102 16:14:26.746300  2346 ProcessGroupNCCL.cpp:1495] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL aborts successfully.
+I1102 16:14:26.746356  2346 ProcessGroupNCCL.cpp:2083] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1102 16:14:26.746371  2346 ProcessGroupNCCL.cpp:1749] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1102 16:14:26.755658  2346 ProcessGroupNCCL.cpp:1561] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL destructor entered.
+I1102 16:14:26.755671  2346 ProcessGroupNCCL.cpp:1487] [PG ID 3 PG GUID 5 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1102 16:14:26.755788  2346 ProcessGroupNCCL.cpp:1495] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL aborts successfully.
+I1102 16:14:26.755815  2346 ProcessGroupNCCL.cpp:2083] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1102 16:14:26.755864  2346 ProcessGroupNCCL.cpp:1749] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1102 16:14:26.765856  2346 ProcessGroupNCCL.cpp:1561] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL destructor entered.
+I1102 16:14:26.765869  2346 ProcessGroupNCCL.cpp:1487] [PG ID 4 PG GUID 7 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1102 16:14:26.765964  2346 ProcessGroupNCCL.cpp:1495] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL aborts successfully.
+I1102 16:14:26.765992  2346 ProcessGroupNCCL.cpp:2083] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1102 16:14:26.766029  2346 ProcessGroupNCCL.cpp:1749] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1102 16:14:26.770790  2346 ProcessGroupNCCL.cpp:1561] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL destructor entered.
+I1102 16:14:26.770802  2346 ProcessGroupNCCL.cpp:1487] [PG ID 5 PG GUID 9 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1102 16:14:26.770886  2346 ProcessGroupNCCL.cpp:1495] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL aborts successfully.
+I1102 16:14:26.770911  2346 ProcessGroupNCCL.cpp:2083] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1102 16:14:26.770924  2346 ProcessGroupNCCL.cpp:1749] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1102 16:14:26.774644  2346 ProcessGroupNCCL.cpp:1561] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL destructor entered.
+I1102 16:14:26.774657  2346 ProcessGroupNCCL.cpp:1487] [PG ID 6 PG GUID 11 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1102 16:14:26.774739  2346 ProcessGroupNCCL.cpp:1495] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL aborts successfully.
+I1102 16:14:26.774763  2346 ProcessGroupNCCL.cpp:2083] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1102 16:14:26.774778  2346 ProcessGroupNCCL.cpp:1749] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1102 16:14:26.780565  2346 ProcessGroupNCCL.cpp:1561] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL destructor entered.
+I1102 16:14:26.780576  2346 ProcessGroupNCCL.cpp:1487] [PG ID 0 PG GUID 0 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1102 16:14:26.780663  2346 ProcessGroupNCCL.cpp:1495] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL aborts successfully.
+I1102 16:14:26.780690  2346 ProcessGroupNCCL.cpp:2083] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1102 16:14:26.780727  2346 ProcessGroupNCCL.cpp:1749] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.

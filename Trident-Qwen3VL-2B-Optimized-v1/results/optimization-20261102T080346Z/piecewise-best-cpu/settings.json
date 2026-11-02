@@ -1,0 +1,5 @@
+{
+  "TRIDENT_CPU_THREADS": "2",
+  "VLLM_ENABLE_V1_MULTIPROCESSING": "0",
+  "TRIDENT_MODE": "piecewise"
+}

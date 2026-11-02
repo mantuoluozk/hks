@@ -1,0 +1,234 @@
+{
+  "model": "Trident-Qwen3VL-2B-Optimized-v1",
+  "job": "final-20261102T082038Z",
+  "selection": {
+    "criterion": "Minimum sum of elapsed LLM.embed calls across all 12 screen cells; same 64 requests per cell. Single-screen selection, no confidence intervals.",
+    "selected": "piecewise-best-cpu",
+    "settings": {
+      "TRIDENT_CPU_THREADS": "2",
+      "VLLM_ENABLE_V1_MULTIPROCESSING": "0",
+      "TRIDENT_MODE": "piecewise"
+    },
+    "candidates": [
+      {
+        "name": "inprocess",
+        "elapsed_seconds": 32.220519362483174,
+        "aggregate_rps": 23.835742414948204
+      },
+      {
+        "name": "piecewise-inprocess",
+        "elapsed_seconds": 25.93023181380704,
+        "aggregate_rps": 29.61793806991976
+      },
+      {
+        "name": "inprocess-cpu1",
+        "elapsed_seconds": 33.642865299247205,
+        "aggregate_rps": 22.828019943271148
+      },
+      {
+        "name": "inprocess-cpu2",
+        "elapsed_seconds": 31.69418630003929,
+        "aggregate_rps": 24.231573346908984
+      },
+      {
+        "name": "piecewise-best-cpu",
+        "elapsed_seconds": 25.70017805090174,
+        "aggregate_rps": 29.88306145112692
+      }
+    ],
+    "rejected": [],
+    "screen": "optimization-20261102T080346Z"
+  },
+  "functional_inputs": 6,
+  "embedding_api_pass": true,
+  "minimum_functional_cosine_to_publisher": 0.9996262788772583,
+  "measured_requests": 1536,
+  "measured_input_tokens": 478720,
+  "cells": [
+    {
+      "fixture": "text",
+      "batch": 1,
+      "historical_rps": 25.265546049301044,
+      "optimized_rps": 58.32332525784081,
+      "gain_pct": 130.8413407888894,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 2041.3163840244283,
+      "mean_batch_call_ms": 17.14579879626399,
+      "p99_batch_call_ms": 20.5634842114523,
+      "within_process_round_deviation_pct": -1.8864824472700215
+    },
+    {
+      "fixture": "text",
+      "batch": 2,
+      "historical_rps": 25.340976207582457,
+      "optimized_rps": 113.20233147347147,
+      "gain_pct": 346.71653746156545,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 3962.0816015715013,
+      "mean_batch_call_ms": 17.667480642558075,
+      "p99_batch_call_ms": 19.238722939044237,
+      "within_process_round_deviation_pct": -0.5208817947269129
+    },
+    {
+      "fixture": "text",
+      "batch": 4,
+      "historical_rps": 49.66401685245323,
+      "optimized_rps": 213.77304099939795,
+      "gain_pct": 330.4384835292241,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 7482.056434978928,
+      "mean_batch_call_ms": 18.7114333093632,
+      "p99_batch_call_ms": 19.091041991487145,
+      "within_process_round_deviation_pct": 2.2790236843061473
+    },
+    {
+      "fixture": "text",
+      "batch": 8,
+      "historical_rps": 96.17867908747068,
+      "optimized_rps": 363.99414985122405,
+      "gain_pct": 278.4561748037586,
+      "input_tokens": 2240,
+      "input_tokens_per_second": 12739.795244792842,
+      "mean_batch_call_ms": 21.97837521089241,
+      "p99_batch_call_ms": 22.717881007120013,
+      "within_process_round_deviation_pct": 0.60828853989352
+    },
+    {
+      "fixture": "image",
+      "batch": 1,
+      "historical_rps": 11.271720165163533,
+      "optimized_rps": 16.289238265245356,
+      "gain_pct": 44.51421811897889,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 7281.289504564674,
+      "mean_batch_call_ms": 61.39022486604517,
+      "p99_batch_call_ms": 63.38198566809297,
+      "within_process_round_deviation_pct": 0.39277583806200944
+    },
+    {
+      "fixture": "image",
+      "batch": 2,
+      "historical_rps": 11.561175593999637,
+      "optimized_rps": 22.39549325670026,
+      "gain_pct": 93.71294099471802,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 10010.785485745017,
+      "mean_batch_call_ms": 89.30368164146785,
+      "p99_batch_call_ms": 96.03927378077061,
+      "within_process_round_deviation_pct": 4.48854726287411
+    },
+    {
+      "fixture": "image",
+      "batch": 4,
+      "historical_rps": 17.503016009118973,
+      "optimized_rps": 25.346221219997513,
+      "gain_pct": 44.81059268181138,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 11329.760885338888,
+      "mean_batch_call_ms": 157.81445152242668,
+      "p99_batch_call_ms": 160.22685489151627,
+      "within_process_round_deviation_pct": 0.04144238310481718
+    },
+    {
+      "fixture": "image",
+      "batch": 8,
+      "historical_rps": 20.6389845214087,
+      "optimized_rps": 27.180190849184367,
+      "gain_pct": 31.693450426257684,
+      "input_tokens": 28608,
+      "input_tokens_per_second": 12149.545309585412,
+      "mean_batch_call_ms": 294.3320024642162,
+      "p99_batch_call_ms": 298.2279261248186,
+      "within_process_round_deviation_pct": -0.007807719570729343
+    },
+    {
+      "fixture": "fused",
+      "batch": 1,
+      "historical_rps": 11.449220828506222,
+      "optimized_rps": 16.190237828672334,
+      "gain_pct": 41.40907989443219,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 7334.177736388568,
+      "mean_batch_call_ms": 61.765615217154846,
+      "p99_batch_call_ms": 65.38118646480143,
+      "within_process_round_deviation_pct": -0.7194634714681958
+    },
+    {
+      "fixture": "fused",
+      "batch": 2,
+      "historical_rps": 11.522486502197772,
+      "optimized_rps": 20.592215623791226,
+      "gain_pct": 78.71329786208486,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 9328.273677577425,
+      "mean_batch_call_ms": 97.12408011546358,
+      "p99_batch_call_ms": 106.32189813069999,
+      "within_process_round_deviation_pct": -7.750765588417985
+    },
+    {
+      "fixture": "fused",
+      "batch": 4,
+      "historical_rps": 18.150254976450046,
+      "optimized_rps": 23.13539386306166,
+      "gain_pct": 27.465944104255446,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 10480.333419966932,
+      "mean_batch_call_ms": 172.89526271633804,
+      "p99_batch_call_ms": 193.37337797041982,
+      "within_process_round_deviation_pct": -7.756853081396475
+    },
+    {
+      "fixture": "fused",
+      "batch": 8,
+      "historical_rps": 21.683810955512104,
+      "optimized_rps": 26.267746982009363,
+      "gain_pct": 21.13990034271169,
+      "input_tokens": 28992,
+      "input_tokens_per_second": 11899.289382850242,
+      "mean_batch_call_ms": 304.55600190907717,
+      "p99_batch_call_ms": 313.48208414856344,
+      "within_process_round_deviation_pct": -3.344104521818525
+    }
+  ],
+  "candidate_vector_diagnostics": [
+    {
+      "candidate": "inprocess",
+      "min_cosine_to_incidental_eager_screen": 0.9998373096795458,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    },
+    {
+      "candidate": "piecewise-inprocess",
+      "min_cosine_to_incidental_eager_screen": 0.9998306210332896,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    },
+    {
+      "candidate": "inprocess-cpu1",
+      "min_cosine_to_incidental_eager_screen": 0.9998373096795458,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    },
+    {
+      "candidate": "inprocess-cpu2",
+      "min_cosine_to_incidental_eager_screen": 0.9998373096795458,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    },
+    {
+      "candidate": "piecewise-best-cpu",
+      "min_cosine_to_incidental_eager_screen": 0.9998381403689629,
+      "strict_0_9999_diagnostic": false,
+      "historical_0_99_functional_check": true
+    }
+  ],
+  "independent_process_reproduction": null,
+  "official_accuracy_pass": null,
+  "historical_accuracy": {
+    "model_version": "original eager release",
+    "dataset": "ChartQA Origin",
+    "ndcg10_times100": 69.4483,
+    "rerun_for_optimized_version": false
+  },
+  "protocol": "One optimized process, two rounds, 12 cells each, 64 requests per cell, two warmup calls per cell. Second round reported. Embedding throughput, not a 608-request generation benchmark."
+}

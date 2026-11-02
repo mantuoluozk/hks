@@ -1,0 +1,83 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+INFO 11-02 16:23:23 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-02 16:23:23 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-02 16:23:23 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-02 16:23:24 [__init__.py:237] Platform plugin hcu is activated
+{
+  "model_path": "/root/private_data/SothisAI/model/Aihub/Trident-Qwen3VL-2B/main/Trident-Qwen3VL-2B",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "transformers": "5.12.1",
+    "pillow": "11.3.0",
+    "torchvision": "0.26.0+dtk2604.torch2110.2609101802.gee55be"
+  },
+  "device": {
+    "name": "BW",
+    "gcn_arch": "gfx936:sramecc+:xnack-",
+    "total_memory": 68702699520,
+    "multiprocessors": 80,
+    "torch_hip": "6.3.26113"
+  },
+  "framework_files": [
+    {
+      "package": "vllm",
+      "path": "model_executor/models/qwen3_vl.py",
+      "sha256": "c7fb5ac20e2938640c279b363acc59d54fdb860e78fd2621b686d459d8b80254"
+    },
+    {
+      "package": "vllm",
+      "path": "model_executor/models/qwen3.py",
+      "sha256": "ff7edb758557fe2a03da50bc234f484e103e698ca522226f36372825eed0eec2"
+    },
+    {
+      "package": "vllm",
+      "path": "model_executor/models/adapters.py",
+      "sha256": "f47aff051876fce5da50eade2795f9acbe26ae90b9fc5cffc8638d6e2d82d15a"
+    }
+  ],
+  "qwen_vl_utils_source": "/root/private_data/hks/models/Trident-Qwen3VL-2B-Optimized-v1/sources/vendor/qwen_vl_utils/__init__.py",
+  "reference_backend_import": true,
+  "embedding_config": {
+    "type": "qwen3_vl_embedding",
+    "pooling": "last_token",
+    "normalize": true,
+    "embed_dim": null,
+    "dtype": "bfloat16",
+    "attn_implementation": "sdpa",
+    "gradient_checkpointing": true,
+    "hidden_states_from": "inner",
+    "drop_lm_head": true,
+    "max_text_tokens": 4096,
+    "padding_side": "right",
+    "freeze_vision": true,
+    "lora": {
+      "enable": false
+    },
+    "image": {
+      "min_pixels": 262144,
+      "max_pixels": 1310720
+    },
+    "prompt": {
+      "query_instruction": "Represent the query for retrieving relevant content.",
+      "doc_instruction": "Represent the candidate content for retrieval.",
+      "use_system_role": true,
+      "add_generation_prompt": true,
+      "suffix": null
+    },
+    "pretrained_model_name_or_path": "Qwen/Qwen3-VL-2B-Instruct",
+    "add_generation_prompt": true,
+    "max_length": 8192,
+    "use_qwen_vl_utils": true,
+    "video": {
+      "fps": 1,
+      "max_frames": 64,
+      "total_pixels": 7864320
+    }
+  },
+  "embedding_dimension": 2048,
+  "native_route": "Qwen3VLForConditionalGeneration + pooling + convert=embed + LAST token",
+  "inference_verified": false,
+  "official_accuracy_pass": null
+}
