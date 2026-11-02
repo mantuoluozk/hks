@@ -1,0 +1,30 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "kimi-vl-a3b-instruct",
+      "object": "model",
+      "created": 1793502120,
+      "owned_by": "vllm",
+      "root": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights",
+      "parent": null,
+      "max_model_len": 32768,
+      "permission": [
+        {
+          "id": "modelperm-89226b3f1678971f",
+          "object": "model_permission",
+          "created": 1793502120,
+          "allow_create_engine": false,
+          "allow_sampling": true,
+          "allow_logprobs": true,
+          "allow_search_indices": false,
+          "allow_view": true,
+          "allow_fine_tuning": false,
+          "organization": "*",
+          "group": null,
+          "is_blocking": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "samples": 1000,
+  "upstream_correct": 869,
+  "recorded_correct": 869,
+  "mismatched_ids": [],
+  "actual_upstream_loop_lines": [
+    120,
+    151
+  ],
+  "upstream_source_sha256": "70194609de34d25e89b9c3b397e854729027d28b8a28d25670cdcf90a6f738cf",
+  "predictions_sha256": "2397739dc5e6c8cd31bd17eb1f3d03765f2c37bcf5d60ec54d07d02f12710e15",
+  "all_matched": true
+}

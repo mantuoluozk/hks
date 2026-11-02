@@ -1,0 +1,17 @@
+{
+  "samples": 8,
+  "full_dataset": false,
+  "correct": 7,
+  "errors": 0,
+  "truncated": 0,
+  "categories": {
+    "Regular Text Recognition": {
+      "count": 8,
+      "correct": 7
+    }
+  },
+  "published_score_per_1000": 867,
+  "official_accuracy_pass": null,
+  "exact_publisher_harness_equivalence": null,
+  "accuracy": 0.875
+}

@@ -1,0 +1,135 @@
+{
+  "state": "complete_verified",
+  "pid": 182,
+  "revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "destination": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights",
+  "elapsed_seconds": 312.3148373020813,
+  "downloaded_bytes": 32819646059,
+  "expected_bytes": 32819646059,
+  "verified_files": 20,
+  "total_files": 20,
+  "file_bytes": {
+    "README.md": 14619,
+    "chat_template.jinja": 1032,
+    "config.json": 2005,
+    "configuration_kimi_vl.py": 13151,
+    "generation_config.json": 149,
+    "image_processing_kimi_vl.py": 4680,
+    "model-00001-of-00007.safetensors": 4994390288,
+    "model-00002-of-00007.safetensors": 4995061424,
+    "model-00003-of-00007.safetensors": 4996100112,
+    "model-00004-of-00007.safetensors": 4996100320,
+    "model-00005-of-00007.safetensors": 4998185720,
+    "model-00006-of-00007.safetensors": 4996099448,
+    "model-00007-of-00007.safetensors": 2840161216,
+    "model.safetensors.index.json": 588207,
+    "modeling_kimi_vl.py": 105649,
+    "preprocessor_config.json": 401,
+    "processing_kimi_vl.py": 7537,
+    "tiktoken.model": 2795286,
+    "tokenization_moonshot.py": 10958,
+    "tokenizer_config.json": 3857
+  },
+  "publisher_hash_checks": {
+    "chat_template.jinja": {
+      "bytes": 1032,
+      "hash": "019818d19d81c16c4dfe66ee89d937b6ca808843",
+      "algorithm": "git-blob-sha1"
+    },
+    "README.md": {
+      "bytes": 14619,
+      "hash": "aacc0ef7efa62f3d10206ed311f33c2472a62c5a",
+      "algorithm": "git-blob-sha1"
+    },
+    "config.json": {
+      "bytes": 2005,
+      "hash": "7acee6b033fa560af68b650afcc2457ac807f3d4",
+      "algorithm": "git-blob-sha1"
+    },
+    "configuration_kimi_vl.py": {
+      "bytes": 13151,
+      "hash": "7542fddd8ae87c59cef2a91627bf2ce823d1c11e",
+      "algorithm": "git-blob-sha1"
+    },
+    "generation_config.json": {
+      "bytes": 149,
+      "hash": "17e8b359f06a1b542412281eeaf096967c298ba9",
+      "algorithm": "git-blob-sha1"
+    },
+    "image_processing_kimi_vl.py": {
+      "bytes": 4680,
+      "hash": "1ec0fea53681b1c6e7a91f5e14db0bf738460dde",
+      "algorithm": "git-blob-sha1"
+    },
+    "model-00002-of-00007.safetensors": {
+      "bytes": 4995061424,
+      "hash": "45ecd00decdad65e7d3f494028ed0c79d0cd56f145adae077ffa78b5b8ff95c0",
+      "algorithm": "sha256"
+    },
+    "model-00001-of-00007.safetensors": {
+      "bytes": 4994390288,
+      "hash": "a5ef3ebd9727f82e34417a778317d2cc9c08762fe0bc4a2ee333b8a52cf7c1a5",
+      "algorithm": "sha256"
+    },
+    "model-00004-of-00007.safetensors": {
+      "bytes": 4996100320,
+      "hash": "8f7eb3fc5c12481fd1a81d2708fa4a299ff4c207a5dbafb5b8bef25ab9fd8b23",
+      "algorithm": "sha256"
+    },
+    "model-00003-of-00007.safetensors": {
+      "bytes": 4996100112,
+      "hash": "b9ba98f01e22eea43da8cfbf6f09ff0857616cd9e1df4603a735c111755109ef",
+      "algorithm": "sha256"
+    },
+    "model-00005-of-00007.safetensors": {
+      "bytes": 4998185720,
+      "hash": "db83e896b3d75f4bc51f621ae90ad61e8f6f7901f49a06b5c40348b839057206",
+      "algorithm": "sha256"
+    },
+    "model-00006-of-00007.safetensors": {
+      "bytes": 4996099448,
+      "hash": "abed41982a3f9c7d05f69bb560dad7bcb93cfa764c77a2b59127f35dc787983c",
+      "algorithm": "sha256"
+    },
+    "model.safetensors.index.json": {
+      "bytes": 588207,
+      "hash": "eec736471c95bc8b36217d039f12b029fff97438",
+      "algorithm": "git-blob-sha1"
+    },
+    "modeling_kimi_vl.py": {
+      "bytes": 105649,
+      "hash": "ee22486ad5dbc91f4f939d86f36e732cd3be2d3c",
+      "algorithm": "git-blob-sha1"
+    },
+    "preprocessor_config.json": {
+      "bytes": 401,
+      "hash": "ed5370a944f5052d5c879f3c2723fa1aaaa43cab",
+      "algorithm": "git-blob-sha1"
+    },
+    "processing_kimi_vl.py": {
+      "bytes": 7537,
+      "hash": "70296b617e5f485e1de6665f0bade946f27abf5a",
+      "algorithm": "git-blob-sha1"
+    },
+    "tiktoken.model": {
+      "bytes": 2795286,
+      "hash": "b6c497a7469b33ced9c38afb1ad6e47f03f5e5dc05f15930799210ec050c5103",
+      "algorithm": "sha256"
+    },
+    "tokenization_moonshot.py": {
+      "bytes": 10958,
+      "hash": "2dfe8f5a715a9f36bc81b1b227a1de23446b1013",
+      "algorithm": "git-blob-sha1"
+    },
+    "tokenizer_config.json": {
+      "bytes": 3857,
+      "hash": "655acb84881b7d76aad1e8ee0f81c292b05a9863",
+      "algorithm": "git-blob-sha1"
+    },
+    "model-00007-of-00007.safetensors": {
+      "bytes": 2840161216,
+      "hash": "2e2ddd33f2b4f472898482860585bd6d73d4397c8c833ed9d00a2024443f7a77",
+      "algorithm": "sha256"
+    }
+  }
+}

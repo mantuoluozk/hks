@@ -1,0 +1,65 @@
+{
+  "job": "optimization-20261102T020940Z",
+  "comparison": [
+    {
+      "repeat": 1,
+      "concurrency": 1,
+      "max_tokens": 32,
+      "baseline_tps": 14.326827230916754,
+      "candidate_tps": 53.82764157996755,
+      "gain_pct": 275.7122265270954,
+      "same_text": true,
+      "same_output_lengths": true,
+      "same_input_lengths": true
+    },
+    {
+      "repeat": 1,
+      "concurrency": 1,
+      "max_tokens": 128,
+      "baseline_tps": 15.144588386500116,
+      "candidate_tps": 73.44276114491315,
+      "gain_pct": 384.94392366833824,
+      "same_text": true,
+      "same_output_lengths": true,
+      "same_input_lengths": true
+    },
+    {
+      "repeat": 1,
+      "concurrency": 2,
+      "max_tokens": 32,
+      "baseline_tps": 26.134559622706956,
+      "candidate_tps": 77.14858155089395,
+      "gain_pct": 195.19755704574249,
+      "same_text": true,
+      "same_output_lengths": true,
+      "same_input_lengths": true
+    },
+    {
+      "repeat": 1,
+      "concurrency": 2,
+      "max_tokens": 128,
+      "baseline_tps": 29.16718987371393,
+      "candidate_tps": 117.6685551060544,
+      "gain_pct": 303.4278091771183,
+      "same_text": true,
+      "same_output_lengths": true,
+      "same_input_lengths": true
+    }
+  ],
+  "stability": [],
+  "same_process_repetitions": false,
+  "measured_repeats": 1,
+  "official_six_loads": false,
+  "official_acceptance": null,
+  "protocol": {
+    "image_sha256": "95de8765da89c41a2421f1c1fa3986e4d3c83793d92c8ade460a142b329d04c1",
+    "question": "Describe this picture in detailed English sentences, including the buildings, their shapes, and the surroundings.",
+    "generation": {
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 42
+    },
+    "script_sha256": "5bca0dc0c7b031af0807f06b2efcc7087eed32e650c1aaca619c1123726f0306",
+    "http_client_sha256": "3b13c8aa6e1903b9f14ab1ed897b934304469c6184d63bb203e094b163caa3ba"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "model": "Kimi-VL-A3B-Instruct",
+  "image": "appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-image21-turbo:1.0.0",
+  "version": "1.0.0",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2114893402085822465/versions",
+  "region": "华中一区（A区）",
+  "verification_scope": "同Notebook两个独立服务进程；未另建实例复验"
+}

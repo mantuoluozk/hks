@@ -1,0 +1,6 @@
+{
+  "updated_at": "2026-11-01T01:15:51Z",
+  "status": "failed",
+  "error": "CalledProcessError(1, ['python', '-m', 'sglang.benchmark.serving', '--backend', 'vllm-chat', '--host', '127.0.0.1', '--port', '30004', '--model', '/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', '--served-model-name', 'kimi-vl-a3b-instruct', '--tokenizer', '/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', '--dataset-name', 'image', '--image-count', '1', '--image-resolution', '1080p', '--random-input-len', '4096', '--random-output-len', '1024', '--random-range-ratio', '1', '--max-concurrency', '1', '--num-prompts', '8', '--seed', '1', '--extra-request-body', '{\"stream_options\": {\"include_usage\": true}}', '--output-details', '--output-file', '/root/private_data/hks/models/Kimi-VL-A3B-Instruct/results/formal-20261101T010948Z/process1/round1.jsonl'])",
+  "official_acceptance": null
+}

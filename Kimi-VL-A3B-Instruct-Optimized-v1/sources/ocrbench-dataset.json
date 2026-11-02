@@ -1,0 +1,18 @@
+{
+  "repo": "echo840/OCRBench",
+  "revision": "92a54bd1384387c178d5a07140a2d85e0a3d12e1",
+  "files": [
+    {
+      "type": "file",
+      "oid": "7da03b7d73c5978bd84596d8d9db7147f175772f",
+      "size": 67576988,
+      "lfs": {
+        "oid": "d9cc9f488e5310143d8d89956c19d0bdfd71e7089025da5202643f73720df7f5",
+        "size": 67576988,
+        "pointerSize": 133
+      },
+      "xetHash": "0d440c32732605248d49554a2fa555c69a042103b86a3ddcd8f5f11a3e060242",
+      "path": "data/test-00000-of-00001.parquet"
+    }
+  ]
+}

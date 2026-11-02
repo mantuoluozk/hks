@@ -1,0 +1,11 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+{"id": "text", "passed": true, "output": "4", "error": null, "seconds": 3.644390436820686}
+{"id": "red", "passed": true, "output": "red", "error": null, "seconds": 0.8912597927264869}
+{"id": "blue-zh", "passed": true, "output": "蓝色。", "error": null, "seconds": 0.39728463906794786}
+{"id": "ocr", "passed": true, "output": "HKS2026", "error": null, "seconds": 0.5319738108664751}
+{"id": "demo", "passed": true, "output": "Rogers Centre", "error": null, "seconds": 3.2765596928074956}
+{"id": "two-images", "passed": true, "output": "red, blue", "error": null, "seconds": 0.48690635384991765}
+{"id": "repeat", "passed": true, "output": "red", "error": null, "seconds": 0.324081907980144}
+{"id": "stream", "passed": true, "output": "red", "error": null, "seconds": 0.3440206563100219}
+{"functional_passed": 8, "functional_total": 8, "all_passed": true, "model": "kimi-vl-a3b-instruct", "official_accuracy_pass": null, "scope": "Synthetic/official-demo HTTP functional checks; not public benchmark accuracy", "script_sha256": "3b13c8aa6e1903b9f14ab1ed897b934304469c6184d63bb203e094b163caa3ba"}

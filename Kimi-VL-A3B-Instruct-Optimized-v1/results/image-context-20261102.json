@@ -1,0 +1,10 @@
+{
+  "dockerfile": "/public/home/zack233/dockerFileTemp/Dockerfile.kimi-vl-vllm",
+  "context": "/public/home/zack233/dockerFileTemp",
+  "payload_files": 2223,
+  "bytes": 41643567,
+  "verified": true,
+  "manifest_sha256": "050c5d002a112843d4d3e3bd0945859e3260ef8ae728fc7b58bf1ac93a757f18",
+  "image_built": false,
+  "fresh_notebook_validated": false
+}

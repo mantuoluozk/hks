@@ -1,0 +1,10 @@
+{
+  "updated_at": "2026-11-01T03:02:06Z",
+  "status": "benchmarking",
+  "process": 1,
+  "input_tokens": 4096,
+  "output_tokens": 1024,
+  "concurrency": 1,
+  "repeat": 1,
+  "requests": 8
+}

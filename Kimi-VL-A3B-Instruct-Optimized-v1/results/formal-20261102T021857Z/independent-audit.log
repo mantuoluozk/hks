@@ -1,0 +1,120 @@
+{
+  "job": "formal-20261102T021857Z",
+  "verified_cells": 12,
+  "requests": 608,
+  "cells": [
+    {
+      "process": 1,
+      "repeat": 1,
+      "input": 4096,
+      "concurrency": 1,
+      "requests": 8,
+      "duration": 105.80788242816925
+    },
+    {
+      "process": 1,
+      "repeat": 1,
+      "input": 4096,
+      "concurrency": 8,
+      "requests": 16,
+      "duration": 62.77221172209829
+    },
+    {
+      "process": 1,
+      "repeat": 1,
+      "input": 4096,
+      "concurrency": 64,
+      "requests": 128,
+      "duration": 417.75510356295854
+    },
+    {
+      "process": 1,
+      "repeat": 1,
+      "input": 16384,
+      "concurrency": 1,
+      "requests": 8,
+      "duration": 127.72330489987507
+    },
+    {
+      "process": 1,
+      "repeat": 1,
+      "input": 16384,
+      "concurrency": 8,
+      "requests": 16,
+      "duration": 105.23727772384882
+    },
+    {
+      "process": 1,
+      "repeat": 1,
+      "input": 16384,
+      "concurrency": 64,
+      "requests": 128,
+      "duration": 724.3033752478659
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "input": 4096,
+      "concurrency": 1,
+      "requests": 8,
+      "duration": 106.05127281788737
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "input": 4096,
+      "concurrency": 8,
+      "requests": 16,
+      "duration": 53.155469104181975
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "input": 4096,
+      "concurrency": 64,
+      "requests": 128,
+      "duration": 412.20752147911116
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "input": 16384,
+      "concurrency": 1,
+      "requests": 8,
+      "duration": 118.01478231092915
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "input": 16384,
+      "concurrency": 8,
+      "requests": 16,
+      "duration": 74.29221752891317
+    },
+    {
+      "process": 1,
+      "repeat": 2,
+      "input": 16384,
+      "concurrency": 64,
+      "requests": 128,
+      "duration": 657.9206437901594
+    }
+  ],
+  "throughput_and_ttft_recomputed": true,
+  "mean_tpot_e2e_identity_checked": true,
+  "latency_limit": "The stock output-details JSONL omits individual end-to-end latencies. TPOT/E2E aggregates are consistency-checked; p99 TPOT is retained from the client, not independently reconstructed.",
+  "official_acceptance": null,
+  "backend_counters": [
+    {
+      "process": 1,
+      "generation_tokens": 623008.0,
+      "expected_generation_tokens": 623008,
+      "counted_requests": 608,
+      "client_warmups": 12,
+      "warmup_output_tokens_each": 32,
+      "functional_requests": 8,
+      "functional_output_tokens": 32,
+      "successful_requests": 628.0
+    }
+  ]
+}

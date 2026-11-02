@@ -1,0 +1,40 @@
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+INFO 11-01 10:56:16 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-01 10:56:16 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-01 10:56:16 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-01 10:56:16 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+Synthetic text vocabulary restricted to checkpoint embedding rows: 163840
+[transformers] `KimiVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+/usr/local/lib/python3.10/dist-packages/sglang/benchmark/datasets/image.py:58: UserWarning: High resolution (up to 1920x1080) with 128 total images may take a long time. Consider reducing resolution or image count.
+  return sample_image_requests(
+benchmark_args=Namespace(backend='vllm-chat', base_url=None, host='127.0.0.1', port=30004, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', served_model_name='kimi-vl-a3b-instruct', tokenizer='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/results/formal-20261101T022748Z/process1/round1.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body='{"stream_options": {"include_usage": true}}', apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+Waiting up to 60s for http://127.0.0.1:30004/v1/models to become ready...
+Server ready in 0.0s.
+Namespace(backend='vllm-chat', base_url=None, host='127.0.0.1', port=30004, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', served_model_name='kimi-vl-a3b-instruct', tokenizer='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/results/formal-20261101T022748Z/process1/round1.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body='{"stream_options": {"include_usage": true}}', apply_chat_template=True, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Kimi-VL-A3B-Instruct/scripts/benchmark_valid_vocab.py", line 37, in <module>
+    cli_main()
+  File "/usr/local/lib/python3.10/dist-packages/sglang/benchmark/serving.py", line 2753, in cli_main
+    run_benchmark(args)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/benchmark/serving.py", line 2106, in run_benchmark
+    input_requests = get_dataset(args, tokenizer, model_id)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/benchmark/datasets/__init__.py", line 46, in get_dataset
+    return dataset.load(tokenizer=tokenizer, model_id=model_id)
+  File "/usr/local/lib/python3.10/dist-packages/sglang/benchmark/datasets/image.py", line 58, in load
+    return sample_image_requests(
+  File "/usr/local/lib/python3.10/dist-packages/sglang/benchmark/datasets/image.py", line 341, in sample_image_requests
+    data_row = create_mm_data_row(
+  File "/usr/local/lib/python3.10/dist-packages/sglang/benchmark/datasets/image.py", line 179, in create_mm_data_row
+    prompt_len = processor(
+  File "/root/private_data/hks/models/Kimi-VL-A3B-Instruct/cache/huggingface/modules/transformers_modules/kimi_hyphen_vl_hyphen_a3b_hyphen_instruct/932d31b1c2a7a5c0/processing_kimi_vl.py", line 137, in __call__
+    "<|placeholder|>" * (image_grid_hws[index].prod() // merge_length),
+IndexError: index 1 is out of bounds for dimension 0 with size 1

@@ -1,0 +1,63 @@
+{
+  "question": "Name the color of the first image and then the second image. Answer with two English color words in order.",
+  "images_sha256": [
+    "3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd",
+    "e1f48567cbbeb88ff0f4d98e9d941de62528cc3290a92856cf4f51dc5e844e40"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "red, blue",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 426,
+    "total_tokens": 431,
+    "completion_tokens": 5,
+    "prompt_tokens_details": null
+  },
+  "raw_response": {
+    "id": "chatcmpl-ae4782552955d4d3",
+    "object": "chat.completion",
+    "created": 1793502124,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "red, blue",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-573b111a",
+    "usage": {
+      "prompt_tokens": 426,
+      "total_tokens": 431,
+      "completion_tokens": 5,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "seconds": 0.4655836899764836,
+  "id": "two-images",
+  "passed": true
+}

@@ -1,0 +1,62 @@
+{
+  "question": "What color fills this image? Answer with one English word.",
+  "images_sha256": [
+    "3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "red",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 222,
+    "total_tokens": 225,
+    "completion_tokens": 3,
+    "prompt_tokens_details": null
+  },
+  "raw_response": {
+    "id": "chatcmpl-a88f02d63ce348c1",
+    "object": "chat.completion",
+    "created": 1793502125,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "red",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-573b111a",
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 225,
+      "completion_tokens": 3,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "seconds": 0.3202053187415004,
+  "id": "repeat",
+  "passed": true
+}

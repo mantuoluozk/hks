@@ -1,0 +1,7 @@
+{
+  "introduced_after": "4K six cells completed; during 16K/c1 round1",
+  "change": "Post-timing checker saves backend Prometheus counters; no modification to benchmark HTTP/timing/generation",
+  "checker_sha256": "a0c4ac1114d15722caa94ed9efa7937bb6db618f2699a9b2564f5225ba3b26a6",
+  "warmup_requests_per_cell": 1,
+  "warmup_output_limit": 32
+}

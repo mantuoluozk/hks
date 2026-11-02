@@ -1,0 +1,38 @@
+[
+  {
+    "repeat": 1,
+    "concurrency": 1,
+    "max_tokens": 32,
+    "baseline_tps": 14.326827230916754,
+    "candidate_tps": 53.82764157996755,
+    "throughput_gain_pct": 275.7122265270954,
+    "same_output_counts": true
+  },
+  {
+    "repeat": 1,
+    "concurrency": 1,
+    "max_tokens": 128,
+    "baseline_tps": 15.144588386500116,
+    "candidate_tps": 73.44276114491315,
+    "throughput_gain_pct": 384.94392366833824,
+    "same_output_counts": true
+  },
+  {
+    "repeat": 1,
+    "concurrency": 2,
+    "max_tokens": 32,
+    "baseline_tps": 26.134559622706956,
+    "candidate_tps": 77.14858155089395,
+    "throughput_gain_pct": 195.19755704574249,
+    "same_output_counts": true
+  },
+  {
+    "repeat": 1,
+    "concurrency": 2,
+    "max_tokens": 128,
+    "baseline_tps": 29.16718987371393,
+    "candidate_tps": 117.6685551060544,
+    "throughput_gain_pct": 303.4278091771183,
+    "same_output_counts": true
+  }
+]

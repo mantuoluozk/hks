@@ -1,0 +1,53 @@
+{
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "transformers": "5.12.1",
+    "tiktoken": "0.14.0",
+    "pillow": "11.3.0",
+    "openai": "2.30.0",
+    "pydantic": "2.13.0",
+    "pyarrow": "25.0.1",
+    "requests": "2.34.2"
+  },
+  "python": "3.10.12",
+  "source_sha256": {
+    "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/kimi_vl.py": "4d38fcc0783de22130a9ee7d5fcd2c6708df61eeccb6ce7bd70924fceae8f5cb",
+    "/usr/local/lib/python3.10/dist-packages/vllm_hcu/model_executor/layers/fused_moe/router_runtime.py": "fdd810e7b14c17fc855844b6d36e72b40fa0621b75ed72631e2575f0de3df72d"
+  },
+  "benchmark_source_sha256": "a24937919cdf033bdc5123c317940a2578eb01cf81ed7788fc66fe9cd0090489",
+  "cpu_max": "1500000 100000",
+  "memory_max_bytes": 63350767616,
+  "model_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "dtype": "bfloat16",
+  "tensor_parallel_size": 1,
+  "max_model_len": 32768,
+  "max_num_seqs": 8,
+  "max_num_batched_tokens": 8192,
+  "gpu_memory_utilization": 0.85,
+  "compilation_config": {
+    "mode": 0,
+    "cudagraph_mode": "FULL_DECODE_ONLY",
+    "cudagraph_capture_sizes": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "VLLM_HCU_USE_FUSE_MOE_GATE": "0",
+  "enable_prefix_caching": false,
+  "mm_processor_cache_gb": 0,
+  "image": "appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-image21-turbo:1.0.0",
+  "image_version": "1.0.0",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2114893402085822465/versions",
+  "dedicated_image_validated": false,
+  "official_acceptance": null,
+  "benchmark_packages": {
+    "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+    "aiohttp": "3.14.3",
+    "numpy": "1.25.0",
+    "pillow": "11.3.0",
+    "transformers": "5.12.1"
+  }
+}

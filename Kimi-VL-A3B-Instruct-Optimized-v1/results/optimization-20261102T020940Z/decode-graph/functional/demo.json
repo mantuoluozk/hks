@@ -1,0 +1,62 @@
+{
+  "question": "What is the dome building in the picture?",
+  "images_sha256": [
+    "95de8765da89c41a2421f1c1fa3986e4d3c83793d92c8ade460a142b329d04c1"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "Rogers Centre",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1121,
+    "total_tokens": 1126,
+    "completion_tokens": 5,
+    "prompt_tokens_details": null
+  },
+  "raw_response": {
+    "id": "chatcmpl-98b1c2a6a1671281",
+    "object": "chat.completion",
+    "created": 1793585832,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Rogers Centre",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-73360bdf",
+    "usage": {
+      "prompt_tokens": 1121,
+      "total_tokens": 1126,
+      "completion_tokens": 5,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "seconds": 0.3527361201122403,
+  "id": "demo",
+  "passed": true
+}

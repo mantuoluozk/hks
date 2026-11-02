@@ -1,0 +1,25 @@
+{
+  "job": "formal-20261102T021857Z",
+  "template": "image, 4096/16384 text length parameter, 1024 output, concurrency 1/8/64; second repetition measured",
+  "processes": 1,
+  "requests_per_process_excluding_client_internal_warmup": 608,
+  "complete": true,
+  "smoke": [
+    {
+      "functional_passed": 8,
+      "functional_total": 8,
+      "all_passed": true,
+      "model": "kimi-vl-a3b-instruct",
+      "official_accuracy_pass": null,
+      "scope": "Synthetic/official-demo HTTP functional checks; not public benchmark accuracy",
+      "script_sha256": "3b13c8aa6e1903b9f14ab1ed897b934304469c6184d63bb203e094b163caa3ba"
+    }
+  ],
+  "confirmed_special_only_requests": [],
+  "no_visible_token_ttft_count": 0,
+  "ttft_interpretation": "First nonempty streamed content; raw client statistics retained.",
+  "comparison": [],
+  "max_deviation_percent": null,
+  "performance_reproduced": null,
+  "official_acceptance": null
+}

@@ -1,0 +1,80 @@
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+INFO 11-02 10:45:45 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-02 10:45:45 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-02 10:45:45 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-02 10:45:45 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+Synthetic text samples base vocabulary only (0..163583); excludes publisher reserved slots and out-of-embedding IDs
+[transformers] `KimiVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+benchmark_args=Namespace(backend='vllm-chat', base_url=None, host='127.0.0.1', port=30004, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', served_model_name='kimi-vl-a3b-instruct', tokenizer='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', num_prompts=8, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=16384, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=1, output_file='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/results/formal-20261102T021857Z/process1/round1.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body='{"stream_options": {"include_usage": true}}', apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+Waiting up to 60s for http://127.0.0.1:30004/v1/models to become ready...
+Server ready in 0.0s.
+Namespace(backend='vllm-chat', base_url=None, host='127.0.0.1', port=30004, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', served_model_name='kimi-vl-a3b-instruct', tokenizer='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/weights', num_prompts=8, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=16384, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=1, output_file='/root/private_data/hks/models/Kimi-VL-A3B-Instruct/results/formal-20261102T021857Z/process1/round1.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body='{"stream_options": {"include_usage": true}}', apply_chat_template=True, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+
+#Input tokens: 142431
+#Output tokens: 8192
+#Total images: 8
+#Images per request: 1 (fixed)
+
+=== Token Breakdown (per request avg / total) ===
+  Raw text prompt tokens (without overhead): avg=16384.0, total=131072
+  Text prompt tokens (with chat template): avg=16767.9, total=134143
+  Text prompt overhead: avg=383.9, total=3071
+  Vision tokens: avg=1036.0, total=8288
+
+Created 8 random jpeg images with average 2089655 bytes per request
+Starting warmup with 1 sequences...
+Warmup completed with 1 sequences. Starting main benchmark run...
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:14<01:43, 14.85s/it] 25%|██▌       | 2/8 [00:31<01:34, 15.68s/it] 38%|███▊      | 3/8 [00:46<01:17, 15.57s/it] 50%|█████     | 4/8 [01:02<01:02, 15.67s/it] 62%|██████▎   | 5/8 [01:19<00:48, 16.20s/it] 75%|███████▌  | 6/8 [01:36<00:33, 16.54s/it] 88%|████████▊ | 7/8 [01:52<00:16, 16.15s/it]100%|██████████| 8/8 [02:07<00:00, 15.99s/it]100%|██████████| 8/8 [02:07<00:00, 15.97s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 vllm-chat 
+Traffic request rate:                    inf       
+Max request concurrency:                 1         
+Successful requests:                     8         
+Benchmark duration (s):                  127.72    
+Total input tokens:                      142431    
+Total input text tokens:                 134143    
+Total input vision tokens:               8288      
+Total generated tokens:                  8192      
+Total generated tokens (retokenized):    8110      
+Request throughput (req/s):              0.06      
+Input token throughput (tok/s):          1115.15   
+Output token throughput (tok/s):         64.14     
+Peak output token throughput (tok/s):    77.00     
+Peak concurrent requests:                2         
+Total token throughput (tok/s):          1179.29   
+Concurrency:                             1.00      
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   15964.55  
+Median E2E Latency (ms):                 15733.57  
+P90 E2E Latency (ms):                    17154.51  
+P95 E2E Latency (ms):                    17188.20  
+P99 E2E Latency (ms):                    17215.15  
+---------------Time to First Token----------------
+Mean TTFT (ms):                          2556.13   
+Median TTFT (ms):                        2323.56   
+P90 TTFT (ms):                           3723.41   
+P95 TTFT (ms):                           3752.16   
+P99 TTFT (ms):                           3775.16   
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          13.11     
+Median TPOT (ms):                        13.10     
+P90 TPOT (ms):                           13.16     
+P95 TPOT (ms):                           13.17     
+P99 TPOT (ms):                           13.19     
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           13.21     
+Median ITL (ms):                         13.10     
+P90 ITL (ms):                            13.29     
+P95 ITL (ms):                            13.36     
+P99 ITL (ms):                            13.69     
+Max ITL (ms):                            39.48     
+==================================================

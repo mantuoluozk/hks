@@ -1,0 +1,60 @@
+{
+  "question": "What is 2 + 2? Answer with the number only.",
+  "images_sha256": [],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "4",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 30,
+    "total_tokens": 33,
+    "completion_tokens": 3,
+    "prompt_tokens_details": null
+  },
+  "raw_response": {
+    "id": "chatcmpl-91db70cf2c62fc46",
+    "object": "chat.completion",
+    "created": 1793495499,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "4",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-573b111a",
+    "usage": {
+      "prompt_tokens": 30,
+      "total_tokens": 33,
+      "completion_tokens": 3,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "seconds": 1.3456585216335952,
+  "id": "text",
+  "passed": true
+}

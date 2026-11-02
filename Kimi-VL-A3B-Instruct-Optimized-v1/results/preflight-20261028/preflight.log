@@ -1,0 +1,8 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+INFO 10-28 09:17:27 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-28 09:17:27 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-28 09:17:27 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-28 09:17:27 [__init__.py:237] Platform plugin hcu is activated
+[transformers] `KimiVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+{"weight_index_valid": true, "packages": {"torch": "2.11.0+dtk2604.2609201441.gf74cd7", "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a", "transformers": "5.12.1", "tiktoken": "0.14.0", "pillow": "11.3.0"}, "tokenizer": "TikTokenTokenizer", "processor": "KimiVLProcessor", "native_model_import": true, "processor_shapes": {"input_ids": [1, 88], "attention_mask": [1, 88], "pixel_values": [256, 3, 14, 14], "image_grid_hws": [1, 2]}, "rendered_prompt": "<|im_system|>system<|im_middle|>You are a helpful assistant<|im_end|><|im_user|>user<|im_middle|><|media_start|>image<|media_content|><|media_pad|><|media_end|>Describe this image.<|im_end|><|im_assistant|>assistant<|im_middle|>", "device": "BW", "hip": "6.3.26113", "model_inference_verified": false, "official_accuracy_pass": null}

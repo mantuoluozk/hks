@@ -1,0 +1,39 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+[transformers] `KimiVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+/usr/local/lib/python3.10/dist-packages/sglang/benchmark/datasets/image.py:58: UserWarning: High resolution (up to 1920x1080) with 128 total images may take a long time. Consider reducing resolution or image count.
+  return sample_image_requests(
+#Input tokens: 670748
+#Output tokens: 131072
+#Total images: 128
+#Images per request: 1 (fixed)
+
+=== Token Breakdown (per request avg / total) ===
+  Raw text prompt tokens (without overhead): avg=4096.0, total=524288
+  Text prompt tokens (with chat template): avg=4204.2, total=538140
+  Text prompt overhead: avg=108.2, total=13852
+  Vision tokens: avg=1036.0, total=132608
+
+Created 128 random jpeg images with average 2089739 bytes per request
+PROCESSOR_CHECK {"input_length": 4096, "processed_requests": 128, "passed": true}
+#Input tokens: 2279292
+#Output tokens: 131072
+#Total images: 128
+#Images per request: 1 (fixed)
+
+=== Token Breakdown (per request avg / total) ===
+  Raw text prompt tokens (without overhead): avg=16384.0, total=2097152
+  Text prompt tokens (with chat template): avg=16771.0, total=2146684
+  Text prompt overhead: avg=387.0, total=49532
+  Vision tokens: avg=1036.0, total=132608
+
+Created 128 random jpeg images with average 2089739 bytes per request
+PROCESSOR_CHECK {"input_length": 16384, "processed_requests": 128, "passed": true}

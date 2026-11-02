@@ -1,0 +1,20 @@
+{
+  "tokenizer_vocab_size": 163842,
+  "embedding_rows": 163840,
+  "internal_reserved_count": 258,
+  "internal_reserved_min": 163584,
+  "internal_reserved_max": 163841,
+  "hf_all_special_ids": [
+    163584,
+    163585,
+    163839,
+    163838,
+    163586,
+    163601,
+    163587,
+    163588,
+    163594
+  ],
+  "media_pad_id": 163605,
+  "media_pad_in_hf_specials": false
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "key": "language_model.model.embed_tokens.weight",
+    "shard": "model-00001-of-00007.safetensors",
+    "shape": [
+      163840,
+      2048
+    ],
+    "dtype": "BF16"
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "question": "What color fills this image? Answer with one English word.",
+  "images_sha256": [
+    "3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": true,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "output": "red",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 222,
+    "total_tokens": 225,
+    "completion_tokens": 3
+  },
+  "chunks": [
+    {
+      "id": "chatcmpl-ab43ef463cbfe063",
+      "object": "chat.completion.chunk",
+      "created": 1793495503,
+      "model": "kimi-vl-a3b-instruct",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "role": "assistant",
+            "content": ""
+          },
+          "logprobs": null,
+          "finish_reason": null
+        }
+      ],
+      "prompt_token_ids": null,
+      "prompt_text": null
+    },
+    {
+      "id": "chatcmpl-ab43ef463cbfe063",
+      "object": "chat.completion.chunk",
+      "created": 1793495503,
+      "model": "kimi-vl-a3b-instruct",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "red"
+          },
+          "logprobs": null,
+          "finish_reason": null,
+          "token_ids": null
+        }
+      ]
+    },
+    {
+      "id": "chatcmpl-ab43ef463cbfe063",
+      "object": "chat.completion.chunk",
+      "created": 1793495503,
+      "model": "kimi-vl-a3b-instruct",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": ""
+          },
+          "logprobs": null,
+          "finish_reason": null,
+          "token_ids": null
+        }
+      ]
+    },
+    {
+      "id": "chatcmpl-ab43ef463cbfe063",
+      "object": "chat.completion.chunk",
+      "created": 1793495503,
+      "model": "kimi-vl-a3b-instruct",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": ""
+          },
+          "logprobs": null,
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "token_ids": null
+        }
+      ]
+    },
+    {
+      "id": "chatcmpl-ab43ef463cbfe063",
+      "object": "chat.completion.chunk",
+      "created": 1793495503,
+      "model": "kimi-vl-a3b-instruct",
+      "choices": [],
+      "usage": {
+        "prompt_tokens": 222,
+        "total_tokens": 225,
+        "completion_tokens": 3
+      },
+      "system_fingerprint": "vllm-0.25.1-573b111a"
+    }
+  ],
+  "done_marker": true,
+  "ttft_seconds": 0.20761740114539862,
+  "seconds": 0.3353809043765068,
+  "id": "stream",
+  "passed": true
+}

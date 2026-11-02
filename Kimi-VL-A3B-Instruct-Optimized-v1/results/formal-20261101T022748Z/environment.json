@@ -1,0 +1,33 @@
+{
+  "platform": "Linux-5.15.0-25-generic-x86_64-with-glibc2.35",
+  "python": "3.10.12",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "vllm-hcu": "0.25.1+dtk2604.torch2110.2609272150.gee325d",
+    "transformers": "5.12.1",
+    "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+    "openai": "2.30.0",
+    "pillow": "11.3.0",
+    "tiktoken": "0.14.0",
+    "pydantic": "2.13.0"
+  },
+  "cgroup_limits": {
+    "memory.max": "63350767616",
+    "cpu.max": "1500000 100000",
+    "cpuset.cpus.effective": "0-127"
+  },
+  "hostname": "crdnotebook-2116692278906474498-zack233-10332",
+  "source": "Current Notebook runtime; image page supplied separately",
+  "model_directory": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct",
+  "service_configuration": {
+    "context": 32768,
+    "max_num_seqs": 8,
+    "max_num_batched_tokens": 8192,
+    "gpu_memory_utilization": 0.85,
+    "tensor_parallel_size": 1,
+    "dtype": "bfloat16",
+    "enforce_eager": true,
+    "VLLM_HCU_USE_FUSE_MOE_GATE": "0"
+  }
+}

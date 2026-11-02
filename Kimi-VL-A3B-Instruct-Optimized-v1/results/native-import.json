@@ -1,0 +1,16 @@
+{
+  "stage": "native import only; no checkpoint loaded",
+  "native_import_pass": true,
+  "torch_distribution": "2.11.0+dtk2604.2609201441.gf74cd7",
+  "transformers": {
+    "version": "5.12.1",
+    "path": "/usr/local/lib/python3.10/dist-packages/transformers/__init__.py"
+  },
+  "vllm_distribution": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+  "model_class": "KimiVLForConditionalGeneration",
+  "implementation_path": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/kimi_vl.py",
+  "implementation_sha256": "4d38fcc0783de22130a9ee7d5fcd2c6708df61eeccb6ce7bd70924fceae8f5cb",
+  "weights_loaded": false,
+  "functional_pass": null,
+  "official_accuracy_pass": null
+}

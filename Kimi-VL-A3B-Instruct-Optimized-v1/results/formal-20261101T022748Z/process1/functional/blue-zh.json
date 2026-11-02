@@ -1,0 +1,62 @@
+{
+  "question": "这张图片主要是什么颜色？请只回答颜色。",
+  "images_sha256": [
+    "e1f48567cbbeb88ff0f4d98e9d941de62528cc3290a92856cf4f51dc5e844e40"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "蓝色。",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 221,
+    "total_tokens": 225,
+    "completion_tokens": 4,
+    "prompt_tokens_details": null
+  },
+  "raw_response": {
+    "id": "chatcmpl-bf60420a2bb1b017",
+    "object": "chat.completion",
+    "created": 1793500184,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "蓝色。",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-573b111a",
+    "usage": {
+      "prompt_tokens": 221,
+      "total_tokens": 225,
+      "completion_tokens": 4,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "seconds": 0.38990798871964216,
+  "id": "blue-zh",
+  "passed": true
+}

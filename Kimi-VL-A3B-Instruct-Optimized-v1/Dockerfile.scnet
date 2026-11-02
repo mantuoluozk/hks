@@ -1,0 +1,5 @@
+FROM image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18
+COPY kimi-vl-vllm/ /opt/kimi-vl-vllm/
+RUN python /opt/kimi-vl-vllm/verify_build.py && cp -a /opt/kimi-vl-vllm/deps /opt/qwen3-asr-deps
+ENV PYTHONPATH=/opt/qwen3-asr-deps
+# Inherit Notebook/SSH startup; load weights and data from shared storage.

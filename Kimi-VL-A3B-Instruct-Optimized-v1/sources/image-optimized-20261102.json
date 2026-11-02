@@ -1,0 +1,12 @@
+{
+  "model": "Kimi-VL-A3B-Instruct",
+  "image": "appstore.scnet.cn:5000/aihub/dcu/zack233/kimi-vl:v1.0.0",
+  "version": "v1.0.0",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2117085616644177921",
+  "base_image": "image.ac.com:5000/dcu/zack233/base/sglang-jupyter:0.5.18",
+  "build_confirmation": "Platform build success confirmed by image owner on 2026-11-02",
+  "payload_manifest_sha256": "050c5d002a112843d4d3e3bd0945859e3260ef8ae728fc7b58bf1ac93a757f188",
+  "payload_files": 2223,
+  "weights_included": false,
+  "performance_environment_record": "results/runtime-optimized-20261102.json"
+}

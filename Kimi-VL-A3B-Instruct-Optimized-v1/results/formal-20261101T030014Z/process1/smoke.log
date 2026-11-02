@@ -1,0 +1,9 @@
+{"id": "text", "passed": true, "output": "4", "error": null, "seconds": 1.2765260036103427}
+{"id": "red", "passed": true, "output": "red", "error": null, "seconds": 1.018425160087645}
+{"id": "blue-zh", "passed": true, "output": "蓝色。", "error": null, "seconds": 0.3828554106876254}
+{"id": "ocr", "passed": true, "output": "HKS2026", "error": null, "seconds": 0.5066739218309522}
+{"id": "demo", "passed": true, "output": "Rogers Centre", "error": null, "seconds": 0.8026560521684587}
+{"id": "two-images", "passed": true, "output": "red, blue", "error": null, "seconds": 0.4655836899764836}
+{"id": "repeat", "passed": true, "output": "red", "error": null, "seconds": 0.3202053187415004}
+{"id": "stream", "passed": true, "output": "red", "error": null, "seconds": 0.336855826433748}
+{"functional_passed": 8, "functional_total": 8, "all_passed": true, "model": "kimi-vl-a3b-instruct", "official_accuracy_pass": null, "scope": "Synthetic/official-demo HTTP functional checks; not public benchmark accuracy", "script_sha256": "3b13c8aa6e1903b9f14ab1ed897b934304469c6184d63bb203e094b163caa3ba"}
