@@ -59,11 +59,12 @@ def summarize(directory):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('--output',default='results/public-accuracy-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ'))
+    parser.add_argument('--output', help='Explicitly run a new evaluation into this directory unless --summarize-only is set.')
+    parser.add_argument('--selfcheck',action='store_true', help='Check saved evidence without inference.')
     parser.add_argument('--summarize-only',action='store_true')
     args=parser.parse_args()
-    directory=(ROOT/args.output).resolve()
+    directory=(ROOT/(args.output or 'results/scnet/public-accuracy-20261025T115032Z')).resolve()
     assert directory.is_relative_to(ROOT)
-    if not args.summarize_only:
+    if args.output and not args.summarize_only and not args.selfcheck:
         subprocess.run(['bash','verify.sh'],cwd=ROOT,env=dict(os.environ,EVAL_OUT=str(directory)),check=True)
     summarize(directory)

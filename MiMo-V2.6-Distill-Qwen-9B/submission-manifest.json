@@ -19,8 +19,8 @@
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/README.md",
-      "sha256": "14c3d590a19aa93cec9cba9a849f51e2db5d9addb5297e6252949bbbf1105767",
-      "bytes": 8097
+      "sha256": "7615ca562cdc2c60d7947781e4cc628afd5b24ebece11df9cf988e54f7f28b48",
+      "bytes": 8299
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/bench.sh",
@@ -519,8 +519,8 @@
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/verify.py",
-      "sha256": "8509996dae8d734f8b3548918dc95ebe8f8a55025a6414878afb4cc9f9731ed8",
-      "bytes": 661
+      "sha256": "d7f81e683e036a6b7269a875349006a1d33e84777793e454d0e04b390f590f3c",
+      "bytes": 683
     },
     {
       "path": "MiMo-V2.6-Distill-Qwen-9B/verify_result.json",

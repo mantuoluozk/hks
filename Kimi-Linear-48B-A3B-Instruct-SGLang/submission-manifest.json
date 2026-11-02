@@ -37,8 +37,8 @@
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct-SGLang/README.md",
-      "sha256": "8b0c80400a4d54267ce49bfaffe1a4352921d39ca46a1651db0447517e5082ba",
-      "bytes": 7336
+      "sha256": "59c97b693c10fe871213ef1ebdae00500b540b19898d54aa8a8df04bf70d76fa",
+      "bytes": 7888
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct-SGLang/results/accuracy-gsm8k-200/manifest.json",
@@ -137,8 +137,8 @@
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct-SGLang/verify.py",
-      "sha256": "7b78c2760e46fa40f6a16ceb57b216dbd471254b040ea9f08b8c03a49e0f1f12",
-      "bytes": 2518
+      "sha256": "dc8b758dddc97950d84d89dfda453ba97ca5b33ea7e417ebc2c6196a6ba517a0",
+      "bytes": 2532
     },
     {
       "path": "Kimi-Linear-48B-A3B-Instruct-SGLang/verify_result.json",

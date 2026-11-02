@@ -9,8 +9,8 @@
     },
     {
       "path": "RoboBrain2.5-8B-NV/README.md",
-      "sha256": "14ca70d8d9467aaad14407ee463c284e004b81fa112e72d2d33b1681d55f8142",
-      "bytes": 9275
+      "sha256": "4063ca0cd4d4304e1a1a04f2836760ff6eeda13806fb3950bf07563985a0b035",
+      "bytes": 9477
     },
     {
       "path": "RoboBrain2.5-8B-NV/bench.sh",
@@ -914,8 +914,8 @@
     },
     {
       "path": "RoboBrain2.5-8B-NV/verify.py",
-      "sha256": "430653888ea4ec576f7ecdb6962669618ebb435cd8a612d360fcbfa9e719793a",
-      "bytes": 1456
+      "sha256": "c3c6c9edb3e9ceb7e77f3f83e720985ad12f7a0117ddd1f214284b445c07d52d",
+      "bytes": 2234
     },
     {
       "path": "RoboBrain2.5-8B-NV/verify_result.json",

@@ -244,8 +244,8 @@
     },
     {
       "path": "Qwen3-ForcedAligner-0.6B/verify.py",
-      "sha256": "2d0bbf07ba24ee21071c3455518fd0697a65ae462166946800da4cd298487563",
-      "bytes": 1067
+      "sha256": "f93929c516887495a85197cf4d0923acf21c47b4b326663a466660c3431a7bb0",
+      "bytes": 1100
     },
     {
       "path": "Qwen3-ForcedAligner-0.6B/优化说明.md",
@@ -276,7 +276,7 @@
   "additional_files_without_checksums": [
     {
       "path": "Qwen3-ForcedAligner-0.6B/README.md",
-      "bytes": 8722
+      "bytes": 8924
     },
     {
       "path": "Qwen3-ForcedAligner-0.6B/scripts/run_official_conditions.py",

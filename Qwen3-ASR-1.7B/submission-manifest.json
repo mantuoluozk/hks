@@ -519,8 +519,8 @@
     },
     {
       "path": "Qwen3-ASR-1.7B/verify.py",
-      "sha256": "45f16ca4cf8413546ccdff90e3a55a1fd4c8384fde3882b03c278665bf2a34e6",
-      "bytes": 1989
+      "sha256": "f01afc20c566c34cac8f593851c2ded7f0f70760f161fdc337c366d9ce2b8923",
+      "bytes": 2012
     },
     {
       "path": "Qwen3-ASR-1.7B/优化说明.md",

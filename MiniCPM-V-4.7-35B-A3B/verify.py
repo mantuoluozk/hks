@@ -20,8 +20,7 @@ if a.selfcheck:
     assert within_tolerance(88.4, 90.4, 2)
     assert not within_tolerance(88.3, 90.4, 2)
     assert within_tolerance(91, 90.4, 2)
-    print('threshold selfcheck passed')
-    raise SystemExit(0)
+    print('threshold selfcheck passed; checking saved evaluation evidence')
 summary = json.loads((JOB / 'ocrbench/summary.json').read_text())
 audit = json.loads((JOB / 'independent-audit.json').read_text())
 assert summary['completed'] == summary['expected'] == audit['rows'] == 1000

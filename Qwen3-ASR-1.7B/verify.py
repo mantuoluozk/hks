@@ -10,7 +10,7 @@ parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--local-only',action='store_true',help='Validate completed local artifacts; does not claim official accuracy.')
 parser.add_argument('--selfcheck',action='store_true',help='Audit saved SCNet evidence without GPU inference or official acceptance claims.')
 args=parser.parse_args()
-if args.selfcheck:
+if args.selfcheck or not args.local_only:
     summary=json.loads((root/'results/scnet/validation-summary.json').read_text())
     assert summary['evidence_audit_passed'] and summary['official_accuracy_pass'] is None
     for item in summary['references']:

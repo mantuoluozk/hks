@@ -14,8 +14,8 @@
     },
     {
       "path": "Trident-Qwen3VL-2B/README.md",
-      "sha256": "6e71553f9f88ca2ab334daaaabbd2713ddf44e068dca1138fbe1cca3c3776da3",
-      "bytes": 9609
+      "sha256": "7c474e9b59c364a32202b459c0b39d6a0a73f261b6528d5c63a6db68d14f58ad",
+      "bytes": 9811
     },
     {
       "path": "Trident-Qwen3VL-2B/bench.sh",
@@ -659,8 +659,8 @@
     },
     {
       "path": "Trident-Qwen3VL-2B/verify.py",
-      "sha256": "63d22c66d944287ecfe383245b7d756df77a8b4b57d74e1ec37c8139ac86cea3",
-      "bytes": 1065
+      "sha256": "b5c219c866580c923366106da61f28aee131f8b10456a6b3b5b8bfa0450e5e90",
+      "bytes": 1097
     },
     {
       "path": "Trident-Qwen3VL-2B/优化说明.md",

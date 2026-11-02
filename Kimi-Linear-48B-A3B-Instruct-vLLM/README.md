@@ -208,3 +208,5 @@ python scripts/test_publish_entrypoints.py
 这是发布入口的回归验证，未启动四卡模型、未执行新的精度/性能测试，也未完成新 Notebook 复验。第 5—8 章模型实测数字沿用历史记录；新功能检查脚本的真机六组结果仍需复跑。CPU 检查记录见 `results/publish-entrypoint-check-20261101.json`。
 
 历史发布清单保留于 `results/submission-manifest-before-entrypoint-fix.json`，其中源码摘要仅对应当时文件，不是当前代码的完整性清单。当前证据入口见 `submission-manifest.json`。默认 `python verify.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。
+
+校验入口维护（2026-11-02）：默认校验已保存证据；检查通过返回0，检查失败返回非零。退出码不代表官方验收结论。原始预测、响应及计时记录保留。

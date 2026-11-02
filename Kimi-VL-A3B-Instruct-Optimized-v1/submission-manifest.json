@@ -50,8 +50,8 @@
     },
     {
       "path": "Kimi-VL-A3B-Instruct-Optimized-v1/README.md",
-      "bytes": 18149,
-      "sha256": "c52f1cdb5da277697d59991667472888c8c3edef70c01a8aa67b341baebee2f0"
+      "bytes": 18375,
+      "sha256": "38d39f0b82be953d8315f32121481d9e43eedd114b9c2f983f51147963618b23"
     },
     {
       "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/archive/evidence-manifest-before-performance-20261102.json",
@@ -141,7 +141,7 @@
     {
       "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/evidence-manifest.json",
       "bytes": 45484,
-      "sha256": "f30d81fe07c2bbf69604036e049d7a30b049d7a4747ad2fd2fb917ce90059045"
+      "sha256": "7235ad6232aed8708d1b88af670745e6fe96613aee80b670a42a4b39f47bf54a"
     },
     {
       "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/blue-zh.json",
@@ -1715,8 +1715,8 @@
     },
     {
       "path": "Kimi-VL-A3B-Instruct-Optimized-v1/verify.py",
-      "bytes": 8156,
-      "sha256": "231ed1aa50647357dff3d561e4636956323243678109c0236b1f5ce482a364f4"
+      "bytes": 8111,
+      "sha256": "b78ec8fe3c7b83ebf26cd1fa8638ae3fd6777ea25d065e9e0f56d0e48968917e"
     },
     {
       "path": "Kimi-VL-A3B-Instruct-Optimized-v1/verify_formal.py",

@@ -1,0 +1,275 @@
+{
+  "date": "2026-11-02",
+  "scope": "CPU saved-evidence verification only; no inference or new performance result",
+  "directories": 18,
+  "successful_commands": 32,
+  "checks": [
+    {
+      "model": "Kimi-Linear-48B-A3B-Instruct-SGLang",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Kimi-Linear-48B-A3B-Instruct-vLLM",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Kimi-VL-A3B-Instruct",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Kimi-VL-A3B-Instruct-Optimized-v1",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "MiMo-V2.6-Distill-Qwen-9B",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "MiniCPM-V-4.7-35B-A3B",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Qwen-Image-2.1-Turbo",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Qwen3-ASR-1.7B",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Qwen3-ForcedAligner-0.6B",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Trident-Qwen3VL-2B",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Trident-Qwen3VL-2B-Optimized-v1",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Recon2Reason-Reasoning-4B",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Recon2Reason-Reasoning-4B-vLLM",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "Recon2Reason-Reasoning-4B-vLLM-Optimized-v1",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "RoboBrain2.5-8B-NV",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "RoboBrain2.5-8B-NV-vLLM",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        },
+        {
+          "args": [
+            "--selfcheck"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "AuK",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "model": "MobileVLA-R1",
+      "checks": [
+        {
+          "args": [],
+          "exit_code": 0
+        }
+      ]
+    }
+  ],
+  "isolated_failure_checks": [
+    {
+      "model": "Qwen-Image-2.1-Turbo",
+      "fault": "modified README",
+      "exit_code": 1,
+      "expected_failure_observed": true
+    },
+    {
+      "model": "MobileVLA-R1",
+      "fault": "modified README",
+      "exit_code": 1,
+      "expected_failure_observed": true
+    },
+    {
+      "model": "Kimi-Linear-48B-A3B-Instruct-SGLang",
+      "fault": "missing predictions",
+      "exit_code": 1,
+      "expected_failure_observed": true
+    }
+  ],
+  "official_acceptance": null
+}

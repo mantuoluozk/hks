@@ -14,12 +14,12 @@
     },
     {
       "path": "Kimi-VL-A3B-Instruct/README.md",
-      "sha256": "6f1486799924a12e4cbe76f4e465d857ef678126aa9293a9a95bdae7daad327f",
-      "bytes": 10067
+      "sha256": "4f1fe69f03a4d4f09b00e7887057c7f4dae88725a44603d2cfaf3d4d5c105d8f",
+      "bytes": 10293
     },
     {
       "path": "Kimi-VL-A3B-Instruct/results/evidence-manifest.json",
-      "sha256": "33d172d54149317d49ad5b46b3b87b8a4d85788a4ed338db8d8b7a32cf81f054",
+      "sha256": "6507539ad1f7e7067890bc7de21bb9caf0ad75e89339740a1f770b44ab15c808",
       "bytes": 11414
     },
     {
@@ -469,8 +469,8 @@
     },
     {
       "path": "Kimi-VL-A3B-Instruct/verify.py",
-      "sha256": "41ceddb24294c2e0acdbf7e9b484fea65dfe7dac494739be7477556f108e439b",
-      "bytes": 7079
+      "sha256": "5c8c6d51bdee1d9c9e00ce325bc6af662aaef8a2564974549fb1f8ea8784760d",
+      "bytes": 7034
     },
     {
       "path": "Kimi-VL-A3B-Instruct/优化说明.md",

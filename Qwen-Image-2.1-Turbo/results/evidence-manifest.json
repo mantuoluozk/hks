@@ -11,7 +11,7 @@
     "bench.sh": "a12561512a34a1c9476fd270b8cb8cd00fffc6c47c91e515d15017e22809fe4a",
     "Dockerfile.scnet": "7bf3a8d16e2a351fcf7605da24c74521f66714c76b484055748ed954eb6da4b2",
     "env_check.sh": "f87f4268fab0f65a8fc28bcb3f7092a8a6bc983cc0dd3640b51adfdaac700a4c",
-    "README.md": "b23f4f30508b94d93f978b905d71b493f1e35c273a091a2bab070bd0fb1f7a01",
+    "README.md": "38375f3af8b87a7aeaf6b3ec982a67c0402e15888a5f47a5e91d91f3a4662aae",
     "results/bootstrap-worker.log": "9dc124d332bc8728cd86b4071a4e22dab3de0fbcd3c35123504f19ac627e8dce",
     "results/config-probe/config-comparison.json": "478a4b617e919ef52778492706d11378c9692dc9f6a4c7aae877ba8b19195c4c",
     "results/config-probe-fixed/config-comparison.json": "c3a69a6e786340666486e2d117edfc55cfb5c5bfb7f22671776c3914fc9f421a",
@@ -167,7 +167,7 @@
     "sources/report-image-status.json": "70b249469e81921e1e1e028d87867282c17bf56963f56a659da4ba78a2075d2d",
     "sources/runtime-dependencies.json": "e6a412d37b1356b4911a42817a35b019ac491a85749b691b8a80f451d8f78979",
     "sources/scnet-image.json": "8557a97512bf26a1f4875a594648014fa8af3b86018b7a544866f628d9183a61",
-    "verify.py": "151012ff6f0a8d37372d58c77fc77f63f0b8e0fba260c34ea6ee36dd5d779adc",
+    "verify.py": "36d7c011777f8e8cab3aea539b7e35e90feb1b14aa09aaa24a178bfaf2f72e71",
     "\u4f18\u5316\u8bf4\u660e.md": "5cd9675b26c23079da2abc479782301e7082ff84fe31e5b4ebae600923736ff6",
     "\u6d4b\u8bd5\u8bf4\u660e.md": "2b3c03d8e2460152c1f96cf3315dfda5eaa6bee320760a86f67f7277780a9ba9"
   },

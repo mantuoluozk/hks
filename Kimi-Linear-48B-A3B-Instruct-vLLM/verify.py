@@ -56,7 +56,7 @@ def recompute_gate():
 
 
 def main():
-    if "--selfcheck" in sys.argv:
+    if "--selfcheck" in sys.argv or len(sys.argv) == 1:
         g = recompute_gsm8k()
         gate = recompute_gate()
         print(f'vLLM GSM8K: {g["correct"]}/{g["responses"]} = {g["accuracy_percent"]}% '

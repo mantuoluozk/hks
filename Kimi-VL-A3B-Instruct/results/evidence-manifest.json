@@ -97,6 +97,6 @@
     "sources/publisher-evaluation.json": "459966c9c85b71167fccb5374733e5d90766f63bcdcfaf6578b1c8d367f1492e",
     "sources/publisher-files.json": "458bd4a75c4a0b3ae1e289496f310e349f6b1db64a1c18a098bb409310000845",
     "sources/report-image-status.json": "64153a61c923c4ba02b7a75ff53350bc2d74ed45350d492ea5a623d5f45ddcb1",
-    "verify.py": "41ceddb24294c2e0acdbf7e9b484fea65dfe7dac494739be7477556f108e439b"
+    "verify.py": "5c8c6d51bdee1d9c9e00ce325bc6af662aaef8a2564974549fb1f8ea8784760d"
   }
 }

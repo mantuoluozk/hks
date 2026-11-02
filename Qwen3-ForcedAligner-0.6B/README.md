@@ -114,3 +114,5 @@ RUN_RESULTS_DIR="$PWD/results/scnet/benchmark" bash run-scnet.sh bash bench.sh
 最大绝对偏差 **7.18%**，≤20% 检查 **通过**。此项为同镜像独立进程复跑，不冒充另建 Notebook 的独立实例复验；后者尚未执行。汇总与 SHA256 索引见 `results/scnet/validation-summary.json`，原始结果分别位于 `results/scnet/validation-20261026T094057Z/`、`results/scnet/validation-20261026T094355Z/`。
 
 `python verify.py --selfcheck` 校验保存的首版功能与性能证据；T03/T04固定条件结果及反馈表见 `results/official-t03t04-20261030/`。
+
+校验入口维护（2026-11-02）：默认校验已保存证据；检查通过返回0，检查失败返回非零。退出码不代表官方验收结论。原始预测、响应及计时记录保留。

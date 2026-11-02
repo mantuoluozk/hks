@@ -139,4 +139,6 @@ Notebook 已是容器，不嵌套 Docker。使用新的结果目录；性能计�
 
 输出吞吐最大绝对偏差 **1.32%**。进一步对输出吞吐、平均请求延迟、TTFT、TPOT四类指标逐项复算，16个比较值中最大绝对偏差 **17.39%**（单并发、输出上限32的TTFT），全部≤20%，检查 **通过**。完整比较见 `results/scnet/reproduction-metric-audit-20261028.json`。精度实测来自首次服务进程；第二进程验证范围为上述功能和性能，未重复完整OCRBench。不将同Notebook进程复跑表述为干净新实例复验。
 
-`python verify.py --selfcheck` 核验已保存证据哈希、功能记录、精度计数及性能汇总。默认 `python verify.py` 不给出赛事精度验收通过结论，返回2。证据索引为 `results/evidence-manifest.json`，实际验收以主办方审核为准。
+`python verify.py --selfcheck` 核验已保存证据哈希、功能记录、精度计数及性能汇总。默认 `python verify.py` 校验已保存证据；通过返回0，不给出赛事精度验收结论。证据索引为 `results/evidence-manifest.json`，实际验收以主办方审核为准。
+
+校验入口维护（2026-11-02）：默认校验已保存证据；检查通过返回0，检查失败返回非零。退出码不代表官方验收结论。原始预测、响应及计时记录保留。

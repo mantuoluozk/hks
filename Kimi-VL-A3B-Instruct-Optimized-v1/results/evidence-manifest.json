@@ -17,7 +17,7 @@
     "Dockerfile.scnet": "5ff679d73b04353bbe4b509ff97df8d90f6e13b61bb664cbe82262837832787f",
     "env.sh": "6f1a600aae82393e8509191a3a07d3e2c4f76ea8f55f50d2bdd97656d09faed6",
     "env_check.sh": "5447e300b73f7abd5b5ec30de7e9fdde45b0086c7fbdd939b7e6348aa8418656",
-    "README.md": "c52f1cdb5da277697d59991667472888c8c3edef70c01a8aa67b341baebee2f0",
+    "README.md": "38d39f0b82be953d8315f32121481d9e43eedd114b9c2f983f51147963618b23",
     "results/archive/evidence-manifest-before-performance-20261102.json": "33d172d54149317d49ad5b46b3b87b8a4d85788a4ed338db8d8b7a32cf81f054",
     "results/benchmark-processor-check.json": "d1a9d43c7faa224b1b5d78348d0424d0ae564dc3f75bceea855b35c2ea0db7e7",
     "results/benchmark-processor-check.log": "433df1852cec18be8aafd053ebc8ed310d5ec211e5985faa860c2095cdb805f4",
@@ -349,7 +349,7 @@
     "sources/publisher-files.json": "458bd4a75c4a0b3ae1e289496f310e349f6b1db64a1c18a098bb409310000845",
     "sources/report-image-status.json": "64153a61c923c4ba02b7a75ff53350bc2d74ed45350d492ea5a623d5f45ddcb1",
     "stop.sh": "0b0794fbeb3926225eaeef3190d08cca5805d6bba27697ea0a8dfd42a0df8845",
-    "verify.py": "231ed1aa50647357dff3d561e4636956323243678109c0236b1f5ce482a364f4",
+    "verify.py": "b78ec8fe3c7b83ebf26cd1fa8638ae3fd6777ea25d065e9e0f56d0e48968917e",
     "verify_formal.py": "d7a8c4b660d29b4d8b5e97005970fbe31a3fa1121ce18f161d34463390be7673",
     "优化说明.md": "dde2269b5e3397ca9b592133146c7e4db1987b993b8375c771dc9b1c99515313",
     "提交填写信息.md": "2e8166b65078245c22fd0830821fcbfcc16ab1cca4562d9c6c936d1ef47eb098"

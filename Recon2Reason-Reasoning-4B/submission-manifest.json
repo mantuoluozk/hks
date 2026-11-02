@@ -9,8 +9,8 @@
     },
     {
       "path": "Recon2Reason-Reasoning-4B/README.md",
-      "sha256": "b8adf8f2beea97f166eaaf5b4d04db2fc9ee49e0c0178d7e4f53d0708aad4251",
-      "bytes": 7099
+      "sha256": "518fd745b5dc0b72cb06d8ec838ec96ec8b08883c264f6004ee1491c8788342d",
+      "bytes": 7301
     },
     {
       "path": "Recon2Reason-Reasoning-4B/bench.sh",
@@ -434,8 +434,8 @@
     },
     {
       "path": "Recon2Reason-Reasoning-4B/verify.py",
-      "sha256": "a2e511ef33d85ae020d88f5e8f723a9768e4df0c83566e5f891a2d0d19491096",
-      "bytes": 4317
+      "sha256": "e28553a43a40965b19bd981384430b7109840da73d09ca05380cddb750733d06",
+      "bytes": 4520
     },
     {
       "path": "Recon2Reason-Reasoning-4B/verify.sh",

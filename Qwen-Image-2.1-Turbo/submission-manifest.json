@@ -19,8 +19,8 @@
     },
     {
       "path": "Qwen-Image-2.1-Turbo/README.md",
-      "sha256": "b23f4f30508b94d93f978b905d71b493f1e35c273a091a2bab070bd0fb1f7a01",
-      "bytes": 11828
+      "sha256": "38375f3af8b87a7aeaf6b3ec982a67c0402e15888a5f47a5e91d91f3a4662aae",
+      "bytes": 12026
     },
     {
       "path": "Qwen-Image-2.1-Turbo/SCNet镜像重建.md",
@@ -64,7 +64,7 @@
     },
     {
       "path": "Qwen-Image-2.1-Turbo/results/evidence-manifest.json",
-      "sha256": "386f82b32c1e0f6085f235319090ca9eb40d76216f820ad402b3554849804a48",
+      "sha256": "3b7ae56dce6b78ff533f566bc609e46902f97412043df0baf70d3782af379bf5",
       "bytes": 22631
     },
     {
@@ -819,8 +819,8 @@
     },
     {
       "path": "Qwen-Image-2.1-Turbo/verify.py",
-      "sha256": "151012ff6f0a8d37372d58c77fc77f63f0b8e0fba260c34ea6ee36dd5d779adc",
-      "bytes": 5708
+      "sha256": "36d7c011777f8e8cab3aea539b7e35e90feb1b14aa09aaa24a178bfaf2f72e71",
+      "bytes": 5692
     },
     {
       "path": "Qwen-Image-2.1-Turbo/优化说明.md",
@@ -829,8 +829,8 @@
     },
     {
       "path": "Qwen-Image-2.1-Turbo/提交填写信息.md",
-      "sha256": "e268c9b4889645ad5d1eb4754d6bf48b788772a68e4c68fd571c907e32a8dabb",
-      "bytes": 1269
+      "sha256": "63cef337dd31274b60315a41a7a871ed314c6d7ead593696768b826f724ae771",
+      "bytes": 1439
     },
     {
       "path": "Qwen-Image-2.1-Turbo/测试说明.md",

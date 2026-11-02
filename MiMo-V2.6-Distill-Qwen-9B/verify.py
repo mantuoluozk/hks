@@ -5,7 +5,7 @@ import subprocess
 import sys
 
 ROOT=Path(__file__).resolve().parent
-if '--selfcheck' in sys.argv:
+if '--selfcheck' in sys.argv or len(sys.argv) == 1:
     subprocess.run([sys.executable,str(ROOT/'scripts/summarize_scnet.py'),
                     str(ROOT/'results/scnet/validation-20261026T021625Z')],check=True)
     raise SystemExit(0)

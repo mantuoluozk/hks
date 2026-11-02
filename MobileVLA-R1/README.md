@@ -182,3 +182,5 @@ python scripts/verify.py
 首次探测及重启失败证据保留在 `results/history/`：包括探测脚本缺少 forward/主入口保护、依赖导入、处理器字段兼容与引擎退出清理问题。最终有效结果以 `reference-probe-v5`、`http-v5`、`http-v6`为准，不将失败记录覆盖为成功。
 
 `scripts/verify.py`可在CPU从原始请求独立重算24项功能、24条性能请求、参考token对照及复跑偏差；发布文件哈希见`results/evidence-manifest.json`，发布者源码哈希另见`sources/reference-files.json`。本版完成范围为RGB功能与性能适配，精度与赛事正式验收分别记录。
+
+校验入口维护（2026-11-02）：默认校验已保存证据；检查通过返回0，检查失败返回非零。退出码不代表官方验收结论。原始预测、响应及计时记录保留。

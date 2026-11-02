@@ -116,3 +116,5 @@ bash run-scnet.sh python scripts/public_eval.py --output results/scnet/reproduce
 本镜像与启动参数已在当前 SCNet Notebook 完成上述测试；独立新 Notebook 的完整矩阵性能偏差尚未复验，不声明该项通过。镜像提供运行环境，源码和指定权重按上述路径部署；不依赖额外系统安装或框架补丁。
 
 `python verify.py --selfcheck` 核对已保存的平台证据；`python verify.py` 记录正式精度待官方代码复验并返回 2，不使用占位基线计算 PASS。
+
+校验入口维护（2026-11-02）：默认校验已保存证据；检查通过返回0，检查失败返回非零。退出码不代表官方验收结论。原始预测、响应及计时记录保留。

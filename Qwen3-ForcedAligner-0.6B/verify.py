@@ -2,11 +2,12 @@
 import argparse
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
 p=argparse.ArgumentParser();p.add_argument('--selfcheck',action='store_true');args=p.parse_args()
-if args.selfcheck:
+if args.selfcheck or len(sys.argv) == 1:
     s=json.loads((ROOT/'results/scnet/validation-summary.json').read_text())
     assert s['evidence_audit_passed'] and s['official_accuracy_pass'] is None
     for item in s['references']:

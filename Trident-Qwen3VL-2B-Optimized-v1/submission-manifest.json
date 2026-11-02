@@ -16,7 +16,7 @@
     },
     {
       "path": "README.md",
-      "bytes": 8160
+      "bytes": 8362
     },
     {
       "path": "run-scnet.sh",
@@ -36,7 +36,7 @@
     },
     {
       "path": "verify.py",
-      "bytes": 744
+      "bytes": 779
     },
     {
       "path": "verify_historical.py",

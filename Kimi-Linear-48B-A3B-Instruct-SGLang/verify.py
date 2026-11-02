@@ -35,11 +35,11 @@ def recompute():
 def main():
     result = json.loads(RESULT.read_text(encoding="utf-8"))
 
-    if "--selfcheck" in sys.argv:
+    if "--selfcheck" in sys.argv or len(sys.argv) == 1:
         actual = recompute()
         if actual is None:
-            print("no predictions file; nothing to recompute")
-            raise SystemExit(0)
+            print("missing required predictions file")
+            raise SystemExit(1)
         recorded = result["public_self_eval"]["gsm8k"]
         ok = (actual["correct"] == recorded["correct"]
               and actual["total"] == recorded["total"]

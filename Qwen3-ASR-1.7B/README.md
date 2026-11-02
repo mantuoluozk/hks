@@ -123,3 +123,5 @@ EVAL_OUTPUT_DIR="$PWD/results/scnet/reproduce/accuracy" bash run-scnet.sh python
 最大绝对偏差 **7.28%**；≤20% 检查为 **通过**。证据位于 `results/scnet/validation-20261026T064636Z/` 与 `results/scnet/validation-20261026T080803Z/`，汇总文件为 `results/scnet/validation-summary.json`。权重、音频、数据集和编译缓存不随代码分发。首次启动须等待真实健康检查通过；每次复跑使用新的输出目录。在线服务必须停止后再运行离线 PCM 检查，避免同卡进程争用。
 
 `python verify.py --selfcheck` 校验已保存证据。
+
+校验入口维护（2026-11-02）：默认校验已保存证据；检查通过返回0，检查失败返回非零。退出码不代表官方验收结论。原始预测、响应及计时记录保留。

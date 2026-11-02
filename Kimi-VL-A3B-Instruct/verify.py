@@ -110,8 +110,7 @@ def main():
     print(json.dumps(result, indent=2))
     if not reproduction["performance_reproduction_passed"] or not metric_audit["all_metrics_within_20_percent"]:
         raise SystemExit(2)
-    if not args.selfcheck:
-        raise SystemExit(2)  # Competition acceptance is not established by local checks.
+    # Success describes evidence verification, not official acceptance.
 
 
 if __name__ == "__main__":

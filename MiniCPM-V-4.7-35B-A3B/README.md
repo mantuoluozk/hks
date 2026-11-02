@@ -129,3 +129,5 @@ OCRBench 完整测试集 1,000 题，采用 instruct 模式、16x 视觉压缩�
 报告记录已完成的验证，赛事验收结论以主办方审核为准。
 
 OCRBench 数据来源为 [echo840/OCRBench](https://huggingface.co/datasets/echo840/OCRBench) 的完整 test 分片，原 parquet SHA256 为 `d9cc9f488e5310143d8d89956c19d0bdfd71e7089025da5202643f73720df7f5`。数据已取得时可用 `python scripts/prepare_ocrbench_data.py <parquet路径>` 转换；该脚本仅转换本地文件，不下载数据。公开逐题生成记录保存在精度任务目录的 `generated-responses.jsonl`，不含原题、标准答案或图像；完整请求与响应原件另行保存，其哈希与公开审计一致。
+
+校验入口维护（2026-11-02）：默认校验已保存证据；检查通过返回0，检查失败返回非零。退出码不代表官方验收结论。原始预测、响应及计时记录保留。

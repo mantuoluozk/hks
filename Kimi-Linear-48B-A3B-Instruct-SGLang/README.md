@@ -117,3 +117,5 @@ python verify.py --selfcheck
 - 复验范围为同 Notebook 内独立进程复跑，未另建 Notebook 实例。
 
 证据索引：`submission-manifest.json`。`python verify.py --selfcheck` 核对记录值与已保存逐条预测一致；默认 `python verify.py` 不给出赛事精度验收结论，实际验收以主办方审核为准。
+
+校验入口维护（2026-11-02）：默认校验已保存证据；检查通过返回0，检查失败返回非零。退出码不代表官方验收结论。原始预测、响应及计时记录保留。

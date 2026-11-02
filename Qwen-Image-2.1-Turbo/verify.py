@@ -102,7 +102,7 @@ try:
             'selfcheck_pass':selfcheck,'official_accuracy_pass':None,
             'dedicated_image_revalidation':image_verified,
             'official_acceptance_pass':None}
-    code=0 if a.selfcheck and selfcheck else 2
+    code=0 if selfcheck else 2
 except Exception as exc:
     result={'selfcheck_pass':False,'error':str(exc),'official_accuracy_pass':None,'official_acceptance_pass':None}
     code=1

@@ -1,0 +1,1737 @@
+{
+  "model": "Kimi-VL-A3B-Instruct",
+  "variant": "优化版v1",
+  "version": "kimi-vl-a3b-instruct-bw-vllm-optimized-v1",
+  "files": [
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/.gitattributes",
+      "bytes": 102,
+      "sha256": "28e7f8c49ac04d2e7c555f6609ea5b3a4ab1ab06b4dbc483ba2f3f942259157c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/.gitignore",
+      "bytes": 85,
+      "sha256": "5d0d6d61f66ecdb64e37ddf13e38a645b5a6ab2bff84d9a683dbf25866656372"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/bench/comparison.json",
+      "bytes": 924,
+      "sha256": "6ee41333558c605643c4d6840649876582820c9204f21594ef97248325975e12"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/bench/round1.jsonl",
+      "bytes": 7489916,
+      "sha256": "aed4470c65e2d034592ad4d4d678daf538f65da85fb8b1d1d18c8905525c5bac"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/bench/round2.jsonl",
+      "bytes": 7489878,
+      "sha256": "a50d794428631dcc9dcf78e7035ebf318e835bb12ad83b584f2cf17440a9b7d8"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/bench.sh",
+      "bytes": 321,
+      "sha256": "1635342c121fbd9e1333d6ec6d9fab0bd0bba1f4dc59ff2f1376daec9885e33c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/Dockerfile.scnet",
+      "bytes": 307,
+      "sha256": "5ff679d73b04353bbe4b509ff97df8d90f6e13b61bb664cbe82262837832787f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/env.sh",
+      "bytes": 246,
+      "sha256": "6f1a600aae82393e8509191a3a07d3e2c4f76ea8f55f50d2bdd97656d09faed6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/env_check.sh",
+      "bytes": 242,
+      "sha256": "5447e300b73f7abd5b5ec30de7e9fdde45b0086c7fbdd939b7e6348aa8418656"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/README.md",
+      "bytes": 18149,
+      "sha256": "c52f1cdb5da277697d59991667472888c8c3edef70c01a8aa67b341baebee2f0"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/archive/evidence-manifest-before-performance-20261102.json",
+      "bytes": 11414,
+      "sha256": "33d172d54149317d49ad5b46b3b87b8a4d85788a4ed338db8d8b7a32cf81f054"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/benchmark-processor-check.json",
+      "bytes": 173,
+      "sha256": "d1a9d43c7faa224b1b5d78348d0424d0ae564dc3f75bceea855b35c2ea0db7e7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/benchmark-processor-check.log",
+      "bytes": 2474,
+      "sha256": "433df1852cec18be8aafd053ebc8ed310d5ec211e5985faa860c2095cdb805f4"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/benchmark-valid-vocab-check.json",
+      "bytes": 33414,
+      "sha256": "2186bf2bbc161e70fe67502126f75e5bb68f24daf2e78df42420e29af005dd86"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/benchmark-valid-vocab-check.log",
+      "bytes": 1029,
+      "sha256": "14722cb5e3b0ee4a9323671f168a85a0a577308df91c27df9174fd9a4f950eb5"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/budget-probe-20261102T015818Z/controller.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/budget-probe-20261102T015818Z/probe.jsonl",
+      "bytes": 50205,
+      "sha256": "9151b90a1fdbf388104614d7ef349952f0469cbed00be6fd3ba2500b1d07f47b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/budget-probe-20261102T015818Z/probe.log",
+      "bytes": 9275,
+      "sha256": "31cf36a259d19f9852001d08317c2c75512310a486d7f8fa26e7f48edf57c84b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/budget-probe-20261102T015818Z/probe_controller.py",
+      "bytes": 1565,
+      "sha256": "2ef51bd53079713791195c2d3124aaa53cca53306a33f35a449d2a2f96d04aab"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/budget-probe-20261102T015818Z/server.log",
+      "bytes": 23966,
+      "sha256": "16d11b298e24d43e494a4905ad84c45a0dbe040487b454b9fd2f44cdc98e838b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/budget-probe-20261102T015818Z/state.json",
+      "bytes": 47,
+      "sha256": "d575f3b1dbd3e35474693bbc371c9ad1cf55c071017fc3839b289cfef005e332"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/entry-20261102T032847Z/arithmetic.json",
+      "bytes": 1363,
+      "sha256": "4495e9f6dd62b1bbc6371bd40fa016026f2dd34cead3684328dfcb8c14d79717"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/entry-20261102T032847Z/preflight/summary.json",
+      "bytes": 4271,
+      "sha256": "7c573b5b513de1d70b9094539da3d87568d70edd8db8be1bab28c99f1db69466"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/entry-20261102T032847Z/preflight/weights-and-environment.json",
+      "bytes": 3569,
+      "sha256": "609e04c426395a5293f10705eab488abbaf46221978c617e738b7087573b3cd4"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/entry-20261102T032847Z/server.log",
+      "bytes": 23060,
+      "sha256": "6ab920b649585ba83440ee7aed1bfa1ca07df9dc7e94b2fd00fa65a46f4e33c6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/entry-20261102T032847Z/stop.log",
+      "bytes": 22,
+      "sha256": "a3441467c76de74417181214173dc17f1ee7601ae343b8fe1289086a86f7575b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/entry-20261102T032847Z/summary.json",
+      "bytes": 5188,
+      "sha256": "eea7a424001823fdb6e9987c4284fdef408efd151c2dff4295ef78befabc9cf3"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/evidence-manifest.json",
+      "bytes": 45484,
+      "sha256": "f30d81fe07c2bbf69604036e049d7a30b049d7a4747ad2fd2fb917ce90059045"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/blue-zh.json",
+      "bytes": 1511,
+      "sha256": "de4d101e95cad19bc29b9ebbf34b5aceb287dac84ca8960dca06b0466a8147ac"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/demo.json",
+      "bytes": 1503,
+      "sha256": "4801a996dc0e91f5f43bd396d8d5d45ec018eb643a8192ec95e8d6e4ba758a1d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/models.json",
+      "bytes": 769,
+      "sha256": "e9c709d30e505edd1f7b2c1d1b8fa578fff46b1b91ef288b044302c6e6866b6f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/ocr.json",
+      "bytes": 1496,
+      "sha256": "e5fe6b8f5ce86780bcdaf81dcaefa4f24f3c974c9186cdc5273706667a951250"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/red.json",
+      "bytes": 1496,
+      "sha256": "db1331f2c7c94183abebe1ec11002448fe33b3e6fc8fbdf7c3554da15898d309"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/repeat.json",
+      "bytes": 1500,
+      "sha256": "7caf62b9d73f718de15e70b4c838357170bc9dd3e4f125af8aa5b41ec457e73d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/stream.json",
+      "bytes": 2619,
+      "sha256": "a0854847040e9d66c6966c1a8cc3065b19a22e62a58893aa674178e8b85b271d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/summary.json",
+      "bytes": 324,
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/text.json",
+      "bytes": 1400,
+      "sha256": "71e25cdea292876ed1dcc62acbcff4accb9150ed3c653b05253638df0a9a6c15"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/functional/two-images.json",
+      "bytes": 1636,
+      "sha256": "77a19ff5ec4c6c6b789a72907ac128966605fe86e151f2ae539ac6c9d380fab5"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/processor-alias.log",
+      "bytes": 167,
+      "sha256": "d21ae9d9b2186e66fdf1082c6e473958d7fcb1b421ede569f8cd8351fe8a98d7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/round1_4096_1024_c1.log",
+      "bytes": 13626,
+      "sha256": "e0ce7dbdafe08295b1216201c32c5e53eed6309698b7d165cb7d7c423458d4e3"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/server.log",
+      "bytes": 39548,
+      "sha256": "50c570deaa1c3b5052948a3376969b94736b9ca0f6c8e3b5f6017c5387349fc7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/process1/smoke.log",
+      "bytes": 1096,
+      "sha256": "6f9df0f4cb82063eb320a1ca2492fc2ff86c92394de2f269b86a070dbfe9ac0f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/source/prepare_bench_alias.py",
+      "bytes": 779,
+      "sha256": "a119115190cf56c96b1b241fdb7d18e585f1c8f8cfbfbde251a3f7a3ae9ee534"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/source/run_formal_matrix.py",
+      "bytes": 3909,
+      "sha256": "7f35dcc280f06105239afe9d00c0f2fdcadba2efc174bd04cfcadba6b6dee80f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/source/serve-formal.sh",
+      "bytes": 621,
+      "sha256": "2bbed2fa2a33da8db6d14db6f9b88f98db650aeb49bfaecabe875ad614caeb92"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T010948Z/state.json",
+      "bytes": 895,
+      "sha256": "a1e53cac73605f73c9d6a00c37cec9b84672f56ee76e5b661a7722fd99094617"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/blue-zh.json",
+      "bytes": 1511,
+      "sha256": "b4e711b7c0691ac5902c095ba02cae00d434f9490f4a30c453d35b857cc6d5fd"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/demo.json",
+      "bytes": 1504,
+      "sha256": "582f2f45b5b43decd8d49f3b37ab8a249a30667b62276f47a45b3beb5a578378"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/models.json",
+      "bytes": 769,
+      "sha256": "b0b43a10edbebee46f9cda2e9d53af54315008939516c3e7ea5d9faaa6e28890"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/ocr.json",
+      "bytes": 1496,
+      "sha256": "b533a482b4b04dbe19095c9db069a3166b28715030f8e377a04be0bded924363"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/red.json",
+      "bytes": 1496,
+      "sha256": "0b8c99238543827f206d317883af3232bb7ca2984a495c9e15ea0be092cf4c2b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/repeat.json",
+      "bytes": 1500,
+      "sha256": "2e8808f64d2118dd7121f5a91e14eda4f50504835c9ebd91af0796bcbcd90f61"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/stream.json",
+      "bytes": 2619,
+      "sha256": "ff302b38eb144fce43a6cd323137a9f54190eb70b6d40762b5532793c6a56b58"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/summary.json",
+      "bytes": 324,
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/text.json",
+      "bytes": 1400,
+      "sha256": "eb4e4e404da289cd420abe435c19a17bff84ea187bc5b7cbfdae30186990c55c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/functional/two-images.json",
+      "bytes": 1635,
+      "sha256": "3135e6b510d3a605902bc71d7eed8c1f28210a57993faf94fd9ff5db197563b6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/processor-alias.log",
+      "bytes": 167,
+      "sha256": "d21ae9d9b2186e66fdf1082c6e473958d7fcb1b421ede569f8cd8351fe8a98d7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/round1_4096_1024_c1.log",
+      "bytes": 14827,
+      "sha256": "6e7ad61d3fb1dea4b1e533093a7a584431bfdfa7307c036ee328173438f49594"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/server.log",
+      "bytes": 36298,
+      "sha256": "09622f591fa59d07376424c1e0fa81bec98c297a4057ed58dd875daccded9958"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/process1/smoke.log",
+      "bytes": 1096,
+      "sha256": "2bf21813c12f2c7661378d4835625b93f3fdd27914140c926babf4093d8681e1"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/source/prepare_bench_alias.py",
+      "bytes": 779,
+      "sha256": "a119115190cf56c96b1b241fdb7d18e585f1c8f8cfbfbde251a3f7a3ae9ee534"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/source/run_formal_matrix.py",
+      "bytes": 3986,
+      "sha256": "64edc3bc2c465e134c032ec5bcb42cd7860072daacd3811c120cd1234d3fd984"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/source/serve-formal.sh",
+      "bytes": 621,
+      "sha256": "2bbed2fa2a33da8db6d14db6f9b88f98db650aeb49bfaecabe875ad614caeb92"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/state.json",
+      "bytes": 895,
+      "sha256": "f46b582e1a06be9d58224ccb25e5e3197bc6968a2fa75329cfd3a9fc42c477fb"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T021804Z/tokenizer-range-check.json",
+      "bytes": 791,
+      "sha256": "adf26cc15bdce609fbd34437ef49f766c13428d31be62342fe691ca98b8340f5"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/embedding-header-check.json",
+      "bytes": 182,
+      "sha256": "1d1e05a27cd90da564f8082898f9446e5fdb2d4dbf7ea461cd86eeb434a4c3dc"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/environment.json",
+      "bytes": 1089,
+      "sha256": "364aeee541879dcf64bf5a28a9c1137f88cdc61d14e3e5751d5805103035eaf4"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/blue-zh.json",
+      "bytes": 1512,
+      "sha256": "fdc13f62436a887ac4d1863c32c2c25d63d8c80407846785c0d313f337560eb6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/demo.json",
+      "bytes": 1504,
+      "sha256": "369688836fd6016d46989acb1acceaa2c7f7c1eb5547b1d3f8dcb6132c2caee2"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/models.json",
+      "bytes": 769,
+      "sha256": "579ac7f8fbaa26b1319157429cdc224d268cf034d4050e376c48bdaef5556e70"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/ocr.json",
+      "bytes": 1496,
+      "sha256": "f223be5ff9baa965bb584972e0cc611fa1c9d2204ca103782f5464bdbc3fabc0"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/red.json",
+      "bytes": 1496,
+      "sha256": "09a0065e719212e4138274c908c49556e8226fd07b7087456684db4c14e1519d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/repeat.json",
+      "bytes": 1499,
+      "sha256": "4d07fe391043bfee836dcc903c17279625b49be1c9b50ee382ef43a8d423e51d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/stream.json",
+      "bytes": 2620,
+      "sha256": "9bac95f3ff44570d233ee81bc938cfe6e2529c7ee57c898137e381275ecc5b6f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/summary.json",
+      "bytes": 324,
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/text.json",
+      "bytes": 1400,
+      "sha256": "3b12e989ca9ab6a3af4f4d3b6c46d294cc90ec4baf92a54b6d6ecf2feda1aca9"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/functional/two-images.json",
+      "bytes": 1636,
+      "sha256": "c59acbad5c37bdcb225190e2260fc47202b2e58753f077bb15f733dcf4ba85c2"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/processor-alias.log",
+      "bytes": 167,
+      "sha256": "d21ae9d9b2186e66fdf1082c6e473958d7fcb1b421ede569f8cd8351fe8a98d7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round1.jsonl",
+      "bytes": 600519,
+      "sha256": "f79ae9fea253b5b9a44e9a9c7a8e2218b5d7d259180d5c537c62a482601b8150"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round1_4096_1024_c1.check.log",
+      "bytes": 164,
+      "sha256": "8744914dccd0457ec033d52dc8772ba1d276a35ca5eff7b6b7a559e2ac3aed08"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round1_4096_1024_c1.log",
+      "bytes": 9438,
+      "sha256": "51aa1d6bc42a6c30d0dbdb08c8cd442bec21f48e5fa00316110692eb182af199"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round1_4096_1024_c64.log",
+      "bytes": 7722,
+      "sha256": "76d52c050168c3615f061ee077a50af2db1a0ee07a01295e6060ffbfd4e837dd"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round1_4096_1024_c8.check.log",
+      "bytes": 164,
+      "sha256": "8744914dccd0457ec033d52dc8772ba1d276a35ca5eff7b6b7a559e2ac3aed08"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round1_4096_1024_c8.log",
+      "bytes": 9383,
+      "sha256": "cfbd0cfeb4a5519efd91f01aa33b0ef2d7ad60d814bc8776126aac212be19f9f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round2.jsonl",
+      "bytes": 597735,
+      "sha256": "6e646973b0508d7fdcac105f480da6c656ecadedcaf8f4df6c56af70c3baef94"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round2_4096_1024_c1.check.log",
+      "bytes": 164,
+      "sha256": "ef9b88b8f949f8e49e7ea248f8104dd0038dadd260ea2052db438ad9f5377fbb"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round2_4096_1024_c1.log",
+      "bytes": 9438,
+      "sha256": "b3b754d34e662d7caa45a9a13c1bd1c165b687801d406b523747047ef51231b0"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round2_4096_1024_c8.check.log",
+      "bytes": 164,
+      "sha256": "ef9b88b8f949f8e49e7ea248f8104dd0038dadd260ea2052db438ad9f5377fbb"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/round2_4096_1024_c8.log",
+      "bytes": 9440,
+      "sha256": "c41d68896be9b255c70469a2fa4791b14b3b23d1d865f695b91fa0614cab7043"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/server.log",
+      "bytes": 62935,
+      "sha256": "b458f982ae5961574d190a297dbddf26a7a606307ce2eafd008835b7a80d24fb"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/process1/smoke.log",
+      "bytes": 1098,
+      "sha256": "4c23e563179330de4fee35fe59d510eb562ae8dd7cec489abbf1a19959e0e1a8"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/source/benchmark_valid_vocab.py",
+      "bytes": 1554,
+      "sha256": "83facf5f2d3deb3cb73f35198d4d35fcc1ef7ef7b4be3cd6bcd738eb8303c609"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/source/prepare_bench_alias.py",
+      "bytes": 779,
+      "sha256": "a119115190cf56c96b1b241fdb7d18e585f1c8f8cfbfbde251a3f7a3ae9ee534"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/source/run_formal_matrix.py",
+      "bytes": 4024,
+      "sha256": "21b31282d11cc7b8d01db6e0b5c9b44164333d4a83fab6bc2b1bca5b4efdb61d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/source/serve-formal.sh",
+      "bytes": 621,
+      "sha256": "2bbed2fa2a33da8db6d14db6f9b88f98db650aeb49bfaecabe875ad614caeb92"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T022748Z/state.json",
+      "bytes": 900,
+      "sha256": "4b001c7a5c65a0680bebc9d87c6f05b6a5448ceb5f0ed3b230615b12db45b4e5"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/blue-zh.json",
+      "bytes": 1511,
+      "sha256": "fd26836af55535b5f6d817ed9bbb9f3b9ee8f7af0023575a850e5ad4c136fbed"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/demo.json",
+      "bytes": 1504,
+      "sha256": "641c8be3ea703169ad70ed17babda0a97c1ddf3d6a568be08dda9ba1313aeb39"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/models.json",
+      "bytes": 769,
+      "sha256": "87a0dfc6d62c96e3f9d4ceb7e0b86721c32336b86af412a49a4f60e126ef644f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/ocr.json",
+      "bytes": 1496,
+      "sha256": "03acd5549c206cfbe013f9fc70c1e48163ef45b61a42bcf47e613c96cef7bd52"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/red.json",
+      "bytes": 1495,
+      "sha256": "424e3ef29d5a4fece6ea12d6c14c357e3f14193a84633667820c1e68ce493d87"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/repeat.json",
+      "bytes": 1499,
+      "sha256": "e07277971388bf5357fa8f40589a2d3c6b3d7f3cff2de23e9b7bda74dcfb92d7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/stream.json",
+      "bytes": 2617,
+      "sha256": "eb17316dc62f8ed4eec3f0e5cc459727b4cfa7b1d644fbbff6874466ec253f8e"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/summary.json",
+      "bytes": 324,
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/text.json",
+      "bytes": 1400,
+      "sha256": "82494f1b73945009fa346b0624f9f643118cc6f926faee1e0b7dcc1809beb8b8"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/functional/two-images.json",
+      "bytes": 1635,
+      "sha256": "fdf83a9ccaad192ff02c26789f403d0ff5b687b8ce11ea9fa44742a6b3c43f47"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/processor-alias.log",
+      "bytes": 167,
+      "sha256": "d21ae9d9b2186e66fdf1082c6e473958d7fcb1b421ede569f8cd8351fe8a98d7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/round1_4096_1024_c1.log",
+      "bytes": 7064,
+      "sha256": "c22bc8bff2e021aa6383b8766d255a332ef2c7b4b1cd68975d43cf243fd4263b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/server.log",
+      "bytes": 33315,
+      "sha256": "dbead5ba047d08ffb910793fc18a292b6c878ffdab0d2a51db8cde4fa8f459f8"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/process1/smoke.log",
+      "bytes": 1093,
+      "sha256": "6d047699c74e6d6541e04a36a8a7e24252ec12333a21ea5b4f31c6e4a208b902"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/source/benchmark_valid_vocab.py",
+      "bytes": 1911,
+      "sha256": "4a645152374b80860976cb2e718c1a2e6cc9a0eeccf3b3bebfebdfaebaeb3ed6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/source/prepare_bench_alias.py",
+      "bytes": 779,
+      "sha256": "a119115190cf56c96b1b241fdb7d18e585f1c8f8cfbfbde251a3f7a3ae9ee534"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/source/run_formal_matrix.py",
+      "bytes": 4024,
+      "sha256": "21b31282d11cc7b8d01db6e0b5c9b44164333d4a83fab6bc2b1bca5b4efdb61d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/source/serve-formal.sh",
+      "bytes": 621,
+      "sha256": "2bbed2fa2a33da8db6d14db6f9b88f98db650aeb49bfaecabe875ad614caeb92"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/state.json",
+      "bytes": 187,
+      "sha256": "56b2a03d4451c81189530b79467e058ab0b8b17da0d0528c36ba12128818e58f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261101T030014Z/tokenizer-contract.json",
+      "bytes": 369,
+      "sha256": "84000d53caf88a8bfcc2cde852ab4b5d1c048cb1edf074c964b6cd5c05457fac"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/independent-audit.json",
+      "bytes": 2644,
+      "sha256": "3ce60930cdf1f990880c5bc03605fd036325f06b087505e8de2b2d2747ff1a8d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/independent-audit.log",
+      "bytes": 2645,
+      "sha256": "72da61b94ea7fa5a740fef2ef11b234653fc80bfa53fcb43caa80cfa8687ab5a"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/metrics-capture-protocol.json",
+      "bytes": 344,
+      "sha256": "3f9e9b813ef59aed0bfbddcf03a4c66202cee9becced924c059d6b87bec1d011"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/performance-table.md",
+      "bytes": 1436,
+      "sha256": "d41e37cef4173907b89cda9f980e9caf016fb40a93554165b092c4a91427c818"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/blue-zh.json",
+      "bytes": 1512,
+      "sha256": "86cfd772a2135b4bcaaf2da3cffb87120cb631b6db3d71dcff4c75d96a1554cd"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/demo.json",
+      "bytes": 1504,
+      "sha256": "5556f547f1180211aa0adb788b712c1468ad357f3167102428ed244b90e10e69"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/models.json",
+      "bytes": 769,
+      "sha256": "ec86a63faa4a0dff436a6ad29853a9ea3237938b987dd838bf1b65673f193784"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/ocr.json",
+      "bytes": 1497,
+      "sha256": "1fd9167a5091a5bb627a2b1a12fd83071bca5d418d08d12bafd2a260db6bb2e3"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/red.json",
+      "bytes": 1497,
+      "sha256": "7e10c526b43edfa2e620746d245a7cbf0615822aa6cab4823dcb8a7118078f69"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/repeat.json",
+      "bytes": 1500,
+      "sha256": "9a16e7b6149ef2007368aeadb827a67e8e4ace273cb7ff83aaf453c31b62b6f7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/stream.json",
+      "bytes": 2619,
+      "sha256": "b249209e65c4c9a7fe102fcf87fecfbb2f5ad6607d5b2954629104b7f68d3569"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/summary.json",
+      "bytes": 324,
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/text.json",
+      "bytes": 1400,
+      "sha256": "4d06ee4d573f5b11593d137f62708e7ca18ed37606fb2f57cd1a769a757dc0d6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/functional/two-images.json",
+      "bytes": 1636,
+      "sha256": "a0df560d9ee3d158a5ce4b70cf34f1832448e89e1af48e283da5fada691c8bf1"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/processor-alias.log",
+      "bytes": 167,
+      "sha256": "d21ae9d9b2186e66fdf1082c6e473958d7fcb1b421ede569f8cd8351fe8a98d7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1.jsonl",
+      "bytes": 7489916,
+      "sha256": "aed4470c65e2d034592ad4d4d678daf538f65da85fb8b1d1d18c8905525c5bac"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_16384_1024_c1.check.log",
+      "bytes": 321,
+      "sha256": "e04e3a12278579227e83e4f0091e2fec6fc7f4706cb7b1e51ffb26265c5e2e56"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_16384_1024_c1.log",
+      "bytes": 9488,
+      "sha256": "5ede5cc336226334b3082cff9d055a47c1363ebb60f231b8a58ea76e2ebe3ba2"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_16384_1024_c1.server-metrics.prom",
+      "bytes": 55558,
+      "sha256": "9ad570e9ec50519a898c96824aa281d17e7178522a78541d610acc3b408337f9"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_16384_1024_c64.check.log",
+      "bytes": 322,
+      "sha256": "78528163ce330c8b50fe77583db4135c17a6b4f9459fa0440f8b80cae56cc650"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_16384_1024_c64.log",
+      "bytes": 16629,
+      "sha256": "77434bcfe550904c22ca919938ed7f6bceaf7fa6a2a8c88b175b0d8f247e10b9"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_16384_1024_c64.server-metrics.prom",
+      "bytes": 55593,
+      "sha256": "0e20715fd53318d4cf1905134620de4b434b790db81d94590efe26e1bf4d926b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_16384_1024_c8.check.log",
+      "bytes": 321,
+      "sha256": "e91709b6e868ab96ebd39499ab020da263e45a8e29bb3cb7d8445c38aff126ec"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_16384_1024_c8.log",
+      "bytes": 9489,
+      "sha256": "12835bf335d4465000bfca1632f9b68aabb1e135d17191b31e8bd9e32c8c4d8b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_16384_1024_c8.server-metrics.prom",
+      "bytes": 55595,
+      "sha256": "c8a69d28f09202885c574b9a8c97fcf81259d86d09d24c2bc15890e3349167f2"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_4096_1024_c1.check.log",
+      "bytes": 164,
+      "sha256": "edf17d5728f9722d7eb19061cda080cdf27e9971100278c2fd629a7ca31a79a6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_4096_1024_c1.log",
+      "bytes": 9480,
+      "sha256": "3ead514d3f85db5975aa8fc67c64923503c741fdda85cb633c8244ac8ca15c1c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_4096_1024_c64.check.log",
+      "bytes": 164,
+      "sha256": "edf17d5728f9722d7eb19061cda080cdf27e9971100278c2fd629a7ca31a79a6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_4096_1024_c64.log",
+      "bytes": 16293,
+      "sha256": "9a35c954f45bd466119434dab9ec68a8a686f66b0d04f3651a131b98dc49ca48"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_4096_1024_c8.check.log",
+      "bytes": 164,
+      "sha256": "edf17d5728f9722d7eb19061cda080cdf27e9971100278c2fd629a7ca31a79a6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round1_4096_1024_c8.log",
+      "bytes": 9248,
+      "sha256": "2f01f1bf3a0a2485d663e35524b1dc3e6d6ddd6b3725f4679773db4ef1537d88"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2.jsonl",
+      "bytes": 7489878,
+      "sha256": "a50d794428631dcc9dcf78e7035ebf318e835bb12ad83b584f2cf17440a9b7d8"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_16384_1024_c1.check.log",
+      "bytes": 321,
+      "sha256": "d05fe84a5b969bf9ee9beadbdd09b36c7349841f5f69c5e2359f9fdfb4640aed"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_16384_1024_c1.log",
+      "bytes": 9488,
+      "sha256": "e57e51f97567449b897d29303364d88cb53f00f5e2d7bac5ad3149ba8e16e26b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_16384_1024_c1.server-metrics.prom",
+      "bytes": 55560,
+      "sha256": "b2b6ae2c8a234bc8af5beb92bad356f81c9121eceaf2495c11db668c27629b0e"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_16384_1024_c64.check.log",
+      "bytes": 322,
+      "sha256": "435f3d3bf55609a914c0fac8396152e00b1fb6f4ba64d0966ea000b9036f834b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_16384_1024_c64.log",
+      "bytes": 16629,
+      "sha256": "dc8b6aa9ccadd9386bd2f22f9afe3b0ab54e932a23449565917ab653e7dbaf8c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_16384_1024_c64.server-metrics.prom",
+      "bytes": 55601,
+      "sha256": "ad7dd3e1ae8a62af681a1fcfea4633ac9e9b55f9494ce0a3fbb2e018c2ed8ac3"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_16384_1024_c8.check.log",
+      "bytes": 321,
+      "sha256": "c19b52519179e1643cd3c1dfbdcc9469cffb5e53a77a5f85347df9d629a8d7cb"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_16384_1024_c8.log",
+      "bytes": 9493,
+      "sha256": "d3c302c4470c073ba495312e7443c81b49a805f61cfbc677a09e21ca453e5cd8"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_16384_1024_c8.server-metrics.prom",
+      "bytes": 55587,
+      "sha256": "ee6ac93697746be03d2f40d7888ba129e1fd45d197506692d23caff7c23fa614"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_4096_1024_c1.check.log",
+      "bytes": 164,
+      "sha256": "f02aeaf04503dde656655da24066e9500a82f4ad959c2f58e84258fb95148afc"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_4096_1024_c1.log",
+      "bytes": 9480,
+      "sha256": "dc924e9ebdcade38d28ac6caae82bc1f3eba86ddb73e177251f27e0741427bd0"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_4096_1024_c64.check.log",
+      "bytes": 164,
+      "sha256": "f02aeaf04503dde656655da24066e9500a82f4ad959c2f58e84258fb95148afc"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_4096_1024_c64.log",
+      "bytes": 16359,
+      "sha256": "8a75292805a59d9d1c70bbaa47db5af1876101c0cf8448463b94ce1fa611d23b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_4096_1024_c8.check.log",
+      "bytes": 164,
+      "sha256": "f02aeaf04503dde656655da24066e9500a82f4ad959c2f58e84258fb95148afc"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/round2_4096_1024_c8.log",
+      "bytes": 9248,
+      "sha256": "23de0c1c5bd766b974f71278d2afa9cc97bbd46bd345d7e25b6c357d91baacc3"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/server.log",
+      "bytes": 160025,
+      "sha256": "f8346e9153422863f20e2e61cd71e369dbc7762618f2601eaa04636b599212b9"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/process1/smoke.log",
+      "bytes": 1100,
+      "sha256": "f2563edbf317c6488fffc7cacf08430fd15f09c73fca2a3f5b9b4075bf269198"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/source/benchmark_valid_vocab.py",
+      "bytes": 1911,
+      "sha256": "4a645152374b80860976cb2e718c1a2e6cc9a0eeccf3b3bebfebdfaebaeb3ed6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/source/check_bench_row-metrics.py",
+      "bytes": 1542,
+      "sha256": "a0c4ac1114d15722caa94ed9efa7937bb6db618f2699a9b2564f5225ba3b26a6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/source/check_bench_row.py",
+      "bytes": 1096,
+      "sha256": "13f66e3da89c57dded124dcc7a963c4c4927cce147ce0ea01d6c1709697c0623"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/source/prepare_bench_alias.py",
+      "bytes": 779,
+      "sha256": "a119115190cf56c96b1b241fdb7d18e585f1c8f8cfbfbde251a3f7a3ae9ee534"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/source/run_formal_matrix.py",
+      "bytes": 4413,
+      "sha256": "ef04e85c638fa93f46fb586679acaebaf46340852412ce0465914dca5acd69cb"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/source/serve-optimized.sh",
+      "bytes": 746,
+      "sha256": "f2f0abc77b9a401ccd322faf9746582680c7a0b34f1280b2fc9a36ec146ed1ba"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/source/verify_formal.py",
+      "bytes": 3990,
+      "sha256": "d7a8c4b660d29b4d8b5e97005970fbe31a3fa1121ce18f161d34463390be7673"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/state.json",
+      "bytes": 98,
+      "sha256": "023e8d35ee3f1ab9445db2db4873e5edd7eb4b6ea2d0d92fdadb0cf762c1354a"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/table-export.log",
+      "bytes": 1437,
+      "sha256": "20cbc05201c1ac3568f4d2aa62ef39775b371e72996be57975c91f122e580551"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/verification.log",
+      "bytes": 925,
+      "sha256": "0de4b29b8ce836591a4d4d595814f3823d9012e02b5946bb351b06b66f746be7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/formal-20261102T021857Z/verified-summary.json",
+      "bytes": 924,
+      "sha256": "6ee41333558c605643c4d6840649876582820c9204f21594ef97248325975e12"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/image-context-20261102.json",
+      "bytes": 349,
+      "sha256": "b8ef67edd85c2a778fb1852eba5b57bd27c53fd617ced6cd8fed529687cbf17e"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/native-import.json",
+      "bytes": 694,
+      "sha256": "5c4a55de7f0797c7a53cb25bd256c582b9191406f3f651a5fe01e7f229345965"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1/c1-o128/requests.jsonl",
+      "bytes": 265141,
+      "sha256": "6db46f07138409624850509d139b6db89d32072aa5126e51e8a0662da06045c1"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1/c1-o128/summary.json",
+      "bytes": 437,
+      "sha256": "87c9f94f0bf918ae0adc234b49e86c680102696a3510de887f796cf9acae144e"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1/c1-o32/requests.jsonl",
+      "bytes": 71911,
+      "sha256": "a74a58e015ec3d6429eabaa517a2016554e251f81ab9d1cb3982511fce243c72"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1/c1-o32/summary.json",
+      "bytes": 440,
+      "sha256": "b0c93f40f54e3aebb26a9e522f1ff3af9780613611dfeb84aecdc1661b2b7af6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1/c2-o128/requests.jsonl",
+      "bytes": 266832,
+      "sha256": "d9435ffd35bd426c046a8a29e8fe1d2c91670f1d29700cbfdbdebca921bf2f8d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1/c2-o128/summary.json",
+      "bytes": 437,
+      "sha256": "5cc1272a14cf15b146e7eb831e522aa3fda0c862ba9062a7fccd2fc819aa5630"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1/c2-o32/requests.jsonl",
+      "bytes": 73834,
+      "sha256": "47eb0470d52c51e3bd709e0afe07cca49f84638fc92d5beab7e8dfcfa5ef9a60"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1/c2-o32/summary.json",
+      "bytes": 439,
+      "sha256": "3dc8e301e8543ae0ff9a789537e7a0b30bd67784169af8bdae707d7704fe552b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1/summary.json",
+      "bytes": 2912,
+      "sha256": "5245fc5dcb05d316f03e7bd2a04d5c052264e1efacfdf32efd6dbf3ade542447"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/bench1.log",
+      "bytes": 1660,
+      "sha256": "7aff81d8384c7ee2c8d1fd6490787b41f7e8d7af3d07f508853e28c81332a95d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/blue-zh.json",
+      "bytes": 1512,
+      "sha256": "e55c74186b544309b3180fbdbbce4a78967ccae6d48910de94c1b7ec874d15c3"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/demo.json",
+      "bytes": 1504,
+      "sha256": "d5dc9b9ef050afff2f5a03f55d07e0ae4c0ebf06b6350e95a1736b59deeb90c5"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/models.json",
+      "bytes": 768,
+      "sha256": "39835159245c14607dcc9c0f7bf9ecf5bac47f2ea76272467d8550a1dab63c8a"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/ocr.json",
+      "bytes": 1496,
+      "sha256": "74343dda6970393c3aee8e03e166992738cb2ba91f69a2171af29485e7c37341"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/red.json",
+      "bytes": 1496,
+      "sha256": "6ba082b822badaf2372ae1134f50784cb10187b2434dbc7ac375d075a1249e7e"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/repeat.json",
+      "bytes": 1498,
+      "sha256": "f743afa2d1689f34215f6c7c8d5af33dbf8cb08b56046207d13a38f52d0740c9"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/stream.json",
+      "bytes": 2619,
+      "sha256": "b01ea041091575efc86be3fe597703ac92736aafef4d80b1ccf9f07feb5e858d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/summary.json",
+      "bytes": 324,
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/text.json",
+      "bytes": 1399,
+      "sha256": "42afef04e643e3936ddb200df45d1ebb11987cef76b8391e2a61a61bad422d27"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/functional/two-images.json",
+      "bytes": 1636,
+      "sha256": "e076def8c7d107ed0ceef3ace68c1117c23ad3e77a6c60b093371a4c81ec6bd6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/launcher.sh",
+      "bytes": 620,
+      "sha256": "568e1bba56f9f37a976f2a5e6f93273cef11ee8a9e71fb119c2595984514a9b7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/server.log",
+      "bytes": 30719,
+      "sha256": "96f3b6fa138cc808cb178ed9aa2658dadc179cadcac6d329c57458996b403c45"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/baseline/smoke.log",
+      "bytes": 1242,
+      "sha256": "3e63ee6343b9a12c5470f874fae39b0137256fe9e53cdd2527ec28bd75683674"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/comparison.json",
+      "bytes": 913,
+      "sha256": "56ccad4a5f99918b8bc23d43e0f83d1bac80784a9d94c23903e2a3f9cddfa654"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1/c1-o128/requests.jsonl",
+      "bytes": 266852,
+      "sha256": "f5cdd3344137c9225c73c82da952a7e87b838a2b634f5724d62ba229abe540a7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1/c1-o128/summary.json",
+      "bytes": 442,
+      "sha256": "fed3f73a1d014458086225707f335fb704dd40910b3f5502ca21c211a628cf34"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1/c1-o32/requests.jsonl",
+      "bytes": 73850,
+      "sha256": "438b0d1a54341d4c19a389557930bd65e10c855052e0e8419acf46b5cffe0c90"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1/c1-o32/summary.json",
+      "bytes": 438,
+      "sha256": "28c330010653ae2d7d7141af3606c5a18c415c6530c429e35591251680fb4028"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1/c2-o128/requests.jsonl",
+      "bytes": 266851,
+      "sha256": "4e8413165efd99fd8d744c064e637d9c7f73e6fbf671173a3830631517eb576c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1/c2-o128/summary.json",
+      "bytes": 438,
+      "sha256": "466f91bba8e85d07ad114f01aae143f313e6b9e9da7231ccb2ed9b4103af30c8"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1/c2-o32/requests.jsonl",
+      "bytes": 73845,
+      "sha256": "c4d02d79d80315e620dc93891b7847a72015d9eec29a561fbc2f3e5125df3259"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1/c2-o32/summary.json",
+      "bytes": 439,
+      "sha256": "b4b38a19c834cafc7cbcb611185254c2b9e50f0f9fc1e6e33c8a657acb4343bc"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1/summary.json",
+      "bytes": 2916,
+      "sha256": "3c3f2329c6ceb066bb51b094a6d61963ce75e19c8f0a13242678438a74452abc"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/bench1.log",
+      "bytes": 1664,
+      "sha256": "e1480f1b02e37db99a24958df1ca685b19951ed34e4a20d990f6114242488e69"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/blue-zh.json",
+      "bytes": 1512,
+      "sha256": "e59434971be2029e858203abe1d020b326d08b634718feb922471500222c6f0b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/demo.json",
+      "bytes": 1504,
+      "sha256": "543c6896a3b0c09282d45ac5e633bfa63f7cf8c9577afd0cec4cc433efd47286"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/models.json",
+      "bytes": 768,
+      "sha256": "17fddc9a9f90d62ec2fc6ab5637d4c0c3a3c14d596c30cfdf28c2302b3d5f917"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/ocr.json",
+      "bytes": 1496,
+      "sha256": "c2151a65dd955e2e74ceb4e72848c3041754391d2168414031e5692d1a854972"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/red.json",
+      "bytes": 1497,
+      "sha256": "f488b7be5579a86a5f58dfe0fd5b7b924fd2aba9bcdd3ac796aee2c7ea3e17ee"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/repeat.json",
+      "bytes": 1499,
+      "sha256": "20e71b34aafeb2720639c81c9aff08cef7b33e2d8aee1fb4b6ccf986caccbca4"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/stream.json",
+      "bytes": 2620,
+      "sha256": "43506974321a2c8f151ad6ccccad2801439012a37eb87413299ede43fb6acd6b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/summary.json",
+      "bytes": 324,
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/text.json",
+      "bytes": 1400,
+      "sha256": "92627707a8f896bca78bc4431cdeb0b00523caa4d1e2f93c327d94a3bfd880d0"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/functional/two-images.json",
+      "bytes": 1636,
+      "sha256": "282ebf0e064b6163b960281f7c70605a34a5968699ad4cb5ddd9525592f1c4f6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/launcher.sh",
+      "bytes": 706,
+      "sha256": "27151c5d3711500ce2acbdb2b02d77a06d81cd25d45386361a6bf7bfb44aed5a"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/server.log",
+      "bytes": 28606,
+      "sha256": "a2c93b179d82a1386c4ebd0fee87e67637b3b526b33464da2455d4a675774bbe"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/decode-graph/smoke.log",
+      "bytes": 1246,
+      "sha256": "1a377f2b4685fcf9ee84415739d7db8863fc5b5b9377a1d3e2814ee05d20e417"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/source/active_controller.py",
+      "bytes": 5950,
+      "sha256": "29d37bad2e9225a80b43f3ef82eb636ec9547ac7158f698264099d9d5315418d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/source/bench_http.py",
+      "bytes": 4678,
+      "sha256": "5bca0dc0c7b031af0807f06b2efcc7087eed32e650c1aaca619c1123726f0306"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/source/run-scnet.sh",
+      "bytes": 940,
+      "sha256": "40841bc3c0b6ab7a70dcd4e476c7f724c61a84f04dd1a588f0c54513019088fe"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/source/run_optimization_screen.py",
+      "bytes": 4620,
+      "sha256": "8e292b90b6d019668d79e1129a9f1a9a9996f31150a6a01244b15a6d7cbf3197"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/source/serve-scnet.sh",
+      "bytes": 620,
+      "sha256": "568e1bba56f9f37a976f2a5e6f93273cef11ee8a9e71fb119c2595984514a9b7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/source/smoke_http.py",
+      "bytes": 6758,
+      "sha256": "3b13c8aa6e1903b9f14ab1ed897b934304469c6184d63bb203e094b163caa3ba"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/state.json",
+      "bytes": 98,
+      "sha256": "f6ae6cd77934acbd3c3a28d31162b0ef60b6adcafa7ac4ee4bfbb7974f52ed07"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/optimization-20261102T020940Z/verified-optimization.json",
+      "bytes": 1898,
+      "sha256": "7d073ed1bceaa0567762772e5190e6518a578e41cd2f3aa1c339228460362240"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/preflight-20261028/preflight.log",
+      "bytes": 1484,
+      "sha256": "7e569972a4976ec62ec8afcac336fa9b4ea5b6f9eee34dd05a06e6eb1ed33b23"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/preflight-20261028/summary.json",
+      "bytes": 4271,
+      "sha256": "7c573b5b513de1d70b9094539da3d87568d70edd8db8be1bab28c99f1db69466"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/preflight-20261028/weights-and-environment.json",
+      "bytes": 3569,
+      "sha256": "609e04c426395a5293f10705eab488abbaf46221978c617e738b7087573b3cd4"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/resource-20261102.png",
+      "bytes": 43541,
+      "sha256": "37c7414a16e10b29f977aea409ba8c3ac1f08b9b0277db4656057eeed9b1842f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/runtime-config.json",
+      "bytes": 1506,
+      "sha256": "8b8eebc8e98181b1a4052a438b8ebdfacc944acdac946d1fa99267542dd91476"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/runtime-optimized-20261102.json",
+      "bytes": 1820,
+      "sha256": "d9ab510c553db9cc655b4dd89c3e4e7909b925cccbd6368130468e0583c0465d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/blue-zh.json",
+      "bytes": 1512,
+      "sha256": "5ab6fcdfdc2a5666d318dbd6e86b651fd175c92f7d01e62021925d1cdadcd463"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/demo.json",
+      "bytes": 1503,
+      "sha256": "ebf01e7d1a29a9fc956df966431686e1cd6bc10e52dc0f1209d711fa00ed31f4"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/models.json",
+      "bytes": 768,
+      "sha256": "0d2f2f12ceb4ba1d60ef3794feaf18604f2c8613a66a30900d2158dfb6821188"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/ocr.json",
+      "bytes": 1496,
+      "sha256": "ac220eeb14b3e43b724992aafa567c1f136bc5092654ce0b08706fd0350234f1"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/red.json",
+      "bytes": 1496,
+      "sha256": "69256697a584be4bd7ed8ddefd39c7e09fe8b1eb42354db92e00b88f90000681"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/repeat.json",
+      "bytes": 1499,
+      "sha256": "c89e54cff786022e141974c1709211084803adc8a02d01c771b5847639520706"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/stream.json",
+      "bytes": 2619,
+      "sha256": "7deeb16fe458d9c49276972c5a06d54dd9454a8d6cbab5124b755ae47aec6539"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/summary.json",
+      "bytes": 324,
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/text.json",
+      "bytes": 1399,
+      "sha256": "e3231e345787a1cebfca88e1eceb71993d2824bc87a23cd184d314cd4d183857"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional/two-images.json",
+      "bytes": 1634,
+      "sha256": "88067c5dc96b7ea32dfbbb0c6407a9967f87c675f83a547a4f2fbd64d563f886"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/functional.log",
+      "bytes": 1240,
+      "sha256": "8adacb3b897738a32fdcdedeabd6625998a6874a446daf097f650d3f08d81a48"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance/c1-o128/requests.jsonl",
+      "bytes": 265870,
+      "sha256": "0ddc73fa4174b0515f4b3868b1c596b2e33aebed07a8e3c86a4523c3dbe94f7b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance/c1-o128/summary.json",
+      "bytes": 437,
+      "sha256": "a4b694640f0499d8c4e0f1e21baece3262055e493247832b2827cc7a8e138413"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance/c1-o32/requests.jsonl",
+      "bytes": 71912,
+      "sha256": "7f11df776ba329dee47263aba8f1191a18a02010eef6c32046c7aaa32d8c94b2"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance/c1-o32/summary.json",
+      "bytes": 439,
+      "sha256": "08bdbc153784c343d9e238fd9512ab40d200d01af256e5d12050461a75150a8a"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance/c2-o128/requests.jsonl",
+      "bytes": 266834,
+      "sha256": "ea0cca684696d742929277f65d6600e2402d02d71537bd84af259d6d8c55626f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance/c2-o128/summary.json",
+      "bytes": 439,
+      "sha256": "b7bed1f3fb3701ec588dfb10292c4f0ae1e3f1f289f78594db0d9cbd31dd7b7c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance/c2-o32/requests.jsonl",
+      "bytes": 73835,
+      "sha256": "b929439e2be6fe4d9d95ffdf79e03c7e849eceb377359b1e4faf39e1d6427e3b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance/c2-o32/summary.json",
+      "bytes": 437,
+      "sha256": "d98bf02b47e19f85e007f6394682517427d906aaf4eb378c39ab232b159e7aad"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance/summary.json",
+      "bytes": 2911,
+      "sha256": "4c304f8966c52b434b733e8f6f0cbf258fe12c9df949c71e9f0471f064c02dd5"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/performance.log",
+      "bytes": 1659,
+      "sha256": "aca35ffb5c3e3b2c7070aa9dd1d5ee14411d00646a8ffa2552af7018cfc241bc"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/fresh-vllm-20261028/server.log",
+      "bytes": 30403,
+      "sha256": "011119c73228d2b9268cd9306fd672e894f06088bd316296b1eae902bc6f7f23"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-20261028/server.log",
+      "bytes": 20537,
+      "sha256": "1863044b50789a31985bd404db1588fe9d8d78e5772ba0250d2fcdadbdbcef88"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v2-20261028/server.log",
+      "bytes": 37105,
+      "sha256": "4b307de7087dd6f0b3e2d043f002bfc4a2290e231e7108883f5445645a7682d0"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/blue-zh.json",
+      "bytes": 1511,
+      "sha256": "be775defad2e8ece37feac6072d8dec8527c0d93cb994044c274a1e08c4ad8e4"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/demo.json",
+      "bytes": 1503,
+      "sha256": "5b0f97db9335956b611b54cb2d5553d8977eadc399ff382fa6eba661563fb9c0"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/models.json",
+      "bytes": 768,
+      "sha256": "953cb312becc4fcfc5fb3d155c3aa1271702b2d15e8f87a4b77a40b10ece2e42"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/ocr.json",
+      "bytes": 1495,
+      "sha256": "c3f1a049ffa57050cb4899c4e2aa5c7c2a6ac1ef13bbcfec63264f8d95de67da"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/red.json",
+      "bytes": 1495,
+      "sha256": "2e7ef5c9f0d18ae351dd06501f83067ed8a57043517f843b744ced6081fce8f6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/repeat.json",
+      "bytes": 1499,
+      "sha256": "156114dc0cec269c8f2167270fe394c4a3a7f1ebf68fea774e56629d240611fa"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/stream.json",
+      "bytes": 2620,
+      "sha256": "cd03d0a69d2540d714882f00f2cdbf9c8351aa039b116aea9ea1a4834fd6eb0c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/summary.json",
+      "bytes": 324,
+      "sha256": "f6acf17f7320a178759e0a510fd3aee2b07405bdf504dd0520c5a60e4dcc5255"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/text.json",
+      "bytes": 1400,
+      "sha256": "7afae23b1e1c96c43a0bfdad374a40c678a17b2b3682f3983a2bcf0d6b2ac590"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional/two-images.json",
+      "bytes": 1635,
+      "sha256": "5f18ff3344f7f34250bfe69acfb850e24708e556e1cf67bc5416b6c2e74b126a"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/functional.log",
+      "bytes": 1240,
+      "sha256": "36e05d79d7ac31dc4f824d529f7d2237a6898dd73b456450ae7259d98f0083fc"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance/c1-o128/requests.jsonl",
+      "bytes": 265869,
+      "sha256": "0d0b7c98300ff0e693705a02a310110f17dc5e259b61a920e1f6e610b3c6b0da"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance/c1-o128/summary.json",
+      "bytes": 439,
+      "sha256": "29242db7a05c625df1a9ddc9a572dd93f1ec4aee296810ad09c77c11f0b1026d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance/c1-o32/requests.jsonl",
+      "bytes": 72393,
+      "sha256": "54c870f7534590886cdc1269074d3c8a0890a243be20dd10c75555ea114dde23"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance/c1-o32/summary.json",
+      "bytes": 437,
+      "sha256": "de1166b1e2f178db024a6bb63ecc2589fbf28d44e4b78c1628559fed71a0419f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance/c2-o128/requests.jsonl",
+      "bytes": 266835,
+      "sha256": "9b29b1f9b4cfe6a3252b76d32b6e6e6836fd0894f43b3e3e1fa9f884a39ef143"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance/c2-o128/summary.json",
+      "bytes": 438,
+      "sha256": "b44f56545373bc7c84bc022f3839094162ebb0700c33dd6a8f405887892aaafa"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance/c2-o32/requests.jsonl",
+      "bytes": 73838,
+      "sha256": "4e6191da5e53c99aea8da15c514c23a097ffdf4e4b04c180a6c51a483094449a"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance/c2-o32/summary.json",
+      "bytes": 438,
+      "sha256": "b200f57d7f1b37f3262d5c88a3edbf3d6a5c6f12013d6ab7d155b85aad701387"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance/summary.json",
+      "bytes": 2911,
+      "sha256": "12d60ff233e7c3e4a9a0c2eb00de11d7c92e3e3ef4dc5f61e9dd72d6f659a35e"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/performance.log",
+      "bytes": 1659,
+      "sha256": "88e7406cba47080c1272432f774ef22cf5e09a01bf12c847eee83079d74e361c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/native-vllm-v3-20261028/server.log",
+      "bytes": 136701,
+      "sha256": "a1cb8b792c92839ee9da58a3057f80633f7a46be4ce20f7ff4671a109f0acab6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-controller-20261028.log",
+      "bytes": 78884,
+      "sha256": "ee198ec281618999fedf43ab6fd8ced637f9ab1864ab74d1a61962a1fe77a0ca"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-full-20261028/audit.log",
+      "bytes": 484,
+      "sha256": "028f68c63f84aaf999f390fee8fc2249a3538d8868b0ef6acfe8bf19af5cb268"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-full-20261028/manifest.json",
+      "bytes": 27332,
+      "sha256": "7fbdb4479f0cad6c4b9177a0d3cab84879223aed691a9c814a7e8ba716f76845"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-full-20261028/predictions.jsonl",
+      "bytes": 1223073,
+      "sha256": "2397739dc5e6c8cd31bd17eb1f3d03765f2c37bcf5d60ec54d07d02f12710e15"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-full-20261028/scored.jsonl",
+      "bytes": 1240204,
+      "sha256": "073f8a21797c1094cdccfc6963101139ce03e07dcd52e948d3a97a095b1d4885"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-full-20261028/summary.json",
+      "bytes": 1085,
+      "sha256": "f06a59cd1f26b77e03277d1c4f6523c7a105102cf1edc4c280e9c2f342b71529"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-full-20261028/upstream-scoring-audit.json",
+      "bytes": 367,
+      "sha256": "84a025b8d0e7b5291d2071db4355a0fc8294a5dde7ba05378630fdf2f20e28b8"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-pilot-20261028/manifest.json",
+      "bytes": 1540,
+      "sha256": "84fb78feb37f755a6aae9b9392a3521bb5e9f5f2281d7888355aa249ef071588"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-pilot-20261028/predictions.jsonl",
+      "bytes": 9767,
+      "sha256": "12f43a3852f5b6e134b95303c8687d1216e2b70660fcad7ec5073b236042a1ae"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-pilot-20261028/scored.jsonl",
+      "bytes": 9904,
+      "sha256": "4ee3bcb3b42046ea8287b0070448043d7fc5c3364dc425790c30502a8db24e91"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/ocrbench-pilot-20261028/summary.json",
+      "bytes": 330,
+      "sha256": "023c6820734bb19b31341fb2ea771c58abc0e032487cdaac3842466973745111"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/reproduction-controller-20261028.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/reproduction-metric-audit-20261028.json",
+      "bytes": 4164,
+      "sha256": "e7daa2fa18226122a581a9368955941ede961c3a9bab0daa8b66624a39d9b316"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/reproduction-state-20261028.json",
+      "bytes": 1227,
+      "sha256": "79402385608f8da8aef2f151b72bb64102f4a7b5bf431e01f439cc1c942e15e5"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/reproduction-summary-20261028.json",
+      "bytes": 1178,
+      "sha256": "4476b7c6eff87798ae862957742387ebfb1940e35eb02d8137e171cbcf40d39c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/scnet/scoring-tests-20261028.log",
+      "bytes": 523,
+      "sha256": "ef4b781667615e978feead288bb34c7e7389a54c695f6db8af786cb4ecadfc5b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/results/weights-download-20261028.json",
+      "bytes": 4504,
+      "sha256": "b1134690f7f140a50a0cb149d51be00634e1e6064d1a2fd77651401368e3ba5c"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/run-scnet.sh",
+      "bytes": 1066,
+      "sha256": "73d11ba78386cae0add8a7723e9da95c6dea5bf51925ff5364a04d2a10a4463a"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/run.sh",
+      "bytes": 739,
+      "sha256": "b923cdb08de512c588d4e25cd576e8c813d96770f76e3e7121f49b35285101db"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/audit_formal.py",
+      "bytes": 4515,
+      "sha256": "ad31e0f9ba99ca1c9107e2430ae6df8a43cb95dc35e8999808125f8969a196a3"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/audit_ocrbench.py",
+      "bytes": 2292,
+      "sha256": "8eeffb5f6e86dc16e2ebd3a370a8e044a5821138ffc7145c524384fdca05134d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/audit_performance.py",
+      "bytes": 2513,
+      "sha256": "61246ca10842c501b12050bfd2f74a38bcb7030d537c325be76127e82fcbed86"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/bench_http.py",
+      "bytes": 4678,
+      "sha256": "5bca0dc0c7b031af0807f06b2efcc7087eed32e650c1aaca619c1123726f0306"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/benchmark_valid_vocab.py",
+      "bytes": 1911,
+      "sha256": "4a645152374b80860976cb2e718c1a2e6cc9a0eeccf3b3bebfebdfaebaeb3ed6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/check_bench_row.py",
+      "bytes": 1542,
+      "sha256": "a0c4ac1114d15722caa94ed9efa7937bb6db618f2699a9b2564f5225ba3b26a6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/check_benchmark_processor.py",
+      "bytes": 740,
+      "sha256": "b3589a677584401be02a84af3df113f3aa52c35751068a586f614fd168e132d2"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/check_benchmark_vocab.py",
+      "bytes": 743,
+      "sha256": "c280c3df8dda7abde51d754ef7cb962a4820bf95565c9d2209bf92449a87f790"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/check_entrypoint.py",
+      "bytes": 2735,
+      "sha256": "3052d082c48b90a9c541f4f8f211c09cd2e9d72b0f53f04b5c2b96cef21299fa"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/check_image.py",
+      "bytes": 1709,
+      "sha256": "1fc7fd4bc78a917a9134753b510bf50978c9f519dc7acfb4544d8f25b171d462"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/download_weights.py",
+      "bytes": 7301,
+      "sha256": "8fd035545f209537c40c952c026f7e3d61719093171a75273d38bb38333bb1bb"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/eval_ocrbench.py",
+      "bytes": 6741,
+      "sha256": "da786bbd83ffff41babc9cecfe55ede95ff1572df5eec303f81045c75d44e6b8"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/export_formal_table.py",
+      "bytes": 1679,
+      "sha256": "e29ba07656a7981838125612701f8816e56564cb1c08783cc24f111954aa5e47"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/finalize_report.py",
+      "bytes": 13429,
+      "sha256": "01f3271ce363dd74bf6191309bedf6693a97857637f9968a2ddd770c9bf1f73a"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/preflight.py",
+      "bytes": 2255,
+      "sha256": "cafa5ba451225b1f6b1fafc336b3e2d4be07429ecaf839de285c6f203e8a98e6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/prepare_bench_alias.py",
+      "bytes": 779,
+      "sha256": "a119115190cf56c96b1b241fdb7d18e585f1c8f8cfbfbde251a3f7a3ae9ee534"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/prepare_examples.py",
+      "bytes": 1133,
+      "sha256": "7f0654ac163e951380b0d96966b6bbb4155206b5e6b66ec3cb942c0c30d3095b"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/prepare_image.py",
+      "bytes": 2547,
+      "sha256": "3da21159b8755bfc591d91bd345e4693f5ec59af8db543040f35b745c2119e90"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/run_accuracy.sh",
+      "bytes": 419,
+      "sha256": "d3d1607857851c8de59d84c35063d13b4def79cd30409fe5cb04d5acfd435735"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/run_formal_matrix.py",
+      "bytes": 4413,
+      "sha256": "ef04e85c638fa93f46fb586679acaebaf46340852412ce0465914dca5acd69cb"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/run_optimization_screen.py",
+      "bytes": 5950,
+      "sha256": "29d37bad2e9225a80b43f3ef82eb636ec9547ac7158f698264099d9d5315418d"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/run_reproduction.py",
+      "bytes": 4731,
+      "sha256": "b9557d5a9ad12e50a5ab13a767649ff60eed0416ab871c863f91a757b25bd145"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/smoke_http.py",
+      "bytes": 6758,
+      "sha256": "3b13c8aa6e1903b9f14ab1ed897b934304469c6184d63bb203e094b163caa3ba"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/test_ocrbench_scoring.py",
+      "bytes": 1139,
+      "sha256": "add1a4dccce1b6078f5659a57cae2f05ecdc737fc6df561afa4077604c00832f"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/scripts/verify_optimization.py",
+      "bytes": 4437,
+      "sha256": "0e4b00803613b37a7534ca300494c098a6a7f1f228101ca6ee0173159f974bf6"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/serve-formal.sh",
+      "bytes": 621,
+      "sha256": "2bbed2fa2a33da8db6d14db6f9b88f98db650aeb49bfaecabe875ad614caeb92"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/serve-optimized.sh",
+      "bytes": 746,
+      "sha256": "f2f0abc77b9a401ccd322faf9746582680c7a0b34f1280b2fc9a36ec146ed1ba"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/serve-scnet.sh",
+      "bytes": 620,
+      "sha256": "568e1bba56f9f37a976f2a5e6f93273cef11ee8a9e71fb119c2595984514a9b7"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/serve-short-optimized.sh",
+      "bytes": 790,
+      "sha256": "593a5eed4ff877c16de2158ef41e0b8a08eae56eaf8b6d0dc4ed0504d7e33d44"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/smoke.sh",
+      "bytes": 218,
+      "sha256": "c6aa2eb6d941dbc3ea2fa6afd7b4c6271e8b06e1e4534e4b8af2b340318a38df"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/sources/image-optimized-20261102.json",
+      "bytes": 610,
+      "sha256": "a04d280dccd9b019275c6cae19657a8a9921b5496a590860cf6bae4a020d4efd"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/sources/image-payload-manifest-20261102.json",
+      "bytes": 386543,
+      "sha256": "050c5d002a112843d4d3e3bd0945859e3260ef8ae728fc7b58bf1ac93a757f18"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/sources/ocrbench-dataset.json",
+      "bytes": 536,
+      "sha256": "84f7151753bd1cd9e08a3c342bdb8f7743b8e8e5ed144ed846279b70fe1c11ad"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/sources/ocrbench_example.py",
+      "bytes": 9341,
+      "sha256": "70194609de34d25e89b9c3b397e854729027d28b8a28d25670cdcf90a6f738cf"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/sources/publisher-evaluation.json",
+      "bytes": 604,
+      "sha256": "459966c9c85b71167fccb5374733e5d90766f63bcdcfaf6578b1c8d367f1492e"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/sources/publisher-files.json",
+      "bytes": 10124,
+      "sha256": "458bd4a75c4a0b3ae1e289496f310e349f6b1db64a1c18a098bb409310000845"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/sources/report-image-status.json",
+      "bytes": 364,
+      "sha256": "64153a61c923c4ba02b7a75ff53350bc2d74ed45350d492ea5a623d5f45ddcb1"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/stop.sh",
+      "bytes": 905,
+      "sha256": "0b0794fbeb3926225eaeef3190d08cca5805d6bba27697ea0a8dfd42a0df8845"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/verify.py",
+      "bytes": 8156,
+      "sha256": "231ed1aa50647357dff3d561e4636956323243678109c0236b1f5ce482a364f4"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/verify_formal.py",
+      "bytes": 3990,
+      "sha256": "d7a8c4b660d29b4d8b5e97005970fbe31a3fa1121ce18f161d34463390be7673"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/优化说明.md",
+      "bytes": 3141,
+      "sha256": "dde2269b5e3397ca9b592133146c7e4db1987b993b8375c771dc9b1c99515313"
+    },
+    {
+      "path": "Kimi-VL-A3B-Instruct-Optimized-v1/提交填写信息.md",
+      "bytes": 1708,
+      "sha256": "2e8166b65078245c22fd0830821fcbfcc16ab1cca4562d9c6c936d1ef47eb098"
+    }
+  ]
+}
