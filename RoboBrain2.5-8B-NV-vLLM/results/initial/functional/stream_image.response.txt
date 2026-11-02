@@ -1,0 +1,10 @@
+data: {"id":"chatcmpl-bf86575e63343c84","object":"chat.completion.chunk","created":1793610001,"model":"robobrain25-8b-vllm","choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}],"prompt_token_ids":null,"prompt_text":null}
+
+data: {"id":"chatcmpl-bf86575e63343c84","object":"chat.completion.chunk","created":1793610001,"model":"robobrain25-8b-vllm","choices":[{"index":0,"delta":{"content":"Red"},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-bf86575e63343c84","object":"chat.completion.chunk","created":1793610001,"model":"robobrain25-8b-vllm","choices":[{"index":0,"delta":{"content":""},"logprobs":null,"finish_reason":"stop","stop_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-bf86575e63343c84","object":"chat.completion.chunk","created":1793610001,"model":"robobrain25-8b-vllm","choices":[],"usage":{"prompt_tokens":167,"total_tokens":169,"completion_tokens":2},"system_fingerprint":"vllm-0.25.1-cdb13348"}
+
+data: [DONE]
+

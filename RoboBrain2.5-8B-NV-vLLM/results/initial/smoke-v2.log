@@ -1,0 +1,12 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+health: 
+{"case": "text", "seconds": 0.084, "answer": "5", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 21, "total_tokens": 23, "completion_tokens": 2, "prompt_tokens_details": null}}
+{"case": "single_image", "seconds": 0.123, "answer": "Red", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 167, "total_tokens": 169, "completion_tokens": 2, "prompt_tokens_details": null}}
+{"case": "multi_image", "seconds": 0.158, "answer": "red, blue", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 318, "total_tokens": 322, "completion_tokens": 4, "prompt_tokens_details": null}}
+{"case": "multi_turn", "seconds": 0.119, "answer": "Blue", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 196, "total_tokens": 198, "completion_tokens": 2, "prompt_tokens_details": null}}
+{"case": "stream_image", "seconds": 0.121, "answer": "Red", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 167, "total_tokens": 169, "completion_tokens": 2}}
+{"case": "grounding", "seconds": 0.405, "answer": "[0, 301, 620, 1000]", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 321, "total_tokens": 341, "completion_tokens": 20, "prompt_tokens_details": null}}
+{"case": "pointing", "seconds": 0.265, "answer": "[(901, 600)]", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 321, "total_tokens": 332, "completion_tokens": 11, "prompt_tokens_details": null}}
+{"case": "trajectory", "seconds": 0.886, "answer": "[(301, 525, 0.592), (405, 350, 0.627), (525, 325, 0.727)]", "functional_pass": true, "diagnostic_semantic_pass": true, "usage": {"prompt_tokens": 194, "total_tokens": 246, "completion_tokens": 52, "prompt_tokens_details": null}}
+Artifacts: /root/private_data/hks/models/RoboBrain2.5-8B-NV-vLLM/results/initial/functional-v2

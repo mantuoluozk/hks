@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "CalledProcessError(1, ['python', 'scripts/smoke_test.py'])"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "case": "text",
+    "answer_equal": true
+  },
+  {
+    "case": "single_image",
+    "answer_equal": true
+  },
+  {
+    "case": "multi_image",
+    "answer_equal": true
+  },
+  {
+    "case": "multi_turn",
+    "answer_equal": true
+  },
+  {
+    "case": "stream_image",
+    "answer_equal": true
+  },
+  {
+    "case": "grounding",
+    "answer_equal": true
+  },
+  {
+    "case": "pointing",
+    "answer_equal": true
+  },
+  {
+    "case": "trajectory",
+    "answer_equal": true
+  }
+]

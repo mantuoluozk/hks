@@ -1,0 +1,9 @@
+{
+  "model": "RoboBrain2.5-8B-NV-vLLM",
+  "image": "appstore.scnet.cn:5000/aihub/dcu/zack233/recon2reason-vllm:v1.0.0",
+  "version": "v1.0.0",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2116559999150473218",
+  "region": "本轮实例未独立记录",
+  "verification_scope": "本轮Notebook vLLM原生Qwen3-VL适配，功能与性能分别以results原始记录为准",
+  "additional_framework_source_patches": []
+}

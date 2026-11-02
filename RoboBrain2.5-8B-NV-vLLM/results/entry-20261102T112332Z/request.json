@@ -1,0 +1,11 @@
+{
+  "model": "robobrain25-8b-vllm",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is 2 + 3? Answer with one number."
+    }
+  ],
+  "max_tokens": 8,
+  "temperature": 0
+}

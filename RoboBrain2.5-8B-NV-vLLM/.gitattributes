@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.json -text
+*.jsonl -text
+results/** -text -whitespace
+logs/** -text -whitespace
+sources/** -text -whitespace

@@ -1,0 +1,710 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 130
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 71
+  },
+  {
+    "path": "bench/round1.jsonl",
+    "bytes": 7900185
+  },
+  {
+    "path": "bench/round2.jsonl",
+    "bytes": 7910096
+  },
+  {
+    "path": "bench/summary.md",
+    "bytes": 872
+  },
+  {
+    "path": "bench.sh",
+    "bytes": 214
+  },
+  {
+    "path": "env.sh",
+    "bytes": 1179
+  },
+  {
+    "path": "logs/server-20261102T112332Z.log",
+    "bytes": 20526
+  },
+  {
+    "path": "README.md",
+    "bytes": 9215
+  },
+  {
+    "path": "results/entry-20261102T112332Z/request.json",
+    "bytes": 188
+  },
+  {
+    "path": "results/entry-20261102T112332Z/response.json",
+    "bytes": 858
+  },
+  {
+    "path": "results/entry-20261102T112332Z/start.log",
+    "bytes": 200
+  },
+  {
+    "path": "results/entry-20261102T112332Z/stop.log",
+    "bytes": 160
+  },
+  {
+    "path": "results/entry-20261102T112332Z/summary.json",
+    "bytes": 236
+  },
+  {
+    "path": "results/entry-20261102T112332Z/weights/weights-check.json",
+    "bytes": 2529
+  },
+  {
+    "path": "results/entry-controller.log",
+    "bytes": 445
+  },
+  {
+    "path": "results/environment.json",
+    "bytes": 725
+  },
+  {
+    "path": "results/formal-20261102T090447Z/alias.log",
+    "bytes": 193
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/blue.png",
+    "bytes": 1202
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/grounding.request.json",
+    "bytes": 268572
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/grounding.response.txt",
+    "bytes": 653
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/left-red-right-blue.png",
+    "bytes": 1206
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/models.json",
+    "bytes": 791
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/multi_image.request.json",
+    "bytes": 3830
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/multi_image.response.txt",
+    "bytes": 642
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/multi_turn.request.json",
+    "bytes": 2267
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/multi_turn.response.txt",
+    "bytes": 637
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/pointing.request.json",
+    "bytes": 67338
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/pointing.response.txt",
+    "bytes": 646
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/red.png",
+    "bytes": 1202
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/single_image.request.json",
+    "bytes": 2065
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/single_image.response.txt",
+    "bytes": 636
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/stream_image.request.json",
+    "bytes": 2117
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/stream_image.response.txt",
+    "bytes": 1018
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/summary.json",
+    "bytes": 2910
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/text.request.json",
+    "bytes": 209
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/text.response.txt",
+    "bytes": 632
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/trajectory.request.json",
+    "bytes": 76457
+  },
+  {
+    "path": "results/formal-20261102T090447Z/functional/trajectory.response.txt",
+    "bytes": 691
+  },
+  {
+    "path": "results/formal-20261102T090447Z/metrics-after.prom",
+    "bytes": 55228
+  },
+  {
+    "path": "results/formal-20261102T090447Z/metrics-before.prom",
+    "bytes": 54690
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1.jsonl",
+    "bytes": 7900185
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_16384_1024_c1.check.log",
+    "bytes": 309
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_16384_1024_c1.log",
+    "bytes": 9283
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_16384_1024_c1.server-metrics.prom",
+    "bytes": 55181
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_16384_1024_c64.check.log",
+    "bytes": 310
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_16384_1024_c64.log",
+    "bytes": 16494
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_16384_1024_c64.server-metrics.prom",
+    "bytes": 55214
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_16384_1024_c8.check.log",
+    "bytes": 309
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_16384_1024_c8.log",
+    "bytes": 9407
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_16384_1024_c8.server-metrics.prom",
+    "bytes": 55203
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_4096_1024_c1.check.log",
+    "bytes": 308
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_4096_1024_c1.log",
+    "bytes": 9276
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_4096_1024_c1.server-metrics.prom",
+    "bytes": 54929
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_4096_1024_c64.check.log",
+    "bytes": 309
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_4096_1024_c64.log",
+    "bytes": 16296
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_4096_1024_c64.server-metrics.prom",
+    "bytes": 55175
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_4096_1024_c8.check.log",
+    "bytes": 308
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_4096_1024_c8.log",
+    "bytes": 9111
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round1_4096_1024_c8.server-metrics.prom",
+    "bytes": 55002
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2.jsonl",
+    "bytes": 7910096
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_16384_1024_c1.check.log",
+    "bytes": 309
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_16384_1024_c1.log",
+    "bytes": 9283
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_16384_1024_c1.server-metrics.prom",
+    "bytes": 55178
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_16384_1024_c64.check.log",
+    "bytes": 310
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_16384_1024_c64.log",
+    "bytes": 16494
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_16384_1024_c64.server-metrics.prom",
+    "bytes": 55228
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_16384_1024_c8.check.log",
+    "bytes": 309
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_16384_1024_c8.log",
+    "bytes": 9352
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_16384_1024_c8.server-metrics.prom",
+    "bytes": 55212
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_4096_1024_c1.check.log",
+    "bytes": 308
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_4096_1024_c1.log",
+    "bytes": 9276
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_4096_1024_c1.server-metrics.prom",
+    "bytes": 55006
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_4096_1024_c64.check.log",
+    "bytes": 309
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_4096_1024_c64.log",
+    "bytes": 16296
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_4096_1024_c64.server-metrics.prom",
+    "bytes": 55170
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_4096_1024_c8.check.log",
+    "bytes": 308
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_4096_1024_c8.log",
+    "bytes": 9109
+  },
+  {
+    "path": "results/formal-20261102T090447Z/round2_4096_1024_c8.server-metrics.prom",
+    "bytes": 55011
+  },
+  {
+    "path": "results/formal-20261102T090447Z/server.log",
+    "bytes": 180653
+  },
+  {
+    "path": "results/formal-20261102T090447Z/smoke.log",
+    "bytes": 1975
+  },
+  {
+    "path": "results/formal-20261102T090447Z/source/check_bench_row.py",
+    "bytes": 1542
+  },
+  {
+    "path": "results/formal-20261102T090447Z/source/check_weights.py",
+    "bytes": 1325
+  },
+  {
+    "path": "results/formal-20261102T090447Z/source/env.sh",
+    "bytes": 1113
+  },
+  {
+    "path": "results/formal-20261102T090447Z/source/formal_matrix.py",
+    "bytes": 3609
+  },
+  {
+    "path": "results/formal-20261102T090447Z/source/prepare_bench_alias.py",
+    "bytes": 802
+  },
+  {
+    "path": "results/formal-20261102T090447Z/source/run-scnet.sh",
+    "bytes": 106
+  },
+  {
+    "path": "results/formal-20261102T090447Z/source/serve.sh",
+    "bytes": 568
+  },
+  {
+    "path": "results/formal-20261102T090447Z/source/smoke_test.py",
+    "bytes": 7690
+  },
+  {
+    "path": "results/formal-20261102T090447Z/source/verify.py",
+    "bytes": 3544
+  },
+  {
+    "path": "results/formal-20261102T090447Z/state.json",
+    "bytes": 135
+  },
+  {
+    "path": "results/formal-20261102T090447Z/verification.log",
+    "bytes": 3347
+  },
+  {
+    "path": "results/formal-20261102T090447Z/verified-summary.json",
+    "bytes": 3347
+  },
+  {
+    "path": "results/formal-20261102T090447Z/weights/weights-check.json",
+    "bytes": 2529
+  },
+  {
+    "path": "results/formal-current.json",
+    "bytes": 110
+  },
+  {
+    "path": "results/formal-driver.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/functional-repeat.json",
+    "bytes": 479
+  },
+  {
+    "path": "results/initial/functional/blue.png",
+    "bytes": 1202
+  },
+  {
+    "path": "results/initial/functional/grounding.request.json",
+    "bytes": 268486
+  },
+  {
+    "path": "results/initial/functional/grounding.response.txt",
+    "bytes": 965
+  },
+  {
+    "path": "results/initial/functional/left-red-right-blue.png",
+    "bytes": 1206
+  },
+  {
+    "path": "results/initial/functional/models.json",
+    "bytes": 791
+  },
+  {
+    "path": "results/initial/functional/multi_image.request.json",
+    "bytes": 3830
+  },
+  {
+    "path": "results/initial/functional/multi_image.response.txt",
+    "bytes": 642
+  },
+  {
+    "path": "results/initial/functional/multi_turn.request.json",
+    "bytes": 2267
+  },
+  {
+    "path": "results/initial/functional/multi_turn.response.txt",
+    "bytes": 637
+  },
+  {
+    "path": "results/initial/functional/pointing.request.json",
+    "bytes": 67338
+  },
+  {
+    "path": "results/initial/functional/pointing.response.txt",
+    "bytes": 646
+  },
+  {
+    "path": "results/initial/functional/red.png",
+    "bytes": 1202
+  },
+  {
+    "path": "results/initial/functional/single_image.request.json",
+    "bytes": 2065
+  },
+  {
+    "path": "results/initial/functional/single_image.response.txt",
+    "bytes": 636
+  },
+  {
+    "path": "results/initial/functional/stream_image.request.json",
+    "bytes": 2117
+  },
+  {
+    "path": "results/initial/functional/stream_image.response.txt",
+    "bytes": 1018
+  },
+  {
+    "path": "results/initial/functional/summary.json",
+    "bytes": 3223
+  },
+  {
+    "path": "results/initial/functional/text.request.json",
+    "bytes": 209
+  },
+  {
+    "path": "results/initial/functional/text.response.txt",
+    "bytes": 632
+  },
+  {
+    "path": "results/initial/functional/trajectory.request.json",
+    "bytes": 76457
+  },
+  {
+    "path": "results/initial/functional/trajectory.response.txt",
+    "bytes": 691
+  },
+  {
+    "path": "results/initial/functional-v2/blue.png",
+    "bytes": 1202
+  },
+  {
+    "path": "results/initial/functional-v2/grounding.request.json",
+    "bytes": 268572
+  },
+  {
+    "path": "results/initial/functional-v2/grounding.response.txt",
+    "bytes": 653
+  },
+  {
+    "path": "results/initial/functional-v2/left-red-right-blue.png",
+    "bytes": 1206
+  },
+  {
+    "path": "results/initial/functional-v2/models.json",
+    "bytes": 791
+  },
+  {
+    "path": "results/initial/functional-v2/multi_image.request.json",
+    "bytes": 3830
+  },
+  {
+    "path": "results/initial/functional-v2/multi_image.response.txt",
+    "bytes": 642
+  },
+  {
+    "path": "results/initial/functional-v2/multi_turn.request.json",
+    "bytes": 2267
+  },
+  {
+    "path": "results/initial/functional-v2/multi_turn.response.txt",
+    "bytes": 637
+  },
+  {
+    "path": "results/initial/functional-v2/pointing.request.json",
+    "bytes": 67338
+  },
+  {
+    "path": "results/initial/functional-v2/pointing.response.txt",
+    "bytes": 646
+  },
+  {
+    "path": "results/initial/functional-v2/red.png",
+    "bytes": 1202
+  },
+  {
+    "path": "results/initial/functional-v2/single_image.request.json",
+    "bytes": 2065
+  },
+  {
+    "path": "results/initial/functional-v2/single_image.response.txt",
+    "bytes": 636
+  },
+  {
+    "path": "results/initial/functional-v2/stream_image.request.json",
+    "bytes": 2117
+  },
+  {
+    "path": "results/initial/functional-v2/stream_image.response.txt",
+    "bytes": 1018
+  },
+  {
+    "path": "results/initial/functional-v2/summary.json",
+    "bytes": 2910
+  },
+  {
+    "path": "results/initial/functional-v2/text.request.json",
+    "bytes": 209
+  },
+  {
+    "path": "results/initial/functional-v2/text.response.txt",
+    "bytes": 632
+  },
+  {
+    "path": "results/initial/functional-v2/trajectory.request.json",
+    "bytes": 76457
+  },
+  {
+    "path": "results/initial/functional-v2/trajectory.response.txt",
+    "bytes": 691
+  },
+  {
+    "path": "results/initial/native-pass.json",
+    "bytes": 197
+  },
+  {
+    "path": "results/initial/probe-driver.log",
+    "bytes": 677
+  },
+  {
+    "path": "results/initial/server.log",
+    "bytes": 34873
+  },
+  {
+    "path": "results/initial/short/input.png",
+    "bytes": 1200
+  },
+  {
+    "path": "results/initial/short/request-template.json",
+    "bytes": 2168
+  },
+  {
+    "path": "results/initial/short/summary.json",
+    "bytes": 4468666
+  },
+  {
+    "path": "results/initial/short-screen.log",
+    "bytes": 1154
+  },
+  {
+    "path": "results/initial/smoke-source-v2.py",
+    "bytes": 7690
+  },
+  {
+    "path": "results/initial/smoke-v2.log",
+    "bytes": 2109
+  },
+  {
+    "path": "results/initial/smoke.log",
+    "bytes": 2271
+  },
+  {
+    "path": "results/initial/state.json",
+    "bytes": 97
+  },
+  {
+    "path": "results/initial/weights-check.json",
+    "bytes": 2529
+  },
+  {
+    "path": "run-scnet.sh",
+    "bytes": 106
+  },
+  {
+    "path": "run.sh",
+    "bytes": 778
+  },
+  {
+    "path": "runtime-config.json",
+    "bytes": 721
+  },
+  {
+    "path": "scripts/check_bench_row.py",
+    "bytes": 1558
+  },
+  {
+    "path": "scripts/check_weights.py",
+    "bytes": 1341
+  },
+  {
+    "path": "scripts/entry_check.py",
+    "bytes": 2380
+  },
+  {
+    "path": "scripts/formal_matrix.py",
+    "bytes": 3609
+  },
+  {
+    "path": "scripts/prepare_bench_alias.py",
+    "bytes": 802
+  },
+  {
+    "path": "scripts/probe.py",
+    "bytes": 1113
+  },
+  {
+    "path": "scripts/short_screen.py",
+    "bytes": 2697
+  },
+  {
+    "path": "scripts/smoke_test.py",
+    "bytes": 7690
+  },
+  {
+    "path": "scripts/status.py",
+    "bytes": 1040
+  },
+  {
+    "path": "scripts/write_report.py",
+    "bytes": 9746
+  },
+  {
+    "path": "serve.sh",
+    "bytes": 568
+  },
+  {
+    "path": "smoke.sh",
+    "bytes": 132
+  },
+  {
+    "path": "sources/competition-policy-20261028.json",
+    "bytes": 261
+  },
+  {
+    "path": "sources/modelscope-files.json",
+    "bytes": 8339
+  },
+  {
+    "path": "sources/performance-protocol.md",
+    "bytes": 732
+  },
+  {
+    "path": "sources/report-image-status.json",
+    "bytes": 434
+  },
+  {
+    "path": "sources/upstream/assets/demo/affordance.jpg",
+    "bytes": 50047
+  },
+  {
+    "path": "sources/upstream/assets/demo/grounding.jpg",
+    "bytes": 200997
+  },
+  {
+    "path": "sources/upstream/assets/demo/trajectory.jpg",
+    "bytes": 56827
+  },
+  {
+    "path": "sources/upstream/inference.py",
+    "bytes": 11940
+  },
+  {
+    "path": "sources/upstream/LICENSE",
+    "bytes": 11357
+  },
+  {
+    "path": "stop.sh",
+    "bytes": 955
+  },
+  {
+    "path": "verify.py",
+    "bytes": 3624
+  }
+]

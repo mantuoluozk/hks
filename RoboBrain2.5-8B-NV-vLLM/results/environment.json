@@ -1,0 +1,20 @@
+{
+  "python": "3.10.12",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2",
+    "openai": "2.30.0",
+    "pillow": "11.3.0"
+  },
+  "cpu_max": "1500000 100000",
+  "memory_max": "63350767616",
+  "image": "appstore.scnet.cn:5000/aihub/dcu/zack233/recon2reason-vllm:v1.0.0",
+  "image_version": "v1.0.0",
+  "image_page": "https://www.scnet.cn/ui/aihub/image/zack233/2116559999150473218",
+  "region": "本轮实例未独立记录",
+  "model_architecture": "Qwen3VLForConditionalGeneration",
+  "added_framework_source_patches": []
+}

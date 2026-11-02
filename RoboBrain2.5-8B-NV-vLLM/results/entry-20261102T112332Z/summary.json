@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "health": 200,
+  "model": "robobrain25-8b-vllm",
+  "answer": "5",
+  "usage": {
+    "prompt_tokens": 21,
+    "total_tokens": 23,
+    "completion_tokens": 2,
+    "prompt_tokens_details": null
+  },
+  "stop_exit": 0
+}

@@ -1,6 +1,6 @@
 # 国芯国模 · BW 模型适配
 
-十二个模型、十四个模型×框架版本的 SCNet BW 单卡/多卡技术报告、复现代码与原始测试证据。公开自评、功能、性能和官方验收分别记录。
+十二个模型、十五个模型×框架版本的 SCNet BW 单卡/多卡技术报告、复现代码与原始测试证据。公开自评、功能、性能和官方验收分别记录。
 
 | 模型 | 框架 | 功能 | 公开精度自评 | 首次性能与复现 |
 |---|---|---|---|---|
@@ -8,6 +8,7 @@
 | [Recon2Reason-Reasoning-4B-vLLM](Recon2Reason-Reasoning-4B-vLLM/README.md) | vLLM | 新镜像两独立服务各5/5 | 赛事不要求精度 | 官方六档完整双进程1216请求；模板指标最大偏差9.65%；特殊token输出说明见报告 |
 | [Recon2Reason-Reasoning-4B-vLLM · 优化版v1](Recon2Reason-Reasoning-4B-vLLM-Optimized-v1/README.md) | vLLM | 四服务各5/5 | 赛事不要求精度；短测50条请求/usage/输出一致 | 官方六档608/608；完整矩阵吞吐提升2.21%–347.89%，五档超过10%；单矩阵服务 |
 | [RoboBrain2.5-8B-NV](RoboBrain2.5-8B-NV/README.md) | SGLang | 8/8 | CV-Bench 2638 题，88.10% | 12 轮、608 请求；完整矩阵独立复跑待补 |
+| [RoboBrain2.5-8B-NV-vLLM](RoboBrain2.5-8B-NV-vLLM/README.md) | vLLM | 两个服务各8/8，功能文本逐项一致 | 赛事口径不要求额外精度；本轮未测完整基准 | 官方六档608/608，实际输出622592 token；单矩阵服务，独立进程完整复现null |
 | [MiMo-V2.6-Distill-Qwen-9B](MiMo-V2.6-Distill-Qwen-9B/README.md) | SGLang | 11/11 | GSM8K 179/200；MMLU 160/200 | 12 轮、608 请求 |
 | [Qwen3-ASR-1.7B](Qwen3-ASR-1.7B/README.md) | vLLM | 在线 6/6；PCM 4/4；官方条件识别 300/300 | test-clean 2620 条，WER 1.6501% | 128 请求；复跑最大偏差 7.28% |
 | [Qwen3-ForcedAligner-0.6B](Qwen3-ForcedAligner-0.6B/README.md) | vLLM | 中英文 2/2；官方条件词级对齐 30/30 | — | 每进程 512 请求；复跑最大偏差 7.18% |

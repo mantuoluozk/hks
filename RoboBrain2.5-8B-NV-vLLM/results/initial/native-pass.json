@@ -1,0 +1,8 @@
+{
+  "functional_v2": "8/8",
+  "short_cells": 6,
+  "counted_requests": 104,
+  "actual_output_tokens": 8320,
+  "original_grounding_format_failure_preserved": true,
+  "initial_service_stopped": true
+}

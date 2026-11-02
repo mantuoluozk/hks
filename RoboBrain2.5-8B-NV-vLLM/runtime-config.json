@@ -1,0 +1,31 @@
+{
+  "model": "BAAI/RoboBrain2.5-8B-NV",
+  "framework": "vLLM",
+  "architecture": "Qwen3VLForConditionalGeneration",
+  "precision": "bfloat16",
+  "tensor_parallel_size": 1,
+  "max_model_len": 32768,
+  "gpu_memory_utilization": 0.8,
+  "max_num_seqs": 8,
+  "max_num_batched_tokens": 8192,
+  "compilation_config": {
+    "mode": 0,
+    "cudagraph_mode": "FULL_DECODE_ONLY",
+    "cudagraph_capture_sizes": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "enable_prefix_caching": false,
+  "mm_processor_cache_gb": 0,
+  "limit_mm_per_prompt": {
+    "image": 2,
+    "video": 0
+  },
+  "processor": "checkpoint preprocessor_config.json, unchanged",
+  "additional_framework_patches": [],
+  "cpu_math_threads": 4,
+  "port": 30126
+}
