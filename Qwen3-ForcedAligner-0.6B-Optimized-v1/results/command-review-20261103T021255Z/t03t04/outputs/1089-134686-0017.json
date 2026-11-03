@@ -1,0 +1,188 @@
+{
+  "id": "1089-134686-0017",
+  "language": "English",
+  "audio_seconds": 8.87,
+  "elapsed_seconds": 0.05924559710547328,
+  "classification_shape": [
+    206,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    7,
+    13,
+    18,
+    23,
+    23,
+    28,
+    28,
+    30,
+    30,
+    35,
+    35,
+    40,
+    41,
+    43,
+    43,
+    45,
+    45,
+    51,
+    56,
+    62,
+    62,
+    63,
+    63,
+    65,
+    65,
+    69,
+    69,
+    73,
+    73,
+    77,
+    77,
+    80,
+    80,
+    85,
+    85,
+    90,
+    90,
+    92,
+    92,
+    96,
+    96,
+    97,
+    97,
+    101,
+    101,
+    109,
+    104,
+    109
+  ],
+  "items": [
+    {
+      "text": "STEPHEN",
+      "start_time": 0.56,
+      "end_time": 1.04
+    },
+    {
+      "text": "LEANING",
+      "start_time": 1.44,
+      "end_time": 1.84
+    },
+    {
+      "text": "BACK",
+      "start_time": 1.84,
+      "end_time": 2.24
+    },
+    {
+      "text": "AND",
+      "start_time": 2.24,
+      "end_time": 2.4
+    },
+    {
+      "text": "DRAWING",
+      "start_time": 2.4,
+      "end_time": 2.8
+    },
+    {
+      "text": "IDLY",
+      "start_time": 2.8,
+      "end_time": 3.2
+    },
+    {
+      "text": "ON",
+      "start_time": 3.28,
+      "end_time": 3.44
+    },
+    {
+      "text": "HIS",
+      "start_time": 3.44,
+      "end_time": 3.6
+    },
+    {
+      "text": "SCRIBBLER",
+      "start_time": 3.6,
+      "end_time": 4.08
+    },
+    {
+      "text": "LISTENED",
+      "start_time": 4.48,
+      "end_time": 4.96
+    },
+    {
+      "text": "TO",
+      "start_time": 4.96,
+      "end_time": 5.04
+    },
+    {
+      "text": "THE",
+      "start_time": 5.04,
+      "end_time": 5.2
+    },
+    {
+      "text": "TALK",
+      "start_time": 5.2,
+      "end_time": 5.52
+    },
+    {
+      "text": "ABOUT",
+      "start_time": 5.52,
+      "end_time": 5.84
+    },
+    {
+      "text": "HIM",
+      "start_time": 5.84,
+      "end_time": 6.16
+    },
+    {
+      "text": "WHICH",
+      "start_time": 6.16,
+      "end_time": 6.4
+    },
+    {
+      "text": "HERON",
+      "start_time": 6.4,
+      "end_time": 6.8
+    },
+    {
+      "text": "CHECKED",
+      "start_time": 6.8,
+      "end_time": 7.2
+    },
+    {
+      "text": "FROM",
+      "start_time": 7.2,
+      "end_time": 7.36
+    },
+    {
+      "text": "TIME",
+      "start_time": 7.36,
+      "end_time": 7.68
+    },
+    {
+      "text": "TO",
+      "start_time": 7.68,
+      "end_time": 7.76
+    },
+    {
+      "text": "TIME",
+      "start_time": 7.76,
+      "end_time": 8.08
+    },
+    {
+      "text": "BY",
+      "start_time": 8.08,
+      "end_time": 8.72
+    },
+    {
+      "text": "SAYING",
+      "start_time": 8.72,
+      "end_time": 8.72
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "4f268e938bf51a214ccad50e38bab32117b0a73708669999302a3d61a239a2d6",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

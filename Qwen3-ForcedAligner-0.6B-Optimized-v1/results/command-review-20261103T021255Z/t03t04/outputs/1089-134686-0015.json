@@ -1,0 +1,118 @@
+{
+  "id": "1089-134686-0015",
+  "language": "English",
+  "audio_seconds": 5.815,
+  "elapsed_seconds": 0.05530509818345308,
+  "classification_shape": [
+    135,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    2,
+    3,
+    3,
+    4,
+    4,
+    10,
+    14,
+    19,
+    19,
+    20,
+    20,
+    21,
+    21,
+    30,
+    33,
+    37,
+    37,
+    41,
+    41,
+    43,
+    43,
+    50,
+    60,
+    50,
+    61,
+    64,
+    64,
+    69
+  ],
+  "items": [
+    {
+      "text": "BUT",
+      "start_time": 0.16,
+      "end_time": 0.24
+    },
+    {
+      "text": "THE",
+      "start_time": 0.24,
+      "end_time": 0.32
+    },
+    {
+      "text": "DUSK",
+      "start_time": 0.32,
+      "end_time": 0.8
+    },
+    {
+      "text": "DEEPENING",
+      "start_time": 1.12,
+      "end_time": 1.52
+    },
+    {
+      "text": "IN",
+      "start_time": 1.52,
+      "end_time": 1.6
+    },
+    {
+      "text": "THE",
+      "start_time": 1.6,
+      "end_time": 1.68
+    },
+    {
+      "text": "SCHOOLROOM",
+      "start_time": 1.68,
+      "end_time": 2.4
+    },
+    {
+      "text": "COVERED",
+      "start_time": 2.64,
+      "end_time": 2.96
+    },
+    {
+      "text": "OVER",
+      "start_time": 2.96,
+      "end_time": 3.28
+    },
+    {
+      "text": "HIS",
+      "start_time": 3.28,
+      "end_time": 3.44
+    },
+    {
+      "text": "THOUGHTS",
+      "start_time": 3.44,
+      "end_time": 4.0
+    },
+    {
+      "text": "THE",
+      "start_time": 4.8,
+      "end_time": 4.8
+    },
+    {
+      "text": "BELL",
+      "start_time": 4.88,
+      "end_time": 5.12
+    },
+    {
+      "text": "RANG",
+      "start_time": 5.12,
+      "end_time": 5.52
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "4440e0bd69dac77ba559eb1f3f04b59067924a49bee6b723d77dc1bc2367c3f3",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

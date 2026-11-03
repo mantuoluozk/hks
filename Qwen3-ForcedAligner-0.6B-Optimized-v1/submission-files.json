@@ -1,11 +1,23 @@
 [
   {
     "path": ".gitattributes",
-    "bytes": 104
+    "bytes": 155
   },
   {
     "path": ".gitignore",
-    "bytes": 74
+    "bytes": 92
+  },
+  {
+    "path": "baselines/Qwen3-ForcedAligner-0.6B.json",
+    "bytes": 672
+  },
+  {
+    "path": "bench/benchmark.log",
+    "bytes": 33518
+  },
+  {
+    "path": "bench/requests.jsonl",
+    "bytes": 1005598
   },
   {
     "path": "bench/round1.jsonl",
@@ -16,8 +28,16 @@
     "bytes": 928
   },
   {
+    "path": "bench/summary.md",
+    "bytes": 378
+  },
+  {
     "path": "bench.sh",
     "bytes": 112
+  },
+  {
+    "path": "data/README.md",
+    "bytes": 548
   },
   {
     "path": "env.log",
@@ -29,11 +49,347 @@
   },
   {
     "path": "env_check.sh",
-    "bytes": 255
+    "bytes": 272
+  },
+  {
+    "path": "official.sh",
+    "bytes": 453
+  },
+  {
+    "path": "prepare_data.sh",
+    "bytes": 569
   },
   {
     "path": "README.md",
-    "bytes": 6450
+    "bytes": 7989
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/offline_alignment.log",
+    "bytes": 33517
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/smoke/bench/requests.jsonl",
+    "bytes": 1005584
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/smoke/bench/summary.json",
+    "bytes": 2638
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/smoke/en-demo.json",
+    "bytes": 4000
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/smoke/summary.json",
+    "bytes": 7541
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/smoke/zh-demo.json",
+    "bytes": 1541
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/bench.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/commands.json",
+    "bytes": 616
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/environment.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/run/offline_alignment.log",
+    "bytes": 31661
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/run/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/run/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/run/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/run/smoke/en-demo.json",
+    "bytes": 4000
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/run/smoke/summary.json",
+    "bytes": 7542
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/run/smoke/zh-demo.json",
+    "bytes": 1541
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/run/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/run.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/smoke/offline_alignment.log",
+    "bytes": 31662
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/smoke/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/smoke/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/smoke/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/smoke/smoke/en-demo.json",
+    "bytes": 4000
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/smoke/smoke/summary.json",
+    "bytes": 7541
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/smoke/smoke/zh-demo.json",
+    "bytes": 1541
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/smoke/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/smoke.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/bench.sh",
+    "bytes": 112
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/env.sh",
+    "bytes": 1203
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/env_check.sh",
+    "bytes": 255
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/official.sh",
+    "bytes": 453
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/provenance.json",
+    "bytes": 337
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/review_commands.py",
+    "bytes": 1029
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/run-scnet.sh",
+    "bytes": 173
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/run.sh",
+    "bytes": 424
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/run_official_conditions.py",
+    "bytes": 6950
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/smoke.sh",
+    "bytes": 112
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/smoke_offline.py",
+    "bytes": 7534
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/upstream_processor.py",
+    "bytes": 1177
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/verify.py",
+    "bytes": 2978
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/source/verify_official_conditions.py",
+    "bytes": 2794
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/state.json",
+    "bytes": 61
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/environment.json",
+    "bytes": 1101
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0000.json",
+    "bytes": 3345
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0001.json",
+    "bytes": 1329
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0002.json",
+    "bytes": 2343
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0003.json",
+    "bytes": 1225
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0004.json",
+    "bytes": 1636
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0005.json",
+    "bytes": 2754
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0006.json",
+    "bytes": 2951
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0007.json",
+    "bytes": 1334
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0008.json",
+    "bytes": 2036
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0009.json",
+    "bytes": 3229
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0010.json",
+    "bytes": 1915
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0011.json",
+    "bytes": 4472
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0012.json",
+    "bytes": 3361
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0013.json",
+    "bytes": 3015
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0014.json",
+    "bytes": 1317
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0015.json",
+    "bytes": 1932
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0016.json",
+    "bytes": 1528
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0017.json",
+    "bytes": 2935
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0019.json",
+    "bytes": 4490
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0021.json",
+    "bytes": 2228
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0022.json",
+    "bytes": 3764
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0023.json",
+    "bytes": 4171
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0024.json",
+    "bytes": 3565
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0025.json",
+    "bytes": 2326
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0026.json",
+    "bytes": 1825
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0027.json",
+    "bytes": 1420
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0028.json",
+    "bytes": 2342
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0029.json",
+    "bytes": 1634
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0030.json",
+    "bytes": 1037
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/outputs/1089-134686-0031.json",
+    "bytes": 1936
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/summary.json",
+    "bytes": 6766
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/verified-summary.json",
+    "bytes": 371
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04/反馈表.csv",
+    "bytes": 2316
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/t03t04.log",
+    "bytes": 25225
+  },
+  {
+    "path": "results/command-review-20261103T021255Z/verify.log",
+    "bytes": 153
   },
   {
     "path": "results/controller-v2.log",
@@ -384,6 +740,22 @@
     "bytes": 59
   },
   {
+    "path": "results/prepare-data-check.log",
+    "bytes": 55
+  },
+  {
+    "path": "results/review-controller.log",
+    "bytes": 0
+  },
+  {
+    "path": "results/review-current.json",
+    "bytes": 119
+  },
+  {
+    "path": "results/t03t04-historical-comparison.json",
+    "bytes": 3273
+  },
+  {
     "path": "run-scnet.sh",
     "bytes": 173
   },
@@ -408,6 +780,14 @@
     "bytes": 871
   },
   {
+    "path": "scripts/review_commands.py",
+    "bytes": 1029
+  },
+  {
+    "path": "scripts/run_official_conditions.py",
+    "bytes": 6950
+  },
+  {
     "path": "scripts/smoke_offline.py",
     "bytes": 7534
   },
@@ -416,8 +796,20 @@
     "bytes": 1177
   },
   {
+    "path": "scripts/verify_official_conditions.py",
+    "bytes": 3150
+  },
+  {
     "path": "scripts/write_optimized_report.py",
-    "bytes": 7137
+    "bytes": 9119
+  },
+  {
+    "path": "server.log",
+    "bytes": 31661
+  },
+  {
+    "path": "smoke.log",
+    "bytes": 31662
   },
   {
     "path": "smoke.sh",
@@ -448,8 +840,12 @@
     "bytes": 6607
   },
   {
+    "path": "sources/official-conditions.jsonl",
+    "bytes": 18931
+  },
+  {
     "path": "sources/official-t03t04-20261030.json",
-    "bytes": 509
+    "bytes": 725
   },
   {
     "path": "sources/report-image-status.json",
@@ -485,10 +881,10 @@
   },
   {
     "path": "verify.py",
-    "bytes": 2978
+    "bytes": 4233
   },
   {
     "path": "verify_result.json",
-    "bytes": 165
+    "bytes": 252
   }
 ]

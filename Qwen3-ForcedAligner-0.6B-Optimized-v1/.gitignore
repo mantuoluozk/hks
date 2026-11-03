@@ -1,5 +1,6 @@
 /cache/
-/data/
+/data/*
+!/data/README.md
 /weights/
 /artifacts/
 __pycache__/

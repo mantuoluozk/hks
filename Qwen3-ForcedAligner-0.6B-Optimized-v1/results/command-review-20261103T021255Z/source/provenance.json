@@ -1,0 +1,10 @@
+{
+  "existing_entrypoint_base": "c00c73c625d570c000d91540c9d124a671e41eb3",
+  "new_scripts": [
+    "official.sh",
+    "run_official_conditions.py",
+    "verify_official_conditions.py",
+    "review_commands.py"
+  ],
+  "scope": "Entrypoints used in command-review run; subsequent verifier additions are current published code"
+}

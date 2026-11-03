@@ -1,0 +1,34 @@
+{
+  "sourcefind_baseline": "df57f2b5bff16660b9d83e666c78d0eae5651738",
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237",
+  "python": "3.10.12",
+  "model_path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B",
+  "model_manifest_sha256": "00b0cb3520fa4d49c0be45b5866bdb8d842de5e2bdd3ea46272c60a532a33dff",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "transformers": "5.12.1",
+    "openai": "2.30.0",
+    "librosa": "0.11.0"
+  },
+  "devices": [
+    {
+      "name": "BW",
+      "arch": "gfx936:sramecc+:xnack-"
+    }
+  ],
+  "device_count": 1,
+  "dtype": "bfloat16",
+  "batch_size": 1,
+  "max_model_len": 8192,
+  "max_num_seqs": 8,
+  "gpu_memory_utilization": 0.35,
+  "enforce_eager": false,
+  "compilation_config": {
+    "mode": 3,
+    "cudagraph_mode": "PIECEWISE"
+  },
+  "enable_prefix_caching": false,
+  "mm_processor_cache_gb": 0,
+  "evaluation": "word timestamp predictions only; no boundary accuracy or AAS scoring"
+}

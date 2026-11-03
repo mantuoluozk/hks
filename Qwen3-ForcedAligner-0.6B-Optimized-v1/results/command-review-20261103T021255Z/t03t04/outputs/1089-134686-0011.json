@@ -1,0 +1,293 @@
+{
+  "id": "1089-134686-0011",
+  "language": "English",
+  "audio_seconds": 12.445,
+  "elapsed_seconds": 0.06295742187649012,
+  "classification_shape": [
+    311,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    7,
+    9,
+    9,
+    14,
+    14,
+    22,
+    22,
+    24,
+    24,
+    25,
+    24,
+    33,
+    33,
+    37,
+    37,
+    38,
+    38,
+    39,
+    39,
+    46,
+    46,
+    48,
+    48,
+    54,
+    54,
+    54,
+    54,
+    58,
+    58,
+    63,
+    68,
+    71,
+    71,
+    77,
+    77,
+    79,
+    79,
+    80,
+    80,
+    94,
+    87,
+    93,
+    93,
+    98,
+    98,
+    100,
+    99,
+    101,
+    101,
+    104,
+    104,
+    105,
+    105,
+    107,
+    107,
+    112,
+    112,
+    116,
+    116,
+    119,
+    118,
+    120,
+    120,
+    124,
+    124,
+    126,
+    126,
+    129,
+    129,
+    130,
+    131,
+    136,
+    136,
+    140,
+    139,
+    140,
+    140,
+    150
+  ],
+  "items": [
+    {
+      "text": "ON",
+      "start_time": 0.56,
+      "end_time": 0.72
+    },
+    {
+      "text": "SATURDAY",
+      "start_time": 0.72,
+      "end_time": 1.12
+    },
+    {
+      "text": "MORNINGS",
+      "start_time": 1.12,
+      "end_time": 1.76
+    },
+    {
+      "text": "WHEN",
+      "start_time": 1.76,
+      "end_time": 1.92
+    },
+    {
+      "text": "THE",
+      "start_time": 1.92,
+      "end_time": 2.0
+    },
+    {
+      "text": "SODALITY",
+      "start_time": 2.0,
+      "end_time": 2.64
+    },
+    {
+      "text": "MET",
+      "start_time": 2.64,
+      "end_time": 2.96
+    },
+    {
+      "text": "IN",
+      "start_time": 2.96,
+      "end_time": 3.04
+    },
+    {
+      "text": "THE",
+      "start_time": 3.04,
+      "end_time": 3.12
+    },
+    {
+      "text": "CHAPEL",
+      "start_time": 3.12,
+      "end_time": 3.68
+    },
+    {
+      "text": "TO",
+      "start_time": 3.68,
+      "end_time": 3.84
+    },
+    {
+      "text": "RECITE",
+      "start_time": 3.84,
+      "end_time": 4.32
+    },
+    {
+      "text": "THE",
+      "start_time": 4.32,
+      "end_time": 4.32
+    },
+    {
+      "text": "LITTLE",
+      "start_time": 4.32,
+      "end_time": 4.64
+    },
+    {
+      "text": "OFFICE",
+      "start_time": 4.64,
+      "end_time": 5.04
+    },
+    {
+      "text": "HIS",
+      "start_time": 5.44,
+      "end_time": 5.68
+    },
+    {
+      "text": "PLACE",
+      "start_time": 5.68,
+      "end_time": 6.16
+    },
+    {
+      "text": "WAS",
+      "start_time": 6.16,
+      "end_time": 6.32
+    },
+    {
+      "text": "A",
+      "start_time": 6.32,
+      "end_time": 6.4
+    },
+    {
+      "text": "CUSHIONED",
+      "start_time": 6.4,
+      "end_time": 6.4
+    },
+    {
+      "text": "KNEELING",
+      "start_time": 6.96,
+      "end_time": 7.44
+    },
+    {
+      "text": "DESK",
+      "start_time": 7.44,
+      "end_time": 7.84
+    },
+    {
+      "text": "AT",
+      "start_time": 7.84,
+      "end_time": 8.0
+    },
+    {
+      "text": "THE",
+      "start_time": 8.0,
+      "end_time": 8.08
+    },
+    {
+      "text": "RIGHT",
+      "start_time": 8.08,
+      "end_time": 8.32
+    },
+    {
+      "text": "OF",
+      "start_time": 8.32,
+      "end_time": 8.4
+    },
+    {
+      "text": "THE",
+      "start_time": 8.4,
+      "end_time": 8.56
+    },
+    {
+      "text": "ALTAR",
+      "start_time": 8.56,
+      "end_time": 8.96
+    },
+    {
+      "text": "FROM",
+      "start_time": 8.96,
+      "end_time": 9.28
+    },
+    {
+      "text": "WHICH",
+      "start_time": 9.28,
+      "end_time": 9.52
+    },
+    {
+      "text": "HE",
+      "start_time": 9.52,
+      "end_time": 9.6
+    },
+    {
+      "text": "LED",
+      "start_time": 9.6,
+      "end_time": 9.92
+    },
+    {
+      "text": "HIS",
+      "start_time": 9.92,
+      "end_time": 10.08
+    },
+    {
+      "text": "WING",
+      "start_time": 10.08,
+      "end_time": 10.32
+    },
+    {
+      "text": "OF",
+      "start_time": 10.32,
+      "end_time": 10.4
+    },
+    {
+      "text": "BOYS",
+      "start_time": 10.48,
+      "end_time": 10.88
+    },
+    {
+      "text": "THROUGH",
+      "start_time": 10.88,
+      "end_time": 11.2
+    },
+    {
+      "text": "THE",
+      "start_time": 11.2,
+      "end_time": 11.2
+    },
+    {
+      "text": "RESPONSES",
+      "start_time": 11.2,
+      "end_time": 12.0
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "c65e16be3ef92c11a31a9c2c4c570542eb2ed66153150a7c4cca00c01b30a4e2",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

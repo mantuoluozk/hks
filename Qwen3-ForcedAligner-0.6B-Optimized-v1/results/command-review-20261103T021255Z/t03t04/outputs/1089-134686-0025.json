@@ -1,0 +1,146 @@
+{
+  "id": "1089-134686-0025",
+  "language": "English",
+  "audio_seconds": 6.61,
+  "elapsed_seconds": 0.0565197728574276,
+  "classification_shape": [
+    154,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    7,
+    8,
+    8,
+    12,
+    12,
+    16,
+    16,
+    18,
+    18,
+    19,
+    19,
+    23,
+    23,
+    28,
+    28,
+    29,
+    29,
+    30,
+    30,
+    34,
+    34,
+    40,
+    45,
+    49,
+    49,
+    56,
+    56,
+    57,
+    58,
+    62,
+    62,
+    63,
+    63,
+    70,
+    70,
+    77
+  ],
+  "items": [
+    {
+      "text": "A",
+      "start_time": 0.56,
+      "end_time": 0.64
+    },
+    {
+      "text": "GENTLE",
+      "start_time": 0.64,
+      "end_time": 0.96
+    },
+    {
+      "text": "KICK",
+      "start_time": 0.96,
+      "end_time": 1.28
+    },
+    {
+      "text": "FROM",
+      "start_time": 1.28,
+      "end_time": 1.44
+    },
+    {
+      "text": "THE",
+      "start_time": 1.44,
+      "end_time": 1.52
+    },
+    {
+      "text": "TALL",
+      "start_time": 1.52,
+      "end_time": 1.84
+    },
+    {
+      "text": "BOY",
+      "start_time": 1.84,
+      "end_time": 2.24
+    },
+    {
+      "text": "IN",
+      "start_time": 2.24,
+      "end_time": 2.32
+    },
+    {
+      "text": "THE",
+      "start_time": 2.32,
+      "end_time": 2.4
+    },
+    {
+      "text": "BENCH",
+      "start_time": 2.4,
+      "end_time": 2.72
+    },
+    {
+      "text": "BEHIND",
+      "start_time": 2.72,
+      "end_time": 3.2
+    },
+    {
+      "text": "URGED",
+      "start_time": 3.6,
+      "end_time": 3.92
+    },
+    {
+      "text": "STEPHEN",
+      "start_time": 3.92,
+      "end_time": 4.48
+    },
+    {
+      "text": "TO",
+      "start_time": 4.48,
+      "end_time": 4.56
+    },
+    {
+      "text": "ASK",
+      "start_time": 4.64,
+      "end_time": 4.96
+    },
+    {
+      "text": "A",
+      "start_time": 4.96,
+      "end_time": 5.04
+    },
+    {
+      "text": "DIFFICULT",
+      "start_time": 5.04,
+      "end_time": 5.6
+    },
+    {
+      "text": "QUESTION",
+      "start_time": 5.6,
+      "end_time": 6.16
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "9934498b7116a4615d5f53ca2ea193e90de210ed89c3b472d29c644173544537",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

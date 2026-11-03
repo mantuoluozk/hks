@@ -1,6 +1,9 @@
 {
   "requests": 512,
   "functional_cases": 2,
+  "review_requests": 512,
+  "t03t04_successful": 30,
+  "review_commands_exit_zero": 6,
   "max_historical_boundary_difference_seconds": 0.08000000000000007,
   "passed": true,
   "official_acceptance": null

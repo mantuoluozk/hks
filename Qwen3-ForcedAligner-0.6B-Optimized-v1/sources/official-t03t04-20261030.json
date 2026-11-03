@@ -8,5 +8,9 @@
   "baseline_helpers": {
     "upstream_processor.py": "eafa5732bef8086b4ed4cc0b12feaaf22d715124cb1440bf588aee8933ade9eb",
     "smoke_offline.py": "d5e22286d570700f11a149978bc69dfb33a1f8d04428d0709e6f798d788881bb"
+  },
+  "runtime_helpers": {
+    "smoke_offline.py": "794de28fe8bd8f84f50d0562a161ffff7e76612c4815fd2cca9fdf9d63d563d4",
+    "upstream_processor.py": "eafa5732bef8086b4ed4cc0b12feaaf22d715124cb1440bf588aee8933ade9eb"
   }
 }

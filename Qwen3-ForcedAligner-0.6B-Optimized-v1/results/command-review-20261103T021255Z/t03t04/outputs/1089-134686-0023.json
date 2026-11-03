@@ -1,0 +1,272 @@
+{
+  "id": "1089-134686-0023",
+  "language": "English",
+  "audio_seconds": 13.275,
+  "elapsed_seconds": 0.06237336993217468,
+  "classification_shape": [
+    308,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    5,
+    8,
+    8,
+    10,
+    10,
+    11,
+    11,
+    20,
+    20,
+    21,
+    21,
+    22,
+    22,
+    30,
+    30,
+    40,
+    40,
+    43,
+    43,
+    44,
+    45,
+    48,
+    47,
+    55,
+    55,
+    57,
+    58,
+    61,
+    61,
+    65,
+    65,
+    70,
+    74,
+    76,
+    76,
+    82,
+    82,
+    97,
+    97,
+    101,
+    90,
+    96,
+    97,
+    101,
+    101,
+    103,
+    103,
+    108,
+    111,
+    118,
+    118,
+    119,
+    119,
+    128,
+    130,
+    132,
+    132,
+    133,
+    133,
+    136,
+    136,
+    144,
+    144,
+    149,
+    149,
+    150,
+    150,
+    151,
+    151,
+    155,
+    155,
+    161
+  ],
+  "items": [
+    {
+      "text": "WHY",
+      "start_time": 0.4,
+      "end_time": 0.64
+    },
+    {
+      "text": "WAS",
+      "start_time": 0.64,
+      "end_time": 0.8
+    },
+    {
+      "text": "THE",
+      "start_time": 0.8,
+      "end_time": 0.88
+    },
+    {
+      "text": "SACRAMENT",
+      "start_time": 0.88,
+      "end_time": 1.6
+    },
+    {
+      "text": "OF",
+      "start_time": 1.6,
+      "end_time": 1.68
+    },
+    {
+      "text": "THE",
+      "start_time": 1.68,
+      "end_time": 1.76
+    },
+    {
+      "text": "EUCHARIST",
+      "start_time": 1.76,
+      "end_time": 2.4
+    },
+    {
+      "text": "INSTITUTED",
+      "start_time": 2.4,
+      "end_time": 3.2
+    },
+    {
+      "text": "UNDER",
+      "start_time": 3.2,
+      "end_time": 3.44
+    },
+    {
+      "text": "THE",
+      "start_time": 3.44,
+      "end_time": 3.52
+    },
+    {
+      "text": "TWO",
+      "start_time": 3.6,
+      "end_time": 3.84
+    },
+    {
+      "text": "SPECIES",
+      "start_time": 3.84,
+      "end_time": 4.4
+    },
+    {
+      "text": "OF",
+      "start_time": 4.4,
+      "end_time": 4.56
+    },
+    {
+      "text": "BREAD",
+      "start_time": 4.64,
+      "end_time": 4.88
+    },
+    {
+      "text": "AND",
+      "start_time": 4.88,
+      "end_time": 5.2
+    },
+    {
+      "text": "WINE",
+      "start_time": 5.2,
+      "end_time": 5.6
+    },
+    {
+      "text": "IF",
+      "start_time": 5.92,
+      "end_time": 6.08
+    },
+    {
+      "text": "JESUS",
+      "start_time": 6.08,
+      "end_time": 6.56
+    },
+    {
+      "text": "CHRIST",
+      "start_time": 6.56,
+      "end_time": 7.76
+    },
+    {
+      "text": "BE",
+      "start_time": 7.76,
+      "end_time": 8.08
+    },
+    {
+      "text": "PRESENT",
+      "start_time": 8.08,
+      "end_time": 8.08
+    },
+    {
+      "text": "BODY",
+      "start_time": 8.08,
+      "end_time": 8.08
+    },
+    {
+      "text": "AND",
+      "start_time": 8.08,
+      "end_time": 8.24
+    },
+    {
+      "text": "BLOOD",
+      "start_time": 8.24,
+      "end_time": 8.64
+    },
+    {
+      "text": "SOUL",
+      "start_time": 8.88,
+      "end_time": 9.44
+    },
+    {
+      "text": "AND",
+      "start_time": 9.44,
+      "end_time": 9.52
+    },
+    {
+      "text": "DIVINITY",
+      "start_time": 9.52,
+      "end_time": 10.24
+    },
+    {
+      "text": "IN",
+      "start_time": 10.4,
+      "end_time": 10.56
+    },
+    {
+      "text": "THE",
+      "start_time": 10.56,
+      "end_time": 10.64
+    },
+    {
+      "text": "BREAD",
+      "start_time": 10.64,
+      "end_time": 10.88
+    },
+    {
+      "text": "ALONE",
+      "start_time": 10.88,
+      "end_time": 11.52
+    },
+    {
+      "text": "AND",
+      "start_time": 11.52,
+      "end_time": 11.92
+    },
+    {
+      "text": "IN",
+      "start_time": 11.92,
+      "end_time": 12.0
+    },
+    {
+      "text": "THE",
+      "start_time": 12.0,
+      "end_time": 12.08
+    },
+    {
+      "text": "WINE",
+      "start_time": 12.08,
+      "end_time": 12.4
+    },
+    {
+      "text": "ALONE",
+      "start_time": 12.4,
+      "end_time": 12.88
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "abf6b6fb970728598e2b6375e56e23bb9b9aded13e39d21d1d01625302140424",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

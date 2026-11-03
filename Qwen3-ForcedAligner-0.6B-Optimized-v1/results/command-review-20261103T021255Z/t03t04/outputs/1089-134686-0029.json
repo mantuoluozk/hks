@@ -1,0 +1,97 @@
+{
+  "id": "1089-134686-0029",
+  "language": "English",
+  "audio_seconds": 4.67,
+  "elapsed_seconds": 0.06082708900794387,
+  "classification_shape": [
+    107,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    3,
+    5,
+    5,
+    11,
+    14,
+    22,
+    22,
+    24,
+    24,
+    26,
+    26,
+    32,
+    32,
+    36,
+    36,
+    37,
+    37,
+    45,
+    45,
+    49,
+    49,
+    55
+  ],
+  "items": [
+    {
+      "text": "ON",
+      "start_time": 0.24,
+      "end_time": 0.4
+    },
+    {
+      "text": "FRIDAY",
+      "start_time": 0.4,
+      "end_time": 0.88
+    },
+    {
+      "text": "CONFESSION",
+      "start_time": 1.12,
+      "end_time": 1.76
+    },
+    {
+      "text": "WILL",
+      "start_time": 1.76,
+      "end_time": 1.92
+    },
+    {
+      "text": "BE",
+      "start_time": 1.92,
+      "end_time": 2.08
+    },
+    {
+      "text": "HEARD",
+      "start_time": 2.08,
+      "end_time": 2.56
+    },
+    {
+      "text": "ALL",
+      "start_time": 2.56,
+      "end_time": 2.88
+    },
+    {
+      "text": "THE",
+      "start_time": 2.88,
+      "end_time": 2.96
+    },
+    {
+      "text": "AFTERNOON",
+      "start_time": 2.96,
+      "end_time": 3.6
+    },
+    {
+      "text": "AFTER",
+      "start_time": 3.6,
+      "end_time": 3.92
+    },
+    {
+      "text": "BEADS",
+      "start_time": 3.92,
+      "end_time": 4.4
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "7f824865381e4799e1144317518c65faf1b60595bc1b32e12be5ba49e3406875",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

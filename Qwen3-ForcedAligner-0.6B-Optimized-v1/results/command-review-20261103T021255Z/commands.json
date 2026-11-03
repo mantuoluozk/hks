@@ -1,0 +1,50 @@
+[
+  {
+    "stage": "environment",
+    "command": [
+      "bash",
+      "env_check.sh"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "run",
+    "command": [
+      "bash",
+      "run.sh"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "smoke",
+    "command": [
+      "bash",
+      "smoke.sh"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "bench",
+    "command": [
+      "bash",
+      "bench.sh"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "t03t04",
+    "command": [
+      "bash",
+      "official.sh"
+    ],
+    "exit": 0
+  },
+  {
+    "stage": "verify",
+    "command": [
+      "python",
+      "verify.py"
+    ],
+    "exit": 0
+  }
+]

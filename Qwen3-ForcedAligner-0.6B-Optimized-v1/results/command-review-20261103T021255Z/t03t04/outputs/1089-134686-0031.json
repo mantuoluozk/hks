@@ -1,0 +1,118 @@
+{
+  "id": "1089-134686-0031",
+  "language": "English",
+  "audio_seconds": 6.615,
+  "elapsed_seconds": 0.05850492184981704,
+  "classification_shape": [
+    143,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    6,
+    14,
+    14,
+    18,
+    18,
+    25,
+    25,
+    32,
+    32,
+    34,
+    33,
+    40,
+    40,
+    43,
+    43,
+    49,
+    49,
+    51,
+    51,
+    58,
+    61,
+    63,
+    63,
+    64,
+    64,
+    70,
+    70,
+    76
+  ],
+  "items": [
+    {
+      "text": "STEPHEN'S",
+      "start_time": 0.48,
+      "end_time": 1.12
+    },
+    {
+      "text": "HEART",
+      "start_time": 1.12,
+      "end_time": 1.44
+    },
+    {
+      "text": "BEGAN",
+      "start_time": 1.44,
+      "end_time": 2.0
+    },
+    {
+      "text": "SLOWLY",
+      "start_time": 2.0,
+      "end_time": 2.56
+    },
+    {
+      "text": "TO",
+      "start_time": 2.56,
+      "end_time": 2.72
+    },
+    {
+      "text": "FOLD",
+      "start_time": 2.72,
+      "end_time": 3.2
+    },
+    {
+      "text": "AND",
+      "start_time": 3.2,
+      "end_time": 3.44
+    },
+    {
+      "text": "FADE",
+      "start_time": 3.44,
+      "end_time": 3.92
+    },
+    {
+      "text": "WITH",
+      "start_time": 3.92,
+      "end_time": 4.08
+    },
+    {
+      "text": "FEAR",
+      "start_time": 4.08,
+      "end_time": 4.64
+    },
+    {
+      "text": "LIKE",
+      "start_time": 4.88,
+      "end_time": 5.04
+    },
+    {
+      "text": "A",
+      "start_time": 5.04,
+      "end_time": 5.12
+    },
+    {
+      "text": "WITHERING",
+      "start_time": 5.12,
+      "end_time": 5.6
+    },
+    {
+      "text": "FLOWER",
+      "start_time": 5.6,
+      "end_time": 6.08
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "e9d6ee47f526a14a2210f4a131b77b1265057a56f8830f27d71413170a1b7fc3",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

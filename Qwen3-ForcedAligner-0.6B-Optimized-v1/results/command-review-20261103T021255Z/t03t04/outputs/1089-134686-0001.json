@@ -1,0 +1,76 @@
+{
+  "id": "1089-134686-0001",
+  "language": "English",
+  "audio_seconds": 3.275,
+  "elapsed_seconds": 0.05956369312480092,
+  "classification_shape": [
+    77,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    4,
+    10,
+    10,
+    11,
+    11,
+    18,
+    14,
+    18,
+    20,
+    22,
+    22,
+    27,
+    27,
+    35,
+    33,
+    36
+  ],
+  "items": [
+    {
+      "text": "STUFF",
+      "start_time": 0.32,
+      "end_time": 0.8
+    },
+    {
+      "text": "IT",
+      "start_time": 0.8,
+      "end_time": 0.88
+    },
+    {
+      "text": "INTO",
+      "start_time": 0.88,
+      "end_time": 1.44
+    },
+    {
+      "text": "YOU",
+      "start_time": 1.44,
+      "end_time": 1.44
+    },
+    {
+      "text": "HIS",
+      "start_time": 1.6,
+      "end_time": 1.76
+    },
+    {
+      "text": "BELLY",
+      "start_time": 1.76,
+      "end_time": 2.16
+    },
+    {
+      "text": "COUNSELLED",
+      "start_time": 2.16,
+      "end_time": 2.8
+    },
+    {
+      "text": "HIM",
+      "start_time": 2.8,
+      "end_time": 2.88
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "3fc09ec6d4cc496c530b2019b17bd8fc8ef8a43d6697090971dd1d52cc3d4d89",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

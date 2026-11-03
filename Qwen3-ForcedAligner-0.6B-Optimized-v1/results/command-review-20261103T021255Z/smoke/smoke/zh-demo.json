@@ -1,0 +1,106 @@
+{
+  "id": "zh-demo",
+  "language": "Chinese",
+  "audio_seconds": 4.2039375,
+  "elapsed_seconds": 0.06540976976975799,
+  "classification_shape": [
+    96,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    5,
+    9,
+    9,
+    12,
+    12,
+    14,
+    14,
+    19,
+    19,
+    22,
+    22,
+    25,
+    25,
+    28,
+    28,
+    31,
+    31,
+    34,
+    34,
+    36,
+    36,
+    38,
+    38,
+    42,
+    42,
+    46
+  ],
+  "items": [
+    {
+      "text": "甚",
+      "start_time": 0.4,
+      "end_time": 0.72
+    },
+    {
+      "text": "至",
+      "start_time": 0.72,
+      "end_time": 0.96
+    },
+    {
+      "text": "出",
+      "start_time": 0.96,
+      "end_time": 1.12
+    },
+    {
+      "text": "现",
+      "start_time": 1.12,
+      "end_time": 1.52
+    },
+    {
+      "text": "交",
+      "start_time": 1.52,
+      "end_time": 1.76
+    },
+    {
+      "text": "易",
+      "start_time": 1.76,
+      "end_time": 2.0
+    },
+    {
+      "text": "几",
+      "start_time": 2.0,
+      "end_time": 2.24
+    },
+    {
+      "text": "乎",
+      "start_time": 2.24,
+      "end_time": 2.48
+    },
+    {
+      "text": "停",
+      "start_time": 2.48,
+      "end_time": 2.72
+    },
+    {
+      "text": "滞",
+      "start_time": 2.72,
+      "end_time": 2.88
+    },
+    {
+      "text": "的",
+      "start_time": 2.88,
+      "end_time": 3.04
+    },
+    {
+      "text": "情",
+      "start_time": 3.04,
+      "end_time": 3.36
+    },
+    {
+      "text": "况",
+      "start_time": 3.36,
+      "end_time": 3.68
+    }
+  ],
+  "format_monotonicity_bounds_passed": true
+}

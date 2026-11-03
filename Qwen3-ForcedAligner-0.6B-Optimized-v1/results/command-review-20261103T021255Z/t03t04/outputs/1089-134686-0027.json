@@ -1,0 +1,83 @@
+{
+  "id": "1089-134686-0027",
+  "language": "English",
+  "audio_seconds": 2.71,
+  "elapsed_seconds": 0.056209534872323275,
+  "classification_shape": [
+    70,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    3,
+    5,
+    5,
+    18,
+    12,
+    18,
+    14,
+    18,
+    18,
+    19,
+    19,
+    20,
+    20,
+    25,
+    25,
+    27,
+    27,
+    31
+  ],
+  "items": [
+    {
+      "text": "HE",
+      "start_time": 0.24,
+      "end_time": 0.4
+    },
+    {
+      "text": "CLASPED",
+      "start_time": 0.4,
+      "end_time": 1.44
+    },
+    {
+      "text": "HIS",
+      "start_time": 1.44,
+      "end_time": 1.44
+    },
+    {
+      "text": "HANDS",
+      "start_time": 1.44,
+      "end_time": 1.44
+    },
+    {
+      "text": "ON",
+      "start_time": 1.44,
+      "end_time": 1.52
+    },
+    {
+      "text": "THE",
+      "start_time": 1.52,
+      "end_time": 1.6
+    },
+    {
+      "text": "DESK",
+      "start_time": 1.6,
+      "end_time": 2.0
+    },
+    {
+      "text": "AND",
+      "start_time": 2.0,
+      "end_time": 2.16
+    },
+    {
+      "text": "SAID",
+      "start_time": 2.16,
+      "end_time": 2.48
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "37ce07bf0134668962e092239c28205922641d1728dc0c79d52c951de3631e88",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

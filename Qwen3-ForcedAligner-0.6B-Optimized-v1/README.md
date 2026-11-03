@@ -9,10 +9,12 @@
 | 验证项 | 本轮结果 |
 |---|---|
 | 运行文件 | 9项固定来源文件SHA256通过 |
-| 功能 | 最终与默认入口各中英文2/2 |
+| 功能 | 最终、默认入口和评审命令实跑中英文均2/2 |
+| T03/T04专项 | 优化配置30/30生成，原始输出和反馈完整 |
 | 性能 | 批次1/2/4/8各两轮，共512条计数输入 |
 | 时间戳对照 | 本轮批次与单条一致；相对首版历史最大80ms差异 |
-| 独立进程完整性能复现 / 官方验收 | 未判定，null |
+| 独立进程完整性能复跑 | 评审命令另512条完成；吞吐最大偏差19.79% |
+| 官方验收 | 未判定，null |
 
 ## 2. 环境
 
@@ -48,19 +50,26 @@ HIP版本`6.3.26113`；设备`BW`，显存63.98GiB，TP1。未新增依赖，未
 权重路径可通过MODEL_PATH设置，默认`/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B`。代码部署到`/root/private_data/hks/models/Qwen3-ForcedAligner-0.6B-Optimized-v1`，配套平台目录位于`/root/private_data/hks/platform/scnet-notebook`。音频按`sources/audio-sources.json`来源及校验准备，放`data/examples/`；不自动下载。
 
 ```bash
+bash prepare_data.sh
 bash env_check.sh
+bash run.sh
 bash smoke.sh
 RUN_RESULTS_DIR="$PWD/results/reproduce" bash bench.sh
+bash official.sh
 python verify.py
 ```
 
 | 文件 | 作用 / 产出 |
 |---|---|
+| `prepare_data.sh` / `data/README.md` | 指定现有输入目录并校验固定条件，无数据下载 |
+| `official.sh` | T03/T04专项30条生成及输出检查 |
+| `baselines/Qwen3-ForcedAligner-0.6B.json` | 发布者AAS参考值与适用范围 |
 | `env.sh` / `run-scnet.sh` | 统一环境参数 / 命令包装器 |
 | `env_check.sh` | 当前环境检查，输出`env.log` |
 | `run.sh` / `smoke.sh` | 权重校验、preflight及中英文对齐；离线CLI完成即退出 |
 | `bench.sh` | 四批次各两轮，保存逐条分类档位、时间戳及逐批耗时 |
 | `verify.py` | 核验保存的原始证据，输出`verify_result.json` |
+| `server.log` / `smoke.log` | 评审命令run/smoke的原始对齐日志 |
 | `bench/round1.jsonl` / `round2.jsonl` | 从原始汇总逐行导出对应轮四档，完整逐请求原始数据路径见第5章 |
 | `submission-files.json` | 当前发布文件与字节数清单 |
 
@@ -70,9 +79,14 @@ python verify.py
 
 最终配置中英文2/2完成，保存每个单元的起止秒数、原始分类档位、分类形状、批次耗时与逐边界差异。两条重复示例不是独立512条语料。完整原始记录见`results/optimization-20261103T014925Z/final/smoke/bench/requests.jsonl`；源配置、源码及运行日志在同一任务目录。
 
-## 6. 精度说明
+## 6. T03/T04固定条件与精度说明
 
-逐单元文本、时间戳与首版历史输出及本轮单条输出对照。原版批次8已有80ms差异；80ms为一档分类间隔及历史观察范围，不是官方精度容差。逐边界检查保留真实差异，不将格式与单调性通过当作AAS精度通过。最终512条各批次与本轮单条输出完全一致；相对首版历史单条输出最大边界差80ms，不能称与首版逐边界一致。本轮不新增完整精度评测，首版T03/T04的30条结果仍归属首版。
+优化配置实际完成英文LibriSpeech test-clean 30条、单条不超过15秒，BF16、seed42、给定文本。30/30成功，反馈表无失败；条件和音频在加载前逐项SHA256校验，输出词序、秒单位、单调性及边界范围通过。条件标记为BOUNDARIES_PENDING，未提供人工时间边界，未计算AAS。
+
+原始输出与反馈位于`results/command-review-20261103T021255Z/t03t04/`，包括30份JSON、反馈CSV、environment.json、summary.json、verified-summary.json。优化配置使用PIECEWISE和同进程引擎，准确参数记入环境；不是复制首版输出。首版逐边界对照29/30条完全一致，另1条最大差80ms，见`results/t03t04-historical-comparison.json`。
+
+
+逐单元文本、时间戳与首版历史输出及本轮单条输出对照。原版批次8已有80ms差异；80ms为一档分类间隔及历史观察范围，不是官方精度容差。逐边界检查保留真实差异，不将格式与单调性通过当作AAS精度通过。最终512条各批次与本轮单条输出完全一致；相对首版历史单条输出最大边界差80ms，不能称与首版逐边界一致。本轮完成优化版专项30条，不等于复现发布者AAS；首版专项结果独立保留。
 
 ## 7. 首次性能实测
 
@@ -85,8 +99,8 @@ python verify.py
 |4|249.071|432.003|73.45%|64/64|0.0|
 |8|398.082|622.492|56.37%|64/64|0.0|
 
-对照采用已发布首版历史第二轮，跨日期新Notebook；没有重新测首版，不声称严格同一进程A/B。完整逐批计时及汇总保留，两轮属于同一进程，不冒充独立进程复现。
+对照采用已发布首版历史第二轮，跨日期新Notebook；没有重新测首版，不声称严格同一进程A/B。完整逐批计时及汇总保留，首套两轮属于同一进程；本次另通过评审命令启动独立进程复跑512条，第二轮吞吐最大偏差19.79%，完整复跑数据位于`results/command-review-20261103T021255Z/bench/`。
 
 ## 8. 复现与限制
 
-本轮仅一套最终512输入协议，独立进程完整性能复现与官方验收未判定。强制对齐不生成1024输出token，不适用4K/16K×并发1/8/64的608条生成矩阵。示例任务覆盖English/Chinese，不宣称其他语言或完整语料表现。历史失败候选和原始记录保留，未改写为成功。
+首套正式512条与评审入口独立复跑512条分别保留。六条评审命令均实际返回0，见`results/command-review-20261103T021255Z/commands.json`；官方验收未判定。强制对齐不生成1024输出token，不适用4K/16K×并发1/8/64的608条生成矩阵。示例任务覆盖English/Chinese，不宣称其他语言或完整语料表现。历史失败候选和原始记录保留，未改写为成功。

@@ -1,0 +1,97 @@
+{
+  "id": "1089-134686-0004",
+  "language": "English",
+  "audio_seconds": 5.2150625,
+  "elapsed_seconds": 0.05802404182031751,
+  "classification_shape": [
+    110,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    3,
+    8,
+    10,
+    15,
+    18,
+    24,
+    24,
+    30,
+    30,
+    32,
+    32,
+    36,
+    36,
+    39,
+    39,
+    43,
+    52,
+    54,
+    54,
+    57,
+    57,
+    63
+  ],
+  "items": [
+    {
+      "text": "NUMBER",
+      "start_time": 0.24,
+      "end_time": 0.64
+    },
+    {
+      "text": "TEN",
+      "start_time": 0.8,
+      "end_time": 1.2
+    },
+    {
+      "text": "FRESH",
+      "start_time": 1.44,
+      "end_time": 1.92
+    },
+    {
+      "text": "NELLY",
+      "start_time": 1.92,
+      "end_time": 2.4
+    },
+    {
+      "text": "IS",
+      "start_time": 2.4,
+      "end_time": 2.56
+    },
+    {
+      "text": "WAITING",
+      "start_time": 2.56,
+      "end_time": 2.88
+    },
+    {
+      "text": "ON",
+      "start_time": 2.88,
+      "end_time": 3.12
+    },
+    {
+      "text": "YOU",
+      "start_time": 3.12,
+      "end_time": 3.44
+    },
+    {
+      "text": "GOOD",
+      "start_time": 4.16,
+      "end_time": 4.32
+    },
+    {
+      "text": "NIGHT",
+      "start_time": 4.32,
+      "end_time": 4.56
+    },
+    {
+      "text": "HUSBAND",
+      "start_time": 4.56,
+      "end_time": 5.04
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "5658bd6183a1360eca5f58d618ca2efbb5f1fdcd74332b849549e722cc65d6fe",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

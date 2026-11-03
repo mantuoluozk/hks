@@ -1,4 +1,4 @@
-import json,math
+import json,math,subprocess,sys
 from pathlib import Path
 R=Path(__file__).resolve().parent
 def read(p):return json.loads(p.read_text(encoding='utf8'))
@@ -35,7 +35,19 @@ for n in [1,2]:
  exported=[json.loads(x) for x in (R/'bench'/f'round{n}.jsonl').read_text(encoding='utf8').splitlines()]
  assert exported==[w for w in workloads if w['round']==n]
 assert read(R/'env.log')['native_token_classification_import']
+assert (R/'bench/requests.jsonl').read_bytes()==(O/'final/smoke/bench/requests.jsonl').read_bytes()
 assert max_hist<=0.080001,('Timestamp difference exceeds historical 80ms observation',max_hist)
-result={'requests':512,'functional_cases':2,'max_historical_boundary_difference_seconds':max_hist,'passed':True,'official_acceptance':None}
+J=R/'results'/Path(read(R/'results/review-current.json')['path']).name
+commands=read(J/'commands.json');assert len(commands)==6 and all(x['exit']==0 for x in commands)
+assert read(J/'state.json')['all_exit_zero']
+repeated=[json.loads(x) for x in (J/'bench/smoke/bench/requests.jsonl').read_text(encoding='utf8').splitlines()]
+assert len(repeated)==512 and sorted(x['request'] for x in repeated)==list(range(512))
+for w in read(J/'bench/smoke/bench/summary.json')['workloads']:
+ group=[x for x in repeated if (x['batch_size'],x['round'])==(w['batch_size'],w['round'])];assert len(group)==64
+ wall=sum(group[i]['batch_elapsed_seconds'] for i in range(0,64,w['batch_size']))
+ assert math.isclose(sum(x['audio_seconds'] for x in group)/wall,w['audio_seconds_per_wall_second'],rel_tol=1e-9)
+ assert all(x['format_monotonicity_bounds_passed'] and x['items']==refs[x['id']]['items'] for x in group)
+subprocess.run([sys.executable,str(R/'scripts/verify_official_conditions.py'),'--job',str(J/'t03t04'),'--conditions',str(R/'sources/official-conditions.jsonl')],check=True)
+result={'requests':512,'functional_cases':2,'review_requests':512,'t03t04_successful':30,'review_commands_exit_zero':6,'max_historical_boundary_difference_seconds':max_hist,'passed':True,'official_acceptance':None}
 (R/'verify_result.json').write_bytes((json.dumps(result,indent=2)+'\n').encode())
 print(json.dumps(result))

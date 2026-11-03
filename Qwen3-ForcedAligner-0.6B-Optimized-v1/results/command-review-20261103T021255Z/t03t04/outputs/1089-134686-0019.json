@@ -1,0 +1,293 @@
+{
+  "id": "1089-134686-0019",
+  "language": "English",
+  "audio_seconds": 13.895,
+  "elapsed_seconds": 0.06161544471979141,
+  "classification_shape": [
+    332,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    7,
+    8,
+    8,
+    14,
+    14,
+    15,
+    15,
+    20,
+    20,
+    26,
+    30,
+    32,
+    32,
+    38,
+    38,
+    45,
+    40,
+    45,
+    44,
+    47,
+    46,
+    53,
+    53,
+    58,
+    58,
+    61,
+    61,
+    69,
+    69,
+    74,
+    74,
+    79,
+    79,
+    80,
+    81,
+    86,
+    90,
+    92,
+    92,
+    98,
+    98,
+    101,
+    98,
+    101,
+    101,
+    107,
+    108,
+    108,
+    108,
+    116,
+    116,
+    122,
+    126,
+    131,
+    128,
+    133,
+    133,
+    140,
+    135,
+    140,
+    140,
+    142,
+    142,
+    148,
+    147,
+    148,
+    148,
+    149,
+    149,
+    156,
+    150,
+    169,
+    157,
+    159,
+    159,
+    162,
+    162,
+    169
+  ],
+  "items": [
+    {
+      "text": "THE",
+      "start_time": 0.56,
+      "end_time": 0.64
+    },
+    {
+      "text": "SENTENCE",
+      "start_time": 0.64,
+      "end_time": 1.12
+    },
+    {
+      "text": "OF",
+      "start_time": 1.12,
+      "end_time": 1.2
+    },
+    {
+      "text": "SAINT",
+      "start_time": 1.2,
+      "end_time": 1.6
+    },
+    {
+      "text": "JAMES",
+      "start_time": 1.6,
+      "end_time": 2.08
+    },
+    {
+      "text": "WHICH",
+      "start_time": 2.4,
+      "end_time": 2.56
+    },
+    {
+      "text": "SAYS",
+      "start_time": 2.56,
+      "end_time": 3.04
+    },
+    {
+      "text": "THAT",
+      "start_time": 3.04,
+      "end_time": 3.6
+    },
+    {
+      "text": "HE",
+      "start_time": 3.6,
+      "end_time": 3.6
+    },
+    {
+      "text": "WHO",
+      "start_time": 3.6,
+      "end_time": 3.76
+    },
+    {
+      "text": "OFFENDS",
+      "start_time": 3.76,
+      "end_time": 4.24
+    },
+    {
+      "text": "AGAINST",
+      "start_time": 4.24,
+      "end_time": 4.64
+    },
+    {
+      "text": "ONE",
+      "start_time": 4.64,
+      "end_time": 4.88
+    },
+    {
+      "text": "COMMANDMENT",
+      "start_time": 4.88,
+      "end_time": 5.52
+    },
+    {
+      "text": "BECOMES",
+      "start_time": 5.52,
+      "end_time": 5.92
+    },
+    {
+      "text": "GUILTY",
+      "start_time": 5.92,
+      "end_time": 6.32
+    },
+    {
+      "text": "OF",
+      "start_time": 6.32,
+      "end_time": 6.4
+    },
+    {
+      "text": "ALL",
+      "start_time": 6.48,
+      "end_time": 6.88
+    },
+    {
+      "text": "HAD",
+      "start_time": 7.2,
+      "end_time": 7.36
+    },
+    {
+      "text": "SEEMED",
+      "start_time": 7.36,
+      "end_time": 7.84
+    },
+    {
+      "text": "TO",
+      "start_time": 7.84,
+      "end_time": 8.08
+    },
+    {
+      "text": "HIM",
+      "start_time": 8.08,
+      "end_time": 8.08
+    },
+    {
+      "text": "FIRST",
+      "start_time": 8.08,
+      "end_time": 8.56
+    },
+    {
+      "text": "A",
+      "start_time": 8.64,
+      "end_time": 8.64
+    },
+    {
+      "text": "SWOLLEN",
+      "start_time": 8.64,
+      "end_time": 9.28
+    },
+    {
+      "text": "PHRASE",
+      "start_time": 9.28,
+      "end_time": 9.76
+    },
+    {
+      "text": "UNTIL",
+      "start_time": 10.08,
+      "end_time": 10.48
+    },
+    {
+      "text": "HE",
+      "start_time": 10.48,
+      "end_time": 10.64
+    },
+    {
+      "text": "HAD",
+      "start_time": 10.64,
+      "end_time": 11.2
+    },
+    {
+      "text": "BEGUN",
+      "start_time": 11.2,
+      "end_time": 11.2
+    },
+    {
+      "text": "TO",
+      "start_time": 11.2,
+      "end_time": 11.36
+    },
+    {
+      "text": "GROPE",
+      "start_time": 11.36,
+      "end_time": 11.84
+    },
+    {
+      "text": "IN",
+      "start_time": 11.84,
+      "end_time": 11.84
+    },
+    {
+      "text": "THE",
+      "start_time": 11.84,
+      "end_time": 11.92
+    },
+    {
+      "text": "DARKNESS",
+      "start_time": 11.92,
+      "end_time": 12.48
+    },
+    {
+      "text": "OF",
+      "start_time": 12.48,
+      "end_time": 12.56
+    },
+    {
+      "text": "HIS",
+      "start_time": 12.56,
+      "end_time": 12.72
+    },
+    {
+      "text": "OWN",
+      "start_time": 12.72,
+      "end_time": 12.96
+    },
+    {
+      "text": "STATE",
+      "start_time": 12.96,
+      "end_time": 13.52
+    }
+  ],
+  "format_monotonicity_bounds_passed": true,
+  "timestamp_unit": "seconds",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "audio_sha256": "dde10b08d59f3dfa89a9b8731ffb0b39da00ac2b5b23115c2700ea312d5ff8cf",
+  "seed": 42,
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237"
+}

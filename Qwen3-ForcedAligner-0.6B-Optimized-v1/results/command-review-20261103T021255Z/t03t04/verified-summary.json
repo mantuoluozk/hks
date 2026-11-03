@@ -1,0 +1,14 @@
+{
+  "expected": 30,
+  "completed": 30,
+  "successful": 30,
+  "failed": 0,
+  "outputs_verified": 30,
+  "condition_ids_match": true,
+  "feedback_rows_match": true,
+  "transcript_words_match_inputs": true,
+  "timestamp_unit": "seconds",
+  "timestamps_monotonic_and_in_audio_bounds": true,
+  "boundary_accuracy_computed": false,
+  "evaluation_status": "BOUNDARIES_PENDING"
+}

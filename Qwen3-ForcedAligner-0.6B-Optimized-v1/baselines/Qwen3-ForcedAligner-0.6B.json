@@ -1,0 +1,18 @@
+{
+  "model": "Qwen/Qwen3-ForcedAligner-0.6B",
+  "metric": "AAS",
+  "unit": "ms",
+  "direction": "lower_is_better",
+  "publisher_source": "https://github.com/QwenLM/Qwen3-ASR#evaluation",
+  "publisher_reference": {
+    "MFA-Labeled Raw Chinese": 33.1,
+    "MFA-Labeled Raw English": 37.5,
+    "MFA-Labeled Raw average": 42.9,
+    "MFA-Labeled Concat-300s average": 52.9,
+    "Human-Labeled average": 32.4
+  },
+  "scope": "Different publisher evaluation groups; not directly comparable to the official 30 English condition outputs",
+  "official_conditions": "BOUNDARIES_PENDING; no reference timestamps provided",
+  "aas_computed": false,
+  "official_accuracy_pass": null
+}
