@@ -1,0 +1,9 @@
+{
+  "reason": "Entrant limited accuracy to same SGLang fixed 200 GSM8K sample; full test cancelled before launch",
+  "previous_state": {
+    "stage": "gsm8k",
+    "total": 1319,
+    "workers": 8
+  },
+  "predictions_file_exists": false
+}

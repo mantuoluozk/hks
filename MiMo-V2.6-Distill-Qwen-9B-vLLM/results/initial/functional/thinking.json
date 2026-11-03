@@ -1,0 +1,71 @@
+{
+  "request": {
+    "model": "mimo-v26-vllm",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What is 15% of 240?"
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "stream": false
+  },
+  "http_status": 200,
+  "raw_response": {
+    "id": "chatcmpl-bb1959aea8b19f67",
+    "object": "chat.completion",
+    "created": 1793689456,
+    "model": "mimo-v26-vllm",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "15% of 240 is **36**.\n\nCalculation: 240 × 0.15 = 36 (or 10% = 24, plus 5% = 12, so 24 + 12 = 36).",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": "Let me compute 15% of 240.\n\n15% = 0.15. 240 × 0.15 = 36.\n\nAlternatively, 10% of 240 = 24, 5% = 12, so 15% = 36.\n\nAnswer: 36."
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-15a97a6b",
+    "usage": {
+      "prompt_tokens": 19,
+      "total_tokens": 167,
+      "completion_tokens": 148,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "output": "15% of 240 is **36**.\n\nCalculation: 240 × 0.15 = 36 (or 10% = 24, plus 5% = 12, so 24 + 12 = 36).",
+  "reasoning": "Let me compute 15% of 240.\n\n15% = 0.15. 240 × 0.15 = 36.\n\nAlternatively, 10% of 240 = 24, 5% = 12, so 15% = 36.\n\nAnswer: 36.",
+  "tool_calls": [],
+  "usage": {
+    "prompt_tokens": 19,
+    "total_tokens": 167,
+    "completion_tokens": 148,
+    "prompt_tokens_details": null
+  },
+  "finish_reason": "stop",
+  "seconds": 6.1010842099785805,
+  "passed": true,
+  "id": "thinking"
+}

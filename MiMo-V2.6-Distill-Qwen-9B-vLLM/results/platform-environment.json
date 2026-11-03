@@ -1,0 +1,17 @@
+{
+  "image": "appstore.scnet.cn:5000/aihub/dcu/zack233/kimi-vl:v1.0.0",
+  "region": "华中一区【A区】",
+  "dtk": "DTK-26.04-blas-nightly-0921\nTue Sep 22 13:38:24 CST 2026",
+  "extra_packages": {
+    "vllm-hcu": "0.25.1+dtk2604.torch2110.2609272150.gee325d",
+    "aiter": "0.1.6+dtk2604.torch2110.2609242152.g36dc29",
+    "openai": "2.30.0",
+    "pillow": "11.3.0",
+    "requests": "2.34.2"
+  },
+  "shared_storage": {
+    "capacity_gib": 400,
+    "available_gib_at_preflight": 72
+  },
+  "root_fs_note": "Container overlay df view is not an independently verified Notebook disk quota"
+}

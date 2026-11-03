@@ -1,0 +1,9 @@
+{
+  "saved_evidence_exit": 0,
+  "missing_release_exit": 1,
+  "corrupt_compressed_evidence_exit": 1,
+  "mutable_live_log_exit": 0,
+  "downloaded_files_byte_verified": 556,
+  "model_requests_sent": 0,
+  "scope": "CPU delivery checker negative cases; isolated copies only"
+}

@@ -1,0 +1,43 @@
+{
+  "saved_evidence_checks_passed": true,
+  "functional_per_service": 17,
+  "counted_performance_requests": 608,
+  "counted_output_tokens": 622592,
+  "online_accuracy_executed": true,
+  "accuracy_required": true,
+  "functional_services": 5,
+  "gsm8k": {
+    "complete": true,
+    "dataset": "openai/gsm8k fixed SGLang-aligned sample",
+    "total": 200,
+    "correct": 181,
+    "accuracy_percent": 90.5,
+    "request_errors": 0,
+    "truncated": 1,
+    "unparsed": 1,
+    "technical_checks_passed": true,
+    "official_accuracy_pass": null,
+    "official_acceptance": null,
+    "scoring": "Unchanged SGLang public_eval.py: strip bold; last #### numeric; Decimal equality; final content only"
+  },
+  "latest_gsm8k": {
+    "complete": true,
+    "dataset": "openai/gsm8k fixed SGLang-aligned sample",
+    "total": 200,
+    "correct": 181,
+    "accuracy_percent": 90.5,
+    "request_errors": 0,
+    "truncated": 1,
+    "unparsed": 1,
+    "technical_checks_passed": true,
+    "official_accuracy_pass": null,
+    "official_acceptance": null,
+    "scoring": "Unchanged SGLang public_eval.py: strip bold; last #### numeric; Decimal equality; final content only"
+  },
+  "latest_matrix_checks_passed": true,
+  "latest_matrix_requests": 608,
+  "minimum_accuracy_reference": "Qwen/Qwen3.5-9B",
+  "official_accuracy_pass": null,
+  "official_acceptance": null,
+  "independent_service_full_reproduction": null
+}

@@ -1,0 +1,13 @@
+{
+  "distributions": {
+    "aiter": "0.1.6+dtk2604.torch2110.2609242152.g36dc29",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "vllm-hcu": "0.25.1+dtk2604.torch2110.2609272150.gee325d"
+  },
+  "notebook": {
+    "NOTEBOOK_CPU_NUM": null,
+    "NOTEBOOK_RAM_SIZE": null,
+    "NOTEBOOK_ACCELERATOR_MEMORY": null,
+    "NOTEBOOK_ACCELERATOR_NUM": null
+  }
+}

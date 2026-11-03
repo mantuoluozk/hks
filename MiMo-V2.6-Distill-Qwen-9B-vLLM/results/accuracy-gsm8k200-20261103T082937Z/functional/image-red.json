@@ -1,0 +1,86 @@
+{
+  "request": {
+    "model": "mimo-v26-vllm",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url_header": "data:image/png;base64",
+                "asset": "assets/3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd.png",
+                "sha256": "3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": "What color fills this image? Answer with one English word."
+          }
+        ]
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "stream": false
+  },
+  "http_status": 200,
+  "raw_response": {
+    "id": "chatcmpl-b47fc93408f6c96f",
+    "object": "chat.completion",
+    "created": 1793694752,
+    "model": "mimo-v26-vllm",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Red",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-bc0b7edb",
+    "usage": {
+      "prompt_tokens": 152,
+      "total_tokens": 154,
+      "completion_tokens": 2,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "output": "Red",
+  "reasoning": "",
+  "tool_calls": [],
+  "usage": {
+    "prompt_tokens": 152,
+    "total_tokens": 154,
+    "completion_tokens": 2,
+    "prompt_tokens_details": null
+  },
+  "finish_reason": "stop",
+  "seconds": 0.1613665595650673,
+  "passed": true,
+  "id": "image-red"
+}

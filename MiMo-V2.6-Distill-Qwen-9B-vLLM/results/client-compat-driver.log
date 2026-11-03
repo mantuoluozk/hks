@@ -1,0 +1,19 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+INFO 11-03 15:09:39 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-03 15:09:39 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-03 15:09:39 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-03 15:09:39 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/scripts/check_client.py", line 33, in <module>
+    request=serving.RequestFuncInput(prompt=[1,2],api_url='http://local-test/v1/completions',prompt_len=2,output_len=128,model='test')
+TypeError: RequestFuncInput.__init__() missing 3 required positional arguments: 'lora_name', 'image_data', and 'extra_request_body'

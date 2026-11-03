@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "measured_requests": 16,
+  "client_warmup_requests": 5,
+  "cells": [
+    {
+      "max_concurrency": 1,
+      "completed": 8,
+      "duration": 41.483652640134096,
+      "output_throughput": 24.684422292392668,
+      "mean_ttft_ms": 123.64424741826952,
+      "mean_tpot_ms": 39.840903577732114
+    },
+    {
+      "max_concurrency": 4,
+      "completed": 8,
+      "duration": 11.134942883159965,
+      "output_throughput": 91.96275281740833,
+      "mean_ttft_ms": 234.46025972953066,
+      "mean_tpot_ms": 41.94938372334788
+    }
+  ]
+}

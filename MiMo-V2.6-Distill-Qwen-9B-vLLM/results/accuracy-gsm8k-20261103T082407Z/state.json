@@ -1,0 +1,9 @@
+{
+  "stage": "cancelled",
+  "reason": "Scope reduced to original SGLang 200 GSM8K sample",
+  "stopped_harness_pids": [
+    9274
+  ],
+  "completed_records": 46,
+  "request_payloads_created": 54
+}

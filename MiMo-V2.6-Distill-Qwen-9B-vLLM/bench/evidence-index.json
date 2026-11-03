@@ -1,0 +1,6 @@
+{
+  "job": "../results/formal-20261103T072621Z",
+  "original_requests": "../results/formal-20261103T072621Z/round*-raw/requests-and-timing.jsonl",
+  "original_inputs": "../results/formal-20261103T072621Z/round*-raw/inputs.json",
+  "timing_scope": "Native token-ID /v1/completions client end-to-end; includes server queueing"
+}

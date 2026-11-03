@@ -1,0 +1,9 @@
+Completed 25 of 200
+Completed 50 of 200
+Completed 75 of 200
+Completed 100 of 200
+Completed 125 of 200
+Completed 150 of 200
+Completed 175 of 200
+Completed 200 of 200
+{"complete": true, "dataset": "openai/gsm8k fixed SGLang-aligned sample", "total": 200, "correct": 181, "accuracy_percent": 90.5, "request_errors": 0, "truncated": 1, "unparsed": 1, "technical_checks_passed": true, "official_accuracy_pass": null, "official_acceptance": null, "scoring": "Unchanged SGLang public_eval.py: strip bold; last #### numeric; Decimal equality; final content only"}

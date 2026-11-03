@@ -1,0 +1,8 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/scripts/initial_probe.py", line 18, in <module>
+    subprocess.run(command,cwd=ROOT,env=dict(os.environ,SMOKE_OUTPUT_DIR=str(out/'functional')),stdout=log,stderr=subprocess.STDOUT,check=True,timeout=1800)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', 'scripts/short.py', '--output', '/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/initial/short']' returned non-zero exit status 1.

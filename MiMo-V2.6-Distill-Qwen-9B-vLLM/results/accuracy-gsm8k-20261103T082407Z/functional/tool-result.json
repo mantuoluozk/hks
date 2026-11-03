@@ -1,0 +1,116 @@
+{
+  "request": {
+    "model": "mimo-v26-vllm",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Use add_numbers to add 2 and 3. Do not calculate it yourself."
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "chatcmpl-tool-91a4442b27f331f2",
+            "type": "function",
+            "function": {
+              "name": "add_numbers",
+              "arguments": "{\"a\": 2, \"b\": 3}"
+            }
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "chatcmpl-tool-91a4442b27f331f2",
+        "content": "5"
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "stream": false,
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "add_numbers",
+          "description": "Add two integers.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "a": {
+                "type": "integer"
+              },
+              "b": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "a",
+              "b"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "tool_choice": "none"
+  },
+  "http_status": 200,
+  "raw_response": {
+    "id": "chatcmpl-bca1b5e91e06edf0",
+    "object": "chat.completion",
+    "created": 1793694424,
+    "model": "mimo-v26-vllm",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "2 + 3 = 5",
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-bc0b7edb",
+    "usage": {
+      "prompt_tokens": 151,
+      "total_tokens": 159,
+      "completion_tokens": 8,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "output": "2 + 3 = 5",
+  "reasoning": "",
+  "tool_calls": [],
+  "usage": {
+    "prompt_tokens": 151,
+    "total_tokens": 159,
+    "completion_tokens": 8,
+    "prompt_tokens_details": null
+  },
+  "finish_reason": "stop",
+  "seconds": 0.20229461789131165,
+  "passed": true,
+  "id": "tool-result"
+}

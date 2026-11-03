@@ -1,0 +1,1 @@
+{"same_prompt_hashes": 200, "same_ground_truth": 200, "sglang_correct": 179, "vllm_correct": 181, "gained": 4, "lost": 2, "scope": "Paired fixed sample; different framework/image/date; no official acceptance claim"}

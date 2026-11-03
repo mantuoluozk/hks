@@ -1,0 +1,15 @@
+{
+  "encoding": "file-zlib-v1",
+  "bytes": 7988051,
+  "sha256": "ba20f494d029d25b045edc0b8c188559dc7643b172d086817df264324cdbe4d0",
+  "assets": [
+    {
+      "path": "assets/evidence/ba20f494d029d25b045edc0b8c188559dc7643b172d086817df264324cdbe4d0.part00.zlib",
+      "sha256": "1443320ae71a12aa04f80acb4da5f678cfc5c94e21c429660affb241378beae5"
+    },
+    {
+      "path": "assets/evidence/ba20f494d029d25b045edc0b8c188559dc7643b172d086817df264324cdbe4d0.part01.zlib",
+      "sha256": "3724cd6caa5115dccc2858a4b8cfec637294feede9c324eb2d6043359aff8e0b"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "triton": "3.6.0+dtk2604.torch2110.2609231415.g8cce4a",
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2",
+    "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd"
+  },
+  "model_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/cache/preparation-weights-view",
+  "hks_root": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/cache/preparation-root",
+  "image_environment_fallback": true,
+  "gpu": "BW",
+  "memory": [
+    68365058048,
+    68702699520
+  ],
+  "hip": "6.3.26113",
+  "cpu_quota": "1500000 100000",
+  "memory_limit": "63350767616",
+  "native_model": "Qwen3_5ForConditionalGeneration",
+  "reasoning_parser": "Qwen3ParserReasoningAdapter",
+  "tool_parser": "Qwen3EngineToolParser",
+  "source_sha256": {
+    "model_executor/models/qwen3_5.py": "5f47ae4f4a08d0a78dd681d58b290f3298744c73a82f1349f3e2853469ef73e6",
+    "model_executor/layers/mamba/gdn/qwen_gdn_linear_attn.py": "97faa7eeb0c2a3ea0c51330a45c038d8c644c57da52946692168019585c6cee6",
+    "model_executor/layers/mamba/mamba_utils.py": "9aa40a17f77b29915b6df5098b8efc62f1a16511d5ca80d06ea5f2cbb8fde71a",
+    "reasoning/qwen3_engine_reasoning_parser.py": "0a0038bf94ff7b77dffe1a5737c16208f37b06535e1876e2e085f9a63310c742",
+    "tool_parsers/qwen3_engine_tool_parser.py": "3cf83a2a9408d72c79082825464b2c4dea1147ff390289dfb8936c5501114be9"
+  },
+  "model_inference_verified": false
+}

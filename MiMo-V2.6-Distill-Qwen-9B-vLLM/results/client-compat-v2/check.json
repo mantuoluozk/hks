@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "usage_only_empty_choices": true,
+  "actual_usage_not_budget": true,
+  "missing_usage_fails": true,
+  "http_failure_preserved": true,
+  "model_requests_sent": 0
+}

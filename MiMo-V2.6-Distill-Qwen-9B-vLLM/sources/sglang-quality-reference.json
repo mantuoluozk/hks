@@ -1,0 +1,9 @@
+{
+  "repository": "https://developer.sourcefind.cn/codes/zhengke/gxgm-hks",
+  "commit": "c48e74a169c25baedf389f4f62cf106c5e5b19f5",
+  "path": "MiMo-V2.6-Distill-Qwen-9B/scripts/public_eval.py",
+  "sha256": "19ea84fdf23729c8a12ee1072628b4df595e738ad04fb7347dbdba4d24aa5247",
+  "sample_sha256": "03bd22060d201b82f3545a56dc89a01d300a5406d79e1d51529fdedceb698546",
+  "sample_seed": 20261023,
+  "count": 200
+}

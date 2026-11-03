@@ -1,0 +1,42 @@
+{
+  "dataset": {
+    "repository": "openai/gsm8k",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "file": "main/test-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/test-00000-of-00001.parquet",
+    "source_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B/cache/datasets/gsm8k/main/test-00000-of-00001.parquet",
+    "source_bytes": 419088,
+    "source_sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+    "test_count": 1319,
+    "prepared_sha256": "752adc99f23132275139f1f7be57126b08735a55daf0c56859ee6df70abafbac",
+    "prepared_bytes": 748933
+  },
+  "few_shot": 0,
+  "workers": 8,
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 42,
+  "max_tokens": 4096,
+  "enable_thinking": true,
+  "ignore_eos": false,
+  "retries": 0,
+  "request_timeout_s": 600,
+  "prompt": "Solve the math problem. Explain briefly, then finish with #### followed by the final numeric answer.\n\n{question}",
+  "scorer": {
+    "repository": "openai/grade-school-math",
+    "revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+    "files": {
+      "dataset.py": {
+        "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/dataset.py",
+        "bytes": 2246,
+        "sha256": "c22b81bccaaebfd1123be296e8b3c3dca3ddc704c46b70bf4a50603bb627e197"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/LICENSE",
+        "bytes": 1062,
+        "sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b"
+      }
+    }
+  },
+  "scope": "Full GSM8K test self-evaluation; not a matched publisher or Qwen3.5-9B acceptance comparison"
+}

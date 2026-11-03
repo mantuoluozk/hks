@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "total": 17,
+  "successful": 17,
+  "scope": "Functional only; synthetic tool exchange is not an Agent benchmark",
+  "official_accuracy_pass": null
+}

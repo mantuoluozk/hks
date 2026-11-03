@@ -1,6 +1,6 @@
 # 国芯国模 · BW 模型适配
 
-十二个模型、十五个模型×框架版本的 SCNet BW 单卡/多卡技术报告、复现代码与原始测试证据。公开自评、功能、性能和官方验收分别记录。
+十二个模型、十七个模型×框架版本的 SCNet BW 单卡/多卡技术报告、复现代码与原始测试证据。各优化版独立保留；公开自评、功能、性能和官方验收分别记录。
 
 2026-11-02 校验入口维护：18个已发布目录的默认证据校验入口、共32次CPU命令检查正常退出；Qwen-Image与MobileVLA报告清单已同步。校验成功返回0不代表赛事验收通过，详见[校验说明](校验入口维护-20261102.md)。
 
@@ -12,6 +12,7 @@
 | [RoboBrain2.5-8B-NV](RoboBrain2.5-8B-NV/README.md) | SGLang | 8/8 | CV-Bench 2638 题，88.10% | 12 轮、608 请求；完整矩阵独立复跑待补 |
 | [RoboBrain2.5-8B-NV-vLLM](RoboBrain2.5-8B-NV-vLLM/README.md) | vLLM | 两个服务各8/8，功能文本逐项一致 | 赛事口径不要求额外精度；本轮未测完整基准 | 官方六档608/608，实际输出622592 token；单矩阵服务，独立进程完整复现null |
 | [MiMo-V2.6-Distill-Qwen-9B](MiMo-V2.6-Distill-Qwen-9B/README.md) | SGLang | 11/11 | GSM8K 179/200；MMLU 160/200 | 12 轮、608 请求 |
+| [MiMo-V2.6-Distill-Qwen-9B · vLLM](MiMo-V2.6-Distill-Qwen-9B-vLLM/README.md) | vLLM | 五个完成服务各17/17 | 同SGLang固定GSM8K 181/200，90.50%；非官方验收对照 | 六档608/608；解码图短测吞吐提升126.24%–129.30%；单矩阵服务，c64延迟含排队 |
 | [Qwen3-ASR-1.7B](Qwen3-ASR-1.7B/README.md) | vLLM | 在线 6/6；PCM 4/4；官方条件识别 300/300 | test-clean 2620 条，WER 1.6501% | 128 请求；复跑最大偏差 7.28% |
 | [Qwen3-ForcedAligner-0.6B](Qwen3-ForcedAligner-0.6B/README.md) | vLLM | 中英文 2/2；官方条件词级对齐 30/30 | — | 每进程 512 请求；复跑最大偏差 7.18% |
 | [Qwen3-ForcedAligner-0.6B 优化版v1](Qwen3-ForcedAligner-0.6B-Optimized-v1/README.md) | vLLM | 中英文2/2；优化版T03/T04 30/30 | 与首版历史边界最大差80ms；非AAS精度结论 | 512条对齐输入；相对首版历史吞吐提升17.77%–97.20%；独立进程复跑512条，吞吐偏差19.79% |

@@ -1,0 +1,14 @@
+{"id": "arithmetic", "passed": true, "output": "4", "tool_calls": [], "error": null}
+{"id": "chinese", "passed": true, "output": "北京", "tool_calls": [], "error": null}
+{"id": "multi-turn", "passed": true, "output": "HKS2026", "tool_calls": [], "error": null}
+{"id": "thinking", "passed": true, "output": "15% of 240 is **36**.\n\nCalculation: 240 × 0.15 = 36 (or 10% = 24, plus 5% = 12, so 24 + 12 = 36).", "tool_calls": [], "error": null}
+{"id": "repeat", "passed": true, "output": "4", "tool_calls": [], "error": null}
+{"id": "stream", "passed": true, "output": "4", "tool_calls": null, "error": null}
+{"id": "thinking-stream", "passed": true, "output": "12 squared is **144**.", "tool_calls": null, "error": null}
+{"id": "image-red", "passed": true, "output": "Red", "tool_calls": [], "error": null}
+{"id": "image-blue-zh", "passed": true, "output": "蓝色。\n\n整张图片是纯蓝色，看起来像 `#0000FF`（纯蓝 / 标准蓝）。", "tool_calls": [], "error": null}
+{"id": "image-ocr", "passed": true, "output": "HKS2026", "tool_calls": [], "error": null}
+{"id": "two-images", "passed": true, "output": "The first color is red. The second color is blue.", "tool_calls": [], "error": null}
+{"id": "tool-call", "passed": true, "output": "", "tool_calls": [{"id": "chatcmpl-tool-b0a2b6772c8c6a5f", "type": "function", "function": {"name": "add_numbers", "arguments": "{\"a\": 2, \"b\": 3}"}}], "error": null}
+{"id": "tool-result", "passed": true, "output": "2 + 3 = 5", "tool_calls": [], "error": null}
+{"passed": true, "total": 17, "successful": 17, "scope": "Functional only; synthetic tool exchange is not an Agent benchmark", "official_accuracy_pass": null}

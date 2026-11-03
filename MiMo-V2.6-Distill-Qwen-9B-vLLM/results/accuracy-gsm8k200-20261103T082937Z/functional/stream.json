@@ -1,0 +1,102 @@
+{
+  "request": {
+    "model": "mimo-v26-vllm",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What is 2 + 2? Answer with the number only."
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "stream": true,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "http_status": 200,
+  "chunks": [
+    {
+      "id": "chatcmpl-adfe1a62c2d73d41",
+      "object": "chat.completion.chunk",
+      "created": 1793694751,
+      "model": "mimo-v26-vllm",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "role": "assistant",
+            "content": ""
+          },
+          "logprobs": null,
+          "finish_reason": null
+        }
+      ],
+      "prompt_token_ids": null,
+      "prompt_text": null
+    },
+    {
+      "id": "chatcmpl-adfe1a62c2d73d41",
+      "object": "chat.completion.chunk",
+      "created": 1793694751,
+      "model": "mimo-v26-vllm",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "4"
+          },
+          "logprobs": null,
+          "finish_reason": null,
+          "token_ids": null
+        }
+      ]
+    },
+    {
+      "id": "chatcmpl-adfe1a62c2d73d41",
+      "object": "chat.completion.chunk",
+      "created": 1793694751,
+      "model": "mimo-v26-vllm",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {},
+          "logprobs": null,
+          "finish_reason": "stop",
+          "stop_reason": null,
+          "token_ids": null
+        }
+      ]
+    },
+    {
+      "id": "chatcmpl-adfe1a62c2d73d41",
+      "object": "chat.completion.chunk",
+      "created": 1793694751,
+      "model": "mimo-v26-vllm",
+      "choices": [],
+      "usage": {
+        "prompt_tokens": 23,
+        "total_tokens": 25,
+        "completion_tokens": 2
+      },
+      "system_fingerprint": "vllm-0.25.1-bc0b7edb"
+    }
+  ],
+  "output": "4",
+  "reasoning": "",
+  "usage": {
+    "prompt_tokens": 23,
+    "total_tokens": 25,
+    "completion_tokens": 2
+  },
+  "finish_reason": "stop",
+  "done": true,
+  "seconds": 0.1173946880735457,
+  "passed": true,
+  "id": "stream"
+}

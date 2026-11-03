@@ -1,0 +1,116 @@
+{
+  "request": {
+    "model": "mimo-v26-vllm",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Use add_numbers to add 2 and 3. Do not calculate it yourself."
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 1024,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "stream": false,
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "add_numbers",
+          "description": "Add two integers.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "a": {
+                "type": "integer"
+              },
+              "b": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "a",
+              "b"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto"
+  },
+  "http_status": 200,
+  "raw_response": {
+    "id": "chatcmpl-9f8cf65e745e38fb",
+    "object": "chat.completion",
+    "created": 1793694753,
+    "model": "mimo-v26-vllm",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": [
+            {
+              "id": "chatcmpl-tool-92826049caf0360c",
+              "type": "function",
+              "function": {
+                "name": "add_numbers",
+                "arguments": "{\"a\": 2, \"b\": 3}"
+              }
+            }
+          ],
+          "reasoning": null
+        },
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "stop_reason": null,
+        "token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.25.1-bc0b7edb",
+    "usage": {
+      "prompt_tokens": 117,
+      "total_tokens": 141,
+      "completion_tokens": 24,
+      "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "metrics": null
+  },
+  "output": "",
+  "reasoning": "",
+  "tool_calls": [
+    {
+      "id": "chatcmpl-tool-92826049caf0360c",
+      "type": "function",
+      "function": {
+        "name": "add_numbers",
+        "arguments": "{\"a\": 2, \"b\": 3}"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 117,
+    "total_tokens": 141,
+    "completion_tokens": 24,
+    "prompt_tokens_details": null
+  },
+  "finish_reason": "tool_calls",
+  "seconds": 0.47757526906207204,
+  "passed": true,
+  "id": "tool-call"
+}

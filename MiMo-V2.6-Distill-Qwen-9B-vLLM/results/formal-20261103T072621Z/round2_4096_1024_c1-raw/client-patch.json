@@ -1,0 +1,6 @@
+{
+  "scope": "Process-local OpenAI completions SSE client",
+  "empty_choices_guard": true,
+  "usage_processed_independently_of_text": true,
+  "output_budget_fallback_removed": true
+}

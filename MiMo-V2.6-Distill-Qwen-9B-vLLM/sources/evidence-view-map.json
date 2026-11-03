@@ -1,0 +1,584 @@
+[
+  {
+    "path": "results/client-compat-v2/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/client-compat-v2/requests-and-timing.jsonl",
+    "original_bytes": 1980,
+    "original_sha256": "d0678ee83dd4bc034b3f52055270de7c8a08f4bd9eb769542a728c609b093773",
+    "publication_sha256": "2bd99316719eed363304831ece237831de490bd88f77c862f8f44b65e203084f",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/eager/functional/image-blue-zh.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/eager/functional/image-blue-zh.json",
+    "original_bytes": 3319,
+    "original_sha256": "3c50f911ac5db771d1cd22de1b6ebedc52e88262c4486c4e4a4d1f38d6355326",
+    "publication_sha256": "617227e2548aad4594842a413384fe78fee2aa585035acff7b6ef0fccfc60335",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/eager/functional/two-images.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/eager/functional/two-images.json",
+    "original_bytes": 4712,
+    "original_sha256": "93f1123a7097d02d91a8c1b9b76f1ea61e922e5213b5b3c37ec9b02192e47375",
+    "publication_sha256": "57d74c96f91b8128820eac61a4a7b307a51abb5ea41d85a7f69e4d65e2369759",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/eager/functional/image-red.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/eager/functional/image-red.json",
+    "original_bytes": 3161,
+    "original_sha256": "c844af4cc336c774241cc416764d5d9fb28d6681c2ea4306d95e9d0b6bf73a4a",
+    "publication_sha256": "fd448a4910091c81227dd2a29bd0118994d4188aed8bcdf9325048b5f4ff62a2",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/eager/functional/image-ocr.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/eager/functional/image-ocr.json",
+    "original_bytes": 8938,
+    "original_sha256": "b6bf13a8781c210cf0aec11ad061e0a5a625abd2011b3984dac7f0b3f0b777ca",
+    "publication_sha256": "4be32f2027cd5dec4911d9583b4904c483aa6f55345d770205d7bd681055fbbb",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/eager/short/c1-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/eager/short/c1-inputs/inputs.json",
+    "original_bytes": 32208,
+    "original_sha256": "4e3acdd0ecccdf32cc0000fe902e75b20f2743c65d6cbe45b41350d183c743d2",
+    "publication_sha256": "ee64b23674f2100f28c17190ee3f79fdb7562718142a8ac45aca674783c09c75",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/eager/short/c1-inputs/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/eager/short/c1-inputs/requests-and-timing.jsonl",
+    "original_bytes": 79020,
+    "original_sha256": "b7b92b735ad3e915a37bc06bfb0941d98e656c233ec0a9daadd8188c405393a4",
+    "publication_sha256": "81793e68b6816d42fb8f302c71da8f7e7a03d6f329e81cb84b326a91defe07b7",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/eager/short/c4-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/eager/short/c4-inputs/inputs.json",
+    "original_bytes": 32208,
+    "original_sha256": "4e3acdd0ecccdf32cc0000fe902e75b20f2743c65d6cbe45b41350d183c743d2",
+    "publication_sha256": "ee64b23674f2100f28c17190ee3f79fdb7562718142a8ac45aca674783c09c75",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/eager/short/c4-inputs/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/eager/short/c4-inputs/requests-and-timing.jsonl",
+    "original_bytes": 96779,
+    "original_sha256": "e3be1f22d93d4711c715b13122afd0c1ea68533c796e026ea59cd836a3a4f570",
+    "publication_sha256": "7c9d5e8c0e3d3b262a72d200af050fe4c21710889304f56063034a7fd69ced4a",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/graph/short/c1-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/graph/short/c1-inputs/inputs.json",
+    "original_bytes": 32208,
+    "original_sha256": "4e3acdd0ecccdf32cc0000fe902e75b20f2743c65d6cbe45b41350d183c743d2",
+    "publication_sha256": "ee64b23674f2100f28c17190ee3f79fdb7562718142a8ac45aca674783c09c75",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/graph/short/c1-inputs/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/graph/short/c1-inputs/requests-and-timing.jsonl",
+    "original_bytes": 79353,
+    "original_sha256": "19540195d56c3bc79b74de07dffbc90cc32b8521ba4d1bf692cc3c4521c24cee",
+    "publication_sha256": "18f20d65a8de48abf6ade30aeb149c83726def6c844ef1d28f6593682f01d1ab",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/graph/short/c4-inputs/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/graph/short/c4-inputs/requests-and-timing.jsonl",
+    "original_bytes": 97035,
+    "original_sha256": "97d8d1e7aa0214fd3532e076fbfc06d65d2321937ef2e1b237172c89b9724f6a",
+    "publication_sha256": "d406515cb953709fa4074712976771783bc22eaed163bfdfe3491a6c75a29e17",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/graph/short/c4-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/graph/short/c4-inputs/inputs.json",
+    "original_bytes": 32208,
+    "original_sha256": "4e3acdd0ecccdf32cc0000fe902e75b20f2743c65d6cbe45b41350d183c743d2",
+    "publication_sha256": "ee64b23674f2100f28c17190ee3f79fdb7562718142a8ac45aca674783c09c75",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/graph/functional/image-red.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/graph/functional/image-red.json",
+    "original_bytes": 3160,
+    "original_sha256": "b6de72cd53e972c83c14ff4f9e954151d573d543af7adfd588921e41c44e4a60",
+    "publication_sha256": "081525f9867be48df617788ab57cda3fb5a4d1c8d4dfb96c6e2d72958ebb3ed7",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/graph/functional/image-blue-zh.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/graph/functional/image-blue-zh.json",
+    "original_bytes": 3320,
+    "original_sha256": "f72e78f75209b0cf12d703f4ccf4934ac191f8f8361360dfc68c4ae4d0347673",
+    "publication_sha256": "e492bdedacdb7a719f626ce344fce25907c664a0a88f7045caef24955f7d5ea9",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/graph/functional/image-ocr.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/graph/functional/image-ocr.json",
+    "original_bytes": 8938,
+    "original_sha256": "225b496ddec15acc89723ad08ab5c1de9c77759dd614b7c16b2288b7437bfc03",
+    "publication_sha256": "51aa61c521edc2e9fe179ed4f5f43749edc839280d02072a88bc0545b88e2fc3",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/screen-20261103T071303Z/graph/functional/two-images.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/screen-20261103T071303Z/graph/functional/two-images.json",
+    "original_bytes": 4712,
+    "original_sha256": "4cda57d05ac8779868c8107f3d0a468f0907f7cdcbb846cd6afbf7e4dbe5a0a9",
+    "publication_sha256": "1fc3ab385769e653141bf71c3f8cbbdd05ed12d5db8874c4c1e65114c088c426",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/accuracy-gsm8k-20261103T082407Z/functional/image-blue-zh.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/accuracy-gsm8k-20261103T082407Z/functional/image-blue-zh.json",
+    "original_bytes": 3320,
+    "original_sha256": "e2e98c278d7bcf74d6405061d177a7cfbe7ad38c7e6a13589f832d2ebc266c7f",
+    "publication_sha256": "f1124aaa0b1c5359174127444e59fbc1dc91066b8d147ca5d5d4c2284cbea515",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/accuracy-gsm8k-20261103T082407Z/functional/two-images.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/accuracy-gsm8k-20261103T082407Z/functional/two-images.json",
+    "original_bytes": 4712,
+    "original_sha256": "f85c4d7ce9527a80a8444efd7b6153b4ad63f939b47c9631b3ddc519952ee1db",
+    "publication_sha256": "4982dae7dcfb73327726c70090fba204d5c86c40cc68a851169e4befd6dafa70",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/accuracy-gsm8k-20261103T082407Z/functional/image-red.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/accuracy-gsm8k-20261103T082407Z/functional/image-red.json",
+    "original_bytes": 3160,
+    "original_sha256": "5ce557d5787faf8f16b4d3f44a7865b056020f5ec9b95b754f19b88b9e22d3c6",
+    "publication_sha256": "746503b52776fdbd886b656cc33773e17ec5fc48ac0b03067afcb52338da69b5",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/accuracy-gsm8k-20261103T082407Z/functional/image-ocr.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/accuracy-gsm8k-20261103T082407Z/functional/image-ocr.json",
+    "original_bytes": 8939,
+    "original_sha256": "cb92c5f12b677db04d9be62bca3fae80be30560d4a9b45571dd7b33f4e32e90f",
+    "publication_sha256": "8ec272dd694676f2bb6cb154debbe0afb5c0a46926dda95e0e01209e0275daa1",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/initial/functional/image-red.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/initial/functional/image-red.json",
+    "original_bytes": 3160,
+    "original_sha256": "3bc19505d48a28e4a8d6905c2b150aa3ab758259c01138b6291a3aad3d31b686",
+    "publication_sha256": "b568756da6672f017f01cc923f068b70a39cd0470b34a1eb207d1d62436ec326",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/initial/functional/image-blue-zh.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/initial/functional/image-blue-zh.json",
+    "original_bytes": 3320,
+    "original_sha256": "db43c7d93c735ce60caee77fc1752f2edc4e02c1bfd669b79565da3941e6f762",
+    "publication_sha256": "c81a4e813182dbf78bd9a529774a3e305948ef03301ef5fbe2cae3bf3ebbd8dd",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/initial/functional/image-ocr.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/initial/functional/image-ocr.json",
+    "original_bytes": 8939,
+    "original_sha256": "a7014f1d0641d18247facf4778f821e2fba2507cb093b4cf369657d042125ca5",
+    "publication_sha256": "8983b726cbb4a3ce6052894575697700f37ff36cf96817b36e56929555654d67",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/initial/functional/two-images.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/initial/functional/two-images.json",
+    "original_bytes": 4711,
+    "original_sha256": "064b75f360fa06d123a24fb9d497921e485ebce2a7fa5df91ee0e50b516d6a82",
+    "publication_sha256": "248b073a96fc511d165ddb26c97ee23cf36d3766f5af122bbbdacd74ea8112b4",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/initial/short/c1-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/initial/short/c1-inputs/inputs.json",
+    "original_bytes": 32208,
+    "original_sha256": "4e3acdd0ecccdf32cc0000fe902e75b20f2743c65d6cbe45b41350d183c743d2",
+    "publication_sha256": "ee64b23674f2100f28c17190ee3f79fdb7562718142a8ac45aca674783c09c75",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/initial/short/c1-inputs/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/initial/short/c1-inputs/requests-and-timing.jsonl",
+    "original_bytes": 5996,
+    "original_sha256": "f031dba0ecfd8a2346943e4e761a32c8691493be8118e9a0e47a77e64c46e839",
+    "publication_sha256": "ee4d0ded327695be0499fa554cf54c9caf0a6b18b9b0e969f063041f61439f27",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/context-probe.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/context-probe.json",
+    "original_bytes": 99169,
+    "original_sha256": "f8dacc552be1bbbc9fcd54adfd967bd0d483b7631dfe8b86a7a576cbf235b07a",
+    "publication_sha256": "9a8e799bd8cb27f3cb9b2dbe57405db435074de0f0fa8d092d412fec53d98959",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_4096_1024_c1-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_4096_1024_c1-raw/requests-and-timing.jsonl",
+    "original_bytes": 542589,
+    "original_sha256": "10a1c2ab36f8f9abc00e5c33190e04786ffd897681ea46eca195ab90517a925e",
+    "publication_sha256": "dff90777887e7471d28e636baf1a939e55b6913b18b264fee54e038c66c88b51",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_4096_1024_c1-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_4096_1024_c1-raw/inputs.json",
+    "original_bytes": 247272,
+    "original_sha256": "e3b275e8fc8b2f33148f3f31d01043ce5d778ddd3bc2f36bf425189989feadf0",
+    "publication_sha256": "43962ac0f52a0fc57a2cdb7a3a60fd77d36796b348780dc3dd2fdb1f19884da4",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_4096_1024_c8-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_4096_1024_c8-raw/inputs.json",
+    "original_bytes": 502736,
+    "original_sha256": "d8803d0fdaa8dd6403fa955183fce00bd27f2b2654f9411d45c239c97ce88b34",
+    "publication_sha256": "766b99737fcda8b3fd65faf9f177341247a13ad0fde868fab07db674d810ce7c",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_4096_1024_c8-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_4096_1024_c8-raw/requests-and-timing.jsonl",
+    "original_bytes": 1055318,
+    "original_sha256": "928c7e053ef5f4c8bba8b70dc20d90d58dd34e1d5efe0cae757738ac68852205",
+    "publication_sha256": "09a68f9930b56c113f124b7db69f5344e13e55d060851a76873d03d645c6216c",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_4096_1024_c64-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_4096_1024_c64-raw/requests-and-timing.jsonl",
+    "original_bytes": 8547657,
+    "original_sha256": "dddee485b3a5c5f91294f7710bab71da379d5f606961c27c00636aedcf15be23",
+    "publication_sha256": "dd9a4d9a590b098091ac1860563ba55878b85f3b14184d66e899e344c8328436",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained; byte-exact zlib file reference, content-deduplicated",
+    "expanded_view_sha256": "74d3bbb77677b4222f25b473323ccab872271df997bede1738056b1f2fff1ace",
+    "file_encoding": "file-zlib-v1"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_4096_1024_c64-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_4096_1024_c64-raw/inputs.json",
+    "original_bytes": 3999878,
+    "original_sha256": "3c0ee98aabf4e024ed3d7d7b7a2629ea8fd46065ecfee36d4cfc6da1ced64ea1",
+    "publication_sha256": "4441a249fbf3cf1aad0cf49ec7cc28bca888ef622bd34f14d6176f1a04b623ad",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_16384_1024_c1-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_16384_1024_c1-raw/inputs.json",
+    "original_bytes": 996147,
+    "original_sha256": "e141fae762571d21c0074e4410fe095df783ef59de4e1acb5c53b3b2a2736ec9",
+    "publication_sha256": "29637d01fe88078bb43803b5107ddf9437a95f9785ebd950e94b617bed553088",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_16384_1024_c1-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_16384_1024_c1-raw/requests-and-timing.jsonl",
+    "original_bytes": 1404758,
+    "original_sha256": "007f7bca311070294caab1483cda590a0758c5e9092c686289cad1212bfdee54",
+    "publication_sha256": "5c762b97439da9882da6828f7aa4f91a9242bbd7bfe3367552c621d837968508",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_16384_1024_c1-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_16384_1024_c1-raw/inputs.json",
+    "original_bytes": 996147,
+    "original_sha256": "e141fae762571d21c0074e4410fe095df783ef59de4e1acb5c53b3b2a2736ec9",
+    "publication_sha256": "29637d01fe88078bb43803b5107ddf9437a95f9785ebd950e94b617bed553088",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_16384_1024_c1-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_16384_1024_c1-raw/requests-and-timing.jsonl",
+    "original_bytes": 1406046,
+    "original_sha256": "99c52e3b91b76b8fe142e605c13cc57d710b9f50800e4e2889f2caa8165e55f5",
+    "publication_sha256": "d83e8928ca7f558cfa90d82ca295039761572b18ac62f048a3311e07cfc78111",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_16384_1024_c8-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_16384_1024_c8-raw/requests-and-timing.jsonl",
+    "original_bytes": 2722593,
+    "original_sha256": "f8bff02405bdefe713c0e6223ba7fbf90a3cde5eb3ee1b42e867dee042e1b26e",
+    "publication_sha256": "9419d0e3e2bf98d052264502aff44501f2a073734db1cf2523241eba5409b4b9",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained; byte-exact zlib file reference, content-deduplicated",
+    "expanded_view_sha256": "bdb404683396c360014a17b458b2f080ec68ebb289a0d2d7cca1412f5bb0b434",
+    "file_encoding": "file-zlib-v1"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_16384_1024_c8-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_16384_1024_c8-raw/inputs.json",
+    "original_bytes": 2013483,
+    "original_sha256": "14915cab8f4b3e718e5dd9b57b4609072d6ea3835b3c4e134ca4122b5740e2d6",
+    "publication_sha256": "156e6cb6a82480ab3c7d9638ac4f3a8f062ee0b3d5b147d255548b32384ef50c",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_16384_1024_c8-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_16384_1024_c8-raw/inputs.json",
+    "original_bytes": 2013483,
+    "original_sha256": "14915cab8f4b3e718e5dd9b57b4609072d6ea3835b3c4e134ca4122b5740e2d6",
+    "publication_sha256": "156e6cb6a82480ab3c7d9638ac4f3a8f062ee0b3d5b147d255548b32384ef50c",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_16384_1024_c8-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_16384_1024_c8-raw/requests-and-timing.jsonl",
+    "original_bytes": 2708676,
+    "original_sha256": "3b38d06446970586015831bfa2e2cfb391c7dbeaa91fa13bfcc53ad39ecfcbd4",
+    "publication_sha256": "3936cb3837828acdd12cf8c442319c5cabc7d8521f682d337e9c445bb320ea81",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained; byte-exact zlib file reference, content-deduplicated",
+    "expanded_view_sha256": "f68d5ff6390821f7d3225173493c740254f3dca47a1e9aae7163149649eb7c1e",
+    "file_encoding": "file-zlib-v1"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_16384_1024_c64-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_16384_1024_c64-raw/inputs.json",
+    "original_bytes": 15954336,
+    "original_sha256": "f0b55136ba369c0793cf4f6cd733de0cea85a57a83a2f4cad01e0f4138b1bf8f",
+    "publication_sha256": "cb86c159726c032627d24a32f85a8ea13cef08b8217ac04b84cc37978b624d5f",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_16384_1024_c64-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_16384_1024_c64-raw/requests-and-timing.jsonl",
+    "original_bytes": 20671200,
+    "original_sha256": "0afd6261be4ba2ee4f2616f4825232eb3560e93efd06043fe8471add771c1cda",
+    "publication_sha256": "3b0c5f44e854f1c3481d9253a62216628adf843d78fb4adf1aec9b0240030ec9",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained; byte-exact zlib file reference, content-deduplicated",
+    "expanded_view_sha256": "4ae6be12dc22ccbda9f37d5ec10b701c3626254c6fa1e8558b0533ff75449509",
+    "file_encoding": "file-zlib-v1"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/functional/two-images.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/functional/two-images.json",
+    "original_bytes": 4713,
+    "original_sha256": "0fd38da85ebf95ce3baff30cf8c2bfb9938a424f05cbbcad1684fa70473b2d8f",
+    "publication_sha256": "4b3cc6f99c11b1f7d8c87f0dc6d771c3df69efc7997a0fa1ac50ab25508b19c4",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/functional/image-red.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/functional/image-red.json",
+    "original_bytes": 3161,
+    "original_sha256": "1ec36305f0de1b4a0f9daed70dab2425f50104f028c9d767d14fbb379666bb76",
+    "publication_sha256": "6a44faf584543cdb4fa3ef0e6c1ecd48eb8b8140c5dc92c4a33506d2dc68393f",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/functional/image-blue-zh.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/functional/image-blue-zh.json",
+    "original_bytes": 3319,
+    "original_sha256": "5deea63b24aede284e841154681018f68ba1c5407de404f08ac3f2f71612020c",
+    "publication_sha256": "16b75cbf3621f549eaba2c61f0059ba22161d25cd499915744ccdf9fe1925368",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/functional/image-ocr.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/functional/image-ocr.json",
+    "original_bytes": 8939,
+    "original_sha256": "c716b1f4ec27959c6e722999fc8b63bc6ac8673e3e528505c3b5321dbafe1ae8",
+    "publication_sha256": "70dfc6439f369f2d79a617cb6fb6b91ea61d98d298445f7a450da4b5dc53db57",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_4096_1024_c1-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_4096_1024_c1-raw/inputs.json",
+    "original_bytes": 247272,
+    "original_sha256": "e3b275e8fc8b2f33148f3f31d01043ce5d778ddd3bc2f36bf425189989feadf0",
+    "publication_sha256": "43962ac0f52a0fc57a2cdb7a3a60fd77d36796b348780dc3dd2fdb1f19884da4",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_4096_1024_c1-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_4096_1024_c1-raw/requests-and-timing.jsonl",
+    "original_bytes": 542625,
+    "original_sha256": "c1e0688e0464da4fa34e71dc8cefffa6deed481f241f4d0b2ab1e9006b0a91ed",
+    "publication_sha256": "dba85ace767dbc1fb1af8ed1eea5f6ff60f3c39652dd6d7e490394f4991bfeb9",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_4096_1024_c8-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_4096_1024_c8-raw/inputs.json",
+    "original_bytes": 502736,
+    "original_sha256": "d8803d0fdaa8dd6403fa955183fce00bd27f2b2654f9411d45c239c97ce88b34",
+    "publication_sha256": "766b99737fcda8b3fd65faf9f177341247a13ad0fde868fab07db674d810ce7c",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_4096_1024_c8-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_4096_1024_c8-raw/requests-and-timing.jsonl",
+    "original_bytes": 1079710,
+    "original_sha256": "282cb3b91da838d6182b28ff9b0667a1c45795f079aafc667b2b311b99aafc5f",
+    "publication_sha256": "c94f51a0b8af5e529f0aa2369c4c82877fc14eb4020825f299d599d570c2923c",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_4096_1024_c64-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_4096_1024_c64-raw/inputs.json",
+    "original_bytes": 3999878,
+    "original_sha256": "3c0ee98aabf4e024ed3d7d7b7a2629ea8fd46065ecfee36d4cfc6da1ced64ea1",
+    "publication_sha256": "4441a249fbf3cf1aad0cf49ec7cc28bca888ef622bd34f14d6176f1a04b623ad",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2_4096_1024_c64-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2_4096_1024_c64-raw/requests-and-timing.jsonl",
+    "original_bytes": 8551507,
+    "original_sha256": "8987ad952ead139489c5758fb3309575ea0ec9f63579fa5a1ddc3426a4ace288",
+    "publication_sha256": "8e1f6b1da6b70233135f886be0c11d63399c30dc0275645da9e3d2dd7e7fd266",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained; byte-exact zlib file reference, content-deduplicated",
+    "expanded_view_sha256": "c5e490aa688846699fca1a7954d0d42f15af4116c1e3f5efcaa86462031c7817",
+    "file_encoding": "file-zlib-v1"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_16384_1024_c64-raw/requests-and-timing.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_16384_1024_c64-raw/requests-and-timing.jsonl",
+    "original_bytes": 20621123,
+    "original_sha256": "b027a1a03f50fb9937213e0b1cc1d66b38ba0ee602f635b36d4b6d6be837b59b",
+    "publication_sha256": "11c9c19d25fa81142d25d1da619424abe7ba2b122dd96affe61db0f33b388ee6",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained; byte-exact zlib file reference, content-deduplicated",
+    "expanded_view_sha256": "61ada82fae80548090a9c2e4513e8b0a9e0dbb7acebcdf8927f013d78ccb09e9",
+    "file_encoding": "file-zlib-v1"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1_16384_1024_c64-raw/inputs.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1_16384_1024_c64-raw/inputs.json",
+    "original_bytes": 15954336,
+    "original_sha256": "f0b55136ba369c0793cf4f6cd733de0cea85a57a83a2f4cad01e0f4138b1bf8f",
+    "publication_sha256": "cb86c159726c032627d24a32f85a8ea13cef08b8217ac04b84cc37978b624d5f",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/accuracy-gsm8k200-20261103T082937Z/functional/image-red.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/accuracy-gsm8k200-20261103T082937Z/functional/image-red.json",
+    "original_bytes": 3160,
+    "original_sha256": "39f8795de95707bbc5fb969dd65111a0b3fc4c160a09d408d69328bbaae8508f",
+    "publication_sha256": "9f2cab9fde17c317567119be3389943e8330281d19edd141b10e8cc80fbc7850",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/accuracy-gsm8k200-20261103T082937Z/functional/two-images.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/accuracy-gsm8k200-20261103T082937Z/functional/two-images.json",
+    "original_bytes": 4712,
+    "original_sha256": "54ff5108a828c40ed45484fe0613d85212944072fb00b871c443c35239055d9b",
+    "publication_sha256": "2aa687f3318607e26ec96b7c76d6b691ab96e21f7ccc2a9dd41c456ff8043c95",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/accuracy-gsm8k200-20261103T082937Z/functional/image-blue-zh.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/accuracy-gsm8k200-20261103T082937Z/functional/image-blue-zh.json",
+    "original_bytes": 3320,
+    "original_sha256": "491f1accfdf5a3f7f5783b3695c0fa875016c9189e4be3e4a5a6e9e20ad2ad4e",
+    "publication_sha256": "0917451f6891234452043b58f075822f251384212d23e49744aa0661dae7ab7b",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "results/accuracy-gsm8k200-20261103T082937Z/functional/image-ocr.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/accuracy-gsm8k200-20261103T082937Z/functional/image-ocr.json",
+    "original_bytes": 8939,
+    "original_sha256": "32f48b58852400b7357de46b5376d74033a4f3b02b86ac83e43110cce3e601cb",
+    "publication_sha256": "480d8d78f48ae10292713cf6190301d1f4479cb387e9a1ac398867e522f4f42e",
+    "change": "Lossless cyclic token-ID representation and/or image content-hash references; response and timing values retained"
+  },
+  {
+    "path": "bench/summary.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/bench/summary.json",
+    "original_bytes": 11058968,
+    "original_sha256": "2043799973543c28f3c3c06334562425670123298e9c916faf3d973b4bd52c0f",
+    "expanded_view_sha256": "2043799973543c28f3c3c06334562425670123298e9c916faf3d973b4bd52c0f",
+    "publication_sha256": "82a4c6e8036d0b0d3879e367f2471846f5af674ccc0596421c21a5440db809ef",
+    "file_encoding": "file-zlib-v1",
+    "change": "Original document values retained; byte-exact zlib file reference, content-deduplicated"
+  },
+  {
+    "path": "bench/round2.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/bench/round2.jsonl",
+    "original_bytes": 7988051,
+    "original_sha256": "ba20f494d029d25b045edc0b8c188559dc7643b172d086817df264324cdbe4d0",
+    "expanded_view_sha256": "ba20f494d029d25b045edc0b8c188559dc7643b172d086817df264324cdbe4d0",
+    "publication_sha256": "fd47dc18a1682a714c987c771dc1f863dfece02d0913bc87e145244d3ea76e75",
+    "file_encoding": "file-zlib-v1",
+    "change": "Original document values retained; byte-exact zlib file reference, content-deduplicated"
+  },
+  {
+    "path": "bench/round1.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/bench/round1.jsonl",
+    "original_bytes": 7979073,
+    "original_sha256": "17bbc03f1150219a2c37a37fca019152c6bc452c3fddcafa550a0de3e48bf4a9",
+    "expanded_view_sha256": "17bbc03f1150219a2c37a37fca019152c6bc452c3fddcafa550a0de3e48bf4a9",
+    "publication_sha256": "cd9cca80f63f73592dc5514f373e258293771ad1fd3d3eb087881027f7c0c848",
+    "file_encoding": "file-zlib-v1",
+    "change": "Original document values retained; byte-exact zlib file reference, content-deduplicated"
+  },
+  {
+    "path": "bench/saved-release/round1.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/bench/saved-release/round1.jsonl",
+    "original_bytes": 7979073,
+    "original_sha256": "17bbc03f1150219a2c37a37fca019152c6bc452c3fddcafa550a0de3e48bf4a9",
+    "expanded_view_sha256": "17bbc03f1150219a2c37a37fca019152c6bc452c3fddcafa550a0de3e48bf4a9",
+    "publication_sha256": "cd9cca80f63f73592dc5514f373e258293771ad1fd3d3eb087881027f7c0c848",
+    "file_encoding": "file-zlib-v1",
+    "change": "Original document values retained; byte-exact zlib file reference, content-deduplicated"
+  },
+  {
+    "path": "bench/saved-release/round2.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/bench/saved-release/round2.jsonl",
+    "original_bytes": 7988051,
+    "original_sha256": "ba20f494d029d25b045edc0b8c188559dc7643b172d086817df264324cdbe4d0",
+    "expanded_view_sha256": "ba20f494d029d25b045edc0b8c188559dc7643b172d086817df264324cdbe4d0",
+    "publication_sha256": "fd47dc18a1682a714c987c771dc1f863dfece02d0913bc87e145244d3ea76e75",
+    "file_encoding": "file-zlib-v1",
+    "change": "Original document values retained; byte-exact zlib file reference, content-deduplicated"
+  },
+  {
+    "path": "bench/saved-release/summary.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/bench/saved-release/summary.json",
+    "original_bytes": 11058968,
+    "original_sha256": "2043799973543c28f3c3c06334562425670123298e9c916faf3d973b4bd52c0f",
+    "expanded_view_sha256": "2043799973543c28f3c3c06334562425670123298e9c916faf3d973b4bd52c0f",
+    "publication_sha256": "82a4c6e8036d0b0d3879e367f2471846f5af674ccc0596421c21a5440db809ef",
+    "file_encoding": "file-zlib-v1",
+    "change": "Original document values retained; byte-exact zlib file reference, content-deduplicated"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round2.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round2.jsonl",
+    "original_bytes": 7988051,
+    "original_sha256": "ba20f494d029d25b045edc0b8c188559dc7643b172d086817df264324cdbe4d0",
+    "expanded_view_sha256": "ba20f494d029d25b045edc0b8c188559dc7643b172d086817df264324cdbe4d0",
+    "publication_sha256": "fd47dc18a1682a714c987c771dc1f863dfece02d0913bc87e145244d3ea76e75",
+    "file_encoding": "file-zlib-v1",
+    "change": "Original document values retained; byte-exact zlib file reference, content-deduplicated"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/summary.json",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/summary.json",
+    "original_bytes": 11058968,
+    "original_sha256": "2043799973543c28f3c3c06334562425670123298e9c916faf3d973b4bd52c0f",
+    "expanded_view_sha256": "2043799973543c28f3c3c06334562425670123298e9c916faf3d973b4bd52c0f",
+    "publication_sha256": "82a4c6e8036d0b0d3879e367f2471846f5af674ccc0596421c21a5440db809ef",
+    "file_encoding": "file-zlib-v1",
+    "change": "Original document values retained; byte-exact zlib file reference, content-deduplicated"
+  },
+  {
+    "path": "results/formal-20261103T072621Z/round1.jsonl",
+    "original_path": "/root/private_data/hks/models/MiMo-V2.6-Distill-Qwen-9B-vLLM/results/formal-20261103T072621Z/round1.jsonl",
+    "original_bytes": 7979073,
+    "original_sha256": "17bbc03f1150219a2c37a37fca019152c6bc452c3fddcafa550a0de3e48bf4a9",
+    "expanded_view_sha256": "17bbc03f1150219a2c37a37fca019152c6bc452c3fddcafa550a0de3e48bf4a9",
+    "publication_sha256": "cd9cca80f63f73592dc5514f373e258293771ad1fd3d3eb087881027f7c0c848",
+    "file_encoding": "file-zlib-v1",
+    "change": "Original document values retained; byte-exact zlib file reference, content-deduplicated"
+  }
+]

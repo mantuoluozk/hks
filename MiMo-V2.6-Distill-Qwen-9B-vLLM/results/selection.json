@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "mode": "graph",
+  "screen": "screen-20261103T071303Z",
+  "comparison": [
+    {
+      "concurrency": 1,
+      "eager": 24.684422292392668,
+      "graph": 56.60189855933577,
+      "gain_percent": 129.30209947339765
+    },
+    {
+      "concurrency": 4,
+      "eager": 91.96275281740833,
+      "graph": 208.05709830691373,
+      "gain_percent": 126.24061582846507
+    }
+  ],
+  "scope": "One warmed pass per vLLM candidate, native 512/128 C1/C4; no Agent or accuracy result"
+}
