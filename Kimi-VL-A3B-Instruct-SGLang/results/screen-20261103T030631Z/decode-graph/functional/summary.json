@@ -1,0 +1,9 @@
+{
+  "functional_passed": 8,
+  "functional_total": 8,
+  "all_passed": true,
+  "model": "kimi-vl-a3b-instruct",
+  "official_accuracy_pass": null,
+  "scope": "Synthetic/official-demo HTTP functional checks; not public benchmark accuracy",
+  "script_sha256": "7631a6a09a387b3ef73700e7ee5f87fc8c6aff7b917803e9666585d853c11ab1"
+}

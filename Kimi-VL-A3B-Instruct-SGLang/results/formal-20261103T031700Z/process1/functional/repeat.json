@@ -1,0 +1,90 @@
+{
+  "request_payload": {
+    "model": "kimi-vl-a3b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url_header": "data:image/png;base64",
+                "asset": "assets/3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd.png",
+                "sha256": "3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": "What color fills this image? Answer with one English word."
+          }
+        ]
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "question": "What color fills this image? Answer with one English word.",
+  "images_sha256": [
+    "3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "red",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 222,
+    "total_tokens": 225,
+    "completion_tokens": 3,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 190
+    },
+    "reasoning_tokens": 0
+  },
+  "raw_response": {
+    "id": "60150c65dd374212807630197235a638",
+    "object": "chat.completion",
+    "created": 1793675909,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "red",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 163585
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 225,
+      "completion_tokens": 3,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 190
+      },
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "seconds": 0.1291545359417796,
+  "id": "repeat",
+  "passed": true
+}

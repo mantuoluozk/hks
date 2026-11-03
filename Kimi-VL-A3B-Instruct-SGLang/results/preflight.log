@@ -1,0 +1,36 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+verified README.md
+verified chat_template.jinja
+verified config.json
+verified configuration_kimi_vl.py
+verified generation_config.json
+verified image_processing_kimi_vl.py
+verified model-00001-of-00007.safetensors
+verified model-00002-of-00007.safetensors
+verified model-00003-of-00007.safetensors
+verified model-00004-of-00007.safetensors
+verified model-00005-of-00007.safetensors
+verified model-00006-of-00007.safetensors
+verified model-00007-of-00007.safetensors
+verified model.safetensors.index.json
+verified modeling_kimi_vl.py
+verified preprocessor_config.json
+verified processing_kimi_vl.py
+verified tiktoken.model
+verified tokenization_moonshot.py
+verified tokenizer_config.json
+INFO 11-03 11:02:45 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-03 11:02:45 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-03 11:02:45 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-03 11:02:45 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+{"packages": {"torch": "2.11.0+dtk2604.2609201441.gf74cd7", "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd", "transformers": "5.12.1", "tokenizers": "0.22.2"}, "gpu": "BW", "memory": [68365058048, 68702699520], "hip": "6.3.26113", "projector_patch": "Remove QuickGELU override; preserve publisher GELU", "model_inference_verified": false}

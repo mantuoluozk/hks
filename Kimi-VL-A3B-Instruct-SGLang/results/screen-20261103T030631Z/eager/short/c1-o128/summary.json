@@ -1,0 +1,22 @@
+{
+  "concurrency": 1,
+  "max_tokens": 128,
+  "requests": 8,
+  "wall_seconds": 82.72522334801033,
+  "completion_tokens": 1024,
+  "output_tokens_per_second": 12.378328622845945,
+  "mean_latency_seconds": 10.33904290839564,
+  "mean_ttft_seconds": 0.2529159137047827,
+  "mean_tpot_seconds": 0.0794183227928414,
+  "prompt_tokens": [
+    1131,
+    1131,
+    1131,
+    1131,
+    1131,
+    1131,
+    1131,
+    1131
+  ],
+  "stopped_at_limit": 8
+}

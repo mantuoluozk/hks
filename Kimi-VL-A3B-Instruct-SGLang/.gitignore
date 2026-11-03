@@ -1,0 +1,7 @@
+weights/
+data/
+cache/
+artifacts/
+__pycache__/
+*.pyc
+kimi-vl-a3b-instruct

@@ -1,0 +1,101 @@
+{
+  "request_payload": {
+    "model": "kimi-vl-a3b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url_header": "data:image/png;base64",
+                "asset": "assets/3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd.png",
+                "sha256": "3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd"
+              }
+            }
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url_header": "data:image/png;base64",
+                "asset": "assets/e1f48567cbbeb88ff0f4d98e9d941de62528cc3290a92856cf4f51dc5e844e40.png",
+                "sha256": "e1f48567cbbeb88ff0f4d98e9d941de62528cc3290a92856cf4f51dc5e844e40"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": "Name the color of the first image and then the second image. Answer with two English color words in order."
+          }
+        ]
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "question": "Name the color of the first image and then the second image. Answer with two English color words in order.",
+  "images_sha256": [
+    "3004d126a5c6e9ab98378ebcf68a33d7ba26db8a2c61da8a06ccef7eefd928cd",
+    "e1f48567cbbeb88ff0f4d98e9d941de62528cc3290a92856cf4f51dc5e844e40"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "red, blue",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 426,
+    "total_tokens": 431,
+    "completion_tokens": 5,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 380
+    },
+    "reasoning_tokens": 0
+  },
+  "raw_response": {
+    "id": "74e2c04db2fb4e7280e0439dc83c6683",
+    "object": "chat.completion",
+    "created": 1793675351,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "red, blue",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 163585
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 426,
+      "total_tokens": 431,
+      "completion_tokens": 5,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 380
+      },
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "seconds": 1.456527529284358,
+  "id": "two-images",
+  "passed": true
+}

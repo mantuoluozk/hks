@@ -1,0 +1,106 @@
+{
+  "workloads": [
+    {
+      "concurrency": 1,
+      "max_tokens": 32,
+      "requests": 8,
+      "wall_seconds": 5.430938524194062,
+      "completion_tokens": 256,
+      "output_tokens_per_second": 47.137340785493386,
+      "mean_latency_seconds": 0.6775843135546893,
+      "mean_ttft_seconds": 0.2320388852385804,
+      "mean_tpot_seconds": 0.014372433171487384,
+      "prompt_tokens": [
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131
+      ],
+      "stopped_at_limit": 8
+    },
+    {
+      "concurrency": 1,
+      "max_tokens": 128,
+      "requests": 8,
+      "wall_seconds": 16.496607050299644,
+      "completion_tokens": 1024,
+      "output_tokens_per_second": 62.07337041354816,
+      "mean_latency_seconds": 2.060750928183552,
+      "mean_ttft_seconds": 0.23397324397228658,
+      "mean_tpot_seconds": 0.01438407625363201,
+      "prompt_tokens": [
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131
+      ],
+      "stopped_at_limit": 8
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 32,
+      "requests": 8,
+      "wall_seconds": 3.4899628162384033,
+      "completion_tokens": 256,
+      "output_tokens_per_second": 73.35321706261765,
+      "mean_latency_seconds": 0.8708688538172282,
+      "mean_ttft_seconds": 0.34929665189702064,
+      "mean_tpot_seconds": 0.016824909739361536,
+      "prompt_tokens": [
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131
+      ],
+      "stopped_at_limit": 8
+    },
+    {
+      "concurrency": 2,
+      "max_tokens": 128,
+      "requests": 8,
+      "wall_seconds": 9.49271293869242,
+      "completion_tokens": 1024,
+      "output_tokens_per_second": 107.87221804908508,
+      "mean_latency_seconds": 2.37162735365564,
+      "mean_ttft_seconds": 0.3502392760128714,
+      "mean_tpot_seconds": 0.01591644155624227,
+      "prompt_tokens": [
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131,
+        1131
+      ],
+      "stopped_at_limit": 8
+    }
+  ],
+  "counted_requests": 32,
+  "warmup_requests": 16,
+  "image_sha256": "95de8765da89c41a2421f1c1fa3986e4d3c83793d92c8ade460a142b329d04c1",
+  "question": "Describe this picture in detailed English sentences, including the buildings, their shapes, and the surroundings.",
+  "timing_scope": "Client HTTP streaming: encode/send, server prefill/decode, receive; initialization excluded",
+  "tpot_definition": "(client latency - first non-empty content latency) / (completion_tokens - 1)",
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42
+  },
+  "script_sha256": "c936b2f50f01437b9e05f196b3dfcff4701fa50164e5f975029ca9a593fe03d5",
+  "http_client_sha256": "7631a6a09a387b3ef73700e7ee5f87fc8c6aff7b917803e9666585d853c11ab1",
+  "official_performance_protocol": false
+}

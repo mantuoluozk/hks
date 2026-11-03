@@ -1,0 +1,6 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/scripts/screen.py", line 26, in <module>
+    assert sock.connect_ex(('127.0.0.1',30004)) != 0, 'Port occupied'
+AssertionError: Port occupied

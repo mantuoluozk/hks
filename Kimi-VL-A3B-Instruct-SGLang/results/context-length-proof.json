@@ -1,0 +1,21 @@
+{
+  "client_processor_tokens": 17796,
+  "server_warmup_prefill_tokens": 17796,
+  "server_probe_prefill_tokens": 17796,
+  "prefill_log_lines": [
+    "[2026-11-03 11:30:37] Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 0, token usage: 0.01, #running-req: 0, #queue-req: 0, #pending-token: 13700, cuda graph: False, input throughput (token/s): 102.94",
+    "[2026-11-03 11:30:38] Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 0, token usage: 0.02, #running-req: 0, #queue-req: 0, #pending-token: 9604, cuda graph: False, input throughput (token/s): 3115.31",
+    "[2026-11-03 11:30:40] Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 0, token usage: 0.02, #running-req: 0, #queue-req: 0, #pending-token: 5508, cuda graph: False, input throughput (token/s): 2088.23",
+    "[2026-11-03 11:30:44] Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 0, token usage: 0.03, #running-req: 0, #queue-req: 0, #pending-token: 1412, cuda graph: False, input throughput (token/s): 1202.00",
+    "[2026-11-03 11:30:45] Prefill batch, #new-seq: 1, #new-token: 1412, #cached-token: 0, token usage: 0.03, #running-req: 0, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 1423.57",
+    "[2026-11-03 11:30:47] Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 0, token usage: 0.01, #running-req: 0, #queue-req: 0, #pending-token: 13700, cuda graph: False, input throughput (token/s): 1677.91",
+    "[2026-11-03 11:30:49] Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 0, token usage: 0.02, #running-req: 0, #queue-req: 0, #pending-token: 9604, cuda graph: False, input throughput (token/s): 3110.35",
+    "[2026-11-03 11:30:51] Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 0, token usage: 0.02, #running-req: 0, #queue-req: 0, #pending-token: 5508, cuda graph: False, input throughput (token/s): 2087.42",
+    "[2026-11-03 11:30:53] Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 0, token usage: 0.03, #running-req: 0, #queue-req: 0, #pending-token: 1412, cuda graph: False, input throughput (token/s): 1539.70",
+    "[2026-11-03 11:30:54] Prefill batch, #new-seq: 1, #new-token: 1412, #cached-token: 0, token usage: 0.03, #running-req: 0, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 1313.38"
+  ],
+  "output_budget_checked": 1024,
+  "context_length": 24576,
+  "passed": true,
+  "input_lens_provenance": "Benchmark client uses processor-computed lengths, cross-checked here against server prefill token counts"
+}

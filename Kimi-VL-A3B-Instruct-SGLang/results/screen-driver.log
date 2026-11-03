@@ -1,0 +1,6 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/scripts/screen.py", line 37, in <module>
+    raise RuntimeError(f'{name} server exit {proc.returncode}')
+RuntimeError: eager server exit -9

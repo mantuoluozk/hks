@@ -1,0 +1,1 @@
+["bash", "serve-scnet.sh", "--cuda-graph-bs-decode", "1", "2", "4", "8"]

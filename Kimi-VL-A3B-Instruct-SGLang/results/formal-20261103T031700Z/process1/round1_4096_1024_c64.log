@@ -1,0 +1,82 @@
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:549: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+INFO 11-03 11:43:50 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-03 11:43:50 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-03 11:43:50 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-03 11:43:50 [__init__.py:237] Platform plugin hcu is activated
+DEBUG:aiter:WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" 
+Synthetic text samples base vocabulary only (0..163583); excludes publisher reserved slots and out-of-embedding IDs
+[transformers] `KimiVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+/usr/local/lib/python3.10/dist-packages/sglang/benchmark/datasets/image.py:58: UserWarning: High resolution (up to 1920x1080) with 128 total images may take a long time. Consider reducing resolution or image count.
+  return sample_image_requests(
+benchmark_args=Namespace(backend='sglang-oai-chat', base_url=None, host='127.0.0.1', port=30004, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/weights', served_model_name='kimi-vl-a3b-instruct', tokenizer='/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/weights', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round1.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body='{"stream_options": {"include_usage": true}}', apply_chat_template=False, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+Waiting up to 60s for http://127.0.0.1:30004/v1/models to become ready...
+Server ready in 0.0s.
+Namespace(backend='sglang-oai-chat', base_url=None, host='127.0.0.1', port=30004, ready_check_timeout_sec=60, dataset_name='image', dataset_path='', dataset_offset=0, agentic_max_turns=None, speed_bench_category=None, speed_bench_output_len=512, model='/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/weights', served_model_name='kimi-vl-a3b-instruct', tokenizer='/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/weights', num_prompts=128, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=4096, random_output_len=1024, random_range_ratio=1.0, image_count=1, image_resolution='1080p', random_image_count=False, image_format='jpeg', image_content='random', request_rate=inf, use_trace_timestamps=False, max_concurrency=64, output_file='/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round1.jsonl', output_details=True, print_requests=False, disable_tqdm=False, disable_stream=False, return_logprob=False, top_logprobs_num=0, token_ids_logprob=None, logprob_start_len=-1, return_routed_experts=False, cache_report=False, seed=1, disable_ignore_eos=False, temperature=0.0, top_p=1.0, extra_request_body='{"stream_options": {"include_usage": true}}', apply_chat_template=True, profile=False, plot_throughput=False, profile_activities=['CPU', 'GPU'], profile_start_step=None, profile_steps=None, profile_num_steps=None, profile_by_stage=False, profile_stages=None, profile_output_dir=None, profile_prefix=None, lora_name=None, lora_request_distribution='uniform', lora_zipf_alpha=1.5, prompt_suffix='', pd_separated=False, profile_prefill_url=None, profile_decode_url=None, flush_cache=False, flush_cache_timeout=60.0, warmup_requests=1, tokenize_prompt=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256, gsp_range_ratio=1.0, gsp_fast_prepare=False, gsp_input_ids=False, gsp_send_routing_key=False, gsp_num_turns=1, gsp_ordered=False, gsp_group_distribution='uniform', gsp_zipf_alpha=None, mooncake_slowdown_factor=1.0, mooncake_num_rounds=1, mooncake_workload='conversation', fake_prefill=False, tag=None, header=None)
+
+#Input tokens: 670748
+#Output tokens: 131072
+#Total images: 128
+#Images per request: 1 (fixed)
+
+=== Token Breakdown (per request avg / total) ===
+  Raw text prompt tokens (without overhead): avg=4096.0, total=524288
+  Text prompt tokens (with chat template): avg=4204.2, total=538140
+  Text prompt overhead: avg=108.2, total=13852
+  Vision tokens: avg=1036.0, total=132608
+
+Created 128 random jpeg images with average 2089739 bytes per request
+Starting warmup with 1 sequences...
+Warmup completed with 1 sequences. Starting main benchmark run...
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:48<1:42:10, 48.27s/it]  6%|▋         | 8/128 [01:41<22:39, 11.33s/it]   12%|█▏        | 15/128 [02:34<17:21,  9.22s/it] 17%|█▋        | 22/128 [03:31<15:25,  8.73s/it] 23%|██▎       | 29/128 [04:27<13:56,  8.45s/it] 28%|██▊       | 36/128 [05:22<12:38,  8.24s/it] 34%|███▎      | 43/128 [06:18<11:31,  8.14s/it] 39%|███▉      | 50/128 [07:11<10:21,  7.96s/it] 45%|████▍     | 57/128 [08:04<09:16,  7.83s/it] 50%|█████     | 64/128 [08:57<08:15,  7.74s/it] 55%|█████▌    | 71/128 [09:49<07:15,  7.63s/it] 61%|██████    | 78/128 [10:41<06:19,  7.59s/it] 66%|██████▋   | 85/128 [11:33<05:24,  7.55s/it] 72%|███████▏  | 92/128 [12:24<04:29,  7.48s/it] 77%|███████▋  | 99/128 [13:18<03:37,  7.51s/it] 83%|████████▎ | 106/128 [14:09<02:44,  7.48s/it] 88%|████████▊ | 113/128 [15:02<01:52,  7.49s/it] 94%|█████████▍| 120/128 [15:54<00:59,  7.48s/it] 99%|█████████▉| 127/128 [16:21<00:06,  6.39s/it]100%|██████████| 128/128 [16:21<00:00,  7.67s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 sglang-oai-chat
+Traffic request rate:                    inf       
+Max request concurrency:                 64        
+Successful requests:                     128       
+Benchmark duration (s):                  981.49    
+Total input tokens:                      670748    
+Total input text tokens:                 538140    
+Total input vision tokens:               132608    
+Total generated tokens:                  131072    
+Total generated tokens (retokenized):    126746    
+Request throughput (req/s):              0.13      
+Input token throughput (tok/s):          683.40    
+Output token throughput (tok/s):         133.54    
+Peak output token throughput (tok/s):    196.00    
+Peak concurrent requests:                71        
+Total token throughput (tok/s):          816.94    
+Concurrency:                             49.30     
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   378017.98 
+Median E2E Latency (ms):                 470620.81 
+P90 E2E Latency (ms):                    488975.05 
+P95 E2E Latency (ms):                    525738.25 
+P99 E2E Latency (ms):                    539375.40 
+---------------Time to First Token----------------
+Mean TTFT (ms):                          332478.65 
+Median TTFT (ms):                        425292.25 
+P90 TTFT (ms):                           446216.40 
+P95 TTFT (ms):                           476390.44 
+P99 TTFT (ms):                           489752.80 
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          44.52     
+Median TPOT (ms):                        44.61     
+P90 TPOT (ms):                           49.51     
+P95 TPOT (ms):                           50.69     
+P99 TPOT (ms):                           51.70     
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           45.87     
+Median ITL (ms):                         40.73     
+P90 ITL (ms):                            42.25     
+P95 ITL (ms):                            42.73     
+P99 ITL (ms):                            83.94     
+Max ITL (ms):                            12343.73  
+==================================================

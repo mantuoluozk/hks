@@ -1,0 +1,53 @@
+{
+  "samples": 1000,
+  "full_dataset": true,
+  "correct": 872,
+  "errors": 0,
+  "truncated": 1,
+  "categories": {
+    "Regular Text Recognition": {
+      "count": 50,
+      "correct": 45
+    },
+    "Irregular Text Recognition": {
+      "count": 50,
+      "correct": 40
+    },
+    "Artistic Text Recognition": {
+      "count": 50,
+      "correct": 36
+    },
+    "Handwriting Recognition": {
+      "count": 50,
+      "correct": 40
+    },
+    "Digit String Recognition": {
+      "count": 50,
+      "correct": 35
+    },
+    "Non-Semantic Text Recognition": {
+      "count": 50,
+      "correct": 48
+    },
+    "Scene Text-centric VQA": {
+      "count": 200,
+      "correct": 185
+    },
+    "Doc-oriented VQA": {
+      "count": 200,
+      "correct": 182
+    },
+    "Key Information Extraction": {
+      "count": 200,
+      "correct": 168
+    },
+    "Handwritten Mathematical Expression Recognition": {
+      "count": 100,
+      "correct": 93
+    }
+  },
+  "published_score_per_1000": 867,
+  "official_accuracy_pass": null,
+  "exact_publisher_harness_equivalence": null,
+  "accuracy": 0.872
+}

@@ -1,0 +1,14 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "kimi-vl-a3b-instruct",
+      "object": "model",
+      "created": 1793675711,
+      "owned_by": "sglang",
+      "root": "kimi-vl-a3b-instruct",
+      "parent": null,
+      "max_model_len": 24576
+    }
+  ]
+}

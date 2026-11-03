@@ -1,0 +1,14 @@
+{
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2",
+    "pillow": "11.3.0",
+    "requests": "2.34.2",
+    "pyarrow": "25.0.1"
+  },
+  "cpu.max": "1500000 100000",
+  "memory.max": "63350767616"
+}

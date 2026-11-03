@@ -1,0 +1,103 @@
+{
+  "samples": 1000,
+  "vllm": 869,
+  "sglang": 872,
+  "changed_scoring": [
+    {
+      "id": "ocrbench_test_0006",
+      "vllm_correct": true,
+      "sglang_correct": false
+    },
+    {
+      "id": "ocrbench_test_0007",
+      "vllm_correct": true,
+      "sglang_correct": false
+    },
+    {
+      "id": "ocrbench_test_0040",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0073",
+      "vllm_correct": true,
+      "sglang_correct": false
+    },
+    {
+      "id": "ocrbench_test_0105",
+      "vllm_correct": true,
+      "sglang_correct": false
+    },
+    {
+      "id": "ocrbench_test_0109",
+      "vllm_correct": true,
+      "sglang_correct": false
+    },
+    {
+      "id": "ocrbench_test_0133",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0137",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0138",
+      "vllm_correct": true,
+      "sglang_correct": false
+    },
+    {
+      "id": "ocrbench_test_0174",
+      "vllm_correct": true,
+      "sglang_correct": false
+    },
+    {
+      "id": "ocrbench_test_0184",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0200",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0218",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0308",
+      "vllm_correct": true,
+      "sglang_correct": false
+    },
+    {
+      "id": "ocrbench_test_0712",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0837",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0902",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0952",
+      "vllm_correct": false,
+      "sglang_correct": true
+    },
+    {
+      "id": "ocrbench_test_0977",
+      "vllm_correct": false,
+      "sglang_correct": true
+    }
+  ],
+  "scope": "Historical cross-framework comparison, not causal attribution or controlled GELU ablation"
+}

@@ -1,0 +1,5 @@
+{
+  "stage": "failed",
+  "error": "AssertionError('Port occupied')",
+  "formal_started": false
+}

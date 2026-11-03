@@ -1,0 +1,296 @@
+[
+  {
+    "path": "results/screen-20261103T030631Z/eager/functional/red.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/functional/red.json",
+    "original_sha256": "16127ce4e5a28ea46300d6f294f7a23a3575caef4fdf2e1ebbf0026960d23816",
+    "publication_sha256": "ae55f40ecf6ae3fac4c8e89da9603a363e17a171d34ef8f81d471c9384307856",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/functional/ocr.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/functional/ocr.json",
+    "original_sha256": "0ef71ce342e5568dafb4ff506ed6e80c857e471b2ea51a7f0fd06138ab057239",
+    "publication_sha256": "0dd1708c6c984287fd3411a8664dd6e4625873c7d4e86fd5b71fda45f9e3a13e",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/functional/demo.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/functional/demo.json",
+    "original_sha256": "b44447374b16382ecdd6a36a425a493000d91bac5c79a2913bf88f3f7d76af42",
+    "publication_sha256": "4ec94e998086cec729d9f061d90ded86322804a92f1079918ba206dfec0d0dbb",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/functional/two-images.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/functional/two-images.json",
+    "original_sha256": "49ca26fdcda63aec09f733afec66d2aeb30d9ce97f73c475df62e6c8821cbd31",
+    "publication_sha256": "4a41469ada3c9f4d8d969337b679cd3ca7df55af4d3f9a953cd6f81da3227cc1",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/functional/repeat.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/functional/repeat.json",
+    "original_sha256": "d6390e4b024db8922b461bd7ecb7420a05f8a0db46847a16e9fc851497947868",
+    "publication_sha256": "7c3c2bd3413f140370e08f569fe6ed6da0cfe67199368c91894c3bc995b54e35",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/functional/blue-zh.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/functional/blue-zh.json",
+    "original_sha256": "d9c16462a9a0a3cec5448d7a7788130b79315d57010d97bed7a528b911ffe9d2",
+    "publication_sha256": "85fe334b8a8a930b3d965875be22f459869669bf3ddabe1239c29689add5cf33",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/functional/stream.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/functional/stream.json",
+    "original_sha256": "fc54becdfe9d50f26aeac1ae5df177ef2dc3b9164a48d92a751214d6c6d12568",
+    "publication_sha256": "1451737e8a54b9706739c160bc347690da1909ac54e5a48be08aff8f463806bb",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/short/warmup.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/short/warmup.json",
+    "original_sha256": "ce6d3867af692e3502d7d888f9851925efd541374bc787080061066666e78d1e",
+    "publication_sha256": "05e0a01fb8b8832ac34371604d9e07cf34cdb8f1692f3a17750337ec530b29d5",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/short/c2-o32/requests.jsonl",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/short/c2-o32/requests.jsonl",
+    "original_sha256": "6e5fc3b7cd5602f98f996be1eb3aeea1693ab66051486c742cc710ae4ea6fd61",
+    "publication_sha256": "46c61a0939e9dfd73152e96a3910f8bcb931c1f411a009272bfb7eef6bcfb93c",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/short/c2-o128/requests.jsonl",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/short/c2-o128/requests.jsonl",
+    "original_sha256": "6f3396ddf02f1d356bf7a86ec732bfa0ed2e7d7218286b7887288262d5f09e04",
+    "publication_sha256": "f124c0134e0086f88a332ba14766b71d34e64739e711549a740804cc8c7cc727",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/short/c1-o32/requests.jsonl",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/short/c1-o32/requests.jsonl",
+    "original_sha256": "b9fba7fab157db23d3028cef7e1deeae22fd7a263035e81d3a47bc7f39aa4f00",
+    "publication_sha256": "455fae1460cdc7ad410c2ecfabd5aef85b576512eb239489c141e356ef593b84",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/eager/short/c1-o128/requests.jsonl",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/eager/short/c1-o128/requests.jsonl",
+    "original_sha256": "f907c0ebf2556318a90917c96df4758e734b27d76899a184965ff08cf3e67c13",
+    "publication_sha256": "da65ec5664b754f6452b6d86e8e629887a292df87f512c72e179ce5578e9f952",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/functional/red.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/functional/red.json",
+    "original_sha256": "cf3174501fd222d5662f3e123fe3c51c9bc992406ff3d6bc57fca6a60555ab21",
+    "publication_sha256": "143aa885399e777a49763f6cb9b17b76ebbaaa101cc4f7c33ebf5f589fd1b30f",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/functional/blue-zh.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/functional/blue-zh.json",
+    "original_sha256": "5145b0f47cac8681ada448892724c74d6b2ea092b6a2bf0e14a11f650e8d930b",
+    "publication_sha256": "d7f839299c855397d88a2b06082af054b50b8bceccce886e09fde2a390742d06",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/functional/demo.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/functional/demo.json",
+    "original_sha256": "f17e407834e01ec0b550d039d1edabc5cb8a0e6cf4f9a388da15a58a8ce77160",
+    "publication_sha256": "71c09bc671e769d788e33cb66287cb94af4d2ef2471113f9ffe7e3d0d4d9b461",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/functional/repeat.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/functional/repeat.json",
+    "original_sha256": "39d09c496fa9ffc1385a40cb570f2614c798ac70b432abef6b0d755c275fb540",
+    "publication_sha256": "dbac73904edbd58cb01b6143088d9a5274a05acda5e4de412a28553844c4a2be",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/functional/stream.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/functional/stream.json",
+    "original_sha256": "7f17aa9d37879d7e52f9fc0289417c5864970cb8ef3bc203856984a68180da7f",
+    "publication_sha256": "430803a0d62eb539341336bda6f6edfdbbf9ebb888e89ff50666f0e9e27797dc",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/functional/ocr.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/functional/ocr.json",
+    "original_sha256": "45d5f187a86b387000bb3eaa23a9c543fa02d91eaf142b30598504b6817a3702",
+    "publication_sha256": "96e47b111aa464bd18c0ccdcb63b47bb3b16316fc97f6ffa358afe2359aafc00",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/functional/two-images.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/functional/two-images.json",
+    "original_sha256": "5fce7186e68d94ca8dba27cfefce3296740084c56e7394f0df7d905ed9eddb34",
+    "publication_sha256": "133c84b2c7338581d17fe1058f96f405fc16504338b350c6629b40c9799a474f",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/short/warmup.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/short/warmup.json",
+    "original_sha256": "4c934466d75a2752230eb8689f8482c19e1faffab80c16a2315efe73fe9a6ba2",
+    "publication_sha256": "95b825c56f78ce42047bfed568882cddbc2639f761a4cf474d69c89187022327",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/short/c1-o32/requests.jsonl",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/short/c1-o32/requests.jsonl",
+    "original_sha256": "2f9a3fced9f3dc754d69fe6c4203613151978d3b45a27230013841a11f60ed95",
+    "publication_sha256": "4607b0697e445286a5eade9f0ac3b8a6a752c3a3049d3c149c1e8758291390a9",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/short/c1-o128/requests.jsonl",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/short/c1-o128/requests.jsonl",
+    "original_sha256": "2188f4c466ff906240033fcc9c78a060b239535a8f32278c1c7b376e5ff5c9af",
+    "publication_sha256": "4d4c8224148c095b09be70718f4c5280a1d5ca40b65e5da576994cffcd0aed7d",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/short/c2-o32/requests.jsonl",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/short/c2-o32/requests.jsonl",
+    "original_sha256": "f8b6c50653473397b3e561ef121589e037860621ee424873a66ba66c123f5c76",
+    "publication_sha256": "19906a1809c8cae6b828d7e7a5620ff16b2a2879ba84e4843e39f7048806fc1d",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/screen-20261103T030631Z/decode-graph/short/c2-o128/requests.jsonl",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/screen-20261103T030631Z/decode-graph/short/c2-o128/requests.jsonl",
+    "original_sha256": "149cb4d87ececf5efb35265d6557e7ff5674d05511ba226c26f70118e3858e0d",
+    "publication_sha256": "946c93b5644be91895745d500c72a77501450fb765fc27e67cb3ced2d47e55f1",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round1_4096_1024_c64-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round1_4096_1024_c64-inputs/inputs.json",
+    "original_sha256": "298095ceb8c6cf6b512d8fb151f011649ff33a65786b78a6291256e1e42e34f4",
+    "publication_sha256": "02c9b407e96bd39d82890e078f7d7be943cefcc81ecd2ae8f25beb177edc9f49",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round2_4096_1024_c64-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round2_4096_1024_c64-inputs/inputs.json",
+    "original_sha256": "298095ceb8c6cf6b512d8fb151f011649ff33a65786b78a6291256e1e42e34f4",
+    "publication_sha256": "02c9b407e96bd39d82890e078f7d7be943cefcc81ecd2ae8f25beb177edc9f49",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round1_16384_1024_c8-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round1_16384_1024_c8-inputs/inputs.json",
+    "original_sha256": "3782874809e47bf8599b8fcae12084e0ca2c91e3b3f1c1635b11cae2c94a2833",
+    "publication_sha256": "ae6dafcfd6ccd1033dccae78903805a33b694cc1e0c9a00fdd3a11a5d9ffb032",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/functional/ocr.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/functional/ocr.json",
+    "original_sha256": "64bcc668d65d45f12337739b9160751496276dc2e06c9897a6e9f19719ed04e4",
+    "publication_sha256": "94e490f4610dfa5a95bd49e0eaaf7b5b325c30dde38f6863815de0bd7f32923f",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/functional/demo.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/functional/demo.json",
+    "original_sha256": "a8914304d4d36dea427cdce4b38d2e95e52265bb3008c92f23c78747df3d61e0",
+    "publication_sha256": "2ad7c416f6edaca4c0d40d1cea75687f16bcbfbba48b65cb56d17caf6afadcb9",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/functional/stream.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/functional/stream.json",
+    "original_sha256": "e3693a642eaede95f62241de84b86c6e2bf5c1004ca5726c73abc3db97a5236e",
+    "publication_sha256": "ca2f16d17bccfa50fce225ad889fd8f46061be60ac9f8d620a14edb8a3133b6b",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/functional/red.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/functional/red.json",
+    "original_sha256": "24ae1797e4b4351d4bb507b2ab5f23fbad377ee3375d7c8106fb590bedf01891",
+    "publication_sha256": "ad30fb69a36f567d9aea25fc07560f1fcd1ccc79229355c7c47c08165ca1b38e",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/functional/blue-zh.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/functional/blue-zh.json",
+    "original_sha256": "e73b610e4f393171436595bc2644c363851b7a5d0cdeaca355c9fc7baec563b2",
+    "publication_sha256": "37f2445e27cc0bf087f1d40596bafdcde85c3e24f9e90ca2ece76be15793c52c",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/functional/two-images.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/functional/two-images.json",
+    "original_sha256": "5aab09c8db007783b0ac985632fcb54c67e9a6a6da2846f1afad227bee7bc5e2",
+    "publication_sha256": "11adeb81f841398bfc7c8301695a168d7108acb4a1970d3ffd5e24c84526f2e0",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/functional/repeat.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/functional/repeat.json",
+    "original_sha256": "f48cf6bbfce5ae03b77c7f9a06b50ccd6439320cbeb7c780842addf7539dc8ad",
+    "publication_sha256": "79eea09dbf0542b70ec1fe7e5d5ea729dc8f4d356bdd83a55cce49df6fc0a3d2",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/context-probe-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/context-probe-inputs/inputs.json",
+    "original_sha256": "819d32292bf0a27576838a0b418d3ec607873d58ff724b63544b3a6651a6f773",
+    "publication_sha256": "ee9c12ae63f0f6a6b11ccd6e62f7d762ec3457e131c8d157e9ca3c6d3f5e3b07",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round1_4096_1024_c1-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round1_4096_1024_c1-inputs/inputs.json",
+    "original_sha256": "73f9f018ef0021d5c693cc6d36338ae6615e52e322189d88e0ba3882fc9a08a7",
+    "publication_sha256": "55d3c16d48d699b8fbc1e781a0016af739edc9397cfd7bc9344b760f28d0d70a",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round2_4096_1024_c1-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round2_4096_1024_c1-inputs/inputs.json",
+    "original_sha256": "73f9f018ef0021d5c693cc6d36338ae6615e52e322189d88e0ba3882fc9a08a7",
+    "publication_sha256": "55d3c16d48d699b8fbc1e781a0016af739edc9397cfd7bc9344b760f28d0d70a",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round1_4096_1024_c8-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round1_4096_1024_c8-inputs/inputs.json",
+    "original_sha256": "1859e5bacc1dedb10418cba2806aad48ff0e8ab464beb609a9cb4b6399ee7b98",
+    "publication_sha256": "813d75a56c879184997eb6f8c706a50b511b1ab17b994abdb48ce2b43435926a",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round2_4096_1024_c8-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round2_4096_1024_c8-inputs/inputs.json",
+    "original_sha256": "1859e5bacc1dedb10418cba2806aad48ff0e8ab464beb609a9cb4b6399ee7b98",
+    "publication_sha256": "813d75a56c879184997eb6f8c706a50b511b1ab17b994abdb48ce2b43435926a",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round1_16384_1024_c1-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round1_16384_1024_c1-inputs/inputs.json",
+    "original_sha256": "c36a7d7957463980c3610d8f3f031ba6f747d6556e8b2804b09e034ec5bf4c1d",
+    "publication_sha256": "be6296a19d1055ab512b107eb0992a357f4b956bf67bbc500fe8a8030adcf668",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round2_16384_1024_c1-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round2_16384_1024_c1-inputs/inputs.json",
+    "original_sha256": "c36a7d7957463980c3610d8f3f031ba6f747d6556e8b2804b09e034ec5bf4c1d",
+    "publication_sha256": "be6296a19d1055ab512b107eb0992a357f4b956bf67bbc500fe8a8030adcf668",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  },
+  {
+    "path": "results/formal-20261103T031700Z/process1/round2_16384_1024_c8-inputs/inputs.json",
+    "original_path": "/root/private_data/hks/models/Kimi-VL-A3B-Instruct-SGLang/results/formal-20261103T031700Z/process1/round2_16384_1024_c8-inputs/inputs.json",
+    "original_sha256": "3782874809e47bf8599b8fcae12084e0ca2c91e3b3f1c1635b11cae2c94a2833",
+    "publication_sha256": "ae6dafcfd6ccd1033dccae78903805a33b694cc1e0c9a00fdd3a11a5d9ffb032",
+    "change": "Replace repeated inline image data by content-hash asset reference"
+  }
+]

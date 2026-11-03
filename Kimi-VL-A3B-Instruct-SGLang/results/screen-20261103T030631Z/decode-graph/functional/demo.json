@@ -1,0 +1,90 @@
+{
+  "request_payload": {
+    "model": "kimi-vl-a3b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url_header": "data:image/png;base64",
+                "asset": "assets/95de8765da89c41a2421f1c1fa3986e4d3c83793d92c8ade460a142b329d04c1.png",
+                "sha256": "95de8765da89c41a2421f1c1fa3986e4d3c83793d92c8ade460a142b329d04c1"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": "What is the dome building in the picture?"
+          }
+        ]
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "question": "What is the dome building in the picture?",
+  "images_sha256": [
+    "95de8765da89c41a2421f1c1fa3986e4d3c83793d92c8ade460a142b329d04c1"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "Rogers Centre",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1121,
+    "total_tokens": 1126,
+    "completion_tokens": 5,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1092
+    },
+    "reasoning_tokens": 0
+  },
+  "raw_response": {
+    "id": "6a3aa106c14b45eead1923fb96b8caec",
+    "object": "chat.completion",
+    "created": 1793675713,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Rogers Centre",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 163585
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1121,
+      "total_tokens": 1126,
+      "completion_tokens": 5,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1092
+      },
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "seconds": 0.9067341373302042,
+  "id": "demo",
+  "passed": true
+}

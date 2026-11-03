@@ -1,0 +1,16 @@
+{
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2"
+  },
+  "gpu": "BW",
+  "memory": [
+    68365058048,
+    68702699520
+  ],
+  "hip": "6.3.26113",
+  "projector_patch": "Remove QuickGELU override; preserve publisher GELU",
+  "model_inference_verified": false
+}

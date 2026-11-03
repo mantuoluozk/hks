@@ -1,0 +1,72 @@
+{
+  "request_payload": {
+    "model": "kimi-vl-a3b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "What is 2 + 2? Answer with the number only."
+          }
+        ]
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "question": "What is 2 + 2? Answer with the number only.",
+  "images_sha256": [],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "4",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 30,
+    "total_tokens": 33,
+    "completion_tokens": 3,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 0
+  },
+  "raw_response": {
+    "id": "230f3249b6b54c8bb2bca2fd8c9f320e",
+    "object": "chat.completion",
+    "created": 1793675342,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "4",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 163585
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 30,
+      "total_tokens": 33,
+      "completion_tokens": 3,
+      "prompt_tokens_details": null,
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "seconds": 8.359137940220535,
+  "id": "text",
+  "passed": true
+}

@@ -1,0 +1,90 @@
+{
+  "request_payload": {
+    "model": "kimi-vl-a3b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url_header": "data:image/png;base64",
+                "asset": "assets/e1f48567cbbeb88ff0f4d98e9d941de62528cc3290a92856cf4f51dc5e844e40.png",
+                "sha256": "e1f48567cbbeb88ff0f4d98e9d941de62528cc3290a92856cf4f51dc5e844e40"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": "这张图片主要是什么颜色？请只回答颜色。"
+          }
+        ]
+      }
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "question": "这张图片主要是什么颜色？请只回答颜色。",
+  "images_sha256": [
+    "e1f48567cbbeb88ff0f4d98e9d941de62528cc3290a92856cf4f51dc5e844e40"
+  ],
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 42,
+    "max_tokens": 128,
+    "stream": false
+  },
+  "output": "蓝色。",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 221,
+    "total_tokens": 225,
+    "completion_tokens": 4,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 190
+    },
+    "reasoning_tokens": 0
+  },
+  "raw_response": {
+    "id": "13ba4d7ddb744489b853f30900b89152",
+    "object": "chat.completion",
+    "created": 1793675712,
+    "model": "kimi-vl-a3b-instruct",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "蓝色。",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 163585
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 221,
+      "total_tokens": 225,
+      "completion_tokens": 4,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 190
+      },
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "seconds": 0.23324259975925088,
+  "id": "blue-zh",
+  "passed": true
+}
