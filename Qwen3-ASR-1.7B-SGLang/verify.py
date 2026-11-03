@@ -82,6 +82,9 @@ def main():
     cpu=read(ROOT/'results/delivery-cpu-checks.json');assert cpu['passed'] and cpu['model_requests_sent']==0
     assert [(r['case'],r['actual_exit'],r['expected_exit'],r['passed']) for r in cpu['cases']]==[('valid',0,0,True),('missing_release',1,1,True),('corrupted_asset',1,1,True),('mutable_env_log',0,0,True)]
     assert cpu['checker_sha256']==hashlib.sha256((ROOT/'scripts/check_delivery_cpu.py').read_bytes()).hexdigest()
+    if 'c4_warmup' in release:
+        from audit_c4_warmup import check as check_c4
+        c4=ROOT/'results'/release['c4_warmup'];assert check_c4(c4)==read(c4/'independent-check.json')
     result={'saved_evidence_checks_passed':True,'functional_per_validated_service':12,'valid_functional_services':3,'counted_audio_performance_requests':128,'performance_warmup_requests':16,
             'test_clean_utterances':2620,'wer_percent':a['wer_percent'],'cer_percent':a['cer_percent'],'official_conditions_completed':300,
             'online_tests_executed_in_this_command':False,'native_service_actual_exit':exit['actual_returncode'],'validated_stop_requested':True,

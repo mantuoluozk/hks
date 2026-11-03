@@ -14,7 +14,7 @@
 | [MiMo-V2.6-Distill-Qwen-9B](MiMo-V2.6-Distill-Qwen-9B/README.md) | SGLang / 1卡 / TP1 | 功能 11/11 | GSM8K：89.50%（179/200）；MMLU：80.00%（160/200） | 12 轮、608 请求 |
 | [MiMo-V2.6-Distill-Qwen-9B · vLLM](MiMo-V2.6-Distill-Qwen-9B-vLLM/README.md) | vLLM / 1卡 / TP1 | 功能 17/17 | GSM8K：90.50%（181/200，与SGLang相同固定子集） | 六档608/608；解码图短测吞吐提升126.24%–129.30%；单矩阵服务，c64延迟含排队 |
 | [Qwen3-ASR-1.7B](Qwen3-ASR-1.7B/README.md) | vLLM / 1卡 / TP1 | 功能 6/6；PCM 4/4；专项 300/300 | test-clean：WER 1.6501%（2620条） | 128 请求；复跑最大偏差 7.28% |
-| [Qwen3-ASR-1.7B · SGLang](Qwen3-ASR-1.7B-SGLang/README.md) | SGLang / 1卡 / TP1 | 功能 12/12；专项 300/300 | test-clean：WER 1.7501%、CER 0.6396%（2620条） | 音频性能128/128；图执行单并发短测提升283.16%，并发4冷编译另述；独立服务完整复现null |
+| [Qwen3-ASR-1.7B · SGLang](Qwen3-ASR-1.7B-SGLang/README.md) | SGLang / 1卡 / TP1 | 功能 12/12；专项 300/300 | test-clean：WER 1.7501%、CER 0.6396%（2620条） | 音频性能128/128；图执行短测单并发提升283.16%、并发4同负载并发预热补测提升155.69%；独立服务完整复现null |
 | [Qwen3-ForcedAligner-0.6B](Qwen3-ForcedAligner-0.6B/README.md) | vLLM / 1卡 / TP1 | 功能 2/2；专项 30/30 | AAS未计算（专项未提供人工时间边界） | 每进程 512 请求；复跑最大偏差 7.18% |
 | [Qwen3-ForcedAligner-0.6B 优化版v1](Qwen3-ForcedAligner-0.6B-Optimized-v1/README.md) | vLLM / 1卡 / TP1 | 功能 2/2；专项 30/30 | AAS未计算；相对首版29/30条边界一致，另1条最大差80ms | 512条对齐输入；相对首版历史吞吐提升17.77%–97.20%；独立进程复跑512条，吞吐偏差19.79% |
 | [Trident-Qwen3VL-2B](Trident-Qwen3VL-2B/README.md) | vLLM / 1卡 / TP1 | 功能 6/6；HTTP embedding通过 | ChartQA Origin：NDCG@10 ×100 = 69.4483 | 每进程 1536 请求；复跑最大偏差 3.88% |

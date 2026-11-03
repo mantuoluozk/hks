@@ -1,0 +1,80 @@
+[
+  {
+    "phase": "warmup",
+    "batch": 1,
+    "start_unix": 1793706701.766126,
+    "concurrency": 4,
+    "requests": 4,
+    "wall_seconds": 5.126391526311636,
+    "audio_seconds": 38.510333333333335,
+    "completion_tokens": 120,
+    "compilation_warnings": [],
+    "server_log_segment": "warmup-1.server.log",
+    "audio_seconds_per_wall_second": 7.512171697318827
+  },
+  {
+    "phase": "warmup",
+    "batch": 2,
+    "start_unix": 1793706707.386136,
+    "concurrency": 4,
+    "requests": 4,
+    "wall_seconds": 1.6702688871882856,
+    "audio_seconds": 38.510333333333335,
+    "completion_tokens": 120,
+    "compilation_warnings": [],
+    "server_log_segment": "warmup-2.server.log",
+    "audio_seconds_per_wall_second": 23.056367527842333
+  },
+  {
+    "phase": "warmup",
+    "batch": 3,
+    "start_unix": 1793706710.204184,
+    "concurrency": 4,
+    "requests": 4,
+    "wall_seconds": 0.613120324909687,
+    "audio_seconds": 38.510333333333335,
+    "completion_tokens": 120,
+    "compilation_warnings": [],
+    "server_log_segment": "warmup-3.server.log",
+    "audio_seconds_per_wall_second": 62.810400779008475
+  },
+  {
+    "phase": "measured",
+    "batch": 1,
+    "start_unix": 1793706711.300163,
+    "concurrency": 4,
+    "requests": 4,
+    "wall_seconds": 0.6192351430654526,
+    "audio_seconds": 38.510333333333335,
+    "completion_tokens": 120,
+    "compilation_warnings": [],
+    "server_log_segment": "measured-1.server.log",
+    "audio_seconds_per_wall_second": 62.19016114410488
+  },
+  {
+    "phase": "measured",
+    "batch": 2,
+    "start_unix": 1793706712.9080088,
+    "concurrency": 4,
+    "requests": 4,
+    "wall_seconds": 0.6113144927658141,
+    "audio_seconds": 38.510333333333335,
+    "completion_tokens": 120,
+    "compilation_warnings": [],
+    "server_log_segment": "measured-2.server.log",
+    "audio_seconds_per_wall_second": 62.99594364121529
+  },
+  {
+    "phase": "measured",
+    "batch": 3,
+    "start_unix": 1793706714.2371094,
+    "concurrency": 4,
+    "requests": 4,
+    "wall_seconds": 1.1012666230089962,
+    "audio_seconds": 38.510333333333335,
+    "completion_tokens": 120,
+    "compilation_warnings": [],
+    "server_log_segment": "measured-3.server.log",
+    "audio_seconds_per_wall_second": 34.969127846725584
+  }
+]

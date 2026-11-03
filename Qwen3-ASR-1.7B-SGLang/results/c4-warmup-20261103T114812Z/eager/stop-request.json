@@ -1,0 +1,10 @@
+{
+  "pid": 5914,
+  "pgid": 5914,
+  "signal": "SIGTERM",
+  "phase": "stopped",
+  "command_sha256": "bfc64aaeb4020c2834572423c7a6cb5c60d53cdbd7cc8543afefcee00224b093",
+  "requested_unix": 1793706605.4227965,
+  "port_free": true,
+  "finished_unix": 1793706616.6478345
+}

@@ -174,8 +174,22 @@ SSE测试上传的是完整音频文件，验证的是输出文本分块。未�
 
 原始记录位于 `/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/`。较大的JSON/JSONL可用 `file-zlib-v1` 引用和内容hash去重，单资产片≤2MiB；`evidence_io.py`透明恢复原字节，映射及字节对照在 `sources/evidence-view-map.json` 和 `evidence-view-validation.json`。权重、音频数据集、缓存和凭据不入库，原始失败记录保留。
 '''
+# Replace only the displayed C4 row with the separately verified warmed experiment.
+if 'c4_warmup' in release:
+    warm=read(ROOT/'results'/release['c4_warmup']/'summary.json')
+    assert warm['passed'] and read(ROOT/'results'/release['c4_warmup']/'independent-check.json')['passed']
+    e=warm['cells']['eager'];g=warm['cells']['graph']
+    old_row=next(l for l in text.splitlines() if l.startswith('| 4 | 4 |') and l.count('|')==6)
+    new_row=f"| 4 | 12 | {e['audio_seconds_per_wall_second']:.4f} | {g['audio_seconds_per_wall_second']:.4f} | {warm['graph_over_eager_percent']:+.2f}% |"
+    text=text.replace(old_row,new_row)
+    text=text.replace('两候选各一遍，单并发图执行吞吐约提升283.16%；并发4冷编译记录保留','单并发图执行吞吐约提升283.16%；并发4使用同负载并发预热补测')
+    text=text.replace('同Notebook、同SGLang、同音频/采样/缓存/CPU配置，仅切换eager和decode graph；并发1/4，每格4条计数、两条示范音频预热，各候选一遍。两候选输出文本集合一致。保存首轮模板缺失与停止器误判记录，没有覆盖失败状态或重跑短测以替换不利数据。','同Notebook、同SGLang、同音频/采样/缓存/CPU配置，仅切换eager和decode graph。并发1沿用每候选4条计数、两条顺序预热的短测；并发4采用独立补测：每候选新服务，先3批并发4预热共12条，再计时3批各4条共12条，4个客户端线程通过屏障同时发起请求。表中并发4吞吐按三批音频总秒数除以三批墙钟总秒数计算。两候选全部文本与原固定音频结果一致。')
+    text=text.replace('单并发改善约283.16%。graph并发4计时包含两次首次Triton编译2.31秒和2.51秒，原始耗时完整保留，不扣除编译、不声明该档优化收益。选择图配置继续正式两轮评估，不把单一短负载收益外推至全部负载。',f"单并发改善约283.16%；本次并发4补测图相对eager为{warm['graph_over_eager_percent']:+.2f}%。两配置最后两批预热及全部三批计时均未发现服务时编译告警。预热与计时使用相同并发、音频顺序和采样参数；复用模型目录已有磁盘编译缓存，不作为冷启动因果消融。三批计时吞吐分别为eager {e['batch_throughputs'][0]:.4f}/{e['batch_throughputs'][1]:.4f}/{e['batch_throughputs'][2]:.4f}，graph {g['batch_throughputs'][0]:.4f}/{g['batch_throughputs'][1]:.4f}/{g['batch_throughputs'][2]:.4f}音频秒/秒；合计包含全部三批，没有剔除较慢批次。没有编译告警不等同于证明完全没有编译或吞吐已稳定。收益仅对应本短负载，不外推至全部负载。")
+    text=text.replace('一遍候选短测、一个最终服务的128音频性能','候选短测与并发4并发预热专项补测、一个最终服务的128音频性能')
+    text=text.replace('| `accuracy.sh` |','| `warmup_c4.sh` | 独立eager/graph服务并发4预热对照 | 每配置12预热+12计时、批次日志与原始响应 |\n| `accuracy.sh` |')
+
 # REPORT_EVIDENCE_LINKS: fixed release URLs also work from the standalone report.
-version='qwen3-asr-bw-sglang-v1.0.1'
+version='qwen3-asr-bw-sglang-v1.0.2'
 web='https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/'
 def evidence(label,path,directory=False):
     kind='tree' if directory else 'blob'
@@ -189,6 +203,9 @@ links={
 '### 7.2 音频性能': '优化对比证据：'+evidence('eager短测汇总','results/eager-template/short/summary.json')+'、'+evidence('graph短测汇总',f"results/{selection['screen']}/graph/short/summary.json")+'、'+evidence('候选选择与原始失败状态','results/selection.json')+'。',
 '## 8. 复现与限制': '正式性能证据：'+evidence('首轮JSONL','bench/saved-release/round1.jsonl')+'、'+evidence('第二轮JSONL','bench/saved-release/round2.jsonl')+'、'+evidence('完整汇总','bench/saved-release/summary.json')+'、'+evidence('128条逐请求记录',formal+'/bench/requests.jsonl')+'、'+evidence('16条预热记录',formal+'/bench/warmups.jsonl')+'、'+evidence('独立CPU复算',formal+'/bench/independent-check.json')+'。',
 }
+if 'c4_warmup' in release:
+    case='results/'+release['c4_warmup']
+    links['### 7.2 音频性能']+=' 并发4补测：'+evidence('完整结果目录',case+'/',True)+'、'+evidence('两配置汇总',case+'/summary.json')+'、'+evidence('独立统计/编译日志重核',case+'/independent-check.json')+'；复跑命令为 `bash warmup_c4.sh`。'
 for heading,block in links.items():
     assert text.count(heading)==1,heading
     text=text.replace(heading,block+'\n\n'+heading)

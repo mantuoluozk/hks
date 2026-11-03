@@ -1,0 +1,11 @@
+/usr/local/lib/python3.10/dist-packages/pydantic/_internal/_generate_schema.py:2264: UnsupportedFieldAttributeWarning: The 'deprecated' attribute with value 'max_tokens is deprecated in favor of the max_completion_tokens field' was provided to the `Field()` function, which has no effect in the context it was used. 'deprecated' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/sglang/srt/layers/attention/vision.py:450: UserWarning: 1Torch was not compiled with memory efficient attention. (Triggered internally at /builds/dcutoolkit/deeplearing/pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:867.)
+  output = F.scaled_dot_product_attention(
+[2026-11-03 19:51:46] Prefill batch, #new-seq: 1, #new-token: 70, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 8.34
+[2026-11-03 19:51:46] Prefill batch, #new-seq: 3, #new-token: 492, #cached-token: 0, token usage: 0.00, #running-req: 1, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 19650.43
+[2026-11-03 19:51:46] INFO:     127.0.0.1:48512 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-11-03 19:51:46] INFO:     127.0.0.1:48518 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-11-03 19:51:46] Decode batch, #running-req: 2, #token: 486, token usage: 0.00, cuda graph: True, gen throughput (token/s): 7.03, #queue-req: 0
+[2026-11-03 19:51:46] INFO:     127.0.0.1:48516 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-11-03 19:51:46] INFO:     127.0.0.1:48514 - "POST /v1/chat/completions HTTP/1.1" 200 OK

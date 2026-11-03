@@ -1,0 +1,10 @@
+{
+  "pid": 7058,
+  "pgid": 7058,
+  "signal": "SIGTERM",
+  "phase": "stopped",
+  "command_sha256": "a69b09d27fb196d89f02040c3652762fde2bab52ed49fb73669988c866e8db51",
+  "requested_unix": 1793706715.859603,
+  "port_free": true,
+  "finished_unix": 1793706727.0602596
+}

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "cells": {
+    "eager": {
+      "passed": true,
+      "mode": "eager",
+      "concurrency": 4,
+      "counted_requests": 12,
+      "warmup_requests": 12,
+      "wall_seconds": 5.9623252036981285,
+      "audio_seconds": 115.531,
+      "mean_latency_seconds": 1.2834213567742456,
+      "mean_request_rtf": 0.13575183914107725,
+      "compilation_free_last_two_warmups_and_measurement": true,
+      "text_matches_original_fixture": true,
+      "batch_throughputs": [
+        19.451626519853686,
+        19.258306386388288,
+        19.421696980580595
+      ],
+      "audio_seconds_per_wall_second": 19.3768363940199
+    },
+    "graph": {
+      "passed": true,
+      "mode": "graph",
+      "concurrency": 4,
+      "counted_requests": 12,
+      "warmup_requests": 12,
+      "wall_seconds": 2.331816258840263,
+      "audio_seconds": 115.531,
+      "mean_latency_seconds": 0.601936575723812,
+      "mean_request_rtf": 0.07749353550614037,
+      "compilation_free_last_two_warmups_and_measurement": true,
+      "text_matches_original_fixture": true,
+      "batch_throughputs": [
+        62.19016114410488,
+        62.99594364121529,
+        34.969127846725584
+      ],
+      "audio_seconds_per_wall_second": 49.54549894830039
+    }
+  },
+  "graph_over_eager_percent": 155.69446911153761,
+  "scope": "C4 warmed short comparison only; C1, 128 formal performance, 2620 accuracy and official300 are unchanged",
+  "official_acceptance": null
+}

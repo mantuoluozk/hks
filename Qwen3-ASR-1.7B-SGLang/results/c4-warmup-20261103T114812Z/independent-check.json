@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "counted_requests": 24,
+  "warmup_requests": 24,
+  "modes": 2,
+  "last_two_warmups_and_all_measurements_no_compilation_warning": true,
+  "source_command_and_raw_statistics_checked": true,
+  "model_requests_sent": 0
+}

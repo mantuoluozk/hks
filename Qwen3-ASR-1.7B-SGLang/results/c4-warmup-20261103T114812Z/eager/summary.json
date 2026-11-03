@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "mode": "eager",
+  "concurrency": 4,
+  "counted_requests": 12,
+  "warmup_requests": 12,
+  "wall_seconds": 5.9623252036981285,
+  "audio_seconds": 115.531,
+  "mean_latency_seconds": 1.2834213567742456,
+  "mean_request_rtf": 0.13575183914107725,
+  "compilation_free_last_two_warmups_and_measurement": true,
+  "text_matches_original_fixture": true,
+  "batch_throughputs": [
+    19.451626519853686,
+    19.258306386388288,
+    19.421696980580595
+  ],
+  "audio_seconds_per_wall_second": 19.3768363940199
+}

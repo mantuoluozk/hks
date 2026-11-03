@@ -1,0 +1,14 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+eager warmup 1 6.961006107955237 compile_warnings 0
+eager warmup 2 18.01117793505862 compile_warnings 0
+eager warmup 3 19.16415879697293 compile_warnings 0
+eager measured 1 19.451626519853686 compile_warnings 0
+eager measured 2 19.258306386388288 compile_warnings 0
+eager measured 3 19.421696980580595 compile_warnings 0
+graph warmup 1 7.512171697318827 compile_warnings 0
+graph warmup 2 23.056367527842333 compile_warnings 0
+graph warmup 3 62.810400779008475 compile_warnings 0
+graph measured 1 62.19016114410488 compile_warnings 0
+graph measured 2 62.99594364121529 compile_warnings 0
+graph measured 3 34.969127846725584 compile_warnings 0

@@ -1,0 +1,23 @@
+{
+  "concurrency": 4,
+  "requests_per_batch": 4,
+  "warmup_batches": 3,
+  "measured_batches": 3,
+  "counted_requests_per_mode": 12,
+  "warmup_requests_per_mode": 12,
+  "batch_order": [
+    "en",
+    "zh",
+    "en",
+    "zh"
+  ],
+  "start_barrier_threads": 4,
+  "fresh_services": [
+    "eager",
+    "graph"
+  ],
+  "disk_compile_cache": "Existing shared model-local disk compiler cache, retained; this measures warmed execution, not cold-start causality",
+  "only_execution_mode_changed": true,
+  "timing": "Pool lifecycle, barrier and HTTP encoding/decoding included; audio/base64 before timing, evidence writes after batch",
+  "acceptance": "Both last two warmup batches and all three measured batches have no serving-time compilation warnings; every output matches the original fixture text; no errors/truncations"
+}
