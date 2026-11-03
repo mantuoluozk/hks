@@ -57,8 +57,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11159,
-      "sha256": "399d7e089eec274fbfa2d0e9a60d922988cbbc090cca05a8bd1c46e1a1e6e4ea"
+      "bytes": 12370,
+      "sha256": "dbc7bdacd2700b061ad4543244f8cb57156bf74961aee113aeb4acc7e2fdce77"
     },
     {
       "path": "results/accuracy-comparison.json",
@@ -1082,8 +1082,8 @@
     },
     {
       "path": "scripts/finalize_report.py",
-      "bytes": 11616,
-      "sha256": "e381fb6257ffb0aa3618734909a06638e2b04bc5eeb329f69859df542b4117f7"
+      "bytes": 12827,
+      "sha256": "414ce46aaae1a6d038fad2a293831d3d0ce8d4d0668110a5f3c18419a9d1c4ad"
     },
     {
       "path": "scripts/launch.py",
