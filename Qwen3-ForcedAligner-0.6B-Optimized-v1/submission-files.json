@@ -61,7 +61,7 @@
   },
   {
     "path": "README.md",
-    "bytes": 7989
+    "bytes": 8031
   },
   {
     "path": "results/command-review-20261103T021255Z/bench/offline_alignment.log",
@@ -801,7 +801,7 @@
   },
   {
     "path": "scripts/write_optimized_report.py",
-    "bytes": 9119
+    "bytes": 9161
   },
   {
     "path": "server.log",
@@ -853,7 +853,7 @@
   },
   {
     "path": "sources/scnet-image.json",
-    "bytes": 391
+    "bytes": 469
   },
   {
     "path": "sources/upstream/LICENSE",

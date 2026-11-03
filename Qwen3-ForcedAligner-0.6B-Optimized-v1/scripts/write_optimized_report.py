@@ -37,7 +37,7 @@ text=f"""# Qwen3-ForcedAligner-0.6B · BW × vLLM 优化版v1
 
 ## 2. 环境
 
-SCNet Notebook、单BW、BF16。实际复用 qwen-asr:v1 镜像，地址`appstore.scnet.cn:5000/aihub/dcu/zack233/qwen-asr:v1`；本轮区域未独立记录。实际设备、包版本、CPU线程及原生实现指纹见`results/{O.name}/final/preflight/summary.json`。固定9个运行文件通过来源清单SHA256校验。
+SCNet Notebook、单BW、BF16。实际复用 qwen-asr:v1 镜像，地址`appstore.scnet.cn:5000/aihub/dcu/zack233/qwen-asr:v1`；本轮区域为华中一区【A区】，由Notebook页面信息确认。实际设备、包版本、CPU线程及原生实现指纹见`results/{O.name}/final/preflight/summary.json`。固定9个运行文件通过来源清单SHA256校验。
 
 | 组件 | 实测版本 |
 |---|---|
