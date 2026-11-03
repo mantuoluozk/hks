@@ -174,5 +174,25 @@ SSE测试上传的是完整音频文件，验证的是输出文本分块。未�
 
 原始记录位于 `/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/`。较大的JSON/JSONL可用 `file-zlib-v1` 引用和内容hash去重，单资产片≤2MiB；`evidence_io.py`透明恢复原字节，映射及字节对照在 `sources/evidence-view-map.json` 和 `evidence-view-validation.json`。权重、音频数据集、缓存和凭据不入库，原始失败记录保留。
 '''
+# REPORT_EVIDENCE_LINKS: fixed release URLs also work from the standalone report.
+version='qwen3-asr-bw-sglang-v1.0.1'
+web='https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/'
+def evidence(label,path,directory=False):
+    kind='tree' if directory else 'blob'
+    return f'[{label}]({web}{kind}/{version}/Qwen3-ASR-1.7B-SGLang/{path})'
+formal=f"results/{release['formal']}"
+links={
+'## 3. 适配与配置': '环境证据：'+evidence('实际环境JSON',f"results/{release['preflight']}/environment.json")+'、'+evidence('权重校验',f"results/{release['preflight']}/weights-check.json")+'、'+evidence('环境日志','env.log')+'。',
+'## 6. 精度测试': '功能证据：'+evidence('正式服务12项汇总',formal+'/functional/summary.json')+'及'+evidence('逐项原始响应与SSE记录',formal+'/functional/',True)+'。',
+'### 6.2 T03/T04官方条件': '精度证据：'+evidence('test-clean评分汇总',formal+'/accuracy/summary.json')+'、'+evidence('2620条逐句预测与原始响应',formal+'/accuracy/predictions.jsonl')+'、'+evidence('独立重核结果',formal+'/accuracy/rescore.json')+'、'+evidence('固定输入SHA映射','results/test-clean-inputs.json')+'。较大的JSONL采用可还原原字节的证据引用，读取方法见第8.2节。',
+'## 7. 性能测试': '专项结果文件如下，可直接核对本框架的提交产物：\n\n| 产物 | 文件或目录 |\n| --- | --- |\n| 专项材料索引 | {INDEX} |\n| 300条逐条识别文本 | {OUTPUTS} |\n| 官方逐项反馈表 | {CSV} |\n| 可读环境说明 | {TXT} |\n| 完整环境参数与来源 | {ENV} |\n| 执行汇总与独立核验 | {SUMMARY}、{RESCORE} |\n| 原始响应及固定条件映射 | {PRED}、{INPUTS} |'.format(INDEX=evidence('专项材料README',formal+'/official/README.md'),OUTPUTS=evidence('outputs/（300个TXT）',formal+'/official/outputs/',True),CSV=evidence('反馈表.csv',formal+'/official/反馈表.csv'),TXT=evidence('环境说明.txt',formal+'/official/环境说明.txt'),ENV=evidence('environment.json',formal+'/official/environment.json'),SUMMARY=evidence('summary.json',formal+'/official/summary.json'),RESCORE=evidence('rescore.json',formal+'/official/rescore.json'),PRED=evidence('predictions.jsonl',formal+'/official/predictions.jsonl'),INPUTS=evidence('official-inputs.json','results/official-inputs.json')),
+'### 7.2 音频性能': '优化对比证据：'+evidence('eager短测汇总','results/eager-template/short/summary.json')+'、'+evidence('graph短测汇总',f"results/{selection['screen']}/graph/short/summary.json")+'、'+evidence('候选选择与原始失败状态','results/selection.json')+'。',
+'## 8. 复现与限制': '正式性能证据：'+evidence('首轮JSONL','bench/saved-release/round1.jsonl')+'、'+evidence('第二轮JSONL','bench/saved-release/round2.jsonl')+'、'+evidence('完整汇总','bench/saved-release/summary.json')+'、'+evidence('128条逐请求记录',formal+'/bench/requests.jsonl')+'、'+evidence('16条预热记录',formal+'/bench/warmups.jsonl')+'、'+evidence('独立CPU复算',formal+'/bench/independent-check.json')+'。',
+}
+for heading,block in links.items():
+    assert text.count(heading)==1,heading
+    text=text.replace(heading,block+'\n\n'+heading)
+text+='\n证据文件导航：'+evidence('功能/性能/精度/专项完整任务目录',formal+'/',True)+'、'+evidence('本版自检结果','verify_result.json')+'、'+evidence('隔离故障负测','results/delivery-cpu-checks.json')+'、'+evidence('发布文件清单','submission-manifest.json')+'、'+evidence('原始字节映射','sources/evidence-view-map.json')+'。\n\n压缩证据由 '+evidence('evidence_io.py','scripts/evidence_io.py')+' 自动校验并还原；可在模型目录执行以下只读命令查看原始JSONL（不调用模型）：\n\n```bash\npython - <<\'PY\'\nfrom scripts.evidence_io import read_text\nprint(read_text(\"'+formal+'/accuracy/predictions.jsonl\"))\nPY\n```\n'
+
 assert [s for s in text.splitlines() if s.startswith('## ')]==['## 1. 简介','## 2. 环境','## 3. 适配与配置','## 4. 启动与复现','## 5. 功能验证','## 6. 精度测试','## 7. 性能测试','## 8. 复现与限制']
 (ROOT/'README.md').write_text(text,encoding='utf-8',newline='\n');print('FIXED_EIGHT_CHAPTER_REPORT_RENDERED')

@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 16323,
-      "sha256": "fcedc9367332da91b7ac7d4e825927068370b2acd678f6f1c3745c41bd29bd93"
+      "bytes": 23035,
+      "sha256": "d624ffba4fae2647b55e7a36c18593f2d2f7c9ddb5b4a56563052a280f1bf6b8"
     },
     {
       "path": "accuracy.sh",
@@ -542,6 +542,11 @@
       "path": "results/formal-20261103T100245Z/official.log",
       "bytes": 9235,
       "sha256": "b1d823b71cb7489d90809aed456eeb93e775079ff2860fd3bdaa543e7b70d65b"
+    },
+    {
+      "path": "results/formal-20261103T100245Z/official/README.md",
+      "bytes": 1334,
+      "sha256": "316a419d602d6e3a77c6e4b634910fdf04168746b8074e5a2cba710bcc0d9bad"
     },
     {
       "path": "results/formal-20261103T100245Z/official/environment.json",
@@ -2760,8 +2765,8 @@
     },
     {
       "path": "scripts/finalize_report.py",
-      "bytes": 18197,
-      "sha256": "d35288de11b0b9520722dc08420838e51c6335deb0a4fbffcdddcaa92a24743a"
+      "bytes": 22134,
+      "sha256": "34737462df0cdea296eabf889892ae7b486c599a5401af30f156afe9d143acce"
     },
     {
       "path": "scripts/job.py",

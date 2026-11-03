@@ -49,6 +49,8 @@ Python3.10.12，HIP 6.3.26113，DTK `DTK-26.04-blas-nightly-0921`。组件原文
 
 本轮使用镜像现有依赖，音频补充依赖从 `/opt/qwen3-asr-deps` 加载，没有新增安装或升级全局栈。镜像中的vllm-hcu是已有依赖；实际服务入口、模型实现、调度与解码路径均为SGLang，启动参数和源码快照随证据保存。
 
+环境证据：[实际环境JSON](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/preflight-20261103T093739Z/environment.json)、[权重校验](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/preflight-20261103T093739Z/weights-check.json)、[环境日志](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/env.log)。
+
 ## 3. 适配与配置
 
 模型采用24层音频编码器和28层Qwen3文本解码器。SGLang原生类复用 `Qwen3OmniMoeAudioEncoder` 音频编码器及dense `Qwen3ForCausalLM`；根据原处理器执行音频加载、重采样和特征处理，保留原始输入字节、特殊token及权重映射。实际模型、处理器、配置与转写源码在 `sources/native/`，哈希见预检记录。
@@ -104,6 +106,8 @@ python verify.py
 
 SSE测试上传的是完整音频文件，验证的是输出文本分块。未将其作为实时输入测试，也未迁移原vLLM的累计PCM重送适配器；连续PCM输入、WebSocket增量状态、时间戳及长录音分块不在本轮验证范围内。
 
+功能证据：[正式服务12项汇总](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/functional/summary.json)及[逐项原始响应与SSE记录](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/tree/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/functional/)。
+
 ## 6. 精度测试
 
 ### 6.1 LibriSpeech test-clean
@@ -123,11 +127,25 @@ SSE测试上传的是完整音频文件，验证的是输出文本分块。未�
 
 [发布者模型卡](https://huggingface.co/Qwen/Qwen3-ASR-1.7B#evaluation)公布的离线test-clean WER为1.63%，本轮增加0.1201个百分点；历史vLLM为1.6501%，本轮增加0.1000个百分点。历史结果归属原框架；发布者完整归一化等价性未确认，不猜测当前赛事容差或写成官方验收通过。中文演示音频属于功能检查，不是中文精度基准。
 
+精度证据：[test-clean评分汇总](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/accuracy/summary.json)、[2620条逐句预测与原始响应](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/accuracy/predictions.jsonl)、[独立重核结果](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/accuracy/rescore.json)、[固定输入SHA映射](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/test-clean-inputs.json)。较大的JSONL采用可还原原字节的证据引用，读取方法见第8.2节。
+
 ### 6.2 T03/T04官方条件
 
 复用原条件的ID、顺序、音频和参数，AISHELL-1/test-clean/test-other各100条，另行发送300个新请求。BF16、greedy、max_new_tokens1024、seed42、自然EOS、自动语种；请求没有参考文本或语种标签。300/300成功处理、无请求错误或截断，300文本、原始响应、反馈CSV及环境均保留，并独立核对输入/输出及条件顺序。
 
 300条处理成功表示请求和产物符合执行条件，不等于300条识别文本逐字正确或官方精度已验收。未复用test-clean既有预测或原vLLM的300结果作为新框架成绩。
+
+专项结果文件如下，可直接核对本框架的提交产物：
+
+| 产物 | 文件或目录 |
+| --- | --- |
+| 专项材料索引 | [专项材料README](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/official/README.md) |
+| 300条逐条识别文本 | [outputs/（300个TXT）](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/tree/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/official/outputs/) |
+| 官方逐项反馈表 | [反馈表.csv](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/official/反馈表.csv) |
+| 可读环境说明 | [环境说明.txt](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/official/环境说明.txt) |
+| 完整环境参数与来源 | [environment.json](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/official/environment.json) |
+| 执行汇总与独立核验 | [summary.json](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/official/summary.json)、[rescore.json](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/official/rescore.json) |
+| 原始响应及固定条件映射 | [predictions.jsonl](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/official/predictions.jsonl)、[official-inputs.json](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/official-inputs.json) |
 
 ## 7. 性能测试
 
@@ -141,6 +159,8 @@ SSE测试上传的是完整音频文件，验证的是输出文本分块。未�
 | 4 | 4 | 18.3488 | 7.0572 | -61.54% |
 
 单并发改善约283.16%。graph并发4计时包含两次首次Triton编译2.31秒和2.51秒，原始耗时完整保留，不扣除编译、不声明该档优化收益。选择图配置继续正式两轮评估，不把单一短负载收益外推至全部负载。
+
+优化对比证据：[eager短测汇总](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/eager-template/short/summary.json)、[graph短测汇总](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/screen-20261103T095044Z/graph/short/summary.json)、[候选选择与原始失败状态](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/selection.json)。
 
 ### 7.2 音频性能
 
@@ -158,6 +178,8 @@ SSE测试上传的是完整音频文件，验证的是输出文本分块。未�
 报告第二轮，首轮完整保留。同服务两轮吞吐最大偏差22.98%（并发4）；本轮未做另一独立服务的完整性能复跑，不据此宣称通过独立环境20%复现门槛。客户端并发与运行上限32分别记录，端到端延迟包含排队及处理开销；没有估算扣除排队，也未执行608条生成矩阵。
 
 历史vLLM同两条示范音频第二轮吞吐为32.20/53.63/61.56/68.86，仅作跨框架、跨日期历史参考；其差异不计作本次同框架优化奖励。两条示范音频协议不外推为独立大样本或真实连续输入业务性能。
+
+正式性能证据：[首轮JSONL](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/bench/saved-release/round1.jsonl)、[第二轮JSONL](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/bench/saved-release/round2.jsonl)、[完整汇总](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/bench/saved-release/summary.json)、[128条逐请求记录](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/bench/requests.jsonl)、[16条预热记录](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/bench/warmups.jsonl)、[独立CPU复算](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/bench/independent-check.json)。
 
 ## 8. 复现与限制
 
@@ -178,3 +200,14 @@ SSE测试上传的是完整音频文件，验证的是输出文本分块。未�
 - `verify_result.json`、`submission-manifest.json`：本版本保存证据检查结果及发布字节清单。
 
 原始记录位于 `/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/`。较大的JSON/JSONL可用 `file-zlib-v1` 引用和内容hash去重，单资产片≤2MiB；`evidence_io.py`透明恢复原字节，映射及字节对照在 `sources/evidence-view-map.json` 和 `evidence-view-validation.json`。权重、音频数据集、缓存和凭据不入库，原始失败记录保留。
+
+证据文件导航：[功能/性能/精度/专项完整任务目录](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/tree/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/)、[本版自检结果](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/verify_result.json)、[隔离故障负测](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/results/delivery-cpu-checks.json)、[发布文件清单](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/submission-manifest.json)、[原始字节映射](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/sources/evidence-view-map.json)。
+
+压缩证据由 [evidence_io.py](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks/-/blob/qwen3-asr-bw-sglang-v1.0.1/Qwen3-ASR-1.7B-SGLang/scripts/evidence_io.py) 自动校验并还原；可在模型目录执行以下只读命令查看原始JSONL（不调用模型）：
+
+```bash
+python - <<'PY'
+from scripts.evidence_io import read_text
+print(read_text("results/formal-20261103T100245Z/accuracy/predictions.jsonl"))
+PY
+```
