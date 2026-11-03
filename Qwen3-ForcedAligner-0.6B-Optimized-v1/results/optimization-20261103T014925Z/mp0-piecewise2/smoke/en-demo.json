@@ -1,0 +1,274 @@
+{
+  "id": "en-demo",
+  "language": "English",
+  "audio_seconds": 15.05125,
+  "elapsed_seconds": 0.18594231409952044,
+  "classification_shape": [
+    315,
+    5000
+  ],
+  "raw_timestamp_bins": [
+    5,
+    11,
+    13,
+    16,
+    13,
+    16,
+    16,
+    19,
+    19,
+    24,
+    29,
+    30,
+    30,
+    35,
+    36,
+    39,
+    39,
+    41,
+    41,
+    48,
+    48,
+    50,
+    51,
+    53,
+    53,
+    58,
+    58,
+    63,
+    64,
+    65,
+    66,
+    69,
+    75,
+    82,
+    83,
+    85,
+    85,
+    87,
+    87,
+    93,
+    93,
+    100,
+    100,
+    110,
+    109,
+    116,
+    119,
+    126,
+    126,
+    132,
+    139,
+    140,
+    140,
+    143,
+    143,
+    146,
+    146,
+    153,
+    153,
+    158,
+    158,
+    160,
+    160,
+    161,
+    161,
+    166,
+    166,
+    171,
+    171,
+    173,
+    173,
+    176,
+    176,
+    182
+  ],
+  "items": [
+    {
+      "text": "Uh",
+      "start_time": 0.4,
+      "end_time": 0.88
+    },
+    {
+      "text": "huh",
+      "start_time": 1.04,
+      "end_time": 1.28
+    },
+    {
+      "text": "Oh",
+      "start_time": 1.28,
+      "end_time": 1.28
+    },
+    {
+      "text": "yeah",
+      "start_time": 1.28,
+      "end_time": 1.52
+    },
+    {
+      "text": "yeah",
+      "start_time": 1.52,
+      "end_time": 1.92
+    },
+    {
+      "text": "He",
+      "start_time": 2.32,
+      "end_time": 2.4
+    },
+    {
+      "text": "wasn't",
+      "start_time": 2.4,
+      "end_time": 2.8
+    },
+    {
+      "text": "even",
+      "start_time": 2.88,
+      "end_time": 3.12
+    },
+    {
+      "text": "that",
+      "start_time": 3.12,
+      "end_time": 3.28
+    },
+    {
+      "text": "big",
+      "start_time": 3.28,
+      "end_time": 3.84
+    },
+    {
+      "text": "when",
+      "start_time": 3.84,
+      "end_time": 4.0
+    },
+    {
+      "text": "I",
+      "start_time": 4.08,
+      "end_time": 4.24
+    },
+    {
+      "text": "started",
+      "start_time": 4.24,
+      "end_time": 4.64
+    },
+    {
+      "text": "listening",
+      "start_time": 4.64,
+      "end_time": 5.04
+    },
+    {
+      "text": "to",
+      "start_time": 5.12,
+      "end_time": 5.2
+    },
+    {
+      "text": "him",
+      "start_time": 5.28,
+      "end_time": 5.52
+    },
+    {
+      "text": "but",
+      "start_time": 6.0,
+      "end_time": 6.56
+    },
+    {
+      "text": "and",
+      "start_time": 6.64,
+      "end_time": 6.8
+    },
+    {
+      "text": "his",
+      "start_time": 6.8,
+      "end_time": 6.96
+    },
+    {
+      "text": "solo",
+      "start_time": 6.96,
+      "end_time": 7.44
+    },
+    {
+      "text": "music",
+      "start_time": 7.44,
+      "end_time": 8.0
+    },
+    {
+      "text": "didn't",
+      "start_time": 8.0,
+      "end_time": 8.8
+    },
+    {
+      "text": "do",
+      "start_time": 8.8,
+      "end_time": 9.28
+    },
+    {
+      "text": "overly",
+      "start_time": 9.52,
+      "end_time": 10.08
+    },
+    {
+      "text": "well",
+      "start_time": 10.08,
+      "end_time": 10.56
+    },
+    {
+      "text": "but",
+      "start_time": 11.12,
+      "end_time": 11.2
+    },
+    {
+      "text": "he",
+      "start_time": 11.2,
+      "end_time": 11.44
+    },
+    {
+      "text": "did",
+      "start_time": 11.44,
+      "end_time": 11.68
+    },
+    {
+      "text": "very",
+      "start_time": 11.68,
+      "end_time": 12.24
+    },
+    {
+      "text": "well",
+      "start_time": 12.24,
+      "end_time": 12.64
+    },
+    {
+      "text": "when",
+      "start_time": 12.64,
+      "end_time": 12.8
+    },
+    {
+      "text": "he",
+      "start_time": 12.8,
+      "end_time": 12.88
+    },
+    {
+      "text": "started",
+      "start_time": 12.88,
+      "end_time": 13.28
+    },
+    {
+      "text": "writing",
+      "start_time": 13.28,
+      "end_time": 13.68
+    },
+    {
+      "text": "for",
+      "start_time": 13.68,
+      "end_time": 13.84
+    },
+    {
+      "text": "other",
+      "start_time": 13.84,
+      "end_time": 14.08
+    },
+    {
+      "text": "people",
+      "start_time": 14.08,
+      "end_time": 14.56
+    }
+  ],
+  "format_monotonicity_bounds_passed": true
+}

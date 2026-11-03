@@ -1,0 +1,12 @@
+{
+  "sourcefind_commit": "df57f2b5bff16660b9d83e666c78d0eae5651738",
+  "condition_file": "forced_aligner.jsonl",
+  "condition_sha256": "b147ee568dd1e9d49e6e43f2748c7ea2e1d355eed4a27a39c2697aab40b65237",
+  "rows": 30,
+  "model": "forced_aligner",
+  "evaluation_status": "BOUNDARIES_PENDING",
+  "baseline_helpers": {
+    "upstream_processor.py": "eafa5732bef8086b4ed4cc0b12feaaf22d715124cb1440bf588aee8933ade9eb",
+    "smoke_offline.py": "d5e22286d570700f11a149978bc69dfb33a1f8d04428d0709e6f798d788881bb"
+  }
+}

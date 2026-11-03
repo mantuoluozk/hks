@@ -1,0 +1,8 @@
+/cache/
+/data/
+/weights/
+/artifacts/
+__pycache__/
+*.pyc
+*.pid
+*.streaming

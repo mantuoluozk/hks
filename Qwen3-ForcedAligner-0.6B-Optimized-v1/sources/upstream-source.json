@@ -1,0 +1,36 @@
+{
+  "repository": "https://github.com/QwenLM/Qwen3-ASR",
+  "revision": "7c6daf77a2421100f5fb066495372c00129d39ff",
+  "files": [
+    {
+      "path": "sources/upstream/qwen_asr/inference/qwen3_forced_aligner.py",
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen3-ASR/7c6daf77a2421100f5fb066495372c00129d39ff/qwen_asr/inference/qwen3_forced_aligner.py",
+      "bytes": 16411,
+      "sha256": "fb586127507c5980d11c6d848b530e652afad3ae0707cba6eb0c90377b2a2111"
+    },
+    {
+      "path": "sources/upstream/qwen_asr/inference/utils.py",
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen3-ASR/7c6daf77a2421100f5fb066495372c00129d39ff/qwen_asr/inference/utils.py",
+      "bytes": 13915,
+      "sha256": "b37fb4140e6d9be85f2ecb1552ed16136eb98a57f44b402f8b0b213cb6df2a82"
+    },
+    {
+      "path": "sources/upstream/LICENSE",
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen3-ASR/7c6daf77a2421100f5fb066495372c00129d39ff/LICENSE",
+      "bytes": 11343,
+      "sha256": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655"
+    },
+    {
+      "path": "sources/upstream/qwen_asr/inference/assets/korean_dict_jieba.dict",
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen3-ASR/7c6daf77a2421100f5fb066495372c00129d39ff/qwen_asr/inference/assets/korean_dict_jieba.dict",
+      "bytes": 275834,
+      "sha256": "cc157a9ab78f92bf11ed98a69b285768d6627cf5cd57a581e6c06693effce37d"
+    },
+    {
+      "path": "sources/upstream/README.md",
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen3-ASR/7c6daf77a2421100f5fb066495372c00129d39ff/README.md",
+      "bytes": 60537,
+      "sha256": "27b5d6e31c3dc10c9b4b86e226f215baacca57bede504994779ad334a67275a0"
+    }
+  ]
+}

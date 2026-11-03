@@ -1,0 +1,109 @@
+INFO 11-03 09:41:03 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-03 09:41:03 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-03 09:41:03 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-03 09:41:04 [__init__.py:237] Platform plugin hcu is activated
+{
+  "model": "Qwen/Qwen3-ForcedAligner-0.6B",
+  "model_path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B",
+  "native_token_classification_import": true,
+  "runner": "pooling",
+  "pooling_task": "token_classify",
+  "packages": {
+    "torch": "2.11.0+dtk2604.2609201441.gf74cd7",
+    "vllm": "0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a",
+    "transformers": "5.12.1",
+    "openai": "2.30.0",
+    "librosa": "0.11.0"
+  },
+  "logical_device": "0",
+  "hip": "6.3.26113",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 56603
+    },
+    {
+      "path": ".msc",
+      "bytes": 730
+    },
+    {
+      "path": "README_en.md",
+      "bytes": 57279
+    },
+    {
+      "path": "config.json",
+      "bytes": 5982
+    },
+    {
+      "path": "merges.txt",
+      "bytes": 1671853
+    },
+    {
+      "path": "model.safetensors",
+      "bytes": 1835544544
+    },
+    {
+      "path": "preprocessor_config.json",
+      "bytes": 330
+    },
+    {
+      "path": "readme.ipynb",
+      "bytes": 68133
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 1561
+    },
+    {
+      "path": "generation_config.json",
+      "bytes": 115
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 12666
+    },
+    {
+      "path": ".mv",
+      "bytes": 36
+    },
+    {
+      "path": "chat_template.json",
+      "bytes": 1161
+    },
+    {
+      "path": "configuration.json",
+      "bytes": 56
+    },
+    {
+      "path": "vocab.json",
+      "bytes": 2776833
+    }
+  ],
+  "missing_configuration": [],
+  "weight_files": [
+    {
+      "path": "model.safetensors",
+      "bytes": 1835544544
+    }
+  ],
+  "weights_available": true,
+  "inference_verified": false,
+  "official_accuracy_pass": null,
+  "stage": "ready_for_weight_provenance_check",
+  "devices": [
+    {
+      "logical_device": 0,
+      "name": "BW",
+      "gcn_arch": "gfx936:sramecc+:xnack-",
+      "memory": 68702699520,
+      "compute_units": 80
+    }
+  ],
+  "native_aligner_source_sha256": "b8b3e32b69b518c6c35ab73ee96945f15c9387a8e4fc7ff9c55c955ab88c76f6",
+  "cpu_thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  }
+}

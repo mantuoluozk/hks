@@ -1,0 +1,531 @@
+INFO 11-03 09:55:27 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 11-03 09:55:27 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 11-03 09:55:27 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 11-03 09:55:28 [__init__.py:237] Platform plugin hcu is activated
+INFO 11-03 09:55:53 [api_utils.py:273] non-default args: {'runner': 'pooling', 'dtype': 'bfloat16', 'max_model_len': 8192, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.35, 'max_num_seqs': 8, 'disable_log_stats': True, 'hf_overrides': {'architectures': ['Qwen3ASRForcedAlignerForTokenClassification']}, 'mm_processor_cache_gb': 0, 'compilation_config': {'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': [], 'ir_enable_torch_wrap': None, 'splitting_ops': None, 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': None, 'compile_ranges_endpoints': None, 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.PIECEWISE: 1>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': None, 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': None, 'pass_config': {}, 'max_cudagraph_capture_size': None, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': None, 'static_all_moe_layers': []}, 'model': '/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B'}
+WARNING 11-03 09:55:53 [arg_utils.py:1606] The global random seed is set to 0. Since VLLM_ENABLE_V1_MULTIPROCESSING is set to False, this may affect the random state of the Python process that launched vLLM.
+/usr/local/lib/python3.10/dist-packages/transformers/modeling_rope_utils.py:1036: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+INFO 11-03 09:55:53 [qwen3_asr.py:417] thinker_config is None. Initializing thinker model with default values
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+INFO 11-03 09:55:53 [model.py:619] Resolved architecture: Qwen3ASRForcedAlignerForTokenClassification
+INFO 11-03 09:55:53 [model.py:1776] Using max model len 8192
+INFO 11-03 09:55:54 [scheduler.py:252] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 11-03 09:55:54 [vllm.py:1042] Asynchronous scheduling is disabled.
+INFO 11-03 09:55:54 [kernel.py:292] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+[HCU FLASH_ATTN:varlen]: Setting kv cache block size to 64.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+INFO 11-03 09:55:54 [qwen3_asr.py:417] thinker_config is None. Initializing thinker model with default values
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+INFO 11-03 09:55:54 [qwen3_asr.py:417] thinker_config is None. Initializing thinker model with default values
+[transformers] `Qwen3ASRProcessor` defines `feature_extractor_class = 'WhisperFeatureExtractor'`, which is deprecated. Register the correct mapping in `AutoFeatureExtractor` instead.
+/usr/local/lib/python3.10/dist-packages/transformers/modeling_rope_utils.py:1036: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+INFO 11-03 09:55:55 [qwen3_asr.py:417] thinker_config is None. Initializing thinker model with default values
+/usr/local/lib/python3.10/dist-packages/transformers/modeling_rope_utils.py:1036: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+INFO 11-03 09:55:57 [qwen3_asr.py:417] thinker_config is None. Initializing thinker model with default values
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_interleaved', 'mrope_section'}
+INFO 11-03 09:56:01 [qwen3_asr.py:417] thinker_config is None. Initializing thinker model with default values
+INFO 11-03 09:56:02 [core.py:114] Initializing a V1 LLM engine (v0.25.1) with config: model='/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B', speculative_config=None, tokenizer='/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=PoolerConfig(task=None, pooling_type=None, seq_pooling_type='LAST', tok_pooling_type='ALL', use_activation=None, dimensions=None, enable_chunked_processing=False, max_embed_len=None, logit_mean=None, logit_sigma=None, step_tag_id=None, returned_token_ids=None), compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['+sparse_attn_indexer', 'none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::qwen_gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update', 'vllm::hcu_sparse_attn_indexer'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.PIECEWISE: 1>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_mla_dual_rms_norm': False, 'fuse_rope_kvcache': False}, 'max_cudagraph_capture_size': 16, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, moe_backend='auto', linear_backend='auto')
+INFO 11-03 09:56:03 [parallel_state.py:1607] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.31.202.97:33003 backend=nccl
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I1103 09:56:03.501935 21738 ProcessGroupNCCL.cpp:1720] [PG ID 0 PG GUID 0 Rank 0] HeartbeatMonitor environments: TORCH_NCCL_ENABLE_MONITORING (Whether to kill program when no watchdog heartbeat detected): 1, TORCH_NCCL_DUMP_ON_TIMEOUT: 1, TORCH_NCCL_WAIT_TIMEOUT_DUMP_MILSEC: 15000, TORCH_NCCL_HEARTBEAT_TIMEOUT_SEC: 480, TORCH_NCCL_COORD_CHECK_MILSEC: 1000, TORCH_NCCL_LOG_CPP_STACK_ON_UNCLEAN_SHUTDOWN: 1
+I1103 09:56:03.501968 21738 ProcessGroupNCCL.cpp:2053] [PG ID 0 PG GUID 0 Rank 0] PGNCCL Watchdog environments: TORCH_NCCL_RETHROW_CUDA_ERRORS: 1, TORCH_NCCL_PROPAGATE_ERROR: 0, TORCH_NCCL_DESYNC_DEBUG: 0
+I1103 09:56:03.502061 21738 ProcessGroupNCCL.cpp:983] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 0
+I1103 09:56:03.502068 21738 ProcessGroupNCCL.cpp:994] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL environments: NCCL version: 2.22.3, TORCH_NCCL_ASYNC_ERROR_HANDLING: 3, TORCH_NCCL_ENABLE_TIMING: 0, TORCH_NCCL_BLOCKING_WAIT: 0, TORCH_DISTRIBUTED_DEBUG: OFF, TORCH_NCCL_USE_TENSOR_REGISTER_ALLOCATOR_HOOK: 0, TORCH_NCCL_TRACE_BUFFER_SIZE: 2000, TORCH_NCCL_NAN_CHECK: 0, TORCH_NCCL_CUDA_EVENT_CACHE: 1
+I1103 09:56:03.502472 21738 ProcessGroupNCCL.cpp:983] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 1
+I1103 09:56:03.513115 21738 ProcessGroupNCCL.cpp:983] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 3
+I1103 09:56:03.516382 21738 ProcessGroupNCCL.cpp:983] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 5
+I1103 09:56:03.518921 21738 ProcessGroupNCCL.cpp:983] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 7
+I1103 09:56:03.521708 21738 ProcessGroupNCCL.cpp:983] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 9
+I1103 09:56:03.523962 21738 ProcessGroupNCCL.cpp:983] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL initialization options: size: 1, global rank: 0, TIMEOUT(ms): 600000, USE_HIGH_PRIORITY_STREAM: 0, SPLIT_FROM: 0, SPLIT_COLOR: -2, PG Name: 11
+INFO 11-03 09:56:03 [parallel_state.py:1942] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+INFO 11-03 09:56:04 [mm_encoder_attention.py:373] Using AttentionBackendEnum.FLASH_ATTN for MMEncoderAttention.
+INFO 11-03 09:56:04 [kernel.py:292] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+[HCU FLASH_ATTN:varlen]: Setting kv cache block size to 64.
+WARNING 11-03 09:56:05 [compilation.py:1304] Op 'sparse_attn_indexer' not present in model, enabling with '+sparse_attn_indexer' has no effect
+INFO 11-03 09:56:05 [weight_utils.py:849] Filesystem type for checkpoints: NFS. Checkpoint size: 1.71 GiB. Available RAM: 374.25 GiB.
+INFO 11-03 09:56:05 [weight_utils.py:811] Prefetching checkpoint files into page cache started (in background, num_threads=8, block_size=16777216 bytes)
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+INFO 11-03 09:56:05 [weight_utils.py:783] Prefetching checkpoint files: 10% (1/1)
+INFO 11-03 09:56:05 [weight_utils.py:806] Prefetching checkpoint files into page cache finished in 0.46s
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.57s/it]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.57s/it]
+
+INFO 11-03 09:56:06 [default_loader.py:430] Loading weights took 1.62 seconds
+HCU memory profiling entered: rank=0 device=cuda:0
+INFO 11-03 09:56:13 [qwen3_asr.py:417] thinker_config is None. Initializing thinker model with default values
+/usr/local/lib/python3.10/dist-packages/transformers/modeling_rope_utils.py:1036: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+INFO 11-03 09:56:16 [qwen3_asr.py:417] thinker_config is None. Initializing thinker model with default values
+INFO 11-03 09:56:17 [backends.py:1089] Using cache directory: /root/private_data/hks/models/Qwen3-ForcedAligner-0.6B-Optimized-v1/cache/xdg/vllm/torch_compile_cache/f90ce382cc/rank_0_0/backbone for vLLM's torch.compile
+INFO 11-03 09:56:17 [backends.py:1148] Dynamo bytecode transform time: 3.34 s
+INFO 11-03 09:56:19 [backends.py:292] Directly load the compiled graph(s) for compile range (1, 8192) from the cache, took 2.400 s
+INFO 11-03 09:56:19 [decorators.py:311] Directly load AOT compilation from path /root/private_data/hks/models/Qwen3-ForcedAligner-0.6B-Optimized-v1/cache/xdg/vllm/torch_compile_cache/torch_aot_compile/4995ecbaa2173a2f28762446a8fe10226dd1f19bc2d577a86617d7163e4f41c1/rank_0_0/model
+INFO 11-03 09:56:19 [monitor.py:53] torch.compile took 6.13 s in total
+INFO 11-03 09:56:19 [monitor.py:81] Initial profiling/warmup run took 0.02 s
+HCU memory profile: rank=0 device=cuda:0 init_free=63.67 GiB after_free=59.62 GiB weights=2.12 GiB non_torch_increase=0.83 GiB torch_peak_increase=3.25 GiB total_consumed=4.05 GiB transient_peak_headroom=3.15 GiB non_kv_cache_memory=7.2 GiB cudagraph_estimate=0.0 GiB requested=22.39 GiB available_kv=15.2 GiB
+INFO 11-03 09:56:20 [kv_cache_utils.py:2146] GPU KV cache size: 142,208 tokens
+INFO 11-03 09:56:20 [kv_cache_utils.py:2147] Maximum concurrency for 8,192 tokens per request: 17.36x
+INFO 11-03 09:56:21 [cutedsl_warmup.py:92] Skipping CuTeDSL warmup on non-CUDA platform.
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  20%|██        | 1/5 [00:00<00:03,  1.26it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  80%|████████  | 4/5 [00:00<00:00,  5.44it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 5/5 [00:00<00:00,  5.21it/s]
+INFO 11-03 09:56:23 [jit_monitor.py:73] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+INFO 11-03 09:56:23 [core.py:337] init engine (profile, create kv cache, warmup model) took 16.54 s (compilation: 6.13 s)
+INFO 11-03 09:56:23 [offline.py:41] Supported pooling task: token_classify
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]WARNING 11-03 09:56:24 [jit_monitor.py:129] Triton kernel JIT compilation during inference: _compute_slot_mapping_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  6.27it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  6.27it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  6.26it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00, 17.49it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00, 17.43it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]
+{
+  "model": "Qwen/Qwen3-ForcedAligner-0.6B",
+  "framework": "vllm",
+  "dtype": "bfloat16",
+  "runner": "pooling",
+  "pooling_task": "token_classify",
+  "enforce_eager": false,
+  "initialization_seconds": 30.526490080170333,
+  "functional_cases": 2,
+  "cases": [
+    {
+      "id": "en-demo",
+      "language": "English",
+      "audio_seconds": 15.05125,
+      "elapsed_seconds": 0.17116751801222563,
+      "classification_shape": [
+        315,
+        5000
+      ],
+      "raw_timestamp_bins": [
+        5,
+        11,
+        13,
+        16,
+        13,
+        16,
+        16,
+        19,
+        19,
+        24,
+        29,
+        30,
+        30,
+        35,
+        36,
+        39,
+        39,
+        41,
+        41,
+        48,
+        48,
+        50,
+        51,
+        53,
+        53,
+        58,
+        58,
+        63,
+        64,
+        65,
+        66,
+        69,
+        75,
+        82,
+        83,
+        85,
+        85,
+        87,
+        87,
+        93,
+        93,
+        100,
+        100,
+        110,
+        109,
+        116,
+        119,
+        126,
+        126,
+        132,
+        139,
+        140,
+        140,
+        143,
+        143,
+        146,
+        146,
+        153,
+        153,
+        158,
+        158,
+        160,
+        160,
+        161,
+        161,
+        166,
+        166,
+        171,
+        171,
+        173,
+        173,
+        176,
+        176,
+        182
+      ],
+      "items": [
+        {
+          "text": "Uh",
+          "start_time": 0.4,
+          "end_time": 0.88
+        },
+        {
+          "text": "huh",
+          "start_time": 1.04,
+          "end_time": 1.28
+        },
+        {
+          "text": "Oh",
+          "start_time": 1.28,
+          "end_time": 1.28
+        },
+        {
+          "text": "yeah",
+          "start_time": 1.28,
+          "end_time": 1.52
+        },
+        {
+          "text": "yeah",
+          "start_time": 1.52,
+          "end_time": 1.92
+        },
+        {
+          "text": "He",
+          "start_time": 2.32,
+          "end_time": 2.4
+        },
+        {
+          "text": "wasn't",
+          "start_time": 2.4,
+          "end_time": 2.8
+        },
+        {
+          "text": "even",
+          "start_time": 2.88,
+          "end_time": 3.12
+        },
+        {
+          "text": "that",
+          "start_time": 3.12,
+          "end_time": 3.28
+        },
+        {
+          "text": "big",
+          "start_time": 3.28,
+          "end_time": 3.84
+        },
+        {
+          "text": "when",
+          "start_time": 3.84,
+          "end_time": 4.0
+        },
+        {
+          "text": "I",
+          "start_time": 4.08,
+          "end_time": 4.24
+        },
+        {
+          "text": "started",
+          "start_time": 4.24,
+          "end_time": 4.64
+        },
+        {
+          "text": "listening",
+          "start_time": 4.64,
+          "end_time": 5.04
+        },
+        {
+          "text": "to",
+          "start_time": 5.12,
+          "end_time": 5.2
+        },
+        {
+          "text": "him",
+          "start_time": 5.28,
+          "end_time": 5.52
+        },
+        {
+          "text": "but",
+          "start_time": 6.0,
+          "end_time": 6.56
+        },
+        {
+          "text": "and",
+          "start_time": 6.64,
+          "end_time": 6.8
+        },
+        {
+          "text": "his",
+          "start_time": 6.8,
+          "end_time": 6.96
+        },
+        {
+          "text": "solo",
+          "start_time": 6.96,
+          "end_time": 7.44
+        },
+        {
+          "text": "music",
+          "start_time": 7.44,
+          "end_time": 8.0
+        },
+        {
+          "text": "didn't",
+          "start_time": 8.0,
+          "end_time": 8.8
+        },
+        {
+          "text": "do",
+          "start_time": 8.8,
+          "end_time": 9.28
+        },
+        {
+          "text": "overly",
+          "start_time": 9.52,
+          "end_time": 10.08
+        },
+        {
+          "text": "well",
+          "start_time": 10.08,
+          "end_time": 10.56
+        },
+        {
+          "text": "but",
+          "start_time": 11.12,
+          "end_time": 11.2
+        },
+        {
+          "text": "he",
+          "start_time": 11.2,
+          "end_time": 11.44
+        },
+        {
+          "text": "did",
+          "start_time": 11.44,
+          "end_time": 11.68
+        },
+        {
+          "text": "very",
+          "start_time": 11.68,
+          "end_time": 12.24
+        },
+        {
+          "text": "well",
+          "start_time": 12.24,
+          "end_time": 12.64
+        },
+        {
+          "text": "when",
+          "start_time": 12.64,
+          "end_time": 12.8
+        },
+        {
+          "text": "he",
+          "start_time": 12.8,
+          "end_time": 12.88
+        },
+        {
+          "text": "started",
+          "start_time": 12.88,
+          "end_time": 13.28
+        },
+        {
+          "text": "writing",
+          "start_time": 13.28,
+          "end_time": 13.68
+        },
+        {
+          "text": "for",
+          "start_time": 13.68,
+          "end_time": 13.84
+        },
+        {
+          "text": "other",
+          "start_time": 13.84,
+          "end_time": 14.08
+        },
+        {
+          "text": "people",
+          "start_time": 14.08,
+          "end_time": 14.56
+        }
+      ],
+      "format_monotonicity_bounds_passed": true
+    },
+    {
+      "id": "zh-demo",
+      "language": "Chinese",
+      "audio_seconds": 4.2039375,
+      "elapsed_seconds": 0.06336095882579684,
+      "classification_shape": [
+        96,
+        5000
+      ],
+      "raw_timestamp_bins": [
+        5,
+        9,
+        9,
+        12,
+        12,
+        14,
+        14,
+        19,
+        19,
+        22,
+        22,
+        25,
+        25,
+        28,
+        28,
+        31,
+        31,
+        34,
+        34,
+        36,
+        36,
+        38,
+        38,
+        42,
+        42,
+        46
+      ],
+      "items": [
+        {
+          "text": "甚",
+          "start_time": 0.4,
+          "end_time": 0.72
+        },
+        {
+          "text": "至",
+          "start_time": 0.72,
+          "end_time": 0.96
+        },
+        {
+          "text": "出",
+          "start_time": 0.96,
+          "end_time": 1.12
+        },
+        {
+          "text": "现",
+          "start_time": 1.12,
+          "end_time": 1.52
+        },
+        {
+          "text": "交",
+          "start_time": 1.52,
+          "end_time": 1.76
+        },
+        {
+          "text": "易",
+          "start_time": 1.76,
+          "end_time": 2.0
+        },
+        {
+          "text": "几",
+          "start_time": 2.0,
+          "end_time": 2.24
+        },
+        {
+          "text": "乎",
+          "start_time": 2.24,
+          "end_time": 2.48
+        },
+        {
+          "text": "停",
+          "start_time": 2.48,
+          "end_time": 2.72
+        },
+        {
+          "text": "滞",
+          "start_time": 2.72,
+          "end_time": 2.88
+        },
+        {
+          "text": "的",
+          "start_time": 2.88,
+          "end_time": 3.04
+        },
+        {
+          "text": "情",
+          "start_time": 3.04,
+          "end_time": 3.36
+        },
+        {
+          "text": "况",
+          "start_time": 3.36,
+          "end_time": 3.68
+        }
+      ],
+      "format_monotonicity_bounds_passed": true
+    }
+  ],
+  "validated_languages": [
+    "English",
+    "Chinese"
+  ],
+  "official_accuracy_pass": null,
+  "max_num_seqs": 8,
+  "precision_evaluation": "Timestamp format and bounds only; no AAS ground truth available."
+}
+{"batch_size": 1, "round": 1, "requests": 64, "wall_seconds": 3.9504655939526856, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 155.97300757237772, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 1, "round": 2, "requests": 64, "wall_seconds": 3.900788600090891, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 157.95934185862902, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 2, "round": 1, "requests": 64, "wall_seconds": 2.2779263900592923, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 270.4942541993035, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 2, "round": 2, "requests": 64, "wall_seconds": 2.266206809785217, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 271.89310231505215, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 4, "round": 1, "requests": 64, "wall_seconds": 1.4294777973555028, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 431.0427214328835, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 4, "round": 2, "requests": 64, "wall_seconds": 1.4263000232167542, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 432.0030778730216, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 8, "round": 1, "requests": 64, "wall_seconds": 0.9980235151015222, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 617.3862546087619, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 8, "round": 2, "requests": 64, "wall_seconds": 0.9898382513783872, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 622.4916031906885, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+I1103 09:56:44.218271 21738 ProcessGroupNCCL.cpp:1561] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL destructor entered.
+W1103 09:56:44.219898 21738 ProcessGroupNCCL.cpp:1570] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+I1103 09:56:44.220552 21738 ProcessGroupNCCL.cpp:1487] [PG ID 1 PG GUID 1 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1103 09:56:44.220968 21738 ProcessGroupNCCL.cpp:1495] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL aborts successfully.
+I1103 09:56:44.221029 21738 ProcessGroupNCCL.cpp:2083] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1103 09:56:44.221050 21738 ProcessGroupNCCL.cpp:1749] [PG ID 1 PG GUID 1 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1103 09:56:44.227075 21738 ProcessGroupNCCL.cpp:1561] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL destructor entered.
+I1103 09:56:44.227088 21738 ProcessGroupNCCL.cpp:1487] [PG ID 2 PG GUID 3 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1103 09:56:44.227201 21738 ProcessGroupNCCL.cpp:1495] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL aborts successfully.
+I1103 09:56:44.227233 21738 ProcessGroupNCCL.cpp:2083] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1103 09:56:44.227278 21738 ProcessGroupNCCL.cpp:1749] [PG ID 2 PG GUID 3 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1103 09:56:44.236817 21738 ProcessGroupNCCL.cpp:1561] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL destructor entered.
+I1103 09:56:44.236830 21738 ProcessGroupNCCL.cpp:1487] [PG ID 3 PG GUID 5 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1103 09:56:44.236948 21738 ProcessGroupNCCL.cpp:1495] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL aborts successfully.
+I1103 09:56:44.236984 21738 ProcessGroupNCCL.cpp:2083] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1103 09:56:44.237020 21738 ProcessGroupNCCL.cpp:1749] [PG ID 3 PG GUID 5 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1103 09:56:44.246858 21738 ProcessGroupNCCL.cpp:1561] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL destructor entered.
+I1103 09:56:44.246872 21738 ProcessGroupNCCL.cpp:1487] [PG ID 4 PG GUID 7 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1103 09:56:44.246964 21738 ProcessGroupNCCL.cpp:1495] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL aborts successfully.
+I1103 09:56:44.246994 21738 ProcessGroupNCCL.cpp:2083] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1103 09:56:44.247017 21738 ProcessGroupNCCL.cpp:1749] [PG ID 4 PG GUID 7 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1103 09:56:44.257004 21738 ProcessGroupNCCL.cpp:1561] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL destructor entered.
+I1103 09:56:44.257018 21738 ProcessGroupNCCL.cpp:1487] [PG ID 5 PG GUID 9 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1103 09:56:44.257112 21738 ProcessGroupNCCL.cpp:1495] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL aborts successfully.
+I1103 09:56:44.257140 21738 ProcessGroupNCCL.cpp:2083] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1103 09:56:44.257177 21738 ProcessGroupNCCL.cpp:1749] [PG ID 5 PG GUID 9 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1103 09:56:44.267032 21738 ProcessGroupNCCL.cpp:1561] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL destructor entered.
+I1103 09:56:44.267045 21738 ProcessGroupNCCL.cpp:1487] [PG ID 6 PG GUID 11 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1103 09:56:44.267151 21738 ProcessGroupNCCL.cpp:1495] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL aborts successfully.
+I1103 09:56:44.267184 21738 ProcessGroupNCCL.cpp:2083] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1103 09:56:44.267201 21738 ProcessGroupNCCL.cpp:1749] [PG ID 6 PG GUID 11 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.
+I1103 09:56:44.277024 21738 ProcessGroupNCCL.cpp:1561] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL destructor entered.
+I1103 09:56:44.277037 21738 ProcessGroupNCCL.cpp:1487] [PG ID 0 PG GUID 0 Rank 0] Launching ProcessGroupNCCL abort asynchronously.
+I1103 09:56:44.277124 21738 ProcessGroupNCCL.cpp:1495] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL aborts successfully.
+I1103 09:56:44.277149 21738 ProcessGroupNCCL.cpp:2083] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL watchdog thread joined.
+I1103 09:56:44.277164 21738 ProcessGroupNCCL.cpp:1749] [PG ID 0 PG GUID 0 Rank 0] ProcessGroupNCCL heart beat monitor thread joined.

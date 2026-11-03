@@ -14,6 +14,7 @@
 | [MiMo-V2.6-Distill-Qwen-9B](MiMo-V2.6-Distill-Qwen-9B/README.md) | SGLang | 11/11 | GSM8K 179/200；MMLU 160/200 | 12 轮、608 请求 |
 | [Qwen3-ASR-1.7B](Qwen3-ASR-1.7B/README.md) | vLLM | 在线 6/6；PCM 4/4；官方条件识别 300/300 | test-clean 2620 条，WER 1.6501% | 128 请求；复跑最大偏差 7.28% |
 | [Qwen3-ForcedAligner-0.6B](Qwen3-ForcedAligner-0.6B/README.md) | vLLM | 中英文 2/2；官方条件词级对齐 30/30 | — | 每进程 512 请求；复跑最大偏差 7.18% |
+| [Qwen3-ForcedAligner-0.6B 优化版v1](Qwen3-ForcedAligner-0.6B-Optimized-v1/README.md) | vLLM | 中英文2/2；最终各批次与本轮单条一致 | 与首版历史边界最大差80ms；非AAS精度结论 | 512条对齐输入；相对首版历史吞吐提升17.77%–97.20%；单进程两轮 |
 | [Trident-Qwen3VL-2B](Trident-Qwen3VL-2B/README.md) | vLLM | 6 条多模态输入及 HTTP embedding | ChartQA Origin NDCG@10 ×100 = 69.4483 | 每进程 1536 请求；复跑最大偏差 3.88% |
 | [Trident-Qwen3VL-2B 优化版v1](Trident-Qwen3VL-2B-Optimized-v1/README.md) | vLLM | 6条多模态输入及HTTP embedding通过 | 首版ChartQA Origin 69.4483；优化版演示向量对照通过 | 1536条embedding输入；相对初版历史吞吐提升21.14%–346.72%；单进程两轮 |
 | [Qwen-Image-2.1-Turbo](Qwen-Image-2.1-Turbo/README.md) | SGLang | 两个独立进程各 8/8；T03/T04 固定条件生成 180/180 | T03/T04 GenEval 图片已生成；未计算 CLIP/FID | 每进程 9 实测 + 3 预热；复跑最大偏差 17.09% |

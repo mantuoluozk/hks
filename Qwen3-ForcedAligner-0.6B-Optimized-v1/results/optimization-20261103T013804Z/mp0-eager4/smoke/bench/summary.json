@@ -1,0 +1,50 @@
+{
+  "workloads": [
+    {
+      "batch_size": 1,
+      "round": 1,
+      "requests": 8,
+      "wall_seconds": 0.5724683352746069,
+      "audio_seconds": 77.02075,
+      "audio_seconds_per_wall_second": 134.5415025672188,
+      "same_as_serial": 8,
+      "maximum_timestamp_delta_seconds": 0.0
+    },
+    {
+      "batch_size": 2,
+      "round": 1,
+      "requests": 8,
+      "wall_seconds": 0.33598283398896456,
+      "audio_seconds": 77.02075,
+      "audio_seconds_per_wall_second": 229.24013434129725,
+      "same_as_serial": 8,
+      "maximum_timestamp_delta_seconds": 0.0
+    },
+    {
+      "batch_size": 4,
+      "round": 1,
+      "requests": 8,
+      "wall_seconds": 0.19244705699384212,
+      "audio_seconds": 77.02075,
+      "audio_seconds_per_wall_second": 400.2178635678721,
+      "same_as_serial": 8,
+      "maximum_timestamp_delta_seconds": 0.0
+    },
+    {
+      "batch_size": 8,
+      "round": 1,
+      "requests": 8,
+      "wall_seconds": 0.1328186127357185,
+      "audio_seconds": 77.02075,
+      "audio_seconds_per_wall_second": 579.8942513671283,
+      "same_as_serial": 4,
+      "maximum_timestamp_delta_seconds": 0.08000000000000007
+    }
+  ],
+  "counted_requests": 32,
+  "round_reported": 1,
+  "timing_scope": "llm.encode only; audio I/O/resampling/text preparation excluded",
+  "workload": "Two official demo WAVs with supplied English/Chinese text",
+  "official_performance_protocol": false,
+  "official_accuracy_pass": null
+}

@@ -1,0 +1,470 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 104
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 74
+  },
+  {
+    "path": "bench.sh",
+    "bytes": 112
+  },
+  {
+    "path": "README.md",
+    "bytes": 4496
+  },
+  {
+    "path": "results/controller-v2.log",
+    "bytes": 0
+  },
+  {
+    "path": "results/controller.log",
+    "bytes": 0
+  },
+  {
+    "path": "results/current.json",
+    "bytes": 117
+  },
+  {
+    "path": "results/entry-default/offline_alignment.log",
+    "bytes": 31662
+  },
+  {
+    "path": "results/entry-default/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/entry-default/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/entry-default/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/entry-default/smoke/en-demo.json",
+    "bytes": 4000
+  },
+  {
+    "path": "results/entry-default/smoke/summary.json",
+    "bytes": 7543
+  },
+  {
+    "path": "results/entry-default/smoke/zh-demo.json",
+    "bytes": 1542
+  },
+  {
+    "path": "results/entry-default/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/entry-default.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/interrupted.json",
+    "bytes": 109
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/offline_alignment.log",
+    "bytes": 29712
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/smoke/bench/requests.jsonl",
+    "bytes": 62878
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/smoke/bench/summary.json",
+    "bytes": 1447
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/smoke/en-demo.json",
+    "bytes": 4000
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/smoke/summary.json",
+    "bytes": 7540
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/smoke/zh-demo.json",
+    "bytes": 1541
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-eager4.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-piecewise4/offline_alignment.log",
+    "bytes": 29083
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-piecewise4/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-piecewise4/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-piecewise4/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-piecewise4/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/mp0-piecewise4.log",
+    "bytes": 158
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/screen.json",
+    "bytes": 1452
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/source/optimize.py",
+    "bytes": 2082
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/source/run-scnet.sh",
+    "bytes": 1031
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/source/run.sh",
+    "bytes": 471
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/source/smoke_offline.py",
+    "bytes": 7534
+  },
+  {
+    "path": "results/optimization-20261103T013804Z/state.json",
+    "bytes": 54
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/offline_alignment.log",
+    "bytes": 33518
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/smoke/bench/requests.jsonl",
+    "bytes": 1005598
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/smoke/bench/summary.json",
+    "bytes": 2638
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/smoke/en-demo.json",
+    "bytes": 4000
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/smoke/summary.json",
+    "bytes": 7542
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/smoke/zh-demo.json",
+    "bytes": 1541
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final.json",
+    "bytes": 2603
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/final.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/offline_alignment.log",
+    "bytes": 29712
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/smoke/bench/requests.jsonl",
+    "bytes": 62878
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/smoke/bench/summary.json",
+    "bytes": 1447
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/smoke/en-demo.json",
+    "bytes": 4000
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/smoke/summary.json",
+    "bytes": 7540
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/smoke/zh-demo.json",
+    "bytes": 1541
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-eager4/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/offline_alignment.log",
+    "bytes": 32548
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/smoke/bench/requests.jsonl",
+    "bytes": 62806
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/smoke/bench/summary.json",
+    "bytes": 1431
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/smoke/en-demo.json",
+    "bytes": 4000
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/smoke/summary.json",
+    "bytes": 7542
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/smoke/zh-demo.json",
+    "bytes": 1541
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise2.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/offline_alignment.log",
+    "bytes": 33069
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/preflight/summary.json",
+    "bytes": 2229
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/preflight.log",
+    "bytes": 2596
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/runtime/weights-check.json",
+    "bytes": 1778
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/smoke/bench/requests.jsonl",
+    "bytes": 62818
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/smoke/bench/summary.json",
+    "bytes": 1433
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/smoke/en-demo.json",
+    "bytes": 3999
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/smoke/summary.json",
+    "bytes": 7541
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/smoke/zh-demo.json",
+    "bytes": 1541
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4/weights.log",
+    "bytes": 250
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/mp0-piecewise4.log",
+    "bytes": 147
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/screen.json",
+    "bytes": 4482
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/selected.json",
+    "bytes": 1408
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/source/optimize.py",
+    "bytes": 2145
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/source/run-scnet.sh",
+    "bytes": 1031
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/source/run.sh",
+    "bytes": 471
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/source/smoke_offline.py",
+    "bytes": 7534
+  },
+  {
+    "path": "results/optimization-20261103T014925Z/state.json",
+    "bytes": 59
+  },
+  {
+    "path": "run-scnet.sh",
+    "bytes": 1259
+  },
+  {
+    "path": "run.sh",
+    "bytes": 471
+  },
+  {
+    "path": "scripts/check_weights.py",
+    "bytes": 1358
+  },
+  {
+    "path": "scripts/optimize.py",
+    "bytes": 2145
+  },
+  {
+    "path": "scripts/preflight.py",
+    "bytes": 2219
+  },
+  {
+    "path": "scripts/prepare_examples.py",
+    "bytes": 871
+  },
+  {
+    "path": "scripts/smoke_offline.py",
+    "bytes": 7534
+  },
+  {
+    "path": "scripts/upstream_processor.py",
+    "bytes": 1177
+  },
+  {
+    "path": "scripts/write_optimized_report.py",
+    "bytes": 5129
+  },
+  {
+    "path": "smoke.sh",
+    "bytes": 112
+  },
+  {
+    "path": "sources/audio-sources.json",
+    "bytes": 468
+  },
+  {
+    "path": "sources/baseline/en-demo.json",
+    "bytes": 4000
+  },
+  {
+    "path": "sources/baseline/performance.json",
+    "bytes": 2670
+  },
+  {
+    "path": "sources/baseline/zh-demo.json",
+    "bytes": 1541
+  },
+  {
+    "path": "sources/functional-cases.json",
+    "bytes": 455
+  },
+  {
+    "path": "sources/modelscope-files.json",
+    "bytes": 6607
+  },
+  {
+    "path": "sources/official-t03t04-20261030.json",
+    "bytes": 509
+  },
+  {
+    "path": "sources/report-image-status.json",
+    "bytes": 412
+  },
+  {
+    "path": "sources/scnet-image.json",
+    "bytes": 1116
+  },
+  {
+    "path": "sources/upstream/LICENSE",
+    "bytes": 11343
+  },
+  {
+    "path": "sources/upstream/qwen_asr/inference/assets/korean_dict_jieba.dict",
+    "bytes": 275834
+  },
+  {
+    "path": "sources/upstream/qwen_asr/inference/qwen3_forced_aligner.py",
+    "bytes": 16411
+  },
+  {
+    "path": "sources/upstream/qwen_asr/inference/utils.py",
+    "bytes": 13915
+  },
+  {
+    "path": "sources/upstream/README.md",
+    "bytes": 60537
+  },
+  {
+    "path": "sources/upstream-source.json",
+    "bytes": 1746
+  },
+  {
+    "path": "verify.py",
+    "bytes": 2640
+  }
+]
