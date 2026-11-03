@@ -114,7 +114,6 @@ python verify.py
 原始输出与反馈位于`results/{J.name}/t03t04/`，包括30份JSON、反馈CSV、environment.json、summary.json、verified-summary.json。优化配置使用PIECEWISE和同进程引擎，准确参数记入环境；不是复制首版输出。首版逐边界对照29/30条完全一致，另1条最大差80ms，见`results/t03t04-historical-comparison.json`。
 
 
-逐单元文本、时间戳与首版历史输出及本轮单条输出对照。原版批次8已有80ms差异；80ms为一档分类间隔及历史观察范围，不是官方精度容差。逐边界检查保留真实差异，不将格式与单调性通过当作AAS精度通过。最终512条各批次与本轮单条输出完全一致；相对首版历史单条输出最大边界差80ms，不能称与首版逐边界一致。本轮完成优化版专项30条，不等于复现发布者AAS；首版专项结果独立保留。
 
 ## 7. 首次性能
 

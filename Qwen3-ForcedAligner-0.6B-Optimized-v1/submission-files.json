@@ -61,7 +61,7 @@
   },
   {
     "path": "README.md",
-    "bytes": 8768
+    "bytes": 8248
   },
   {
     "path": "results/command-review-20261103T021255Z/bench/offline_alignment.log",
@@ -801,7 +801,7 @@
   },
   {
     "path": "scripts/write_optimized_report.py",
-    "bytes": 9988
+    "bytes": 9468
   },
   {
     "path": "server.log",
