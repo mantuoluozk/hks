@@ -1,13 +1,19 @@
-# Qwen3-ForcedAligner-0.6B · BW × vLLM 优化版v1
+# Qwen3-ForcedAligner-0.6B · BW × vLLM 技术报告（优化版v1）
 
 ## 1. 简介
 
-[SCNet模型来源](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen3-ForcedAligner-0.6B) · [发布者模型](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B) · [SCNet镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490) · [光合代码](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · [保留首版](../Qwen3-ForcedAligner-0.6B/README.md)
+<!-- report-resources:start -->
+- [SCNet 模型来源](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen3-ForcedAligner-0.6B)
+- [发布者模型说明](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B)
+- [SCNet 镜像与版本](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions)
+- [光合代码仓库](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · 模型目录 `Qwen3-ForcedAligner-0.6B-Optimized-v1/`
+- [保留首版技术报告](../Qwen3-ForcedAligner-0.6B/README.md)
+<!-- report-resources:end -->
 
 本版提供音频与已知文本的强制对齐，输出词/字级时间戳。原生vLLM pooling/token_classify，原权重、分类头和发布者后处理不改。功能、时间戳差异和性能分别记录。
 
-| 验证项 | 本轮结果 |
-|---|---|
+| 验证项 | 当前结果 |
+| --- | --- |
 | 运行文件 | 9项固定来源文件SHA256通过 |
 | 功能 | 最终、默认入口和评审命令实跑中英文均2/2 |
 | T03/T04专项 | 优化配置30/30生成，原始输出和反馈完整 |
@@ -18,10 +24,22 @@
 
 ## 2. 环境
 
+<!-- report-environment:start -->
+| 环境项 | 配置 |
+| --- | --- |
+| 平台 / 区域 | SCNet Notebook / 华中一区（A区） |
+| 加速卡 / 精度 | BW × 1 / BF16；TP1 |
+| 框架 | vLLM；实际组件版本见下文 |
+| 镜像用途 | 复用 ASR 专用镜像 |
+| 镜像版本 | `v1` |
+| 镜像地址 | `appstore.scnet.cn:5000/aihub/dcu/zack233/qwen-asr:v1` |
+| 镜像复验 | 本 Notebook 两个独立进程各512条；吞吐最大偏差19.79% |
+<!-- report-environment:end -->
+
 SCNet Notebook、单BW、BF16。实际复用 qwen-asr:v1 镜像，地址`appstore.scnet.cn:5000/aihub/dcu/zack233/qwen-asr:v1`；本轮区域为华中一区【A区】，由Notebook页面信息确认。实际设备、包版本、CPU线程及原生实现指纹见`results/optimization-20261103T014925Z/final/preflight/summary.json`。固定9个运行文件通过来源清单SHA256校验。
 
 | 组件 | 实测版本 |
-|---|---|
+| --- | --- |
 | torch | 2.11.0+dtk2604.2609201441.gf74cd7 |
 | vllm | 0.25.1+das185.dtk2604.torch2110.2608171710.g7b108a |
 | transformers | 5.12.1 |
@@ -60,7 +78,7 @@ python verify.py
 ```
 
 | 文件 | 作用 / 产出 |
-|---|---|
+| --- | --- |
 | `prepare_data.sh` / `data/README.md` | 指定现有输入目录并校验固定条件，无数据下载 |
 | `official.sh` | T03/T04专项30条生成及输出检查 |
 | `baselines/Qwen3-ForcedAligner-0.6B.json` | 发布者AAS参考值与适用范围 |
@@ -79,7 +97,7 @@ python verify.py
 
 最终配置中英文2/2完成，保存每个单元的起止秒数、原始分类档位、分类形状、批次耗时与逐边界差异。两条重复示例不是独立512条语料。完整原始记录见`results/optimization-20261103T014925Z/final/smoke/bench/requests.jsonl`；源配置、源码及运行日志在同一任务目录。
 
-## 6. T03/T04固定条件与精度说明
+## 6. T03/T04 固定条件测试
 
 优化配置实际完成英文LibriSpeech test-clean 30条、单条不超过15秒，BF16、seed42、给定文本。30/30成功，反馈表无失败；条件和音频在加载前逐项SHA256校验，输出词序、秒单位、单调性及边界范围通过。条件标记为BOUNDARIES_PENDING，未提供人工时间边界，未计算AAS。
 
@@ -88,16 +106,16 @@ python verify.py
 
 逐单元文本、时间戳与首版历史输出及本轮单条输出对照。原版批次8已有80ms差异；80ms为一档分类间隔及历史观察范围，不是官方精度容差。逐边界检查保留真实差异，不将格式与单调性通过当作AAS精度通过。最终512条各批次与本轮单条输出完全一致；相对首版历史单条输出最大边界差80ms，不能称与首版逐边界一致。本轮完成优化版专项30条，不等于复现发布者AAS；首版专项结果独立保留。
 
-## 7. 首次性能实测
+## 7. 首次性能
 
 最终单进程批次1/2/4/8，各档两轮、每轮64条，共512个计数输入；每轮另先两条预热，报告第二轮。计时为llm.encode，包含内部特征处理、执行及返回，排除音频读取、重采样、初始化和输出解析。吞吐单位为音频秒/墙钟秒，批次完整调用耗时不能当作独立请求延迟。
 
-|批次|首版历史吞吐|本轮吞吐|变化|与本轮单条一致|最大边界差ms|
-|---:|---:|---:|---:|---:|---:|
-|1|134.120|157.959|17.77%|64/64|0.0|
-|2|137.873|271.893|97.20%|64/64|0.0|
-|4|249.071|432.003|73.45%|64/64|0.0|
-|8|398.082|622.492|56.37%|64/64|0.0|
+| 批次 | 首版历史吞吐 | 本轮吞吐 | 变化 | 与本轮单条一致 | 最大边界差ms |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | 134.120 | 157.959 | 17.77% | 64/64 | 0.0 |
+| 2 | 137.873 | 271.893 | 97.20% | 64/64 | 0.0 |
+| 4 | 249.071 | 432.003 | 73.45% | 64/64 | 0.0 |
+| 8 | 398.082 | 622.492 | 56.37% | 64/64 | 0.0 |
 
 对照采用已发布首版历史第二轮，跨日期新Notebook；没有重新测首版，不声称严格同一进程A/B。完整逐批计时及汇总保留，首套两轮属于同一进程；本次另通过评审命令启动独立进程复跑512条，第二轮吞吐最大偏差19.79%，完整复跑数据位于`results/command-review-20261103T021255Z/bench/`。
 
