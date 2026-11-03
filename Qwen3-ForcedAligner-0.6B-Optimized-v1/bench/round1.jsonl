@@ -1,0 +1,4 @@
+{"batch_size": 1, "round": 1, "requests": 64, "wall_seconds": 3.9504655939526856, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 155.97300757237772, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 2, "round": 1, "requests": 64, "wall_seconds": 2.2779263900592923, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 270.4942541993035, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 4, "round": 1, "requests": 64, "wall_seconds": 1.4294777973555028, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 431.0427214328835, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}
+{"batch_size": 8, "round": 1, "requests": 64, "wall_seconds": 0.9980235151015222, "audio_seconds": 616.1659999999999, "audio_seconds_per_wall_second": 617.3862546087619, "same_as_serial": 64, "maximum_timestamp_delta_seconds": 0.0}

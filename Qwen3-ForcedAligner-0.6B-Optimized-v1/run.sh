@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
-: "${RUN_RESULTS_DIR:?Use run-scnet.sh to configure this run}"
+source ./env.sh
 output="$RUN_RESULTS_DIR"
 mkdir -p "$output"
 RUN_RESULTS_DIR="$output/runtime" python scripts/check_weights.py > "$output/weights.log"

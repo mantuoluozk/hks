@@ -1,24 +1,9 @@
 {
-  "model": "Qwen3-ForcedAligner-0.6B",
-  "platform": "SCNet",
-  "url": "https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490/versions",
-  "image_id": "2114624281480511490",
-  "visibility": "private",
-  "build_status": "completed",
-  "registry_reference": "appstore.scnet.cn:5000/aihubprivate/dcu/zack233/qwen-asr:v1",
-  "digest": null,
+  "model": "Qwen3-ForcedAligner-0.6B-Optimized-v1",
+  "image": "appstore.scnet.cn:5000/aihub/dcu/zack233/qwen-asr:v1",
   "version": "v1",
-  "region": "华中一区（A区）",
-  "reproduced_in_new_notebook": false,
-  "publication": "Owner will make public when submitting; do not change visibility.",
-  "baked_dependency_files_match_pinned_wheels": true,
-  "reproduction_evidence": [
-    "results/scnet/validation-20261026T094057Z",
-    "results/scnet/validation-20261026T094355Z"
-  ],
-  "reproduction_status": "two_fresh_process_runs_complete",
-  "registry_digest_verification": "Digest deferred until submission",
-  "metadata_deferred_by_owner": true,
-  "registry_reference_source": "Provided by image owner",
-  "note": "Same private ASR image; no new system packages. Aligner code and fixed upstream processor assets are deployed from the model directory."
+  "url": "https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490",
+  "source": "Notebook image confirmed by entrant 2026-11-03",
+  "evidence": "results/optimization-20261103T014925Z/final/preflight/summary.json",
+  "region_recorded": false
 }

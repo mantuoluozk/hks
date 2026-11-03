@@ -9,19 +9,36 @@ old={x['batch_size']:x for x in baseline['workloads'] if x['round']==2}
 rows=[x for x in summary['workloads'] if x['round']==2]
 table='|批次|首版历史吞吐|本轮吞吐|变化|与本轮单条一致|最大边界差ms|\n|---:|---:|---:|---:|---:|---:|\n'+'\n'.join(f"|{x['batch_size']}|{old[x['batch_size']]['audio_seconds_per_wall_second']:.3f}|{x['audio_seconds_per_wall_second']:.3f}|{100*(x['audio_seconds_per_wall_second']/old[x['batch_size']]['audio_seconds_per_wall_second']-1):.2f}%|{x['same_as_serial']}/64|{1000*x['maximum_timestamp_delta_seconds']:.1f}|" for x in rows)
 settings=json.dumps(best['settings'],ensure_ascii=False,indent=2)
-text=f"""# Qwen3-ForcedAligner-0.6B × vLLM 优化版v1
+environment=read(O/'final/preflight/summary.json')
+packages='\n'.join(f'| {k} | {v} |' for k,v in environment['packages'].items())
+
+text=f"""# Qwen3-ForcedAligner-0.6B · BW × vLLM 优化版v1
 
 ## 1. 简介
 
-[发布者模型](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B) · [SCNet镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490) · [光合代码](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · [保留首版](../Qwen3-ForcedAligner-0.6B/README.md)
+[SCNet模型来源](https://www.scnet.cn/ui/aihub/models/sugon_scnet/Qwen3-ForcedAligner-0.6B) · [发布者模型](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B) · [SCNet镜像](https://www.scnet.cn/ui/aihub/image/zack233/2114624281480511490) · [光合代码](https://developer.sourcefind.cn/codes/zhengke/gxgm-hks) · [保留首版](../Qwen3-ForcedAligner-0.6B/README.md)
 
 本版提供音频与已知文本的强制对齐，输出词/字级时间戳。原生vLLM pooling/token_classify，原权重、分类头和发布者后处理不改。功能、时间戳差异和性能分别记录。
+
+| 验证项 | 本轮结果 |
+|---|---|
+| 运行文件 | 9项固定来源文件SHA256通过 |
+| 功能 | 最终与默认入口各中英文2/2 |
+| 性能 | 批次1/2/4/8各两轮，共512条计数输入 |
+| 时间戳对照 | 本轮批次与单条一致；相对首版历史最大80ms差异 |
+| 独立进程完整性能复现 / 官方验收 | 未判定，null |
 
 ## 2. 环境
 
 SCNet Notebook、单BW、BF16。实际复用 qwen-asr:v1 镜像，地址`appstore.scnet.cn:5000/aihub/dcu/zack233/qwen-asr:v1`；本轮区域未独立记录。实际设备、包版本、CPU线程及原生实现指纹见`results/{O.name}/final/preflight/summary.json`。固定9个运行文件通过来源清单SHA256校验。
 
-## 3. 优化配置
+| 组件 | 实测版本 |
+|---|---|
+{packages}
+
+HIP版本`{environment['hip']}`；设备`{environment['devices'][0]['name']}`，显存{environment['devices'][0]['memory']/2**30:.2f}GiB，TP1。未新增依赖，未修改全局框架源码。交付时环境原始记录另保存在`env.log`，取自最终进程preflight；`env_check.sh`用于重新采集当前环境。
+
+## 3. 适配与配置
 
 固定长度专门化编译尝试因启动成本偏高而中止，原始日志和中止标记保留在`results/optimization-20261103T013804Z/`。随后改用动态范围编译。三个已完成候选各一遍带预热：同进程eager4线程、同进程PIECEWISE4线程、同进程PIECEWISE2线程。筛选输入为相同两条中英文演示音频，各批次8个计数输入；失败候选及日志保留。最终配置为`{best['name']}`：
 
@@ -31,27 +48,38 @@ SCNet Notebook、单BW、BF16。实际复用 qwen-asr:v1 镜像，地址`appstor
 
 上下文8192、max_num_seqs8、显存比例0.35、关闭prefix及多模态预处理缓存。仅在模型独立目录设置环境，不修改镜像全局源码。
 
-## 4. 运行与复现
+## 4. 启动与复现
 
-权重路径可通过MODEL_PATH设置；默认共享路径与首版一致。音频按`sources/audio-sources.json`来源及校验准备，放`data/examples/`；不自动下载。
+权重路径可通过MODEL_PATH设置，默认`/root/private_data/SothisAI/model/Aihub/Qwen3-ForcedAligner-0.6B/main/Qwen3-ForcedAligner-0.6B`。代码部署到`/root/private_data/hks/models/Qwen3-ForcedAligner-0.6B-Optimized-v1`，配套平台目录位于`/root/private_data/hks/platform/scnet-notebook`。音频按`sources/audio-sources.json`来源及校验准备，放`data/examples/`；不自动下载。
 
 ```bash
-bash run-scnet.sh bash smoke.sh
-RUN_RESULTS_DIR="$PWD/results/reproduce" bash run-scnet.sh bash bench.sh
+bash env_check.sh
+bash smoke.sh
+RUN_RESULTS_DIR="$PWD/results/reproduce" bash bench.sh
 python verify.py
 ```
 
-默认配置入口另完成中英文2/2，输出与最终性能进程的单条参考逐项一致，记录见`results/entry-default/`。smoke与bench为离线CLI，进程完成自行退出。verify默认核验已保存证据，检查成功返回0，真实失败非零；官方验收状态单独保留null。
+| 文件 | 作用 / 产出 |
+|---|---|
+| `env.sh` / `run-scnet.sh` | 统一环境参数 / 命令包装器 |
+| `env_check.sh` | 当前环境检查，输出`env.log` |
+| `run.sh` / `smoke.sh` | 权重校验、preflight及中英文对齐；离线CLI完成即退出 |
+| `bench.sh` | 四批次各两轮，保存逐条分类档位、时间戳及逐批耗时 |
+| `verify.py` | 核验保存的原始证据，输出`verify_result.json` |
+| `bench/round1.jsonl` / `round2.jsonl` | 从原始汇总逐行导出对应轮四档，完整逐请求原始数据路径见第5章 |
+| `submission-files.json` | 当前发布文件与字节数清单 |
 
-## 5. 功能与原始数据
+默认配置入口另完成中英文2/2，输出与最终性能进程的单条参考逐项一致，记录见`results/entry-default/`。smoke与bench为离线CLI，进程完成自行退出。verify默认核验已保存证据，检查成功返回0，真实失败非零；官方验收状态单独保留null。新测输出目录通过RUN_RESULTS_DIR指定，默认按UTC时间新建；不覆盖已发布结果。`scripts/optimize.py`可从头重做候选筛选，原始历史执行脚本保留在各任务`source/`中。
+
+## 5. 功能测试
 
 最终配置中英文2/2完成，保存每个单元的起止秒数、原始分类档位、分类形状、批次耗时与逐边界差异。两条重复示例不是独立512条语料。完整原始记录见`results/{O.name}/final/smoke/bench/requests.jsonl`；源配置、源码及运行日志在同一任务目录。
 
-## 6. 时间戳与精度范围
+## 6. 精度说明
 
 逐单元文本、时间戳与首版历史输出及本轮单条输出对照。原版批次8已有80ms差异；80ms为一档分类间隔及历史观察范围，不是官方精度容差。逐边界检查保留真实差异，不将格式与单调性通过当作AAS精度通过。最终512条各批次与本轮单条输出完全一致；相对首版历史单条输出最大边界差80ms，不能称与首版逐边界一致。本轮不新增完整精度评测，首版T03/T04的30条结果仍归属首版。
 
-## 7. 性能结果
+## 7. 首次性能实测
 
 最终单进程批次1/2/4/8，各档两轮、每轮64条，共512个计数输入；每轮另先两条预热，报告第二轮。计时为llm.encode，包含内部特征处理、执行及返回，排除音频读取、重采样、初始化和输出解析。吞吐单位为音频秒/墙钟秒，批次完整调用耗时不能当作独立请求延迟。
 

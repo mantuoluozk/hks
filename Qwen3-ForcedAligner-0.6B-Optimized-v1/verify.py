@@ -31,5 +31,11 @@ for w in workloads:
  wall=sum(group[i]['batch_elapsed_seconds'] for i in range(0,64,w['batch_size']))
  audio=sum(x['audio_seconds'] for x in group)
  assert math.isclose(wall,w['wall_seconds'],rel_tol=1e-9) and math.isclose(audio/wall,w['audio_seconds_per_wall_second'],rel_tol=1e-9)
+for n in [1,2]:
+ exported=[json.loads(x) for x in (R/'bench'/f'round{n}.jsonl').read_text(encoding='utf8').splitlines()]
+ assert exported==[w for w in workloads if w['round']==n]
+assert read(R/'env.log')['native_token_classification_import']
 assert max_hist<=0.080001,('Timestamp difference exceeds historical 80ms observation',max_hist)
-print(json.dumps({'requests':512,'functional_cases':2,'max_historical_boundary_difference_seconds':max_hist,'passed':True,'official_acceptance':None}))
+result={'requests':512,'functional_cases':2,'max_historical_boundary_difference_seconds':max_hist,'passed':True,'official_acceptance':None}
+(R/'verify_result.json').write_bytes((json.dumps(result,indent=2)+'\n').encode())
+print(json.dumps(result))

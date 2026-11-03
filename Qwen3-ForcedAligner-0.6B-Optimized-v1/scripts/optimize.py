@@ -13,11 +13,9 @@ def run(name,settings,count,rounds):
  if rc==0:
   b=json.loads((out/'smoke/bench/summary.json').read_text());result['workloads']=b['workloads'];result['score']=sum(x['audio_seconds_per_wall_second'] for x in b['workloads'])/len(b['workloads'])
  return result
-candidates=[('mp0-eager4',{'VLLM_ENABLE_V1_MULTIPROCESSING':'0','ALIGN_EAGER':'1','OMP_NUM_THREADS':'4'}),('mp0-piecewise4',{'VLLM_ENABLE_V1_MULTIPROCESSING':'0','ALIGN_EAGER':'0','OMP_NUM_THREADS':'4','ALIGN_COMPILATION':'{"mode":3,"cudagraph_mode":"PIECEWISE"}' }),('mp0-piecewise2',{'VLLM_ENABLE_V1_MULTIPROCESSING':'0','ALIGN_EAGER':'0','OMP_NUM_THREADS':'2','ALIGN_COMPILATION':'{"mode":3,"cudagraph_mode":"PIECEWISE"}'})]
-previous=R/'results/optimization-20261103T013804Z'
-shutil.copytree(previous/'mp0-eager4',O/'mp0-eager4')
-results=json.loads((previous/'screen.json').read_text())[:1]
-for name,settings in candidates[1:]:
+candidates=[('mp0-eager4',{'VLLM_ENABLE_V1_MULTIPROCESSING':'0','ALIGN_EAGER':'1','ALIGN_COMPILATION':'{}','OMP_NUM_THREADS':'4'}),('mp0-piecewise4',{'VLLM_ENABLE_V1_MULTIPROCESSING':'0','ALIGN_EAGER':'0','OMP_NUM_THREADS':'4','ALIGN_COMPILATION':'{"mode":3,"cudagraph_mode":"PIECEWISE"}' }),('mp0-piecewise2',{'VLLM_ENABLE_V1_MULTIPROCESSING':'0','ALIGN_EAGER':'0','OMP_NUM_THREADS':'2','ALIGN_COMPILATION':'{"mode":3,"cudagraph_mode":"PIECEWISE"}'})]
+results=[]
+for name,settings in candidates:
  results.append(run(name,settings,8,1));(O/'screen.json').write_text(json.dumps(results,indent=2))
 valid=[x for x in results if x['exit']==0 and max(w['maximum_timestamp_delta_seconds'] for w in x['workloads'])<=0.080001]
 assert valid,'No valid optimization candidate'

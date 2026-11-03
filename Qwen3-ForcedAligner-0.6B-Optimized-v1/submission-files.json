@@ -8,12 +8,32 @@
     "bytes": 74
   },
   {
+    "path": "bench/round1.jsonl",
+    "bytes": 929
+  },
+  {
+    "path": "bench/round2.jsonl",
+    "bytes": 928
+  },
+  {
     "path": "bench.sh",
     "bytes": 112
   },
   {
+    "path": "env.log",
+    "bytes": 2229
+  },
+  {
+    "path": "env.sh",
+    "bytes": 1203
+  },
+  {
+    "path": "env_check.sh",
+    "bytes": 255
+  },
+  {
     "path": "README.md",
-    "bytes": 4496
+    "bytes": 6450
   },
   {
     "path": "results/controller-v2.log",
@@ -365,11 +385,11 @@
   },
   {
     "path": "run-scnet.sh",
-    "bytes": 1259
+    "bytes": 173
   },
   {
     "path": "run.sh",
-    "bytes": 471
+    "bytes": 424
   },
   {
     "path": "scripts/check_weights.py",
@@ -377,7 +397,7 @@
   },
   {
     "path": "scripts/optimize.py",
-    "bytes": 2145
+    "bytes": 2011
   },
   {
     "path": "scripts/preflight.py",
@@ -397,7 +417,7 @@
   },
   {
     "path": "scripts/write_optimized_report.py",
-    "bytes": 5129
+    "bytes": 7137
   },
   {
     "path": "smoke.sh",
@@ -437,7 +457,7 @@
   },
   {
     "path": "sources/scnet-image.json",
-    "bytes": 1116
+    "bytes": 391
   },
   {
     "path": "sources/upstream/LICENSE",
@@ -465,6 +485,10 @@
   },
   {
     "path": "verify.py",
-    "bytes": 2640
+    "bytes": 2978
+  },
+  {
+    "path": "verify_result.json",
+    "bytes": 165
   }
 ]
