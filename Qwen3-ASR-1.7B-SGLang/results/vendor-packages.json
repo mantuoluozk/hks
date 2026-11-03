@@ -1,0 +1,6 @@
+{
+  "sglang": "0.5.18+dtk2604.torch2110.2609231937.gc3bbbd",
+  "sglang-kernel": "0.4.6.post1+dtk2604.torch2110.2609231956.gea1c29",
+  "sglang-router": "0.3.2+dtk2604.torch2110.2608272003.ge769cd",
+  "vllm-hcu": "0.25.1+dtk2604.torch2110.2609272150.gee325d"
+}

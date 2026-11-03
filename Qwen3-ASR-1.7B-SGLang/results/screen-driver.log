@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/scripts/screen.py", line 34, in <module>
+    if proc is not None:assert proc.wait(timeout=100)==0;log.close()
+AssertionError

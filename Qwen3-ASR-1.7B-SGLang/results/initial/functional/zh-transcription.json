@@ -1,0 +1,44 @@
+{
+  "path": "/root/private_data/hks/models/Qwen3-ASR-1.7B/data/examples/asr_zh.wav",
+  "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+  "bytes": 134570,
+  "audio_seconds": 4.2039375,
+  "sample_rate": 16000,
+  "channels": 1,
+  "mode": "transcription",
+  "error": null,
+  "success": true,
+  "decode": {
+    "request_temperature": 0,
+    "native_adapter_effective_temperature": 0.01,
+    "native_adapter_max_new_tokens": 256,
+    "natural_eos": true,
+    "language": null
+  },
+  "finish_reason": null,
+  "response": {
+    "text": "甚至出现交易几乎停滞的情况。",
+    "usage": {
+      "type": "duration",
+      "seconds": 5
+    }
+  },
+  "raw_output": "甚至出现交易几乎停滞的情况。",
+  "text": "甚至出现交易几乎停滞的情况。",
+  "elapsed_seconds": 0.48533921083435416,
+  "rtf": 0.11544872178388811,
+  "usage": {
+    "type": "duration",
+    "seconds": 5
+  },
+  "request": {
+    "body_sha256": "cd523534f2eb92b8990158a5bdb4f12681eece2bc7135b185e4ab3d6f034a656",
+    "body_path": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/data/raw-requests/cd523534f2eb92b8990158a5bdb4f12681eece2bc7135b185e4ab3d6f034a656.body",
+    "content_type": "multipart/form-data; boundary=1f31b874b0e9b5c32b0fe741be42bf4e",
+    "endpoint": "/v1/audio/transcriptions",
+    "reference_or_language_supplied": false
+  },
+  "id": "zh-transcription",
+  "language_input": "zh",
+  "passed": true
+}

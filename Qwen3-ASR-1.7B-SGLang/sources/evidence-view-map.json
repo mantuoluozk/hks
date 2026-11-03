@@ -1,0 +1,26 @@
+[
+  {
+    "path": "results/test-clean-inputs.json",
+    "original_path": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/results/test-clean-inputs.json",
+    "original_bytes": 1180188,
+    "original_sha256": "8eefe4ef748e90f46f133dc4df82aec9844b42e4ba4729dc83412c44ceae840c",
+    "publication_sha256": "fcec7a4a80844577aa88efc03b0286569247b8f7ee4a8612e05b246d203e507d",
+    "encoding": "file-zlib-v1"
+  },
+  {
+    "path": "results/formal-20261103T100245Z/accuracy/predictions.jsonl",
+    "original_path": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/accuracy/predictions.jsonl",
+    "original_bytes": 6210586,
+    "original_sha256": "4da27657d277c7ad1ea1e0da314bdfa5934dfe93c58c7ec01a46b9d642b45d61",
+    "publication_sha256": "7ef9edfc48a963efaa2dee63287110b67b0dbfab26017c7b17ebe1e79b03d199",
+    "encoding": "file-zlib-v1"
+  },
+  {
+    "path": "results/formal-20261103T100245Z/official/predictions.jsonl",
+    "original_path": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z/official/predictions.jsonl",
+    "original_bytes": 649804,
+    "original_sha256": "52da5c114ba23a18af141c582dc43f00c6c7988218c0dc9b630340bf87ba34aa",
+    "publication_sha256": "932fcbfd4faa4bba8807bd087f23ead7b8e7eec5c891136ce883d75e93222829",
+    "encoding": "file-zlib-v1"
+  }
+]

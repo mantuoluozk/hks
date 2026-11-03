@@ -1,0 +1,10 @@
+{
+  "stage": "completed",
+  "stages": [
+    "bench",
+    "accuracy",
+    "official"
+  ],
+  "official_acceptance": null,
+  "independent_service_full_reproduction": null
+}

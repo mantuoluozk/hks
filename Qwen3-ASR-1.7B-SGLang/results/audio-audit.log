@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/scripts/audit_audio.py", line 47, in <module>
+    (dest/'evidence-index.json').write_text(json.dumps({'source':str(a.folder.relative_to(ROOT)),'timing':'Audio end-to-end; natural EOS; no forced token count'},indent=2)+'\n')
+  File "/usr/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/formal-20261103T100245Z/bench' is not in the subpath of '/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang' OR one path is relative and the other is absolute.

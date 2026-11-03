@@ -1,0 +1,8 @@
+{
+  "packages": {
+    "pyarrow": "25.0.1",
+    "regex": "2026.9.10"
+  },
+  "libsndfile": "1.2.2",
+  "new_installations": []
+}

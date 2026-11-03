@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "total": 12,
+  "successful": 12,
+  "repeat_exact": {
+    "en": true,
+    "zh": true
+  },
+  "sse_chat_exact": {
+    "en": true,
+    "zh": true
+  },
+  "native_transcription_sampling": "Native adapter changes temperature=0 to 0.01 and caps max_new_tokens=256; not the primary accuracy/performance path",
+  "stream_scope": "Complete offline audio input; SSE output chunks only. No real-time input verification",
+  "official_acceptance": null
+}

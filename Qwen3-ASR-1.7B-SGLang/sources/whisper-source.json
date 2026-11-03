@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/openai/whisper",
+  "commit": "86098128c0b4f24f0e2aa2994de830614b474227",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d"
+    },
+    {
+      "path": "whisper/normalizers/basic.py",
+      "sha256": "4742eaa040e0657fa1247a1361e0d856c62317a43326ea59a40c2e9edd8d2c38"
+    },
+    {
+      "path": "whisper/normalizers/english.json",
+      "sha256": "b21ff856a04d2468cd46f394659abf13c726f12aec8cad56c7a325d6a6a03703"
+    },
+    {
+      "path": "whisper/normalizers/english.py",
+      "sha256": "d31a52685b5b42628ea4e3343c3a7925ce5b2f317e6c0ec4575677dd5c8b5d2c"
+    },
+    {
+      "path": "whisper/normalizers/__init__.py",
+      "sha256": "f18fcdce4caee7f2e80e4c01ab0457d3a080a872a29489542c6d23c4b0bba572"
+    }
+  ],
+  "purpose": "Pinned EnglishTextNormalizer for a separately labelled public self-evaluation; competition normalization remains unknown."
+}

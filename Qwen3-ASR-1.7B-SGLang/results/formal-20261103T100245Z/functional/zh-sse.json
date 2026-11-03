@@ -1,0 +1,71 @@
+{
+  "path": "/root/private_data/hks/models/Qwen3-ASR-1.7B/data/examples/asr_zh.wav",
+  "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+  "bytes": 134570,
+  "audio_seconds": 4.2039375,
+  "sample_rate": 16000,
+  "channels": 1,
+  "mode": "sse",
+  "error": null,
+  "success": true,
+  "decode": {
+    "temperature": 0,
+    "max_tokens": 1024,
+    "natural_eos": true,
+    "language": null
+  },
+  "finish_reason": "stop",
+  "response": {
+    "raw_sse_lines": [
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700350,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"role\":\"assistant\",\"content\":\"\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700350,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"language\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700350,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\" Chinese\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700350,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"<asr_text>\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700350,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"甚至\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700351,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"出现\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700351,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"交易\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700351,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"几乎\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700351,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"停滞\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700351,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"的情况\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700351,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null,\"content\":\"。\"},\"logprobs\":null,\"finish_reason\":null,\"matched_stop\":null}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700351,\"model\":\"qwen3-asr-sglang\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":null},\"logprobs\":null,\"finish_reason\":\"stop\",\"matched_stop\":151645}]}",
+      "data: {\"id\":\"e93b6dfd02fe4116bc87a7383a6447ec\",\"object\":\"chat.completion.chunk\",\"created\":1793700351,\"model\":\"qwen3-asr-sglang\",\"choices\":[],\"usage\":{\"prompt_tokens\":70,\"total_tokens\":81,\"completion_tokens\":11,\"prompt_tokens_details\":{\"cached_tokens\":0,\"audio_tokens\":55},\"reasoning_tokens\":0}}",
+      "data: [DONE]"
+    ],
+    "done": true,
+    "usage": {
+      "prompt_tokens": 70,
+      "total_tokens": 81,
+      "completion_tokens": 11,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 55
+      },
+      "reasoning_tokens": 0
+    }
+  },
+  "raw_output": "language Chinese<asr_text>甚至出现交易几乎停滞的情况。",
+  "text": "甚至出现交易几乎停滞的情况。",
+  "elapsed_seconds": 0.14232780830934644,
+  "rtf": 0.03385583356302191,
+  "usage": {
+    "prompt_tokens": 70,
+    "total_tokens": 81,
+    "completion_tokens": 11,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 55
+    },
+    "reasoning_tokens": 0
+  },
+  "request": {
+    "body_sha256": "8b3f7171c0130954a674b6a0f27a42ece32afa910dc58b5440ea759a2680f0d2",
+    "body_path": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/data/raw-requests/8b3f7171c0130954a674b6a0f27a42ece32afa910dc58b5440ea759a2680f0d2.body",
+    "content_type": "application/json",
+    "endpoint": "/v1/chat/completions",
+    "reference_or_language_supplied": false
+  },
+  "id": "zh-sse",
+  "language_input": "zh",
+  "passed": true
+}

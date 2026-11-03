@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "counted_requests": 128,
+  "warmup_requests": 16,
+  "cells_checked": 8,
+  "model_requests_sent": 0,
+  "warm_wire_bodies_checked": 16
+}

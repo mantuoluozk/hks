@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "model_requests_sent": 0,
+  "cases": [
+    {
+      "case": "valid",
+      "actual_exit": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "case": "missing_release",
+      "actual_exit": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "case": "corrupted_asset",
+      "actual_exit": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "case": "mutable_env_log",
+      "actual_exit": 0,
+      "expected_exit": 0,
+      "passed": true
+    }
+  ],
+  "checker_sha256": "6f4c339f6c8de0c0d349e59705defa6a08903d77caa08220e026a2054da4490b",
+  "isolated_logs_retained": true
+}

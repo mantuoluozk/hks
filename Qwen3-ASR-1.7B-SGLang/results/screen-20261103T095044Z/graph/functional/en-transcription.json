@@ -1,0 +1,44 @@
+{
+  "path": "/root/private_data/hks/models/Qwen3-ASR-1.7B/data/examples/asr_en.wav",
+  "sha256": "f9b4440ac8393e47c14a6240e9739dea09b645bb1592b8f2dd48feb9666cea7f",
+  "bytes": 2172458,
+  "audio_seconds": 15.051229166666667,
+  "sample_rate": 48000,
+  "channels": 1,
+  "mode": "transcription",
+  "error": null,
+  "success": true,
+  "decode": {
+    "request_temperature": 0,
+    "native_adapter_effective_temperature": 0.01,
+    "native_adapter_max_new_tokens": 256,
+    "natural_eos": true,
+    "language": null
+  },
+  "finish_reason": null,
+  "response": {
+    "text": "Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people.",
+    "usage": {
+      "type": "duration",
+      "seconds": 16
+    }
+  },
+  "raw_output": "Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people.",
+  "text": "Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people.",
+  "elapsed_seconds": 0.9348858511075377,
+  "rtf": 0.062113588249522546,
+  "usage": {
+    "type": "duration",
+    "seconds": 16
+  },
+  "request": {
+    "body_sha256": "53879e10aaa069a6f9a08351f7042486dd94ff0dc20d946bdea4dc1caaa8b42c",
+    "body_path": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/data/raw-requests/53879e10aaa069a6f9a08351f7042486dd94ff0dc20d946bdea4dc1caaa8b42c.body",
+    "content_type": "multipart/form-data; boundary=b081e6d58042583fd6f01c7d3a8962cc",
+    "endpoint": "/v1/audio/transcriptions",
+    "reference_or_language_supplied": false
+  },
+  "id": "en-transcription",
+  "language_input": "en",
+  "passed": true
+}

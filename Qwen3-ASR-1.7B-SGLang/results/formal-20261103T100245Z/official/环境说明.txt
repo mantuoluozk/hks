@@ -1,0 +1,1 @@
+Qwen3-ASR-1.7B × SGLang，单BW；BF16/greedy/1024/自然EOS/自动语种。300条件独立请求，未输入参考文本或语种标签；完整参数和来源见environment.json及逐条记录。

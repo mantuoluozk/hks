@@ -1,0 +1,29 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+Evaluated 100 of 2620; request errors 0
+Evaluated 200 of 2620; request errors 0
+Evaluated 300 of 2620; request errors 0
+Evaluated 400 of 2620; request errors 0
+Evaluated 500 of 2620; request errors 0
+Evaluated 600 of 2620; request errors 0
+Evaluated 700 of 2620; request errors 0
+Evaluated 800 of 2620; request errors 0
+Evaluated 900 of 2620; request errors 0
+Evaluated 1000 of 2620; request errors 0
+Evaluated 1100 of 2620; request errors 0
+Evaluated 1200 of 2620; request errors 0
+Evaluated 1300 of 2620; request errors 0
+Evaluated 1400 of 2620; request errors 0
+Evaluated 1500 of 2620; request errors 0
+Evaluated 1600 of 2620; request errors 0
+Evaluated 1700 of 2620; request errors 0
+Evaluated 1800 of 2620; request errors 0
+Evaluated 1900 of 2620; request errors 0
+Evaluated 2000 of 2620; request errors 0
+Evaluated 2100 of 2620; request errors 0
+Evaluated 2200 of 2620; request errors 0
+Evaluated 2300 of 2620; request errors 0
+Evaluated 2400 of 2620; request errors 0
+Evaluated 2500 of 2620; request errors 0
+Evaluated 2600 of 2620; request errors 0
+{"complete": true, "requested": 2620, "completed": 2620, "successful": 2620, "request_errors": 0, "truncated": 0, "reference_words": 53027, "word_errors": 928, "substitutions": 660, "deletions": 199, "insertions": 69, "reference_chars": 230284, "char_errors": 1473, "wer_percent": 1.7500518603730175, "cer_percent": 0.6396449601361797, "dataset": "LibriSpeech test-clean full 2620", "workers": 4, "normalizer_commit": "86098128c0b4f24f0e2aa2994de830614b474227", "publisher_reference_wer_percent": 1.63, "publisher_normalization_equivalence_verified": false, "official_acceptance": null, "wall_seconds": 386.3528676116839}

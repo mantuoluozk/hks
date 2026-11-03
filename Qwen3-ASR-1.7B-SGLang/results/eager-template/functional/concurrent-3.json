@@ -1,0 +1,75 @@
+{
+  "path": "/root/private_data/hks/models/Qwen3-ASR-1.7B/data/examples/asr_zh.wav",
+  "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+  "bytes": 134570,
+  "audio_seconds": 4.2039375,
+  "sample_rate": 16000,
+  "channels": 1,
+  "mode": "chat",
+  "error": null,
+  "success": true,
+  "decode": {
+    "temperature": 0,
+    "max_tokens": 1024,
+    "natural_eos": true,
+    "language": null
+  },
+  "finish_reason": "stop",
+  "response": {
+    "id": "26acbc25c206475688c708c47afcc4a0",
+    "object": "chat.completion",
+    "created": 1793699463,
+    "model": "qwen3-asr-sglang",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "language Chinese<asr_text>甚至出现交易几乎停滞的情况。",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 151645
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 70,
+      "total_tokens": 81,
+      "completion_tokens": 11,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 55
+      },
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "raw_output": "language Chinese<asr_text>甚至出现交易几乎停滞的情况。",
+  "text": "甚至出现交易几乎停滞的情况。",
+  "elapsed_seconds": 6.02379113715142,
+  "rtf": 1.432892648178385,
+  "usage": {
+    "prompt_tokens": 70,
+    "total_tokens": 81,
+    "completion_tokens": 11,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 55
+    },
+    "reasoning_tokens": 0
+  },
+  "request": {
+    "body_sha256": "750335bad654801a5554033615f489f82f8434cd65b7233550d7f622d233c585",
+    "body_path": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/data/raw-requests/750335bad654801a5554033615f489f82f8434cd65b7233550d7f622d233c585.body",
+    "content_type": "application/json",
+    "endpoint": "/v1/chat/completions",
+    "reference_or_language_supplied": false
+  },
+  "id": "concurrent-3",
+  "language_input": "zh",
+  "passed": true
+}

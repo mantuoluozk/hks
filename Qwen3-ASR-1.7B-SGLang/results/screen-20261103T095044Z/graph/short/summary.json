@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "short": true,
+  "counted_requests": 8,
+  "warmup_requests": 4,
+  "round_reported": 1,
+  "cells": [
+    {
+      "round": 1,
+      "concurrency": 1,
+      "requests": 4,
+      "wall_seconds": 1.243958928156644,
+      "audio_seconds": 38.510333333333335,
+      "audio_seconds_per_wall_second": 30.957881696624607,
+      "mean_request_rtf": 0.03319983460078182,
+      "mean_latency_seconds": 0.31003358552698046,
+      "p95_latency_seconds": 0.4735027415910736,
+      "p99_latency_seconds": 0.4736560466559604,
+      "max_latency_seconds": 0.4736943729221821,
+      "completion_tokens": 120,
+      "errors": 0
+    },
+    {
+      "round": 1,
+      "concurrency": 4,
+      "requests": 4,
+      "wall_seconds": 5.456891643349081,
+      "audio_seconds": 38.510333333333335,
+      "audio_seconds_per_wall_second": 7.057192235119814,
+      "mean_request_rtf": 0.7886384405127281,
+      "mean_latency_seconds": 5.278152730898,
+      "p95_latency_seconds": 5.452199955889955,
+      "p99_latency_seconds": 5.454018055172637,
+      "max_latency_seconds": 5.454472579993308,
+      "completion_tokens": 120,
+      "errors": 0
+    }
+  ],
+  "text_consistent_by_fixture": {
+    "en": true,
+    "zh": true
+  },
+  "decode": "BF16 greedy max1024 natural EOS automatic language",
+  "timing": "Client end-to-end wall includes pool lifecycle and HTTP encoding/decoding; audio bytes/base64 prepared before timing; raw file writes after batch",
+  "official_performance_protocol": false,
+  "independent_service_full_reproduction": null
+}

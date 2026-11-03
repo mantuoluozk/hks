@@ -1,0 +1,31 @@
+{
+  "path": "/root/private_data/hks/models/Qwen3-ASR-1.7B/data/examples/asr_zh.wav",
+  "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+  "bytes": 134570,
+  "audio_seconds": 4.2039375,
+  "sample_rate": 16000,
+  "channels": 1,
+  "mode": "sse",
+  "error": "HTTPError('400 Client Error: Bad Request for url: http://127.0.0.1:30129/v1/chat/completions')",
+  "success": false,
+  "decode": {
+    "temperature": 0,
+    "max_tokens": 1024,
+    "natural_eos": true,
+    "language": null
+  },
+  "elapsed_seconds": 0.003051463980227709,
+  "rtf": 0.0007258585505202465,
+  "text": "",
+  "raw_error_body": "{\"object\":\"error\",\"message\":\"Cannot use chat template functions because tokenizer.chat_template is not set and no template argument was passed! For information about writing templates and setting the tokenizer.chat_template attribute, please see the documentation at https://huggingface.co/docs/transformers/main/en/chat_templating\",\"type\":\"BadRequest\",\"param\":null,\"code\":400}",
+  "request": {
+    "body_sha256": "8b3f7171c0130954a674b6a0f27a42ece32afa910dc58b5440ea759a2680f0d2",
+    "body_path": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/data/raw-requests/8b3f7171c0130954a674b6a0f27a42ece32afa910dc58b5440ea759a2680f0d2.body",
+    "content_type": "application/json",
+    "endpoint": "/v1/chat/completions",
+    "reference_or_language_supplied": false
+  },
+  "id": "zh-sse",
+  "language_input": "zh",
+  "passed": false
+}

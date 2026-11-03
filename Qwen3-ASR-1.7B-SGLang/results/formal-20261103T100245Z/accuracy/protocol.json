@@ -1,0 +1,11 @@
+{
+  "workers": 4,
+  "temperature": 0,
+  "max_tokens": 1024,
+  "language": null,
+  "dtype": "bfloat16",
+  "natural_eos": true,
+  "source_sha256": "7113aa4c3cf963fb54697145719a7725f984c8836d1c494a554cbb9f1a017df0",
+  "reference_text_in_request": false,
+  "normalizer_commit": "86098128c0b4f24f0e2aa2994de830614b474227"
+}

@@ -1,0 +1,12 @@
+{
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "platform": "Linux-5.15.0-25-generic-x86_64-with-glibc2.35",
+  "framework": "SGLang",
+  "model_path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+  "runtime_job": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/results/formal-20261103T100245Z",
+  "temperature": 0,
+  "max_new_tokens": 1024,
+  "language": null,
+  "dtype": "bf16",
+  "seed": 42
+}

@@ -1,0 +1,11 @@
+{
+  "encoding": "file-zlib-v1",
+  "bytes": 649804,
+  "sha256": "52da5c114ba23a18af141c582dc43f00c6c7988218c0dc9b630340bf87ba34aa",
+  "assets": [
+    {
+      "path": "assets/evidence/52da5c114ba23a18af141c582dc43f00c6c7988218c0dc9b630340bf87ba34aa.part00.zlib",
+      "sha256": "b0f96da3f3241609b679051474461d02fbd6c084920dff7d0f9b05d6220b39f0"
+    }
+  ]
+}

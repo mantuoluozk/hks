@@ -1,0 +1,7 @@
+WARNING: /opt/hyhal/lib/cmake/rocm_smi doesn't exist, please install the latest driver(version >= 6.3.15)
+The rocm_smi_lib will be used in default
+SERVICE_READY
+Traceback (most recent call last):
+  File "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/scripts/service.py", line 29, in <module>
+    if code not in [0,-15]:raise RuntimeError(f'Service exited {code}')
+RuntimeError: Service exited -9

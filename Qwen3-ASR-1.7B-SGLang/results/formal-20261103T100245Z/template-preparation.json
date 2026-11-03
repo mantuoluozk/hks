@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "source_sha256": "75a8cfca24f00de72d796fbfed6858fc9614ef3dabd8696684cc3bc03a9c58ff",
+  "template_sha256": "a103579066642f0e035873f12de6046a1bbc909a7a2833732fda9fd6bc7c528d",
+  "action": "Extract JSON chat_template value unchanged and explicitly pass --chat-template; no weight/tokenizer edits",
+  "empty_system_and_audio_render_verified": true
+}

@@ -1,0 +1,75 @@
+{
+  "path": "/root/private_data/hks/models/Qwen3-ASR-1.7B/data/examples/asr_en.wav",
+  "sha256": "f9b4440ac8393e47c14a6240e9739dea09b645bb1592b8f2dd48feb9666cea7f",
+  "bytes": 2172458,
+  "audio_seconds": 15.051229166666667,
+  "sample_rate": 48000,
+  "channels": 1,
+  "mode": "chat",
+  "error": null,
+  "success": true,
+  "decode": {
+    "temperature": 0,
+    "max_tokens": 1024,
+    "natural_eos": true,
+    "language": null
+  },
+  "finish_reason": "stop",
+  "response": {
+    "id": "a3eedab1c9f94d8189f1d8a859387e72",
+    "object": "chat.completion",
+    "created": 1793700352,
+    "model": "qwen3-asr-sglang",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "language English<asr_text>Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people.",
+          "reasoning_content": null,
+          "tool_calls": null
+        },
+        "logprobs": null,
+        "finish_reason": "stop",
+        "matched_stop": 151645
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "total_tokens": 260,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 196
+      },
+      "reasoning_tokens": 0
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "raw_output": "language English<asr_text>Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people.",
+  "text": "Uh huh. Oh yeah, yeah. He wasn't even that big when I started listening to him, but and his solo music didn't do overly well, but he did very well when he started writing for other people.",
+  "elapsed_seconds": 1.0083596762269735,
+  "rtf": 0.06699517129538801,
+  "usage": {
+    "prompt_tokens": 211,
+    "total_tokens": 260,
+    "completion_tokens": 49,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 196
+    },
+    "reasoning_tokens": 0
+  },
+  "request": {
+    "body_sha256": "3e76e9b20019b3cce38dfa19d32e04cf2908f7df6d70bf79e62217d54d119ee0",
+    "body_path": "/root/private_data/hks/models/Qwen3-ASR-1.7B-SGLang/data/raw-requests/3e76e9b20019b3cce38dfa19d32e04cf2908f7df6d70bf79e62217d54d119ee0.body",
+    "content_type": "application/json",
+    "endpoint": "/v1/chat/completions",
+    "reference_or_language_supplied": false
+  },
+  "id": "concurrent-0",
+  "language_input": "en",
+  "passed": true
+}

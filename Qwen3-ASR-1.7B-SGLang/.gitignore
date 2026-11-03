@@ -1,0 +1,7 @@
+/cache/
+/artifacts/
+/weights/
+/data/*
+!/data/README.md
+__pycache__/
+*.pyc
